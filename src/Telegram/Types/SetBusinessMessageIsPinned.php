@@ -1,0 +1,112 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Telegram\Types;
+
+use Symfony\Component\Serializer\Annotation\SerializedName;
+
+/**
+ * Pins or unpins a message sent on behalf of a business account; for bots only
+ */
+class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
+{
+    public function __construct(
+        /** Unique identifier of business connection on behalf of which the message was sent */
+        #[SerializedName('business_connection_id')]
+        private string $businessConnectionId,
+        /** The chat the message belongs to */
+        #[SerializedName('chat_id')]
+        private int $chatId,
+        /** Identifier of the message */
+        #[SerializedName('message_id')]
+        private int $messageId,
+        /** Pass true to pin the message, pass false to unpin it */
+        #[SerializedName('is_pinned')]
+        private bool $isPinned,
+    ) {
+    }
+
+    /**
+     * Get Unique identifier of business connection on behalf of which the message was sent
+     */
+    public function getBusinessConnectionId(): string
+    {
+        return $this->businessConnectionId;
+    }
+
+    /**
+     * Set Unique identifier of business connection on behalf of which the message was sent
+     */
+    public function setBusinessConnectionId(string $businessConnectionId): self
+    {
+        $this->businessConnectionId = $businessConnectionId;
+
+        return $this;
+    }
+
+    /**
+     * Get The chat the message belongs to
+     */
+    public function getChatId(): int
+    {
+        return $this->chatId;
+    }
+
+    /**
+     * Set The chat the message belongs to
+     */
+    public function setChatId(int $chatId): self
+    {
+        $this->chatId = $chatId;
+
+        return $this;
+    }
+
+    /**
+     * Get Identifier of the message
+     */
+    public function getMessageId(): int
+    {
+        return $this->messageId;
+    }
+
+    /**
+     * Set Identifier of the message
+     */
+    public function setMessageId(int $messageId): self
+    {
+        $this->messageId = $messageId;
+
+        return $this;
+    }
+
+    /**
+     * Get Pass true to pin the message, pass false to unpin it
+     */
+    public function getIsPinned(): bool
+    {
+        return $this->isPinned;
+    }
+
+    /**
+     * Set Pass true to pin the message, pass false to unpin it
+     */
+    public function setIsPinned(bool $isPinned): self
+    {
+        $this->isPinned = $isPinned;
+
+        return $this;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return [
+            '@type' => 'setBusinessMessageIsPinned',
+            'business_connection_id' => $this->getBusinessConnectionId(),
+            'chat_id' => $this->getChatId(),
+            'message_id' => $this->getMessageId(),
+            'is_pinned' => $this->getIsPinned(),
+        ];
+    }
+}

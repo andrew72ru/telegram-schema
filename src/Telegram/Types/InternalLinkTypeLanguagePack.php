@@ -1,0 +1,46 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Telegram\Types;
+
+use Symfony\Component\Serializer\Annotation\SerializedName;
+
+/**
+ * The link is a link to a language pack. Call getLanguagePackInfo with the given language pack identifier to process the link.
+ */
+class InternalLinkTypeLanguagePack extends InternalLinkType implements \JsonSerializable
+{
+    public function __construct(
+        /** Language pack identifier */
+        #[SerializedName('language_pack_id')]
+        private string $languagePackId,
+    ) {
+    }
+
+    /**
+     * Get Language pack identifier
+     */
+    public function getLanguagePackId(): string
+    {
+        return $this->languagePackId;
+    }
+
+    /**
+     * Set Language pack identifier
+     */
+    public function setLanguagePackId(string $languagePackId): self
+    {
+        $this->languagePackId = $languagePackId;
+
+        return $this;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return [
+            '@type' => 'internalLinkTypeLanguagePack',
+            'language_pack_id' => $this->getLanguagePackId(),
+        ];
+    }
+}
