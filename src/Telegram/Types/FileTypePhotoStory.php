@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The file is a photo published as a story
+ * The file is a photo published as a story.
  */
 class FileTypePhotoStory extends FileType implements \JsonSerializable
 {

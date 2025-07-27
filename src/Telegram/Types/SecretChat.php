@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a secret chat
+ * Represents a secret chat.
  */
 class SecretChat implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Get Secret chat identifier
+     * Get Secret chat identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Set Secret chat identifier
+     * Set Secret chat identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat partner
+     * Get Identifier of the chat partner.
      */
     public function getUserId(): int
     {
@@ -60,7 +60,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat partner
+     * Set Identifier of the chat partner.
      */
     public function setUserId(int $userId): self
     {
@@ -70,7 +70,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Get State of the secret chat
+     * Get State of the secret chat.
      */
     public function getState(): SecretChatState|null
     {
@@ -78,7 +78,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Set State of the secret chat
+     * Set State of the secret chat.
      */
     public function setState(SecretChatState|null $state): self
     {
@@ -88,7 +88,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat was created by the current user; false otherwise
+     * Get True, if the chat was created by the current user; false otherwise.
      */
     public function getIsOutbound(): bool
     {
@@ -96,7 +96,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat was created by the current user; false otherwise
+     * Set True, if the chat was created by the current user; false otherwise.
      */
     public function setIsOutbound(bool $isOutbound): self
     {
@@ -106,7 +106,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Get Hash of the currently used key for comparison with the hash of the chat partner's key. This is a string of 36 little-endian bytes, which must be split into groups of 2 bits, each denoting a pixel of one of 4 colors FFFFFF, D5E6F3, 2D5775, and 2F99C9.
+     * Get Hash of the currently used key for comparison with the hash of the chat partner's key. This is a string of 36 little-endian bytes, which must be split into groups of 2 bits, each denoting a pixel of one of 4 colors FFFFFF, D5E6F3, 2D5775, and 2F99C9..
      */
     public function getKeyHash(): string
     {
@@ -114,7 +114,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Set Hash of the currently used key for comparison with the hash of the chat partner's key. This is a string of 36 little-endian bytes, which must be split into groups of 2 bits, each denoting a pixel of one of 4 colors FFFFFF, D5E6F3, 2D5775, and 2F99C9.
+     * Set Hash of the currently used key for comparison with the hash of the chat partner's key. This is a string of 36 little-endian bytes, which must be split into groups of 2 bits, each denoting a pixel of one of 4 colors FFFFFF, D5E6F3, 2D5775, and 2F99C9..
      */
     public function setKeyHash(string $keyHash): self
     {
@@ -124,7 +124,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Get Secret chat layer; determines features supported by the chat partner's application. Nested text entities and underline and strikethrough entities are supported if the layer >= 101,
+     * Get Secret chat layer; determines features supported by the chat partner's application. Nested text entities and underline and strikethrough entities are supported if the layer >= 101,.
      */
     public function getLayer(): int
     {
@@ -132,7 +132,7 @@ class SecretChat implements \JsonSerializable
     }
 
     /**
-     * Set Secret chat layer; determines features supported by the chat partner's application. Nested text entities and underline and strikethrough entities are supported if the layer >= 101,
+     * Set Secret chat layer; determines features supported by the chat partner's application. Nested text entities and underline and strikethrough entities are supported if the layer >= 101,.
      */
     public function setLayer(int $layer): self
     {

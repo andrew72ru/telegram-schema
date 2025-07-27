@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains one row of the game high score table @position Position in the high score table @user_id User identifier @score User score
+ * Contains one row of the game high score table @position Position in the high score table @user_id User identifier @score User score.
  */
 class GameHighScore implements \JsonSerializable
 {

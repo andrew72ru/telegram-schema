@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns found forum topics in a forum chat. This is a temporary method for getting information about topic list from the server
+ * Returns found forum topics in a forum chat. This is a temporary method for getting information about topic list from the server.
  */
 class GetForumTopics extends ForumTopics implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the forum chat
+     * Get Identifier of the forum chat.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the forum chat
+     * Set Identifier of the forum chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for in the forum topic's name
+     * Get Query to search for in the forum topic's name.
      */
     public function getQuery(): string
     {
@@ -60,7 +60,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for in the forum topic's name
+     * Set Query to search for in the forum topic's name.
      */
     public function setQuery(string $query): self
     {
@@ -70,7 +70,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic
+     * Get The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic.
      */
     public function getOffsetDate(): int
     {
@@ -78,7 +78,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic
+     * Set The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic.
      */
     public function setOffsetDate(int $offsetDate): self
     {
@@ -88,7 +88,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get The message identifier of the last message in the last found topic, or 0 for the first request
+     * Get The message identifier of the last message in the last found topic, or 0 for the first request.
      */
     public function getOffsetMessageId(): int
     {
@@ -96,7 +96,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set The message identifier of the last message in the last found topic, or 0 for the first request
+     * Set The message identifier of the last message in the last found topic, or 0 for the first request.
      */
     public function setOffsetMessageId(int $offsetMessageId): self
     {
@@ -106,7 +106,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get The message thread identifier of the last found topic, or 0 for the first request
+     * Get The message thread identifier of the last found topic, or 0 for the first request.
      */
     public function getOffsetMessageThreadId(): int
     {
@@ -114,7 +114,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set The message thread identifier of the last found topic, or 0 for the first request
+     * Set The message thread identifier of the last found topic, or 0 for the first request.
      */
     public function setOffsetMessageThreadId(int $offsetMessageThreadId): self
     {
@@ -124,7 +124,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of forum topics to be returned; up to 100. For optimal performance, the number of returned forum topics is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of forum topics to be returned; up to 100. For optimal performance, the number of returned forum topics is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -132,7 +132,7 @@ class GetForumTopics extends ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of forum topics to be returned; up to 100. For optimal performance, the number of returned forum topics is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of forum topics to be returned; up to 100. For optimal performance, the number of returned forum topics is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

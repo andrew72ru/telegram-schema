@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A PNG or TGV (gzipped subset of SVG with MIME type "application/x-tgwallpattern") pattern to be combined with the background fill chosen by the user
+ * A PNG or TGV (gzipped subset of SVG with MIME type "application/x-tgwallpattern") pattern to be combined with the background fill chosen by the user.
  */
 class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Get Fill of the background
+     * Get Fill of the background.
      */
     public function getFill(): BackgroundFill|null
     {
@@ -36,7 +36,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Set Fill of the background
+     * Set Fill of the background.
      */
     public function setFill(BackgroundFill|null $fill): self
     {
@@ -46,7 +46,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Get Intensity of the pattern when it is shown above the filled background; 0-100
+     * Get Intensity of the pattern when it is shown above the filled background; 0-100.
      */
     public function getIntensity(): int
     {
@@ -54,7 +54,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Set Intensity of the pattern when it is shown above the filled background; 0-100
+     * Set Intensity of the pattern when it is shown above the filled background; 0-100.
      */
     public function setIntensity(int $intensity): self
     {
@@ -64,7 +64,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only
+     * Get True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only.
      */
     public function getIsInverted(): bool
     {
@@ -72,7 +72,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only
+     * Set True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only.
      */
     public function setIsInverted(bool $isInverted): self
     {
@@ -82,7 +82,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the background needs to be slightly moved when device is tilted
+     * Get True, if the background needs to be slightly moved when device is tilted.
      */
     public function getIsMoving(): bool
     {
@@ -90,7 +90,7 @@ class BackgroundTypePattern extends BackgroundType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the background needs to be slightly moved when device is tilted
+     * Set True, if the background needs to be slightly moved when device is tilted.
      */
     public function setIsMoving(bool $isMoving): self
     {

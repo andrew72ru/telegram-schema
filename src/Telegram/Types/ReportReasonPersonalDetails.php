@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The chat contains messages with personal details
+ * The chat contains messages with personal details.
  */
 class ReportReasonPersonalDetails extends ReportReason implements \JsonSerializable
 {

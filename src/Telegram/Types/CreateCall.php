@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new call
+ * Creates a new call.
  */
 class CreateCall extends CallId implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class CreateCall extends CallId implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user to be called
+     * Get Identifier of the user to be called.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class CreateCall extends CallId implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user to be called
+     * Set Identifier of the user to be called.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class CreateCall extends CallId implements \JsonSerializable
     }
 
     /**
-     * Get The call protocols supported by the application
+     * Get The call protocols supported by the application.
      */
     public function getProtocol(): CallProtocol|null
     {
@@ -51,7 +51,7 @@ class CreateCall extends CallId implements \JsonSerializable
     }
 
     /**
-     * Set The call protocols supported by the application
+     * Set The call protocols supported by the application.
      */
     public function setProtocol(CallProtocol|null $protocol): self
     {
@@ -61,7 +61,7 @@ class CreateCall extends CallId implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create a video call
+     * Get Pass true to create a video call.
      */
     public function getIsVideo(): bool
     {
@@ -69,7 +69,7 @@ class CreateCall extends CallId implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create a video call
+     * Set Pass true to create a video call.
      */
     public function setIsVideo(bool $isVideo): self
     {

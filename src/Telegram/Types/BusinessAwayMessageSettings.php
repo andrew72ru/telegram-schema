@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes settings for messages that are automatically sent by a Telegram Business account when it is away
+ * Describes settings for messages that are automatically sent by a Telegram Business account when it is away.
  */
 class BusinessAwayMessageSettings implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get Unique quick reply shortcut identifier for the away messages
+     * Get Unique quick reply shortcut identifier for the away messages.
      */
     public function getShortcutId(): int
     {
@@ -36,7 +36,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set Unique quick reply shortcut identifier for the away messages
+     * Set Unique quick reply shortcut identifier for the away messages.
      */
     public function setShortcutId(int $shortcutId): self
     {
@@ -46,7 +46,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get Chosen recipients of the away messages
+     * Get Chosen recipients of the away messages.
      */
     public function getRecipients(): BusinessRecipients|null
     {
@@ -54,7 +54,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set Chosen recipients of the away messages
+     * Set Chosen recipients of the away messages.
      */
     public function setRecipients(BusinessRecipients|null $recipients): self
     {
@@ -64,7 +64,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get Settings used to check whether the current user is away
+     * Get Settings used to check whether the current user is away.
      */
     public function getSchedule(): BusinessAwayMessageSchedule|null
     {
@@ -72,7 +72,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set Settings used to check whether the current user is away
+     * Set Settings used to check whether the current user is away.
      */
     public function setSchedule(BusinessAwayMessageSchedule|null $schedule): self
     {
@@ -82,7 +82,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if the messages must not be sent if the account was online in the last 10 minutes
+     * Get True, if the messages must not be sent if the account was online in the last 10 minutes.
      */
     public function getOfflineOnly(): bool
     {
@@ -90,7 +90,7 @@ class BusinessAwayMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if the messages must not be sent if the account was online in the last 10 minutes
+     * Set True, if the messages must not be sent if the account was online in the last 10 minutes.
      */
     public function setOfflineOnly(bool $offlineOnly): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib on a file generation progress
+ * Informs TDLib on a file generation progress.
  */
 class SetFileGenerationProgress extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetFileGenerationProgress extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the generation process
+     * Get The identifier of the generation process.
      */
     public function getGenerationId(): int
     {
@@ -33,7 +33,7 @@ class SetFileGenerationProgress extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the generation process
+     * Set The identifier of the generation process.
      */
     public function setGenerationId(int $generationId): self
     {
@@ -43,7 +43,7 @@ class SetFileGenerationProgress extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Expected size of the generated file, in bytes; 0 if unknown
+     * Get Expected size of the generated file, in bytes; 0 if unknown.
      */
     public function getExpectedSize(): int
     {
@@ -51,7 +51,7 @@ class SetFileGenerationProgress extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Expected size of the generated file, in bytes; 0 if unknown
+     * Set Expected size of the generated file, in bytes; 0 if unknown.
      */
     public function setExpectedSize(int $expectedSize): self
     {
@@ -61,7 +61,7 @@ class SetFileGenerationProgress extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The number of bytes already generated
+     * Get The number of bytes already generated.
      */
     public function getLocalPrefixSize(): int
     {
@@ -69,7 +69,7 @@ class SetFileGenerationProgress extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The number of bytes already generated
+     * Set The number of bytes already generated.
      */
     public function setLocalPrefixSize(int $localPrefixSize): self
     {

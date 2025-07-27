@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the position of a sticker in the set to which it belongs. The sticker set must be owned by the current user
+ * Changes the position of a sticker in the set to which it belongs. The sticker set must be owned by the current user.
  */
 class SetStickerPositionInSet extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetStickerPositionInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker
+     * Get Sticker.
      */
     public function getSticker(): InputFile|null
     {
@@ -30,7 +30,7 @@ class SetStickerPositionInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker
+     * Set Sticker.
      */
     public function setSticker(InputFile|null $sticker): self
     {
@@ -40,7 +40,7 @@ class SetStickerPositionInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New position of the sticker in the set, 0-based
+     * Get New position of the sticker in the set, 0-based.
      */
     public function getPosition(): int
     {
@@ -48,7 +48,7 @@ class SetStickerPositionInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New position of the sticker in the set, 0-based
+     * Set New position of the sticker in the set, 0-based.
      */
     public function setPosition(int $position): self
     {

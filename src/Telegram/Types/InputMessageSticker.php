@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A sticker message
+ * A sticker message.
  */
 class InputMessageSticker extends InputMessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Sticker to be sent
+     * Get Sticker to be sent.
      */
     public function getSticker(): InputFile|null
     {
@@ -39,7 +39,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Sticker to be sent
+     * Set Sticker to be sent.
      */
     public function setSticker(InputFile|null $sticker): self
     {
@@ -49,7 +49,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Sticker thumbnail; pass null to skip thumbnail uploading
+     * Get Sticker thumbnail; pass null to skip thumbnail uploading.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -57,7 +57,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Sticker thumbnail; pass null to skip thumbnail uploading
+     * Set Sticker thumbnail; pass null to skip thumbnail uploading.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -67,7 +67,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Sticker width
+     * Get Sticker width.
      */
     public function getWidth(): int
     {
@@ -75,7 +75,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Sticker width
+     * Set Sticker width.
      */
     public function setWidth(int $width): self
     {
@@ -85,7 +85,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Sticker height
+     * Get Sticker height.
      */
     public function getHeight(): int
     {
@@ -93,7 +93,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Sticker height
+     * Set Sticker height.
      */
     public function setHeight(int $height): self
     {
@@ -103,7 +103,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Emoji used to choose the sticker
+     * Get Emoji used to choose the sticker.
      */
     public function getEmoji(): string
     {
@@ -111,7 +111,7 @@ class InputMessageSticker extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Emoji used to choose the sticker
+     * Set Emoji used to choose the sticker.
      */
     public function setEmoji(string $emoji): self
     {

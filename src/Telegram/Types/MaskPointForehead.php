@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The mask is placed relatively to the forehead
+ * The mask is placed relatively to the forehead.
  */
 class MaskPointForehead extends MaskPoint implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The file is a thumbnail of a file from a secret chat
+ * The file is a thumbnail of a file from a secret chat.
  */
 class FileTypeSecretThumbnail extends FileType implements \JsonSerializable
 {

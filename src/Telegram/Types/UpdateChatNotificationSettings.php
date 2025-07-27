@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Notification settings for a chat were changed @chat_id Chat identifier @notification_settings The new notification settings
+ * Notification settings for a chat were changed @chat_id Chat identifier @notification_settings The new notification settings.
  */
 class UpdateChatNotificationSettings extends Update implements \JsonSerializable
 {

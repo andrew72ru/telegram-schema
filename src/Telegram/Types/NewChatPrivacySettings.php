@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains privacy settings for chats with non-contacts
+ * Contains privacy settings for chats with non-contacts.
  */
 class NewChatPrivacySettings implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class NewChatPrivacySettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if non-contacts users are able to write first to the current user. Telegram Premium subscribers are able to write first regardless of this setting
+     * Get True, if non-contacts users are able to write first to the current user. Telegram Premium subscribers are able to write first regardless of this setting.
      */
     public function getAllowNewChatsFromUnknownUsers(): bool
     {
@@ -30,7 +30,7 @@ class NewChatPrivacySettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if non-contacts users are able to write first to the current user. Telegram Premium subscribers are able to write first regardless of this setting
+     * Set True, if non-contacts users are able to write first to the current user. Telegram Premium subscribers are able to write first regardless of this setting.
      */
     public function setAllowNewChatsFromUnknownUsers(bool $allowNewChatsFromUnknownUsers): self
     {
@@ -40,7 +40,7 @@ class NewChatPrivacySettings implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid for every incoming private message by non-contacts; 0-getOption("paid_message_star_count_max").
+     * Get Number of Telegram Stars that must be paid for every incoming private message by non-contacts; 0-getOption("paid_message_star_count_max")..
      */
     public function getIncomingPaidMessageStarCount(): int
     {
@@ -48,7 +48,7 @@ class NewChatPrivacySettings implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid for every incoming private message by non-contacts; 0-getOption("paid_message_star_count_max").
+     * Set Number of Telegram Stars that must be paid for every incoming private message by non-contacts; 0-getOption("paid_message_star_count_max")..
      */
     public function setIncomingPaidMessageStarCount(int $incomingPaidMessageStarCount): self
     {

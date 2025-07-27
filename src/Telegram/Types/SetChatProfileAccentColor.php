@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes accent color and background custom emoji for profile of a supergroup or channel chat. Requires can_change_info administrator right
+ * Changes accent color and background custom emoji for profile of a supergroup or channel chat. Requires can_change_info administrator right.
  */
 class SetChatProfileAccentColor extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetChatProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetChatProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetChatProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color to use for profile; pass -1 if none. The chat must have at least profileAccentColor.min_supergroup_chat_boost_level for supergroups
+     * Get Identifier of the accent color to use for profile; pass -1 if none. The chat must have at least profileAccentColor.min_supergroup_chat_boost_level for supergroups.
      */
     public function getProfileAccentColorId(): int
     {
@@ -51,7 +51,7 @@ class SetChatProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color to use for profile; pass -1 if none. The chat must have at least profileAccentColor.min_supergroup_chat_boost_level for supergroups
+     * Set Identifier of the accent color to use for profile; pass -1 if none. The chat must have at least profileAccentColor.min_supergroup_chat_boost_level for supergroups.
      */
     public function setProfileAccentColorId(int $profileAccentColorId): self
     {
@@ -61,7 +61,7 @@ class SetChatProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the chat's profile photo background; 0 if none. Use chatBoostLevelFeatures.can_set_profile_background_custom_emoji to check whether a custom emoji can be set
+     * Get Identifier of a custom emoji to be shown on the chat's profile photo background; 0 if none. Use chatBoostLevelFeatures.can_set_profile_background_custom_emoji to check whether a custom emoji can be set.
      */
     public function getProfileBackgroundCustomEmojiId(): int
     {
@@ -69,7 +69,7 @@ class SetChatProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the chat's profile photo background; 0 if none. Use chatBoostLevelFeatures.can_set_profile_background_custom_emoji to check whether a custom emoji can be set
+     * Set Identifier of a custom emoji to be shown on the chat's profile photo background; 0 if none. Use chatBoostLevelFeatures.can_set_profile_background_custom_emoji to check whether a custom emoji can be set.
      */
     public function setProfileBackgroundCustomEmojiId(int $profileBackgroundCustomEmojiId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A file defined by its unique identifier @id Unique file identifier
+ * A file defined by its unique identifier @id Unique file identifier.
  */
 class InputFileId extends InputFile implements \JsonSerializable
 {

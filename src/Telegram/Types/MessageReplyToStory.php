@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a story replied by a given message @story_poster_chat_id The identifier of the poster of the story @story_id The identifier of the story
+ * Describes a story replied by a given message @story_poster_chat_id The identifier of the poster of the story @story_id The identifier of the story.
  */
 class MessageReplyToStory extends MessageReplyTo implements \JsonSerializable
 {

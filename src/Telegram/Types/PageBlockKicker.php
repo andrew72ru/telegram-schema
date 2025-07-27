@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A kicker @kicker Kicker
+ * A kicker @kicker Kicker.
  */
 class PageBlockKicker extends PageBlock implements \JsonSerializable
 {

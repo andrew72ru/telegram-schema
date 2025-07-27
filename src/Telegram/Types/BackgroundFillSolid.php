@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a solid fill of a background @color A color of the background in the RGB format
+ * Describes a solid fill of a background @color A color of the background in the RGB format.
  */
 class BackgroundFillSolid extends BackgroundFill implements \JsonSerializable
 {

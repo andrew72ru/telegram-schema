@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a recommended chat folder @folder The chat folder @param_description Chat folder description
+ * Describes a recommended chat folder @folder The chat folder @param_description Chat folder description.
  */
 class RecommendedChatFolder implements \JsonSerializable
 {
@@ -33,7 +33,7 @@ class RecommendedChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get Describes a recommended chat folder @folder The chat folder @param_description Chat folder description
+     * Get Describes a recommended chat folder @folder The chat folder @param_description Chat folder description.
      */
     public function getDescription(): string
     {
@@ -41,7 +41,7 @@ class RecommendedChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set Describes a recommended chat folder @folder The chat folder @param_description Chat folder description
+     * Set Describes a recommended chat folder @folder The chat folder @param_description Chat folder description.
      */
     public function setDescription(string $description): self
     {

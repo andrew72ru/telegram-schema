@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports a chat to the Telegram moderators. A chat can be reported only from the chat action bar, or if chat.can_be_reported
+ * Reports a chat to the Telegram moderators. A chat can be reported only from the chat action bar, or if chat.can_be_reported.
  */
 class ReportChat extends ReportChatResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Get Option identifier chosen by the user; leave empty for the initial request
+     * Get Option identifier chosen by the user; leave empty for the initial request.
      */
     public function getOptionId(): string
     {
@@ -54,7 +54,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Set Option identifier chosen by the user; leave empty for the initial request
+     * Set Option identifier chosen by the user; leave empty for the initial request.
      */
     public function setOptionId(string $optionId): self
     {
@@ -64,7 +64,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of reported messages. Use messageProperties.can_report_chat to check whether the message can be reported
+     * Get Identifiers of reported messages. Use messageProperties.can_report_chat to check whether the message can be reported.
      */
     public function getMessageIds(): array|null
     {
@@ -72,7 +72,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of reported messages. Use messageProperties.can_report_chat to check whether the message can be reported
+     * Set Identifiers of reported messages. Use messageProperties.can_report_chat to check whether the message can be reported.
      */
     public function setMessageIds(array|null $messageIds): self
     {
@@ -82,7 +82,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Get Additional report details if asked by the server; 0-1024 characters; leave empty for the initial request
+     * Get Additional report details if asked by the server; 0-1024 characters; leave empty for the initial request.
      */
     public function getText(): string
     {
@@ -90,7 +90,7 @@ class ReportChat extends ReportChatResult implements \JsonSerializable
     }
 
     /**
-     * Set Additional report details if asked by the server; 0-1024 characters; leave empty for the initial request
+     * Set Additional report details if asked by the server; 0-1024 characters; leave empty for the initial request.
      */
     public function setText(string $text): self
     {

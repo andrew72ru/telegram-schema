@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The payment was done using a third-party payment provider
+ * The payment was done using a third-party payment provider.
  */
 class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Get User identifier of the payment provider bot
+     * Get User identifier of the payment provider bot.
      */
     public function getPaymentProviderUserId(): int
     {
@@ -42,7 +42,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Set User identifier of the payment provider bot
+     * Set User identifier of the payment provider bot.
      */
     public function setPaymentProviderUserId(int $paymentProviderUserId): self
     {
@@ -52,7 +52,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Get Information about the invoice
+     * Get Information about the invoice.
      */
     public function getInvoice(): Invoice|null
     {
@@ -60,7 +60,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Set Information about the invoice
+     * Set Information about the invoice.
      */
     public function setInvoice(Invoice|null $invoice): self
     {
@@ -70,7 +70,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Get Order information; may be null
+     * Get Order information; may be null.
      */
     public function getOrderInfo(): OrderInfo|null
     {
@@ -78,7 +78,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Set Order information; may be null
+     * Set Order information; may be null.
      */
     public function setOrderInfo(OrderInfo|null $orderInfo): self
     {
@@ -88,7 +88,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Get Chosen shipping option; may be null
+     * Get Chosen shipping option; may be null.
      */
     public function getShippingOption(): ShippingOption|null
     {
@@ -96,7 +96,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Set Chosen shipping option; may be null
+     * Set Chosen shipping option; may be null.
      */
     public function setShippingOption(ShippingOption|null $shippingOption): self
     {
@@ -106,7 +106,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Get Title of the saved credentials chosen by the buyer
+     * Get Title of the saved credentials chosen by the buyer.
      */
     public function getCredentialsTitle(): string
     {
@@ -114,7 +114,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Set Title of the saved credentials chosen by the buyer
+     * Set Title of the saved credentials chosen by the buyer.
      */
     public function setCredentialsTitle(string $credentialsTitle): self
     {
@@ -124,7 +124,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Get The amount of tip chosen by the buyer in the smallest units of the currency
+     * Get The amount of tip chosen by the buyer in the smallest units of the currency.
      */
     public function getTipAmount(): int
     {
@@ -132,7 +132,7 @@ class PaymentReceiptTypeRegular extends PaymentReceiptType implements \JsonSeria
     }
 
     /**
-     * Set The amount of tip chosen by the buyer in the smallest units of the currency
+     * Set The amount of tip chosen by the buyer in the smallest units of the currency.
      */
     public function setTipAmount(int $tipAmount): self
     {

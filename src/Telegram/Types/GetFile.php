@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a file. This is an offline method @file_id Identifier of the file to get
+ * Returns information about a file. This is an offline method @file_id Identifier of the file to get.
  */
 class GetFile extends File implements \JsonSerializable
 {

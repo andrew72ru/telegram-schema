@@ -19,7 +19,7 @@ class InternalLinkTypeBackground extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get Name of the background
+     * Get Name of the background.
      */
     public function getBackgroundName(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeBackground extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set Name of the background
+     * Set Name of the background.
      */
     public function setBackgroundName(string $backgroundName): self
     {

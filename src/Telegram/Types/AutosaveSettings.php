@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes autosave settings
+ * Describes autosave settings.
  */
 class AutosaveSettings implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get Default autosave settings for private chats
+     * Get Default autosave settings for private chats.
      */
     public function getPrivateChatSettings(): ScopeAutosaveSettings|null
     {
@@ -36,7 +36,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set Default autosave settings for private chats
+     * Set Default autosave settings for private chats.
      */
     public function setPrivateChatSettings(ScopeAutosaveSettings|null $privateChatSettings): self
     {
@@ -46,7 +46,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get Default autosave settings for basic group and supergroup chats
+     * Get Default autosave settings for basic group and supergroup chats.
      */
     public function getGroupSettings(): ScopeAutosaveSettings|null
     {
@@ -54,7 +54,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set Default autosave settings for basic group and supergroup chats
+     * Set Default autosave settings for basic group and supergroup chats.
      */
     public function setGroupSettings(ScopeAutosaveSettings|null $groupSettings): self
     {
@@ -64,7 +64,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get Default autosave settings for channel chats
+     * Get Default autosave settings for channel chats.
      */
     public function getChannelSettings(): ScopeAutosaveSettings|null
     {
@@ -72,7 +72,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set Default autosave settings for channel chats
+     * Set Default autosave settings for channel chats.
      */
     public function setChannelSettings(ScopeAutosaveSettings|null $channelSettings): self
     {
@@ -82,7 +82,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get Autosave settings for specific chats
+     * Get Autosave settings for specific chats.
      */
     public function getExceptions(): array|null
     {
@@ -90,7 +90,7 @@ class AutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set Autosave settings for specific chats
+     * Set Autosave settings for specific chats.
      */
     public function setExceptions(array|null $exceptions): self
     {

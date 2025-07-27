@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a sticker set by its identifier @set_id Identifier of the sticker set
+ * Returns information about a sticker set by its identifier @set_id Identifier of the sticker set.
  */
 class GetStickerSet extends StickerSet implements \JsonSerializable
 {

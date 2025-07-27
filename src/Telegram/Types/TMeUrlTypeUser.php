@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A URL linking to a user @user_id Identifier of the user
+ * A URL linking to a user @user_id Identifier of the user.
  */
 class TMeUrlTypeUser extends TMeUrlType implements \JsonSerializable
 {

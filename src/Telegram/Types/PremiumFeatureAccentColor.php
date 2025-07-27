@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The ability to choose accent color for replies and user profile
+ * The ability to choose accent color for replies and user profile.
  */
 class PremiumFeatureAccentColor extends PremiumFeature implements \JsonSerializable
 {

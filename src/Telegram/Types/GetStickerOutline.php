@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns outline of a sticker. This is an offline method. Returns a 404 error if the outline isn't known
+ * Returns outline of a sticker. This is an offline method. Returns a 404 error if the outline isn't known.
  */
 class GetStickerOutline extends Outline implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetStickerOutline extends Outline implements \JsonSerializable
     }
 
     /**
-     * Get File identifier of the sticker
+     * Get File identifier of the sticker.
      */
     public function getStickerFileId(): int
     {
@@ -33,7 +33,7 @@ class GetStickerOutline extends Outline implements \JsonSerializable
     }
 
     /**
-     * Set File identifier of the sticker
+     * Set File identifier of the sticker.
      */
     public function setStickerFileId(int $stickerFileId): self
     {
@@ -43,7 +43,7 @@ class GetStickerOutline extends Outline implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get the outline scaled for animated emoji
+     * Get Pass true to get the outline scaled for animated emoji.
      */
     public function getForAnimatedEmoji(): bool
     {
@@ -51,7 +51,7 @@ class GetStickerOutline extends Outline implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get the outline scaled for animated emoji
+     * Set Pass true to get the outline scaled for animated emoji.
      */
     public function setForAnimatedEmoji(bool $forAnimatedEmoji): self
     {
@@ -61,7 +61,7 @@ class GetStickerOutline extends Outline implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get the outline scaled for clicked animated emoji message
+     * Get Pass true to get the outline scaled for clicked animated emoji message.
      */
     public function getForClickedAnimatedEmojiMessage(): bool
     {
@@ -69,7 +69,7 @@ class GetStickerOutline extends Outline implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get the outline scaled for clicked animated emoji message
+     * Set Pass true to get the outline scaled for clicked animated emoji message.
      */
     public function setForClickedAnimatedEmojiMessage(bool $forClickedAnimatedEmojiMessage): self
     {

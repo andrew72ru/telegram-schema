@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of chats similar to the given chat @chat_id Identifier of the target chat; must be an identifier of a channel chat
+ * Returns a list of chats similar to the given chat @chat_id Identifier of the target chat; must be an identifier of a channel chat.
  */
 class GetChatSimilarChats extends Chats implements \JsonSerializable
 {

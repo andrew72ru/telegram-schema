@@ -28,7 +28,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Get Hint for the password; may be empty
+     * Get Hint for the password; may be empty.
      */
     public function getPasswordHint(): string
     {
@@ -36,7 +36,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Set Hint for the password; may be empty
+     * Set Hint for the password; may be empty.
      */
     public function setPasswordHint(string $passwordHint): self
     {
@@ -46,7 +46,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Get True, if a recovery email address has been set up
+     * Get True, if a recovery email address has been set up.
      */
     public function getHasRecoveryEmailAddress(): bool
     {
@@ -54,7 +54,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Set True, if a recovery email address has been set up
+     * Set True, if a recovery email address has been set up.
      */
     public function setHasRecoveryEmailAddress(bool $hasRecoveryEmailAddress): self
     {
@@ -64,7 +64,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Get True, if some Telegram Passport elements were saved
+     * Get True, if some Telegram Passport elements were saved.
      */
     public function getHasPassportData(): bool
     {
@@ -72,7 +72,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Set True, if some Telegram Passport elements were saved
+     * Set True, if some Telegram Passport elements were saved.
      */
     public function setHasPassportData(bool $hasPassportData): self
     {
@@ -82,7 +82,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Get Pattern of the email address to which the recovery email was sent; empty until a recovery email has been sent
+     * Get Pattern of the email address to which the recovery email was sent; empty until a recovery email has been sent.
      */
     public function getRecoveryEmailAddressPattern(): string
     {
@@ -90,7 +90,7 @@ class AuthorizationStateWaitPassword extends AuthorizationState implements \Json
     }
 
     /**
-     * Set Pattern of the email address to which the recovery email was sent; empty until a recovery email has been sent
+     * Set Pattern of the email address to which the recovery email was sent; empty until a recovery email has been sent.
      */
     public function setRecoveryEmailAddressPattern(string $recoveryEmailAddressPattern): self
     {

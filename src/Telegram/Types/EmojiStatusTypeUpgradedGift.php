@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An upgraded gift set as emoji status
+ * An upgraded gift set as emoji status.
  */
 class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Get Identifier of the upgraded gift
+     * Get Identifier of the upgraded gift.
      */
     public function getUpgradedGiftId(): int
     {
@@ -42,7 +42,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Set Identifier of the upgraded gift
+     * Set Identifier of the upgraded gift.
      */
     public function setUpgradedGiftId(int $upgradedGiftId): self
     {
@@ -52,7 +52,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Get The title of the upgraded gift
+     * Get The title of the upgraded gift.
      */
     public function getGiftTitle(): string
     {
@@ -60,7 +60,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Set The title of the upgraded gift
+     * Set The title of the upgraded gift.
      */
     public function setGiftTitle(string $giftTitle): self
     {
@@ -70,7 +70,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Get Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift
+     * Get Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift.
      */
     public function getGiftName(): string
     {
@@ -78,7 +78,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Set Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift
+     * Set Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift.
      */
     public function setGiftName(string $giftName): self
     {
@@ -88,7 +88,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Get Custom emoji identifier of the model of the upgraded gift
+     * Get Custom emoji identifier of the model of the upgraded gift.
      */
     public function getModelCustomEmojiId(): int
     {
@@ -96,7 +96,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Set Custom emoji identifier of the model of the upgraded gift
+     * Set Custom emoji identifier of the model of the upgraded gift.
      */
     public function setModelCustomEmojiId(int $modelCustomEmojiId): self
     {
@@ -106,7 +106,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Get Custom emoji identifier of the symbol of the upgraded gift
+     * Get Custom emoji identifier of the symbol of the upgraded gift.
      */
     public function getSymbolCustomEmojiId(): int
     {
@@ -114,7 +114,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Set Custom emoji identifier of the symbol of the upgraded gift
+     * Set Custom emoji identifier of the symbol of the upgraded gift.
      */
     public function setSymbolCustomEmojiId(int $symbolCustomEmojiId): self
     {
@@ -124,7 +124,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Get Colors of the backdrop of the upgraded gift
+     * Get Colors of the backdrop of the upgraded gift.
      */
     public function getBackdropColors(): UpgradedGiftBackdropColors|null
     {
@@ -132,7 +132,7 @@ class EmojiStatusTypeUpgradedGift extends EmojiStatusType implements \JsonSerial
     }
 
     /**
-     * Set Colors of the backdrop of the upgraded gift
+     * Set Colors of the backdrop of the upgraded gift.
      */
     public function setBackdropColors(UpgradedGiftBackdropColors|null $backdropColors): self
     {

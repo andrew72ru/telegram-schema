@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes the default reply markup from a chat. Must be called after a one-time keyboard or a replyMarkupForceReply reply markup has been used. An updateChatReplyMarkup update will be sent if the reply markup is changed
+ * Deletes the default reply markup from a chat. Must be called after a one-time keyboard or a replyMarkupForceReply reply markup has been used. An updateChatReplyMarkup update will be sent if the reply markup is changed.
  */
 class DeleteChatReplyMarkup extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteChatReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class DeleteChatReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class DeleteChatReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The message identifier of the used keyboard
+     * Get The message identifier of the used keyboard.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class DeleteChatReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The message identifier of the used keyboard
+     * Set The message identifier of the used keyboard.
      */
     public function setMessageId(int $messageId): self
     {

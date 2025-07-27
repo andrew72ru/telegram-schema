@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes accent color and background custom emoji for profile of the current user; for Telegram Premium users only
+ * Changes accent color and background custom emoji for profile of the current user; for Telegram Premium users only.
  */
 class SetProfileAccentColor extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color to use for profile; pass -1 if none
+     * Get Identifier of the accent color to use for profile; pass -1 if none.
      */
     public function getProfileAccentColorId(): int
     {
@@ -30,7 +30,7 @@ class SetProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color to use for profile; pass -1 if none
+     * Set Identifier of the accent color to use for profile; pass -1 if none.
      */
     public function setProfileAccentColorId(int $profileAccentColorId): self
     {
@@ -40,7 +40,7 @@ class SetProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the user's profile photo background; 0 if none
+     * Get Identifier of a custom emoji to be shown on the user's profile photo background; 0 if none.
      */
     public function getProfileBackgroundCustomEmojiId(): int
     {
@@ -48,7 +48,7 @@ class SetProfileAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the user's profile photo background; 0 if none
+     * Set Identifier of a custom emoji to be shown on the user's profile photo background; 0 if none.
      */
     public function setProfileBackgroundCustomEmojiId(int $profileBackgroundCustomEmojiId): self
     {

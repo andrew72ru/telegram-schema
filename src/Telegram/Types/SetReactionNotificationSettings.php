@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes notification settings for reactions @notification_settings The new notification settings for reactions
+ * Changes notification settings for reactions @notification_settings The new notification settings for reactions.
  */
 class SetReactionNotificationSettings extends Ok implements \JsonSerializable
 {

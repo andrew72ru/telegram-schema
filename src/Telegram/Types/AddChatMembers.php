@@ -22,7 +22,7 @@ class AddChatMembers extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class AddChatMembers extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class AddChatMembers extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the users to be added to the chat. The maximum number of added users is 20 for supergroups and 100 for channels
+     * Get Identifiers of the users to be added to the chat. The maximum number of added users is 20 for supergroups and 100 for channels.
      */
     public function getUserIds(): array|null
     {
@@ -48,7 +48,7 @@ class AddChatMembers extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the users to be added to the chat. The maximum number of added users is 20 for supergroups and 100 for channels
+     * Set Identifiers of the users to be added to the chat. The maximum number of added users is 20 for supergroups and 100 for channels.
      */
     public function setUserIds(array|null $userIds): self
     {

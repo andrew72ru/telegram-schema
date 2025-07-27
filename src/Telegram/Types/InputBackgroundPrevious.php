@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A background previously set in the chat; for chat backgrounds only @message_id Identifier of the message with the background
+ * A background previously set in the chat; for chat backgrounds only @message_id Identifier of the message with the background.
  */
 class InputBackgroundPrevious extends InputBackground implements \JsonSerializable
 {

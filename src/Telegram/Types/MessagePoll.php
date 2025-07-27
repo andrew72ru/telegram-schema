@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a poll @poll The poll description
+ * A message with a poll @poll The poll description.
  */
 class MessagePoll extends MessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of quick reply messages @messages List of quick reply messages; messages may be null
+ * Contains a list of quick reply messages @messages List of quick reply messages; messages may be null.
  */
 class QuickReplyMessages implements \JsonSerializable
 {

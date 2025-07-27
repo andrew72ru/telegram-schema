@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Specifies the supported call protocols
+ * Specifies the supported call protocols.
  */
 class CallProtocol implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Get True, if UDP peer-to-peer connections are supported
+     * Get True, if UDP peer-to-peer connections are supported.
      */
     public function getUdpP2p(): bool
     {
@@ -39,7 +39,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Set True, if UDP peer-to-peer connections are supported
+     * Set True, if UDP peer-to-peer connections are supported.
      */
     public function setUdpP2p(bool $udpP2p): self
     {
@@ -49,7 +49,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Get True, if connection through UDP reflectors is supported
+     * Get True, if connection through UDP reflectors is supported.
      */
     public function getUdpReflector(): bool
     {
@@ -57,7 +57,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Set True, if connection through UDP reflectors is supported
+     * Set True, if connection through UDP reflectors is supported.
      */
     public function setUdpReflector(bool $udpReflector): self
     {
@@ -67,7 +67,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Get The minimum supported API layer; use 65
+     * Get The minimum supported API layer; use 65.
      */
     public function getMinLayer(): int
     {
@@ -75,7 +75,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Set The minimum supported API layer; use 65
+     * Set The minimum supported API layer; use 65.
      */
     public function setMinLayer(int $minLayer): self
     {
@@ -85,7 +85,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Get The maximum supported API layer; use 92
+     * Get The maximum supported API layer; use 92.
      */
     public function getMaxLayer(): int
     {
@@ -93,7 +93,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Set The maximum supported API layer; use 92
+     * Set The maximum supported API layer; use 92.
      */
     public function setMaxLayer(int $maxLayer): self
     {
@@ -103,7 +103,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Get List of supported tgcalls versions
+     * Get List of supported tgcalls versions.
      */
     public function getLibraryVersions(): array|null
     {
@@ -111,7 +111,7 @@ class CallProtocol implements \JsonSerializable
     }
 
     /**
-     * Set List of supported tgcalls versions
+     * Set List of supported tgcalls versions.
      */
     public function setLibraryVersions(array|null $libraryVersions): self
     {

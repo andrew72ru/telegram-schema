@@ -22,7 +22,7 @@ class LoadDirectMessagesChatTopics extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class LoadDirectMessagesChatTopics extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class LoadDirectMessagesChatTopics extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
+     * Get The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class LoadDirectMessagesChatTopics extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
+     * Set The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached.
      */
     public function setLimit(int $limit): self
     {

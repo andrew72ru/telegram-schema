@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a background. Link preview title and description are available only for filled backgrounds
+ * The link is a link to a background. Link preview title and description are available only for filled backgrounds.
  */
 class LinkPreviewTypeBackground extends LinkPreviewType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class LinkPreviewTypeBackground extends LinkPreviewType implements \JsonSerializ
     }
 
     /**
-     * Get Document with the background; may be null for filled backgrounds
+     * Get Document with the background; may be null for filled backgrounds.
      */
     public function getDocument(): Document|null
     {
@@ -30,7 +30,7 @@ class LinkPreviewTypeBackground extends LinkPreviewType implements \JsonSerializ
     }
 
     /**
-     * Set Document with the background; may be null for filled backgrounds
+     * Set Document with the background; may be null for filled backgrounds.
      */
     public function setDocument(Document|null $document): self
     {
@@ -40,7 +40,7 @@ class LinkPreviewTypeBackground extends LinkPreviewType implements \JsonSerializ
     }
 
     /**
-     * Get Type of the background; may be null if unknown
+     * Get Type of the background; may be null if unknown.
      */
     public function getBackgroundType(): BackgroundType|null
     {
@@ -48,7 +48,7 @@ class LinkPreviewTypeBackground extends LinkPreviewType implements \JsonSerializ
     }
 
     /**
-     * Set Type of the background; may be null if unknown
+     * Set Type of the background; may be null if unknown.
      */
     public function setBackgroundType(BackgroundType|null $backgroundType): self
     {

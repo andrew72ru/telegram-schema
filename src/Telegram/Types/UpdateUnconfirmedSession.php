@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The first unconfirmed session has changed @session The unconfirmed session; may be null if none
+ * The first unconfirmed session has changed @session The unconfirmed session; may be null if none.
  */
 class UpdateUnconfirmedSession extends Update implements \JsonSerializable
 {

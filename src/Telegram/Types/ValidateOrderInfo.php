@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Validates the order information provided by a user and returns the available shipping options for a flexible invoice
+ * Validates the order information provided by a user and returns the available shipping options for a flexible invoice.
  */
 class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get The invoice
+     * Get The invoice.
      */
     public function getInputInvoice(): InputInvoice|null
     {
@@ -33,7 +33,7 @@ class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set The invoice
+     * Set The invoice.
      */
     public function setInputInvoice(InputInvoice|null $inputInvoice): self
     {
@@ -43,7 +43,7 @@ class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get The order information, provided by the user; pass null if empty
+     * Get The order information, provided by the user; pass null if empty.
      */
     public function getOrderInfo(): OrderInfo|null
     {
@@ -51,7 +51,7 @@ class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set The order information, provided by the user; pass null if empty
+     * Set The order information, provided by the user; pass null if empty.
      */
     public function setOrderInfo(OrderInfo|null $orderInfo): self
     {
@@ -61,7 +61,7 @@ class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to save the order information
+     * Get Pass true to save the order information.
      */
     public function getAllowSave(): bool
     {
@@ -69,7 +69,7 @@ class ValidateOrderInfo extends ValidatedOrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to save the order information
+     * Set Pass true to save the order information.
      */
     public function setAllowSave(bool $allowSave): self
     {

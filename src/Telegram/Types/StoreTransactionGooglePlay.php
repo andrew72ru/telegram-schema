@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A purchase through Google Play
+ * A purchase through Google Play.
  */
 class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerial
     }
 
     /**
-     * Get Application package name
+     * Get Application package name.
      */
     public function getPackageName(): string
     {
@@ -33,7 +33,7 @@ class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerial
     }
 
     /**
-     * Set Application package name
+     * Set Application package name.
      */
     public function setPackageName(string $packageName): self
     {
@@ -43,7 +43,7 @@ class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerial
     }
 
     /**
-     * Get Identifier of the purchased store product
+     * Get Identifier of the purchased store product.
      */
     public function getStoreProductId(): string
     {
@@ -51,7 +51,7 @@ class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerial
     }
 
     /**
-     * Set Identifier of the purchased store product
+     * Set Identifier of the purchased store product.
      */
     public function setStoreProductId(string $storeProductId): self
     {
@@ -61,7 +61,7 @@ class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerial
     }
 
     /**
-     * Get Google Play purchase token
+     * Get Google Play purchase token.
      */
     public function getPurchaseToken(): string
     {
@@ -69,7 +69,7 @@ class StoreTransactionGooglePlay extends StoreTransaction implements \JsonSerial
     }
 
     /**
-     * Set Google Play purchase token
+     * Set Google Play purchase token.
      */
     public function setPurchaseToken(string $purchaseToken): self
     {

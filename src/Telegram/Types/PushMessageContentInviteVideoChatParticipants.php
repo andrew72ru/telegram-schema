@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An invitation of participants to a video chat or live stream
+ * An invitation of participants to a video chat or live stream.
  */
 class PushMessageContentInviteVideoChatParticipants extends PushMessageContent implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class PushMessageContentInviteVideoChatParticipants extends PushMessageContent i
     }
 
     /**
-     * Get True, if the current user was invited to the video chat or the live stream
+     * Get True, if the current user was invited to the video chat or the live stream.
      */
     public function getIsCurrentUser(): bool
     {
@@ -27,7 +27,7 @@ class PushMessageContentInviteVideoChatParticipants extends PushMessageContent i
     }
 
     /**
-     * Set True, if the current user was invited to the video chat or the live stream
+     * Set True, if the current user was invited to the video chat or the live stream.
      */
     public function setIsCurrentUser(bool $isCurrentUser): self
     {

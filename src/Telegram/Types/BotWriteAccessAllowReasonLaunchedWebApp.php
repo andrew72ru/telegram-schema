@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user launched a Web App using getWebAppLinkUrl @web_app Information about the Web App
+ * The user launched a Web App using getWebAppLinkUrl @web_app Information about the Web App.
  */
 class BotWriteAccessAllowReasonLaunchedWebApp extends BotWriteAccessAllowReason implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * A self-destructed voice note message
+ * A self-destructed voice note message.
  */
 class MessageExpiredVoiceNote extends MessageContent implements \JsonSerializable
 {

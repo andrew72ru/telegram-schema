@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for the specified query in the title and username of up to 50 recently found chats. This is an offline method
+ * Searches for the specified query in the title and username of up to 50 recently found chats. This is an offline method.
  */
 class SearchRecentlyFoundChats extends Chats implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchRecentlyFoundChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -30,7 +30,7 @@ class SearchRecentlyFoundChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {
@@ -40,7 +40,7 @@ class SearchRecentlyFoundChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of chats to be returned
+     * Get The maximum number of chats to be returned.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class SearchRecentlyFoundChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of chats to be returned
+     * Set The maximum number of chats to be returned.
      */
     public function setLimit(int $limit): self
     {

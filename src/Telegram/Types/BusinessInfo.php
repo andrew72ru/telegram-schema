@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a Telegram Business account
+ * Contains information about a Telegram Business account.
  */
 class BusinessInfo implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get Location of the business; may be null if none
+     * Get Location of the business; may be null if none.
      */
     public function getLocation(): BusinessLocation|null
     {
@@ -48,7 +48,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set Location of the business; may be null if none
+     * Set Location of the business; may be null if none.
      */
     public function setLocation(BusinessLocation|null $location): self
     {
@@ -58,7 +58,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get Opening hours of the business; may be null if none. The hours are guaranteed to be valid and has already been split by week days
+     * Get Opening hours of the business; may be null if none. The hours are guaranteed to be valid and has already been split by week days.
      */
     public function getOpeningHours(): BusinessOpeningHours|null
     {
@@ -66,7 +66,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set Opening hours of the business; may be null if none. The hours are guaranteed to be valid and has already been split by week days
+     * Set Opening hours of the business; may be null if none. The hours are guaranteed to be valid and has already been split by week days.
      */
     public function setOpeningHours(BusinessOpeningHours|null $openingHours): self
     {
@@ -76,7 +76,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get Opening hours of the business in the local time; may be null if none. The hours are guaranteed to be valid and has already been split by week days.
+     * Get Opening hours of the business in the local time; may be null if none. The hours are guaranteed to be valid and has already been split by week days..
      */
     public function getLocalOpeningHours(): BusinessOpeningHours|null
     {
@@ -84,7 +84,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set Opening hours of the business in the local time; may be null if none. The hours are guaranteed to be valid and has already been split by week days.
+     * Set Opening hours of the business in the local time; may be null if none. The hours are guaranteed to be valid and has already been split by week days..
      */
     public function setLocalOpeningHours(BusinessOpeningHours|null $localOpeningHours): self
     {
@@ -94,7 +94,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get Time left before the business will open the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes
+     * Get Time left before the business will open the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes.
      */
     public function getNextOpenIn(): int
     {
@@ -102,7 +102,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set Time left before the business will open the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes
+     * Set Time left before the business will open the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes.
      */
     public function setNextOpenIn(int $nextOpenIn): self
     {
@@ -112,7 +112,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get Time left before the business will close the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes
+     * Get Time left before the business will close the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes.
      */
     public function getNextCloseIn(): int
     {
@@ -120,7 +120,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set Time left before the business will close the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes
+     * Set Time left before the business will close the next time, in seconds; 0 if unknown. An updateUserFullInfo update is not triggered when value of this field changes.
      */
     public function setNextCloseIn(int $nextCloseIn): self
     {
@@ -130,7 +130,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get The greeting message; may be null if none or the Business account is not of the current user
+     * Get The greeting message; may be null if none or the Business account is not of the current user.
      */
     public function getGreetingMessageSettings(): BusinessGreetingMessageSettings|null
     {
@@ -138,7 +138,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set The greeting message; may be null if none or the Business account is not of the current user
+     * Set The greeting message; may be null if none or the Business account is not of the current user.
      */
     public function setGreetingMessageSettings(BusinessGreetingMessageSettings|null $greetingMessageSettings): self
     {
@@ -148,7 +148,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get The away message; may be null if none or the Business account is not of the current user
+     * Get The away message; may be null if none or the Business account is not of the current user.
      */
     public function getAwayMessageSettings(): BusinessAwayMessageSettings|null
     {
@@ -156,7 +156,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set The away message; may be null if none or the Business account is not of the current user
+     * Set The away message; may be null if none or the Business account is not of the current user.
      */
     public function setAwayMessageSettings(BusinessAwayMessageSettings|null $awayMessageSettings): self
     {
@@ -166,7 +166,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about start page of the account; may be null if none
+     * Get Information about start page of the account; may be null if none.
      */
     public function getStartPage(): BusinessStartPage|null
     {
@@ -174,7 +174,7 @@ class BusinessInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about start page of the account; may be null if none
+     * Set Information about start page of the account; may be null if none.
      */
     public function setStartPage(BusinessStartPage|null $startPage): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Animated stickers to be combined into a slot machine
+ * Animated stickers to be combined into a slot machine.
  */
 class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Get The animated sticker with the slot machine background. The background animation must start playing after all reel animations finish
+     * Get The animated sticker with the slot machine background. The background animation must start playing after all reel animations finish.
      */
     public function getBackground(): Sticker|null
     {
@@ -39,7 +39,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Set The animated sticker with the slot machine background. The background animation must start playing after all reel animations finish
+     * Set The animated sticker with the slot machine background. The background animation must start playing after all reel animations finish.
      */
     public function setBackground(Sticker|null $background): self
     {
@@ -49,7 +49,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Get The animated sticker with the lever animation. The lever animation must play once in the initial dice state
+     * Get The animated sticker with the lever animation. The lever animation must play once in the initial dice state.
      */
     public function getLever(): Sticker|null
     {
@@ -57,7 +57,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Set The animated sticker with the lever animation. The lever animation must play once in the initial dice state
+     * Set The animated sticker with the lever animation. The lever animation must play once in the initial dice state.
      */
     public function setLever(Sticker|null $lever): self
     {
@@ -67,7 +67,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Get The animated sticker with the left reel
+     * Get The animated sticker with the left reel.
      */
     public function getLeftReel(): Sticker|null
     {
@@ -75,7 +75,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Set The animated sticker with the left reel
+     * Set The animated sticker with the left reel.
      */
     public function setLeftReel(Sticker|null $leftReel): self
     {
@@ -85,7 +85,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Get The animated sticker with the center reel
+     * Get The animated sticker with the center reel.
      */
     public function getCenterReel(): Sticker|null
     {
@@ -93,7 +93,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Set The animated sticker with the center reel
+     * Set The animated sticker with the center reel.
      */
     public function setCenterReel(Sticker|null $centerReel): self
     {
@@ -103,7 +103,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Get The animated sticker with the right reel
+     * Get The animated sticker with the right reel.
      */
     public function getRightReel(): Sticker|null
     {
@@ -111,7 +111,7 @@ class DiceStickersSlotMachine extends DiceStickers implements \JsonSerializable
     }
 
     /**
-     * Set The animated sticker with the right reel
+     * Set The animated sticker with the right reel.
      */
     public function setRightReel(Sticker|null $rightReel): self
     {

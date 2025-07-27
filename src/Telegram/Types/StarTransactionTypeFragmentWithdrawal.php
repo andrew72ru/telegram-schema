@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a withdrawal of earned Telegram Stars to Fragment; for regular users, bots, supergroup and channel chats only
+ * The transaction is a withdrawal of earned Telegram Stars to Fragment; for regular users, bots, supergroup and channel chats only.
  */
 class StarTransactionTypeFragmentWithdrawal extends StarTransactionType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class StarTransactionTypeFragmentWithdrawal extends StarTransactionType implemen
     }
 
     /**
-     * Get State of the withdrawal; may be null for refunds from Fragment
+     * Get State of the withdrawal; may be null for refunds from Fragment.
      */
     public function getWithdrawalState(): RevenueWithdrawalState|null
     {
@@ -27,7 +27,7 @@ class StarTransactionTypeFragmentWithdrawal extends StarTransactionType implemen
     }
 
     /**
-     * Set State of the withdrawal; may be null for refunds from Fragment
+     * Set State of the withdrawal; may be null for refunds from Fragment.
      */
     public function setWithdrawalState(RevenueWithdrawalState|null $withdrawalState): self
     {

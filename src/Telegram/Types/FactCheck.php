@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a fact-check added to the message by an independent checker
+ * Describes a fact-check added to the message by an independent checker.
  */
 class FactCheck implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class FactCheck implements \JsonSerializable
     }
 
     /**
-     * Get Text of the fact-check
+     * Get Text of the fact-check.
      */
     public function getText(): FormattedText|null
     {
@@ -30,7 +30,7 @@ class FactCheck implements \JsonSerializable
     }
 
     /**
-     * Set Text of the fact-check
+     * Set Text of the fact-check.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -40,7 +40,7 @@ class FactCheck implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code of the country for which the fact-check is shown
+     * Get A two-letter ISO 3166-1 alpha-2 country code of the country for which the fact-check is shown.
      */
     public function getCountryCode(): string
     {
@@ -48,7 +48,7 @@ class FactCheck implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code of the country for which the fact-check is shown
+     * Set A two-letter ISO 3166-1 alpha-2 country code of the country for which the fact-check is shown.
      */
     public function setCountryCode(string $countryCode): self
     {

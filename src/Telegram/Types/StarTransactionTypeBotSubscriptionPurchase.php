@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a purchase of a subscription from a bot or a business account by the current user; for regular users only
+ * The transaction is a purchase of a subscription from a bot or a business account by the current user; for regular users only.
  */
 class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType imp
     }
 
     /**
-     * Get Identifier of the bot or the business account user that created the subscription link
+     * Get Identifier of the bot or the business account user that created the subscription link.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType imp
     }
 
     /**
-     * Set Identifier of the bot or the business account user that created the subscription link
+     * Set Identifier of the bot or the business account user that created the subscription link.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType imp
     }
 
     /**
-     * Get The number of seconds between consecutive Telegram Star debitings
+     * Get The number of seconds between consecutive Telegram Star debitings.
      */
     public function getSubscriptionPeriod(): int
     {
@@ -51,7 +51,7 @@ class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType imp
     }
 
     /**
-     * Set The number of seconds between consecutive Telegram Star debitings
+     * Set The number of seconds between consecutive Telegram Star debitings.
      */
     public function setSubscriptionPeriod(int $subscriptionPeriod): self
     {
@@ -61,7 +61,7 @@ class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType imp
     }
 
     /**
-     * Get Information about the bought subscription
+     * Get Information about the bought subscription.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -69,7 +69,7 @@ class StarTransactionTypeBotSubscriptionPurchase extends StarTransactionType imp
     }
 
     /**
-     * Set Information about the bought subscription
+     * Set Information about the bought subscription.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {

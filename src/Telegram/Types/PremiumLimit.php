@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a limit, increased for Premium users @type The type of the limit @default_value Default value of the limit @premium_value Value of the limit for Premium users
+ * Contains information about a limit, increased for Premium users @var The type of the limit @default_value Default value of the limit @premium_value Value of the limit for Premium users.
  */
 class PremiumLimit implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs server about an in-store purchase. For official applications only @transaction Information about the transaction @purpose Transaction purpose
+ * Informs server about an in-store purchase. For official applications only @transaction Information about the transaction @purpose Transaction purpose.
  */
 class AssignStoreTransaction extends Ok implements \JsonSerializable
 {

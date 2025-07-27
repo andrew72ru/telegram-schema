@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Constructs a persistent HTTP URL for a background @name Background name @type Background type; backgroundTypeChatTheme isn't supported
+ * Constructs a persistent HTTP URL for a background @name Background name @var Background type; backgroundTypeChatTheme isn't supported.
  */
 class GetBackgroundUrl extends HttpUrl implements \JsonSerializable
 {

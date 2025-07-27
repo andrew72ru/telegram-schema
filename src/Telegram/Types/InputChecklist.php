@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a checklist to be sent
+ * Describes a checklist to be sent.
  */
 class InputChecklist implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Get Title of the checklist; 1-getOption("checklist_title_length_max") characters. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities
+     * Get Title of the checklist; 1-getOption("checklist_title_length_max") characters. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities.
      */
     public function getTitle(): FormattedText|null
     {
@@ -36,7 +36,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Set Title of the checklist; 1-getOption("checklist_title_length_max") characters. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities
+     * Set Title of the checklist; 1-getOption("checklist_title_length_max") characters. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities.
      */
     public function setTitle(FormattedText|null $title): self
     {
@@ -46,7 +46,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Get List of tasks in the checklist; 1-getOption("checklist_task_count_max") tasks
+     * Get List of tasks in the checklist; 1-getOption("checklist_task_count_max") tasks.
      */
     public function getTasks(): array|null
     {
@@ -54,7 +54,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Set List of tasks in the checklist; 1-getOption("checklist_task_count_max") tasks
+     * Set List of tasks in the checklist; 1-getOption("checklist_task_count_max") tasks.
      */
     public function setTasks(array|null $tasks): self
     {
@@ -64,7 +64,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Get True, if other users can add tasks to the list
+     * Get True, if other users can add tasks to the list.
      */
     public function getOthersCanAddTasks(): bool
     {
@@ -72,7 +72,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Set True, if other users can add tasks to the list
+     * Set True, if other users can add tasks to the list.
      */
     public function setOthersCanAddTasks(bool $othersCanAddTasks): self
     {
@@ -82,7 +82,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Get True, if other users can mark tasks as done or not done
+     * Get True, if other users can mark tasks as done or not done.
      */
     public function getOthersCanMarkTasksAsDone(): bool
     {
@@ -90,7 +90,7 @@ class InputChecklist implements \JsonSerializable
     }
 
     /**
-     * Set True, if other users can mark tasks as done or not done
+     * Set True, if other users can mark tasks as done or not done.
      */
     public function setOthersCanMarkTasksAsDone(bool $othersCanMarkTasksAsDone): self
     {

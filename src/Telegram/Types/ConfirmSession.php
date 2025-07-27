@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Confirms an unconfirmed session of the current user from another device @session_id Session identifier
+ * Confirms an unconfirmed session of the current user from another device @session_id Session identifier.
  */
 class ConfirmSession extends Ok implements \JsonSerializable
 {

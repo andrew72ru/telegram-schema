@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns recently active users in reverse chronological order
+ * Returns recently active users in reverse chronological order.
  */
 class SupergroupMembersFilterRecent extends SupergroupMembersFilter implements \JsonSerializable
 {

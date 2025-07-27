@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes active state for a username of a bot. The editable username can't be disabled. May return an error with a message "USERNAMES_ACTIVE_TOO_MUCH" if the maximum number of active usernames has been reached. Can be called only if userTypeBot.can_be_edited == true
+ * Changes active state for a username of a bot. The editable username can't be disabled. May return an error with a message "USERNAMES_ACTIVE_TOO_MUCH" if the maximum number of active usernames has been reached. Can be called only if userTypeBot.can_be_edited == true.
  */
 class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The username to change
+     * Get The username to change.
      */
     public function getUsername(): string
     {
@@ -51,7 +51,7 @@ class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The username to change
+     * Set The username to change.
      */
     public function setUsername(string $username): self
     {
@@ -61,7 +61,7 @@ class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to activate the username; pass false to disable it
+     * Get Pass true to activate the username; pass false to disable it.
      */
     public function getIsActive(): bool
     {
@@ -69,7 +69,7 @@ class ToggleBotUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to activate the username; pass false to disable it
+     * Set Pass true to activate the username; pass false to disable it.
      */
     public function setIsActive(bool $isActive): self
     {

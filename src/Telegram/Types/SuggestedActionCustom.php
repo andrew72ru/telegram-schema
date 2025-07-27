@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A custom suggestion to be shown at the top of the chat list
+ * A custom suggestion to be shown at the top of the chat list.
  */
 class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Get Unique name of the suggestion
+     * Get Unique name of the suggestion.
      */
     public function getName(): string
     {
@@ -36,7 +36,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Set Unique name of the suggestion
+     * Set Unique name of the suggestion.
      */
     public function setName(string $name): self
     {
@@ -46,7 +46,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Get Title of the suggestion
+     * Get Title of the suggestion.
      */
     public function getTitle(): FormattedText|null
     {
@@ -54,7 +54,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Set Title of the suggestion
+     * Set Title of the suggestion.
      */
     public function setTitle(FormattedText|null $title): self
     {
@@ -64,7 +64,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Get A custom suggestion to be shown at the top of the chat list
+     * Get A custom suggestion to be shown at the top of the chat list.
      */
     public function getDescription(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Set A custom suggestion to be shown at the top of the chat list
+     * Set A custom suggestion to be shown at the top of the chat list.
      */
     public function setDescription(FormattedText|null $description): self
     {
@@ -82,7 +82,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Get The link to open when the suggestion is clicked
+     * Get The link to open when the suggestion is clicked.
      */
     public function getUrl(): string
     {
@@ -90,7 +90,7 @@ class SuggestedActionCustom extends SuggestedAction implements \JsonSerializable
     }
 
     /**
-     * Set The link to open when the suggestion is clicked
+     * Set The link to open when the suggestion is clicked.
      */
     public function setUrl(string $url): self
     {

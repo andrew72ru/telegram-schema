@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An anchor @name Anchor name
+ * An anchor @name Anchor name.
  */
 class RichTextAnchor extends RichText implements \JsonSerializable
 {

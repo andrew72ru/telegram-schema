@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat member was deleted @user_id User identifier of the deleted chat member
+ * A chat member was deleted @user_id User identifier of the deleted chat member.
  */
 class MessageChatDeleteMember extends MessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets a sticker set thumbnail
+ * Sets a sticker set thumbnail.
  */
 class SetStickerSetThumbnail extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set owner; ignored for regular users
+     * Get Sticker set owner; ignored for regular users.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set owner; ignored for regular users
+     * Set Sticker set owner; ignored for regular users.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set name. The sticker set must be owned by the current user
+     * Get Sticker set name. The sticker set must be owned by the current user.
      */
     public function getName(): string
     {
@@ -54,7 +54,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set name. The sticker set must be owned by the current user
+     * Set Sticker set name. The sticker set must be owned by the current user.
      */
     public function setName(string $name): self
     {
@@ -64,7 +64,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail to set; pass null to remove the sticker set thumbnail
+     * Get Thumbnail to set; pass null to remove the sticker set thumbnail.
      */
     public function getThumbnail(): InputFile|null
     {
@@ -72,7 +72,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail to set; pass null to remove the sticker set thumbnail
+     * Set Thumbnail to set; pass null to remove the sticker set thumbnail.
      */
     public function setThumbnail(InputFile|null $thumbnail): self
     {
@@ -82,7 +82,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Format of the thumbnail; pass null if thumbnail is removed
+     * Get Format of the thumbnail; pass null if thumbnail is removed.
      */
     public function getFormat(): StickerFormat|null
     {
@@ -90,7 +90,7 @@ class SetStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Format of the thumbnail; pass null if thumbnail is removed
+     * Set Format of the thumbnail; pass null if thumbnail is removed.
      */
     public function setFormat(StickerFormat|null $format): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only
+ * Edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in an inline message sent via a bot; for bots only.
  */
 class EditInlineMessageMedia extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditInlineMessageMedia extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Inline message identifier
+     * Get Inline message identifier.
      */
     public function getInlineMessageId(): string
     {
@@ -33,7 +33,7 @@ class EditInlineMessageMedia extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Inline message identifier
+     * Set Inline message identifier.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {
@@ -43,7 +43,7 @@ class EditInlineMessageMedia extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none; for bots only
+     * Get The new message reply markup; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -51,7 +51,7 @@ class EditInlineMessageMedia extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none; for bots only
+     * Set The new message reply markup; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -61,7 +61,7 @@ class EditInlineMessageMedia extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -69,7 +69,7 @@ class EditInlineMessageMedia extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

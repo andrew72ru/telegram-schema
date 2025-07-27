@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some data of a user has changed. This update is guaranteed to come before the user identifier is returned to the application @user New data about the user
+ * Some data of a user has changed. This update is guaranteed to come before the user identifier is returned to the application @user New data about the user.
  */
 class UpdateUser extends Update implements \JsonSerializable
 {

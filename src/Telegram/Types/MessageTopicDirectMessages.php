@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A topic in a channel direct messages chat administered by the current user @direct_messages_chat_topic_id Unique identifier of the topic
+ * A topic in a channel direct messages chat administered by the current user @direct_messages_chat_topic_id Unique identifier of the topic.
  */
 class MessageTopicDirectMessages extends MessageTopic implements \JsonSerializable
 {

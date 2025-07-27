@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns reactions added for a message, along with their sender
+ * Returns reactions added for a message, along with their sender.
  */
 class GetMessageAddedReactions extends AddedReactions implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the message. Use message.interaction_info.reactions.can_get_added_reactions to check whether added reactions can be received for the message
+     * Get Identifier of the message. Use message.interaction_info.reactions.can_get_added_reactions to check whether added reactions can be received for the message.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the message. Use message.interaction_info.reactions.can_get_added_reactions to check whether added reactions can be received for the message
+     * Set Identifier of the message. Use message.interaction_info.reactions.can_get_added_reactions to check whether added reactions can be received for the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Get Type of the reactions to return; pass null to return all added reactions; reactionTypePaid isn't supported
+     * Get Type of the reactions to return; pass null to return all added reactions; reactionTypePaid isn't supported.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -75,7 +75,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Set Type of the reactions to return; pass null to return all added reactions; reactionTypePaid isn't supported
+     * Set Type of the reactions to return; pass null to return all added reactions; reactionTypePaid isn't supported.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {
@@ -85,7 +85,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -93,7 +93,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -103,7 +103,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Get The maximum number of reactions to be returned; must be positive and can't be greater than 100
+     * Get The maximum number of reactions to be returned; must be positive and can't be greater than 100.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class GetMessageAddedReactions extends AddedReactions implements \JsonSerializab
     }
 
     /**
-     * Set The maximum number of reactions to be returned; must be positive and can't be greater than 100
+     * Set The maximum number of reactions to be returned; must be positive and can't be greater than 100.
      */
     public function setLimit(int $limit): self
     {

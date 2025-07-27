@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The category contains a list of similar emoji to search for in getStickers and searchStickers for stickers,
+ * The category contains a list of similar emoji to search for in getStickers and searchStickers for stickers,.
  */
 class EmojiCategorySourceSearch extends EmojiCategorySource implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class EmojiCategorySourceSearch extends EmojiCategorySource implements \JsonSeri
     }
 
     /**
-     * Get List of emojis to search for
+     * Get List of emojis to search for.
      */
     public function getEmojis(): array|null
     {
@@ -27,7 +27,7 @@ class EmojiCategorySourceSearch extends EmojiCategorySource implements \JsonSeri
     }
 
     /**
-     * Set List of emojis to search for
+     * Set List of emojis to search for.
      */
     public function setEmojis(array|null $emojis): self
     {

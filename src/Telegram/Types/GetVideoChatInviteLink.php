@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns invite link to a video chat in a public chat
+ * Returns invite link to a video chat in a public chat.
  */
 class GetVideoChatInviteLink extends HttpUrl implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetVideoChatInviteLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class GetVideoChatInviteLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class GetVideoChatInviteLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the invite link needs to contain an invite hash, passing which to joinVideoChat would allow the invited user to unmute themselves. Requires groupCall.can_be_managed right
+     * Get Pass true if the invite link needs to contain an invite hash, passing which to joinVideoChat would allow the invited user to unmute themselves. Requires groupCall.can_be_managed right.
      */
     public function getCanSelfUnmute(): bool
     {
@@ -48,7 +48,7 @@ class GetVideoChatInviteLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the invite link needs to contain an invite hash, passing which to joinVideoChat would allow the invited user to unmute themselves. Requires groupCall.can_be_managed right
+     * Set Pass true if the invite link needs to contain an invite hash, passing which to joinVideoChat would allow the invited user to unmute themselves. Requires groupCall.can_be_managed right.
      */
     public function setCanSelfUnmute(bool $canSelfUnmute): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an HTTPS link to boost the specified supergroup or channel chat @chat_id Identifier of the chat
+ * Returns an HTTPS link to boost the specified supergroup or channel chat @chat_id Identifier of the chat.
  */
 class GetChatBoostLink extends ChatBoostLink implements \JsonSerializable
 {

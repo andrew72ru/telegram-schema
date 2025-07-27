@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Options to be used when a message is sent
+ * Options to be used when a message is sent.
  */
 class MessageSendOptions implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the topic in a channel direct messages chat administered by the current user; pass 0 if the chat isn't a channel direct messages chat administered by the current user
+     * Get Unique identifier of the topic in a channel direct messages chat administered by the current user; pass 0 if the chat isn't a channel direct messages chat administered by the current user.
      */
     public function getDirectMessagesChatTopicId(): int
     {
@@ -57,7 +57,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the topic in a channel direct messages chat administered by the current user; pass 0 if the chat isn't a channel direct messages chat administered by the current user
+     * Set Unique identifier of the topic in a channel direct messages chat administered by the current user; pass 0 if the chat isn't a channel direct messages chat administered by the current user.
      */
     public function setDirectMessagesChatTopicId(int $directMessagesChatTopicId): self
     {
@@ -67,7 +67,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to disable notification for the message
+     * Get Pass true to disable notification for the message.
      */
     public function getDisableNotification(): bool
     {
@@ -75,7 +75,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to disable notification for the message
+     * Set Pass true to disable notification for the message.
      */
     public function setDisableNotification(bool $disableNotification): self
     {
@@ -85,7 +85,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the message is sent from the background
+     * Get Pass true if the message is sent from the background.
      */
     public function getFromBackground(): bool
     {
@@ -93,7 +93,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the message is sent from the background
+     * Set Pass true if the message is sent from the background.
      */
     public function setFromBackground(bool $fromBackground): self
     {
@@ -103,7 +103,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the content of the message must be protected from forwarding and saving; for bots only
+     * Get Pass true if the content of the message must be protected from forwarding and saving; for bots only.
      */
     public function getProtectContent(): bool
     {
@@ -111,7 +111,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the content of the message must be protected from forwarding and saving; for bots only
+     * Set Pass true if the content of the message must be protected from forwarding and saving; for bots only.
      */
     public function setProtectContent(bool $protectContent): self
     {
@@ -121,7 +121,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only
+     * Get Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only.
      */
     public function getAllowPaidBroadcast(): bool
     {
@@ -129,7 +129,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only
+     * Set Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only.
      */
     public function setAllowPaidBroadcast(bool $allowPaidBroadcast): self
     {
@@ -139,7 +139,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars the user agreed to pay to send the messages
+     * Get The number of Telegram Stars the user agreed to pay to send the messages.
      */
     public function getPaidMessageStarCount(): int
     {
@@ -147,7 +147,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars the user agreed to pay to send the messages
+     * Set The number of Telegram Stars the user agreed to pay to send the messages.
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {
@@ -157,7 +157,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum
+     * Get Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum.
      */
     public function getUpdateOrderOfInstalledStickerSets(): bool
     {
@@ -165,7 +165,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum
+     * Set Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum.
      */
     public function setUpdateOrderOfInstalledStickerSets(bool $updateOrderOfInstalledStickerSets): self
     {
@@ -175,7 +175,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Message scheduling state; pass null to send message immediately. Messages sent to a secret chat, to a chat with paid messages, to a channel direct messages chat,
+     * Get Message scheduling state; pass null to send message immediately. Messages sent to a secret chat, to a chat with paid messages, to a channel direct messages chat,.
      */
     public function getSchedulingState(): MessageSchedulingState|null
     {
@@ -183,7 +183,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Message scheduling state; pass null to send message immediately. Messages sent to a secret chat, to a chat with paid messages, to a channel direct messages chat,
+     * Set Message scheduling state; pass null to send message immediately. Messages sent to a secret chat, to a chat with paid messages, to a channel direct messages chat,.
      */
     public function setSchedulingState(MessageSchedulingState|null $schedulingState): self
     {
@@ -193,7 +193,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the effect to apply to the message; pass 0 if none; applicable only to sendMessage and sendMessageAlbum in private chats
+     * Get Identifier of the effect to apply to the message; pass 0 if none; applicable only to sendMessage and sendMessageAlbum in private chats.
      */
     public function getEffectId(): int
     {
@@ -201,7 +201,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the effect to apply to the message; pass 0 if none; applicable only to sendMessage and sendMessageAlbum in private chats
+     * Set Identifier of the effect to apply to the message; pass 0 if none; applicable only to sendMessage and sendMessageAlbum in private chats.
      */
     public function setEffectId(int $effectId): self
     {
@@ -211,7 +211,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates
+     * Get Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates.
      */
     public function getSendingId(): int
     {
@@ -219,7 +219,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates
+     * Set Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates.
      */
     public function setSendingId(int $sendingId): self
     {
@@ -229,7 +229,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get a fake message instead of actually sending them
+     * Get Pass true to get a fake message instead of actually sending them.
      */
     public function getOnlyPreview(): bool
     {
@@ -237,7 +237,7 @@ class MessageSendOptions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get a fake message instead of actually sending them
+     * Set Pass true to get a fake message instead of actually sending them.
      */
     public function setOnlyPreview(bool $onlyPreview): self
     {

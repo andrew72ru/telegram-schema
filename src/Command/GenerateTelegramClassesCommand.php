@@ -2,12 +2,13 @@
 
 namespace App\Command;
 
-use Nette\PhpGenerator\{ClassType, PhpFile, PsrPrinter};
+use Nette\PhpGenerator\{ClassType, Literal, PhpFile, PsrPrinter};
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\{InputInterface, InputOption};
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
@@ -31,6 +32,7 @@ class GenerateTelegramClassesCommand extends Command
 
     public function __construct(
         private readonly HttpClientInterface $httpClient,
+        private readonly Filesystem $filesystem,
     ) {
         parent::__construct();
     }
@@ -73,7 +75,7 @@ class GenerateTelegramClassesCommand extends Command
         $lines = \explode("\n", $tlContent);
 
         // First pass: collect all base types that need to be generated
-        $baseTypes = $this->collectBaseTypes($lines);
+        $baseTypes = $this->collectBaseTypes($lines, $namespace, $outputDir);
         $io->info(\sprintf('Found %d base types that need to be generated', \count($baseTypes)));
 
         // Parse the file and generate classes
@@ -87,7 +89,7 @@ class GenerateTelegramClassesCommand extends Command
     /**
      * Collect all base types that need to be generated as abstract classes.
      */
-    private function collectBaseTypes(array $lines): array
+    private function collectBaseTypes(array $lines, string $namespace, string $path): array
     {
         $baseTypes = [];
         $definedTypes = [];
@@ -147,6 +149,12 @@ class GenerateTelegramClassesCommand extends Command
             ++$classCount;
         }
 
+        $file = new PhpFile();
+        $file->setStrictTypes();
+        $ns = $file->addNamespace($namespace);
+        $enum = $ns->addEnum('Mapping');
+        $enum->setType('string');
+
         foreach ($lines as $line) {
             $line = \trim($line);
 
@@ -170,13 +178,26 @@ class GenerateTelegramClassesCommand extends Command
             // Process type definition
             if (\str_contains($line, ' = ') && \str_ends_with($line, ';')) {
                 $classGenerated = $this->generateClass($line, $outputDir, $namespace);
-                if ($classGenerated) {
-                    ++$classCount;
-                    // Clear comments for the next class
-                    $this->comments = [];
+                if ($classGenerated === null) {
+                    continue;
                 }
+                $line = \rtrim($line, ';');
+                [$definition] = \explode(' = ', $line, 2);
+                $case = \preg_split('/\s+/', $definition)[0];
+
+                $enum->addCase($case, new Literal(\sprintf('%s::class', $classGenerated)));
+
+                ++$classCount;
+                // Clear comments for the next class
+                $this->comments = [];
             }
         }
+
+        $printer = new PsrPrinter();
+        $enumFilename = \sprintf('%s/%s.php', $outputDir, $enum->getName());
+        $dir = \dirname($enumFilename);
+        $this->filesystem->mkdir($dir);
+        $this->filesystem->dumpFile($enumFilename, $printer->printFile($file));
 
         $io->info("Generated $classCount classes");
     }
@@ -212,13 +233,10 @@ class GenerateTelegramClassesCommand extends Command
         $classFilename = $this->formatClassName($baseType) . '.php';
         $classPath = "$outputDir/$classFilename";
 
-        // Create directory if it doesn't exist
+        // Create a directory if it doesn't exist
         $dir = \dirname($classPath);
-        if (!\is_dir($dir) && !\mkdir($dir, 0777, true) && !\is_dir($dir)) {
-            throw new \RuntimeException("Failed to create directory: $dir");
-        }
-
-        \file_put_contents($classPath, $printer->printFile($file));
+        $this->filesystem->mkdir($dir);
+        $this->filesystem->dumpFile($classPath, $printer->printFile($file));
     }
 
     private function processComment(string $comment): void
@@ -234,7 +252,7 @@ class GenerateTelegramClassesCommand extends Command
         }
     }
 
-    public function generateClass(string $line, string $outputDir, string $namespace): bool
+    public function generateClass(string $line, string $outputDir, string $namespace): string|null
     {
         // Remove trailing semicolon
         $line = \rtrim($line, ';');
@@ -248,7 +266,7 @@ class GenerateTelegramClassesCommand extends Command
 
         // Skip if it's not a proper class definition
         if (empty($className) || !\preg_match('/^[a-zA-Z0-9]+$/', $className)) {
-            return false;
+            return null;
         }
 
         // No need to extract property definitions here as we'll handle them in the constructor
@@ -265,7 +283,7 @@ class GenerateTelegramClassesCommand extends Command
         $class->addImplement(\JsonSerializable::class);
         $ns->addUse(SerializedName::class);
 
-        // Set parent class if needed
+        // Set a parent class if needed
         if ($baseType !== $className && $baseType !== 'Type') {
             // Avoid self-inheritance
             if ($this->formatClassName($baseType) !== $this->formatClassName($className)) {
@@ -279,7 +297,7 @@ class GenerateTelegramClassesCommand extends Command
 
         // Only add class description, not property documentation
         if (!empty($classDescription)) {
-            $class->addComment($classDescription);
+            $class->addComment(\rtrim($classDescription, '.') . '.');
         }
 
         // Add constructor with property promotions
@@ -293,15 +311,12 @@ class GenerateTelegramClassesCommand extends Command
         $classFilename = $this->formatClassName($className) . '.php';
         $classPath = "$outputDir/$classFilename";
 
-        // Create directory if it doesn't exist
+        // Create a directory if it doesn't exist
         $dir = \dirname($classPath);
-        if (!\is_dir($dir) && !\mkdir($dir, 0777, true) && !\is_dir($dir)) {
-            throw new \RuntimeException("Failed to create directory: $dir");
-        }
+        $this->filesystem->mkdir($dir);
+        $this->filesystem->dumpFile($classPath, $printer->printFile($file));
 
-        \file_put_contents($classPath, $printer->printFile($file));
-
-        return true;
+        return $this->formatClassName($className);
     }
 
     private function formatClassName(string $name): string
@@ -348,7 +363,7 @@ class GenerateTelegramClassesCommand extends Command
         // Skip the class name
         \array_shift($parts);
 
-        // Only add constructor if there are properties
+        // Only add the constructor if there are properties
         if (empty($parts)) {
             return;
         }
@@ -367,13 +382,13 @@ class GenerateTelegramClassesCommand extends Command
                 $param = $constructor->addPromotedParameter($camelPropName);
                 $param->setPrivate();
 
-                // Add SerializedName attribute for original snake_case name
+                // Add SerializedName attribute for the original snake_case name
                 $param->addAttribute(SerializedName::class, [$originalPropName]);
 
                 // Get PHP type
                 $phpType = $this->mapType($propType);
 
-                // Make property nullable if it's optional
+                // Make a property nullable if it's optional
                 if ($this->isOptionalType($propType)) {
                     // If the type is not already nullable, make it nullable
                     if (!\str_contains($phpType, '|null') && !\str_ends_with($phpType, '|null')) {
@@ -411,7 +426,7 @@ class GenerateTelegramClassesCommand extends Command
 
         $docComment = '';
         if (!empty($propDescription)) {
-            $docComment .= "Get $propDescription\n\n";
+            $docComment .= "Get $propDescription.\n\n";
         }
         $method->addComment($docComment);
 
@@ -433,7 +448,7 @@ class GenerateTelegramClassesCommand extends Command
 
         $docComment = '';
         if (!empty($propDescription)) {
-            $docComment .= "Set $propDescription\n\n";
+            $docComment .= "Set $propDescription.\n\n";
         }
         $method->addComment($docComment);
 

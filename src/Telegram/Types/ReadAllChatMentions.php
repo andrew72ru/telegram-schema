@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Marks all mentions in a chat as read @chat_id Chat identifier
+ * Marks all mentions in a chat as read @chat_id Chat identifier.
  */
 class ReadAllChatMentions extends Ok implements \JsonSerializable
 {

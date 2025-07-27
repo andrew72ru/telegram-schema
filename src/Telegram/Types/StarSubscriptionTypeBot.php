@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a subscription in a bot or a business account
+ * Describes a subscription in a bot or a business account.
  */
 class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Get True, if the subscription was canceled by the bot and can't be extended
+     * Get True, if the subscription was canceled by the bot and can't be extended.
      */
     public function getIsCanceledByBot(): bool
     {
@@ -36,7 +36,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Set True, if the subscription was canceled by the bot and can't be extended
+     * Set True, if the subscription was canceled by the bot and can't be extended.
      */
     public function setIsCanceledByBot(bool $isCanceledByBot): self
     {
@@ -46,7 +46,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Get Subscription invoice title
+     * Get Subscription invoice title.
      */
     public function getTitle(): string
     {
@@ -54,7 +54,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Set Subscription invoice title
+     * Set Subscription invoice title.
      */
     public function setTitle(string $title): self
     {
@@ -64,7 +64,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Get Subscription invoice photo
+     * Get Subscription invoice photo.
      */
     public function getPhoto(): Photo|null
     {
@@ -72,7 +72,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Set Subscription invoice photo
+     * Set Subscription invoice photo.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -82,7 +82,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Get The link to the subscription invoice
+     * Get The link to the subscription invoice.
      */
     public function getInvoiceLink(): string
     {
@@ -90,7 +90,7 @@ class StarSubscriptionTypeBot extends StarSubscriptionType implements \JsonSeria
     }
 
     /**
-     * Set The link to the subscription invoice
+     * Set The link to the subscription invoice.
      */
     public function setInvoiceLink(string $invoiceLink): self
     {

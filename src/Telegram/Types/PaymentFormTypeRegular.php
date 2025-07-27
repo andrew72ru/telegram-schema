@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The payment form is for a regular payment
+ * The payment form is for a regular payment.
  */
 class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get Full information about the invoice
+     * Get Full information about the invoice.
      */
     public function getInvoice(): Invoice|null
     {
@@ -48,7 +48,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set Full information about the invoice
+     * Set Full information about the invoice.
      */
     public function setInvoice(Invoice|null $invoice): self
     {
@@ -58,7 +58,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get User identifier of the payment provider bot
+     * Get User identifier of the payment provider bot.
      */
     public function getPaymentProviderUserId(): int
     {
@@ -66,7 +66,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set User identifier of the payment provider bot
+     * Set User identifier of the payment provider bot.
      */
     public function setPaymentProviderUserId(int $paymentProviderUserId): self
     {
@@ -76,7 +76,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get Information about the payment provider
+     * Get Information about the payment provider.
      */
     public function getPaymentProvider(): PaymentProvider|null
     {
@@ -84,7 +84,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set Information about the payment provider
+     * Set Information about the payment provider.
      */
     public function setPaymentProvider(PaymentProvider|null $paymentProvider): self
     {
@@ -94,7 +94,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get The list of additional payment options
+     * Get The list of additional payment options.
      */
     public function getAdditionalPaymentOptions(): array|null
     {
@@ -102,7 +102,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set The list of additional payment options
+     * Set The list of additional payment options.
      */
     public function setAdditionalPaymentOptions(array|null $additionalPaymentOptions): self
     {
@@ -112,7 +112,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get Saved server-side order information; may be null
+     * Get Saved server-side order information; may be null.
      */
     public function getSavedOrderInfo(): OrderInfo|null
     {
@@ -120,7 +120,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set Saved server-side order information; may be null
+     * Set Saved server-side order information; may be null.
      */
     public function setSavedOrderInfo(OrderInfo|null $savedOrderInfo): self
     {
@@ -130,7 +130,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get The list of saved payment credentials
+     * Get The list of saved payment credentials.
      */
     public function getSavedCredentials(): array|null
     {
@@ -138,7 +138,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set The list of saved payment credentials
+     * Set The list of saved payment credentials.
      */
     public function setSavedCredentials(array|null $savedCredentials): self
     {
@@ -148,7 +148,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get True, if the user can choose to save credentials
+     * Get True, if the user can choose to save credentials.
      */
     public function getCanSaveCredentials(): bool
     {
@@ -156,7 +156,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set True, if the user can choose to save credentials
+     * Set True, if the user can choose to save credentials.
      */
     public function setCanSaveCredentials(bool $canSaveCredentials): self
     {
@@ -166,7 +166,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Get True, if the user will be able to save credentials, if sets up a 2-step verification password
+     * Get True, if the user will be able to save credentials, if sets up a 2-step verification password.
      */
     public function getNeedPassword(): bool
     {
@@ -174,7 +174,7 @@ class PaymentFormTypeRegular extends PaymentFormType implements \JsonSerializabl
     }
 
     /**
-     * Set True, if the user will be able to save credentials, if sets up a 2-step verification password
+     * Set True, if the user will be able to save credentials, if sets up a 2-step verification password.
      */
     public function setNeedPassword(bool $needPassword): self
     {

@@ -19,7 +19,7 @@ class InternalLinkTypeLanguagePack extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Get Language pack identifier
+     * Get Language pack identifier.
      */
     public function getLanguagePackId(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeLanguagePack extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Set Language pack identifier
+     * Set Language pack identifier.
      */
     public function setLanguagePackId(string $languagePackId): self
     {

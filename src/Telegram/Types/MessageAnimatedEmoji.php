@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with an animated emoji @animated_emoji The animated emoji @emoji The corresponding emoji
+ * A message with an animated emoji @animated_emoji The animated emoji @emoji The corresponding emoji.
  */
 class MessageAnimatedEmoji extends MessageContent implements \JsonSerializable
 {

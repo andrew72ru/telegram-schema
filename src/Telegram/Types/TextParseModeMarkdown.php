@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The text uses Markdown-style formatting
+ * The text uses Markdown-style formatting.
  */
 class TextParseModeMarkdown extends TextParseMode implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class TextParseModeMarkdown extends TextParseMode implements \JsonSerializable
     }
 
     /**
-     * Get Version of the parser: 0 or 1 - Telegram Bot API "Markdown" parse mode, 2 - Telegram Bot API "MarkdownV2" parse mode
+     * Get Version of the parser: 0 or 1 - Telegram Bot API "Markdown" parse mode, 2 - Telegram Bot API "MarkdownV2" parse mode.
      */
     public function getVersion(): int
     {
@@ -27,7 +27,7 @@ class TextParseModeMarkdown extends TextParseMode implements \JsonSerializable
     }
 
     /**
-     * Set Version of the parser: 0 or 1 - Telegram Bot API "Markdown" parse mode, 2 - Telegram Bot API "MarkdownV2" parse mode
+     * Set Version of the parser: 0 or 1 - Telegram Bot API "Markdown" parse mode, 2 - Telegram Bot API "MarkdownV2" parse mode.
      */
     public function setVersion(int $version): self
     {

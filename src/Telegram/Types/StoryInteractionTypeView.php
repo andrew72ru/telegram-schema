@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A view of the story @chosen_reaction_type Type of the reaction that was chosen by the viewer; may be null if none
+ * A view of the story @chosen_reaction_type Type of the reaction that was chosen by the viewer; may be null if none.
  */
 class StoryInteractionTypeView extends StoryInteractionType implements \JsonSerializable
 {

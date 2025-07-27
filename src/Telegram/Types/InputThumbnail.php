@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A thumbnail to be sent along with a file; must be in JPEG or WEBP format for stickers, and less than 200 KB in size
+ * A thumbnail to be sent along with a file; must be in JPEG or WEBP format for stickers, and less than 200 KB in size.
  */
 class InputThumbnail implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputThumbnail implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail file to send. Sending thumbnails by file_id is currently not supported
+     * Get Thumbnail file to send. Sending thumbnails by file_id is currently not supported.
      */
     public function getThumbnail(): InputFile|null
     {
@@ -33,7 +33,7 @@ class InputThumbnail implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail file to send. Sending thumbnails by file_id is currently not supported
+     * Set Thumbnail file to send. Sending thumbnails by file_id is currently not supported.
      */
     public function setThumbnail(InputFile|null $thumbnail): self
     {
@@ -43,7 +43,7 @@ class InputThumbnail implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail width, usually shouldn't exceed 320. Use 0 if unknown
+     * Get Thumbnail width, usually shouldn't exceed 320. Use 0 if unknown.
      */
     public function getWidth(): int
     {
@@ -51,7 +51,7 @@ class InputThumbnail implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail width, usually shouldn't exceed 320. Use 0 if unknown
+     * Set Thumbnail width, usually shouldn't exceed 320. Use 0 if unknown.
      */
     public function setWidth(int $width): self
     {
@@ -61,7 +61,7 @@ class InputThumbnail implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail height, usually shouldn't exceed 320. Use 0 if unknown
+     * Get Thumbnail height, usually shouldn't exceed 320. Use 0 if unknown.
      */
     public function getHeight(): int
     {
@@ -69,7 +69,7 @@ class InputThumbnail implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail height, usually shouldn't exceed 320. Use 0 if unknown
+     * Set Thumbnail height, usually shouldn't exceed 320. Use 0 if unknown.
      */
     public function setHeight(int $height): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user can be messaged, but the messages are paid
+ * The user can be messaged, but the messages are paid.
  */
 class CanSendMessageToUserResultUserHasPaidMessages extends CanSendMessageToUserResult implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class CanSendMessageToUserResultUserHasPaidMessages extends CanSendMessageToUser
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid by the current user for each sent message to the user
+     * Get Number of Telegram Stars that must be paid by the current user for each sent message to the user.
      */
     public function getOutgoingPaidMessageStarCount(): int
     {
@@ -27,7 +27,7 @@ class CanSendMessageToUserResultUserHasPaidMessages extends CanSendMessageToUser
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid by the current user for each sent message to the user
+     * Set Number of Telegram Stars that must be paid by the current user for each sent message to the user.
      */
     public function setOutgoingPaidMessageStarCount(int $outgoingPaidMessageStarCount): self
     {

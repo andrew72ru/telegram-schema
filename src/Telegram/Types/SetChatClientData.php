@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes application-specific data associated with a chat @chat_id Chat identifier @client_data New value of client_data
+ * Changes application-specific data associated with a chat @chat_id Chat identifier @client_data New value of client_data.
  */
 class SetChatClientData extends Ok implements \JsonSerializable
 {

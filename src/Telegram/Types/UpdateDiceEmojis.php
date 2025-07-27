@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of supported dice emojis has changed @emojis The new list of supported dice emojis
+ * The list of supported dice emojis has changed @emojis The new list of supported dice emojis.
  */
 class UpdateDiceEmojis extends Update implements \JsonSerializable
 {

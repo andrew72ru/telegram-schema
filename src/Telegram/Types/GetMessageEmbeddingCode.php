@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an HTML code for embedding the message. Available only if messageProperties.can_get_embedding_code
+ * Returns an HTML code for embedding the message. Available only if messageProperties.can_get_embedding_code.
  */
 class GetMessageEmbeddingCode extends Text implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetMessageEmbeddingCode extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetMessageEmbeddingCode extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetMessageEmbeddingCode extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class GetMessageEmbeddingCode extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class GetMessageEmbeddingCode extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to return an HTML code for embedding of the whole media album
+     * Get Pass true to return an HTML code for embedding of the whole media album.
      */
     public function getForAlbum(): bool
     {
@@ -69,7 +69,7 @@ class GetMessageEmbeddingCode extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to return an HTML code for embedding of the whole media album
+     * Set Pass true to return an HTML code for embedding of the whole media album.
      */
     public function setForAlbum(bool $forAlbum): self
     {

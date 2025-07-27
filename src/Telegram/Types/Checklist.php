@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a checklist
+ * Describes a checklist.
  */
 class Checklist implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Get Title of the checklist; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities
+     * Get Title of the checklist; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities.
      */
     public function getTitle(): FormattedText|null
     {
@@ -42,7 +42,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Set Title of the checklist; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities
+     * Set Title of the checklist; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities.
      */
     public function setTitle(FormattedText|null $title): self
     {
@@ -52,7 +52,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Get List of tasks in the checklist
+     * Get List of tasks in the checklist.
      */
     public function getTasks(): array|null
     {
@@ -60,7 +60,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Set List of tasks in the checklist
+     * Set List of tasks in the checklist.
      */
     public function setTasks(array|null $tasks): self
     {
@@ -70,7 +70,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Get True, if users other than creator of the list can add tasks to the list
+     * Get True, if users other than creator of the list can add tasks to the list.
      */
     public function getOthersCanAddTasks(): bool
     {
@@ -78,7 +78,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Set True, if users other than creator of the list can add tasks to the list
+     * Set True, if users other than creator of the list can add tasks to the list.
      */
     public function setOthersCanAddTasks(bool $othersCanAddTasks): self
     {
@@ -88,7 +88,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can add tasks to the list if they have Telegram Premium subscription
+     * Get True, if the current user can add tasks to the list if they have Telegram Premium subscription.
      */
     public function getCanAddTasks(): bool
     {
@@ -96,7 +96,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can add tasks to the list if they have Telegram Premium subscription
+     * Set True, if the current user can add tasks to the list if they have Telegram Premium subscription.
      */
     public function setCanAddTasks(bool $canAddTasks): self
     {
@@ -106,7 +106,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Get True, if users other than creator of the list can mark tasks as done or not done. If true, then the checklist is called "group checklist"
+     * Get True, if users other than creator of the list can mark tasks as done or not done. If true, then the checklist is called "group checklist".
      */
     public function getOthersCanMarkTasksAsDone(): bool
     {
@@ -114,7 +114,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Set True, if users other than creator of the list can mark tasks as done or not done. If true, then the checklist is called "group checklist"
+     * Set True, if users other than creator of the list can mark tasks as done or not done. If true, then the checklist is called "group checklist".
      */
     public function setOthersCanMarkTasksAsDone(bool $othersCanMarkTasksAsDone): self
     {
@@ -124,7 +124,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can mark tasks as done or not done if they have Telegram Premium subscription
+     * Get True, if the current user can mark tasks as done or not done if they have Telegram Premium subscription.
      */
     public function getCanMarkTasksAsDone(): bool
     {
@@ -132,7 +132,7 @@ class Checklist implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can mark tasks as done or not done if they have Telegram Premium subscription
+     * Set True, if the current user can mark tasks as done or not done if they have Telegram Premium subscription.
      */
     public function setCanMarkTasksAsDone(bool $canMarkTasksAsDone): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs server about an in-store purchase of Telegram Premium before authorization. Works only when the current authorization state is authorizationStateWaitPremiumPurchase
+ * Informs server about an in-store purchase of Telegram Premium before authorization. Works only when the current authorization state is authorizationStateWaitPremiumPurchase.
  */
 class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Get Information about the transaction
+     * Get Information about the transaction.
      */
     public function getTransaction(): StoreTransaction|null
     {
@@ -36,7 +36,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Set Information about the transaction
+     * Set Information about the transaction.
      */
     public function setTransaction(StoreTransaction|null $transaction): self
     {
@@ -46,7 +46,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Get Pass true if this is a restore of a Telegram Premium purchase; only for App Store
+     * Get Pass true if this is a restore of a Telegram Premium purchase; only for App Store.
      */
     public function getIsRestore(): bool
     {
@@ -54,7 +54,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Set Pass true if this is a restore of a Telegram Premium purchase; only for App Store
+     * Set Pass true if this is a restore of a Telegram Premium purchase; only for App Store.
      */
     public function setIsRestore(bool $isRestore): self
     {
@@ -64,7 +64,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -72,7 +72,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -82,7 +82,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -90,7 +90,7 @@ class SetAuthenticationPremiumPurchaseTransaction extends Ok implements \JsonSer
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {

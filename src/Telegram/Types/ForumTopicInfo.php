@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains basic information about a forum topic
+ * Contains basic information about a forum topic.
  */
 class ForumTopicInfo implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the forum chat to which the topic belongs
+     * Get Identifier of the forum chat to which the topic belongs.
      */
     public function getChatId(): int
     {
@@ -57,7 +57,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the forum chat to which the topic belongs
+     * Set Identifier of the forum chat to which the topic belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -67,7 +67,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Forum topic identifier of the topic
+     * Get Forum topic identifier of the topic.
      */
     public function getForumTopicId(): int
     {
@@ -75,7 +75,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Forum topic identifier of the topic
+     * Set Forum topic identifier of the topic.
      */
     public function setForumTopicId(int $forumTopicId): self
     {
@@ -85,7 +85,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier of the topic
+     * Get Message thread identifier of the topic.
      */
     public function getMessageThreadId(): int
     {
@@ -93,7 +93,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier of the topic
+     * Set Message thread identifier of the topic.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -103,7 +103,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Name of the topic
+     * Get Name of the topic.
      */
     public function getName(): string
     {
@@ -111,7 +111,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Name of the topic
+     * Set Name of the topic.
      */
     public function setName(string $name): self
     {
@@ -121,7 +121,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Icon of the topic
+     * Get Icon of the topic.
      */
     public function getIcon(): ForumTopicIcon|null
     {
@@ -129,7 +129,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Icon of the topic
+     * Set Icon of the topic.
      */
     public function setIcon(ForumTopicIcon|null $icon): self
     {
@@ -139,7 +139,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the topic was created
+     * Get Point in time (Unix timestamp) when the topic was created.
      */
     public function getCreationDate(): int
     {
@@ -147,7 +147,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the topic was created
+     * Set Point in time (Unix timestamp) when the topic was created.
      */
     public function setCreationDate(int $creationDate): self
     {
@@ -157,7 +157,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the creator of the topic
+     * Get Identifier of the creator of the topic.
      */
     public function getCreatorId(): MessageSender|null
     {
@@ -165,7 +165,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the creator of the topic
+     * Set Identifier of the creator of the topic.
      */
     public function setCreatorId(MessageSender|null $creatorId): self
     {
@@ -175,7 +175,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic is the General topic list
+     * Get True, if the topic is the General topic list.
      */
     public function getIsGeneral(): bool
     {
@@ -183,7 +183,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic is the General topic list
+     * Set True, if the topic is the General topic list.
      */
     public function setIsGeneral(bool $isGeneral): self
     {
@@ -193,7 +193,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic was created by the current user
+     * Get True, if the topic was created by the current user.
      */
     public function getIsOutgoing(): bool
     {
@@ -201,7 +201,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic was created by the current user
+     * Set True, if the topic was created by the current user.
      */
     public function setIsOutgoing(bool $isOutgoing): self
     {
@@ -211,7 +211,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic is closed
+     * Get True, if the topic is closed.
      */
     public function getIsClosed(): bool
     {
@@ -219,7 +219,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic is closed
+     * Set True, if the topic is closed.
      */
     public function setIsClosed(bool $isClosed): self
     {
@@ -229,7 +229,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic is hidden above the topic list and closed; for General topic only
+     * Get True, if the topic is hidden above the topic list and closed; for General topic only.
      */
     public function getIsHidden(): bool
     {
@@ -237,7 +237,7 @@ class ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic is hidden above the topic list and closed; for General topic only
+     * Set True, if the topic is hidden above the topic list and closed; for General topic only.
      */
     public function setIsHidden(bool $isHidden): self
     {

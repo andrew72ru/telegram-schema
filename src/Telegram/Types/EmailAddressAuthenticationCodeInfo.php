@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about the email address authentication code that was sent
+ * Information about the email address authentication code that was sent.
  */
 class EmailAddressAuthenticationCodeInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class EmailAddressAuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Pattern of the email address to which an authentication code was sent
+     * Get Pattern of the email address to which an authentication code was sent.
      */
     public function getEmailAddressPattern(): string
     {
@@ -30,7 +30,7 @@ class EmailAddressAuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Pattern of the email address to which an authentication code was sent
+     * Set Pattern of the email address to which an authentication code was sent.
      */
     public function setEmailAddressPattern(string $emailAddressPattern): self
     {
@@ -40,7 +40,7 @@ class EmailAddressAuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Length of the code; 0 if unknown
+     * Get Length of the code; 0 if unknown.
      */
     public function getLength(): int
     {
@@ -48,7 +48,7 @@ class EmailAddressAuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Length of the code; 0 if unknown
+     * Set Length of the code; 0 if unknown.
      */
     public function setLength(int $length): self
     {

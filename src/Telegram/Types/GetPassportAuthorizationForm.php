@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a Telegram Passport authorization form for sharing data with a service
+ * Returns a Telegram Passport authorization form for sharing data with a service.
  */
 class GetPassportAuthorizationForm extends PassportAuthorizationForm implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Get User identifier of the service's bot
+     * Get User identifier of the service's bot.
      */
     public function getBotUserId(): int
     {
@@ -36,7 +36,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Set User identifier of the service's bot
+     * Set User identifier of the service's bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -46,7 +46,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Get Telegram Passport element types requested by the service
+     * Get Telegram Passport element types requested by the service.
      */
     public function getScope(): string
     {
@@ -54,7 +54,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Set Telegram Passport element types requested by the service
+     * Set Telegram Passport element types requested by the service.
      */
     public function setScope(string $scope): self
     {
@@ -64,7 +64,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Get Service's public key
+     * Get Service's public key.
      */
     public function getPublicKey(): string
     {
@@ -72,7 +72,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Set Service's public key
+     * Set Service's public key.
      */
     public function setPublicKey(string $publicKey): self
     {
@@ -82,7 +82,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Get Unique request identifier provided by the service
+     * Get Unique request identifier provided by the service.
      */
     public function getNonce(): string
     {
@@ -90,7 +90,7 @@ class GetPassportAuthorizationForm extends PassportAuthorizationForm implements 
     }
 
     /**
-     * Set Unique request identifier provided by the service
+     * Set Unique request identifier provided by the service.
      */
     public function setNonce(string $nonce): self
     {

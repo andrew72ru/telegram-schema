@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns sponsored chats to be shown in the search results @query Query the user searches for
+ * Returns sponsored chats to be shown in the search results @query Query the user searches for.
  */
 class GetSearchSponsoredChats extends SponsoredChats implements \JsonSerializable
 {

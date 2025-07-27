@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of updates @updates List of updates
+ * Contains a list of updates @updates List of updates.
  */
 class Updates implements \JsonSerializable
 {

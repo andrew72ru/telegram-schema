@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video chat was ended @group_call_id Identifier of the video chat. The video chat can be received through the method getGroupCall
+ * A video chat was ended @group_call_id Identifier of the video chat. The video chat can be received through the method getGroupCall.
  */
 class ChatEventVideoChatEnded extends ChatEventAction implements \JsonSerializable
 {

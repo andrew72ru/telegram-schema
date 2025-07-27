@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The type of default paid reaction has changed @type The new type of the default paid reaction
+ * The type of default paid reaction has changed @var The new type of the default paid reaction.
  */
 class UpdateDefaultPaidReactionType extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A photo message
+ * A photo message.
  */
 class MessagePhoto extends MessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The photo
+     * Get The photo.
      */
     public function getPhoto(): Photo|null
     {
@@ -39,7 +39,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The photo
+     * Set The photo.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -49,7 +49,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo caption
+     * Get Photo caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -57,7 +57,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo caption
+     * Set Photo caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -67,7 +67,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo
+     * Get True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -75,7 +75,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo
+     * Set True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -85,7 +85,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo preview must be covered by a spoiler animation
+     * Get True, if the photo preview must be covered by a spoiler animation.
      */
     public function getHasSpoiler(): bool
     {
@@ -93,7 +93,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo preview must be covered by a spoiler animation
+     * Set True, if the photo preview must be covered by a spoiler animation.
      */
     public function setHasSpoiler(bool $hasSpoiler): self
     {
@@ -103,7 +103,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo must be blurred and must be shown only while tapped
+     * Get True, if the photo must be blurred and must be shown only while tapped.
      */
     public function getIsSecret(): bool
     {
@@ -111,7 +111,7 @@ class MessagePhoto extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo must be blurred and must be shown only while tapped
+     * Set True, if the photo must be blurred and must be shown only while tapped.
      */
     public function setIsSecret(bool $isSecret): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A file download was changed. This update is sent only after file download list is loaded for the first time
+ * A file download was changed. This update is sent only after file download list is loaded for the first time.
  */
 class UpdateFileDownload extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Get File identifier
+     * Get File identifier.
      */
     public function getFileId(): int
     {
@@ -36,7 +36,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Set File identifier
+     * Set File identifier.
      */
     public function setFileId(int $fileId): self
     {
@@ -46,7 +46,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed
+     * Get Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed.
      */
     public function getCompleteDate(): int
     {
@@ -54,7 +54,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed
+     * Set Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed.
      */
     public function setCompleteDate(int $completeDate): self
     {
@@ -64,7 +64,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if downloading of the file is paused
+     * Get True, if downloading of the file is paused.
      */
     public function getIsPaused(): bool
     {
@@ -72,7 +72,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if downloading of the file is paused
+     * Set True, if downloading of the file is paused.
      */
     public function setIsPaused(bool $isPaused): self
     {
@@ -82,7 +82,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New number of being downloaded and recently downloaded files found
+     * Get New number of being downloaded and recently downloaded files found.
      */
     public function getCounts(): DownloadedFileCounts|null
     {
@@ -90,7 +90,7 @@ class UpdateFileDownload extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New number of being downloaded and recently downloaded files found
+     * Set New number of being downloaded and recently downloaded files found.
      */
     public function setCounts(DownloadedFileCounts|null $counts): self
     {

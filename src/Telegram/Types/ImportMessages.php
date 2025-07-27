@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Imports messages exported from another app
+ * Imports messages exported from another app.
  */
 class ImportMessages extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ImportMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right
+     * Get Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class ImportMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right
+     * Set Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class ImportMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get File with messages to import. Only inputFileLocal and inputFileGenerated are supported. The file must not be previously uploaded
+     * Get File with messages to import. Only inputFileLocal and inputFileGenerated are supported. The file must not be previously uploaded.
      */
     public function getMessageFile(): InputFile|null
     {
@@ -51,7 +51,7 @@ class ImportMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set File with messages to import. Only inputFileLocal and inputFileGenerated are supported. The file must not be previously uploaded
+     * Set File with messages to import. Only inputFileLocal and inputFileGenerated are supported. The file must not be previously uploaded.
      */
     public function setMessageFile(InputFile|null $messageFile): self
     {
@@ -61,7 +61,7 @@ class ImportMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Files used in the imported messages. Only inputFileLocal and inputFileGenerated are supported. The files must not be previously uploaded
+     * Get Files used in the imported messages. Only inputFileLocal and inputFileGenerated are supported. The files must not be previously uploaded.
      */
     public function getAttachedFiles(): array|null
     {
@@ -69,7 +69,7 @@ class ImportMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Files used in the imported messages. Only inputFileLocal and inputFileGenerated are supported. The files must not be previously uploaded
+     * Set Files used in the imported messages. Only inputFileLocal and inputFileGenerated are supported. The files must not be previously uploaded.
      */
     public function setAttachedFiles(array|null $attachedFiles): self
     {

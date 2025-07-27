@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a game
+ * Represents a game.
  */
 class InputInlineQueryResultGame extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputInlineQueryResultGame extends InputInlineQueryResult implements \Json
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class InputInlineQueryResultGame extends InputInlineQueryResult implements \Json
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class InputInlineQueryResultGame extends InputInlineQueryResult implements \Json
     }
 
     /**
-     * Get Short name of the game
+     * Get Short name of the game.
      */
     public function getGameShortName(): string
     {
@@ -51,7 +51,7 @@ class InputInlineQueryResultGame extends InputInlineQueryResult implements \Json
     }
 
     /**
-     * Set Short name of the game
+     * Set Short name of the game.
      */
     public function setGameShortName(string $gameShortName): self
     {
@@ -61,7 +61,7 @@ class InputInlineQueryResultGame extends InputInlineQueryResult implements \Json
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -69,7 +69,7 @@ class InputInlineQueryResultGame extends InputInlineQueryResult implements \Json
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

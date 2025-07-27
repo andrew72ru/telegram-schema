@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of stories
+ * Represents a list of stories.
  */
 class Stories implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class Stories implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of stories found
+     * Get Approximate total number of stories found.
      */
     public function getTotalCount(): int
     {
@@ -33,7 +33,7 @@ class Stories implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of stories found
+     * Set Approximate total number of stories found.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -43,7 +43,7 @@ class Stories implements \JsonSerializable
     }
 
     /**
-     * Get The list of stories
+     * Get The list of stories.
      */
     public function getStories(): array|null
     {
@@ -51,7 +51,7 @@ class Stories implements \JsonSerializable
     }
 
     /**
-     * Set The list of stories
+     * Set The list of stories.
      */
     public function setStories(array|null $stories): self
     {
@@ -61,7 +61,7 @@ class Stories implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the pinned stories; returned only in getChatPostedToChatPageStories with from_story_id == 0
+     * Get Identifiers of the pinned stories; returned only in getChatPostedToChatPageStories with from_story_id == 0.
      */
     public function getPinnedStoryIds(): array|null
     {
@@ -69,7 +69,7 @@ class Stories implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the pinned stories; returned only in getChatPostedToChatPageStories with from_story_id == 0
+     * Set Identifiers of the pinned stories; returned only in getChatPostedToChatPageStories with from_story_id == 0.
      */
     public function setPinnedStoryIds(array|null $pinnedStoryIds): self
     {

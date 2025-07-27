@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a group call
+ * Describes a group call.
  */
 class GroupCall implements \JsonSerializable
 {
@@ -88,7 +88,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getId(): int
     {
@@ -96,7 +96,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setId(int $id): self
     {
@@ -106,7 +106,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Group call title; for video chats only
+     * Get Group call title; for video chats only.
      */
     public function getTitle(): string
     {
@@ -114,7 +114,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Group call title; for video chats only
+     * Set Group call title; for video chats only.
      */
     public function setTitle(string $title): self
     {
@@ -124,7 +124,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Invite link for the group call; for group calls that aren't bound to a chat. For video chats call getVideoChatInviteLink to get the link
+     * Get Invite link for the group call; for group calls that aren't bound to a chat. For video chats call getVideoChatInviteLink to get the link.
      */
     public function getInviteLink(): string
     {
@@ -132,7 +132,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Invite link for the group call; for group calls that aren't bound to a chat. For video chats call getVideoChatInviteLink to get the link
+     * Set Invite link for the group call; for group calls that aren't bound to a chat. For video chats call getVideoChatInviteLink to get the link.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -142,7 +142,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 if it is already active or was ended; for video chats only
+     * Get Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 if it is already active or was ended; for video chats only.
      */
     public function getScheduledStartDate(): int
     {
@@ -150,7 +150,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 if it is already active or was ended; for video chats only
+     * Set Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 if it is already active or was ended; for video chats only.
      */
     public function setScheduledStartDate(int $scheduledStartDate): self
     {
@@ -160,7 +160,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the group call is scheduled and the current user will receive a notification when the group call starts; for video chats only
+     * Get True, if the group call is scheduled and the current user will receive a notification when the group call starts; for video chats only.
      */
     public function getEnabledStartNotification(): bool
     {
@@ -168,7 +168,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the group call is scheduled and the current user will receive a notification when the group call starts; for video chats only
+     * Set True, if the group call is scheduled and the current user will receive a notification when the group call starts; for video chats only.
      */
     public function setEnabledStartNotification(bool $enabledStartNotification): self
     {
@@ -178,7 +178,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is active
+     * Get True, if the call is active.
      */
     public function getIsActive(): bool
     {
@@ -186,7 +186,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is active
+     * Set True, if the call is active.
      */
     public function setIsActive(bool $isActive): self
     {
@@ -196,7 +196,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is bound to a chat
+     * Get True, if the call is bound to a chat.
      */
     public function getIsVideoChat(): bool
     {
@@ -204,7 +204,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is bound to a chat
+     * Set True, if the call is bound to a chat.
      */
     public function setIsVideoChat(bool $isVideoChat): self
     {
@@ -214,7 +214,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is an RTMP stream instead of an ordinary video chat; for video chats only
+     * Get True, if the call is an RTMP stream instead of an ordinary video chat; for video chats only.
      */
     public function getIsRtmpStream(): bool
     {
@@ -222,7 +222,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is an RTMP stream instead of an ordinary video chat; for video chats only
+     * Set True, if the call is an RTMP stream instead of an ordinary video chat; for video chats only.
      */
     public function setIsRtmpStream(bool $isRtmpStream): self
     {
@@ -232,7 +232,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is joined
+     * Get True, if the call is joined.
      */
     public function getIsJoined(): bool
     {
@@ -240,7 +240,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is joined
+     * Set True, if the call is joined.
      */
     public function setIsJoined(bool $isJoined): self
     {
@@ -250,7 +250,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if user was kicked from the call because of network loss and the call needs to be rejoined
+     * Get True, if user was kicked from the call because of network loss and the call needs to be rejoined.
      */
     public function getNeedRejoin(): bool
     {
@@ -258,7 +258,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if user was kicked from the call because of network loss and the call needs to be rejoined
+     * Set True, if user was kicked from the call because of network loss and the call needs to be rejoined.
      */
     public function setNeedRejoin(bool $needRejoin): self
     {
@@ -268,7 +268,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user is the owner of the call and can end the call, change volume level of other users, or ban users there; for group calls that aren't bound to a chat
+     * Get True, if the user is the owner of the call and can end the call, change volume level of other users, or ban users there; for group calls that aren't bound to a chat.
      */
     public function getIsOwned(): bool
     {
@@ -276,7 +276,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user is the owner of the call and can end the call, change volume level of other users, or ban users there; for group calls that aren't bound to a chat
+     * Set True, if the user is the owner of the call and can end the call, change volume level of other users, or ban users there; for group calls that aren't bound to a chat.
      */
     public function setIsOwned(bool $isOwned): self
     {
@@ -286,7 +286,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can manage the group call; for video chats only
+     * Get True, if the current user can manage the group call; for video chats only.
      */
     public function getCanBeManaged(): bool
     {
@@ -294,7 +294,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can manage the group call; for video chats only
+     * Set True, if the current user can manage the group call; for video chats only.
      */
     public function setCanBeManaged(bool $canBeManaged): self
     {
@@ -304,7 +304,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Number of participants in the group call
+     * Get Number of participants in the group call.
      */
     public function getParticipantCount(): int
     {
@@ -312,7 +312,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Number of participants in the group call
+     * Set Number of participants in the group call.
      */
     public function setParticipantCount(int $participantCount): self
     {
@@ -322,7 +322,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if group call participants, which are muted, aren't returned in participant list; for video chats only
+     * Get True, if group call participants, which are muted, aren't returned in participant list; for video chats only.
      */
     public function getHasHiddenListeners(): bool
     {
@@ -330,7 +330,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if group call participants, which are muted, aren't returned in participant list; for video chats only
+     * Set True, if group call participants, which are muted, aren't returned in participant list; for video chats only.
      */
     public function setHasHiddenListeners(bool $hasHiddenListeners): self
     {
@@ -340,7 +340,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if all group call participants are loaded
+     * Get True, if all group call participants are loaded.
      */
     public function getLoadedAllParticipants(): bool
     {
@@ -348,7 +348,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if all group call participants are loaded
+     * Set True, if all group call participants are loaded.
      */
     public function setLoadedAllParticipants(bool $loadedAllParticipants): self
     {
@@ -358,7 +358,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get At most 3 recently speaking users in the group call
+     * Get At most 3 recently speaking users in the group call.
      */
     public function getRecentSpeakers(): array|null
     {
@@ -366,7 +366,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set At most 3 recently speaking users in the group call
+     * Set At most 3 recently speaking users in the group call.
      */
     public function setRecentSpeakers(array|null $recentSpeakers): self
     {
@@ -376,7 +376,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user's video is enabled
+     * Get True, if the current user's video is enabled.
      */
     public function getIsMyVideoEnabled(): bool
     {
@@ -384,7 +384,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user's video is enabled
+     * Set True, if the current user's video is enabled.
      */
     public function setIsMyVideoEnabled(bool $isMyVideoEnabled): self
     {
@@ -394,7 +394,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user's video is paused
+     * Get True, if the current user's video is paused.
      */
     public function getIsMyVideoPaused(): bool
     {
@@ -402,7 +402,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user's video is paused
+     * Set True, if the current user's video is paused.
      */
     public function setIsMyVideoPaused(bool $isMyVideoPaused): self
     {
@@ -412,7 +412,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can broadcast video or share screen
+     * Get True, if the current user can broadcast video or share screen.
      */
     public function getCanEnableVideo(): bool
     {
@@ -420,7 +420,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can broadcast video or share screen
+     * Set True, if the current user can broadcast video or share screen.
      */
     public function setCanEnableVideo(bool $canEnableVideo): self
     {
@@ -430,7 +430,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if only group call administrators can unmute new participants; for video chats only
+     * Get True, if only group call administrators can unmute new participants; for video chats only.
      */
     public function getMuteNewParticipants(): bool
     {
@@ -438,7 +438,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if only group call administrators can unmute new participants; for video chats only
+     * Set True, if only group call administrators can unmute new participants; for video chats only.
      */
     public function setMuteNewParticipants(bool $muteNewParticipants): self
     {
@@ -448,7 +448,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can enable or disable mute_new_participants setting; for video chats only
+     * Get True, if the current user can enable or disable mute_new_participants setting; for video chats only.
      */
     public function getCanToggleMuteNewParticipants(): bool
     {
@@ -456,7 +456,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can enable or disable mute_new_participants setting; for video chats only
+     * Set True, if the current user can enable or disable mute_new_participants setting; for video chats only.
      */
     public function setCanToggleMuteNewParticipants(bool $canToggleMuteNewParticipants): self
     {
@@ -466,7 +466,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the ongoing group call recording, in seconds; 0 if none. An updateGroupCall update is not triggered when value of this field changes, but the same recording goes on
+     * Get Duration of the ongoing group call recording, in seconds; 0 if none. An updateGroupCall update is not triggered when value of this field changes, but the same recording goes on.
      */
     public function getRecordDuration(): int
     {
@@ -474,7 +474,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the ongoing group call recording, in seconds; 0 if none. An updateGroupCall update is not triggered when value of this field changes, but the same recording goes on
+     * Set Duration of the ongoing group call recording, in seconds; 0 if none. An updateGroupCall update is not triggered when value of this field changes, but the same recording goes on.
      */
     public function setRecordDuration(int $recordDuration): self
     {
@@ -484,7 +484,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get True, if a video file is being recorded for the call
+     * Get True, if a video file is being recorded for the call.
      */
     public function getIsVideoRecorded(): bool
     {
@@ -492,7 +492,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set True, if a video file is being recorded for the call
+     * Set True, if a video file is being recorded for the call.
      */
     public function setIsVideoRecorded(bool $isVideoRecorded): self
     {
@@ -502,7 +502,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Call duration, in seconds; for ended calls only
+     * Get Call duration, in seconds; for ended calls only.
      */
     public function getDuration(): int
     {
@@ -510,7 +510,7 @@ class GroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Call duration, in seconds; for ended calls only
+     * Set Call duration, in seconds; for ended calls only.
      */
     public function setDuration(int $duration): self
     {

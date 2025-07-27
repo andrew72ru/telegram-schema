@@ -43,7 +43,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Animation file to be sent
+     * Get Animation file to be sent.
      */
     public function getAnimation(): InputFile|null
     {
@@ -51,7 +51,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Animation file to be sent
+     * Set Animation file to be sent.
      */
     public function setAnimation(InputFile|null $animation): self
     {
@@ -61,7 +61,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Animation thumbnail; pass null to skip thumbnail uploading
+     * Get Animation thumbnail; pass null to skip thumbnail uploading.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -69,7 +69,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Animation thumbnail; pass null to skip thumbnail uploading
+     * Set Animation thumbnail; pass null to skip thumbnail uploading.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -79,7 +79,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get File identifiers of the stickers added to the animation, if applicable
+     * Get File identifiers of the stickers added to the animation, if applicable.
      */
     public function getAddedStickerFileIds(): array|null
     {
@@ -87,7 +87,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set File identifiers of the stickers added to the animation, if applicable
+     * Set File identifiers of the stickers added to the animation, if applicable.
      */
     public function setAddedStickerFileIds(array|null $addedStickerFileIds): self
     {
@@ -97,7 +97,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Duration of the animation, in seconds
+     * Get Duration of the animation, in seconds.
      */
     public function getDuration(): int
     {
@@ -105,7 +105,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Duration of the animation, in seconds
+     * Set Duration of the animation, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -115,7 +115,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Width of the animation; may be replaced by the server
+     * Get Width of the animation; may be replaced by the server.
      */
     public function getWidth(): int
     {
@@ -123,7 +123,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Width of the animation; may be replaced by the server
+     * Set Width of the animation; may be replaced by the server.
      */
     public function setWidth(int $width): self
     {
@@ -133,7 +133,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Height of the animation; may be replaced by the server
+     * Get Height of the animation; may be replaced by the server.
      */
     public function getHeight(): int
     {
@@ -141,7 +141,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Height of the animation; may be replaced by the server
+     * Set Height of the animation; may be replaced by the server.
      */
     public function setHeight(int $height): self
     {
@@ -151,7 +151,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Animation caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Animation caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -159,7 +159,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Animation caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Animation caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -169,7 +169,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation; not supported in secret chats
+     * Get True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation; not supported in secret chats.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -177,7 +177,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation; not supported in secret chats
+     * Set True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation; not supported in secret chats.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -187,7 +187,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get True, if the animation preview must be covered by a spoiler animation; not supported in secret chats
+     * Get True, if the animation preview must be covered by a spoiler animation; not supported in secret chats.
      */
     public function getHasSpoiler(): bool
     {
@@ -195,7 +195,7 @@ class InputMessageAnimation extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set True, if the animation preview must be covered by a spoiler animation; not supported in secret chats
+     * Set True, if the animation preview must be covered by a spoiler animation; not supported in secret chats.
      */
     public function setHasSpoiler(bool $hasSpoiler): self
     {

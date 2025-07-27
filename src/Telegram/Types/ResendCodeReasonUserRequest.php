@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The user requested to resend the code
+ * The user requested to resend the code.
  */
 class ResendCodeReasonUserRequest extends ResendCodeReason implements \JsonSerializable
 {

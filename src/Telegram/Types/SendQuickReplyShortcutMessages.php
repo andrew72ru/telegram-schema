@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends messages from a quick reply shortcut. Requires Telegram Business subscription. Can't be used to send paid messages
+ * Sends messages from a quick reply shortcut. Requires Telegram Business subscription. Can't be used to send paid messages.
  */
 class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the chat to which to send messages. The chat must be a private chat with a regular user
+     * Get Identifier of the chat to which to send messages. The chat must be a private chat with a regular user.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the chat to which to send messages. The chat must be a private chat with a regular user
+     * Set Identifier of the chat to which to send messages. The chat must be a private chat with a regular user.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializab
     }
 
     /**
-     * Get Unique identifier of the quick reply shortcut
+     * Get Unique identifier of the quick reply shortcut.
      */
     public function getShortcutId(): int
     {
@@ -51,7 +51,7 @@ class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializab
     }
 
     /**
-     * Set Unique identifier of the quick reply shortcut
+     * Set Unique identifier of the quick reply shortcut.
      */
     public function setShortcutId(int $shortcutId): self
     {
@@ -61,7 +61,7 @@ class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializab
     }
 
     /**
-     * Get Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates
+     * Get Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates.
      */
     public function getSendingId(): int
     {
@@ -69,7 +69,7 @@ class SendQuickReplyShortcutMessages extends Messages implements \JsonSerializab
     }
 
     /**
-     * Set Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates
+     * Set Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates.
      */
     public function setSendingId(int $sendingId): self
     {

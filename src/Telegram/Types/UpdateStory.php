@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A story was changed @story The new information about the story
+ * A story was changed @story The new information about the story.
  */
 class UpdateStory extends Update implements \JsonSerializable
 {

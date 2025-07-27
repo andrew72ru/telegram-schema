@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Cancels or re-enables Telegram Star subscription for a user; for bots only
+ * Cancels or re-enables Telegram Star subscription for a user; for bots only.
  */
 class EditUserStarSubscription extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditUserStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class EditUserStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class EditUserStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Telegram payment identifier of the subscription
+     * Get Telegram payment identifier of the subscription.
      */
     public function getTelegramPaymentChargeId(): string
     {
@@ -51,7 +51,7 @@ class EditUserStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Telegram payment identifier of the subscription
+     * Set Telegram payment identifier of the subscription.
      */
     public function setTelegramPaymentChargeId(string $telegramPaymentChargeId): self
     {
@@ -61,7 +61,7 @@ class EditUserStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to cancel the subscription; pass false to allow the user to enable it
+     * Get Pass true to cancel the subscription; pass false to allow the user to enable it.
      */
     public function getIsCanceled(): bool
     {
@@ -69,7 +69,7 @@ class EditUserStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to cancel the subscription; pass false to allow the user to enable it
+     * Set Pass true to cancel the subscription; pass false to allow the user to enable it.
      */
     public function setIsCanceled(bool $isCanceled): self
     {

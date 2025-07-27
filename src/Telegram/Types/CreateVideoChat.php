@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a video chat (a group call bound to a chat). Available only for basic groups, supergroups and channels; requires can_manage_video_chats administrator right
+ * Creates a video chat (a group call bound to a chat). Available only for basic groups, supergroups and channels; requires can_manage_video_chats administrator right.
  */
 class CreateVideoChat extends GroupCallId implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat in which the video chat will be created
+     * Get Identifier of a chat in which the video chat will be created.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat in which the video chat will be created
+     * Set Identifier of a chat in which the video chat will be created.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Get Group call title; if empty, chat title will be used
+     * Get Group call title; if empty, chat title will be used.
      */
     public function getTitle(): string
     {
@@ -54,7 +54,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Set Group call title; if empty, chat title will be used
+     * Set Group call title; if empty, chat title will be used.
      */
     public function setTitle(string $title): self
     {
@@ -64,7 +64,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future
+     * Get Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future.
      */
     public function getStartDate(): int
     {
@@ -72,7 +72,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future
+     * Set Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future.
      */
     public function setStartDate(int $startDate): self
     {
@@ -82,7 +82,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create an RTMP stream instead of an ordinary video chat
+     * Get Pass true to create an RTMP stream instead of an ordinary video chat.
      */
     public function getIsRtmpStream(): bool
     {
@@ -90,7 +90,7 @@ class CreateVideoChat extends GroupCallId implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create an RTMP stream instead of an ordinary video chat
+     * Set Pass true to create an RTMP stream instead of an ordinary video chat.
      */
     public function setIsRtmpStream(bool $isRtmpStream): self
     {

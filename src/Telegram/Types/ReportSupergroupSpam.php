@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports messages in a supergroup as spam; requires administrator rights in the supergroup
+ * Reports messages in a supergroup as spam; requires administrator rights in the supergroup.
  */
 class ReportSupergroupSpam extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ReportSupergroupSpam extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Supergroup identifier
+     * Get Supergroup identifier.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ReportSupergroupSpam extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Supergroup identifier
+     * Set Supergroup identifier.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ReportSupergroupSpam extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of messages to report. Use messageProperties.can_report_supergroup_spam to check whether the message can be reported
+     * Get Identifiers of messages to report. Use messageProperties.can_report_supergroup_spam to check whether the message can be reported.
      */
     public function getMessageIds(): array|null
     {
@@ -48,7 +48,7 @@ class ReportSupergroupSpam extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of messages to report. Use messageProperties.can_report_supergroup_spam to check whether the message can be reported
+     * Set Identifiers of messages to report. Use messageProperties.can_report_supergroup_spam to check whether the message can be reported.
      */
     public function setMessageIds(array|null $messageIds): self
     {

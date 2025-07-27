@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of chat folders or a chat folder has changed
+ * The list of chat folders or a chat folder has changed.
  */
 class UpdateChatFolders extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateChatFolders extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new list of chat folders
+     * Get The new list of chat folders.
      */
     public function getChatFolders(): array|null
     {
@@ -33,7 +33,7 @@ class UpdateChatFolders extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new list of chat folders
+     * Set The new list of chat folders.
      */
     public function setChatFolders(array|null $chatFolders): self
     {
@@ -43,7 +43,7 @@ class UpdateChatFolders extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Position of the main chat list among chat folders, 0-based
+     * Get Position of the main chat list among chat folders, 0-based.
      */
     public function getMainChatListPosition(): int
     {
@@ -51,7 +51,7 @@ class UpdateChatFolders extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Position of the main chat list among chat folders, 0-based
+     * Set Position of the main chat list among chat folders, 0-based.
      */
     public function setMainChatListPosition(int $mainChatListPosition): self
     {
@@ -61,7 +61,7 @@ class UpdateChatFolders extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if folder tags are enabled
+     * Get True, if folder tags are enabled.
      */
     public function getAreTagsEnabled(): bool
     {
@@ -69,7 +69,7 @@ class UpdateChatFolders extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if folder tags are enabled
+     * Set True, if folder tags are enabled.
      */
     public function setAreTagsEnabled(bool $areTagsEnabled): self
     {

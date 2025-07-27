@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An ordinary language pack string @value String value
+ * An ordinary language pack string @value String value.
  */
 class LanguagePackStringValueOrdinary extends LanguagePackStringValue implements \JsonSerializable
 {

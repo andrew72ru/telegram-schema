@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of messages from a business account as received by a bot @messages List of business messages
+ * Contains a list of messages from a business account as received by a bot @messages List of business messages.
  */
 class BusinessMessages implements \JsonSerializable
 {

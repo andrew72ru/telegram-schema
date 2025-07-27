@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a value representing a number of seconds @seconds Number of seconds
+ * Contains a value representing a number of seconds @seconds Number of seconds.
  */
 class Seconds implements \JsonSerializable
 {

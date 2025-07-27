@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an audio file. Audio is usually in MP3 or M4A format
+ * Describes an audio file. Audio is usually in MP3 or M4A format.
  */
 class Audio implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the audio, in seconds; as defined by the sender
+     * Get Duration of the audio, in seconds; as defined by the sender.
      */
     public function getDuration(): int
     {
@@ -51,7 +51,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the audio, in seconds; as defined by the sender
+     * Set Duration of the audio, in seconds; as defined by the sender.
      */
     public function setDuration(int $duration): self
     {
@@ -61,7 +61,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get Title of the audio; as defined by the sender
+     * Get Title of the audio; as defined by the sender.
      */
     public function getTitle(): string
     {
@@ -69,7 +69,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set Title of the audio; as defined by the sender
+     * Set Title of the audio; as defined by the sender.
      */
     public function setTitle(string $title): self
     {
@@ -79,7 +79,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get Performer of the audio; as defined by the sender
+     * Get Performer of the audio; as defined by the sender.
      */
     public function getPerformer(): string
     {
@@ -87,7 +87,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set Performer of the audio; as defined by the sender
+     * Set Performer of the audio; as defined by the sender.
      */
     public function setPerformer(string $performer): self
     {
@@ -97,7 +97,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get Original name of the file; as defined by the sender
+     * Get Original name of the file; as defined by the sender.
      */
     public function getFileName(): string
     {
@@ -105,7 +105,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set Original name of the file; as defined by the sender
+     * Set Original name of the file; as defined by the sender.
      */
     public function setFileName(string $fileName): self
     {
@@ -115,7 +115,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get The MIME type of the file; as defined by the sender
+     * Get The MIME type of the file; as defined by the sender.
      */
     public function getMimeType(): string
     {
@@ -123,7 +123,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set The MIME type of the file; as defined by the sender
+     * Set The MIME type of the file; as defined by the sender.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -133,7 +133,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get The minithumbnail of the album cover; may be null
+     * Get The minithumbnail of the album cover; may be null.
      */
     public function getAlbumCoverMinithumbnail(): Minithumbnail|null
     {
@@ -141,7 +141,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set The minithumbnail of the album cover; may be null
+     * Set The minithumbnail of the album cover; may be null.
      */
     public function setAlbumCoverMinithumbnail(Minithumbnail|null $albumCoverMinithumbnail): self
     {
@@ -151,7 +151,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get The thumbnail of the album cover in JPEG format; as defined by the sender. The full size thumbnail is expected to be extracted from the downloaded audio file; may be null
+     * Get The thumbnail of the album cover in JPEG format; as defined by the sender. The full size thumbnail is expected to be extracted from the downloaded audio file; may be null.
      */
     public function getAlbumCoverThumbnail(): Thumbnail|null
     {
@@ -159,7 +159,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set The thumbnail of the album cover in JPEG format; as defined by the sender. The full size thumbnail is expected to be extracted from the downloaded audio file; may be null
+     * Set The thumbnail of the album cover in JPEG format; as defined by the sender. The full size thumbnail is expected to be extracted from the downloaded audio file; may be null.
      */
     public function setAlbumCoverThumbnail(Thumbnail|null $albumCoverThumbnail): self
     {
@@ -169,7 +169,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get Album cover variants to use if the downloaded audio file contains no album cover. Provided thumbnail dimensions are approximate
+     * Get Album cover variants to use if the downloaded audio file contains no album cover. Provided thumbnail dimensions are approximate.
      */
     public function getExternalAlbumCovers(): array|null
     {
@@ -177,7 +177,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set Album cover variants to use if the downloaded audio file contains no album cover. Provided thumbnail dimensions are approximate
+     * Set Album cover variants to use if the downloaded audio file contains no album cover. Provided thumbnail dimensions are approximate.
      */
     public function setExternalAlbumCovers(array|null $externalAlbumCovers): self
     {
@@ -187,7 +187,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Get File containing the audio
+     * Get File containing the audio.
      */
     public function getAudio(): File|null
     {
@@ -195,7 +195,7 @@ class Audio implements \JsonSerializable
     }
 
     /**
-     * Set File containing the audio
+     * Set File containing the audio.
      */
     public function setAudio(File|null $audio): self
     {

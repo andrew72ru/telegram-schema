@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns the list of proxies that are currently set up. Can be called before authorization
+ * Returns the list of proxies that are currently set up. Can be called before authorization.
  */
 class GetProxies extends Proxies implements \JsonSerializable
 {

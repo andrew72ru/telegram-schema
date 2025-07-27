@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a task in a checklist to be sent
+ * Describes a task in a checklist to be sent.
  */
 class InputChecklistTask implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the task; must be positive
+     * Get Unique identifier of the task; must be positive.
      */
     public function getId(): int
     {
@@ -30,7 +30,7 @@ class InputChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the task; must be positive
+     * Set Unique identifier of the task; must be positive.
      */
     public function setId(int $id): self
     {
@@ -40,7 +40,7 @@ class InputChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Get Text of the task; 1-getOption("checklist_task_text_length_max") characters without line feeds. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities
+     * Get Text of the task; 1-getOption("checklist_task_text_length_max") characters without line feeds. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities.
      */
     public function getText(): FormattedText|null
     {
@@ -48,7 +48,7 @@ class InputChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Set Text of the task; 1-getOption("checklist_task_text_length_max") characters without line feeds. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities
+     * Set Text of the task; 1-getOption("checklist_task_text_length_max") characters without line feeds. May contain only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities.
      */
     public function setText(FormattedText|null $text): self
     {

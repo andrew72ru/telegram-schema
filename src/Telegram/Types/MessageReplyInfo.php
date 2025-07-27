@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about replies to a message
+ * Contains information about replies to a message.
  */
 class MessageReplyInfo implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the message was directly or indirectly replied
+     * Get Number of times the message was directly or indirectly replied.
      */
     public function getReplyCount(): int
     {
@@ -39,7 +39,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the message was directly or indirectly replied
+     * Set Number of times the message was directly or indirectly replied.
      */
     public function setReplyCount(int $replyCount): self
     {
@@ -49,7 +49,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of at most 3 recent repliers to the message; available in channels with a discussion supergroup. The users and chats are expected to be inaccessible: only their photo and name will be available
+     * Get Identifiers of at most 3 recent repliers to the message; available in channels with a discussion supergroup. The users and chats are expected to be inaccessible: only their photo and name will be available.
      */
     public function getRecentReplierIds(): array|null
     {
@@ -57,7 +57,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of at most 3 recent repliers to the message; available in channels with a discussion supergroup. The users and chats are expected to be inaccessible: only their photo and name will be available
+     * Set Identifiers of at most 3 recent repliers to the message; available in channels with a discussion supergroup. The users and chats are expected to be inaccessible: only their photo and name will be available.
      */
     public function setRecentReplierIds(array|null $recentReplierIds): self
     {
@@ -67,7 +67,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read incoming reply to the message
+     * Get Identifier of the last read incoming reply to the message.
      */
     public function getLastReadInboxMessageId(): int
     {
@@ -75,7 +75,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read incoming reply to the message
+     * Set Identifier of the last read incoming reply to the message.
      */
     public function setLastReadInboxMessageId(int $lastReadInboxMessageId): self
     {
@@ -85,7 +85,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read outgoing reply to the message
+     * Get Identifier of the last read outgoing reply to the message.
      */
     public function getLastReadOutboxMessageId(): int
     {
@@ -93,7 +93,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read outgoing reply to the message
+     * Set Identifier of the last read outgoing reply to the message.
      */
     public function setLastReadOutboxMessageId(int $lastReadOutboxMessageId): self
     {
@@ -103,7 +103,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last reply to the message
+     * Get Identifier of the last reply to the message.
      */
     public function getLastMessageId(): int
     {
@@ -111,7 +111,7 @@ class MessageReplyInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last reply to the message
+     * Set Identifier of the last reply to the message.
      */
     public function setLastMessageId(int $lastMessageId): self
     {

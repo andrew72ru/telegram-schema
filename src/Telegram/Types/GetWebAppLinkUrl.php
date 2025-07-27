@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an HTTPS URL of a Web App to open after a link of the type internalLinkTypeWebApp is clicked
+ * Returns an HTTPS URL of a Web App to open after a link of the type internalLinkTypeWebApp is clicked.
  */
 class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which the link was clicked; pass 0 if none
+     * Get Identifier of the chat in which the link was clicked; pass 0 if none.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which the link was clicked; pass 0 if none
+     * Set Identifier of the chat in which the link was clicked; pass 0 if none.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -60,7 +60,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -70,7 +70,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Short name of the Web App
+     * Get Short name of the Web App.
      */
     public function getWebAppShortName(): string
     {
@@ -78,7 +78,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Short name of the Web App
+     * Set Short name of the Web App.
      */
     public function setWebAppShortName(string $webAppShortName): self
     {
@@ -88,7 +88,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Start parameter from internalLinkTypeWebApp
+     * Get Start parameter from internalLinkTypeWebApp.
      */
     public function getStartParameter(): string
     {
@@ -96,7 +96,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Start parameter from internalLinkTypeWebApp
+     * Set Start parameter from internalLinkTypeWebApp.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -106,7 +106,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the current user allowed the bot to send them messages
+     * Get Pass true if the current user allowed the bot to send them messages.
      */
     public function getAllowWriteAccess(): bool
     {
@@ -114,7 +114,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the current user allowed the bot to send them messages
+     * Set Pass true if the current user allowed the bot to send them messages.
      */
     public function setAllowWriteAccess(bool $allowWriteAccess): self
     {
@@ -124,7 +124,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Parameters to use to open the Web App
+     * Get Parameters to use to open the Web App.
      */
     public function getParameters(): WebAppOpenParameters|null
     {
@@ -132,7 +132,7 @@ class GetWebAppLinkUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Parameters to use to open the Web App
+     * Set Parameters to use to open the Web App.
      */
     public function setParameters(WebAppOpenParameters|null $parameters): self
     {

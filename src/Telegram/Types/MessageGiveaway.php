@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A giveaway
+ * A giveaway.
  */
 class MessageGiveaway extends MessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Giveaway parameters
+     * Get Giveaway parameters.
      */
     public function getParameters(): GiveawayParameters|null
     {
@@ -36,7 +36,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Giveaway parameters
+     * Set Giveaway parameters.
      */
     public function setParameters(GiveawayParameters|null $parameters): self
     {
@@ -46,7 +46,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of users which will receive Telegram Premium subscription gift codes
+     * Get Number of users which will receive Telegram Premium subscription gift codes.
      */
     public function getWinnerCount(): int
     {
@@ -54,7 +54,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of users which will receive Telegram Premium subscription gift codes
+     * Set Number of users which will receive Telegram Premium subscription gift codes.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -64,7 +64,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Prize of the giveaway
+     * Get Prize of the giveaway.
      */
     public function getPrize(): GiveawayPrize|null
     {
@@ -72,7 +72,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Prize of the giveaway
+     * Set Prize of the giveaway.
      */
     public function setPrize(GiveawayPrize|null $prize): self
     {
@@ -82,7 +82,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get A sticker to be shown in the message; may be null if unknown
+     * Get A sticker to be shown in the message; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -90,7 +90,7 @@ class MessageGiveaway extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set A sticker to be shown in the message; may be null if unknown
+     * Set A sticker to be shown in the message; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {

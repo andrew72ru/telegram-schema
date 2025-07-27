@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Joins an active video chat. Returns join response payload for tgcalls
+ * Joins an active video chat. Returns join response payload for tgcalls.
  */
 class JoinVideoChat extends Text implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -36,7 +36,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -46,7 +46,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a group call participant, which will be used to join the call; pass null to join as self; video chats only
+     * Get Identifier of a group call participant, which will be used to join the call; pass null to join as self; video chats only.
      */
     public function getParticipantId(): MessageSender|null
     {
@@ -54,7 +54,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a group call participant, which will be used to join the call; pass null to join as self; video chats only
+     * Set Identifier of a group call participant, which will be used to join the call; pass null to join as self; video chats only.
      */
     public function setParticipantId(MessageSender|null $participantId): self
     {
@@ -64,7 +64,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Parameters to join the call
+     * Get Parameters to join the call.
      */
     public function getJoinParameters(): GroupCallJoinParameters|null
     {
@@ -72,7 +72,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Parameters to join the call
+     * Set Parameters to join the call.
      */
     public function setJoinParameters(GroupCallJoinParameters|null $joinParameters): self
     {
@@ -82,7 +82,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Invite hash as received from internalLinkTypeVideoChat
+     * Get Invite hash as received from internalLinkTypeVideoChat.
      */
     public function getInviteHash(): string
     {
@@ -90,7 +90,7 @@ class JoinVideoChat extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Invite hash as received from internalLinkTypeVideoChat
+     * Set Invite hash as received from internalLinkTypeVideoChat.
      */
     public function setInviteHash(string $inviteHash): self
     {

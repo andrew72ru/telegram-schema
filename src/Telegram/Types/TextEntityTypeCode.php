@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Text that must be formatted as if inside a code HTML tag
+ * Text that must be formatted as if inside a code HTML tag.
  */
 class TextEntityTypeCode extends TextEntityType implements \JsonSerializable
 {

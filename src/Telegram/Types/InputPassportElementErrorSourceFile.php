@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The file contains an error. The error is considered resolved when the file changes @file_hash Current hash of the file which has the error
+ * The file contains an error. The error is considered resolved when the file changes @file_hash Current hash of the file which has the error.
  */
 class InputPassportElementErrorSourceFile extends InputPassportElementErrorSource implements \JsonSerializable
 {

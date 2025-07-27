@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an item of a list page block @label Item label @page_blocks Item blocks
+ * Describes an item of a list page block @label Item label @page_blocks Item blocks.
  */
 class PageBlockListItem implements \JsonSerializable
 {

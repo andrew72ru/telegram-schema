@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A collage
+ * A collage.
  */
 class PageBlockCollage extends PageBlock implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PageBlockCollage extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Collage item contents
+     * Get Collage item contents.
      */
     public function getPageBlocks(): array|null
     {
@@ -30,7 +30,7 @@ class PageBlockCollage extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Collage item contents
+     * Set Collage item contents.
      */
     public function setPageBlocks(array|null $pageBlocks): self
     {
@@ -40,7 +40,7 @@ class PageBlockCollage extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block caption
+     * Get Block caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -48,7 +48,7 @@ class PageBlockCollage extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block caption
+     * Set Block caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {

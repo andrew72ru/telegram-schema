@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about interactions with a story
+ * Contains information about interactions with a story.
  */
 class StoryInteractionInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the story was viewed
+     * Get Number of times the story was viewed.
      */
     public function getViewCount(): int
     {
@@ -36,7 +36,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the story was viewed
+     * Set Number of times the story was viewed.
      */
     public function setViewCount(int $viewCount): self
     {
@@ -46,7 +46,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the story was forwarded; 0 if none or unknown
+     * Get Number of times the story was forwarded; 0 if none or unknown.
      */
     public function getForwardCount(): int
     {
@@ -54,7 +54,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the story was forwarded; 0 if none or unknown
+     * Set Number of times the story was forwarded; 0 if none or unknown.
      */
     public function setForwardCount(int $forwardCount): self
     {
@@ -64,7 +64,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of reactions added to the story; 0 if none or unknown
+     * Get Number of reactions added to the story; 0 if none or unknown.
      */
     public function getReactionCount(): int
     {
@@ -72,7 +72,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of reactions added to the story; 0 if none or unknown
+     * Set Number of reactions added to the story; 0 if none or unknown.
      */
     public function setReactionCount(int $reactionCount): self
     {
@@ -82,7 +82,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of at most 3 recent viewers of the story
+     * Get Identifiers of at most 3 recent viewers of the story.
      */
     public function getRecentViewerUserIds(): array|null
     {
@@ -90,7 +90,7 @@ class StoryInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of at most 3 recent viewers of the story
+     * Set Identifiers of at most 3 recent viewers of the story.
      */
     public function setRecentViewerUserIds(array|null $recentViewerUserIds): self
     {

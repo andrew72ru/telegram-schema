@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Bans a member in a chat; requires can_restrict_members administrator right. Members can't be banned in private or secret chats. In supergroups and channels, the user will not be able to return to the group on their own using invite links, etc., unless unbanned first
+ * Bans a member in a chat; requires can_restrict_members administrator right. Members can't be banned in private or secret chats. In supergroups and channels, the user will not be able to return to the group on their own using invite links, etc., unless unbanned first.
  */
 class BanChatMember extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Member identifier
+     * Get Member identifier.
      */
     public function getMemberId(): MessageSender|null
     {
@@ -54,7 +54,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Member identifier
+     * Set Member identifier.
      */
     public function setMemberId(MessageSender|null $memberId): self
     {
@@ -64,7 +64,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned
+     * Get Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned.
      */
     public function getBannedUntilDate(): int
     {
@@ -72,7 +72,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned
+     * Set Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned.
      */
     public function setBannedUntilDate(int $bannedUntilDate): self
     {
@@ -82,7 +82,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels
+     * Get Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels.
      */
     public function getRevokeMessages(): bool
     {
@@ -90,7 +90,7 @@ class BanChatMember extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels
+     * Set Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels.
      */
     public function setRevokeMessages(bool $revokeMessages): self
     {

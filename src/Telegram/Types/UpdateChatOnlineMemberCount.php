@@ -22,7 +22,7 @@ class UpdateChatOnlineMemberCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateChatOnlineMemberCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateChatOnlineMemberCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New number of online members in the chat, or 0 if unknown
+     * Get New number of online members in the chat, or 0 if unknown.
      */
     public function getOnlineMemberCount(): int
     {
@@ -48,7 +48,7 @@ class UpdateChatOnlineMemberCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New number of online members in the chat, or 0 if unknown
+     * Set New number of online members in the chat, or 0 if unknown.
      */
     public function setOnlineMemberCount(int $onlineMemberCount): self
     {

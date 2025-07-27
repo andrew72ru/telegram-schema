@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a venue already added to the story
+ * An area pointing to a venue already added to the story.
  */
 class InputStoryAreaTypePreviousVenue extends InputStoryAreaType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputStoryAreaTypePreviousVenue extends InputStoryAreaType implements \Jso
     }
 
     /**
-     * Get Provider of the venue
+     * Get Provider of the venue.
      */
     public function getVenueProvider(): string
     {
@@ -30,7 +30,7 @@ class InputStoryAreaTypePreviousVenue extends InputStoryAreaType implements \Jso
     }
 
     /**
-     * Set Provider of the venue
+     * Set Provider of the venue.
      */
     public function setVenueProvider(string $venueProvider): self
     {
@@ -40,7 +40,7 @@ class InputStoryAreaTypePreviousVenue extends InputStoryAreaType implements \Jso
     }
 
     /**
-     * Get Identifier of the venue in the provider database
+     * Get Identifier of the venue in the provider database.
      */
     public function getVenueId(): string
     {
@@ -48,7 +48,7 @@ class InputStoryAreaTypePreviousVenue extends InputStoryAreaType implements \Jso
     }
 
     /**
-     * Set Identifier of the venue in the provider database
+     * Set Identifier of the venue in the provider database.
      */
     public function setVenueId(string $venueId): self
     {

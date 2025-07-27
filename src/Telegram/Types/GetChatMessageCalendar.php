@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about the next messages of the specified type in the chat split by days. Returns the results in reverse chronological order. Can return partial result for the last returned day. Behavior of this method depends on the value of the option "utc_time_offset"
+ * Returns information about the next messages of the specified type in the chat split by days. Returns the results in reverse chronological order. Can return partial result for the last returned day. Behavior of this method depends on the value of the option "utc_time_offset".
  */
 class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Get Identifier of the chat in which to return information about messages
+     * Get Identifier of the chat in which to return information about messages.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Set Identifier of the chat in which to return information about messages
+     * Set Identifier of the chat in which to return information about messages.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Get Pass topic identifier to get the result only in specific topic; pass null to get the result in all topics; forum topics aren't supported
+     * Get Pass topic identifier to get the result only in specific topic; pass null to get the result in all topics; forum topics aren't supported.
      */
     public function getTopicId(): MessageTopic|null
     {
@@ -54,7 +54,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Set Pass topic identifier to get the result only in specific topic; pass null to get the result in all topics; forum topics aren't supported
+     * Set Pass topic identifier to get the result only in specific topic; pass null to get the result in all topics; forum topics aren't supported.
      */
     public function setTopicId(MessageTopic|null $topicId): self
     {
@@ -64,7 +64,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Get Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
+     * Get Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -72,7 +72,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Set Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
+     * Set Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {
@@ -82,7 +82,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Get The message identifier from which to return information about messages; use 0 to get results from the last message
+     * Get The message identifier from which to return information about messages; use 0 to get results from the last message.
      */
     public function getFromMessageId(): int
     {
@@ -90,7 +90,7 @@ class GetChatMessageCalendar extends MessageCalendar implements \JsonSerializabl
     }
 
     /**
-     * Set The message identifier from which to return information about messages; use 0 to get results from the last message
+     * Set The message identifier from which to return information about messages; use 0 to get results from the last message.
      */
     public function setFromMessageId(int $fromMessageId): self
     {

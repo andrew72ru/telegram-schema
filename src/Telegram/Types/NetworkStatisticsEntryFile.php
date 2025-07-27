@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about the total amount of data that was used to send and receive files
+ * Contains information about the total amount of data that was used to send and receive files.
  */
 class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Get Type of the file the data is part of; pass null if the data isn't related to files
+     * Get Type of the file the data is part of; pass null if the data isn't related to files.
      */
     public function getFileType(): FileType|null
     {
@@ -36,7 +36,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Set Type of the file the data is part of; pass null if the data isn't related to files
+     * Set Type of the file the data is part of; pass null if the data isn't related to files.
      */
     public function setFileType(FileType|null $fileType): self
     {
@@ -46,7 +46,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Get Type of the network the data was sent through. Call setNetworkType to maintain the actual network type
+     * Get Type of the network the data was sent through. Call setNetworkType to maintain the actual network type.
      */
     public function getNetworkType(): NetworkType|null
     {
@@ -54,7 +54,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Set Type of the network the data was sent through. Call setNetworkType to maintain the actual network type
+     * Set Type of the network the data was sent through. Call setNetworkType to maintain the actual network type.
      */
     public function setNetworkType(NetworkType|null $networkType): self
     {
@@ -64,7 +64,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Get Total number of bytes sent
+     * Get Total number of bytes sent.
      */
     public function getSentBytes(): int
     {
@@ -72,7 +72,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Set Total number of bytes sent
+     * Set Total number of bytes sent.
      */
     public function setSentBytes(int $sentBytes): self
     {
@@ -82,7 +82,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Get Total number of bytes received
+     * Get Total number of bytes received.
      */
     public function getReceivedBytes(): int
     {
@@ -90,7 +90,7 @@ class NetworkStatisticsEntryFile extends NetworkStatisticsEntry implements \Json
     }
 
     /**
-     * Set Total number of bytes received
+     * Set Total number of bytes received.
      */
     public function setReceivedBytes(int $receivedBytes): self
     {

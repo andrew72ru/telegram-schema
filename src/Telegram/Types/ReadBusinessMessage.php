@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reads a message on behalf of a business account; for bots only
+ * Reads a message on behalf of a business account; for bots only.
  */
 class ReadBusinessMessage extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ReadBusinessMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection through which the message was received
+     * Get Unique identifier of business connection through which the message was received.
      */
     public function getBusinessConnectionId(): string
     {
@@ -33,7 +33,7 @@ class ReadBusinessMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection through which the message was received
+     * Set Unique identifier of business connection through which the message was received.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -43,7 +43,7 @@ class ReadBusinessMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -51,7 +51,7 @@ class ReadBusinessMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -61,7 +61,7 @@ class ReadBusinessMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -69,7 +69,7 @@ class ReadBusinessMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {

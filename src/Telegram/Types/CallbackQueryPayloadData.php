@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The payload for a general callback button @data Data that was attached to the callback button
+ * The payload for a general callback button @data Data that was attached to the callback button.
  */
 class CallbackQueryPayloadData extends CallbackQueryPayload implements \JsonSerializable
 {

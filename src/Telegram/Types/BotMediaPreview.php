@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes media previews of a bot
+ * Describes media previews of a bot.
  */
 class BotMediaPreview implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the preview was added or changed last time
+     * Get Point in time (Unix timestamp) when the preview was added or changed last time.
      */
     public function getDate(): int
     {
@@ -30,7 +30,7 @@ class BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the preview was added or changed last time
+     * Set Point in time (Unix timestamp) when the preview was added or changed last time.
      */
     public function setDate(int $date): self
     {
@@ -40,7 +40,7 @@ class BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Content of the preview
+     * Get Content of the preview.
      */
     public function getContent(): StoryContent|null
     {
@@ -48,7 +48,7 @@ class BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Content of the preview
+     * Set Content of the preview.
      */
     public function setContent(StoryContent|null $content): self
     {

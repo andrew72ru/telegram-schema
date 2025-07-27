@@ -19,7 +19,7 @@ class InternalLinkTypeChatFolderInvite extends InternalLinkType implements \Json
     }
 
     /**
-     * Get Internal representation of the invite link
+     * Get Internal representation of the invite link.
      */
     public function getInviteLink(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeChatFolderInvite extends InternalLinkType implements \Json
     }
 
     /**
-     * Set Internal representation of the invite link
+     * Set Internal representation of the invite link.
      */
     public function setInviteLink(string $inviteLink): self
     {

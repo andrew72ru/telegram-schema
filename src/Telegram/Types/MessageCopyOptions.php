@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Options to be used when a message content is copied without reference to the original sender. Service messages, messages with messageInvoice, messagePaidMedia, messageGiveaway, or messageGiveawayWinners content can't be copied
+ * Options to be used when a message content is copied without reference to the original sender. Service messages, messages with messageInvoice, messagePaidMedia, messageGiveaway, or messageGiveawayWinners content can't be copied.
  */
 class MessageCopyOptions implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Get True, if content of the message needs to be copied without reference to the original sender. Always true if the message is forwarded to a secret chat or is local.
+     * Get True, if content of the message needs to be copied without reference to the original sender. Always true if the message is forwarded to a secret chat or is local..
      */
     public function getSendCopy(): bool
     {
@@ -36,7 +36,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Set True, if content of the message needs to be copied without reference to the original sender. Always true if the message is forwarded to a secret chat or is local.
+     * Set True, if content of the message needs to be copied without reference to the original sender. Always true if the message is forwarded to a secret chat or is local..
      */
     public function setSendCopy(bool $sendCopy): self
     {
@@ -46,7 +46,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Get True, if media caption of the message copy needs to be replaced. Ignored if send_copy is false
+     * Get True, if media caption of the message copy needs to be replaced. Ignored if send_copy is false.
      */
     public function getReplaceCaption(): bool
     {
@@ -54,7 +54,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Set True, if media caption of the message copy needs to be replaced. Ignored if send_copy is false
+     * Set True, if media caption of the message copy needs to be replaced. Ignored if send_copy is false.
      */
     public function setReplaceCaption(bool $replaceCaption): self
     {
@@ -64,7 +64,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Get New message caption; pass null to copy message without caption. Ignored if replace_caption is false
+     * Get New message caption; pass null to copy message without caption. Ignored if replace_caption is false.
      */
     public function getNewCaption(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Set New message caption; pass null to copy message without caption. Ignored if replace_caption is false
+     * Set New message caption; pass null to copy message without caption. Ignored if replace_caption is false.
      */
     public function setNewCaption(FormattedText|null $newCaption): self
     {
@@ -82,7 +82,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Get True, if new caption must be shown above the media; otherwise, new caption must be shown below the media; not supported in secret chats. Ignored if replace_caption is false
+     * Get True, if new caption must be shown above the media; otherwise, new caption must be shown below the media; not supported in secret chats. Ignored if replace_caption is false.
      */
     public function getNewShowCaptionAboveMedia(): bool
     {
@@ -90,7 +90,7 @@ class MessageCopyOptions implements \JsonSerializable
     }
 
     /**
-     * Set True, if new caption must be shown above the media; otherwise, new caption must be shown below the media; not supported in secret chats. Ignored if replace_caption is false
+     * Set True, if new caption must be shown above the media; otherwise, new caption must be shown below the media; not supported in secret chats. Ignored if replace_caption is false.
      */
     public function setNewShowCaptionAboveMedia(bool $newShowCaptionAboveMedia): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some tasks from a checklist were marked as done or not done
+ * Some tasks from a checklist were marked as done or not done.
  */
 class MessageChecklistTasksDone extends MessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class MessageChecklistTasksDone extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the message with the checklist; can be 0 if the message was deleted
+     * Get Identifier of the message with the checklist; can be 0 if the message was deleted.
      */
     public function getChecklistMessageId(): int
     {
@@ -33,7 +33,7 @@ class MessageChecklistTasksDone extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the message with the checklist; can be 0 if the message was deleted
+     * Set Identifier of the message with the checklist; can be 0 if the message was deleted.
      */
     public function setChecklistMessageId(int $checklistMessageId): self
     {
@@ -43,7 +43,7 @@ class MessageChecklistTasksDone extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Identifiers of tasks that were marked as done
+     * Get Identifiers of tasks that were marked as done.
      */
     public function getMarkedAsDoneTaskIds(): array|null
     {
@@ -51,7 +51,7 @@ class MessageChecklistTasksDone extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Identifiers of tasks that were marked as done
+     * Set Identifiers of tasks that were marked as done.
      */
     public function setMarkedAsDoneTaskIds(array|null $markedAsDoneTaskIds): self
     {
@@ -61,7 +61,7 @@ class MessageChecklistTasksDone extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Identifiers of tasks that were marked as not done
+     * Get Identifiers of tasks that were marked as not done.
      */
     public function getMarkedAsNotDoneTaskIds(): array|null
     {
@@ -69,7 +69,7 @@ class MessageChecklistTasksDone extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Identifiers of tasks that were marked as not done
+     * Set Identifiers of tasks that were marked as not done.
      */
     public function setMarkedAsNotDoneTaskIds(array|null $markedAsNotDoneTaskIds): self
     {

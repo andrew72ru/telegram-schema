@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports reactions set on a message to the Telegram moderators. Reactions on a message can be reported only if messageProperties.can_report_reactions
+ * Reports reactions set on a message to the Telegram moderators. Reactions on a message can be reported only if messageProperties.can_report_reactions.
  */
 class ReportMessageReactions extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ReportMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class ReportMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class ReportMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class ReportMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class ReportMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sender, which added the reaction
+     * Get Identifier of the sender, which added the reaction.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -69,7 +69,7 @@ class ReportMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sender, which added the reaction
+     * Set Identifier of the sender, which added the reaction.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A sticker set has changed @sticker_set The sticker set
+ * A sticker set has changed @sticker_set The sticker set.
  */
 class UpdateStickerSet extends Update implements \JsonSerializable
 {

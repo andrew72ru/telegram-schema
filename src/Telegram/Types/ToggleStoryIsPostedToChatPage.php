@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether a story is accessible after expiration. Can be called only if story.can_toggle_is_posted_to_chat_page == true
+ * Toggles whether a story is accessible after expiration. Can be called only if story.can_toggle_is_posted_to_chat_page == true.
  */
 class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -33,7 +33,7 @@ class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -43,7 +43,7 @@ class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story
+     * Get Identifier of the story.
      */
     public function getStoryId(): int
     {
@@ -51,7 +51,7 @@ class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story
+     * Set Identifier of the story.
      */
     public function setStoryId(int $storyId): self
     {
@@ -61,7 +61,7 @@ class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to make the story accessible after expiration; pass false to make it private
+     * Get Pass true to make the story accessible after expiration; pass false to make it private.
      */
     public function getIsPostedToChatPage(): bool
     {
@@ -69,7 +69,7 @@ class ToggleStoryIsPostedToChatPage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to make the story accessible after expiration; pass false to make it private
+     * Set Pass true to make the story accessible after expiration; pass false to make it private.
      */
     public function setIsPostedToChatPage(bool $isPostedToChatPage): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of advertisements to be shown while a video from a message is watched
+ * Contains a list of advertisements to be shown while a video from a message is watched.
  */
 class VideoMessageAdvertisements implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class VideoMessageAdvertisements implements \JsonSerializable
     }
 
     /**
-     * Get List of advertisements
+     * Get List of advertisements.
      */
     public function getAdvertisements(): array|null
     {
@@ -33,7 +33,7 @@ class VideoMessageAdvertisements implements \JsonSerializable
     }
 
     /**
-     * Set List of advertisements
+     * Set List of advertisements.
      */
     public function setAdvertisements(array|null $advertisements): self
     {
@@ -43,7 +43,7 @@ class VideoMessageAdvertisements implements \JsonSerializable
     }
 
     /**
-     * Get Delay before the first advertisement is shown, in seconds
+     * Get Delay before the first advertisement is shown, in seconds.
      */
     public function getStartDelay(): int
     {
@@ -51,7 +51,7 @@ class VideoMessageAdvertisements implements \JsonSerializable
     }
 
     /**
-     * Set Delay before the first advertisement is shown, in seconds
+     * Set Delay before the first advertisement is shown, in seconds.
      */
     public function setStartDelay(int $startDelay): self
     {
@@ -61,7 +61,7 @@ class VideoMessageAdvertisements implements \JsonSerializable
     }
 
     /**
-     * Get Delay between consecutive advertisements, in seconds
+     * Get Delay between consecutive advertisements, in seconds.
      */
     public function getBetweenDelay(): int
     {
@@ -69,7 +69,7 @@ class VideoMessageAdvertisements implements \JsonSerializable
     }
 
     /**
-     * Set Delay between consecutive advertisements, in seconds
+     * Set Delay between consecutive advertisements, in seconds.
      */
     public function setBetweenDelay(int $betweenDelay): self
     {

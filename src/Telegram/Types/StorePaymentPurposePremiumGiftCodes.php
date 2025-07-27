@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user boosting a chat by creating Telegram Premium gift codes for other users
+ * The user boosting a chat by creating Telegram Premium gift codes for other users.
  */
 class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Get Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user
+     * Get Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user.
      */
     public function getBoostedChatId(): int
     {
@@ -39,7 +39,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Set Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user
+     * Set Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user.
      */
     public function setBoostedChatId(int $boostedChatId): self
     {
@@ -49,7 +49,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -57,7 +57,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -67,7 +67,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -75,7 +75,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -85,7 +85,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Get Identifiers of the users which can activate the gift codes
+     * Get Identifiers of the users which can activate the gift codes.
      */
     public function getUserIds(): array|null
     {
@@ -93,7 +93,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Set Identifiers of the users which can activate the gift codes
+     * Set Identifiers of the users which can activate the gift codes.
      */
     public function setUserIds(array|null $userIds): self
     {
@@ -103,7 +103,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Get Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Get Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function getText(): FormattedText|null
     {
@@ -111,7 +111,7 @@ class StorePaymentPurposePremiumGiftCodes extends StorePaymentPurpose implements
     }
 
     /**
-     * Set Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Set Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function setText(FormattedText|null $text): self
     {

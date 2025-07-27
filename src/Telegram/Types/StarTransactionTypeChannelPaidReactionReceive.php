@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a receiving of a paid reaction to a message by the channel chat; for channel chats only
+ * The transaction is a receiving of a paid reaction to a message by the channel chat; for channel chats only.
  */
 class StarTransactionTypeChannelPaidReactionReceive extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeChannelPaidReactionReceive extends StarTransactionType 
     }
 
     /**
-     * Get Identifier of the user that added the paid reaction
+     * Get Identifier of the user that added the paid reaction.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeChannelPaidReactionReceive extends StarTransactionType 
     }
 
     /**
-     * Set Identifier of the user that added the paid reaction
+     * Set Identifier of the user that added the paid reaction.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeChannelPaidReactionReceive extends StarTransactionType 
     }
 
     /**
-     * Get Identifier of the reacted message; can be 0 or an identifier of a deleted message
+     * Get Identifier of the reacted message; can be 0 or an identifier of a deleted message.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeChannelPaidReactionReceive extends StarTransactionType 
     }
 
     /**
-     * Set Identifier of the reacted message; can be 0 or an identifier of a deleted message
+     * Set Identifier of the reacted message; can be 0 or an identifier of a deleted message.
      */
     public function setMessageId(int $messageId): self
     {

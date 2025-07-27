@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends an inline query to a bot and returns its results. Returns an error with code 502 if the bot fails to answer the query before the query timeout expires
+ * Sends an inline query to a bot and returns its results. Returns an error with code 502 if the bot fails to answer the query before the query timeout expires.
  */
 class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -39,7 +39,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -49,7 +49,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the chat where the query was sent
+     * Get Identifier of the chat where the query was sent.
      */
     public function getChatId(): int
     {
@@ -57,7 +57,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the chat where the query was sent
+     * Set Identifier of the chat where the query was sent.
      */
     public function setChatId(int $chatId): self
     {
@@ -67,7 +67,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Get Location of the user; pass null if unknown or the bot doesn't need user's location
+     * Get Location of the user; pass null if unknown or the bot doesn't need user's location.
      */
     public function getUserLocation(): Location|null
     {
@@ -75,7 +75,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Set Location of the user; pass null if unknown or the bot doesn't need user's location
+     * Set Location of the user; pass null if unknown or the bot doesn't need user's location.
      */
     public function setUserLocation(Location|null $userLocation): self
     {
@@ -85,7 +85,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Get Text of the query
+     * Get Text of the query.
      */
     public function getQuery(): string
     {
@@ -93,7 +93,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Set Text of the query
+     * Set Text of the query.
      */
     public function setQuery(string $query): self
     {
@@ -103,7 +103,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Get Offset of the first entry to return; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -111,7 +111,7 @@ class GetInlineQueryResults extends InlineQueryResults implements \JsonSerializa
     }
 
     /**
-     * Set Offset of the first entry to return; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {

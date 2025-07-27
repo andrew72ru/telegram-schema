@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The code is re-sent, because device verification has failed
+ * The code is re-sent, because device verification has failed.
  */
 class ResendCodeReasonVerificationFailed extends ResendCodeReason implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ResendCodeReasonVerificationFailed extends ResendCodeReason implements \Js
     }
 
     /**
-     * Get Cause of the verification failure, for example, "PLAY_SERVICES_NOT_AVAILABLE", "APNS_RECEIVE_TIMEOUT", or "APNS_INIT_FAILED"
+     * Get Cause of the verification failure, for example, "PLAY_SERVICES_NOT_AVAILABLE", "APNS_RECEIVE_TIMEOUT", or "APNS_INIT_FAILED".
      */
     public function getErrorMessage(): string
     {
@@ -27,7 +27,7 @@ class ResendCodeReasonVerificationFailed extends ResendCodeReason implements \Js
     }
 
     /**
-     * Set Cause of the verification failure, for example, "PLAY_SERVICES_NOT_AVAILABLE", "APNS_RECEIVE_TIMEOUT", or "APNS_INIT_FAILED"
+     * Set Cause of the verification failure, for example, "PLAY_SERVICES_NOT_AVAILABLE", "APNS_RECEIVE_TIMEOUT", or "APNS_INIT_FAILED".
      */
     public function setErrorMessage(string $errorMessage): self
     {

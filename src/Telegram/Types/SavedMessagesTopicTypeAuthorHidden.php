@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Topic containing messages forwarded from a user with hidden privacy
+ * Topic containing messages forwarded from a user with hidden privacy.
  */
 class SavedMessagesTopicTypeAuthorHidden extends SavedMessagesTopicType implements \JsonSerializable
 {

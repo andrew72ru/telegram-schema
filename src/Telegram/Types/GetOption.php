@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the value of an option by its name. (Check the list of available options on https://core.telegram.org/tdlib/options.) Can be called before authorization. Can be called synchronously for options "version" and "commit_hash"
+ * Returns the value of an option by its name. (Check the list of available options on https://core.telegram.org/tdlib/options.) Can be called before authorization. Can be called synchronously for options "version" and "commit_hash".
  */
 class GetOption extends OptionValue implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GetOption extends OptionValue implements \JsonSerializable
     }
 
     /**
-     * Get The name of the option
+     * Get The name of the option.
      */
     public function getName(): string
     {
@@ -27,7 +27,7 @@ class GetOption extends OptionValue implements \JsonSerializable
     }
 
     /**
-     * Set The name of the option
+     * Set The name of the option.
      */
     public function setName(string $name): self
     {

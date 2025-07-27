@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The revenue earned from sponsored messages in a chat has changed. If chat revenue screen is opened, then getChatRevenueTransactions may be called to fetch new transactions
+ * The revenue earned from sponsored messages in a chat has changed. If chat revenue screen is opened, then getChatRevenueTransactions may be called to fetch new transactions.
  */
 class UpdateChatRevenueAmount extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateChatRevenueAmount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateChatRevenueAmount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateChatRevenueAmount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New amount of earned revenue
+     * Get New amount of earned revenue.
      */
     public function getRevenueAmount(): ChatRevenueAmount|null
     {
@@ -48,7 +48,7 @@ class UpdateChatRevenueAmount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New amount of earned revenue
+     * Set New amount of earned revenue.
      */
     public function setRevenueAmount(ChatRevenueAmount|null $revenueAmount): self
     {

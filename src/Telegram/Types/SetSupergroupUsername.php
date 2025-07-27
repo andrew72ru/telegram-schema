@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the editable username of a supergroup or channel, requires owner privileges in the supergroup or channel
+ * Changes the editable username of a supergroup or channel, requires owner privileges in the supergroup or channel.
  */
 class SetSupergroupUsername extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetSupergroupUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup or channel
+     * Get Identifier of the supergroup or channel.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class SetSupergroupUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup or channel
+     * Set Identifier of the supergroup or channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class SetSupergroupUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username
+     * Get New value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username.
      */
     public function getUsername(): string
     {
@@ -48,7 +48,7 @@ class SetSupergroupUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username
+     * Set New value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username.
      */
     public function setUsername(string $username): self
     {

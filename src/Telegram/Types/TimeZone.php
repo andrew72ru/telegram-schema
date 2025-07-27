@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a time zone
+ * Describes a time zone.
  */
 class TimeZone implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class TimeZone implements \JsonSerializable
     }
 
     /**
-     * Get Unique time zone identifier
+     * Get Unique time zone identifier.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class TimeZone implements \JsonSerializable
     }
 
     /**
-     * Set Unique time zone identifier
+     * Set Unique time zone identifier.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class TimeZone implements \JsonSerializable
     }
 
     /**
-     * Get Time zone name
+     * Get Time zone name.
      */
     public function getName(): string
     {
@@ -51,7 +51,7 @@ class TimeZone implements \JsonSerializable
     }
 
     /**
-     * Set Time zone name
+     * Set Time zone name.
      */
     public function setName(string $name): self
     {
@@ -61,7 +61,7 @@ class TimeZone implements \JsonSerializable
     }
 
     /**
-     * Get Current UTC time offset for the time zone
+     * Get Current UTC time offset for the time zone.
      */
     public function getUtcTimeOffset(): int
     {
@@ -69,7 +69,7 @@ class TimeZone implements \JsonSerializable
     }
 
     /**
-     * Set Current UTC time offset for the time zone
+     * Set Current UTC time offset for the time zone.
      */
     public function setUtcTimeOffset(int $utcTimeOffset): self
     {

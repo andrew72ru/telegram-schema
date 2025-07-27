@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with paid media
+ * A message with paid media.
  */
 class MessagePaidMedia extends MessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars needed to buy access to the media in the message
+     * Get Number of Telegram Stars needed to buy access to the media in the message.
      */
     public function getStarCount(): int
     {
@@ -36,7 +36,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars needed to buy access to the media in the message
+     * Set Number of Telegram Stars needed to buy access to the media in the message.
      */
     public function setStarCount(int $starCount): self
     {
@@ -46,7 +46,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Information about the media
+     * Get Information about the media.
      */
     public function getMedia(): array|null
     {
@@ -54,7 +54,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Information about the media
+     * Set Information about the media.
      */
     public function setMedia(array|null $media): self
     {
@@ -64,7 +64,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Media caption
+     * Get Media caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Media caption
+     * Set Media caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -82,7 +82,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the caption must be shown above the media; otherwise, the caption must be shown below the media
+     * Get True, if the caption must be shown above the media; otherwise, the caption must be shown below the media.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -90,7 +90,7 @@ class MessagePaidMedia extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the caption must be shown above the media; otherwise, the caption must be shown below the media
+     * Set True, if the caption must be shown above the media; otherwise, the caption must be shown below the media.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {

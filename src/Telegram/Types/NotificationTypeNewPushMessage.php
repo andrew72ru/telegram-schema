@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * New message was received through a push notification
+ * New message was received through a push notification.
  */
 class NotificationTypeNewPushMessage extends NotificationType implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Get The message identifier. The message will not be available in the chat history, but the identifier can be used in viewMessages, or as a message to be replied in the same chat
+     * Get The message identifier. The message will not be available in the chat history, but the identifier can be used in viewMessages, or as a message to be replied in the same chat.
      */
     public function getMessageId(): int
     {
@@ -39,7 +39,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Set The message identifier. The message will not be available in the chat history, but the identifier can be used in viewMessages, or as a message to be replied in the same chat
+     * Set The message identifier. The message will not be available in the chat history, but the identifier can be used in viewMessages, or as a message to be replied in the same chat.
      */
     public function setMessageId(int $messageId): self
     {
@@ -49,7 +49,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Get Identifier of the sender of the message. Corresponding user or chat may be inaccessible
+     * Get Identifier of the sender of the message. Corresponding user or chat may be inaccessible.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -57,7 +57,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Set Identifier of the sender of the message. Corresponding user or chat may be inaccessible
+     * Set Identifier of the sender of the message. Corresponding user or chat may be inaccessible.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -67,7 +67,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Get Name of the sender
+     * Get Name of the sender.
      */
     public function getSenderName(): string
     {
@@ -75,7 +75,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Set Name of the sender
+     * Set Name of the sender.
      */
     public function setSenderName(string $senderName): self
     {
@@ -85,7 +85,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Get True, if the message is outgoing
+     * Get True, if the message is outgoing.
      */
     public function getIsOutgoing(): bool
     {
@@ -93,7 +93,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Set True, if the message is outgoing
+     * Set True, if the message is outgoing.
      */
     public function setIsOutgoing(bool $isOutgoing): self
     {
@@ -103,7 +103,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Get Push message content
+     * Get Push message content.
      */
     public function getContent(): PushMessageContent|null
     {
@@ -111,7 +111,7 @@ class NotificationTypeNewPushMessage extends NotificationType implements \JsonSe
     }
 
     /**
-     * Set Push message content
+     * Set Push message content.
      */
     public function setContent(PushMessageContent|null $content): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user must buy Telegram Premium as an in-store purchase to log in. Call checkAuthenticationPremiumPurchase and then setAuthenticationPremiumPurchaseTransaction
+ * The user must buy Telegram Premium as an in-store purchase to log in. Call checkAuthenticationPremiumPurchase and then setAuthenticationPremiumPurchaseTransaction.
  */
 class AuthorizationStateWaitPremiumPurchase extends AuthorizationState implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class AuthorizationStateWaitPremiumPurchase extends AuthorizationState implement
     }
 
     /**
-     * Get Identifier of the store product that must be bought
+     * Get Identifier of the store product that must be bought.
      */
     public function getStoreProductId(): string
     {
@@ -27,7 +27,7 @@ class AuthorizationStateWaitPremiumPurchase extends AuthorizationState implement
     }
 
     /**
-     * Set Identifier of the store product that must be bought
+     * Set Identifier of the store product that must be bought.
      */
     public function setStoreProductId(string $storeProductId): self
     {

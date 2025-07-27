@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with paid media
+ * A message with paid media.
  */
 class PushMessageContentPaidMedia extends PushMessageContent implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PushMessageContentPaidMedia extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Get Number of Telegram Stars needed to buy access to the media in the message; 0 for pinned message
+     * Get Number of Telegram Stars needed to buy access to the media in the message; 0 for pinned message.
      */
     public function getStarCount(): int
     {
@@ -30,7 +30,7 @@ class PushMessageContentPaidMedia extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Set Number of Telegram Stars needed to buy access to the media in the message; 0 for pinned message
+     * Set Number of Telegram Stars needed to buy access to the media in the message; 0 for pinned message.
      */
     public function setStarCount(int $starCount): self
     {
@@ -40,7 +40,7 @@ class PushMessageContentPaidMedia extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Get True, if the message is a pinned message with the specified content
+     * Get True, if the message is a pinned message with the specified content.
      */
     public function getIsPinned(): bool
     {
@@ -48,7 +48,7 @@ class PushMessageContentPaidMedia extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Set True, if the message is a pinned message with the specified content
+     * Set True, if the message is a pinned message with the specified content.
      */
     public function setIsPinned(bool $isPinned): self
     {

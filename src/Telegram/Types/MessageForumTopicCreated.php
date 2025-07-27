@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forum topic has been created @name Name of the topic @icon Icon of the topic
+ * A forum topic has been created @name Name of the topic @icon Icon of the topic.
  */
 class MessageForumTopicCreated extends MessageContent implements \JsonSerializable
 {

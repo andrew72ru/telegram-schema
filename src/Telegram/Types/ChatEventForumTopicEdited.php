@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forum topic was edited @old_topic_info Old information about the topic @new_topic_info New information about the topic
+ * A forum topic was edited @old_topic_info Old information about the topic @new_topic_info New information about the topic.
  */
 class ChatEventForumTopicEdited extends ChatEventAction implements \JsonSerializable
 {

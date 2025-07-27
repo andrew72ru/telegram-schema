@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes verification status provided by a bot
+ * Describes verification status provided by a bot.
  */
 class BotVerification implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class BotVerification implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the bot that provided the verification
+     * Get Identifier of the bot that provided the verification.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class BotVerification implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the bot that provided the verification
+     * Set Identifier of the bot that provided the verification.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class BotVerification implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the custom emoji that is used as the verification sign
+     * Get Identifier of the custom emoji that is used as the verification sign.
      */
     public function getIconCustomEmojiId(): int
     {
@@ -51,7 +51,7 @@ class BotVerification implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the custom emoji that is used as the verification sign
+     * Set Identifier of the custom emoji that is used as the verification sign.
      */
     public function setIconCustomEmojiId(int $iconCustomEmojiId): self
     {
@@ -61,7 +61,7 @@ class BotVerification implements \JsonSerializable
     }
 
     /**
-     * Get Custom description of verification reason set by the bot. Can contain only Mention, Hashtag, Cashtag, PhoneNumber, BankCardNumber, Url, and EmailAddress entities
+     * Get Custom description of verification reason set by the bot. Can contain only Mention, Hashtag, Cashtag, PhoneNumber, BankCardNumber, Url, and EmailAddress entities.
      */
     public function getCustomDescription(): FormattedText|null
     {
@@ -69,7 +69,7 @@ class BotVerification implements \JsonSerializable
     }
 
     /**
-     * Set Custom description of verification reason set by the bot. Can contain only Mention, Hashtag, Cashtag, PhoneNumber, BankCardNumber, Url, and EmailAddress entities
+     * Set Custom description of verification reason set by the bot. Can contain only Mention, Hashtag, Cashtag, PhoneNumber, BankCardNumber, Url, and EmailAddress entities.
      */
     public function setCustomDescription(FormattedText|null $customDescription): self
     {

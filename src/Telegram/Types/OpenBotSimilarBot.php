@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that a bot was opened from the list of similar bots
+ * Informs TDLib that a bot was opened from the list of similar bots.
  */
 class OpenBotSimilarBot extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class OpenBotSimilarBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the original bot, which similar bots were requested
+     * Get Identifier of the original bot, which similar bots were requested.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class OpenBotSimilarBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the original bot, which similar bots were requested
+     * Set Identifier of the original bot, which similar bots were requested.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class OpenBotSimilarBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the opened bot
+     * Get Identifier of the opened bot.
      */
     public function getOpenedBotUserId(): int
     {
@@ -48,7 +48,7 @@ class OpenBotSimilarBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the opened bot
+     * Set Identifier of the opened bot.
      */
     public function setOpenedBotUserId(int $openedBotUserId): self
     {

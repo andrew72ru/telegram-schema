@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an audio file
+ * Represents an audio file.
  */
 class InlineQueryResultAudio extends InlineQueryResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InlineQueryResultAudio extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -30,7 +30,7 @@ class InlineQueryResultAudio extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -40,7 +40,7 @@ class InlineQueryResultAudio extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Audio file
+     * Get Audio file.
      */
     public function getAudio(): Audio|null
     {
@@ -48,7 +48,7 @@ class InlineQueryResultAudio extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Audio file
+     * Set Audio file.
      */
     public function setAudio(Audio|null $audio): self
     {

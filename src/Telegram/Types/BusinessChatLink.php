@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a business chat link
+ * Contains information about a business chat link.
  */
 class BusinessChatLink implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Get The HTTPS link
+     * Get The HTTPS link.
      */
     public function getLink(): string
     {
@@ -36,7 +36,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Set The HTTPS link
+     * Set The HTTPS link.
      */
     public function setLink(string $link): self
     {
@@ -46,7 +46,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Get Message draft text that will be added to the input field
+     * Get Message draft text that will be added to the input field.
      */
     public function getText(): FormattedText|null
     {
@@ -54,7 +54,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Set Message draft text that will be added to the input field
+     * Set Message draft text that will be added to the input field.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -64,7 +64,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Get Link title
+     * Get Link title.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Set Link title
+     * Set Link title.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the link was used
+     * Get Number of times the link was used.
      */
     public function getViewCount(): int
     {
@@ -90,7 +90,7 @@ class BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the link was used
+     * Set Number of times the link was used.
      */
     public function setViewCount(int $viewCount): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether aggressive anti-spam checks are enabled in the supergroup. Can be called only if supergroupFullInfo.can_toggle_aggressive_anti_spam == true
+ * Toggles whether aggressive anti-spam checks are enabled in the supergroup. Can be called only if supergroupFullInfo.can_toggle_aggressive_anti_spam == true.
  */
 class ToggleSupergroupHasAggressiveAntiSpamEnabled extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleSupergroupHasAggressiveAntiSpamEnabled extends Ok implements \JsonSe
     }
 
     /**
-     * Get The identifier of the supergroup, which isn't a broadcast group
+     * Get The identifier of the supergroup, which isn't a broadcast group.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ToggleSupergroupHasAggressiveAntiSpamEnabled extends Ok implements \JsonSe
     }
 
     /**
-     * Set The identifier of the supergroup, which isn't a broadcast group
+     * Set The identifier of the supergroup, which isn't a broadcast group.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ToggleSupergroupHasAggressiveAntiSpamEnabled extends Ok implements \JsonSe
     }
 
     /**
-     * Get The new value of has_aggressive_anti_spam_enabled
+     * Get The new value of has_aggressive_anti_spam_enabled.
      */
     public function getHasAggressiveAntiSpamEnabled(): bool
     {
@@ -48,7 +48,7 @@ class ToggleSupergroupHasAggressiveAntiSpamEnabled extends Ok implements \JsonSe
     }
 
     /**
-     * Set The new value of has_aggressive_anti_spam_enabled
+     * Set The new value of has_aggressive_anti_spam_enabled.
      */
     public function setHasAggressiveAntiSpamEnabled(bool $hasAggressiveAntiSpamEnabled): self
     {

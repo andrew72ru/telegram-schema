@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns available options for Telegram Star giveaway creation
+ * Returns available options for Telegram Star giveaway creation.
  */
 class GetStarGiveawayPaymentOptions extends StarGiveawayPaymentOptions implements \JsonSerializable
 {

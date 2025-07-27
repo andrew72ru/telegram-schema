@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Telegram Passport data has been received; for bots only @elements List of received Telegram Passport elements @credentials Encrypted data credentials
+ * Telegram Passport data has been received; for bots only @elements List of received Telegram Passport elements @credentials Encrypted data credentials.
  */
 class MessagePassportDataReceived extends MessageContent implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns privacy settings for new chat creation
+ * Returns privacy settings for new chat creation.
  */
 class GetNewChatPrivacySettings extends NewChatPrivacySettings implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Applies if a user enters new credentials using Google Pay @data JSON-encoded data with the credential identifier
+ * Applies if a user enters new credentials using Google Pay @data JSON-encoded data with the credential identifier.
  */
 class InputCredentialsGooglePay extends InputCredentials implements \JsonSerializable
 {

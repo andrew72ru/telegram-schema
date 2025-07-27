@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A digit-only authentication code is delivered to https://fragment.com. The user must be logged in there via a wallet owning the phone number's NFT
+ * A digit-only authentication code is delivered to https://fragment.com. The user must be logged in there via a wallet owning the phone number's NFT.
  */
 class AuthenticationCodeTypeFragment extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AuthenticationCodeTypeFragment extends AuthenticationCodeType implements \
     }
 
     /**
-     * Get URL to open to receive the code
+     * Get URL to open to receive the code.
      */
     public function getUrl(): string
     {
@@ -30,7 +30,7 @@ class AuthenticationCodeTypeFragment extends AuthenticationCodeType implements \
     }
 
     /**
-     * Set URL to open to receive the code
+     * Set URL to open to receive the code.
      */
     public function setUrl(string $url): self
     {
@@ -40,7 +40,7 @@ class AuthenticationCodeTypeFragment extends AuthenticationCodeType implements \
     }
 
     /**
-     * Get Length of the code
+     * Get Length of the code.
      */
     public function getLength(): int
     {
@@ -48,7 +48,7 @@ class AuthenticationCodeTypeFragment extends AuthenticationCodeType implements \
     }
 
     /**
-     * Set Length of the code
+     * Set Length of the code.
      */
     public function setLength(int $length): self
     {

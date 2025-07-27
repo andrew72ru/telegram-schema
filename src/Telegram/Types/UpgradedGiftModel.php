@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a model of an upgraded gift
+ * Describes a model of an upgraded gift.
  */
 class UpgradedGiftModel implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpgradedGiftModel implements \JsonSerializable
     }
 
     /**
-     * Get Name of the model
+     * Get Name of the model.
      */
     public function getName(): string
     {
@@ -33,7 +33,7 @@ class UpgradedGiftModel implements \JsonSerializable
     }
 
     /**
-     * Set Name of the model
+     * Set Name of the model.
      */
     public function setName(string $name): self
     {
@@ -43,7 +43,7 @@ class UpgradedGiftModel implements \JsonSerializable
     }
 
     /**
-     * Get The sticker representing the upgraded gift
+     * Get The sticker representing the upgraded gift.
      */
     public function getSticker(): Sticker|null
     {
@@ -51,7 +51,7 @@ class UpgradedGiftModel implements \JsonSerializable
     }
 
     /**
-     * Set The sticker representing the upgraded gift
+     * Set The sticker representing the upgraded gift.
      */
     public function setSticker(Sticker|null $sticker): self
     {
@@ -61,7 +61,7 @@ class UpgradedGiftModel implements \JsonSerializable
     }
 
     /**
-     * Get The number of upgraded gifts that receive this model for each 1000 gifts upgraded
+     * Get The number of upgraded gifts that receive this model for each 1000 gifts upgraded.
      */
     public function getRarityPerMille(): int
     {
@@ -69,7 +69,7 @@ class UpgradedGiftModel implements \JsonSerializable
     }
 
     /**
-     * Set The number of upgraded gifts that receive this model for each 1000 gifts upgraded
+     * Set The number of upgraded gifts that receive this model for each 1000 gifts upgraded.
      */
     public function setRarityPerMille(int $rarityPerMille): self
     {

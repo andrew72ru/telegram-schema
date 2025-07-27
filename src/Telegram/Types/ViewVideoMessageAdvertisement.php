@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that the user viewed a video message advertisement @advertisement_unique_id Unique identifier of the advertisement
+ * Informs TDLib that the user viewed a video message advertisement @advertisement_unique_id Unique identifier of the advertisement.
  */
 class ViewVideoMessageAdvertisement extends Ok implements \JsonSerializable
 {

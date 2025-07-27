@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Closes a secret chat, effectively transferring its state to secretChatStateClosed @secret_chat_id Secret chat identifier
+ * Closes a secret chat, effectively transferring its state to secretChatStateClosed @secret_chat_id Secret chat identifier.
  */
 class CloseSecretChat extends Ok implements \JsonSerializable
 {

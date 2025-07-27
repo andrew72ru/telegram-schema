@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Passport element containing the user's internal passport @internal_passport Internal passport
+ * A Telegram Passport element containing the user's internal passport @internal_passport Internal passport.
  */
 class PassportElementInternalPassport extends PassportElement implements \JsonSerializable
 {

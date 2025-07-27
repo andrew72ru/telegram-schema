@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes theme settings
+ * Describes theme settings.
  */
 class ThemeSettings implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Get Theme accent color in ARGB format
+     * Get Theme accent color in ARGB format.
      */
     public function getAccentColor(): int
     {
@@ -39,7 +39,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Set Theme accent color in ARGB format
+     * Set Theme accent color in ARGB format.
      */
     public function setAccentColor(int $accentColor): self
     {
@@ -49,7 +49,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Get The background to be used in chats; may be null
+     * Get The background to be used in chats; may be null.
      */
     public function getBackground(): Background|null
     {
@@ -57,7 +57,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Set The background to be used in chats; may be null
+     * Set The background to be used in chats; may be null.
      */
     public function setBackground(Background|null $background): self
     {
@@ -67,7 +67,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Get The fill to be used as a background for outgoing messages
+     * Get The fill to be used as a background for outgoing messages.
      */
     public function getOutgoingMessageFill(): BackgroundFill|null
     {
@@ -75,7 +75,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Set The fill to be used as a background for outgoing messages
+     * Set The fill to be used as a background for outgoing messages.
      */
     public function setOutgoingMessageFill(BackgroundFill|null $outgoingMessageFill): self
     {
@@ -85,7 +85,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the freeform gradient fill needs to be animated on every sent message
+     * Get If true, the freeform gradient fill needs to be animated on every sent message.
      */
     public function getAnimateOutgoingMessageFill(): bool
     {
@@ -93,7 +93,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the freeform gradient fill needs to be animated on every sent message
+     * Set If true, the freeform gradient fill needs to be animated on every sent message.
      */
     public function setAnimateOutgoingMessageFill(bool $animateOutgoingMessageFill): self
     {
@@ -103,7 +103,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Get Accent color of outgoing messages in ARGB format
+     * Get Accent color of outgoing messages in ARGB format.
      */
     public function getOutgoingMessageAccentColor(): int
     {
@@ -111,7 +111,7 @@ class ThemeSettings implements \JsonSerializable
     }
 
     /**
-     * Set Accent color of outgoing messages in ARGB format
+     * Set Accent color of outgoing messages in ARGB format.
      */
     public function setOutgoingMessageAccentColor(int $outgoingMessageAccentColor): self
     {

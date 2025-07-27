@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a supergroup or channel with zero or more members (subscribers in the case of channels). From the point of view of the system, a channel is a special kind of a supergroup:
+ * Represents a supergroup or channel with zero or more members (subscribers in the case of channels). From the point of view of the system, a channel is a special kind of a supergroup:.
  */
 class Supergroup implements \JsonSerializable
 {
@@ -97,7 +97,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Supergroup or channel identifier
+     * Get Supergroup or channel identifier.
      */
     public function getId(): int
     {
@@ -105,7 +105,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Supergroup or channel identifier
+     * Set Supergroup or channel identifier.
      */
     public function setId(int $id): self
     {
@@ -115,7 +115,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Usernames of the supergroup or channel; may be null
+     * Get Usernames of the supergroup or channel; may be null.
      */
     public function getUsernames(): Usernames|null
     {
@@ -123,7 +123,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Usernames of the supergroup or channel; may be null
+     * Set Usernames of the supergroup or channel; may be null.
      */
     public function setUsernames(Usernames|null $usernames): self
     {
@@ -133,7 +133,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the current user joined, or the point in time when the supergroup or channel was created, in case the user is not a member
+     * Get Point in time (Unix timestamp) when the current user joined, or the point in time when the supergroup or channel was created, in case the user is not a member.
      */
     public function getDate(): int
     {
@@ -141,7 +141,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the current user joined, or the point in time when the supergroup or channel was created, in case the user is not a member
+     * Set Point in time (Unix timestamp) when the current user joined, or the point in time when the supergroup or channel was created, in case the user is not a member.
      */
     public function setDate(int $date): self
     {
@@ -151,7 +151,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Status of the current user in the supergroup or channel; custom title will always be empty
+     * Get Status of the current user in the supergroup or channel; custom title will always be empty.
      */
     public function getStatus(): ChatMemberStatus|null
     {
@@ -159,7 +159,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Status of the current user in the supergroup or channel; custom title will always be empty
+     * Set Status of the current user in the supergroup or channel; custom title will always be empty.
      */
     public function setStatus(ChatMemberStatus|null $status): self
     {
@@ -169,7 +169,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Number of members in the supergroup or channel; 0 if unknown. Currently, it is guaranteed to be known only if the supergroup or channel was received through
+     * Get Number of members in the supergroup or channel; 0 if unknown. Currently, it is guaranteed to be known only if the supergroup or channel was received through.
      */
     public function getMemberCount(): int
     {
@@ -177,7 +177,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Number of members in the supergroup or channel; 0 if unknown. Currently, it is guaranteed to be known only if the supergroup or channel was received through
+     * Set Number of members in the supergroup or channel; 0 if unknown. Currently, it is guaranteed to be known only if the supergroup or channel was received through.
      */
     public function setMemberCount(int $memberCount): self
     {
@@ -187,7 +187,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Approximate boost level for the chat
+     * Get Approximate boost level for the chat.
      */
     public function getBoostLevel(): int
     {
@@ -195,7 +195,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Approximate boost level for the chat
+     * Set Approximate boost level for the chat.
      */
     public function setBoostLevel(int $boostLevel): self
     {
@@ -205,7 +205,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if automatic translation of messages is enabled in the channel
+     * Get True, if automatic translation of messages is enabled in the channel.
      */
     public function getHasAutomaticTranslation(): bool
     {
@@ -213,7 +213,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if automatic translation of messages is enabled in the channel
+     * Set True, if automatic translation of messages is enabled in the channel.
      */
     public function setHasAutomaticTranslation(bool $hasAutomaticTranslation): self
     {
@@ -223,7 +223,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the channel has a discussion group, or the supergroup is the designated discussion group for a channel
+     * Get True, if the channel has a discussion group, or the supergroup is the designated discussion group for a channel.
      */
     public function getHasLinkedChat(): bool
     {
@@ -231,7 +231,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the channel has a discussion group, or the supergroup is the designated discussion group for a channel
+     * Set True, if the channel has a discussion group, or the supergroup is the designated discussion group for a channel.
      */
     public function setHasLinkedChat(bool $hasLinkedChat): self
     {
@@ -241,7 +241,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is connected to a location, i.e. the supergroup is a location-based supergroup
+     * Get True, if the supergroup is connected to a location, i.e. the supergroup is a location-based supergroup.
      */
     public function getHasLocation(): bool
     {
@@ -249,7 +249,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is connected to a location, i.e. the supergroup is a location-based supergroup
+     * Set True, if the supergroup is connected to a location, i.e. the supergroup is a location-based supergroup.
      */
     public function setHasLocation(bool $hasLocation): self
     {
@@ -259,7 +259,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if messages sent to the channel contains name of the sender. This field is only applicable to channels
+     * Get True, if messages sent to the channel contains name of the sender. This field is only applicable to channels.
      */
     public function getSignMessages(): bool
     {
@@ -267,7 +267,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if messages sent to the channel contains name of the sender. This field is only applicable to channels
+     * Set True, if messages sent to the channel contains name of the sender. This field is only applicable to channels.
      */
     public function setSignMessages(bool $signMessages): self
     {
@@ -277,7 +277,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if messages sent to the channel have information about the sender user. This field is only applicable to channels
+     * Get True, if messages sent to the channel have information about the sender user. This field is only applicable to channels.
      */
     public function getShowMessageSender(): bool
     {
@@ -285,7 +285,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if messages sent to the channel have information about the sender user. This field is only applicable to channels
+     * Set True, if messages sent to the channel have information about the sender user. This field is only applicable to channels.
      */
     public function setShowMessageSender(bool $showMessageSender): self
     {
@@ -295,7 +295,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if users need to join the supergroup before they can send messages. Always true for channels and non-discussion supergroups
+     * Get True, if users need to join the supergroup before they can send messages. Always true for channels and non-discussion supergroups.
      */
     public function getJoinToSendMessages(): bool
     {
@@ -303,7 +303,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if users need to join the supergroup before they can send messages. Always true for channels and non-discussion supergroups
+     * Set True, if users need to join the supergroup before they can send messages. Always true for channels and non-discussion supergroups.
      */
     public function setJoinToSendMessages(bool $joinToSendMessages): self
     {
@@ -313,7 +313,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if all users directly joining the supergroup need to be approved by supergroup administrators. Always false for channels and supergroups without username, location, or a linked chat
+     * Get True, if all users directly joining the supergroup need to be approved by supergroup administrators. Always false for channels and supergroups without username, location, or a linked chat.
      */
     public function getJoinByRequest(): bool
     {
@@ -321,7 +321,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if all users directly joining the supergroup need to be approved by supergroup administrators. Always false for channels and supergroups without username, location, or a linked chat
+     * Set True, if all users directly joining the supergroup need to be approved by supergroup administrators. Always false for channels and supergroups without username, location, or a linked chat.
      */
     public function setJoinByRequest(bool $joinByRequest): self
     {
@@ -331,7 +331,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the slow mode is enabled in the supergroup
+     * Get True, if the slow mode is enabled in the supergroup.
      */
     public function getIsSlowModeEnabled(): bool
     {
@@ -339,7 +339,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the slow mode is enabled in the supergroup
+     * Set True, if the slow mode is enabled in the supergroup.
      */
     public function setIsSlowModeEnabled(bool $isSlowModeEnabled): self
     {
@@ -349,7 +349,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is a channel
+     * Get True, if the supergroup is a channel.
      */
     public function getIsChannel(): bool
     {
@@ -357,7 +357,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is a channel
+     * Set True, if the supergroup is a channel.
      */
     public function setIsChannel(bool $isChannel): self
     {
@@ -367,7 +367,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is a broadcast group, i.e. only administrators can send messages and there is no limit on the number of members
+     * Get True, if the supergroup is a broadcast group, i.e. only administrators can send messages and there is no limit on the number of members.
      */
     public function getIsBroadcastGroup(): bool
     {
@@ -375,7 +375,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is a broadcast group, i.e. only administrators can send messages and there is no limit on the number of members
+     * Set True, if the supergroup is a broadcast group, i.e. only administrators can send messages and there is no limit on the number of members.
      */
     public function setIsBroadcastGroup(bool $isBroadcastGroup): self
     {
@@ -385,7 +385,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is a forum with topics
+     * Get True, if the supergroup is a forum with topics.
      */
     public function getIsForum(): bool
     {
@@ -393,7 +393,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is a forum with topics
+     * Set True, if the supergroup is a forum with topics.
      */
     public function setIsForum(bool $isForum): self
     {
@@ -403,7 +403,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is a direct message group for a channel chat
+     * Get True, if the supergroup is a direct message group for a channel chat.
      */
     public function getIsDirectMessagesGroup(): bool
     {
@@ -411,7 +411,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is a direct message group for a channel chat
+     * Set True, if the supergroup is a direct message group for a channel chat.
      */
     public function setIsDirectMessagesGroup(bool $isDirectMessagesGroup): self
     {
@@ -421,7 +421,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is a direct messages group for a channel chat that is administered by the current user
+     * Get True, if the supergroup is a direct messages group for a channel chat that is administered by the current user.
      */
     public function getIsAdministeredDirectMessagesGroup(): bool
     {
@@ -429,7 +429,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is a direct messages group for a channel chat that is administered by the current user
+     * Set True, if the supergroup is a direct messages group for a channel chat that is administered by the current user.
      */
     public function setIsAdministeredDirectMessagesGroup(bool $isAdministeredDirectMessagesGroup): self
     {
@@ -439,7 +439,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Information about verification status of the supergroup or channel; may be null if none
+     * Get Information about verification status of the supergroup or channel; may be null if none.
      */
     public function getVerificationStatus(): VerificationStatus|null
     {
@@ -447,7 +447,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Information about verification status of the supergroup or channel; may be null if none
+     * Set Information about verification status of the supergroup or channel; may be null if none.
      */
     public function setVerificationStatus(VerificationStatus|null $verificationStatus): self
     {
@@ -457,7 +457,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the channel has direct messages group
+     * Get True, if the channel has direct messages group.
      */
     public function getHasDirectMessagesGroup(): bool
     {
@@ -465,7 +465,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the channel has direct messages group
+     * Set True, if the channel has direct messages group.
      */
     public function setHasDirectMessagesGroup(bool $hasDirectMessagesGroup): self
     {
@@ -475,7 +475,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup is a forum, which topics are shown in the same way as in channel direct messages groups
+     * Get True, if the supergroup is a forum, which topics are shown in the same way as in channel direct messages groups.
      */
     public function getHasForumTabs(): bool
     {
@@ -483,7 +483,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup is a forum, which topics are shown in the same way as in channel direct messages groups
+     * Set True, if the supergroup is a forum, which topics are shown in the same way as in channel direct messages groups.
      */
     public function setHasForumTabs(bool $hasForumTabs): self
     {
@@ -493,7 +493,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if content of media messages in the supergroup or channel chat must be hidden with 18+ spoiler
+     * Get True, if content of media messages in the supergroup or channel chat must be hidden with 18+ spoiler.
      */
     public function getHasSensitiveContent(): bool
     {
@@ -501,7 +501,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if content of media messages in the supergroup or channel chat must be hidden with 18+ spoiler
+     * Set True, if content of media messages in the supergroup or channel chat must be hidden with 18+ spoiler.
      */
     public function setHasSensitiveContent(bool $hasSensitiveContent): self
     {
@@ -511,7 +511,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, contains a human-readable description of the reason why access to this supergroup or channel must be restricted
+     * Get If non-empty, contains a human-readable description of the reason why access to this supergroup or channel must be restricted.
      */
     public function getRestrictionReason(): string
     {
@@ -519,7 +519,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, contains a human-readable description of the reason why access to this supergroup or channel must be restricted
+     * Set If non-empty, contains a human-readable description of the reason why access to this supergroup or channel must be restricted.
      */
     public function setRestrictionReason(string $restrictionReason): self
     {
@@ -529,7 +529,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid by non-administrator users of the supergroup chat for each sent message
+     * Get Number of Telegram Stars that must be paid by non-administrator users of the supergroup chat for each sent message.
      */
     public function getPaidMessageStarCount(): int
     {
@@ -537,7 +537,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid by non-administrator users of the supergroup chat for each sent message
+     * Set Number of Telegram Stars that must be paid by non-administrator users of the supergroup chat for each sent message.
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {
@@ -547,7 +547,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup or channel has non-expired stories available to the current user
+     * Get True, if the supergroup or channel has non-expired stories available to the current user.
      */
     public function getHasActiveStories(): bool
     {
@@ -555,7 +555,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup or channel has non-expired stories available to the current user
+     * Set True, if the supergroup or channel has non-expired stories available to the current user.
      */
     public function setHasActiveStories(bool $hasActiveStories): self
     {
@@ -565,7 +565,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup or channel has unread non-expired stories available to the current user
+     * Get True, if the supergroup or channel has unread non-expired stories available to the current user.
      */
     public function getHasUnreadActiveStories(): bool
     {
@@ -573,7 +573,7 @@ class Supergroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup or channel has unread non-expired stories available to the current user
+     * Set True, if the supergroup or channel has unread non-expired stories available to the current user.
      */
     public function setHasUnreadActiveStories(bool $hasUnreadActiveStories): self
     {

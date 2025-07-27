@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A text message
+ * A text message.
  */
 class MessageText extends MessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class MessageText extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Text of the message
+     * Get Text of the message.
      */
     public function getText(): FormattedText|null
     {
@@ -33,7 +33,7 @@ class MessageText extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Text of the message
+     * Set Text of the message.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -43,7 +43,7 @@ class MessageText extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get A link preview attached to the message; may be null
+     * Get A link preview attached to the message; may be null.
      */
     public function getLinkPreview(): LinkPreview|null
     {
@@ -51,7 +51,7 @@ class MessageText extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set A link preview attached to the message; may be null
+     * Set A link preview attached to the message; may be null.
      */
     public function setLinkPreview(LinkPreview|null $linkPreview): self
     {
@@ -61,7 +61,7 @@ class MessageText extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Options which were used for generation of the link preview; may be null if default options were used
+     * Get Options which were used for generation of the link preview; may be null if default options were used.
      */
     public function getLinkPreviewOptions(): LinkPreviewOptions|null
     {
@@ -69,7 +69,7 @@ class MessageText extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Options which were used for generation of the link preview; may be null if default options were used
+     * Set Options which were used for generation of the link preview; may be null if default options were used.
      */
     public function setLinkPreviewOptions(LinkPreviewOptions|null $linkPreviewOptions): self
     {

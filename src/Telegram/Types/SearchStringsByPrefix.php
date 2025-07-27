@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches specified query by word prefixes in the provided strings. Returns 0-based positions of strings that matched. Can be called synchronously
+ * Searches specified query by word prefixes in the provided strings. Returns 0-based positions of strings that matched. Can be called synchronously.
  */
 class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Get The strings to search in for the query
+     * Get The strings to search in for the query.
      */
     public function getStrings(): array|null
     {
@@ -36,7 +36,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Set The strings to search in for the query
+     * Set The strings to search in for the query.
      */
     public function setStrings(array|null $strings): self
     {
@@ -46,7 +46,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -54,7 +54,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {
@@ -64,7 +64,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of objects to return
+     * Get The maximum number of objects to return.
      */
     public function getLimit(): int
     {
@@ -72,7 +72,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of objects to return
+     * Set The maximum number of objects to return.
      */
     public function setLimit(int $limit): self
     {
@@ -82,7 +82,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to receive no results for an empty query
+     * Get Pass true to receive no results for an empty query.
      */
     public function getReturnNoneForEmptyQuery(): bool
     {
@@ -90,7 +90,7 @@ class SearchStringsByPrefix extends FoundPositions implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to receive no results for an empty query
+     * Set Pass true to receive no results for an empty query.
      */
     public function setReturnNoneForEmptyQuery(bool $returnNoneForEmptyQuery): self
     {

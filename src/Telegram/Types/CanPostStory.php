@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks whether the current user can post a story on behalf of a chat; requires can_post_stories right for supergroup and channel chats
+ * Checks whether the current user can post a story on behalf of a chat; requires can_post_stories right for supergroup and channel chats.
  */
 class CanPostStory extends CanPostStoryResult implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class CanPostStory extends CanPostStoryResult implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier. Pass Saved Messages chat identifier when posting a story on behalf of the current user
+     * Get Chat identifier. Pass Saved Messages chat identifier when posting a story on behalf of the current user.
      */
     public function getChatId(): int
     {
@@ -27,7 +27,7 @@ class CanPostStory extends CanPostStoryResult implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier. Pass Saved Messages chat identifier when posting a story on behalf of the current user
+     * Set Chat identifier. Pass Saved Messages chat identifier when posting a story on behalf of the current user.
      */
     public function setChatId(int $chatId): self
     {

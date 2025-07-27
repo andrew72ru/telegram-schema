@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a story posted by the bot on behalf of a business account; for bots only
+ * Deletes a story posted by the bot on behalf of a business account; for bots only.
  */
 class DeleteBusinessStory extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteBusinessStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class DeleteBusinessStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class DeleteBusinessStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story to delete
+     * Get Identifier of the story to delete.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class DeleteBusinessStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story to delete
+     * Set Identifier of the story to delete.
      */
     public function setStoryId(int $storyId): self
     {

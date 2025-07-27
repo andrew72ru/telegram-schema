@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a Web App. Use getInternalLink with internalLinkTypeWebApp to share the Web App
+ * Describes a Web App. Use getInternalLink with internalLinkTypeWebApp to share the Web App.
  */
 class WebApp implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Get Web App short name
+     * Get Web App short name.
      */
     public function getShortName(): string
     {
@@ -39,7 +39,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Set Web App short name
+     * Set Web App short name.
      */
     public function setShortName(string $shortName): self
     {
@@ -49,7 +49,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Get Web App title
+     * Get Web App title.
      */
     public function getTitle(): string
     {
@@ -57,7 +57,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Set Web App title
+     * Set Web App title.
      */
     public function setTitle(string $title): self
     {
@@ -67,7 +67,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Get Describes a Web App. Use getInternalLink with internalLinkTypeWebApp to share the Web App
+     * Get Describes a Web App. Use getInternalLink with internalLinkTypeWebApp to share the Web App.
      */
     public function getDescription(): string
     {
@@ -75,7 +75,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Set Describes a Web App. Use getInternalLink with internalLinkTypeWebApp to share the Web App
+     * Set Describes a Web App. Use getInternalLink with internalLinkTypeWebApp to share the Web App.
      */
     public function setDescription(string $description): self
     {
@@ -85,7 +85,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Get Web App photo
+     * Get Web App photo.
      */
     public function getPhoto(): Photo|null
     {
@@ -93,7 +93,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Set Web App photo
+     * Set Web App photo.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -103,7 +103,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Get Web App animation; may be null
+     * Get Web App animation; may be null.
      */
     public function getAnimation(): Animation|null
     {
@@ -111,7 +111,7 @@ class WebApp implements \JsonSerializable
     }
 
     /**
-     * Set Web App animation; may be null
+     * Set Web App animation; may be null.
      */
     public function setAnimation(Animation|null $animation): self
     {

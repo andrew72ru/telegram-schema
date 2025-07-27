@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A detailed statistics about a channel chat
+ * A detailed statistics about a channel chat.
  */
 class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
 {
@@ -82,7 +82,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A period to which the statistics applies
+     * Get A period to which the statistics applies.
      */
     public function getPeriod(): DateRange|null
     {
@@ -90,7 +90,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A period to which the statistics applies
+     * Set A period to which the statistics applies.
      */
     public function setPeriod(DateRange|null $period): self
     {
@@ -100,7 +100,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Number of members in the chat
+     * Get Number of members in the chat.
      */
     public function getMemberCount(): StatisticalValue|null
     {
@@ -108,7 +108,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Number of members in the chat
+     * Set Number of members in the chat.
      */
     public function setMemberCount(StatisticalValue|null $memberCount): self
     {
@@ -118,7 +118,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Mean number of times the recently sent messages were viewed
+     * Get Mean number of times the recently sent messages were viewed.
      */
     public function getMeanMessageViewCount(): StatisticalValue|null
     {
@@ -126,7 +126,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Mean number of times the recently sent messages were viewed
+     * Set Mean number of times the recently sent messages were viewed.
      */
     public function setMeanMessageViewCount(StatisticalValue|null $meanMessageViewCount): self
     {
@@ -136,7 +136,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Mean number of times the recently sent messages were shared
+     * Get Mean number of times the recently sent messages were shared.
      */
     public function getMeanMessageShareCount(): StatisticalValue|null
     {
@@ -144,7 +144,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Mean number of times the recently sent messages were shared
+     * Set Mean number of times the recently sent messages were shared.
      */
     public function setMeanMessageShareCount(StatisticalValue|null $meanMessageShareCount): self
     {
@@ -154,7 +154,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Mean number of times reactions were added to the recently sent messages
+     * Get Mean number of times reactions were added to the recently sent messages.
      */
     public function getMeanMessageReactionCount(): StatisticalValue|null
     {
@@ -162,7 +162,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Mean number of times reactions were added to the recently sent messages
+     * Set Mean number of times reactions were added to the recently sent messages.
      */
     public function setMeanMessageReactionCount(StatisticalValue|null $meanMessageReactionCount): self
     {
@@ -172,7 +172,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Mean number of times the recently posted stories were viewed
+     * Get Mean number of times the recently posted stories were viewed.
      */
     public function getMeanStoryViewCount(): StatisticalValue|null
     {
@@ -180,7 +180,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Mean number of times the recently posted stories were viewed
+     * Set Mean number of times the recently posted stories were viewed.
      */
     public function setMeanStoryViewCount(StatisticalValue|null $meanStoryViewCount): self
     {
@@ -190,7 +190,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Mean number of times the recently posted stories were shared
+     * Get Mean number of times the recently posted stories were shared.
      */
     public function getMeanStoryShareCount(): StatisticalValue|null
     {
@@ -198,7 +198,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Mean number of times the recently posted stories were shared
+     * Set Mean number of times the recently posted stories were shared.
      */
     public function setMeanStoryShareCount(StatisticalValue|null $meanStoryShareCount): self
     {
@@ -208,7 +208,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Mean number of times reactions were added to the recently posted stories
+     * Get Mean number of times reactions were added to the recently posted stories.
      */
     public function getMeanStoryReactionCount(): StatisticalValue|null
     {
@@ -216,7 +216,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Mean number of times reactions were added to the recently posted stories
+     * Set Mean number of times reactions were added to the recently posted stories.
      */
     public function setMeanStoryReactionCount(StatisticalValue|null $meanStoryReactionCount): self
     {
@@ -226,7 +226,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A percentage of users with enabled notifications for the chat; 0-100
+     * Get A percentage of users with enabled notifications for the chat; 0-100.
      */
     public function getEnabledNotificationsPercentage(): float
     {
@@ -234,7 +234,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A percentage of users with enabled notifications for the chat; 0-100
+     * Set A percentage of users with enabled notifications for the chat; 0-100.
      */
     public function setEnabledNotificationsPercentage(float $enabledNotificationsPercentage): self
     {
@@ -244,7 +244,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of members in the chat
+     * Get A graph containing number of members in the chat.
      */
     public function getMemberCountGraph(): StatisticalGraph|null
     {
@@ -252,7 +252,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of members in the chat
+     * Set A graph containing number of members in the chat.
      */
     public function setMemberCountGraph(StatisticalGraph|null $memberCountGraph): self
     {
@@ -262,7 +262,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of members joined and left the chat
+     * Get A graph containing number of members joined and left the chat.
      */
     public function getJoinGraph(): StatisticalGraph|null
     {
@@ -270,7 +270,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of members joined and left the chat
+     * Set A graph containing number of members joined and left the chat.
      */
     public function setJoinGraph(StatisticalGraph|null $joinGraph): self
     {
@@ -280,7 +280,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of members muted and unmuted the chat
+     * Get A graph containing number of members muted and unmuted the chat.
      */
     public function getMuteGraph(): StatisticalGraph|null
     {
@@ -288,7 +288,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of members muted and unmuted the chat
+     * Set A graph containing number of members muted and unmuted the chat.
      */
     public function setMuteGraph(StatisticalGraph|null $muteGraph): self
     {
@@ -298,7 +298,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of message views in a given hour in the last two weeks
+     * Get A graph containing number of message views in a given hour in the last two weeks.
      */
     public function getViewCountByHourGraph(): StatisticalGraph|null
     {
@@ -306,7 +306,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of message views in a given hour in the last two weeks
+     * Set A graph containing number of message views in a given hour in the last two weeks.
      */
     public function setViewCountByHourGraph(StatisticalGraph|null $viewCountByHourGraph): self
     {
@@ -316,7 +316,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of message views per source
+     * Get A graph containing number of message views per source.
      */
     public function getViewCountBySourceGraph(): StatisticalGraph|null
     {
@@ -324,7 +324,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of message views per source
+     * Set A graph containing number of message views per source.
      */
     public function setViewCountBySourceGraph(StatisticalGraph|null $viewCountBySourceGraph): self
     {
@@ -334,7 +334,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of new member joins per source
+     * Get A graph containing number of new member joins per source.
      */
     public function getJoinBySourceGraph(): StatisticalGraph|null
     {
@@ -342,7 +342,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of new member joins per source
+     * Set A graph containing number of new member joins per source.
      */
     public function setJoinBySourceGraph(StatisticalGraph|null $joinBySourceGraph): self
     {
@@ -352,7 +352,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of users viewed chat messages per language
+     * Get A graph containing number of users viewed chat messages per language.
      */
     public function getLanguageGraph(): StatisticalGraph|null
     {
@@ -360,7 +360,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of users viewed chat messages per language
+     * Set A graph containing number of users viewed chat messages per language.
      */
     public function setLanguageGraph(StatisticalGraph|null $languageGraph): self
     {
@@ -370,7 +370,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of chat message views and shares
+     * Get A graph containing number of chat message views and shares.
      */
     public function getMessageInteractionGraph(): StatisticalGraph|null
     {
@@ -378,7 +378,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of chat message views and shares
+     * Set A graph containing number of chat message views and shares.
      */
     public function setMessageInteractionGraph(StatisticalGraph|null $messageInteractionGraph): self
     {
@@ -388,7 +388,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of reactions on messages
+     * Get A graph containing number of reactions on messages.
      */
     public function getMessageReactionGraph(): StatisticalGraph|null
     {
@@ -396,7 +396,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of reactions on messages
+     * Set A graph containing number of reactions on messages.
      */
     public function setMessageReactionGraph(StatisticalGraph|null $messageReactionGraph): self
     {
@@ -406,7 +406,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of story views and shares
+     * Get A graph containing number of story views and shares.
      */
     public function getStoryInteractionGraph(): StatisticalGraph|null
     {
@@ -414,7 +414,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of story views and shares
+     * Set A graph containing number of story views and shares.
      */
     public function setStoryInteractionGraph(StatisticalGraph|null $storyInteractionGraph): self
     {
@@ -424,7 +424,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of reactions on stories
+     * Get A graph containing number of reactions on stories.
      */
     public function getStoryReactionGraph(): StatisticalGraph|null
     {
@@ -432,7 +432,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of reactions on stories
+     * Set A graph containing number of reactions on stories.
      */
     public function setStoryReactionGraph(StatisticalGraph|null $storyReactionGraph): self
     {
@@ -442,7 +442,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of views of associated with the chat instant views
+     * Get A graph containing number of views of associated with the chat instant views.
      */
     public function getInstantViewInteractionGraph(): StatisticalGraph|null
     {
@@ -450,7 +450,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of views of associated with the chat instant views
+     * Set A graph containing number of views of associated with the chat instant views.
      */
     public function setInstantViewInteractionGraph(StatisticalGraph|null $instantViewInteractionGraph): self
     {
@@ -460,7 +460,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Detailed statistics about number of views and shares of recently sent messages and posted stories
+     * Get Detailed statistics about number of views and shares of recently sent messages and posted stories.
      */
     public function getRecentInteractions(): array|null
     {
@@ -468,7 +468,7 @@ class ChatStatisticsChannel extends ChatStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Detailed statistics about number of views and shares of recently sent messages and posted stories
+     * Set Detailed statistics about number of views and shares of recently sent messages and posted stories.
      */
     public function setRecentInteractions(array|null $recentInteractions): self
     {

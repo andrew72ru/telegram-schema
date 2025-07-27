@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes privacy settings for message read date @settings New settings
+ * Changes privacy settings for message read date @settings New settings.
  */
 class SetReadDatePrivacySettings extends Ok implements \JsonSerializable
 {

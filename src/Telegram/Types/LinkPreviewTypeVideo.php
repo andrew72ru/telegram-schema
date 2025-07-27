@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a video
+ * The link is a link to a video.
  */
 class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Get The video description
+     * Get The video description.
      */
     public function getVideo(): Video|null
     {
@@ -33,7 +33,7 @@ class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Set The video description
+     * Set The video description.
      */
     public function setVideo(Video|null $video): self
     {
@@ -43,7 +43,7 @@ class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Get Cover of the video; may be null if none
+     * Get Cover of the video; may be null if none.
      */
     public function getCover(): Photo|null
     {
@@ -51,7 +51,7 @@ class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Set Cover of the video; may be null if none
+     * Set Cover of the video; may be null if none.
      */
     public function setCover(Photo|null $cover): self
     {
@@ -61,7 +61,7 @@ class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp from which the video playing must start, in seconds
+     * Get Timestamp from which the video playing must start, in seconds.
      */
     public function getStartTimestamp(): int
     {
@@ -69,7 +69,7 @@ class LinkPreviewTypeVideo extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp from which the video playing must start, in seconds
+     * Set Timestamp from which the video playing must start, in seconds.
      */
     public function setStartTimestamp(int $startTimestamp): self
     {

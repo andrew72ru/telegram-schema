@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a successful payment @chat_id Chat identifier of the messagePaymentSuccessful message @message_id Message identifier
+ * Returns information about a successful payment @chat_id Chat identifier of the messagePaymentSuccessful message @message_id Message identifier.
  */
 class GetPaymentReceipt extends PaymentReceipt implements \JsonSerializable
 {

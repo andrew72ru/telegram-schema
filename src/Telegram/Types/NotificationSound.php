@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a notification sound in MP3 format
+ * Describes a notification sound in MP3 format.
  */
 class NotificationSound implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the notification sound
+     * Get Unique identifier of the notification sound.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the notification sound
+     * Set Unique identifier of the notification sound.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the sound, in seconds
+     * Get Duration of the sound, in seconds.
      */
     public function getDuration(): int
     {
@@ -60,7 +60,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the sound, in seconds
+     * Set Duration of the sound, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -70,7 +70,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the sound was created
+     * Get Point in time (Unix timestamp) when the sound was created.
      */
     public function getDate(): int
     {
@@ -78,7 +78,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the sound was created
+     * Set Point in time (Unix timestamp) when the sound was created.
      */
     public function setDate(int $date): self
     {
@@ -88,7 +88,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Get Title of the notification sound
+     * Get Title of the notification sound.
      */
     public function getTitle(): string
     {
@@ -96,7 +96,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Set Title of the notification sound
+     * Set Title of the notification sound.
      */
     public function setTitle(string $title): self
     {
@@ -106,7 +106,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Get Arbitrary data, defined while the sound was uploaded
+     * Get Arbitrary data, defined while the sound was uploaded.
      */
     public function getData(): string
     {
@@ -114,7 +114,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Set Arbitrary data, defined while the sound was uploaded
+     * Set Arbitrary data, defined while the sound was uploaded.
      */
     public function setData(string $data): self
     {
@@ -124,7 +124,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Get File containing the sound
+     * Get File containing the sound.
      */
     public function getSound(): File|null
     {
@@ -132,7 +132,7 @@ class NotificationSound implements \JsonSerializable
     }
 
     /**
-     * Set File containing the sound
+     * Set File containing the sound.
      */
     public function setSound(File|null $sound): self
     {

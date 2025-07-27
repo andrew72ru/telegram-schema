@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Smart Glocal payment provider @public_token Public payment token @tokenize_url URL for sending card tokenization requests
+ * Smart Glocal payment provider @public_token Public payment token @tokenize_url URL for sending card tokenization requests.
  */
 class PaymentProviderSmartGlocal extends PaymentProvider implements \JsonSerializable
 {

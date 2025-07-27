@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A text shows instead of a raw mention of the user (e.g., when the user has no username) @user_id Identifier of the mentioned user
+ * A text shows instead of a raw mention of the user (e.g., when the user has no username) @user_id Identifier of the mentioned user.
  */
 class TextEntityTypeMentionName extends TextEntityType implements \JsonSerializable
 {

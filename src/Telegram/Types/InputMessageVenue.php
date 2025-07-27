@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with information about a venue @venue Venue to send
+ * A message with information about a venue @venue Venue to send.
  */
 class InputMessageVenue extends InputMessageContent implements \JsonSerializable
 {

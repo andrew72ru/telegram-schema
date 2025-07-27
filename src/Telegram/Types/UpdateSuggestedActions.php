@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of suggested to the user actions has changed @added_actions Added suggested actions @removed_actions Removed suggested actions
+ * The list of suggested to the user actions has changed @added_actions Added suggested actions @removed_actions Removed suggested actions.
  */
 class UpdateSuggestedActions extends Update implements \JsonSerializable
 {

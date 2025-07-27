@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an emoji to be shown instead of the Telegram Premium badge
+ * Describes an emoji to be shown instead of the Telegram Premium badge.
  */
 class EmojiStatus implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class EmojiStatus implements \JsonSerializable
     }
 
     /**
-     * Get Type of the emoji status
+     * Get Type of the emoji status.
      */
     public function getType(): EmojiStatusType|null
     {
@@ -30,7 +30,7 @@ class EmojiStatus implements \JsonSerializable
     }
 
     /**
-     * Set Type of the emoji status
+     * Set Type of the emoji status.
      */
     public function setType(EmojiStatusType|null $type): self
     {
@@ -40,7 +40,7 @@ class EmojiStatus implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the status will expire; 0 if never
+     * Get Point in time (Unix timestamp) when the status will expire; 0 if never.
      */
     public function getExpirationDate(): int
     {
@@ -48,7 +48,7 @@ class EmojiStatus implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the status will expire; 0 if never
+     * Set Point in time (Unix timestamp) when the status will expire; 0 if never.
      */
     public function setExpirationDate(int $expirationDate): self
     {

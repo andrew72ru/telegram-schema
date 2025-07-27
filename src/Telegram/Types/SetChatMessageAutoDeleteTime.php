@@ -22,7 +22,7 @@ class SetChatMessageAutoDeleteTime extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatMessageAutoDeleteTime extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatMessageAutoDeleteTime extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New time value, in seconds; unless the chat is secret, it must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
+     * Get New time value, in seconds; unless the chat is secret, it must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically.
      */
     public function getMessageAutoDeleteTime(): int
     {
@@ -48,7 +48,7 @@ class SetChatMessageAutoDeleteTime extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New time value, in seconds; unless the chat is secret, it must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
+     * Set New time value, in seconds; unless the chat is secret, it must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically.
      */
     public function setMessageAutoDeleteTime(int $messageAutoDeleteTime): self
     {

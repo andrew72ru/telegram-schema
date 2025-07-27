@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a video chat. Call searchPublicChat with the given chat username, and then joinVideoChat with the given invite hash to process the link
+ * The link is a link to a video chat. Call searchPublicChat with the given chat username, and then joinVideoChat with the given invite hash to process the link.
  */
 class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Get Username of the chat with the video chat
+     * Get Username of the chat with the video chat.
      */
     public function getChatUsername(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Set Username of the chat with the video chat
+     * Set Username of the chat with the video chat.
      */
     public function setChatUsername(string $chatUsername): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Get If non-empty, invite hash to be used to join the video chat without being muted by administrators
+     * Get If non-empty, invite hash to be used to join the video chat without being muted by administrators.
      */
     public function getInviteHash(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Set If non-empty, invite hash to be used to join the video chat without being muted by administrators
+     * Set If non-empty, invite hash to be used to join the video chat without being muted by administrators.
      */
     public function setInviteHash(string $inviteHash): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Get True, if the video chat is expected to be a live stream in a channel or a broadcast group
+     * Get True, if the video chat is expected to be a live stream in a channel or a broadcast group.
      */
     public function getIsLiveStream(): bool
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeVideoChat extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Set True, if the video chat is expected to be a live stream in a channel or a broadcast group
+     * Set True, if the video chat is expected to be a live stream in a channel or a broadcast group.
      */
     public function setIsLiveStream(bool $isLiveStream): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains autosave settings for an autosave settings scope
+ * Contains autosave settings for an autosave settings scope.
  */
 class ScopeAutosaveSettings implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ScopeAutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if photo autosave is enabled
+     * Get True, if photo autosave is enabled.
      */
     public function getAutosavePhotos(): bool
     {
@@ -33,7 +33,7 @@ class ScopeAutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if photo autosave is enabled
+     * Set True, if photo autosave is enabled.
      */
     public function setAutosavePhotos(bool $autosavePhotos): self
     {
@@ -43,7 +43,7 @@ class ScopeAutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if video autosave is enabled
+     * Get True, if video autosave is enabled.
      */
     public function getAutosaveVideos(): bool
     {
@@ -51,7 +51,7 @@ class ScopeAutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if video autosave is enabled
+     * Set True, if video autosave is enabled.
      */
     public function setAutosaveVideos(bool $autosaveVideos): self
     {
@@ -61,7 +61,7 @@ class ScopeAutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Get The maximum size of a video file to be autosaved, in bytes; 512 KB - 4000 MB
+     * Get The maximum size of a video file to be autosaved, in bytes; 512 KB - 4000 MB.
      */
     public function getMaxVideoFileSize(): int
     {
@@ -69,7 +69,7 @@ class ScopeAutosaveSettings implements \JsonSerializable
     }
 
     /**
-     * Set The maximum size of a video file to be autosaved, in bytes; 512 KB - 4000 MB
+     * Set The maximum size of a video file to be autosaved, in bytes; 512 KB - 4000 MB.
      */
     public function setMaxVideoFileSize(int $maxVideoFileSize): self
     {

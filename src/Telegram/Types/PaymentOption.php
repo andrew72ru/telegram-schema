@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an additional payment option @title Title for the payment option @url Payment form URL to be opened in a web view
+ * Describes an additional payment option @title Title for the payment option @url Payment form URL to be opened in a web view.
  */
 class PaymentOption implements \JsonSerializable
 {

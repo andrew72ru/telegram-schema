@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a number of Telegram Stars @star_count Number of Telegram Stars
+ * Contains a number of Telegram Stars @star_count Number of Telegram Stars.
  */
 class StarCount implements \JsonSerializable
 {

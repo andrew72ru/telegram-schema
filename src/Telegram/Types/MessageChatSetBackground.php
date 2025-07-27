@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new background was set in the chat
+ * A new background was set in the chat.
  */
 class MessageChatSetBackground extends MessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class MessageChatSetBackground extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the message with a previously set same background; 0 if none. Can be an identifier of a deleted message
+     * Get Identifier of the message with a previously set same background; 0 if none. Can be an identifier of a deleted message.
      */
     public function getOldBackgroundMessageId(): int
     {
@@ -33,7 +33,7 @@ class MessageChatSetBackground extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the message with a previously set same background; 0 if none. Can be an identifier of a deleted message
+     * Set Identifier of the message with a previously set same background; 0 if none. Can be an identifier of a deleted message.
      */
     public function setOldBackgroundMessageId(int $oldBackgroundMessageId): self
     {
@@ -43,7 +43,7 @@ class MessageChatSetBackground extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get The new background
+     * Get The new background.
      */
     public function getBackground(): ChatBackground|null
     {
@@ -51,7 +51,7 @@ class MessageChatSetBackground extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set The new background
+     * Set The new background.
      */
     public function setBackground(ChatBackground|null $background): self
     {
@@ -61,7 +61,7 @@ class MessageChatSetBackground extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get True, if the background was set only for self
+     * Get True, if the background was set only for self.
      */
     public function getOnlyForSelf(): bool
     {
@@ -69,7 +69,7 @@ class MessageChatSetBackground extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set True, if the background was set only for self
+     * Set True, if the background was set only for self.
      */
     public function setOnlyForSelf(bool $onlyForSelf): self
     {

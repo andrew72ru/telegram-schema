@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a notification
+ * Contains information about a notification.
  */
 class Notification implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Get Unique persistent identifier of this notification
+     * Get Unique persistent identifier of this notification.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Set Unique persistent identifier of this notification
+     * Set Unique persistent identifier of this notification.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Get Notification date
+     * Get Notification date.
      */
     public function getDate(): int
     {
@@ -54,7 +54,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Set Notification date
+     * Set Notification date.
      */
     public function setDate(int $date): self
     {
@@ -64,7 +64,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Get True, if the notification was explicitly sent without sound
+     * Get True, if the notification was explicitly sent without sound.
      */
     public function getIsSilent(): bool
     {
@@ -72,7 +72,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Set True, if the notification was explicitly sent without sound
+     * Set True, if the notification was explicitly sent without sound.
      */
     public function setIsSilent(bool $isSilent): self
     {
@@ -82,7 +82,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Get Notification type
+     * Get Notification type.
      */
     public function getType(): NotificationType|null
     {
@@ -90,7 +90,7 @@ class Notification implements \JsonSerializable
     }
 
     /**
-     * Set Notification type
+     * Set Notification type.
      */
     public function setType(NotificationType|null $type): self
     {

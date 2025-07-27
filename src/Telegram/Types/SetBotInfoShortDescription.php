@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the text shown on a bot's profile page and sent together with the link when users share the bot. Can be called only if userTypeBot.can_be_edited == true
+ * Sets the text shown on a bot's profile page and sent together with the link when users share the bot. Can be called only if userTypeBot.can_be_edited == true.
  */
 class SetBotInfoShortDescription extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetBotInfoShortDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SetBotInfoShortDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SetBotInfoShortDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code. If empty, the short description will be shown to all users for whose languages there is no dedicated description
+     * Get A two-letter ISO 639-1 language code. If empty, the short description will be shown to all users for whose languages there is no dedicated description.
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class SetBotInfoShortDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code. If empty, the short description will be shown to all users for whose languages there is no dedicated description
+     * Set A two-letter ISO 639-1 language code. If empty, the short description will be shown to all users for whose languages there is no dedicated description.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class SetBotInfoShortDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New bot's short description on the specified language
+     * Get New bot's short description on the specified language.
      */
     public function getShortDescription(): string
     {
@@ -69,7 +69,7 @@ class SetBotInfoShortDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New bot's short description on the specified language
+     * Set New bot's short description on the specified language.
      */
     public function setShortDescription(string $shortDescription): self
     {

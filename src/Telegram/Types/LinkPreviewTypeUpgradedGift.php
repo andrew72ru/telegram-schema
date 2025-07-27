@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to an upgraded gift @gift The gift
+ * The link is a link to an upgraded gift @gift The gift.
  */
 class LinkPreviewTypeUpgradedGift extends LinkPreviewType implements \JsonSerializable
 {

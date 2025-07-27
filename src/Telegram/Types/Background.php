@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a chat background
+ * Describes a chat background.
  */
 class Background implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Get Unique background identifier
+     * Get Unique background identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Set Unique background identifier
+     * Set Unique background identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Get True, if this is one of default backgrounds
+     * Get True, if this is one of default backgrounds.
      */
     public function getIsDefault(): bool
     {
@@ -60,7 +60,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Set True, if this is one of default backgrounds
+     * Set True, if this is one of default backgrounds.
      */
     public function setIsDefault(bool $isDefault): self
     {
@@ -70,7 +70,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Get True, if the background is dark and is recommended to be used with dark theme
+     * Get True, if the background is dark and is recommended to be used with dark theme.
      */
     public function getIsDark(): bool
     {
@@ -78,7 +78,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Set True, if the background is dark and is recommended to be used with dark theme
+     * Set True, if the background is dark and is recommended to be used with dark theme.
      */
     public function setIsDark(bool $isDark): self
     {
@@ -88,7 +88,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Get Unique background name
+     * Get Unique background name.
      */
     public function getName(): string
     {
@@ -96,7 +96,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Set Unique background name
+     * Set Unique background name.
      */
     public function setName(string $name): self
     {
@@ -106,7 +106,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Get Document with the background; may be null. Null only for filled and chat theme backgrounds
+     * Get Document with the background; may be null. Null only for filled and chat theme backgrounds.
      */
     public function getDocument(): Document|null
     {
@@ -114,7 +114,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Set Document with the background; may be null. Null only for filled and chat theme backgrounds
+     * Set Document with the background; may be null. Null only for filled and chat theme backgrounds.
      */
     public function setDocument(Document|null $document): self
     {
@@ -124,7 +124,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Get Type of the background
+     * Get Type of the background.
      */
     public function getType(): BackgroundType|null
     {
@@ -132,7 +132,7 @@ class Background implements \JsonSerializable
     }
 
     /**
-     * Set Type of the background
+     * Set Type of the background.
      */
     public function setType(BackgroundType|null $type): self
     {

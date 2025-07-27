@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the list of pinned gifts on the current user's or the channel's profile page; requires can_post_messages administrator right in the channel chat
+ * Changes the list of pinned gifts on the current user's or the channel's profile page; requires can_post_messages administrator right in the channel chat.
  */
 class SetPinnedGifts extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetPinnedGifts extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the channel chat that received the gifts
+     * Get Identifier of the user or the channel chat that received the gifts.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -30,7 +30,7 @@ class SetPinnedGifts extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the channel chat that received the gifts
+     * Set Identifier of the user or the channel chat that received the gifts.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -40,7 +40,7 @@ class SetPinnedGifts extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New list of pinned gifts. All gifts must be upgraded and saved on the profile page first. There can be up to getOption("pinned_gift_count_max") pinned gifts
+     * Get New list of pinned gifts. All gifts must be upgraded and saved on the profile page first. There can be up to getOption("pinned_gift_count_max") pinned gifts.
      */
     public function getReceivedGiftIds(): array|null
     {
@@ -48,7 +48,7 @@ class SetPinnedGifts extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New list of pinned gifts. All gifts must be upgraded and saved on the profile page first. There can be up to getOption("pinned_gift_count_max") pinned gifts
+     * Set New list of pinned gifts. All gifts must be upgraded and saved on the profile page first. There can be up to getOption("pinned_gift_count_max") pinned gifts.
      */
     public function setReceivedGiftIds(array|null $receivedGiftIds): self
     {

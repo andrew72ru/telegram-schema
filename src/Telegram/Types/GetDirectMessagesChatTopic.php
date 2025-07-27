@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about the topic in a channel direct messages chat administered by the current user
+ * Returns information about the topic in a channel direct messages chat administered by the current user.
  */
 class GetDirectMessagesChatTopic extends DirectMessagesChatTopic implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetDirectMessagesChatTopic extends DirectMessagesChatTopic implements \Jso
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetDirectMessagesChatTopic extends DirectMessagesChatTopic implements \Jso
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetDirectMessagesChatTopic extends DirectMessagesChatTopic implements \Jso
     }
 
     /**
-     * Get Identifier of the topic to get
+     * Get Identifier of the topic to get.
      */
     public function getTopicId(): int
     {
@@ -48,7 +48,7 @@ class GetDirectMessagesChatTopic extends DirectMessagesChatTopic implements \Jso
     }
 
     /**
-     * Set Identifier of the topic to get
+     * Set Identifier of the topic to get.
      */
     public function setTopicId(int $topicId): self
     {

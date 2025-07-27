@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets default background for chats; adds the background to the list of installed backgrounds
+ * Sets default background for chats; adds the background to the list of installed backgrounds.
  */
 class SetDefaultBackground extends Background implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetDefaultBackground extends Background implements \JsonSerializable
     }
 
     /**
-     * Get The input background to use; pass null to create a new filled background
+     * Get The input background to use; pass null to create a new filled background.
      */
     public function getBackground(): InputBackground|null
     {
@@ -33,7 +33,7 @@ class SetDefaultBackground extends Background implements \JsonSerializable
     }
 
     /**
-     * Set The input background to use; pass null to create a new filled background
+     * Set The input background to use; pass null to create a new filled background.
      */
     public function setBackground(InputBackground|null $background): self
     {
@@ -43,7 +43,7 @@ class SetDefaultBackground extends Background implements \JsonSerializable
     }
 
     /**
-     * Get Background type; pass null to use the default type of the remote background; backgroundTypeChatTheme isn't supported
+     * Get Background type; pass null to use the default type of the remote background; backgroundTypeChatTheme isn't supported.
      */
     public function getType(): BackgroundType|null
     {
@@ -51,7 +51,7 @@ class SetDefaultBackground extends Background implements \JsonSerializable
     }
 
     /**
-     * Set Background type; pass null to use the default type of the remote background; backgroundTypeChatTheme isn't supported
+     * Set Background type; pass null to use the default type of the remote background; backgroundTypeChatTheme isn't supported.
      */
     public function setType(BackgroundType|null $type): self
     {
@@ -61,7 +61,7 @@ class SetDefaultBackground extends Background implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the background is set for a dark theme
+     * Get Pass true if the background is set for a dark theme.
      */
     public function getForDarkTheme(): bool
     {
@@ -69,7 +69,7 @@ class SetDefaultBackground extends Background implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the background is set for a dark theme
+     * Set Pass true if the background is set for a dark theme.
      */
     public function setForDarkTheme(bool $forDarkTheme): self
     {

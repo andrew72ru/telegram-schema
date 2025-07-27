@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a subscription to a channel chat
+ * Describes a subscription to a channel chat.
  */
 class StarSubscriptionTypeChannel extends StarSubscriptionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarSubscriptionTypeChannel extends StarSubscriptionType implements \JsonS
     }
 
     /**
-     * Get True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again
+     * Get True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again.
      */
     public function getCanReuse(): bool
     {
@@ -30,7 +30,7 @@ class StarSubscriptionTypeChannel extends StarSubscriptionType implements \JsonS
     }
 
     /**
-     * Set True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again
+     * Set True, if the subscription is active and the user can use the method reuseStarSubscription to join the subscribed chat again.
      */
     public function setCanReuse(bool $canReuse): self
     {
@@ -40,7 +40,7 @@ class StarSubscriptionTypeChannel extends StarSubscriptionType implements \JsonS
     }
 
     /**
-     * Get The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore
+     * Get The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore.
      */
     public function getInviteLink(): string
     {
@@ -48,7 +48,7 @@ class StarSubscriptionTypeChannel extends StarSubscriptionType implements \JsonS
     }
 
     /**
-     * Set The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore
+     * Set The invite link that can be used to renew the subscription if it has been expired; may be empty, if the link isn't available anymore.
      */
     public function setInviteLink(string $inviteLink): self
     {

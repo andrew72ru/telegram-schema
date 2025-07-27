@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a Telegram Premium gift code created for the user @month_count Number of months the Telegram Premium subscription will be active after code activation
+ * A message with a Telegram Premium gift code created for the user @month_count Number of months the Telegram Premium subscription will be active after code activation.
  */
 class PushMessageContentPremiumGiftCode extends PushMessageContent implements \JsonSerializable
 {

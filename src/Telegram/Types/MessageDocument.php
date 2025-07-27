@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A document message (general file) @document The document description @caption Document caption
+ * A document message (general file) @document The document description @caption Document caption.
  */
 class MessageDocument extends MessageContent implements \JsonSerializable
 {

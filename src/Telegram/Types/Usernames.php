@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes usernames assigned to a user, a supergroup, or a channel
+ * Describes usernames assigned to a user, a supergroup, or a channel.
  */
 class Usernames implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class Usernames implements \JsonSerializable
     }
 
     /**
-     * Get List of active usernames; the first one must be shown as the primary username. The order of active usernames can be changed with reorderActiveUsernames, reorderBotActiveUsernames or reorderSupergroupActiveUsernames
+     * Get List of active usernames; the first one must be shown as the primary username. The order of active usernames can be changed with reorderActiveUsernames, reorderBotActiveUsernames or reorderSupergroupActiveUsernames.
      */
     public function getActiveUsernames(): array|null
     {
@@ -33,7 +33,7 @@ class Usernames implements \JsonSerializable
     }
 
     /**
-     * Set List of active usernames; the first one must be shown as the primary username. The order of active usernames can be changed with reorderActiveUsernames, reorderBotActiveUsernames or reorderSupergroupActiveUsernames
+     * Set List of active usernames; the first one must be shown as the primary username. The order of active usernames can be changed with reorderActiveUsernames, reorderBotActiveUsernames or reorderSupergroupActiveUsernames.
      */
     public function setActiveUsernames(array|null $activeUsernames): self
     {
@@ -43,7 +43,7 @@ class Usernames implements \JsonSerializable
     }
 
     /**
-     * Get List of currently disabled usernames; the username can be activated with toggleUsernameIsActive, toggleBotUsernameIsActive, or toggleSupergroupUsernameIsActive
+     * Get List of currently disabled usernames; the username can be activated with toggleUsernameIsActive, toggleBotUsernameIsActive, or toggleSupergroupUsernameIsActive.
      */
     public function getDisabledUsernames(): array|null
     {
@@ -51,7 +51,7 @@ class Usernames implements \JsonSerializable
     }
 
     /**
-     * Set List of currently disabled usernames; the username can be activated with toggleUsernameIsActive, toggleBotUsernameIsActive, or toggleSupergroupUsernameIsActive
+     * Set List of currently disabled usernames; the username can be activated with toggleUsernameIsActive, toggleBotUsernameIsActive, or toggleSupergroupUsernameIsActive.
      */
     public function setDisabledUsernames(array|null $disabledUsernames): self
     {
@@ -61,7 +61,7 @@ class Usernames implements \JsonSerializable
     }
 
     /**
-     * Get The active username, which can be changed with setUsername or setSupergroupUsername. Information about other active usernames can be received using getCollectibleItemInfo
+     * Get The active username, which can be changed with setUsername or setSupergroupUsername. Information about other active usernames can be received using getCollectibleItemInfo.
      */
     public function getEditableUsername(): string
     {
@@ -69,7 +69,7 @@ class Usernames implements \JsonSerializable
     }
 
     /**
-     * Set The active username, which can be changed with setUsername or setSupergroupUsername. Information about other active usernames can be received using getCollectibleItemInfo
+     * Set The active username, which can be changed with setUsername or setSupergroupUsername. Information about other active usernames can be received using getCollectibleItemInfo.
      */
     public function setEditableUsername(string $editableUsername): self
     {

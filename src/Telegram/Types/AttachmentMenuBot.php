@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a bot, which can be added to attachment or side menu
+ * Represents a bot, which can be added to attachment or side menu.
  */
 class AttachmentMenuBot implements \JsonSerializable
 {
@@ -85,7 +85,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the bot
+     * Get User identifier of the bot.
      */
     public function getBotUserId(): int
     {
@@ -93,7 +93,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the bot
+     * Set User identifier of the bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -103,7 +103,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports opening from attachment menu in the chat with the bot
+     * Get True, if the bot supports opening from attachment menu in the chat with the bot.
      */
     public function getSupportsSelfChat(): bool
     {
@@ -111,7 +111,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports opening from attachment menu in the chat with the bot
+     * Set True, if the bot supports opening from attachment menu in the chat with the bot.
      */
     public function setSupportsSelfChat(bool $supportsSelfChat): self
     {
@@ -121,7 +121,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports opening from attachment menu in private chats with ordinary users
+     * Get True, if the bot supports opening from attachment menu in private chats with ordinary users.
      */
     public function getSupportsUserChats(): bool
     {
@@ -129,7 +129,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports opening from attachment menu in private chats with ordinary users
+     * Set True, if the bot supports opening from attachment menu in private chats with ordinary users.
      */
     public function setSupportsUserChats(bool $supportsUserChats): self
     {
@@ -139,7 +139,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports opening from attachment menu in private chats with other bots
+     * Get True, if the bot supports opening from attachment menu in private chats with other bots.
      */
     public function getSupportsBotChats(): bool
     {
@@ -147,7 +147,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports opening from attachment menu in private chats with other bots
+     * Set True, if the bot supports opening from attachment menu in private chats with other bots.
      */
     public function setSupportsBotChats(bool $supportsBotChats): self
     {
@@ -157,7 +157,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports opening from attachment menu in basic group and supergroup chats
+     * Get True, if the bot supports opening from attachment menu in basic group and supergroup chats.
      */
     public function getSupportsGroupChats(): bool
     {
@@ -165,7 +165,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports opening from attachment menu in basic group and supergroup chats
+     * Set True, if the bot supports opening from attachment menu in basic group and supergroup chats.
      */
     public function setSupportsGroupChats(bool $supportsGroupChats): self
     {
@@ -175,7 +175,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports opening from attachment menu in channel chats
+     * Get True, if the bot supports opening from attachment menu in channel chats.
      */
     public function getSupportsChannelChats(): bool
     {
@@ -183,7 +183,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports opening from attachment menu in channel chats
+     * Set True, if the bot supports opening from attachment menu in channel chats.
      */
     public function setSupportsChannelChats(bool $supportsChannelChats): self
     {
@@ -193,7 +193,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user must be asked for the permission to send messages to the bot
+     * Get True, if the user must be asked for the permission to send messages to the bot.
      */
     public function getRequestWriteAccess(): bool
     {
@@ -201,7 +201,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user must be asked for the permission to send messages to the bot
+     * Set True, if the user must be asked for the permission to send messages to the bot.
      */
     public function setRequestWriteAccess(bool $requestWriteAccess): self
     {
@@ -211,7 +211,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot was explicitly added by the user. If the bot isn't added, then on the first bot launch toggleBotIsAddedToAttachmentMenu must be called and the bot must be added or removed
+     * Get True, if the bot was explicitly added by the user. If the bot isn't added, then on the first bot launch toggleBotIsAddedToAttachmentMenu must be called and the bot must be added or removed.
      */
     public function getIsAdded(): bool
     {
@@ -219,7 +219,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot was explicitly added by the user. If the bot isn't added, then on the first bot launch toggleBotIsAddedToAttachmentMenu must be called and the bot must be added or removed
+     * Set True, if the bot was explicitly added by the user. If the bot isn't added, then on the first bot launch toggleBotIsAddedToAttachmentMenu must be called and the bot must be added or removed.
      */
     public function setIsAdded(bool $isAdded): self
     {
@@ -229,7 +229,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot must be shown in the attachment menu
+     * Get True, if the bot must be shown in the attachment menu.
      */
     public function getShowInAttachmentMenu(): bool
     {
@@ -237,7 +237,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot must be shown in the attachment menu
+     * Set True, if the bot must be shown in the attachment menu.
      */
     public function setShowInAttachmentMenu(bool $showInAttachmentMenu): self
     {
@@ -247,7 +247,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot must be shown in the side menu
+     * Get True, if the bot must be shown in the side menu.
      */
     public function getShowInSideMenu(): bool
     {
@@ -255,7 +255,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot must be shown in the side menu
+     * Set True, if the bot must be shown in the side menu.
      */
     public function setShowInSideMenu(bool $showInSideMenu): self
     {
@@ -265,7 +265,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get True, if a disclaimer, why the bot is shown in the side menu, is needed
+     * Get True, if a disclaimer, why the bot is shown in the side menu, is needed.
      */
     public function getShowDisclaimerInSideMenu(): bool
     {
@@ -273,7 +273,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set True, if a disclaimer, why the bot is shown in the side menu, is needed
+     * Set True, if a disclaimer, why the bot is shown in the side menu, is needed.
      */
     public function setShowDisclaimerInSideMenu(bool $showDisclaimerInSideMenu): self
     {
@@ -283,7 +283,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Name for the bot in attachment menu
+     * Get Name for the bot in attachment menu.
      */
     public function getName(): string
     {
@@ -291,7 +291,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Name for the bot in attachment menu
+     * Set Name for the bot in attachment menu.
      */
     public function setName(string $name): self
     {
@@ -301,7 +301,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Color to highlight selected name of the bot if appropriate; may be null
+     * Get Color to highlight selected name of the bot if appropriate; may be null.
      */
     public function getNameColor(): AttachmentMenuBotColor|null
     {
@@ -309,7 +309,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Color to highlight selected name of the bot if appropriate; may be null
+     * Set Color to highlight selected name of the bot if appropriate; may be null.
      */
     public function setNameColor(AttachmentMenuBotColor|null $nameColor): self
     {
@@ -319,7 +319,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Default icon for the bot in SVG format; may be null
+     * Get Default icon for the bot in SVG format; may be null.
      */
     public function getDefaultIcon(): File|null
     {
@@ -327,7 +327,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Default icon for the bot in SVG format; may be null
+     * Set Default icon for the bot in SVG format; may be null.
      */
     public function setDefaultIcon(File|null $defaultIcon): self
     {
@@ -337,7 +337,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in SVG format for the official iOS app; may be null
+     * Get Icon for the bot in SVG format for the official iOS app; may be null.
      */
     public function getIosStaticIcon(): File|null
     {
@@ -345,7 +345,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in SVG format for the official iOS app; may be null
+     * Set Icon for the bot in SVG format for the official iOS app; may be null.
      */
     public function setIosStaticIcon(File|null $iosStaticIcon): self
     {
@@ -355,7 +355,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in TGS format for the official iOS app; may be null
+     * Get Icon for the bot in TGS format for the official iOS app; may be null.
      */
     public function getIosAnimatedIcon(): File|null
     {
@@ -363,7 +363,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in TGS format for the official iOS app; may be null
+     * Set Icon for the bot in TGS format for the official iOS app; may be null.
      */
     public function setIosAnimatedIcon(File|null $iosAnimatedIcon): self
     {
@@ -373,7 +373,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in PNG format for the official iOS app side menu; may be null
+     * Get Icon for the bot in PNG format for the official iOS app side menu; may be null.
      */
     public function getIosSideMenuIcon(): File|null
     {
@@ -381,7 +381,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in PNG format for the official iOS app side menu; may be null
+     * Set Icon for the bot in PNG format for the official iOS app side menu; may be null.
      */
     public function setIosSideMenuIcon(File|null $iosSideMenuIcon): self
     {
@@ -391,7 +391,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in TGS format for the official Android app; may be null
+     * Get Icon for the bot in TGS format for the official Android app; may be null.
      */
     public function getAndroidIcon(): File|null
     {
@@ -399,7 +399,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in TGS format for the official Android app; may be null
+     * Set Icon for the bot in TGS format for the official Android app; may be null.
      */
     public function setAndroidIcon(File|null $androidIcon): self
     {
@@ -409,7 +409,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in SVG format for the official Android app side menu; may be null
+     * Get Icon for the bot in SVG format for the official Android app side menu; may be null.
      */
     public function getAndroidSideMenuIcon(): File|null
     {
@@ -417,7 +417,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in SVG format for the official Android app side menu; may be null
+     * Set Icon for the bot in SVG format for the official Android app side menu; may be null.
      */
     public function setAndroidSideMenuIcon(File|null $androidSideMenuIcon): self
     {
@@ -427,7 +427,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in TGS format for the official native macOS app; may be null
+     * Get Icon for the bot in TGS format for the official native macOS app; may be null.
      */
     public function getMacosIcon(): File|null
     {
@@ -435,7 +435,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in TGS format for the official native macOS app; may be null
+     * Set Icon for the bot in TGS format for the official native macOS app; may be null.
      */
     public function setMacosIcon(File|null $macosIcon): self
     {
@@ -445,7 +445,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Icon for the bot in PNG format for the official macOS app side menu; may be null
+     * Get Icon for the bot in PNG format for the official macOS app side menu; may be null.
      */
     public function getMacosSideMenuIcon(): File|null
     {
@@ -453,7 +453,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Icon for the bot in PNG format for the official macOS app side menu; may be null
+     * Set Icon for the bot in PNG format for the official macOS app side menu; may be null.
      */
     public function setMacosSideMenuIcon(File|null $macosSideMenuIcon): self
     {
@@ -463,7 +463,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Color to highlight selected icon of the bot if appropriate; may be null
+     * Get Color to highlight selected icon of the bot if appropriate; may be null.
      */
     public function getIconColor(): AttachmentMenuBotColor|null
     {
@@ -471,7 +471,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Color to highlight selected icon of the bot if appropriate; may be null
+     * Set Color to highlight selected icon of the bot if appropriate; may be null.
      */
     public function setIconColor(AttachmentMenuBotColor|null $iconColor): self
     {
@@ -481,7 +481,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Get Default placeholder for opened Web Apps in SVG format; may be null
+     * Get Default placeholder for opened Web Apps in SVG format; may be null.
      */
     public function getWebAppPlaceholder(): File|null
     {
@@ -489,7 +489,7 @@ class AttachmentMenuBot implements \JsonSerializable
     }
 
     /**
-     * Set Default placeholder for opened Web Apps in SVG format; may be null
+     * Set Default placeholder for opened Web Apps in SVG format; may be null.
      */
     public function setWebAppPlaceholder(File|null $webAppPlaceholder): self
     {

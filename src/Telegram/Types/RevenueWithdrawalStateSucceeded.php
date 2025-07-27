@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Withdrawal succeeded
+ * Withdrawal succeeded.
  */
 class RevenueWithdrawalStateSucceeded extends RevenueWithdrawalState implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class RevenueWithdrawalStateSucceeded extends RevenueWithdrawalState implements 
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the withdrawal was completed
+     * Get Point in time (Unix timestamp) when the withdrawal was completed.
      */
     public function getDate(): int
     {
@@ -30,7 +30,7 @@ class RevenueWithdrawalStateSucceeded extends RevenueWithdrawalState implements 
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the withdrawal was completed
+     * Set Point in time (Unix timestamp) when the withdrawal was completed.
      */
     public function setDate(int $date): self
     {
@@ -40,7 +40,7 @@ class RevenueWithdrawalStateSucceeded extends RevenueWithdrawalState implements 
     }
 
     /**
-     * Get The URL where the withdrawal transaction can be viewed
+     * Get The URL where the withdrawal transaction can be viewed.
      */
     public function getUrl(): string
     {
@@ -48,7 +48,7 @@ class RevenueWithdrawalStateSucceeded extends RevenueWithdrawalState implements 
     }
 
     /**
-     * Set The URL where the withdrawal transaction can be viewed
+     * Set The URL where the withdrawal transaction can be viewed.
      */
     public function setUrl(string $url): self
     {

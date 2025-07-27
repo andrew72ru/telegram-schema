@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a tag used in Saved Messages or a Saved Messages topic
+ * Represents a tag used in Saved Messages or a Saved Messages topic.
  */
 class SavedMessagesTag implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SavedMessagesTag implements \JsonSerializable
     }
 
     /**
-     * Get The tag
+     * Get The tag.
      */
     public function getTag(): ReactionType|null
     {
@@ -33,7 +33,7 @@ class SavedMessagesTag implements \JsonSerializable
     }
 
     /**
-     * Set The tag
+     * Set The tag.
      */
     public function setTag(ReactionType|null $tag): self
     {
@@ -43,7 +43,7 @@ class SavedMessagesTag implements \JsonSerializable
     }
 
     /**
-     * Get Label of the tag; 0-12 characters. Always empty if the tag is returned for a Saved Messages topic
+     * Get Label of the tag; 0-12 characters. Always empty if the tag is returned for a Saved Messages topic.
      */
     public function getLabel(): string
     {
@@ -51,7 +51,7 @@ class SavedMessagesTag implements \JsonSerializable
     }
 
     /**
-     * Set Label of the tag; 0-12 characters. Always empty if the tag is returned for a Saved Messages topic
+     * Set Label of the tag; 0-12 characters. Always empty if the tag is returned for a Saved Messages topic.
      */
     public function setLabel(string $label): self
     {
@@ -61,7 +61,7 @@ class SavedMessagesTag implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the tag was used; may be 0 if the tag has non-empty label
+     * Get Number of times the tag was used; may be 0 if the tag has non-empty label.
      */
     public function getCount(): int
     {
@@ -69,7 +69,7 @@ class SavedMessagesTag implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the tag was used; may be 0 if the tag has non-empty label
+     * Set Number of times the tag was used; may be 0 if the tag has non-empty label.
      */
     public function setCount(int $count): self
     {

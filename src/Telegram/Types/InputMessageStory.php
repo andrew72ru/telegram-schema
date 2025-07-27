@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a forwarded story. Stories can't be forwarded to secret chats. A story can be forwarded only if story.can_be_forwarded
+ * A message with a forwarded story. Stories can't be forwarded to secret chats. A story can be forwarded only if story.can_be_forwarded.
  */
 class InputMessageStory extends InputMessageContent implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputMessageStory extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -30,7 +30,7 @@ class InputMessageStory extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -40,7 +40,7 @@ class InputMessageStory extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Story identifier
+     * Get Story identifier.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class InputMessageStory extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Story identifier
+     * Set Story identifier.
      */
     public function setStoryId(int $storyId): self
     {

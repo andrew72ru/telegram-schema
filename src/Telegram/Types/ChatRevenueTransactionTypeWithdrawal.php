@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a withdrawal of earnings
+ * Describes a withdrawal of earnings.
  */
 class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType im
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the earnings withdrawal started
+     * Get Point in time (Unix timestamp) when the earnings withdrawal started.
      */
     public function getWithdrawalDate(): int
     {
@@ -33,7 +33,7 @@ class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType im
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the earnings withdrawal started
+     * Set Point in time (Unix timestamp) when the earnings withdrawal started.
      */
     public function setWithdrawalDate(int $withdrawalDate): self
     {
@@ -43,7 +43,7 @@ class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType im
     }
 
     /**
-     * Get Name of the payment provider
+     * Get Name of the payment provider.
      */
     public function getProvider(): string
     {
@@ -51,7 +51,7 @@ class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType im
     }
 
     /**
-     * Set Name of the payment provider
+     * Set Name of the payment provider.
      */
     public function setProvider(string $provider): self
     {
@@ -61,7 +61,7 @@ class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType im
     }
 
     /**
-     * Get State of the withdrawal
+     * Get State of the withdrawal.
      */
     public function getState(): RevenueWithdrawalState|null
     {
@@ -69,7 +69,7 @@ class ChatRevenueTransactionTypeWithdrawal extends ChatRevenueTransactionType im
     }
 
     /**
-     * Set State of the withdrawal
+     * Set State of the withdrawal.
      */
     public function setState(RevenueWithdrawalState|null $state): self
     {

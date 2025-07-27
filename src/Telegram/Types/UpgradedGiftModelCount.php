@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a model of an upgraded gift with the number of gifts found @model The model @total_count Total number of gifts with the model
+ * Describes a model of an upgraded gift with the number of gifts found @model The model @total_count Total number of gifts with the model.
  */
 class UpgradedGiftModelCount implements \JsonSerializable
 {

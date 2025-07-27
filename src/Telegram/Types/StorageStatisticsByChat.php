@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the storage usage statistics for a specific chat
+ * Contains the storage usage statistics for a specific chat.
  */
 class StorageStatisticsByChat implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier; 0 if none
+     * Get Chat identifier; 0 if none.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier; 0 if none
+     * Set Chat identifier; 0 if none.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Get Total size of the files in the chat, in bytes
+     * Get Total size of the files in the chat, in bytes.
      */
     public function getSize(): int
     {
@@ -54,7 +54,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Set Total size of the files in the chat, in bytes
+     * Set Total size of the files in the chat, in bytes.
      */
     public function setSize(int $size): self
     {
@@ -64,7 +64,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Get Total number of files in the chat
+     * Get Total number of files in the chat.
      */
     public function getCount(): int
     {
@@ -72,7 +72,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Set Total number of files in the chat
+     * Set Total number of files in the chat.
      */
     public function setCount(int $count): self
     {
@@ -82,7 +82,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Get Statistics split by file types
+     * Get Statistics split by file types.
      */
     public function getByFileType(): array|null
     {
@@ -90,7 +90,7 @@ class StorageStatisticsByChat implements \JsonSerializable
     }
 
     /**
-     * Set Statistics split by file types
+     * Set Statistics split by file types.
      */
     public function setByFileType(array|null $byFileType): self
     {

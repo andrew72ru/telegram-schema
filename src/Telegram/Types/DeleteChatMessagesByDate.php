@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all messages between the specified dates in a chat. Supported only for private chats and basic groups. Messages sent in the last 30 seconds will not be deleted
+ * Deletes all messages between the specified dates in a chat. Supported only for private chats and basic groups. Messages sent in the last 30 seconds will not be deleted.
  */
 class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The minimum date of the messages to delete
+     * Get The minimum date of the messages to delete.
      */
     public function getMinDate(): int
     {
@@ -54,7 +54,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The minimum date of the messages to delete
+     * Set The minimum date of the messages to delete.
      */
     public function setMinDate(int $minDate): self
     {
@@ -64,7 +64,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The maximum date of the messages to delete
+     * Get The maximum date of the messages to delete.
      */
     public function getMaxDate(): int
     {
@@ -72,7 +72,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The maximum date of the messages to delete
+     * Set The maximum date of the messages to delete.
      */
     public function setMaxDate(int $maxDate): self
     {
@@ -82,7 +82,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete chat messages for all users; private chats only
+     * Get Pass true to delete chat messages for all users; private chats only.
      */
     public function getRevoke(): bool
     {
@@ -90,7 +90,7 @@ class DeleteChatMessagesByDate extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete chat messages for all users; private chats only
+     * Set Pass true to delete chat messages for all users; private chats only.
      */
     public function setRevoke(bool $revoke): self
     {

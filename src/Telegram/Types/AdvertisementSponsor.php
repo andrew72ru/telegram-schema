@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about the sponsor of an advertisement
+ * Information about the sponsor of an advertisement.
  */
 class AdvertisementSponsor implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AdvertisementSponsor implements \JsonSerializable
     }
 
     /**
-     * Get URL of the sponsor to be opened when the advertisement is clicked
+     * Get URL of the sponsor to be opened when the advertisement is clicked.
      */
     public function getUrl(): string
     {
@@ -33,7 +33,7 @@ class AdvertisementSponsor implements \JsonSerializable
     }
 
     /**
-     * Set URL of the sponsor to be opened when the advertisement is clicked
+     * Set URL of the sponsor to be opened when the advertisement is clicked.
      */
     public function setUrl(string $url): self
     {
@@ -43,7 +43,7 @@ class AdvertisementSponsor implements \JsonSerializable
     }
 
     /**
-     * Get Photo of the sponsor; may be null if must not be shown
+     * Get Photo of the sponsor; may be null if must not be shown.
      */
     public function getPhoto(): Photo|null
     {
@@ -51,7 +51,7 @@ class AdvertisementSponsor implements \JsonSerializable
     }
 
     /**
-     * Set Photo of the sponsor; may be null if must not be shown
+     * Set Photo of the sponsor; may be null if must not be shown.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -61,7 +61,7 @@ class AdvertisementSponsor implements \JsonSerializable
     }
 
     /**
-     * Get Additional optional information about the sponsor to be shown along with the advertisement
+     * Get Additional optional information about the sponsor to be shown along with the advertisement.
      */
     public function getInfo(): string
     {
@@ -69,7 +69,7 @@ class AdvertisementSponsor implements \JsonSerializable
     }
 
     /**
-     * Set Additional optional information about the sponsor to be shown along with the advertisement
+     * Set Additional optional information about the sponsor to be shown along with the advertisement.
      */
     public function setInfo(string $info): self
     {

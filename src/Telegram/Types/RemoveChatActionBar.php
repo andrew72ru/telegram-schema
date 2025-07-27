@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a chat action bar without any other action @chat_id Chat identifier
+ * Removes a chat action bar without any other action @chat_id Chat identifier.
  */
 class RemoveChatActionBar extends Ok implements \JsonSerializable
 {

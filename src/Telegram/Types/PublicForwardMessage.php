@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a public forward as a message @message Information about the message
+ * Contains a public forward as a message @message Information about the message.
  */
 class PublicForwardMessage extends PublicForward implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; requires can_restrict_members administrator right
+ * Changes the number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; requires can_restrict_members administrator right.
  */
 class SetSupergroupUnrestrictBoostCount extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetSupergroupUnrestrictBoostCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup
+     * Get Identifier of the supergroup.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class SetSupergroupUnrestrictBoostCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup
+     * Set Identifier of the supergroup.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class SetSupergroupUnrestrictBoostCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of the unrestrict_boost_count supergroup setting; 0-8. Use 0 to remove the setting
+     * Get New value of the unrestrict_boost_count supergroup setting; 0-8. Use 0 to remove the setting.
      */
     public function getUnrestrictBoostCount(): int
     {
@@ -48,7 +48,7 @@ class SetSupergroupUnrestrictBoostCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of the unrestrict_boost_count supergroup setting; 0-8. Use 0 to remove the setting
+     * Set New value of the unrestrict_boost_count supergroup setting; 0-8. Use 0 to remove the setting.
      */
     public function setUnrestrictBoostCount(int $unrestrictBoostCount): self
     {

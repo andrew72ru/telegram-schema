@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the last message sent in the topic in a channel direct messages chat administered by the current user no later than the specified date
+ * Returns the last message sent in the topic in a channel direct messages chat administered by the current user no later than the specified date.
  */
 class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSe
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSe
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSe
     }
 
     /**
-     * Get Identifier of the topic which messages will be fetched
+     * Get Identifier of the topic which messages will be fetched.
      */
     public function getTopicId(): int
     {
@@ -51,7 +51,7 @@ class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSe
     }
 
     /**
-     * Set Identifier of the topic which messages will be fetched
+     * Set Identifier of the topic which messages will be fetched.
      */
     public function setTopicId(int $topicId): self
     {
@@ -61,7 +61,7 @@ class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSe
     }
 
     /**
-     * Get Point in time (Unix timestamp) relative to which to search for messages
+     * Get Point in time (Unix timestamp) relative to which to search for messages.
      */
     public function getDate(): int
     {
@@ -69,7 +69,7 @@ class GetDirectMessagesChatTopicMessageByDate extends Message implements \JsonSe
     }
 
     /**
-     * Set Point in time (Unix timestamp) relative to which to search for messages
+     * Set Point in time (Unix timestamp) relative to which to search for messages.
      */
     public function setDate(int $date): self
     {

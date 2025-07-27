@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message was sent by a known user @user_id Identifier of the user that sent the message
+ * The message was sent by a known user @user_id Identifier of the user that sent the message.
  */
 class MessageSenderUser extends MessageSender implements \JsonSerializable
 {

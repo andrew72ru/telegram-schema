@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a chat member joined a chat via an invite link
+ * Describes a chat member joined a chat via an invite link.
  */
 class ChatInviteLinkMember implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user joined the chat
+     * Get Point in time (Unix timestamp) when the user joined the chat.
      */
     public function getJoinedChatDate(): int
     {
@@ -54,7 +54,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user joined the chat
+     * Set Point in time (Unix timestamp) when the user joined the chat.
      */
     public function setJoinedChatDate(int $joinedChatDate): self
     {
@@ -64,7 +64,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has joined the chat using an invite link for a chat folder
+     * Get True, if the user has joined the chat using an invite link for a chat folder.
      */
     public function getViaChatFolderInviteLink(): bool
     {
@@ -72,7 +72,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has joined the chat using an invite link for a chat folder
+     * Set True, if the user has joined the chat using an invite link for a chat folder.
      */
     public function setViaChatFolderInviteLink(bool $viaChatFolderInviteLink): self
     {
@@ -82,7 +82,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the chat administrator, approved user join request
+     * Get User identifier of the chat administrator, approved user join request.
      */
     public function getApproverUserId(): int
     {
@@ -90,7 +90,7 @@ class ChatInviteLinkMember implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the chat administrator, approved user join request
+     * Set User identifier of the chat administrator, approved user join request.
      */
     public function setApproverUserId(int $approverUserId): self
     {

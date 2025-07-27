@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of bots similar to the given bot @bot_user_id User identifier of the target bot
+ * Returns a list of bots similar to the given bot @bot_user_id User identifier of the target bot.
  */
 class GetBotSimilarBots extends Users implements \JsonSerializable
 {

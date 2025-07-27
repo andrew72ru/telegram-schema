@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Invites users to an active video chat. Sends a service message of the type messageInviteVideoChatParticipants to the chat bound to the group call
+ * Invites users to an active video chat. Sends a service message of the type messageInviteVideoChatParticipants to the chat bound to the group call.
  */
 class InviteVideoChatParticipants extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InviteVideoChatParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class InviteVideoChatParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class InviteVideoChatParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get User identifiers. At most 10 users can be invited simultaneously
+     * Get User identifiers. At most 10 users can be invited simultaneously.
      */
     public function getUserIds(): array|null
     {
@@ -48,7 +48,7 @@ class InviteVideoChatParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set User identifiers. At most 10 users can be invited simultaneously
+     * Set User identifiers. At most 10 users can be invited simultaneously.
      */
     public function setUserIds(array|null $userIds): self
     {

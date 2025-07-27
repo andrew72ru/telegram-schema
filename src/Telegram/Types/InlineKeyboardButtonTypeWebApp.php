@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A button that opens a Web App by calling openWebApp @url An HTTP URL to pass to openWebApp
+ * A button that opens a Web App by calling openWebApp @url An HTTP URL to pass to openWebApp.
  */
 class InlineKeyboardButtonTypeWebApp extends InlineKeyboardButtonType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a Telegram message or a forum topic. Call getMessageLinkInfo with the given URL to process the link,
+ * The link is a link to a Telegram message or a forum topic. Call getMessageLinkInfo with the given URL to process the link,.
  */
 class InternalLinkTypeMessage extends InternalLinkType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class InternalLinkTypeMessage extends InternalLinkType implements \JsonSerializa
     }
 
     /**
-     * Get URL to be passed to getMessageLinkInfo
+     * Get URL to be passed to getMessageLinkInfo.
      */
     public function getUrl(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeMessage extends InternalLinkType implements \JsonSerializa
     }
 
     /**
-     * Set URL to be passed to getMessageLinkInfo
+     * Set URL to be passed to getMessageLinkInfo.
      */
     public function setUrl(string $url): self
     {

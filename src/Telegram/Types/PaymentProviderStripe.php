@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Stripe payment provider
+ * Stripe payment provider.
  */
 class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Get Stripe API publishable key
+     * Get Stripe API publishable key.
      */
     public function getPublishableKey(): string
     {
@@ -36,7 +36,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Set Stripe API publishable key
+     * Set Stripe API publishable key.
      */
     public function setPublishableKey(string $publishableKey): self
     {
@@ -46,7 +46,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user country must be provided
+     * Get True, if the user country must be provided.
      */
     public function getNeedCountry(): bool
     {
@@ -54,7 +54,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user country must be provided
+     * Set True, if the user country must be provided.
      */
     public function setNeedCountry(bool $needCountry): self
     {
@@ -64,7 +64,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user ZIP/postal code must be provided
+     * Get True, if the user ZIP/postal code must be provided.
      */
     public function getNeedPostalCode(): bool
     {
@@ -72,7 +72,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user ZIP/postal code must be provided
+     * Set True, if the user ZIP/postal code must be provided.
      */
     public function setNeedPostalCode(bool $needPostalCode): self
     {
@@ -82,7 +82,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Get True, if the cardholder name must be provided
+     * Get True, if the cardholder name must be provided.
      */
     public function getNeedCardholderName(): bool
     {
@@ -90,7 +90,7 @@ class PaymentProviderStripe extends PaymentProvider implements \JsonSerializable
     }
 
     /**
-     * Set True, if the cardholder name must be provided
+     * Set True, if the cardholder name must be provided.
      */
     public function setNeedCardholderName(bool $needCardholderName): self
     {

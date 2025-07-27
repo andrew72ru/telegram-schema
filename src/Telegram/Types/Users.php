@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of users @total_count Approximate total number of users found @user_ids A list of user identifiers
+ * Represents a list of users @total_count Approximate total number of users found @user_ids A list of user identifiers.
  */
 class Users implements \JsonSerializable
 {

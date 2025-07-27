@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of boosts applied to a chat; requires administrator rights in the chat
+ * Returns the list of boosts applied to a chat; requires administrator rights in the chat.
  */
 class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to receive only boosts received from gift codes and giveaways created by the chat
+     * Get Pass true to receive only boosts received from gift codes and giveaways created by the chat.
      */
     public function getOnlyGiftCodes(): bool
     {
@@ -54,7 +54,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to receive only boosts received from gift codes and giveaways created by the chat
+     * Set Pass true to receive only boosts received from gift codes and giveaways created by the chat.
      */
     public function setOnlyGiftCodes(bool $onlyGiftCodes): self
     {
@@ -64,7 +64,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -72,7 +72,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -82,7 +82,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of boosts to be returned; up to 100. For optimal performance, the number of returned boosts can be smaller than the specified limit
+     * Get The maximum number of boosts to be returned; up to 100. For optimal performance, the number of returned boosts can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -90,7 +90,7 @@ class GetChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of boosts to be returned; up to 100. For optimal performance, the number of returned boosts can be smaller than the specified limit
+     * Set The maximum number of boosts to be returned; up to 100. For optimal performance, the number of returned boosts can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

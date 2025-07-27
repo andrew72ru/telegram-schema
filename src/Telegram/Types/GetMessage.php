@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a message. Returns a 404 error if the message doesn't exist
+ * Returns information about a message. Returns a 404 error if the message doesn't exist.
  */
 class GetMessage extends Message implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat the message belongs to
+     * Get Identifier of the chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat the message belongs to
+     * Set Identifier of the chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message to get
+     * Get Identifier of the message to get.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class GetMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message to get
+     * Set Identifier of the message to get.
      */
     public function setMessageId(int $messageId): self
     {

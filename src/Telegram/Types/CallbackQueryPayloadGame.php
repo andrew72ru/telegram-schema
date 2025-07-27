@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The payload for a game callback button @game_short_name A short name of the game that was attached to the callback button
+ * The payload for a game callback button @game_short_name A short name of the game that was attached to the callback button.
  */
 class CallbackQueryPayloadGame extends CallbackQueryPayload implements \JsonSerializable
 {

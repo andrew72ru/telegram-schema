@@ -19,7 +19,7 @@ class AddFavoriteSticker extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker file to add
+     * Get Sticker file to add.
      */
     public function getSticker(): InputFile|null
     {
@@ -27,7 +27,7 @@ class AddFavoriteSticker extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker file to add
+     * Set Sticker file to add.
      */
     public function setSticker(InputFile|null $sticker): self
     {

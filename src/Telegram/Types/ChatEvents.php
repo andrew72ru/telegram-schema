@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of chat events @events List of events
+ * Contains a list of chat events @events List of events.
  */
 class ChatEvents implements \JsonSerializable
 {

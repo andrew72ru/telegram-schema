@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns approximate number of chats similar to the given chat
+ * Returns approximate number of chats similar to the given chat.
  */
 class GetChatSimilarChatCount extends Count implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChatSimilarChatCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target chat; must be an identifier of a channel chat
+     * Get Identifier of the target chat; must be an identifier of a channel chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetChatSimilarChatCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target chat; must be an identifier of a channel chat
+     * Set Identifier of the target chat; must be an identifier of a channel chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetChatSimilarChatCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get the number of chats without sending network requests, or -1 if the number of chats is unknown locally
+     * Get Pass true to get the number of chats without sending network requests, or -1 if the number of chats is unknown locally.
      */
     public function getReturnLocal(): bool
     {
@@ -48,7 +48,7 @@ class GetChatSimilarChatCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get the number of chats without sending network requests, or -1 if the number of chats is unknown locally
+     * Set Pass true to get the number of chats without sending network requests, or -1 if the number of chats is unknown locally.
      */
     public function setReturnLocal(bool $returnLocal): self
     {

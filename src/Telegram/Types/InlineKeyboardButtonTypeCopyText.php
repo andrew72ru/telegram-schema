@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A button that copies specified text to clipboard @text The text to copy to clipboard
+ * A button that copies specified text to clipboard @text The text to copy to clipboard.
  */
 class InlineKeyboardButtonTypeCopyText extends InlineKeyboardButtonType implements \JsonSerializable
 {

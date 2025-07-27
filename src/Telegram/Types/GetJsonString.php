@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Converts a JsonValue object to corresponding JSON-serialized string. Can be called synchronously @json_value The JsonValue object
+ * Converts a JsonValue object to corresponding JSON-serialized string. Can be called synchronously @json_value The JsonValue object.
  */
 class GetJsonString extends Text implements \JsonSerializable
 {

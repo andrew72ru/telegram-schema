@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The link is a link to the change phone number section of the application
+ * The link is a link to the change phone number section of the application.
  */
 class InternalLinkTypeChangePhoneNumber extends InternalLinkType implements \JsonSerializable
 {

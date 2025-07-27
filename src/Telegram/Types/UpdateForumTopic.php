@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about a topic in a forum chat was changed
+ * Information about a topic in a forum chat was changed.
  */
 class UpdateForumTopic extends Update implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -48,7 +48,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -58,7 +58,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier of the topic
+     * Get Message thread identifier of the topic.
      */
     public function getMessageThreadId(): int
     {
@@ -66,7 +66,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier of the topic
+     * Set Message thread identifier of the topic.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -76,7 +76,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic is pinned in the topic list
+     * Get True, if the topic is pinned in the topic list.
      */
     public function getIsPinned(): bool
     {
@@ -84,7 +84,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic is pinned in the topic list
+     * Set True, if the topic is pinned in the topic list.
      */
     public function setIsPinned(bool $isPinned): self
     {
@@ -94,7 +94,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read incoming message
+     * Get Identifier of the last read incoming message.
      */
     public function getLastReadInboxMessageId(): int
     {
@@ -102,7 +102,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read incoming message
+     * Set Identifier of the last read incoming message.
      */
     public function setLastReadInboxMessageId(int $lastReadInboxMessageId): self
     {
@@ -112,7 +112,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read outgoing message
+     * Get Identifier of the last read outgoing message.
      */
     public function getLastReadOutboxMessageId(): int
     {
@@ -120,7 +120,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read outgoing message
+     * Set Identifier of the last read outgoing message.
      */
     public function setLastReadOutboxMessageId(int $lastReadOutboxMessageId): self
     {
@@ -130,7 +130,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Number of unread messages with a mention/reply in the topic
+     * Get Number of unread messages with a mention/reply in the topic.
      */
     public function getUnreadMentionCount(): int
     {
@@ -138,7 +138,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Number of unread messages with a mention/reply in the topic
+     * Set Number of unread messages with a mention/reply in the topic.
      */
     public function setUnreadMentionCount(int $unreadMentionCount): self
     {
@@ -148,7 +148,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Number of messages with unread reactions in the topic
+     * Get Number of messages with unread reactions in the topic.
      */
     public function getUnreadReactionCount(): int
     {
@@ -156,7 +156,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Number of messages with unread reactions in the topic
+     * Set Number of messages with unread reactions in the topic.
      */
     public function setUnreadReactionCount(int $unreadReactionCount): self
     {
@@ -166,7 +166,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Notification settings for the topic
+     * Get Notification settings for the topic.
      */
     public function getNotificationSettings(): ChatNotificationSettings|null
     {
@@ -174,7 +174,7 @@ class UpdateForumTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Notification settings for the topic
+     * Set Notification settings for the topic.
      */
     public function setNotificationSettings(ChatNotificationSettings|null $notificationSettings): self
     {

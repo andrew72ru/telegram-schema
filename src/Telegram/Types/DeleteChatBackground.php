@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes background in a specific chat
+ * Deletes background in a specific chat.
  */
 class DeleteChatBackground extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class DeleteChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class DeleteChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to restore previously set background. Can be used only in private and secret chats with non-deleted users if userFullInfo.set_chat_background == true.
+     * Get Pass true to restore previously set background. Can be used only in private and secret chats with non-deleted users if userFullInfo.set_chat_background == true..
      */
     public function getRestorePrevious(): bool
     {
@@ -48,7 +48,7 @@ class DeleteChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to restore previously set background. Can be used only in private and secret chats with non-deleted users if userFullInfo.set_chat_background == true.
+     * Set Pass true to restore previously set background. Can be used only in private and secret chats with non-deleted users if userFullInfo.set_chat_background == true..
      */
     public function setRestorePrevious(bool $restorePrevious): self
     {

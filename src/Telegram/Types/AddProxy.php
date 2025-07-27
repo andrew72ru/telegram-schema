@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a proxy server for network requests. Can be called before authorization
+ * Adds a proxy server for network requests. Can be called before authorization.
  */
 class AddProxy extends Proxy implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server domain or IP address
+     * Get Proxy server domain or IP address.
      */
     public function getServer(): string
     {
@@ -36,7 +36,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server domain or IP address
+     * Set Proxy server domain or IP address.
      */
     public function setServer(string $server): self
     {
@@ -46,7 +46,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server port
+     * Get Proxy server port.
      */
     public function getPort(): int
     {
@@ -54,7 +54,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server port
+     * Set Proxy server port.
      */
     public function setPort(int $port): self
     {
@@ -64,7 +64,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to immediately enable the proxy
+     * Get Pass true to immediately enable the proxy.
      */
     public function getEnable(): bool
     {
@@ -72,7 +72,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to immediately enable the proxy
+     * Set Pass true to immediately enable the proxy.
      */
     public function setEnable(bool $enable): self
     {
@@ -82,7 +82,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy type
+     * Get Proxy type.
      */
     public function getType(): ProxyType|null
     {
@@ -90,7 +90,7 @@ class AddProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy type
+     * Set Proxy type.
      */
     public function setType(ProxyType|null $type): self
     {

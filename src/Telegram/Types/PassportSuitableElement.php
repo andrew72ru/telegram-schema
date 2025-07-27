@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a Telegram Passport element that was requested by a service
+ * Contains information about a Telegram Passport element that was requested by a service.
  */
 class PassportSuitableElement implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Get Type of the element
+     * Get Type of the element.
      */
     public function getType(): PassportElementType|null
     {
@@ -36,7 +36,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Set Type of the element
+     * Set Type of the element.
      */
     public function setType(PassportElementType|null $type): self
     {
@@ -46,7 +46,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Get True, if a selfie is required with the identity document
+     * Get True, if a selfie is required with the identity document.
      */
     public function getIsSelfieRequired(): bool
     {
@@ -54,7 +54,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Set True, if a selfie is required with the identity document
+     * Set True, if a selfie is required with the identity document.
      */
     public function setIsSelfieRequired(bool $isSelfieRequired): self
     {
@@ -64,7 +64,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Get True, if a certified English translation is required with the document
+     * Get True, if a certified English translation is required with the document.
      */
     public function getIsTranslationRequired(): bool
     {
@@ -72,7 +72,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Set True, if a certified English translation is required with the document
+     * Set True, if a certified English translation is required with the document.
      */
     public function setIsTranslationRequired(bool $isTranslationRequired): self
     {
@@ -82,7 +82,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Get True, if personal details must include the user's name in the language of their country of residence
+     * Get True, if personal details must include the user's name in the language of their country of residence.
      */
     public function getIsNativeNameRequired(): bool
     {
@@ -90,7 +90,7 @@ class PassportSuitableElement implements \JsonSerializable
     }
 
     /**
-     * Set True, if personal details must include the user's name in the language of their country of residence
+     * Set True, if personal details must include the user's name in the language of their country of residence.
      */
     public function setIsNativeNameRequired(bool $isNativeNameRequired): self
     {

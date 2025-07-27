@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a related article
+ * Contains information about a related article.
  */
 class PageBlockRelatedArticle implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Get Related article URL
+     * Get Related article URL.
      */
     public function getUrl(): string
     {
@@ -42,7 +42,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Set Related article URL
+     * Set Related article URL.
      */
     public function setUrl(string $url): self
     {
@@ -52,7 +52,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Get Article title; may be empty
+     * Get Article title; may be empty.
      */
     public function getTitle(): string
     {
@@ -60,7 +60,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Set Article title; may be empty
+     * Set Article title; may be empty.
      */
     public function setTitle(string $title): self
     {
@@ -70,7 +70,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Get Contains information about a related article
+     * Get Contains information about a related article.
      */
     public function getDescription(): string
     {
@@ -78,7 +78,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Set Contains information about a related article
+     * Set Contains information about a related article.
      */
     public function setDescription(string $description): self
     {
@@ -88,7 +88,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Get Article photo; may be null
+     * Get Article photo; may be null.
      */
     public function getPhoto(): Photo|null
     {
@@ -96,7 +96,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Set Article photo; may be null
+     * Set Article photo; may be null.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -106,7 +106,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Get Article author; may be empty
+     * Get Article author; may be empty.
      */
     public function getAuthor(): string
     {
@@ -114,7 +114,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Set Article author; may be empty
+     * Set Article author; may be empty.
      */
     public function setAuthor(string $author): self
     {
@@ -124,7 +124,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the article was published; 0 if unknown
+     * Get Point in time (Unix timestamp) when the article was published; 0 if unknown.
      */
     public function getPublishDate(): int
     {
@@ -132,7 +132,7 @@ class PageBlockRelatedArticle implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the article was published; 0 if unknown
+     * Set Point in time (Unix timestamp) when the article was published; 0 if unknown.
      */
     public function setPublishDate(int $publishDate): self
     {

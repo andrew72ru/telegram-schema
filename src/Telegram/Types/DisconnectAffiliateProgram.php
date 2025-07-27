@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Disconnects an affiliate program from the given affiliate and immediately deactivates its referral link. Returns updated information about the disconnected affiliate program
+ * Disconnects an affiliate program from the given affiliate and immediately deactivates its referral link. Returns updated information about the disconnected affiliate program.
  */
 class DisconnectAffiliateProgram extends ConnectedAffiliateProgram implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DisconnectAffiliateProgram extends ConnectedAffiliateProgram implements \J
     }
 
     /**
-     * Get The affiliate to which the affiliate program is connected
+     * Get The affiliate to which the affiliate program is connected.
      */
     public function getAffiliate(): AffiliateType|null
     {
@@ -30,7 +30,7 @@ class DisconnectAffiliateProgram extends ConnectedAffiliateProgram implements \J
     }
 
     /**
-     * Set The affiliate to which the affiliate program is connected
+     * Set The affiliate to which the affiliate program is connected.
      */
     public function setAffiliate(AffiliateType|null $affiliate): self
     {
@@ -40,7 +40,7 @@ class DisconnectAffiliateProgram extends ConnectedAffiliateProgram implements \J
     }
 
     /**
-     * Get The referral link of the affiliate program
+     * Get The referral link of the affiliate program.
      */
     public function getUrl(): string
     {
@@ -48,7 +48,7 @@ class DisconnectAffiliateProgram extends ConnectedAffiliateProgram implements \J
     }
 
     /**
-     * Set The referral link of the affiliate program
+     * Set The referral link of the affiliate program.
      */
     public function setUrl(string $url): self
     {

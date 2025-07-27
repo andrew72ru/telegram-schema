@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the storage usage statistics for a specific file type
+ * Contains the storage usage statistics for a specific file type.
  */
 class StorageStatisticsByFileType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StorageStatisticsByFileType implements \JsonSerializable
     }
 
     /**
-     * Get File type
+     * Get File type.
      */
     public function getFileType(): FileType|null
     {
@@ -33,7 +33,7 @@ class StorageStatisticsByFileType implements \JsonSerializable
     }
 
     /**
-     * Set File type
+     * Set File type.
      */
     public function setFileType(FileType|null $fileType): self
     {
@@ -43,7 +43,7 @@ class StorageStatisticsByFileType implements \JsonSerializable
     }
 
     /**
-     * Get Total size of the files, in bytes
+     * Get Total size of the files, in bytes.
      */
     public function getSize(): int
     {
@@ -51,7 +51,7 @@ class StorageStatisticsByFileType implements \JsonSerializable
     }
 
     /**
-     * Set Total size of the files, in bytes
+     * Set Total size of the files, in bytes.
      */
     public function setSize(int $size): self
     {
@@ -61,7 +61,7 @@ class StorageStatisticsByFileType implements \JsonSerializable
     }
 
     /**
-     * Get Total number of files
+     * Get Total number of files.
      */
     public function getCount(): int
     {
@@ -69,7 +69,7 @@ class StorageStatisticsByFileType implements \JsonSerializable
     }
 
     /**
-     * Set Total number of files
+     * Set Total number of files.
      */
     public function setCount(int $count): self
     {

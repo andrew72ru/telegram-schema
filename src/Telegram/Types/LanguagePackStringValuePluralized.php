@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A language pack string which has different forms based on the number of some object it mentions. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information
+ * A language pack string which has different forms based on the number of some object it mentions. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information.
  */
 class LanguagePackStringValuePluralized extends LanguagePackStringValue implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Get Value for zero objects
+     * Get Value for zero objects.
      */
     public function getZeroValue(): string
     {
@@ -42,7 +42,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Set Value for zero objects
+     * Set Value for zero objects.
      */
     public function setZeroValue(string $zeroValue): self
     {
@@ -52,7 +52,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Get Value for one object
+     * Get Value for one object.
      */
     public function getOneValue(): string
     {
@@ -60,7 +60,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Set Value for one object
+     * Set Value for one object.
      */
     public function setOneValue(string $oneValue): self
     {
@@ -70,7 +70,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Get Value for two objects
+     * Get Value for two objects.
      */
     public function getTwoValue(): string
     {
@@ -78,7 +78,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Set Value for two objects
+     * Set Value for two objects.
      */
     public function setTwoValue(string $twoValue): self
     {
@@ -88,7 +88,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Get Value for few objects
+     * Get Value for few objects.
      */
     public function getFewValue(): string
     {
@@ -96,7 +96,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Set Value for few objects
+     * Set Value for few objects.
      */
     public function setFewValue(string $fewValue): self
     {
@@ -106,7 +106,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Get Value for many objects
+     * Get Value for many objects.
      */
     public function getManyValue(): string
     {
@@ -114,7 +114,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Set Value for many objects
+     * Set Value for many objects.
      */
     public function setManyValue(string $manyValue): self
     {
@@ -124,7 +124,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Get Default value
+     * Get Default value.
      */
     public function getOtherValue(): string
     {
@@ -132,7 +132,7 @@ class LanguagePackStringValuePluralized extends LanguagePackStringValue implemen
     }
 
     /**
-     * Set Default value
+     * Set Default value.
      */
     public function setOtherValue(string $otherValue): self
     {

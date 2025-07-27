@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The call has been answered and encryption keys are being exchanged
+ * The call has been answered and encryption keys are being exchanged.
  */
 class CallStateExchangingKeys extends CallState implements \JsonSerializable
 {

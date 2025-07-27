@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether a participant of an active group call is muted, unmuted, or allowed to unmute themselves
+ * Toggles whether a participant of an active group call is muted, unmuted, or allowed to unmute themselves.
  */
 class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Participant identifier
+     * Get Participant identifier.
      */
     public function getParticipantId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Participant identifier
+     * Set Participant identifier.
      */
     public function setParticipantId(MessageSender|null $participantId): self
     {
@@ -61,7 +61,7 @@ class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to mute the user; pass false to unmute them
+     * Get Pass true to mute the user; pass false to unmute them.
      */
     public function getIsMuted(): bool
     {
@@ -69,7 +69,7 @@ class ToggleGroupCallParticipantIsMuted extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to mute the user; pass false to unmute them
+     * Set Pass true to mute the user; pass false to unmute them.
      */
     public function setIsMuted(bool $isMuted): self
     {

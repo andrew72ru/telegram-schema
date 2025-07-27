@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a chat with a Telegram bot. Call searchPublicChat with the given bot username, check that the user is a bot, show START button in the chat with the bot,
+ * The link is a link to a chat with a Telegram bot. Call searchPublicChat with the given bot username, check that the user is a bot, show START button in the chat with the bot,.
  */
 class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Get Username of the bot
+     * Get Username of the bot.
      */
     public function getBotUsername(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Set Username of the bot
+     * Set Username of the bot.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Get The parameter to be passed to sendBotStartMessage
+     * Get The parameter to be passed to sendBotStartMessage.
      */
     public function getStartParameter(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Set The parameter to be passed to sendBotStartMessage
+     * Set The parameter to be passed to sendBotStartMessage.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Get True, if sendBotStartMessage must be called automatically without showing the START button
+     * Get True, if sendBotStartMessage must be called automatically without showing the START button.
      */
     public function getAutostart(): bool
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeBotStart extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Set True, if sendBotStartMessage must be called automatically without showing the START button
+     * Set True, if sendBotStartMessage must be called automatically without showing the START button.
      */
     public function setAutostart(bool $autostart): self
     {

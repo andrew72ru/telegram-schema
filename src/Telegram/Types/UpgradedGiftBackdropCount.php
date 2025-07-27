@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a backdrop of an upgraded gift @backdrop The backdrop @total_count Total number of gifts with the symbol
+ * Describes a backdrop of an upgraded gift @backdrop The backdrop @total_count Total number of gifts with the symbol.
  */
 class UpgradedGiftBackdropCount implements \JsonSerializable
 {

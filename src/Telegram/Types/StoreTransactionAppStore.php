@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A purchase through App Store @receipt App Store receipt
+ * A purchase through App Store @receipt App Store receipt.
  */
 class StoreTransactionAppStore extends StoreTransaction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The original story was posted by an unknown user @poster_name Name of the user or the chat that posted the story
+ * The original story was posted by an unknown user @poster_name Name of the user or the chat that posted the story.
  */
 class StoryOriginHiddenUser extends StoryOrigin implements \JsonSerializable
 {

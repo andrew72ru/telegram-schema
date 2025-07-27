@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about features, available to Business users @source Source of the request; pass null if the method is called from settings or some non-standard source
+ * Returns information about features, available to Business users @source Source of the request; pass null if the method is called from settings or some non-standard source.
  */
 class GetBusinessFeatures extends BusinessFeatures implements \JsonSerializable
 {

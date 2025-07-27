@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the bio of the current user @bio The new value of the user bio; 0-getOption("bio_length_max") characters without line feeds
+ * Changes the bio of the current user @bio The new value of the user bio; 0-getOption("bio_length_max") characters without line feeds.
  */
 class SetBio extends Ok implements \JsonSerializable
 {

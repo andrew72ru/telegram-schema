@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An invoice from a message of the type messageInvoice or paid media purchase from messagePaidMedia
+ * An invoice from a message of the type messageInvoice or paid media purchase from messagePaidMedia.
  */
 class InputInvoiceMessage extends InputInvoice implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputInvoiceMessage extends InputInvoice implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the message
+     * Get Chat identifier of the message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class InputInvoiceMessage extends InputInvoice implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the message
+     * Set Chat identifier of the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class InputInvoiceMessage extends InputInvoice implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier. Use messageProperties.can_be_paid to check whether the message can be used in the method
+     * Get Message identifier. Use messageProperties.can_be_paid to check whether the message can be used in the method.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class InputInvoiceMessage extends InputInvoice implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier. Use messageProperties.can_be_paid to check whether the message can be used in the method
+     * Set Message identifier. Use messageProperties.can_be_paid to check whether the message can be used in the method.
      */
     public function setMessageId(int $messageId): self
     {

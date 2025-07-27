@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the result of a callback query; for bots only
+ * Sets the result of a callback query; for bots only.
  */
 class AnswerCallbackQuery extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the callback query
+     * Get Identifier of the callback query.
      */
     public function getCallbackQueryId(): int
     {
@@ -39,7 +39,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the callback query
+     * Set Identifier of the callback query.
      */
     public function setCallbackQueryId(int $callbackQueryId): self
     {
@@ -49,7 +49,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Text of the answer
+     * Get Text of the answer.
      */
     public function getText(): string
     {
@@ -57,7 +57,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Text of the answer
+     * Set Text of the answer.
      */
     public function setText(string $text): self
     {
@@ -67,7 +67,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to show an alert to the user instead of a toast notification
+     * Get Pass true to show an alert to the user instead of a toast notification.
      */
     public function getShowAlert(): bool
     {
@@ -75,7 +75,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to show an alert to the user instead of a toast notification
+     * Set Pass true to show an alert to the user instead of a toast notification.
      */
     public function setShowAlert(bool $showAlert): self
     {
@@ -85,7 +85,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get URL to be opened
+     * Get URL to be opened.
      */
     public function getUrl(): string
     {
@@ -93,7 +93,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set URL to be opened
+     * Set URL to be opened.
      */
     public function setUrl(string $url): self
     {
@@ -103,7 +103,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Time during which the result of the query can be cached, in seconds
+     * Get Time during which the result of the query can be cached, in seconds.
      */
     public function getCacheTime(): int
     {
@@ -111,7 +111,7 @@ class AnswerCallbackQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Time during which the result of the query can be cached, in seconds
+     * Set Time during which the result of the query can be cached, in seconds.
      */
     public function setCacheTime(int $cacheTime): self
     {

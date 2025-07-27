@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about original story that was reposted
+ * Contains information about original story that was reposted.
  */
 class StoryRepostInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StoryRepostInfo implements \JsonSerializable
     }
 
     /**
-     * Get Origin of the story that was reposted
+     * Get Origin of the story that was reposted.
      */
     public function getOrigin(): StoryOrigin|null
     {
@@ -30,7 +30,7 @@ class StoryRepostInfo implements \JsonSerializable
     }
 
     /**
-     * Set Origin of the story that was reposted
+     * Set Origin of the story that was reposted.
      */
     public function setOrigin(StoryOrigin|null $origin): self
     {
@@ -40,7 +40,7 @@ class StoryRepostInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if story content was modified during reposting; otherwise, story wasn't modified
+     * Get True, if story content was modified during reposting; otherwise, story wasn't modified.
      */
     public function getIsContentModified(): bool
     {
@@ -48,7 +48,7 @@ class StoryRepostInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if story content was modified during reposting; otherwise, story wasn't modified
+     * Set True, if story content was modified during reposting; otherwise, story wasn't modified.
      */
     public function setIsContentModified(bool $isContentModified): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes gift types that are accepted by a user
+ * Describes gift types that are accepted by a user.
  */
 class AcceptedGiftTypes implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if unlimited regular gifts are accepted
+     * Get True, if unlimited regular gifts are accepted.
      */
     public function getUnlimitedGifts(): bool
     {
@@ -36,7 +36,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if unlimited regular gifts are accepted
+     * Set True, if unlimited regular gifts are accepted.
      */
     public function setUnlimitedGifts(bool $unlimitedGifts): self
     {
@@ -46,7 +46,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if limited regular gifts are accepted
+     * Get True, if limited regular gifts are accepted.
      */
     public function getLimitedGifts(): bool
     {
@@ -54,7 +54,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if limited regular gifts are accepted
+     * Set True, if limited regular gifts are accepted.
      */
     public function setLimitedGifts(bool $limitedGifts): self
     {
@@ -64,7 +64,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if upgraded gifts and regular gifts that can be upgraded for free are accepted
+     * Get True, if upgraded gifts and regular gifts that can be upgraded for free are accepted.
      */
     public function getUpgradedGifts(): bool
     {
@@ -72,7 +72,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if upgraded gifts and regular gifts that can be upgraded for free are accepted
+     * Set True, if upgraded gifts and regular gifts that can be upgraded for free are accepted.
      */
     public function setUpgradedGifts(bool $upgradedGifts): self
     {
@@ -82,7 +82,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if Telegram Premium subscription is accepted
+     * Get True, if Telegram Premium subscription is accepted.
      */
     public function getPremiumSubscription(): bool
     {
@@ -90,7 +90,7 @@ class AcceptedGiftTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if Telegram Premium subscription is accepted
+     * Set True, if Telegram Premium subscription is accepted.
      */
     public function setPremiumSubscription(bool $premiumSubscription): self
     {

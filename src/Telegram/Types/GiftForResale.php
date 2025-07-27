@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a gift available for resale
+ * Describes a gift available for resale.
  */
 class GiftForResale implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GiftForResale implements \JsonSerializable
     }
 
     /**
-     * Get The gift
+     * Get The gift.
      */
     public function getGift(): UpgradedGift|null
     {
@@ -30,7 +30,7 @@ class GiftForResale implements \JsonSerializable
     }
 
     /**
-     * Set The gift
+     * Set The gift.
      */
     public function setGift(UpgradedGift|null $gift): self
     {
@@ -40,7 +40,7 @@ class GiftForResale implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the received gift for the current user; only for the gifts owned by the current user
+     * Get Unique identifier of the received gift for the current user; only for the gifts owned by the current user.
      */
     public function getReceivedGiftId(): string
     {
@@ -48,7 +48,7 @@ class GiftForResale implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the received gift for the current user; only for the gifts owned by the current user
+     * Set Unique identifier of the received gift for the current user; only for the gifts owned by the current user.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {

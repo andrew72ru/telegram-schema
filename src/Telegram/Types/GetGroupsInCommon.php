@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of common group chats with a given user. Chats are sorted by their type and creation date
+ * Returns a list of common group chats with a given user. Chats are sorted by their type and creation date.
  */
 class GetGroupsInCommon extends Chats implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetGroupsInCommon extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class GetGroupsInCommon extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class GetGroupsInCommon extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier starting from which to return chats; use 0 for the first request
+     * Get Chat identifier starting from which to return chats; use 0 for the first request.
      */
     public function getOffsetChatId(): int
     {
@@ -51,7 +51,7 @@ class GetGroupsInCommon extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier starting from which to return chats; use 0 for the first request
+     * Set Chat identifier starting from which to return chats; use 0 for the first request.
      */
     public function setOffsetChatId(int $offsetChatId): self
     {
@@ -61,7 +61,7 @@ class GetGroupsInCommon extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of chats to be returned; up to 100
+     * Get The maximum number of chats to be returned; up to 100.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetGroupsInCommon extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of chats to be returned; up to 100
+     * Set The maximum number of chats to be returned; up to 100.
      */
     public function setLimit(int $limit): self
     {

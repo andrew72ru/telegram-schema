@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains full information about a user
+ * Contains full information about a user.
  */
 class UserFullInfo implements \JsonSerializable
 {
@@ -88,7 +88,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+     * Get User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
      */
     public function getPersonalPhoto(): ChatPhoto|null
     {
@@ -96,7 +96,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+     * Set User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
      */
     public function setPersonalPhoto(ChatPhoto|null $personalPhoto): self
     {
@@ -106,7 +106,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+     * Get User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
      */
     public function getPhoto(): ChatPhoto|null
     {
@@ -114,7 +114,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+     * Set User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
      */
     public function setPhoto(ChatPhoto|null $photo): self
     {
@@ -124,7 +124,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+     * Get User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
      */
     public function getPublicPhoto(): ChatPhoto|null
     {
@@ -132,7 +132,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+     * Set User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
      */
     public function setPublicPhoto(ChatPhoto|null $publicPhoto): self
     {
@@ -142,7 +142,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Block list to which the user is added; may be null if none
+     * Get Block list to which the user is added; may be null if none.
      */
     public function getBlockList(): BlockList|null
     {
@@ -150,7 +150,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Block list to which the user is added; may be null if none
+     * Set Block list to which the user is added; may be null if none.
      */
     public function setBlockList(BlockList|null $blockList): self
     {
@@ -160,7 +160,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can be called
+     * Get True, if the user can be called.
      */
     public function getCanBeCalled(): bool
     {
@@ -168,7 +168,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can be called
+     * Set True, if the user can be called.
      */
     public function setCanBeCalled(bool $canBeCalled): self
     {
@@ -178,7 +178,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if a video call can be created with the user
+     * Get True, if a video call can be created with the user.
      */
     public function getSupportsVideoCalls(): bool
     {
@@ -186,7 +186,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if a video call can be created with the user
+     * Set True, if a video call can be created with the user.
      */
     public function setSupportsVideoCalls(bool $supportsVideoCalls): self
     {
@@ -196,7 +196,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can't be called due to their privacy settings
+     * Get True, if the user can't be called due to their privacy settings.
      */
     public function getHasPrivateCalls(): bool
     {
@@ -204,7 +204,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can't be called due to their privacy settings
+     * Set True, if the user can't be called due to their privacy settings.
      */
     public function setHasPrivateCalls(bool $hasPrivateCalls): self
     {
@@ -214,7 +214,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can't be linked in forwarded messages due to their privacy settings
+     * Get True, if the user can't be linked in forwarded messages due to their privacy settings.
      */
     public function getHasPrivateForwards(): bool
     {
@@ -222,7 +222,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can't be linked in forwarded messages due to their privacy settings
+     * Set True, if the user can't be linked in forwarded messages due to their privacy settings.
      */
     public function setHasPrivateForwards(bool $hasPrivateForwards): self
     {
@@ -232,7 +232,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if voice and video notes can't be sent or forwarded to the user
+     * Get True, if voice and video notes can't be sent or forwarded to the user.
      */
     public function getHasRestrictedVoiceAndVideoNoteMessages(): bool
     {
@@ -240,7 +240,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if voice and video notes can't be sent or forwarded to the user
+     * Set True, if voice and video notes can't be sent or forwarded to the user.
      */
     public function setHasRestrictedVoiceAndVideoNoteMessages(bool $hasRestrictedVoiceAndVideoNoteMessages): self
     {
@@ -250,7 +250,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has posted to profile stories
+     * Get True, if the user has posted to profile stories.
      */
     public function getHasPostedToProfileStories(): bool
     {
@@ -258,7 +258,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has posted to profile stories
+     * Set True, if the user has posted to profile stories.
      */
     public function setHasPostedToProfileStories(bool $hasPostedToProfileStories): self
     {
@@ -268,7 +268,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user always enabled sponsored messages; known only for the current user
+     * Get True, if the user always enabled sponsored messages; known only for the current user.
      */
     public function getHasSponsoredMessagesEnabled(): bool
     {
@@ -276,7 +276,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user always enabled sponsored messages; known only for the current user
+     * Set True, if the user always enabled sponsored messages; known only for the current user.
      */
     public function setHasSponsoredMessagesEnabled(bool $hasSponsoredMessagesEnabled): self
     {
@@ -286,7 +286,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used
+     * Get True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used.
      */
     public function getNeedPhoneNumberPrivacyException(): bool
     {
@@ -294,7 +294,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used
+     * Set True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used.
      */
     public function setNeedPhoneNumberPrivacyException(bool $needPhoneNumberPrivacyException): self
     {
@@ -304,7 +304,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user set chat background for both chat users and it wasn't reverted yet
+     * Get True, if the user set chat background for both chat users and it wasn't reverted yet.
      */
     public function getSetChatBackground(): bool
     {
@@ -312,7 +312,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user set chat background for both chat users and it wasn't reverted yet
+     * Set True, if the user set chat background for both chat users and it wasn't reverted yet.
      */
     public function setSetChatBackground(bool $setChatBackground): self
     {
@@ -322,7 +322,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get A short user bio; may be null for bots
+     * Get A short user bio; may be null for bots.
      */
     public function getBio(): FormattedText|null
     {
@@ -330,7 +330,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set A short user bio; may be null for bots
+     * Set A short user bio; may be null for bots.
      */
     public function setBio(FormattedText|null $bio): self
     {
@@ -340,7 +340,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Birthdate of the user; may be null if unknown
+     * Get Birthdate of the user; may be null if unknown.
      */
     public function getBirthdate(): Birthdate|null
     {
@@ -348,7 +348,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Birthdate of the user; may be null if unknown
+     * Set Birthdate of the user; may be null if unknown.
      */
     public function setBirthdate(Birthdate|null $birthdate): self
     {
@@ -358,7 +358,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the personal chat of the user; 0 if none
+     * Get Identifier of the personal chat of the user; 0 if none.
      */
     public function getPersonalChatId(): int
     {
@@ -366,7 +366,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the personal chat of the user; 0 if none
+     * Set Identifier of the personal chat of the user; 0 if none.
      */
     public function setPersonalChatId(int $personalChatId): self
     {
@@ -376,7 +376,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of saved to profile gifts for other users or the total number of received gifts for the current user
+     * Get Number of saved to profile gifts for other users or the total number of received gifts for the current user.
      */
     public function getGiftCount(): int
     {
@@ -384,7 +384,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of saved to profile gifts for other users or the total number of received gifts for the current user
+     * Set Number of saved to profile gifts for other users or the total number of received gifts for the current user.
      */
     public function setGiftCount(int $giftCount): self
     {
@@ -394,7 +394,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of group chats where both the other user and the current user are a member; 0 for the current user
+     * Get Number of group chats where both the other user and the current user are a member; 0 for the current user.
      */
     public function getGroupInCommonCount(): int
     {
@@ -402,7 +402,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of group chats where both the other user and the current user are a member; 0 for the current user
+     * Set Number of group chats where both the other user and the current user are a member; 0 for the current user.
      */
     public function setGroupInCommonCount(int $groupInCommonCount): self
     {
@@ -412,7 +412,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid by the user for each sent message to the current user
+     * Get Number of Telegram Stars that must be paid by the user for each sent message to the current user.
      */
     public function getIncomingPaidMessageStarCount(): int
     {
@@ -420,7 +420,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid by the user for each sent message to the current user
+     * Set Number of Telegram Stars that must be paid by the user for each sent message to the current user.
      */
     public function setIncomingPaidMessageStarCount(int $incomingPaidMessageStarCount): self
     {
@@ -430,7 +430,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid by the current user for each sent message to the user
+     * Get Number of Telegram Stars that must be paid by the current user for each sent message to the user.
      */
     public function getOutgoingPaidMessageStarCount(): int
     {
@@ -438,7 +438,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid by the current user for each sent message to the user
+     * Set Number of Telegram Stars that must be paid by the current user for each sent message to the user.
      */
     public function setOutgoingPaidMessageStarCount(int $outgoingPaidMessageStarCount): self
     {
@@ -448,7 +448,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Settings for gift receiving for the user
+     * Get Settings for gift receiving for the user.
      */
     public function getGiftSettings(): GiftSettings|null
     {
@@ -456,7 +456,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Settings for gift receiving for the user
+     * Set Settings for gift receiving for the user.
      */
     public function setGiftSettings(GiftSettings|null $giftSettings): self
     {
@@ -466,7 +466,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about verification status of the user provided by a bot; may be null if none or unknown
+     * Get Information about verification status of the user provided by a bot; may be null if none or unknown.
      */
     public function getBotVerification(): BotVerification|null
     {
@@ -474,7 +474,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about verification status of the user provided by a bot; may be null if none or unknown
+     * Set Information about verification status of the user provided by a bot; may be null if none or unknown.
      */
     public function setBotVerification(BotVerification|null $botVerification): self
     {
@@ -484,7 +484,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about business settings for Telegram Business accounts; may be null if none
+     * Get Information about business settings for Telegram Business accounts; may be null if none.
      */
     public function getBusinessInfo(): BusinessInfo|null
     {
@@ -492,7 +492,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about business settings for Telegram Business accounts; may be null if none
+     * Set Information about business settings for Telegram Business accounts; may be null if none.
      */
     public function setBusinessInfo(BusinessInfo|null $businessInfo): self
     {
@@ -502,7 +502,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get For bots, information about the bot; may be null if the user isn't a bot
+     * Get For bots, information about the bot; may be null if the user isn't a bot.
      */
     public function getBotInfo(): BotInfo|null
     {
@@ -510,7 +510,7 @@ class UserFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set For bots, information about the bot; may be null if the user isn't a bot
+     * Set For bots, information about the bot; may be null if the user isn't a bot.
      */
     public function setBotInfo(BotInfo|null $botInfo): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information needed to open the main Web App of a bot
+ * Returns information needed to open the main Web App of a bot.
  */
 class GetMainWebApp extends MainWebApp implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which the Web App is opened; pass 0 if none
+     * Get Identifier of the chat in which the Web App is opened; pass 0 if none.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which the Web App is opened; pass 0 if none
+     * Set Identifier of the chat in which the Web App is opened; pass 0 if none.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method
+     * Get Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method.
      */
     public function getBotUserId(): int
     {
@@ -54,7 +54,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method
+     * Set Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -64,7 +64,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Get Start parameter from internalLinkTypeMainWebApp
+     * Get Start parameter from internalLinkTypeMainWebApp.
      */
     public function getStartParameter(): string
     {
@@ -72,7 +72,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Set Start parameter from internalLinkTypeMainWebApp
+     * Set Start parameter from internalLinkTypeMainWebApp.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -82,7 +82,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Get Parameters to use to open the Web App
+     * Get Parameters to use to open the Web App.
      */
     public function getParameters(): WebAppOpenParameters|null
     {
@@ -90,7 +90,7 @@ class GetMainWebApp extends MainWebApp implements \JsonSerializable
     }
 
     /**
-     * Set Parameters to use to open the Web App
+     * Set Parameters to use to open the Web App.
      */
     public function setParameters(WebAppOpenParameters|null $parameters): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming callback query from a message sent via a bot; for bots only
+ * A new incoming callback query from a message sent via a bot; for bots only.
  */
 class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique query identifier
+     * Get Unique query identifier.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique query identifier
+     * Set Unique query identifier.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -57,7 +57,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -67,7 +67,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the inline message from which the query originated
+     * Get Identifier of the inline message from which the query originated.
      */
     public function getInlineMessageId(): string
     {
@@ -75,7 +75,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the inline message from which the query originated
+     * Set Identifier of the inline message from which the query originated.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {
@@ -85,7 +85,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get An identifier uniquely corresponding to the chat a message was sent to
+     * Get An identifier uniquely corresponding to the chat a message was sent to.
      */
     public function getChatInstance(): int
     {
@@ -93,7 +93,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set An identifier uniquely corresponding to the chat a message was sent to
+     * Set An identifier uniquely corresponding to the chat a message was sent to.
      */
     public function setChatInstance(int $chatInstance): self
     {
@@ -103,7 +103,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Query payload
+     * Get Query payload.
      */
     public function getPayload(): CallbackQueryPayload|null
     {
@@ -111,7 +111,7 @@ class UpdateNewInlineCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Query payload
+     * Set Query payload.
      */
     public function setPayload(CallbackQueryPayload|null $payload): self
     {

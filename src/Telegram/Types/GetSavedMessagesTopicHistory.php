@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns messages in a Saved Messages topic. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id)
+ * Returns messages in a Saved Messages topic. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id).
  */
 class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of Saved Messages topic which messages will be fetched
+     * Get Identifier of Saved Messages topic which messages will be fetched.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -36,7 +36,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of Saved Messages topic which messages will be fetched
+     * Set Identifier of Saved Messages topic which messages will be fetched.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {
@@ -46,7 +46,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message
+     * Get Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message.
      */
     public function getFromMessageId(): int
     {
@@ -54,7 +54,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message
+     * Set Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message.
      */
     public function setFromMessageId(int $fromMessageId): self
     {
@@ -64,7 +64,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages
+     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages.
      */
     public function getOffset(): int
     {
@@ -72,7 +72,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages
+     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages.
      */
     public function setOffset(int $offset): self
     {
@@ -82,7 +82,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.
+     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset..
      */
     public function getLimit(): int
     {
@@ -90,7 +90,7 @@ class GetSavedMessagesTopicHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.
+     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset..
      */
     public function setLimit(int $limit): self
     {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The user is recording a video note
+ * The user is recording a video note.
  */
 class ChatActionRecordingVideoNote extends ChatAction implements \JsonSerializable
 {

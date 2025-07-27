@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * An italic text
+ * An italic text.
  */
 class TextEntityTypeItalic extends TextEntityType implements \JsonSerializable
 {

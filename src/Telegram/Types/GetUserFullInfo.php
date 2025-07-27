@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns full information about a user by their identifier @user_id User identifier
+ * Returns full information about a user by their identifier @user_id User identifier.
  */
 class GetUserFullInfo extends UserFullInfo implements \JsonSerializable
 {

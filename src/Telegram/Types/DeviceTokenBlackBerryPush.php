@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A token for BlackBerry Push Service @token Token; may be empty to deregister a device
+ * A token for BlackBerry Push Service @token Token; may be empty to deregister a device.
  */
 class DeviceTokenBlackBerryPush extends DeviceToken implements \JsonSerializable
 {

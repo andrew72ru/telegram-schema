@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a sticker
+ * Represents a sticker.
  */
 class InlineQueryResultSticker extends InlineQueryResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InlineQueryResultSticker extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -30,7 +30,7 @@ class InlineQueryResultSticker extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -40,7 +40,7 @@ class InlineQueryResultSticker extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Sticker
+     * Get Sticker.
      */
     public function getSticker(): Sticker|null
     {
@@ -48,7 +48,7 @@ class InlineQueryResultSticker extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Sticker
+     * Set Sticker.
      */
     public function setSticker(Sticker|null $sticker): self
     {

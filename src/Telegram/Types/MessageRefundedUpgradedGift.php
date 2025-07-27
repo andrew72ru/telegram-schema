@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A gift which purchase, upgrade or transfer were refunded
+ * A gift which purchase, upgrade or transfer were refunded.
  */
 class MessageRefundedUpgradedGift extends MessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get The gift
+     * Get The gift.
      */
     public function getGift(): Gift|null
     {
@@ -36,7 +36,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set The gift
+     * Set The gift.
      */
     public function setGift(Gift|null $gift): self
     {
@@ -46,7 +46,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Sender of the gift
+     * Get Sender of the gift.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -54,7 +54,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Sender of the gift
+     * Set Sender of the gift.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -64,7 +64,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Receiver of the gift
+     * Get Receiver of the gift.
      */
     public function getReceiverId(): MessageSender|null
     {
@@ -72,7 +72,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Receiver of the gift
+     * Set Receiver of the gift.
      */
     public function setReceiverId(MessageSender|null $receiverId): self
     {
@@ -82,7 +82,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift
+     * Get True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift.
      */
     public function getIsUpgrade(): bool
     {
@@ -90,7 +90,7 @@ class MessageRefundedUpgradedGift extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift
+     * Set True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift.
      */
     public function setIsUpgrade(bool $isUpgrade): self
     {

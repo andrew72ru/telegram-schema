@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the description of an error in a Telegram Passport element @type Type of the Telegram Passport element which has the error @message Error message @source Error source
+ * Contains the description of an error in a Telegram Passport element @var Type of the Telegram Passport element which has the error @message Error message @source Error source.
  */
 class PassportElementError implements \JsonSerializable
 {

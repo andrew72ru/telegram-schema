@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A fact-check added to a message was changed
+ * A fact-check added to a message was changed.
  */
 class UpdateMessageFactCheck extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateMessageFactCheck extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class UpdateMessageFactCheck extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class UpdateMessageFactCheck extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class UpdateMessageFactCheck extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class UpdateMessageFactCheck extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new fact-check
+     * Get The new fact-check.
      */
     public function getFactCheck(): FactCheck|null
     {
@@ -69,7 +69,7 @@ class UpdateMessageFactCheck extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new fact-check
+     * Set The new fact-check.
      */
     public function setFactCheck(FactCheck|null $factCheck): self
     {

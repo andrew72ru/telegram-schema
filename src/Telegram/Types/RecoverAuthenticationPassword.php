@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Recovers the 2-step verification password with a password recovery code sent to an email address that was previously set up. Works only when the current authorization state is authorizationStateWaitPassword
+ * Recovers the 2-step verification password with a password recovery code sent to an email address that was previously set up. Works only when the current authorization state is authorizationStateWaitPassword.
  */
 class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Recovery code to check
+     * Get Recovery code to check.
      */
     public function getRecoveryCode(): string
     {
@@ -33,7 +33,7 @@ class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Recovery code to check
+     * Set Recovery code to check.
      */
     public function setRecoveryCode(string $recoveryCode): self
     {
@@ -43,7 +43,7 @@ class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New 2-step verification password of the user; may be empty to remove the password
+     * Get New 2-step verification password of the user; may be empty to remove the password.
      */
     public function getNewPassword(): string
     {
@@ -51,7 +51,7 @@ class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New 2-step verification password of the user; may be empty to remove the password
+     * Set New 2-step verification password of the user; may be empty to remove the password.
      */
     public function setNewPassword(string $newPassword): self
     {
@@ -61,7 +61,7 @@ class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New password hint; may be empty
+     * Get New password hint; may be empty.
      */
     public function getNewHint(): string
     {
@@ -69,7 +69,7 @@ class RecoverAuthenticationPassword extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New password hint; may be empty
+     * Set New password hint; may be empty.
      */
     public function setNewHint(string $newHint): self
     {

@@ -37,7 +37,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request
+     * Get Unique identifier of business connection on behalf of which to send the request.
      */
     public function getBusinessConnectionId(): string
     {
@@ -45,7 +45,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request
+     * Set Unique identifier of business connection on behalf of which to send the request.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -55,7 +55,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Target chat
+     * Get Target chat.
      */
     public function getChatId(): int
     {
@@ -63,7 +63,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Target chat
+     * Set Target chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -73,7 +73,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Information about the message to be replied; pass null if none
+     * Get Information about the message to be replied; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -81,7 +81,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Information about the message to be replied; pass null if none
+     * Set Information about the message to be replied; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -91,7 +91,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Pass true to disable notification for the message
+     * Get Pass true to disable notification for the message.
      */
     public function getDisableNotification(): bool
     {
@@ -99,7 +99,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Pass true to disable notification for the message
+     * Set Pass true to disable notification for the message.
      */
     public function setDisableNotification(bool $disableNotification): self
     {
@@ -109,7 +109,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Pass true if the content of the message must be protected from forwarding and saving
+     * Get Pass true if the content of the message must be protected from forwarding and saving.
      */
     public function getProtectContent(): bool
     {
@@ -117,7 +117,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Pass true if the content of the message must be protected from forwarding and saving
+     * Set Pass true if the content of the message must be protected from forwarding and saving.
      */
     public function setProtectContent(bool $protectContent): self
     {
@@ -127,7 +127,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Identifier of the effect to apply to the message
+     * Get Identifier of the effect to apply to the message.
      */
     public function getEffectId(): int
     {
@@ -135,7 +135,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Identifier of the effect to apply to the message
+     * Set Identifier of the effect to apply to the message.
      */
     public function setEffectId(int $effectId): self
     {
@@ -145,7 +145,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Get Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media
+     * Get Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media.
      */
     public function getInputMessageContents(): array|null
     {
@@ -153,7 +153,7 @@ class SendBusinessMessageAlbum extends BusinessMessages implements \JsonSerializ
     }
 
     /**
-     * Set Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media
+     * Set Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media.
      */
     public function setInputMessageContents(array|null $inputMessageContents): self
     {

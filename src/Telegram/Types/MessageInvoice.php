@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with an invoice from a bot. Use getInternalLink with internalLinkTypeBotStart to share the invoice
+ * A message with an invoice from a bot. Use getInternalLink with internalLinkTypeBotStart to share the invoice.
  */
 class MessageInvoice extends MessageContent implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Information about the product
+     * Get Information about the product.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -51,7 +51,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Information about the product
+     * Set Information about the product.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {
@@ -61,7 +61,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Currency for the product price
+     * Get Currency for the product price.
      */
     public function getCurrency(): string
     {
@@ -69,7 +69,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Currency for the product price
+     * Set Currency for the product price.
      */
     public function setCurrency(string $currency): self
     {
@@ -79,7 +79,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Product total price in the smallest units of the currency
+     * Get Product total price in the smallest units of the currency.
      */
     public function getTotalAmount(): int
     {
@@ -87,7 +87,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Product total price in the smallest units of the currency
+     * Set Product total price in the smallest units of the currency.
      */
     public function setTotalAmount(int $totalAmount): self
     {
@@ -97,7 +97,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Unique invoice bot start_parameter to be passed to getInternalLink
+     * Get Unique invoice bot start_parameter to be passed to getInternalLink.
      */
     public function getStartParameter(): string
     {
@@ -105,7 +105,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Unique invoice bot start_parameter to be passed to getInternalLink
+     * Set Unique invoice bot start_parameter to be passed to getInternalLink.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -115,7 +115,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the invoice is a test invoice
+     * Get True, if the invoice is a test invoice.
      */
     public function getIsTest(): bool
     {
@@ -123,7 +123,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the invoice is a test invoice
+     * Set True, if the invoice is a test invoice.
      */
     public function setIsTest(bool $isTest): self
     {
@@ -133,7 +133,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the shipping address must be specified
+     * Get True, if the shipping address must be specified.
      */
     public function getNeedShippingAddress(): bool
     {
@@ -141,7 +141,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the shipping address must be specified
+     * Set True, if the shipping address must be specified.
      */
     public function setNeedShippingAddress(bool $needShippingAddress): self
     {
@@ -151,7 +151,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the message with the receipt, after the product has been purchased
+     * Get The identifier of the message with the receipt, after the product has been purchased.
      */
     public function getReceiptMessageId(): int
     {
@@ -159,7 +159,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the message with the receipt, after the product has been purchased
+     * Set The identifier of the message with the receipt, after the product has been purchased.
      */
     public function setReceiptMessageId(int $receiptMessageId): self
     {
@@ -169,7 +169,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Extended media attached to the invoice; may be null if none
+     * Get Extended media attached to the invoice; may be null if none.
      */
     public function getPaidMedia(): PaidMedia|null
     {
@@ -177,7 +177,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Extended media attached to the invoice; may be null if none
+     * Set Extended media attached to the invoice; may be null if none.
      */
     public function setPaidMedia(PaidMedia|null $paidMedia): self
     {
@@ -187,7 +187,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Extended media caption; may be null if none
+     * Get Extended media caption; may be null if none.
      */
     public function getPaidMediaCaption(): FormattedText|null
     {
@@ -195,7 +195,7 @@ class MessageInvoice extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Extended media caption; may be null if none
+     * Set Extended media caption; may be null if none.
      */
     public function setPaidMediaCaption(FormattedText|null $paidMediaCaption): self
     {

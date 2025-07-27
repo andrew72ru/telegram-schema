@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a message. Returns the sent message
+ * Sends a message. Returns the sent message.
  */
 class SendMessage extends Message implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Target chat
+     * Get Target chat.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Target chat
+     * Set Target chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier in which the message will be sent
+     * Get If not 0, the message thread identifier in which the message will be sent.
      */
     public function getMessageThreadId(): int
     {
@@ -60,7 +60,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier in which the message will be sent
+     * Set If not 0, the message thread identifier in which the message will be sent.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -70,7 +70,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message or story to be replied; pass null if none
+     * Get Information about the message or story to be replied; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -78,7 +78,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message or story to be replied; pass null if none
+     * Set Information about the message or story to be replied; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -88,7 +88,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Options to be used to send the message; pass null to use default options
+     * Get Options to be used to send the message; pass null to use default options.
      */
     public function getOptions(): MessageSendOptions|null
     {
@@ -96,7 +96,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Options to be used to send the message; pass null to use default options
+     * Set Options to be used to send the message; pass null to use default options.
      */
     public function setOptions(MessageSendOptions|null $options): self
     {
@@ -106,7 +106,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Markup for replying to the message; pass null if none; for bots only
+     * Get Markup for replying to the message; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -114,7 +114,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Markup for replying to the message; pass null if none; for bots only
+     * Set Markup for replying to the message; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -124,7 +124,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The content of the message to be sent
+     * Get The content of the message to be sent.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -132,7 +132,7 @@ class SendMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The content of the message to be sent
+     * Set The content of the message to be sent.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes manually chosen quote from another message
+ * Describes manually chosen quote from another message.
  */
 class InputTextQuote implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputTextQuote implements \JsonSerializable
     }
 
     /**
-     * Get Text of the quote; 0-getOption("message_reply_quote_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed to be kept and must be kept in the quote
+     * Get Text of the quote; 0-getOption("message_reply_quote_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed to be kept and must be kept in the quote.
      */
     public function getText(): FormattedText|null
     {
@@ -30,7 +30,7 @@ class InputTextQuote implements \JsonSerializable
     }
 
     /**
-     * Set Text of the quote; 0-getOption("message_reply_quote_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed to be kept and must be kept in the quote
+     * Set Text of the quote; 0-getOption("message_reply_quote_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed to be kept and must be kept in the quote.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -40,7 +40,7 @@ class InputTextQuote implements \JsonSerializable
     }
 
     /**
-     * Get Quote position in the original message in UTF-16 code units
+     * Get Quote position in the original message in UTF-16 code units.
      */
     public function getPosition(): int
     {
@@ -48,7 +48,7 @@ class InputTextQuote implements \JsonSerializable
     }
 
     /**
-     * Set Quote position in the original message in UTF-16 code units
+     * Set Quote position in the original message in UTF-16 code units.
      */
     public function setPosition(int $position): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a hashtag from the list of recently used hashtags @hashtag Hashtag to delete
+ * Removes a hashtag from the list of recently used hashtags @hashtag Hashtag to delete.
  */
 class RemoveRecentHashtag extends Ok implements \JsonSerializable
 {

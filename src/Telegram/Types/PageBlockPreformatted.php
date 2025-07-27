@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A preformatted text paragraph @text Paragraph text @language Programming language for which the text needs to be formatted
+ * A preformatted text paragraph @text Paragraph text @language Programming language for which the text needs to be formatted.
  */
 class PageBlockPreformatted extends PageBlock implements \JsonSerializable
 {

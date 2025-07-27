@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the total number of Telegram Stars received by the current user for paid messages from the given user @user_id Identifier of the user
+ * Returns the total number of Telegram Stars received by the current user for paid messages from the given user @user_id Identifier of the user.
  */
 class GetPaidMessageRevenue extends StarCount implements \JsonSerializable
 {

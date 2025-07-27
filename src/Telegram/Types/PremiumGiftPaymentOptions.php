@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of options for gifting Telegram Premium to a user @options The list of options sorted by Telegram Premium subscription duration
+ * Contains a list of options for gifting Telegram Premium to a user @options The list of options sorted by Telegram Premium subscription duration.
  */
 class PremiumGiftPaymentOptions implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new basic group and sends a corresponding messageBasicGroupChatCreate. Returns information about the newly created chat
+ * Creates a new basic group and sends a corresponding messageBasicGroupChatCreate. Returns information about the newly created chat.
  */
 class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSeri
     }
 
     /**
-     * Get Identifiers of users to be added to the basic group; may be empty to create a basic group without other members
+     * Get Identifiers of users to be added to the basic group; may be empty to create a basic group without other members.
      */
     public function getUserIds(): array|null
     {
@@ -33,7 +33,7 @@ class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSeri
     }
 
     /**
-     * Set Identifiers of users to be added to the basic group; may be empty to create a basic group without other members
+     * Set Identifiers of users to be added to the basic group; may be empty to create a basic group without other members.
      */
     public function setUserIds(array|null $userIds): self
     {
@@ -43,7 +43,7 @@ class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSeri
     }
 
     /**
-     * Get Title of the new basic group; 1-128 characters
+     * Get Title of the new basic group; 1-128 characters.
      */
     public function getTitle(): string
     {
@@ -51,7 +51,7 @@ class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSeri
     }
 
     /**
-     * Set Title of the new basic group; 1-128 characters
+     * Set Title of the new basic group; 1-128 characters.
      */
     public function setTitle(string $title): self
     {
@@ -61,7 +61,7 @@ class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSeri
     }
 
     /**
-     * Get Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
+     * Get Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically.
      */
     public function getMessageAutoDeleteTime(): int
     {
@@ -69,7 +69,7 @@ class CreateNewBasicGroupChat extends CreatedBasicGroupChat implements \JsonSeri
     }
 
     /**
-     * Set Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
+     * Set Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically.
      */
     public function setMessageAutoDeleteTime(int $messageAutoDeleteTime): self
     {

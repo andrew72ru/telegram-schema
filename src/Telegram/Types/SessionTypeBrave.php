@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The session is running on the Brave browser
+ * The session is running on the Brave browser.
  */
 class SessionTypeBrave extends SessionType implements \JsonSerializable
 {

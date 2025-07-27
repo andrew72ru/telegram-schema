@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of quick reply shortcuts has changed @shortcut_ids The new list of identifiers of quick reply shortcuts
+ * The list of quick reply shortcuts has changed @shortcut_ids The new list of identifiers of quick reply shortcuts.
  */
 class UpdateQuickReplyShortcuts extends Update implements \JsonSerializable
 {

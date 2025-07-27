@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the current network type. Can be called before authorization. Calling this method forces all network connections to reopen, mitigating the delay in switching between different networks,
+ * Sets the current network type. Can be called before authorization. Calling this method forces all network connections to reopen, mitigating the delay in switching between different networks,.
  */
 class SetNetworkType extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class SetNetworkType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new network type; pass null to set network type to networkTypeOther
+     * Get The new network type; pass null to set network type to networkTypeOther.
      */
     public function getType(): NetworkType|null
     {
@@ -27,7 +27,7 @@ class SetNetworkType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new network type; pass null to set network type to networkTypeOther
+     * Set The new network type; pass null to set network type to networkTypeOther.
      */
     public function setType(NetworkType|null $type): self
     {

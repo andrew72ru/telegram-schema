@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a chat invite link
+ * Contains information about a chat invite link.
  */
 class ChatInviteLinkInfo implements \JsonSerializable
 {
@@ -55,7 +55,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the invite link; 0 if the user has no access to the chat before joining
+     * Get Chat identifier of the invite link; 0 if the user has no access to the chat before joining.
      */
     public function getChatId(): int
     {
@@ -63,7 +63,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the invite link; 0 if the user has no access to the chat before joining
+     * Set Chat identifier of the invite link; 0 if the user has no access to the chat before joining.
      */
     public function setChatId(int $chatId): self
     {
@@ -73,7 +73,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get If non-zero, the amount of time for which read access to the chat will remain available, in seconds
+     * Get If non-zero, the amount of time for which read access to the chat will remain available, in seconds.
      */
     public function getAccessibleFor(): int
     {
@@ -81,7 +81,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set If non-zero, the amount of time for which read access to the chat will remain available, in seconds
+     * Set If non-zero, the amount of time for which read access to the chat will remain available, in seconds.
      */
     public function setAccessibleFor(int $accessibleFor): self
     {
@@ -91,7 +91,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Type of the chat
+     * Get Type of the chat.
      */
     public function getType(): InviteLinkChatType|null
     {
@@ -99,7 +99,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Type of the chat
+     * Set Type of the chat.
      */
     public function setType(InviteLinkChatType|null $type): self
     {
@@ -109,7 +109,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Title of the chat
+     * Get Title of the chat.
      */
     public function getTitle(): string
     {
@@ -117,7 +117,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Title of the chat
+     * Set Title of the chat.
      */
     public function setTitle(string $title): self
     {
@@ -127,7 +127,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat photo; may be null
+     * Get Chat photo; may be null.
      */
     public function getPhoto(): ChatPhotoInfo|null
     {
@@ -135,7 +135,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat photo; may be null
+     * Set Chat photo; may be null.
      */
     public function setPhoto(ChatPhotoInfo|null $photo): self
     {
@@ -145,7 +145,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color for chat title and background of chat photo
+     * Get Identifier of the accent color for chat title and background of chat photo.
      */
     public function getAccentColorId(): int
     {
@@ -153,7 +153,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color for chat title and background of chat photo
+     * Set Identifier of the accent color for chat title and background of chat photo.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -163,7 +163,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Contains information about a chat invite link
+     * Get Contains information about a chat invite link.
      */
     public function getDescription(): string
     {
@@ -171,7 +171,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Contains information about a chat invite link
+     * Set Contains information about a chat invite link.
      */
     public function setDescription(string $description): self
     {
@@ -181,7 +181,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of members in the chat
+     * Get Number of members in the chat.
      */
     public function getMemberCount(): int
     {
@@ -189,7 +189,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of members in the chat
+     * Set Number of members in the chat.
      */
     public function setMemberCount(int $memberCount): self
     {
@@ -199,7 +199,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get User identifiers of some chat members that may be known to the current user
+     * Get User identifiers of some chat members that may be known to the current user.
      */
     public function getMemberUserIds(): array|null
     {
@@ -207,7 +207,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set User identifiers of some chat members that may be known to the current user
+     * Set User identifiers of some chat members that may be known to the current user.
      */
     public function setMemberUserIds(array|null $memberUserIds): self
     {
@@ -217,7 +217,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about subscription plan that must be paid by the user to use the link; may be null if the link doesn't require subscription
+     * Get Information about subscription plan that must be paid by the user to use the link; may be null if the link doesn't require subscription.
      */
     public function getSubscriptionInfo(): ChatInviteLinkSubscriptionInfo|null
     {
@@ -225,7 +225,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about subscription plan that must be paid by the user to use the link; may be null if the link doesn't require subscription
+     * Set Information about subscription plan that must be paid by the user to use the link; may be null if the link doesn't require subscription.
      */
     public function setSubscriptionInfo(ChatInviteLinkSubscriptionInfo|null $subscriptionInfo): self
     {
@@ -235,7 +235,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link only creates join request
+     * Get True, if the link only creates join request.
      */
     public function getCreatesJoinRequest(): bool
     {
@@ -243,7 +243,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link only creates join request
+     * Set True, if the link only creates join request.
      */
     public function setCreatesJoinRequest(bool $createsJoinRequest): self
     {
@@ -253,7 +253,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat is a public supergroup or channel, i.e. it has a username or it is a location-based supergroup
+     * Get True, if the chat is a public supergroup or channel, i.e. it has a username or it is a location-based supergroup.
      */
     public function getIsPublic(): bool
     {
@@ -261,7 +261,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat is a public supergroup or channel, i.e. it has a username or it is a location-based supergroup
+     * Set True, if the chat is a public supergroup or channel, i.e. it has a username or it is a location-based supergroup.
      */
     public function setIsPublic(bool $isPublic): self
     {
@@ -271,7 +271,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about verification status of the chat; may be null if none
+     * Get Information about verification status of the chat; may be null if none.
      */
     public function getVerificationStatus(): VerificationStatus|null
     {
@@ -279,7 +279,7 @@ class ChatInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about verification status of the chat; may be null if none
+     * Set Information about verification status of the chat; may be null if none.
      */
     public function setVerificationStatus(VerificationStatus|null $verificationStatus): self
     {

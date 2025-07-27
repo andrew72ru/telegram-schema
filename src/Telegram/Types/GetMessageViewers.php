@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns viewers of a recent outgoing message in a basic group or a supergroup chat. For video notes and voice notes only users, opened content of the message, are returned. The method can be called if messageProperties.can_get_viewers == true
+ * Returns viewers of a recent outgoing message in a basic group or a supergroup chat. For video notes and voice notes only users, opened content of the message, are returned. The method can be called if messageProperties.can_get_viewers == true.
  */
 class GetMessageViewers extends MessageViewers implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetMessageViewers extends MessageViewers implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetMessageViewers extends MessageViewers implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetMessageViewers extends MessageViewers implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class GetMessageViewers extends MessageViewers implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {

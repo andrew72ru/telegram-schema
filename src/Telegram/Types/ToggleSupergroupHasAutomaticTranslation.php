@@ -22,7 +22,7 @@ class ToggleSupergroupHasAutomaticTranslation extends Ok implements \JsonSeriali
     }
 
     /**
-     * Get The identifier of the channel
+     * Get The identifier of the channel.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ToggleSupergroupHasAutomaticTranslation extends Ok implements \JsonSeriali
     }
 
     /**
-     * Set The identifier of the channel
+     * Set The identifier of the channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ToggleSupergroupHasAutomaticTranslation extends Ok implements \JsonSeriali
     }
 
     /**
-     * Get The new value of has_automatic_translation
+     * Get The new value of has_automatic_translation.
      */
     public function getHasAutomaticTranslation(): bool
     {
@@ -48,7 +48,7 @@ class ToggleSupergroupHasAutomaticTranslation extends Ok implements \JsonSeriali
     }
 
     /**
-     * Set The new value of has_automatic_translation
+     * Set The new value of has_automatic_translation.
      */
     public function setHasAutomaticTranslation(bool $hasAutomaticTranslation): self
     {

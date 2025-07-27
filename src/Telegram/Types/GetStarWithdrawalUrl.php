@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a URL for Telegram Star withdrawal
+ * Returns a URL for Telegram Star withdrawal.
  */
 class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or an owned supergroup or channel chat
+     * Get Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or an owned supergroup or channel chat.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -33,7 +33,7 @@ class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or an owned supergroup or channel chat
+     * Set Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or an owned supergroup or channel chat.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -43,7 +43,7 @@ class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars to withdraw. Must be at least getOption("star_withdrawal_count_min")
+     * Get The number of Telegram Stars to withdraw. Must be at least getOption("star_withdrawal_count_min").
      */
     public function getStarCount(): int
     {
@@ -51,7 +51,7 @@ class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars to withdraw. Must be at least getOption("star_withdrawal_count_min")
+     * Set The number of Telegram Stars to withdraw. Must be at least getOption("star_withdrawal_count_min").
      */
     public function setStarCount(int $starCount): self
     {
@@ -61,7 +61,7 @@ class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -69,7 +69,7 @@ class GetStarWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {

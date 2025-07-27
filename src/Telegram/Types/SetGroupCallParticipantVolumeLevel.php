@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes volume level of a participant of an active group call. If the current user can manage the group call or is the owner of the group call,
+ * Changes volume level of a participant of an active group call. If the current user can manage the group call or is the owner of the group call,.
  */
 class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Participant identifier
+     * Get Participant identifier.
      */
     public function getParticipantId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Participant identifier
+     * Set Participant identifier.
      */
     public function setParticipantId(MessageSender|null $participantId): self
     {
@@ -61,7 +61,7 @@ class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New participant's volume level; 1-20000 in hundreds of percents
+     * Get New participant's volume level; 1-20000 in hundreds of percents.
      */
     public function getVolumeLevel(): int
     {
@@ -69,7 +69,7 @@ class SetGroupCallParticipantVolumeLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New participant's volume level; 1-20000 in hundreds of percents
+     * Set New participant's volume level; 1-20000 in hundreds of percents.
      */
     public function setVolumeLevel(int $volumeLevel): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The has_automatic_translation setting of a channel was toggled @has_automatic_translation New value of has_automatic_translation
+ * The has_automatic_translation setting of a channel was toggled @has_automatic_translation New value of has_automatic_translation.
  */
 class ChatEventAutomaticTranslationToggled extends ChatEventAction implements \JsonSerializable
 {

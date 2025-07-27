@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of attached files contains an error. The error is considered resolved when the file list changes @file_hashes Current hashes of all attached files
+ * The list of attached files contains an error. The error is considered resolved when the file list changes @file_hashes Current hashes of all attached files.
  */
 class InputPassportElementErrorSourceFiles extends InputPassportElementErrorSource implements \JsonSerializable
 {

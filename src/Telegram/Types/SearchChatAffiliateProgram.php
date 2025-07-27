@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches a chat with an affiliate program. Returns the chat if found and the program is active
+ * Searches a chat with an affiliate program. Returns the chat if found and the program is active.
  */
 class SearchChatAffiliateProgram extends Chat implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchChatAffiliateProgram extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Username of the chat
+     * Get Username of the chat.
      */
     public function getUsername(): string
     {
@@ -30,7 +30,7 @@ class SearchChatAffiliateProgram extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Username of the chat
+     * Set Username of the chat.
      */
     public function setUsername(string $username): self
     {
@@ -40,7 +40,7 @@ class SearchChatAffiliateProgram extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get The referrer from an internalLinkTypeChatAffiliateProgram link
+     * Get The referrer from an internalLinkTypeChatAffiliateProgram link.
      */
     public function getReferrer(): string
     {
@@ -48,7 +48,7 @@ class SearchChatAffiliateProgram extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set The referrer from an internalLinkTypeChatAffiliateProgram link
+     * Set The referrer from an internalLinkTypeChatAffiliateProgram link.
      */
     public function setReferrer(string $referrer): self
     {

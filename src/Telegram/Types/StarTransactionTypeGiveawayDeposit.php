@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a deposit of Telegram Stars from a giveaway; for regular users only
+ * The transaction is a deposit of Telegram Stars from a giveaway; for regular users only.
  */
 class StarTransactionTypeGiveawayDeposit extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeGiveawayDeposit extends StarTransactionType implements 
     }
 
     /**
-     * Get Identifier of a supergroup or a channel chat that created the giveaway
+     * Get Identifier of a supergroup or a channel chat that created the giveaway.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeGiveawayDeposit extends StarTransactionType implements 
     }
 
     /**
-     * Set Identifier of a supergroup or a channel chat that created the giveaway
+     * Set Identifier of a supergroup or a channel chat that created the giveaway.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeGiveawayDeposit extends StarTransactionType implements 
     }
 
     /**
-     * Get Identifier of the message with the giveaway; can be 0 or an identifier of a deleted message
+     * Get Identifier of the message with the giveaway; can be 0 or an identifier of a deleted message.
      */
     public function getGiveawayMessageId(): int
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeGiveawayDeposit extends StarTransactionType implements 
     }
 
     /**
-     * Set Identifier of the message with the giveaway; can be 0 or an identifier of a deleted message
+     * Set Identifier of the message with the giveaway; can be 0 or an identifier of a deleted message.
      */
     public function setGiveawayMessageId(int $giveawayMessageId): self
     {

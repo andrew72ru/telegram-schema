@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to a file
+ * Represents a link to a file.
  */
 class InputInlineQueryResultDocument extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -54,7 +54,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -64,7 +64,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Title of the resulting file
+     * Get Title of the resulting file.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Title of the resulting file
+     * Set Title of the resulting file.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Represents a link to a file
+     * Get Represents a link to a file.
      */
     public function getDescription(): string
     {
@@ -90,7 +90,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Represents a link to a file
+     * Set Represents a link to a file.
      */
     public function setDescription(string $description): self
     {
@@ -100,7 +100,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get URL of the file
+     * Get URL of the file.
      */
     public function getDocumentUrl(): string
     {
@@ -108,7 +108,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set URL of the file
+     * Set URL of the file.
      */
     public function setDocumentUrl(string $documentUrl): self
     {
@@ -118,7 +118,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get MIME type of the file content; only "application/pdf" and "application/zip" are currently allowed
+     * Get MIME type of the file content; only "application/pdf" and "application/zip" are currently allowed.
      */
     public function getMimeType(): string
     {
@@ -126,7 +126,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set MIME type of the file content; only "application/pdf" and "application/zip" are currently allowed
+     * Set MIME type of the file content; only "application/pdf" and "application/zip" are currently allowed.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -136,7 +136,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get The URL of the file thumbnail, if it exists
+     * Get The URL of the file thumbnail, if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -144,7 +144,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set The URL of the file thumbnail, if it exists
+     * Set The URL of the file thumbnail, if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -154,7 +154,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Width of the thumbnail
+     * Get Width of the thumbnail.
      */
     public function getThumbnailWidth(): int
     {
@@ -162,7 +162,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Width of the thumbnail
+     * Set Width of the thumbnail.
      */
     public function setThumbnailWidth(int $thumbnailWidth): self
     {
@@ -172,7 +172,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Height of the thumbnail
+     * Get Height of the thumbnail.
      */
     public function getThumbnailHeight(): int
     {
@@ -180,7 +180,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Height of the thumbnail
+     * Set Height of the thumbnail.
      */
     public function setThumbnailHeight(int $thumbnailHeight): self
     {
@@ -190,7 +190,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -198,7 +198,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -208,7 +208,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageDocument, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageDocument, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -216,7 +216,7 @@ class InputInlineQueryResultDocument extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageDocument, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageDocument, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

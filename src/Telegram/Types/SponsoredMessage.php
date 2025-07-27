@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a sponsored message
+ * Describes a sponsored message.
  */
 class SponsoredMessage implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier; unique for the chat to which the sponsored message belongs among both ordinary and sponsored messages
+     * Get Message identifier; unique for the chat to which the sponsored message belongs among both ordinary and sponsored messages.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier; unique for the chat to which the sponsored message belongs among both ordinary and sponsored messages
+     * Set Message identifier; unique for the chat to which the sponsored message belongs among both ordinary and sponsored messages.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message needs to be labeled as "recommended" instead of "sponsored"
+     * Get True, if the message needs to be labeled as "recommended" instead of "sponsored".
      */
     public function getIsRecommended(): bool
     {
@@ -72,7 +72,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message needs to be labeled as "recommended" instead of "sponsored"
+     * Set True, if the message needs to be labeled as "recommended" instead of "sponsored".
      */
     public function setIsRecommended(bool $isRecommended): self
     {
@@ -82,7 +82,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be reported to Telegram moderators through reportChatSponsoredMessage
+     * Get True, if the message can be reported to Telegram moderators through reportChatSponsoredMessage.
      */
     public function getCanBeReported(): bool
     {
@@ -90,7 +90,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be reported to Telegram moderators through reportChatSponsoredMessage
+     * Set True, if the message can be reported to Telegram moderators through reportChatSponsoredMessage.
      */
     public function setCanBeReported(bool $canBeReported): self
     {
@@ -100,7 +100,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Content of the message. Currently, can be only of the types messageText, messageAnimation, messagePhoto, or messageVideo. Video messages can be viewed fullscreen
+     * Get Content of the message. Currently, can be only of the types messageText, messageAnimation, messagePhoto, or messageVideo. Video messages can be viewed fullscreen.
      */
     public function getContent(): MessageContent|null
     {
@@ -108,7 +108,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Content of the message. Currently, can be only of the types messageText, messageAnimation, messagePhoto, or messageVideo. Video messages can be viewed fullscreen
+     * Set Content of the message. Currently, can be only of the types messageText, messageAnimation, messagePhoto, or messageVideo. Video messages can be viewed fullscreen.
      */
     public function setContent(MessageContent|null $content): self
     {
@@ -118,7 +118,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Information about the sponsor of the message
+     * Get Information about the sponsor of the message.
      */
     public function getSponsor(): AdvertisementSponsor|null
     {
@@ -126,7 +126,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Information about the sponsor of the message
+     * Set Information about the sponsor of the message.
      */
     public function setSponsor(AdvertisementSponsor|null $sponsor): self
     {
@@ -136,7 +136,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Title of the sponsored message
+     * Get Title of the sponsored message.
      */
     public function getTitle(): string
     {
@@ -144,7 +144,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Title of the sponsored message
+     * Set Title of the sponsored message.
      */
     public function setTitle(string $title): self
     {
@@ -154,7 +154,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Text for the message action button
+     * Get Text for the message action button.
      */
     public function getButtonText(): string
     {
@@ -162,7 +162,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Text for the message action button
+     * Set Text for the message action button.
      */
     public function setButtonText(string $buttonText): self
     {
@@ -172,7 +172,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color for title, button text and message background
+     * Get Identifier of the accent color for title, button text and message background.
      */
     public function getAccentColorId(): int
     {
@@ -180,7 +180,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color for title, button text and message background
+     * Set Identifier of the accent color for title, button text and message background.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -190,7 +190,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the message background; 0 if none
+     * Get Identifier of a custom emoji to be shown on the message background; 0 if none.
      */
     public function getBackgroundCustomEmojiId(): int
     {
@@ -198,7 +198,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the message background; 0 if none
+     * Set Identifier of a custom emoji to be shown on the message background; 0 if none.
      */
     public function setBackgroundCustomEmojiId(int $backgroundCustomEmojiId): self
     {
@@ -208,7 +208,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, additional information about the sponsored message to be shown along with the message
+     * Get If non-empty, additional information about the sponsored message to be shown along with the message.
      */
     public function getAdditionalInfo(): string
     {
@@ -216,7 +216,7 @@ class SponsoredMessage implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, additional information about the sponsored message to be shown along with the message
+     * Set If non-empty, additional information about the sponsored message to be shown along with the message.
      */
     public function setAdditionalInfo(string $additionalInfo): self
     {

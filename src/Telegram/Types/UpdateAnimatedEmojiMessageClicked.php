@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some animated emoji message was clicked and a big animated sticker must be played if the message is visible on the screen. chatActionWatchingAnimations with the text of the message needs to be sent if the sticker is played
+ * Some animated emoji message was clicked and a big animated sticker must be played if the message is visible on the screen. chatActionWatchingAnimations with the text of the message needs to be sent if the sticker is played.
  */
 class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializa
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializa
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializa
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializa
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializa
     }
 
     /**
-     * Get The animated sticker to be played
+     * Get The animated sticker to be played.
      */
     public function getSticker(): Sticker|null
     {
@@ -69,7 +69,7 @@ class UpdateAnimatedEmojiMessageClicked extends Update implements \JsonSerializa
     }
 
     /**
-     * Set The animated sticker to be played
+     * Set The animated sticker to be played.
      */
     public function setSticker(Sticker|null $sticker): self
     {

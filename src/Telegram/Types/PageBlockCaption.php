@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a caption of another block @text Content of the caption @credit Block credit (like HTML tag <cite>)
+ * Contains a caption of another block @text Content of the caption @credit Block credit (like HTML tag <cite>).
  */
 class PageBlockCaption implements \JsonSerializable
 {

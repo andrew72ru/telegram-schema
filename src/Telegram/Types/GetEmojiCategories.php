@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns available emoji categories @type Type of emoji categories to return; pass null to get default emoji categories
+ * Returns available emoji categories @var Type of emoji categories to return; pass null to get default emoji categories.
  */
 class GetEmojiCategories extends EmojiCategories implements \JsonSerializable
 {

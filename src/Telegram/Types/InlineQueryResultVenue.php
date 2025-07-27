@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents information about a venue
+ * Represents information about a venue.
  */
 class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Venue result
+     * Get Venue result.
      */
     public function getVenue(): Venue|null
     {
@@ -51,7 +51,7 @@ class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Venue result
+     * Set Venue result.
      */
     public function setVenue(Venue|null $venue): self
     {
@@ -61,7 +61,7 @@ class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Result thumbnail in JPEG format; may be null
+     * Get Result thumbnail in JPEG format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -69,7 +69,7 @@ class InlineQueryResultVenue extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Result thumbnail in JPEG format; may be null
+     * Set Result thumbnail in JPEG format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {

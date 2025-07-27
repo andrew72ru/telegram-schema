@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of reactions added to a message
+ * Contains a list of reactions added to a message.
  */
 class MessageReactions implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Get List of added reactions
+     * Get List of added reactions.
      */
     public function getReactions(): array|null
     {
@@ -36,7 +36,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Set List of added reactions
+     * Set List of added reactions.
      */
     public function setReactions(array|null $reactions): self
     {
@@ -46,7 +46,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reactions are tags and Telegram Premium users can filter messages by them
+     * Get True, if the reactions are tags and Telegram Premium users can filter messages by them.
      */
     public function getAreTags(): bool
     {
@@ -54,7 +54,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reactions are tags and Telegram Premium users can filter messages by them
+     * Set True, if the reactions are tags and Telegram Premium users can filter messages by them.
      */
     public function setAreTags(bool $areTags): self
     {
@@ -64,7 +64,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Get Information about top users that added the paid reaction
+     * Get Information about top users that added the paid reaction.
      */
     public function getPaidReactors(): array|null
     {
@@ -72,7 +72,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Set Information about top users that added the paid reaction
+     * Set Information about top users that added the paid reaction.
      */
     public function setPaidReactors(array|null $paidReactors): self
     {
@@ -82,7 +82,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the list of added reactions is available using getMessageAddedReactions
+     * Get True, if the list of added reactions is available using getMessageAddedReactions.
      */
     public function getCanGetAddedReactions(): bool
     {
@@ -90,7 +90,7 @@ class MessageReactions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the list of added reactions is available using getMessageAddedReactions
+     * Set True, if the list of added reactions is available using getMessageAddedReactions.
      */
     public function setCanGetAddedReactions(bool $canGetAddedReactions): self
     {

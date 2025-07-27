@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The parameters of speech recognition without Telegram Premium subscription has changed
+ * The parameters of speech recognition without Telegram Premium subscription has changed.
  */
 class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The maximum allowed duration of media for speech recognition without Telegram Premium subscription, in seconds
+     * Get The maximum allowed duration of media for speech recognition without Telegram Premium subscription, in seconds.
      */
     public function getMaxMediaDuration(): int
     {
@@ -36,7 +36,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The maximum allowed duration of media for speech recognition without Telegram Premium subscription, in seconds
+     * Set The maximum allowed duration of media for speech recognition without Telegram Premium subscription, in seconds.
      */
     public function setMaxMediaDuration(int $maxMediaDuration): self
     {
@@ -46,7 +46,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The total number of allowed speech recognitions per week; 0 if none
+     * Get The total number of allowed speech recognitions per week; 0 if none.
      */
     public function getWeeklyCount(): int
     {
@@ -54,7 +54,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The total number of allowed speech recognitions per week; 0 if none
+     * Set The total number of allowed speech recognitions per week; 0 if none.
      */
     public function setWeeklyCount(int $weeklyCount): self
     {
@@ -64,7 +64,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Number of left speech recognition attempts this week
+     * Get Number of left speech recognition attempts this week.
      */
     public function getLeftCount(): int
     {
@@ -72,7 +72,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Number of left speech recognition attempts this week
+     * Set Number of left speech recognition attempts this week.
      */
     public function setLeftCount(int $leftCount): self
     {
@@ -82,7 +82,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the weekly number of tries will reset; 0 if unknown
+     * Get Point in time (Unix timestamp) when the weekly number of tries will reset; 0 if unknown.
      */
     public function getNextResetDate(): int
     {
@@ -90,7 +90,7 @@ class UpdateSpeechRecognitionTrial extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the weekly number of tries will reset; 0 if unknown
+     * Set Point in time (Unix timestamp) when the weekly number of tries will reset; 0 if unknown.
      */
     public function setNextResetDate(int $nextResetDate): self
     {

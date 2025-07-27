@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a simple network request to the Telegram servers via proxy; for testing only. Can be called before authorization
+ * Sends a simple network request to the Telegram servers via proxy; for testing only. Can be called before authorization.
  */
 class TestProxy extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server domain or IP address
+     * Get Proxy server domain or IP address.
      */
     public function getServer(): string
     {
@@ -39,7 +39,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server domain or IP address
+     * Set Proxy server domain or IP address.
      */
     public function setServer(string $server): self
     {
@@ -49,7 +49,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server port
+     * Get Proxy server port.
      */
     public function getPort(): int
     {
@@ -57,7 +57,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server port
+     * Set Proxy server port.
      */
     public function setPort(int $port): self
     {
@@ -67,7 +67,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Proxy type
+     * Get Proxy type.
      */
     public function getType(): ProxyType|null
     {
@@ -75,7 +75,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Proxy type
+     * Set Proxy type.
      */
     public function setType(ProxyType|null $type): self
     {
@@ -85,7 +85,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a datacenter with which to test connection
+     * Get Identifier of a datacenter with which to test connection.
      */
     public function getDcId(): int
     {
@@ -93,7 +93,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a datacenter with which to test connection
+     * Set Identifier of a datacenter with which to test connection.
      */
     public function setDcId(int $dcId): self
     {
@@ -103,7 +103,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The maximum overall timeout for the request
+     * Get The maximum overall timeout for the request.
      */
     public function getTimeout(): float
     {
@@ -111,7 +111,7 @@ class TestProxy extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The maximum overall timeout for the request
+     * Set The maximum overall timeout for the request.
      */
     public function setTimeout(float $timeout): self
     {

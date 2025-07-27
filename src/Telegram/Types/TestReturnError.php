@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the specified error and ensures that the Error object is used; for testing only. Can be called synchronously @error The error to be returned
+ * Returns the specified error and ensures that the Error object is used; for testing only. Can be called synchronously @error The error to be returned.
  */
 class TestReturnError extends Error implements \JsonSerializable
 {

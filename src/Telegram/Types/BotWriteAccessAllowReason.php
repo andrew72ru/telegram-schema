@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for BotWriteAccessAllowReason types
+ * Abstract base class for BotWriteAccessAllowReason types.
  */
 abstract class BotWriteAccessAllowReason implements \JsonSerializable
 {

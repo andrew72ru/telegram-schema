@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the list of keywords of a sticker. The sticker must belong to a regular or custom emoji sticker set that is owned by the current user
+ * Changes the list of keywords of a sticker. The sticker must belong to a regular or custom emoji sticker set that is owned by the current user.
  */
 class SetStickerKeywords extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetStickerKeywords extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker
+     * Get Sticker.
      */
     public function getSticker(): InputFile|null
     {
@@ -30,7 +30,7 @@ class SetStickerKeywords extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker
+     * Set Sticker.
      */
     public function setSticker(InputFile|null $sticker): self
     {
@@ -40,7 +40,7 @@ class SetStickerKeywords extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker
+     * Get List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker.
      */
     public function getKeywords(): array|null
     {
@@ -48,7 +48,7 @@ class SetStickerKeywords extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker
+     * Set List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker.
      */
     public function setKeywords(array|null $keywords): self
     {

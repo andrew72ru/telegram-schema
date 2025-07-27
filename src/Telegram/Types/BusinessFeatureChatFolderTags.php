@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The ability to display folder names for each chat in the chat list
+ * The ability to display folder names for each chat in the chat list.
  */
 class BusinessFeatureChatFolderTags extends BusinessFeature implements \JsonSerializable
 {

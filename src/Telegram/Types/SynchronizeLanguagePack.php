@@ -19,7 +19,7 @@ class SynchronizeLanguagePack extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Language pack identifier
+     * Get Language pack identifier.
      */
     public function getLanguagePackId(): string
     {
@@ -27,7 +27,7 @@ class SynchronizeLanguagePack extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Language pack identifier
+     * Set Language pack identifier.
      */
     public function setLanguagePackId(string $languagePackId): self
     {

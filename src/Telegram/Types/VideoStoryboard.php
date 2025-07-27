@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a storyboard for a video
+ * Describes a storyboard for a video.
  */
 class VideoStoryboard implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Get A JPEG file that contains tiled previews of video
+     * Get A JPEG file that contains tiled previews of video.
      */
     public function getStoryboardFile(): File|null
     {
@@ -36,7 +36,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Set A JPEG file that contains tiled previews of video
+     * Set A JPEG file that contains tiled previews of video.
      */
     public function setStoryboardFile(File|null $storyboardFile): self
     {
@@ -46,7 +46,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Get Width of a tile
+     * Get Width of a tile.
      */
     public function getWidth(): int
     {
@@ -54,7 +54,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Set Width of a tile
+     * Set Width of a tile.
      */
     public function setWidth(int $width): self
     {
@@ -64,7 +64,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Get Height of a tile
+     * Get Height of a tile.
      */
     public function getHeight(): int
     {
@@ -72,7 +72,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Set Height of a tile
+     * Set Height of a tile.
      */
     public function setHeight(int $height): self
     {
@@ -82,7 +82,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Get File that describes mapping of position in the video to a tile in the JPEG file
+     * Get File that describes mapping of position in the video to a tile in the JPEG file.
      */
     public function getMapFile(): File|null
     {
@@ -90,7 +90,7 @@ class VideoStoryboard implements \JsonSerializable
     }
 
     /**
-     * Set File that describes mapping of position in the video to a tile in the JPEG file
+     * Set File that describes mapping of position in the video to a tile in the JPEG file.
      */
     public function setMapFile(File|null $mapFile): self
     {

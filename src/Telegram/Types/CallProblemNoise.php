@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The user heard background noise
+ * The user heard background noise.
  */
 class CallProblemNoise extends CallProblem implements \JsonSerializable
 {

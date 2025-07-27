@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A detailed statistics about a supergroup chat
+ * A detailed statistics about a supergroup chat.
  */
 class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializable
 {
@@ -64,7 +64,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A period to which the statistics applies
+     * Get A period to which the statistics applies.
      */
     public function getPeriod(): DateRange|null
     {
@@ -72,7 +72,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A period to which the statistics applies
+     * Set A period to which the statistics applies.
      */
     public function setPeriod(DateRange|null $period): self
     {
@@ -82,7 +82,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get Number of members in the chat
+     * Get Number of members in the chat.
      */
     public function getMemberCount(): StatisticalValue|null
     {
@@ -90,7 +90,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set Number of members in the chat
+     * Set Number of members in the chat.
      */
     public function setMemberCount(StatisticalValue|null $memberCount): self
     {
@@ -100,7 +100,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get Number of messages sent to the chat
+     * Get Number of messages sent to the chat.
      */
     public function getMessageCount(): StatisticalValue|null
     {
@@ -108,7 +108,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set Number of messages sent to the chat
+     * Set Number of messages sent to the chat.
      */
     public function setMessageCount(StatisticalValue|null $messageCount): self
     {
@@ -118,7 +118,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get Number of users who viewed messages in the chat
+     * Get Number of users who viewed messages in the chat.
      */
     public function getViewerCount(): StatisticalValue|null
     {
@@ -126,7 +126,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set Number of users who viewed messages in the chat
+     * Set Number of users who viewed messages in the chat.
      */
     public function setViewerCount(StatisticalValue|null $viewerCount): self
     {
@@ -136,7 +136,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get Number of users who sent messages to the chat
+     * Get Number of users who sent messages to the chat.
      */
     public function getSenderCount(): StatisticalValue|null
     {
@@ -144,7 +144,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set Number of users who sent messages to the chat
+     * Set Number of users who sent messages to the chat.
      */
     public function setSenderCount(StatisticalValue|null $senderCount): self
     {
@@ -154,7 +154,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing number of members in the chat
+     * Get A graph containing number of members in the chat.
      */
     public function getMemberCountGraph(): StatisticalGraph|null
     {
@@ -162,7 +162,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing number of members in the chat
+     * Set A graph containing number of members in the chat.
      */
     public function setMemberCountGraph(StatisticalGraph|null $memberCountGraph): self
     {
@@ -172,7 +172,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing number of members joined and left the chat
+     * Get A graph containing number of members joined and left the chat.
      */
     public function getJoinGraph(): StatisticalGraph|null
     {
@@ -180,7 +180,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing number of members joined and left the chat
+     * Set A graph containing number of members joined and left the chat.
      */
     public function setJoinGraph(StatisticalGraph|null $joinGraph): self
     {
@@ -190,7 +190,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing number of new member joins per source
+     * Get A graph containing number of new member joins per source.
      */
     public function getJoinBySourceGraph(): StatisticalGraph|null
     {
@@ -198,7 +198,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing number of new member joins per source
+     * Set A graph containing number of new member joins per source.
      */
     public function setJoinBySourceGraph(StatisticalGraph|null $joinBySourceGraph): self
     {
@@ -208,7 +208,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing distribution of active users per language
+     * Get A graph containing distribution of active users per language.
      */
     public function getLanguageGraph(): StatisticalGraph|null
     {
@@ -216,7 +216,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing distribution of active users per language
+     * Set A graph containing distribution of active users per language.
      */
     public function setLanguageGraph(StatisticalGraph|null $languageGraph): self
     {
@@ -226,7 +226,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing distribution of sent messages by content type
+     * Get A graph containing distribution of sent messages by content type.
      */
     public function getMessageContentGraph(): StatisticalGraph|null
     {
@@ -234,7 +234,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing distribution of sent messages by content type
+     * Set A graph containing distribution of sent messages by content type.
      */
     public function setMessageContentGraph(StatisticalGraph|null $messageContentGraph): self
     {
@@ -244,7 +244,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing number of different actions in the chat
+     * Get A graph containing number of different actions in the chat.
      */
     public function getActionGraph(): StatisticalGraph|null
     {
@@ -252,7 +252,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing number of different actions in the chat
+     * Set A graph containing number of different actions in the chat.
      */
     public function setActionGraph(StatisticalGraph|null $actionGraph): self
     {
@@ -262,7 +262,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing distribution of message views per hour
+     * Get A graph containing distribution of message views per hour.
      */
     public function getDayGraph(): StatisticalGraph|null
     {
@@ -270,7 +270,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing distribution of message views per hour
+     * Set A graph containing distribution of message views per hour.
      */
     public function setDayGraph(StatisticalGraph|null $dayGraph): self
     {
@@ -280,7 +280,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get A graph containing distribution of message views per day of week
+     * Get A graph containing distribution of message views per day of week.
      */
     public function getWeekGraph(): StatisticalGraph|null
     {
@@ -288,7 +288,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set A graph containing distribution of message views per day of week
+     * Set A graph containing distribution of message views per day of week.
      */
     public function setWeekGraph(StatisticalGraph|null $weekGraph): self
     {
@@ -298,7 +298,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get List of users sent most messages in the last week
+     * Get List of users sent most messages in the last week.
      */
     public function getTopSenders(): array|null
     {
@@ -306,7 +306,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set List of users sent most messages in the last week
+     * Set List of users sent most messages in the last week.
      */
     public function setTopSenders(array|null $topSenders): self
     {
@@ -316,7 +316,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get List of most active administrators in the last week
+     * Get List of most active administrators in the last week.
      */
     public function getTopAdministrators(): array|null
     {
@@ -324,7 +324,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set List of most active administrators in the last week
+     * Set List of most active administrators in the last week.
      */
     public function setTopAdministrators(array|null $topAdministrators): self
     {
@@ -334,7 +334,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Get List of most active inviters of new members in the last week
+     * Get List of most active inviters of new members in the last week.
      */
     public function getTopInviters(): array|null
     {
@@ -342,7 +342,7 @@ class ChatStatisticsSupergroup extends ChatStatistics implements \JsonSerializab
     }
 
     /**
-     * Set List of most active inviters of new members in the last week
+     * Set List of most active inviters of new members in the last week.
      */
     public function setTopInviters(array|null $topInviters): self
     {

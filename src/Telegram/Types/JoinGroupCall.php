@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Joins a group call that is not bound to a chat @input_group_call The group call to join @join_parameters Parameters to join the call
+ * Joins a group call that is not bound to a chat @input_group_call The group call to join @join_parameters Parameters to join the call.
  */
 class JoinGroupCall extends GroupCallInfo implements \JsonSerializable
 {

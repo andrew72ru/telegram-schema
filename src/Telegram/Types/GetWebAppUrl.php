@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an HTTPS URL of a Web App to open from the side menu, a keyboardButtonTypeWebApp button, or an inlineQueryResultsButtonTypeWebApp button
+ * Returns an HTTPS URL of a Web App to open from the side menu, a keyboardButtonTypeWebApp button, or an inlineQueryResultsButtonTypeWebApp button.
  */
 class GetWebAppUrl extends HttpUrl implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetWebAppUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method
+     * Get Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class GetWebAppUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method
+     * Set Identifier of the target bot. If the bot is restricted for the current user, then show an error instead of calling the method.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class GetWebAppUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get The URL from a keyboardButtonTypeWebApp button, inlineQueryResultsButtonTypeWebApp button, or an empty string when the bot is opened from the side menu
+     * Get The URL from a keyboardButtonTypeWebApp button, inlineQueryResultsButtonTypeWebApp button, or an empty string when the bot is opened from the side menu.
      */
     public function getUrl(): string
     {
@@ -51,7 +51,7 @@ class GetWebAppUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set The URL from a keyboardButtonTypeWebApp button, inlineQueryResultsButtonTypeWebApp button, or an empty string when the bot is opened from the side menu
+     * Set The URL from a keyboardButtonTypeWebApp button, inlineQueryResultsButtonTypeWebApp button, or an empty string when the bot is opened from the side menu.
      */
     public function setUrl(string $url): self
     {
@@ -61,7 +61,7 @@ class GetWebAppUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Parameters to use to open the Web App
+     * Get Parameters to use to open the Web App.
      */
     public function getParameters(): WebAppOpenParameters|null
     {
@@ -69,7 +69,7 @@ class GetWebAppUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Parameters to use to open the Web App
+     * Set Parameters to use to open the Web App.
      */
     public function setParameters(WebAppOpenParameters|null $parameters): self
     {

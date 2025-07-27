@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains database statistics
+ * Contains database statistics.
  */
 class DatabaseStatistics implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class DatabaseStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Database statistics in an unspecified human-readable format
+     * Get Database statistics in an unspecified human-readable format.
      */
     public function getStatistics(): string
     {
@@ -27,7 +27,7 @@ class DatabaseStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Database statistics in an unspecified human-readable format
+     * Set Database statistics in an unspecified human-readable format.
      */
     public function setStatistics(string $statistics): self
     {

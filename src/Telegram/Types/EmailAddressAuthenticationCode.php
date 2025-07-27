@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An authentication code delivered to a user's email address @code The code
+ * An authentication code delivered to a user's email address @code The code.
  */
 class EmailAddressAuthenticationCode extends EmailAddressAuthentication implements \JsonSerializable
 {

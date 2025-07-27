@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a call
+ * Describes a call.
  */
 class Call implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Get Call identifier, not persistent
+     * Get Call identifier, not persistent.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Set Call identifier, not persistent
+     * Set Call identifier, not persistent.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the other call participant
+     * Get User identifier of the other call participant.
      */
     public function getUserId(): int
     {
@@ -57,7 +57,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the other call participant
+     * Set User identifier of the other call participant.
      */
     public function setUserId(int $userId): self
     {
@@ -67,7 +67,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is outgoing
+     * Get True, if the call is outgoing.
      */
     public function getIsOutgoing(): bool
     {
@@ -75,7 +75,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is outgoing
+     * Set True, if the call is outgoing.
      */
     public function setIsOutgoing(bool $isOutgoing): self
     {
@@ -85,7 +85,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is a video call
+     * Get True, if the call is a video call.
      */
     public function getIsVideo(): bool
     {
@@ -93,7 +93,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is a video call
+     * Set True, if the call is a video call.
      */
     public function setIsVideo(bool $isVideo): self
     {
@@ -103,7 +103,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Get Call state
+     * Get Call state.
      */
     public function getState(): CallState|null
     {
@@ -111,7 +111,7 @@ class Call implements \JsonSerializable
     }
 
     /**
-     * Set Call state
+     * Set Call state.
      */
     public function setState(CallState|null $state): self
     {

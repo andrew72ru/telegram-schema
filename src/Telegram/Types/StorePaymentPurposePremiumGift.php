@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user gifting Telegram Premium to another user
+ * The user gifting Telegram Premium to another user.
  */
 class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -36,7 +36,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -46,7 +46,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -54,7 +54,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -64,7 +64,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get Identifiers of the user which will receive Telegram Premium
+     * Get Identifiers of the user which will receive Telegram Premium.
      */
     public function getUserId(): int
     {
@@ -72,7 +72,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set Identifiers of the user which will receive Telegram Premium
+     * Set Identifiers of the user which will receive Telegram Premium.
      */
     public function setUserId(int $userId): self
     {
@@ -82,7 +82,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Get Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function getText(): FormattedText|null
     {
@@ -90,7 +90,7 @@ class StorePaymentPurposePremiumGift extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Set Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function setText(FormattedText|null $text): self
     {

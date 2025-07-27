@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A giveaway was created for the chat. Use telegramPaymentPurposePremiumGiveaway, storePaymentPurposePremiumGiveaway, telegramPaymentPurposeStarGiveaway, or storePaymentPurposeStarGiveaway to create a giveaway
+ * A giveaway was created for the chat. Use telegramPaymentPurposePremiumGiveaway, storePaymentPurposePremiumGiveaway, telegramPaymentPurposeStarGiveaway, or storePaymentPurposeStarGiveaway to create a giveaway.
  */
 class MessageGiveawayCreated extends MessageContent implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class MessageGiveawayCreated extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that will be shared by winners of the giveaway; 0 for Telegram Premium giveaways
+     * Get Number of Telegram Stars that will be shared by winners of the giveaway; 0 for Telegram Premium giveaways.
      */
     public function getStarCount(): int
     {
@@ -27,7 +27,7 @@ class MessageGiveawayCreated extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that will be shared by winners of the giveaway; 0 for Telegram Premium giveaways
+     * Set Number of Telegram Stars that will be shared by winners of the giveaway; 0 for Telegram Premium giveaways.
      */
     public function setStarCount(int $starCount): self
     {

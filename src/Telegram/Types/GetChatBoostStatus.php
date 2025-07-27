@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the current boost status for a supergroup or a channel chat @chat_id Identifier of the chat
+ * Returns the current boost status for a supergroup or a channel chat @chat_id Identifier of the chat.
  */
 class GetChatBoostStatus extends ChatBoostStatus implements \JsonSerializable
 {

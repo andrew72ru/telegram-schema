@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Allowed to use more reactions
+ * Allowed to use more reactions.
  */
 class PremiumFeatureUniqueReactions extends PremiumFeature implements \JsonSerializable
 {

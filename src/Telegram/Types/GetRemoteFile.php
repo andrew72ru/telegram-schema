@@ -22,7 +22,7 @@ class GetRemoteFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Remote identifier of the file to get
+     * Get Remote identifier of the file to get.
      */
     public function getRemoteFileId(): string
     {
@@ -30,7 +30,7 @@ class GetRemoteFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Remote identifier of the file to get
+     * Set Remote identifier of the file to get.
      */
     public function setRemoteFileId(string $remoteFileId): self
     {
@@ -40,7 +40,7 @@ class GetRemoteFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get File type; pass null if unknown
+     * Get File type; pass null if unknown.
      */
     public function getFileType(): FileType|null
     {
@@ -48,7 +48,7 @@ class GetRemoteFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set File type; pass null if unknown
+     * Set File type; pass null if unknown.
      */
     public function setFileType(FileType|null $fileType): self
     {

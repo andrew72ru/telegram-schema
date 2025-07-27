@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains settings for the authentication of the user's phone number
+ * Contains settings for the authentication of the user's phone number.
  */
 class PhoneNumberAuthenticationSettings implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the authentication code may be sent via a flash call to the specified phone number
+     * Get Pass true if the authentication code may be sent via a flash call to the specified phone number.
      */
     public function getAllowFlashCall(): bool
     {
@@ -45,7 +45,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the authentication code may be sent via a flash call to the specified phone number
+     * Set Pass true if the authentication code may be sent via a flash call to the specified phone number.
      */
     public function setAllowFlashCall(bool $allowFlashCall): self
     {
@@ -55,7 +55,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the authentication code may be sent via a missed call to the specified phone number
+     * Get Pass true if the authentication code may be sent via a missed call to the specified phone number.
      */
     public function getAllowMissedCall(): bool
     {
@@ -63,7 +63,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the authentication code may be sent via a missed call to the specified phone number
+     * Set Pass true if the authentication code may be sent via a missed call to the specified phone number.
      */
     public function setAllowMissedCall(bool $allowMissedCall): self
     {
@@ -73,7 +73,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the authenticated phone number is used on the current device
+     * Get Pass true if the authenticated phone number is used on the current device.
      */
     public function getIsCurrentPhoneNumber(): bool
     {
@@ -81,7 +81,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the authenticated phone number is used on the current device
+     * Set Pass true if the authenticated phone number is used on the current device.
      */
     public function setIsCurrentPhoneNumber(bool $isCurrentPhoneNumber): self
     {
@@ -91,7 +91,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if there is a SIM card in the current device, but it is not possible to check whether phone number matches
+     * Get Pass true if there is a SIM card in the current device, but it is not possible to check whether phone number matches.
      */
     public function getHasUnknownPhoneNumber(): bool
     {
@@ -99,7 +99,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if there is a SIM card in the current device, but it is not possible to check whether phone number matches
+     * Set Pass true if there is a SIM card in the current device, but it is not possible to check whether phone number matches.
      */
     public function setHasUnknownPhoneNumber(bool $hasUnknownPhoneNumber): self
     {
@@ -109,7 +109,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get For official applications only. True, if the application can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS. See https://developers.google.com/identity/sms-retriever/ for more details
+     * Get For official applications only. True, if the application can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS. See https://developers.google.com/identity/sms-retriever/ for more details.
      */
     public function getAllowSmsRetrieverApi(): bool
     {
@@ -117,7 +117,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set For official applications only. True, if the application can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS. See https://developers.google.com/identity/sms-retriever/ for more details
+     * Set For official applications only. True, if the application can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS. See https://developers.google.com/identity/sms-retriever/ for more details.
      */
     public function setAllowSmsRetrieverApi(bool $allowSmsRetrieverApi): self
     {
@@ -127,7 +127,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get For official Android and iOS applications only; pass null otherwise. Settings for Firebase Authentication
+     * Get For official Android and iOS applications only; pass null otherwise. Settings for Firebase Authentication.
      */
     public function getFirebaseAuthenticationSettings(): FirebaseAuthenticationSettings|null
     {
@@ -135,7 +135,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set For official Android and iOS applications only; pass null otherwise. Settings for Firebase Authentication
+     * Set For official Android and iOS applications only; pass null otherwise. Settings for Firebase Authentication.
      */
     public function setFirebaseAuthenticationSettings(
         FirebaseAuthenticationSettings|null $firebaseAuthenticationSettings,
@@ -146,7 +146,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Get List of up to 20 authentication tokens, recently received in updateOption("authentication_token") in previously logged out sessions; for setAuthenticationPhoneNumber only
+     * Get List of up to 20 authentication tokens, recently received in updateOption("authentication_token") in previously logged out sessions; for setAuthenticationPhoneNumber only.
      */
     public function getAuthenticationTokens(): array|null
     {
@@ -154,7 +154,7 @@ class PhoneNumberAuthenticationSettings implements \JsonSerializable
     }
 
     /**
-     * Set List of up to 20 authentication tokens, recently received in updateOption("authentication_token") in previously logged out sessions; for setAuthenticationPhoneNumber only
+     * Set List of up to 20 authentication tokens, recently received in updateOption("authentication_token") in previously logged out sessions; for setAuthenticationPhoneNumber only.
      */
     public function setAuthenticationTokens(array|null $authenticationTokens): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a Web App by its short name. Returns a 404 error if the Web App is not found
+ * Returns information about a Web App by its short name. Returns a 404 error if the Web App is not found.
  */
 class SearchWebApp extends FoundWebApp implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchWebApp extends FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class SearchWebApp extends FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class SearchWebApp extends FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Get Short name of the Web App
+     * Get Short name of the Web App.
      */
     public function getWebAppShortName(): string
     {
@@ -48,7 +48,7 @@ class SearchWebApp extends FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Set Short name of the Web App
+     * Set Short name of the Web App.
      */
     public function setWebAppShortName(string $webAppShortName): self
     {

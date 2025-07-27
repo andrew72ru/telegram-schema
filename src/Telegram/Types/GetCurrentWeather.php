@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the current weather in the given location @location The location
+ * Returns the current weather in the given location @location The location.
  */
 class GetCurrentWeather extends CurrentWeather implements \JsonSerializable
 {

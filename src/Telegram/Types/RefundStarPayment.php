@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Refunds a previously done payment in Telegram Stars; for bots only
+ * Refunds a previously done payment in Telegram Stars; for bots only.
  */
 class RefundStarPayment extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class RefundStarPayment extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user that did the payment
+     * Get Identifier of the user that did the payment.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class RefundStarPayment extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user that did the payment
+     * Set Identifier of the user that did the payment.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class RefundStarPayment extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Telegram payment identifier
+     * Get Telegram payment identifier.
      */
     public function getTelegramPaymentChargeId(): string
     {
@@ -48,7 +48,7 @@ class RefundStarPayment extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Telegram payment identifier
+     * Set Telegram payment identifier.
      */
     public function setTelegramPaymentChargeId(string $telegramPaymentChargeId): self
     {

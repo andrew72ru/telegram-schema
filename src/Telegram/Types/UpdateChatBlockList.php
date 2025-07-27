@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat was blocked or unblocked @chat_id Chat identifier @block_list Block list to which the chat is added; may be null if none
+ * A chat was blocked or unblocked @chat_id Chat identifier @block_list Block list to which the chat is added; may be null if none.
  */
 class UpdateChatBlockList extends Update implements \JsonSerializable
 {

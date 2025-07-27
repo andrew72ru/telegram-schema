@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an unconfirmed session
+ * Contains information about an unconfirmed session.
  */
 class UnconfirmedSession implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Get Session identifier
+     * Get Session identifier.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Set Session identifier
+     * Set Session identifier.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user has logged in
+     * Get Point in time (Unix timestamp) when the user has logged in.
      */
     public function getLogInDate(): int
     {
@@ -54,7 +54,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user has logged in
+     * Set Point in time (Unix timestamp) when the user has logged in.
      */
     public function setLogInDate(int $logInDate): self
     {
@@ -64,7 +64,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Get Model of the device that was used for the session creation, as provided by the application
+     * Get Model of the device that was used for the session creation, as provided by the application.
      */
     public function getDeviceModel(): string
     {
@@ -72,7 +72,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Set Model of the device that was used for the session creation, as provided by the application
+     * Set Model of the device that was used for the session creation, as provided by the application.
      */
     public function setDeviceModel(string $deviceModel): self
     {
@@ -82,7 +82,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Get A human-readable description of the location from which the session was created, based on the IP address
+     * Get A human-readable description of the location from which the session was created, based on the IP address.
      */
     public function getLocation(): string
     {
@@ -90,7 +90,7 @@ class UnconfirmedSession implements \JsonSerializable
     }
 
     /**
-     * Set A human-readable description of the location from which the session was created, based on the IP address
+     * Set A human-readable description of the location from which the session was created, based on the IP address.
      */
     public function setLocation(string $location): self
     {

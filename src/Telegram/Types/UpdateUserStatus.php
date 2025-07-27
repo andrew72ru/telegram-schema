@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user went online or offline @user_id User identifier @status New status of the user
+ * The user went online or offline @user_id User identifier @status New status of the user.
  */
 class UpdateUserStatus extends Update implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The content must be center-aligned
+ * The content must be center-aligned.
  */
 class PageBlockHorizontalAlignmentCenter extends PageBlockHorizontalAlignment implements \JsonSerializable
 {

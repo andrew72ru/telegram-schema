@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for ReactionNotificationSource types
+ * Abstract base class for ReactionNotificationSource types.
  */
 abstract class ReactionNotificationSource implements \JsonSerializable
 {

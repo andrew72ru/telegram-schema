@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Replaces media preview in the list of media previews of a bot. Returns the new preview after edit is completed server-side
+ * Replaces media preview in the list of media previews of a bot. Returns the new preview after edit is completed server-side.
  */
 class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Get Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function getBotUserId(): int
     {
@@ -36,7 +36,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Set Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -46,7 +46,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Language code of the media preview to edit
+     * Get Language code of the media preview to edit.
      */
     public function getLanguageCode(): string
     {
@@ -54,7 +54,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Language code of the media preview to edit
+     * Set Language code of the media preview to edit.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -64,7 +64,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get File identifier of the media to replace
+     * Get File identifier of the media to replace.
      */
     public function getFileId(): int
     {
@@ -72,7 +72,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set File identifier of the media to replace
+     * Set File identifier of the media to replace.
      */
     public function setFileId(int $fileId): self
     {
@@ -82,7 +82,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Content of the new preview
+     * Get Content of the new preview.
      */
     public function getContent(): InputStoryContent|null
     {
@@ -90,7 +90,7 @@ class EditBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Content of the new preview
+     * Set Content of the new preview.
      */
     public function setContent(InputStoryContent|null $content): self
     {

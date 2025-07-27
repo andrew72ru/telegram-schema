@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns premium stickers from regular sticker sets @limit The maximum number of stickers to be returned; 0-100
+ * Returns premium stickers from regular sticker sets @limit The maximum number of stickers to be returned; 0-100.
  */
 class GetPremiumStickers extends Stickers implements \JsonSerializable
 {

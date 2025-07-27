@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns approximate 1-based position of a message among messages, which can be found by the specified filter in the chat and topic. Cannot be used in secret chats
+ * Returns approximate 1-based position of a message among messages, which can be found by the specified filter in the chat and topic. Cannot be used in secret chats.
  */
 class GetChatMessagePosition extends Count implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which to find message position
+     * Get Identifier of the chat in which to find message position.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which to find message position
+     * Set Identifier of the chat in which to find message position.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Pass topic identifier to get position among messages only in specific topic; pass null to get position among all chat messages
+     * Get Pass topic identifier to get position among messages only in specific topic; pass null to get position among all chat messages.
      */
     public function getTopicId(): MessageTopic|null
     {
@@ -54,7 +54,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Pass topic identifier to get position among messages only in specific topic; pass null to get position among all chat messages
+     * Set Pass topic identifier to get position among messages only in specific topic; pass null to get position among all chat messages.
      */
     public function setTopicId(MessageTopic|null $topicId): self
     {
@@ -64,7 +64,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Filter for message content; searchMessagesFilterEmpty, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, and searchMessagesFilterFailedToSend are unsupported in this function
+     * Get Filter for message content; searchMessagesFilterEmpty, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, and searchMessagesFilterFailedToSend are unsupported in this function.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -72,7 +72,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Filter for message content; searchMessagesFilterEmpty, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, and searchMessagesFilterFailedToSend are unsupported in this function
+     * Set Filter for message content; searchMessagesFilterEmpty, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, and searchMessagesFilterFailedToSend are unsupported in this function.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {
@@ -82,7 +82,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -90,7 +90,7 @@ class GetChatMessagePosition extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {

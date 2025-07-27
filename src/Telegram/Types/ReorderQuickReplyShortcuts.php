@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the order of quick reply shortcuts @shortcut_ids The new order of quick reply shortcuts
+ * Changes the order of quick reply shortcuts @shortcut_ids The new order of quick reply shortcuts.
  */
 class ReorderQuickReplyShortcuts extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a user contact @contact The contact description
+ * A message with a user contact @contact The contact description.
  */
 class MessageContact extends MessageContent implements \JsonSerializable
 {

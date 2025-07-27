@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Updates the game score of the specified user in the game; for bots only
+ * Updates the game score of the specified user in the game; for bots only.
  */
 class SetGameScore extends Message implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The chat to which the message with the game belongs
+     * Get The chat to which the message with the game belongs.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The chat to which the message with the game belongs
+     * Set The chat to which the message with the game belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -60,7 +60,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -70,7 +70,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to edit the game message to include the current scoreboard
+     * Get Pass true to edit the game message to include the current scoreboard.
      */
     public function getEditMessage(): bool
     {
@@ -78,7 +78,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to edit the game message to include the current scoreboard
+     * Set Pass true to edit the game message to include the current scoreboard.
      */
     public function setEditMessage(bool $editMessage): self
     {
@@ -88,7 +88,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -96,7 +96,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -106,7 +106,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The new score
+     * Get The new score.
      */
     public function getScore(): int
     {
@@ -114,7 +114,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The new score
+     * Set The new score.
      */
     public function setScore(int $score): self
     {
@@ -124,7 +124,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
+     * Get Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table.
      */
     public function getForce(): bool
     {
@@ -132,7 +132,7 @@ class SetGameScore extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
+     * Set Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table.
      */
     public function setForce(bool $force): self
     {

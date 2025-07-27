@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes all pinned messages from a forum topic; requires can_pin_messages member right in the supergroup
+ * Removes all pinned messages from a forum topic; requires can_pin_messages member right in the supergroup.
  */
 class UnpinAllMessageThreadMessages extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UnpinAllMessageThreadMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UnpinAllMessageThreadMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UnpinAllMessageThreadMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier in which messages will be unpinned
+     * Get Message thread identifier in which messages will be unpinned.
      */
     public function getMessageThreadId(): int
     {
@@ -48,7 +48,7 @@ class UnpinAllMessageThreadMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier in which messages will be unpinned
+     * Set Message thread identifier in which messages will be unpinned.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {

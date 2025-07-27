@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the chat members permissions. Supported only for basic groups and supergroups. Requires can_restrict_members administrator right
+ * Changes the chat members permissions. Supported only for basic groups and supergroups. Requires can_restrict_members administrator right.
  */
 class SetChatPermissions extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatPermissions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatPermissions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatPermissions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New non-administrator members permissions in the chat
+     * Get New non-administrator members permissions in the chat.
      */
     public function getPermissions(): ChatPermissions|null
     {
@@ -48,7 +48,7 @@ class SetChatPermissions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New non-administrator members permissions in the chat
+     * Set New non-administrator members permissions in the chat.
      */
     public function setPermissions(ChatPermissions|null $permissions): self
     {

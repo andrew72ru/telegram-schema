@@ -25,7 +25,7 @@ class SendBotStartMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the bot
+     * Get Identifier of the bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SendBotStartMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the bot
+     * Set Identifier of the bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SendBotStartMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target chat
+     * Get Identifier of the target chat.
      */
     public function getChatId(): int
     {
@@ -51,7 +51,7 @@ class SendBotStartMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target chat
+     * Set Identifier of the target chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -61,7 +61,7 @@ class SendBotStartMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking)
+     * Get A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking).
      */
     public function getParameter(): string
     {
@@ -69,7 +69,7 @@ class SendBotStartMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking)
+     * Set A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking).
      */
     public function setParameter(string $parameter): self
     {

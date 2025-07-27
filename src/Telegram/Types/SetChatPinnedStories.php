@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the list of pinned stories on a chat page; requires can_edit_stories right in the chat
+ * Changes the list of pinned stories on a chat page; requires can_edit_stories right in the chat.
  */
 class SetChatPinnedStories extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatPinnedStories extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the stories
+     * Get Identifier of the chat that posted the stories.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatPinnedStories extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the stories
+     * Set Identifier of the chat that posted the stories.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatPinnedStories extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New list of pinned stories. All stories must be posted to the chat page first. There can be up to getOption("pinned_story_count_max") pinned stories on a chat page
+     * Get New list of pinned stories. All stories must be posted to the chat page first. There can be up to getOption("pinned_story_count_max") pinned stories on a chat page.
      */
     public function getStoryIds(): array|null
     {
@@ -48,7 +48,7 @@ class SetChatPinnedStories extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New list of pinned stories. All stories must be posted to the chat page first. There can be up to getOption("pinned_story_count_max") pinned stories on a chat page
+     * Set New list of pinned stories. All stories must be posted to the chat page first. There can be up to getOption("pinned_story_count_max") pinned stories on a chat page.
      */
     public function setStoryIds(array|null $storyIds): self
     {

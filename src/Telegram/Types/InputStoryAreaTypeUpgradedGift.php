@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area with an upgraded gift @gift_name Unique name of the upgraded gift
+ * An area with an upgraded gift @gift_name Unique name of the upgraded gift.
  */
 class InputStoryAreaTypeUpgradedGift extends InputStoryAreaType implements \JsonSerializable
 {

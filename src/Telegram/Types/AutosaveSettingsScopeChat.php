@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Autosave settings applied to a chat @chat_id Chat identifier
+ * Autosave settings applied to a chat @chat_id Chat identifier.
  */
 class AutosaveSettingsScopeChat extends AutosaveSettingsScope implements \JsonSerializable
 {

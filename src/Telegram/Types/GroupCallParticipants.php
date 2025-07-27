@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains identifiers of group call participants @total_count Total number of group call participants @participant_ids Identifiers of the participants
+ * Contains identifiers of group call participants @total_count Total number of group call participants @participant_ids Identifiers of the participants.
  */
 class GroupCallParticipants implements \JsonSerializable
 {

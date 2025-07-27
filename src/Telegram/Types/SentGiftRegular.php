@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Regular gift @gift The gift
+ * Regular gift @gift The gift.
  */
 class SentGiftRegular extends SentGift implements \JsonSerializable
 {

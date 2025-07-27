@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Boosts a chat and returns the list of available chat boost slots for the current user after the boost
+ * Boosts a chat and returns the list of available chat boost slots for the current user after the boost.
  */
 class BoostChat extends ChatBoostSlots implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BoostChat extends ChatBoostSlots implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class BoostChat extends ChatBoostSlots implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class BoostChat extends ChatBoostSlots implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of boost slots of the current user from which to apply boosts to the chat
+     * Get Identifiers of boost slots of the current user from which to apply boosts to the chat.
      */
     public function getSlotIds(): array|null
     {
@@ -48,7 +48,7 @@ class BoostChat extends ChatBoostSlots implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of boost slots of the current user from which to apply boosts to the chat
+     * Set Identifiers of boost slots of the current user from which to apply boosts to the chat.
      */
     public function setSlotIds(array|null $slotIds): self
     {

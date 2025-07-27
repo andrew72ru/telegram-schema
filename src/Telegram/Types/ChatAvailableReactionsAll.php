@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * All reactions are available in the chat, excluding the paid reaction and custom reactions in channel chats
+ * All reactions are available in the chat, excluding the paid reaction and custom reactions in channel chats.
  */
 class ChatAvailableReactionsAll extends ChatAvailableReactions implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ChatAvailableReactionsAll extends ChatAvailableReactions implements \JsonS
     }
 
     /**
-     * Get The maximum allowed number of reactions per message; 1-11
+     * Get The maximum allowed number of reactions per message; 1-11.
      */
     public function getMaxReactionCount(): int
     {
@@ -27,7 +27,7 @@ class ChatAvailableReactionsAll extends ChatAvailableReactions implements \JsonS
     }
 
     /**
-     * Set The maximum allowed number of reactions per message; 1-11
+     * Set The maximum allowed number of reactions per message; 1-11.
      */
     public function setMaxReactionCount(int $maxReactionCount): self
     {

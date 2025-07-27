@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a file
+ * Represents a file.
  */
 class File implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Get Unique file identifier
+     * Get Unique file identifier.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Set Unique file identifier
+     * Set Unique file identifier.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Get File size, in bytes; 0 if unknown
+     * Get File size, in bytes; 0 if unknown.
      */
     public function getSize(): int
     {
@@ -57,7 +57,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Set File size, in bytes; 0 if unknown
+     * Set File size, in bytes; 0 if unknown.
      */
     public function setSize(int $size): self
     {
@@ -67,7 +67,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Get Approximate file size in bytes in case the exact file size is unknown. Can be used to show download/upload progress
+     * Get Approximate file size in bytes in case the exact file size is unknown. Can be used to show download/upload progress.
      */
     public function getExpectedSize(): int
     {
@@ -75,7 +75,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Set Approximate file size in bytes in case the exact file size is unknown. Can be used to show download/upload progress
+     * Set Approximate file size in bytes in case the exact file size is unknown. Can be used to show download/upload progress.
      */
     public function setExpectedSize(int $expectedSize): self
     {
@@ -85,7 +85,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Get Information about the local copy of the file
+     * Get Information about the local copy of the file.
      */
     public function getLocal(): LocalFile|null
     {
@@ -93,7 +93,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Set Information about the local copy of the file
+     * Set Information about the local copy of the file.
      */
     public function setLocal(LocalFile|null $local): self
     {
@@ -103,7 +103,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Get Information about the remote copy of the file
+     * Get Information about the remote copy of the file.
      */
     public function getRemote(): RemoteFile|null
     {
@@ -111,7 +111,7 @@ class File implements \JsonSerializable
     }
 
     /**
-     * Set Information about the remote copy of the file
+     * Set Information about the remote copy of the file.
      */
     public function setRemote(RemoteFile|null $remote): self
     {

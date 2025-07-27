@@ -19,7 +19,7 @@ class SetLoginEmailAddress extends EmailAddressAuthenticationCodeInfo implements
     }
 
     /**
-     * Get New login email address
+     * Get New login email address.
      */
     public function getNewLoginEmailAddress(): string
     {
@@ -27,7 +27,7 @@ class SetLoginEmailAddress extends EmailAddressAuthenticationCodeInfo implements
     }
 
     /**
-     * Set New login email address
+     * Set New login email address.
      */
     public function setNewLoginEmailAddress(string $newLoginEmailAddress): self
     {

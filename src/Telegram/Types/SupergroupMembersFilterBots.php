@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns bot members of the supergroup or channel
+ * Returns bot members of the supergroup or channel.
  */
 class SupergroupMembersFilterBots extends SupergroupMembersFilter implements \JsonSerializable
 {

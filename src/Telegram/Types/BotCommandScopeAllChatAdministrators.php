@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * A scope covering all group and supergroup chat administrators
+ * A scope covering all group and supergroup chat administrators.
  */
 class BotCommandScopeAllChatAdministrators extends BotCommandScope implements \JsonSerializable
 {

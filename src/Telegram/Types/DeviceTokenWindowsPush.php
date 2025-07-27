@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A token for Windows Push Notification Services @access_token The access token that will be used to send notifications; may be empty to deregister a device
+ * A token for Windows Push Notification Services @access_token The access token that will be used to send notifications; may be empty to deregister a device.
  */
 class DeviceTokenWindowsPush extends DeviceToken implements \JsonSerializable
 {

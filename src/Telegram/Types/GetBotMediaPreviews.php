@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of media previews of a bot @bot_user_id Identifier of the target bot. The bot must have the main Web App
+ * Returns the list of media previews of a bot @bot_user_id Identifier of the target bot. The bot must have the main Web App.
  */
 class GetBotMediaPreviews extends BotMediaPreviews implements \JsonSerializable
 {

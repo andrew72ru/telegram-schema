@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for CallDiscardReason types
+ * Abstract base class for CallDiscardReason types.
  */
 abstract class CallDiscardReason implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An invisible anchor on a page, which can be used in a URL to open the page from the specified anchor @name Name of the anchor
+ * An invisible anchor on a page, which can be used in a URL to open the page from the specified anchor @name Name of the anchor.
  */
 class PageBlockAnchor extends PageBlock implements \JsonSerializable
 {

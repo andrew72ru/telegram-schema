@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the caption of a message sent on behalf of a business account; for bots only
+ * Edits the caption of a message sent on behalf of a business account; for bots only.
  */
 class EditBusinessMessageCaption extends BusinessMessage implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -42,7 +42,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -52,7 +52,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -60,7 +60,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -70,7 +70,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -78,7 +78,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -88,7 +88,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -96,7 +96,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -106,7 +106,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Get New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters
+     * Get New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -114,7 +114,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Set New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters
+     * Set New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -124,7 +124,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Get Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages
+     * Get Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -132,7 +132,7 @@ class EditBusinessMessageCaption extends BusinessMessage implements \JsonSeriali
     }
 
     /**
-     * Set Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages
+     * Set Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {

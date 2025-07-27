@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns chat members joined a chat via an invite link. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
+ * Returns chat members joined a chat via an invite link. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links.
  */
 class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Get Invite link for which to return chat members
+     * Get Invite link for which to return chat members.
      */
     public function getInviteLink(): string
     {
@@ -57,7 +57,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Set Invite link for which to return chat members
+     * Set Invite link for which to return chat members.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -67,7 +67,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Get Pass true if the link is a subscription link and only members with expired subscription must be returned
+     * Get Pass true if the link is a subscription link and only members with expired subscription must be returned.
      */
     public function getOnlyWithExpiredSubscription(): bool
     {
@@ -75,7 +75,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Set Pass true if the link is a subscription link and only members with expired subscription must be returned
+     * Set Pass true if the link is a subscription link and only members with expired subscription must be returned.
      */
     public function setOnlyWithExpiredSubscription(bool $onlyWithExpiredSubscription): self
     {
@@ -85,7 +85,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Get A chat member from which to return next chat members; pass null to get results from the beginning
+     * Get A chat member from which to return next chat members; pass null to get results from the beginning.
      */
     public function getOffsetMember(): ChatInviteLinkMember|null
     {
@@ -93,7 +93,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Set A chat member from which to return next chat members; pass null to get results from the beginning
+     * Set A chat member from which to return next chat members; pass null to get results from the beginning.
      */
     public function setOffsetMember(ChatInviteLinkMember|null $offsetMember): self
     {
@@ -103,7 +103,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Get The maximum number of chat members to return; up to 100
+     * Get The maximum number of chat members to return; up to 100.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class GetChatInviteLinkMembers extends ChatInviteLinkMembers implements \JsonSer
     }
 
     /**
-     * Set The maximum number of chat members to return; up to 100
+     * Set The maximum number of chat members to return; up to 100.
      */
     public function setLimit(int $limit): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Saves an inline message to be sent by the given user
+ * Saves an inline message to be sent by the given user.
  */
 class GetPreparedInlineMessage extends PreparedInlineMessage implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetPreparedInlineMessage extends PreparedInlineMessage implements \JsonSer
     }
 
     /**
-     * Get Identifier of the bot that created the message
+     * Get Identifier of the bot that created the message.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class GetPreparedInlineMessage extends PreparedInlineMessage implements \JsonSer
     }
 
     /**
-     * Set Identifier of the bot that created the message
+     * Set Identifier of the bot that created the message.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class GetPreparedInlineMessage extends PreparedInlineMessage implements \JsonSer
     }
 
     /**
-     * Get Identifier of the prepared message
+     * Get Identifier of the prepared message.
      */
     public function getPreparedMessageId(): string
     {
@@ -48,7 +48,7 @@ class GetPreparedInlineMessage extends PreparedInlineMessage implements \JsonSer
     }
 
     /**
-     * Set Identifier of the prepared message
+     * Set Identifier of the prepared message.
      */
     public function setPreparedMessageId(string $preparedMessageId): self
     {

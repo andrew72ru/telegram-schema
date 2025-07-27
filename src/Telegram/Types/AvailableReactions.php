@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of reactions that can be added to a message
+ * Represents a list of reactions that can be added to a message.
  */
 class AvailableReactions implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Get List of reactions to be shown at the top
+     * Get List of reactions to be shown at the top.
      */
     public function getTopReactions(): array|null
     {
@@ -42,7 +42,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Set List of reactions to be shown at the top
+     * Set List of reactions to be shown at the top.
      */
     public function setTopReactions(array|null $topReactions): self
     {
@@ -52,7 +52,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Get List of recently used reactions
+     * Get List of recently used reactions.
      */
     public function getRecentReactions(): array|null
     {
@@ -60,7 +60,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Set List of recently used reactions
+     * Set List of recently used reactions.
      */
     public function setRecentReactions(array|null $recentReactions): self
     {
@@ -70,7 +70,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Get List of popular reactions
+     * Get List of popular reactions.
      */
     public function getPopularReactions(): array|null
     {
@@ -78,7 +78,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Set List of popular reactions
+     * Set List of popular reactions.
      */
     public function setPopularReactions(array|null $popularReactions): self
     {
@@ -88,7 +88,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Get True, if any custom emoji reaction can be added by Telegram Premium subscribers
+     * Get True, if any custom emoji reaction can be added by Telegram Premium subscribers.
      */
     public function getAllowCustomEmoji(): bool
     {
@@ -96,7 +96,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Set True, if any custom emoji reaction can be added by Telegram Premium subscribers
+     * Set True, if any custom emoji reaction can be added by Telegram Premium subscribers.
      */
     public function setAllowCustomEmoji(bool $allowCustomEmoji): self
     {
@@ -106,7 +106,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reactions will be tags and the message can be found by them
+     * Get True, if the reactions will be tags and the message can be found by them.
      */
     public function getAreTags(): bool
     {
@@ -114,7 +114,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reactions will be tags and the message can be found by them
+     * Set True, if the reactions will be tags and the message can be found by them.
      */
     public function setAreTags(bool $areTags): self
     {
@@ -124,7 +124,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Get The reason why the current user can't add reactions to the message, despite some other users can; may be null if none
+     * Get The reason why the current user can't add reactions to the message, despite some other users can; may be null if none.
      */
     public function getUnavailabilityReason(): ReactionUnavailabilityReason|null
     {
@@ -132,7 +132,7 @@ class AvailableReactions implements \JsonSerializable
     }
 
     /**
-     * Set The reason why the current user can't add reactions to the message, despite some other users can; may be null if none
+     * Set The reason why the current user can't add reactions to the message, despite some other users can; may be null if none.
      */
     public function setUnavailabilityReason(ReactionUnavailabilityReason|null $unavailabilityReason): self
     {

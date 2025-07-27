@@ -31,7 +31,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message starting from which history must be fetched; use 0 to get results from the last message
+     * Get Identifier of the message starting from which history must be fetched; use 0 to get results from the last message.
      */
     public function getFromMessageId(): int
     {
@@ -57,7 +57,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message starting from which history must be fetched; use 0 to get results from the last message
+     * Set Identifier of the message starting from which history must be fetched; use 0 to get results from the last message.
      */
     public function setFromMessageId(int $fromMessageId): self
     {
@@ -67,7 +67,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages
+     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages.
      */
     public function getOffset(): int
     {
@@ -75,7 +75,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages
+     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages.
      */
     public function setOffset(int $offset): self
     {
@@ -85,7 +85,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.
+     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset..
      */
     public function getLimit(): int
     {
@@ -93,7 +93,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.
+     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset..
      */
     public function setLimit(int $limit): self
     {
@@ -103,7 +103,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get only messages that are available without sending network requests
+     * Get Pass true to get only messages that are available without sending network requests.
      */
     public function getOnlyLocal(): bool
     {
@@ -111,7 +111,7 @@ class GetChatHistory extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get only messages that are available without sending network requests
+     * Set Pass true to get only messages that are available without sending network requests.
      */
     public function setOnlyLocal(bool $onlyLocal): self
     {

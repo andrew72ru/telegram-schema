@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns strings from a language pack in the current localization target by their keys. Can be called before authorization
+ * Returns strings from a language pack in the current localization target by their keys. Can be called before authorization.
  */
 class GetLanguagePackStrings extends LanguagePackStrings implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetLanguagePackStrings extends LanguagePackStrings implements \JsonSeriali
     }
 
     /**
-     * Get Language pack identifier of the strings to be returned
+     * Get Language pack identifier of the strings to be returned.
      */
     public function getLanguagePackId(): string
     {
@@ -30,7 +30,7 @@ class GetLanguagePackStrings extends LanguagePackStrings implements \JsonSeriali
     }
 
     /**
-     * Set Language pack identifier of the strings to be returned
+     * Set Language pack identifier of the strings to be returned.
      */
     public function setLanguagePackId(string $languagePackId): self
     {
@@ -40,7 +40,7 @@ class GetLanguagePackStrings extends LanguagePackStrings implements \JsonSeriali
     }
 
     /**
-     * Get Language pack keys of the strings to be returned; leave empty to request all available strings
+     * Get Language pack keys of the strings to be returned; leave empty to request all available strings.
      */
     public function getKeys(): array|null
     {
@@ -48,7 +48,7 @@ class GetLanguagePackStrings extends LanguagePackStrings implements \JsonSeriali
     }
 
     /**
-     * Set Language pack keys of the strings to be returned; leave empty to request all available strings
+     * Set Language pack keys of the strings to be returned; leave empty to request all available strings.
      */
     public function setKeys(array|null $keys): self
     {

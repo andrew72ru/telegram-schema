@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Saves an inline message to be sent by the given user; for bots only
+ * Saves an inline message to be sent by the given user; for bots only.
  */
 class SavePreparedInlineMessage extends PreparedInlineMessageId implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SavePreparedInlineMessage extends PreparedInlineMessageId implements \Json
     }
 
     /**
-     * Get Identifier of the user
+     * Get Identifier of the user.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class SavePreparedInlineMessage extends PreparedInlineMessageId implements \Json
     }
 
     /**
-     * Set Identifier of the user
+     * Set Identifier of the user.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class SavePreparedInlineMessage extends PreparedInlineMessageId implements \Json
     }
 
     /**
-     * Get The description of the message
+     * Get The description of the message.
      */
     public function getResult(): InputInlineQueryResult|null
     {
@@ -51,7 +51,7 @@ class SavePreparedInlineMessage extends PreparedInlineMessageId implements \Json
     }
 
     /**
-     * Set The description of the message
+     * Set The description of the message.
      */
     public function setResult(InputInlineQueryResult|null $result): self
     {
@@ -61,7 +61,7 @@ class SavePreparedInlineMessage extends PreparedInlineMessageId implements \Json
     }
 
     /**
-     * Get Types of the chats to which the message can be sent
+     * Get Types of the chats to which the message can be sent.
      */
     public function getChatTypes(): TargetChatTypes|null
     {
@@ -69,7 +69,7 @@ class SavePreparedInlineMessage extends PreparedInlineMessageId implements \Json
     }
 
     /**
-     * Set Types of the chats to which the message can be sent
+     * Set Types of the chats to which the message can be sent.
      */
     public function setChatTypes(TargetChatTypes|null $chatTypes): self
     {

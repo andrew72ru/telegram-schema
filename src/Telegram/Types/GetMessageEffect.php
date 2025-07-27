@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a message effect. Returns a 404 error if the effect is not found @effect_id Unique identifier of the effect
+ * Returns information about a message effect. Returns a 404 error if the effect is not found @effect_id Unique identifier of the effect.
  */
 class GetMessageEffect extends MessageEffect implements \JsonSerializable
 {

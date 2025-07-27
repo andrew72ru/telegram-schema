@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a sticker set
+ * Represents a sticker set.
  */
 class StickerSet implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sticker set
+     * Get Identifier of the sticker set.
      */
     public function getId(): int
     {
@@ -69,7 +69,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sticker set
+     * Set Identifier of the sticker set.
      */
     public function setId(int $id): self
     {
@@ -79,7 +79,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Title of the sticker set
+     * Get Title of the sticker set.
      */
     public function getTitle(): string
     {
@@ -87,7 +87,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Title of the sticker set
+     * Set Title of the sticker set.
      */
     public function setTitle(string $title): self
     {
@@ -97,7 +97,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Name of the sticker set
+     * Get Name of the sticker set.
      */
     public function getName(): string
     {
@@ -105,7 +105,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Name of the sticker set
+     * Set Name of the sticker set.
      */
     public function setName(string $name): self
     {
@@ -115,7 +115,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed
+     * Get Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -123,7 +123,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed
+     * Set Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -133,7 +133,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set thumbnail's outline; may be null if unknown
+     * Get Sticker set thumbnail's outline; may be null if unknown.
      */
     public function getThumbnailOutline(): Outline|null
     {
@@ -141,7 +141,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set thumbnail's outline; may be null if unknown
+     * Set Sticker set thumbnail's outline; may be null if unknown.
      */
     public function setThumbnailOutline(Outline|null $thumbnailOutline): self
     {
@@ -151,7 +151,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True, if the sticker set is owned by the current user
+     * Get True, if the sticker set is owned by the current user.
      */
     public function getIsOwned(): bool
     {
@@ -159,7 +159,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True, if the sticker set is owned by the current user
+     * Set True, if the sticker set is owned by the current user.
      */
     public function setIsOwned(bool $isOwned): self
     {
@@ -169,7 +169,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True, if the sticker set has been installed by the current user
+     * Get True, if the sticker set has been installed by the current user.
      */
     public function getIsInstalled(): bool
     {
@@ -177,7 +177,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True, if the sticker set has been installed by the current user
+     * Set True, if the sticker set has been installed by the current user.
      */
     public function setIsInstalled(bool $isInstalled): self
     {
@@ -187,7 +187,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously
+     * Get True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously.
      */
     public function getIsArchived(): bool
     {
@@ -195,7 +195,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously
+     * Set True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously.
      */
     public function setIsArchived(bool $isArchived): self
     {
@@ -205,7 +205,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True, if the sticker set is official
+     * Get True, if the sticker set is official.
      */
     public function getIsOfficial(): bool
     {
@@ -213,7 +213,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True, if the sticker set is official
+     * Set True, if the sticker set is official.
      */
     public function setIsOfficial(bool $isOfficial): self
     {
@@ -223,7 +223,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Type of the stickers in the set
+     * Get Type of the stickers in the set.
      */
     public function getStickerType(): StickerType|null
     {
@@ -231,7 +231,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Type of the stickers in the set
+     * Set Type of the stickers in the set.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -241,7 +241,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True, if stickers in the sticker set are custom emoji that must be repainted; for custom emoji sticker sets only
+     * Get True, if stickers in the sticker set are custom emoji that must be repainted; for custom emoji sticker sets only.
      */
     public function getNeedsRepainting(): bool
     {
@@ -249,7 +249,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True, if stickers in the sticker set are custom emoji that must be repainted; for custom emoji sticker sets only
+     * Set True, if stickers in the sticker set are custom emoji that must be repainted; for custom emoji sticker sets only.
      */
     public function setNeedsRepainting(bool $needsRepainting): self
     {
@@ -259,7 +259,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True, if stickers in the sticker set are custom emoji that can be used as chat emoji status; for custom emoji sticker sets only
+     * Get True, if stickers in the sticker set are custom emoji that can be used as chat emoji status; for custom emoji sticker sets only.
      */
     public function getIsAllowedAsChatEmojiStatus(): bool
     {
@@ -267,7 +267,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True, if stickers in the sticker set are custom emoji that can be used as chat emoji status; for custom emoji sticker sets only
+     * Set True, if stickers in the sticker set are custom emoji that can be used as chat emoji status; for custom emoji sticker sets only.
      */
     public function setIsAllowedAsChatEmojiStatus(bool $isAllowedAsChatEmojiStatus): self
     {
@@ -277,7 +277,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get True for already viewed trending sticker sets
+     * Get True for already viewed trending sticker sets.
      */
     public function getIsViewed(): bool
     {
@@ -285,7 +285,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set True for already viewed trending sticker sets
+     * Set True for already viewed trending sticker sets.
      */
     public function setIsViewed(bool $isViewed): self
     {
@@ -295,7 +295,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get List of stickers in this set
+     * Get List of stickers in this set.
      */
     public function getStickers(): array|null
     {
@@ -303,7 +303,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set List of stickers in this set
+     * Set List of stickers in this set.
      */
     public function setStickers(array|null $stickers): self
     {
@@ -313,7 +313,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get A list of emojis corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object
+     * Get A list of emojis corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object.
      */
     public function getEmojis(): array|null
     {
@@ -321,7 +321,7 @@ class StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set A list of emojis corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object
+     * Set A list of emojis corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object.
      */
     public function setEmojis(array|null $emojis): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for a specified query in the first name, last name and usernames of the members of a specified chat. Requires administrator rights if the chat is a channel
+ * Searches for a specified query in the first name, last name and usernames of the members of a specified chat. Requires administrator rights if the chat is a channel.
  */
 class SearchChatMembers extends ChatMembers implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -54,7 +54,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {
@@ -64,7 +64,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of users to be returned; up to 200
+     * Get The maximum number of users to be returned; up to 200.
      */
     public function getLimit(): int
     {
@@ -72,7 +72,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of users to be returned; up to 200
+     * Set The maximum number of users to be returned; up to 200.
      */
     public function setLimit(int $limit): self
     {
@@ -82,7 +82,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get The type of users to search for; pass null to search among all chat members
+     * Get The type of users to search for; pass null to search among all chat members.
      */
     public function getFilter(): ChatMembersFilter|null
     {
@@ -90,7 +90,7 @@ class SearchChatMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set The type of users to search for; pass null to search among all chat members
+     * Set The type of users to search for; pass null to search among all chat members.
      */
     public function setFilter(ChatMembersFilter|null $filter): self
     {

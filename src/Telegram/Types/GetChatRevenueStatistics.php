@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns detailed revenue statistics about a chat. Currently, this method can be used only
+ * Returns detailed revenue statistics about a chat. Currently, this method can be used only.
  */
 class GetChatRevenueStatistics extends ChatRevenueStatistics implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChatRevenueStatistics extends ChatRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetChatRevenueStatistics extends ChatRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetChatRevenueStatistics extends ChatRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Get Pass true if a dark theme is used by the application
+     * Get Pass true if a dark theme is used by the application.
      */
     public function getIsDark(): bool
     {
@@ -48,7 +48,7 @@ class GetChatRevenueStatistics extends ChatRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Set Pass true if a dark theme is used by the application
+     * Set Pass true if a dark theme is used by the application.
      */
     public function setIsDark(bool $isDark): self
     {

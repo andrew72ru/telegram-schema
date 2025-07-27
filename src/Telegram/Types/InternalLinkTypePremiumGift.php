@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram with telegramPaymentPurposePremiumGift payments or in-store purchases
+ * The link is a link to the screen for gifting Telegram Premium subscriptions to friends via inputInvoiceTelegram with telegramPaymentPurposePremiumGift payments or in-store purchases.
  */
 class InternalLinkTypePremiumGift extends InternalLinkType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class InternalLinkTypePremiumGift extends InternalLinkType implements \JsonSeria
     }
 
     /**
-     * Get Referrer specified in the link
+     * Get Referrer specified in the link.
      */
     public function getReferrer(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypePremiumGift extends InternalLinkType implements \JsonSeria
     }
 
     /**
-     * Set Referrer specified in the link
+     * Set Referrer specified in the link.
      */
     public function setReferrer(string $referrer): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to the Telegram Star purchase section of the application
+ * The link is a link to the Telegram Star purchase section of the application.
  */
 class InternalLinkTypeBuyStars extends InternalLinkType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InternalLinkTypeBuyStars extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Get The number of Telegram Stars that must be owned by the user
+     * Get The number of Telegram Stars that must be owned by the user.
      */
     public function getStarCount(): int
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeBuyStars extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Set The number of Telegram Stars that must be owned by the user
+     * Set The number of Telegram Stars that must be owned by the user.
      */
     public function setStarCount(int $starCount): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeBuyStars extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Get Purpose of Telegram Star purchase. Arbitrary string specified by the server, for example, "subs" if the Telegram Stars are required to extend channel subscriptions
+     * Get Purpose of Telegram Star purchase. Arbitrary string specified by the server, for example, "subs" if the Telegram Stars are required to extend channel subscriptions.
      */
     public function getPurpose(): string
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeBuyStars extends InternalLinkType implements \JsonSerializ
     }
 
     /**
-     * Set Purpose of Telegram Star purchase. Arbitrary string specified by the server, for example, "subs" if the Telegram Stars are required to extend channel subscriptions
+     * Set Purpose of Telegram Star purchase. Arbitrary string specified by the server, for example, "subs" if the Telegram Stars are required to extend channel subscriptions.
      */
     public function setPurpose(string $purpose): self
     {

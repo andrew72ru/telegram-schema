@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes parameters of a giveaway
+ * Describes parameters of a giveaway.
  */
 class GiveawayParameters implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup or channel chat, which will be automatically boosted by the winners of the giveaway for duration of the Telegram Premium subscription,
+     * Get Identifier of the supergroup or channel chat, which will be automatically boosted by the winners of the giveaway for duration of the Telegram Premium subscription,.
      */
     public function getBoostedChatId(): int
     {
@@ -45,7 +45,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup or channel chat, which will be automatically boosted by the winners of the giveaway for duration of the Telegram Premium subscription,
+     * Set Identifier of the supergroup or channel chat, which will be automatically boosted by the winners of the giveaway for duration of the Telegram Premium subscription,.
      */
     public function setBoostedChatId(int $boostedChatId): self
     {
@@ -55,7 +55,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of other supergroup or channel chats that must be subscribed by the users to be eligible for the giveaway. There can be up to getOption("giveaway_additional_chat_count_max") additional chats
+     * Get Identifiers of other supergroup or channel chats that must be subscribed by the users to be eligible for the giveaway. There can be up to getOption("giveaway_additional_chat_count_max") additional chats.
      */
     public function getAdditionalChatIds(): array|null
     {
@@ -63,7 +63,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of other supergroup or channel chats that must be subscribed by the users to be eligible for the giveaway. There can be up to getOption("giveaway_additional_chat_count_max") additional chats
+     * Set Identifiers of other supergroup or channel chats that must be subscribed by the users to be eligible for the giveaway. There can be up to getOption("giveaway_additional_chat_count_max") additional chats.
      */
     public function setAdditionalChatIds(array|null $additionalChatIds): self
     {
@@ -73,7 +73,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the giveaway is expected to be performed; must be 60-getOption("giveaway_duration_max") seconds in the future in scheduled giveaways
+     * Get Point in time (Unix timestamp) when the giveaway is expected to be performed; must be 60-getOption("giveaway_duration_max") seconds in the future in scheduled giveaways.
      */
     public function getWinnersSelectionDate(): int
     {
@@ -81,7 +81,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the giveaway is expected to be performed; must be 60-getOption("giveaway_duration_max") seconds in the future in scheduled giveaways
+     * Set Point in time (Unix timestamp) when the giveaway is expected to be performed; must be 60-getOption("giveaway_duration_max") seconds in the future in scheduled giveaways.
      */
     public function setWinnersSelectionDate(int $winnersSelectionDate): self
     {
@@ -91,7 +91,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get True, if only new members of the chats will be eligible for the giveaway
+     * Get True, if only new members of the chats will be eligible for the giveaway.
      */
     public function getOnlyNewMembers(): bool
     {
@@ -99,7 +99,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set True, if only new members of the chats will be eligible for the giveaway
+     * Set True, if only new members of the chats will be eligible for the giveaway.
      */
     public function setOnlyNewMembers(bool $onlyNewMembers): self
     {
@@ -109,7 +109,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get True, if the list of winners of the giveaway will be available to everyone
+     * Get True, if the list of winners of the giveaway will be available to everyone.
      */
     public function getHasPublicWinners(): bool
     {
@@ -117,7 +117,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set True, if the list of winners of the giveaway will be available to everyone
+     * Set True, if the list of winners of the giveaway will be available to everyone.
      */
     public function setHasPublicWinners(bool $hasPublicWinners): self
     {
@@ -127,7 +127,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get The list of two-letter ISO 3166-1 alpha-2 codes of countries, users from which will be eligible for the giveaway. If empty, then all users can participate in the giveaway.
+     * Get The list of two-letter ISO 3166-1 alpha-2 codes of countries, users from which will be eligible for the giveaway. If empty, then all users can participate in the giveaway..
      */
     public function getCountryCodes(): array|null
     {
@@ -135,7 +135,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set The list of two-letter ISO 3166-1 alpha-2 codes of countries, users from which will be eligible for the giveaway. If empty, then all users can participate in the giveaway.
+     * Set The list of two-letter ISO 3166-1 alpha-2 codes of countries, users from which will be eligible for the giveaway. If empty, then all users can participate in the giveaway..
      */
     public function setCountryCodes(array|null $countryCodes): self
     {
@@ -145,7 +145,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Get Additional description of the giveaway prize; 0-128 characters
+     * Get Additional description of the giveaway prize; 0-128 characters.
      */
     public function getPrizeDescription(): string
     {
@@ -153,7 +153,7 @@ class GiveawayParameters implements \JsonSerializable
     }
 
     /**
-     * Set Additional description of the giveaway prize; 0-128 characters
+     * Set Additional description of the giveaway prize; 0-128 characters.
      */
     public function setPrizeDescription(string $prizeDescription): self
     {

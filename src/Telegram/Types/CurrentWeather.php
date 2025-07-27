@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes the current weather
+ * Describes the current weather.
  */
 class CurrentWeather implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class CurrentWeather implements \JsonSerializable
     }
 
     /**
-     * Get Temperature, in degree Celsius
+     * Get Temperature, in degree Celsius.
      */
     public function getTemperature(): float
     {
@@ -30,7 +30,7 @@ class CurrentWeather implements \JsonSerializable
     }
 
     /**
-     * Set Temperature, in degree Celsius
+     * Set Temperature, in degree Celsius.
      */
     public function setTemperature(float $temperature): self
     {
@@ -40,7 +40,7 @@ class CurrentWeather implements \JsonSerializable
     }
 
     /**
-     * Get Emoji representing the weather
+     * Get Emoji representing the weather.
      */
     public function getEmoji(): string
     {
@@ -48,7 +48,7 @@ class CurrentWeather implements \JsonSerializable
     }
 
     /**
-     * Set Emoji representing the weather
+     * Set Emoji representing the weather.
      */
     public function setEmoji(string $emoji): self
     {

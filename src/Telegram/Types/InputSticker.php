@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A sticker to be added to a sticker set
+ * A sticker to be added to a sticker set.
  */
 class InputSticker implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Get File with the sticker; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side.
+     * Get File with the sticker; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side..
      */
     public function getSticker(): InputFile|null
     {
@@ -39,7 +39,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Set File with the sticker; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side.
+     * Set File with the sticker; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side..
      */
     public function setSticker(InputFile|null $sticker): self
     {
@@ -49,7 +49,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Get Format of the sticker
+     * Get Format of the sticker.
      */
     public function getFormat(): StickerFormat|null
     {
@@ -57,7 +57,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Set Format of the sticker
+     * Set Format of the sticker.
      */
     public function setFormat(StickerFormat|null $format): self
     {
@@ -67,7 +67,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Get String with 1-20 emoji corresponding to the sticker
+     * Get String with 1-20 emoji corresponding to the sticker.
      */
     public function getEmojis(): string
     {
@@ -75,7 +75,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Set String with 1-20 emoji corresponding to the sticker
+     * Set String with 1-20 emoji corresponding to the sticker.
      */
     public function setEmojis(string $emojis): self
     {
@@ -85,7 +85,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Get Position where the mask is placed; pass null if not specified
+     * Get Position where the mask is placed; pass null if not specified.
      */
     public function getMaskPosition(): MaskPosition|null
     {
@@ -93,7 +93,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Set Position where the mask is placed; pass null if not specified
+     * Set Position where the mask is placed; pass null if not specified.
      */
     public function setMaskPosition(MaskPosition|null $maskPosition): self
     {
@@ -103,7 +103,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Get List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker
+     * Get List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker.
      */
     public function getKeywords(): array|null
     {
@@ -111,7 +111,7 @@ class InputSticker implements \JsonSerializable
     }
 
     /**
-     * Set List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker
+     * Set List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker.
      */
     public function setKeywords(array|null $keywords): self
     {

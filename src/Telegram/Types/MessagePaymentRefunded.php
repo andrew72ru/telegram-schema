@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A payment has been refunded
+ * A payment has been refunded.
  */
 class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the previous owner of the Telegram Stars that refunds them
+     * Get Identifier of the previous owner of the Telegram Stars that refunds them.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -42,7 +42,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the previous owner of the Telegram Stars that refunds them
+     * Set Identifier of the previous owner of the Telegram Stars that refunds them.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -52,7 +52,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Currency for the price of the product
+     * Get Currency for the price of the product.
      */
     public function getCurrency(): string
     {
@@ -60,7 +60,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Currency for the price of the product
+     * Set Currency for the price of the product.
      */
     public function setCurrency(string $currency): self
     {
@@ -70,7 +70,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Total price for the product, in the smallest units of the currency
+     * Get Total price for the product, in the smallest units of the currency.
      */
     public function getTotalAmount(): int
     {
@@ -78,7 +78,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Total price for the product, in the smallest units of the currency
+     * Set Total price for the product, in the smallest units of the currency.
      */
     public function setTotalAmount(int $totalAmount): self
     {
@@ -88,7 +88,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Invoice payload; only for bots
+     * Get Invoice payload; only for bots.
      */
     public function getInvoicePayload(): string
     {
@@ -96,7 +96,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Invoice payload; only for bots
+     * Set Invoice payload; only for bots.
      */
     public function setInvoicePayload(string $invoicePayload): self
     {
@@ -106,7 +106,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Telegram payment identifier
+     * Get Telegram payment identifier.
      */
     public function getTelegramPaymentChargeId(): string
     {
@@ -114,7 +114,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Telegram payment identifier
+     * Set Telegram payment identifier.
      */
     public function setTelegramPaymentChargeId(string $telegramPaymentChargeId): self
     {
@@ -124,7 +124,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Provider payment identifier
+     * Get Provider payment identifier.
      */
     public function getProviderPaymentChargeId(): string
     {
@@ -132,7 +132,7 @@ class MessagePaymentRefunded extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Provider payment identifier
+     * Set Provider payment identifier.
      */
     public function setProviderPaymentChargeId(string $providerPaymentChargeId): self
     {

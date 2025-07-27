@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Paid messages were refunded @message_count The number of refunded messages @star_count The number of refunded Telegram Stars
+ * Paid messages were refunded @message_count The number of refunded messages @star_count The number of refunded Telegram Stars.
  */
 class MessagePaidMessagesRefunded extends MessageContent implements \JsonSerializable
 {

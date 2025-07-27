@@ -22,7 +22,7 @@ class InternalLinkTypeStickerSet extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get Name of the sticker set
+     * Get Name of the sticker set.
      */
     public function getStickerSetName(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeStickerSet extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set Name of the sticker set
+     * Set Name of the sticker set.
      */
     public function setStickerSetName(string $stickerSetName): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeStickerSet extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get True, if the sticker set is expected to contain custom emoji
+     * Get True, if the sticker set is expected to contain custom emoji.
      */
     public function getExpectCustomEmoji(): bool
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeStickerSet extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set True, if the sticker set is expected to contain custom emoji
+     * Set True, if the sticker set is expected to contain custom emoji.
      */
     public function setExpectCustomEmoji(bool $expectCustomEmoji): self
     {

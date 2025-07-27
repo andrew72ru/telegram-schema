@@ -19,7 +19,7 @@ class UpdateSpeedLimitNotification extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if upload speed was limited; false, if download speed was limited
+     * Get True, if upload speed was limited; false, if download speed was limited.
      */
     public function getIsUpload(): bool
     {
@@ -27,7 +27,7 @@ class UpdateSpeedLimitNotification extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if upload speed was limited; false, if download speed was limited
+     * Set True, if upload speed was limited; false, if download speed was limited.
      */
     public function setIsUpload(bool $isUpload): self
     {

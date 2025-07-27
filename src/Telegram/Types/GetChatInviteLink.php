@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about an invite link. Requires administrator privileges and can_invite_users right in the chat to get own links and owner privileges to get other links
+ * Returns information about an invite link. Requires administrator privileges and can_invite_users right in the chat to get own links and owner privileges to get other links.
  */
 class GetChatInviteLink extends ChatInviteLink implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Invite link to get
+     * Get Invite link to get.
      */
     public function getInviteLink(): string
     {
@@ -48,7 +48,7 @@ class GetChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Invite link to get
+     * Set Invite link to get.
      */
     public function setInviteLink(string $inviteLink): self
     {

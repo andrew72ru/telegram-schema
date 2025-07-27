@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A notification was changed @notification_group_id Unique notification group identifier @notification Changed notification
+ * A notification was changed @notification_group_id Unique notification group identifier @notification Changed notification.
  */
 class UpdateNotification extends Update implements \JsonSerializable
 {

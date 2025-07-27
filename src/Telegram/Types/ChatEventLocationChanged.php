@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The supergroup location was changed @old_location Previous location; may be null @new_location New location; may be null
+ * The supergroup location was changed @old_location Previous location; may be null @new_location New location; may be null.
  */
 class ChatEventLocationChanged extends ChatEventAction implements \JsonSerializable
 {

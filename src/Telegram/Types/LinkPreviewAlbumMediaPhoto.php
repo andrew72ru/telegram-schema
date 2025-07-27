@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The media is a photo @photo Photo description
+ * The media is a photo @photo Photo description.
  */
 class LinkPreviewAlbumMediaPhoto extends LinkPreviewAlbumMedia implements \JsonSerializable
 {

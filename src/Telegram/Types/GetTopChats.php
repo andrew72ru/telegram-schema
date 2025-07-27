@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of frequently used chats @category Category of chats to be returned @limit The maximum number of chats to be returned; up to 30
+ * Returns a list of frequently used chats @category Category of chats to be returned @limit The maximum number of chats to be returned; up to 30.
  */
 class GetTopChats extends Chats implements \JsonSerializable
 {

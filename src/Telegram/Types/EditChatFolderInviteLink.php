@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits an invite link for a chat folder
+ * Edits an invite link for a chat folder.
  */
 class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Get Chat folder identifier
+     * Get Chat folder identifier.
      */
     public function getChatFolderId(): int
     {
@@ -36,7 +36,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Set Chat folder identifier
+     * Set Chat folder identifier.
      */
     public function setChatFolderId(int $chatFolderId): self
     {
@@ -46,7 +46,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Get Invite link to be edited
+     * Get Invite link to be edited.
      */
     public function getInviteLink(): string
     {
@@ -54,7 +54,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Set Invite link to be edited
+     * Set Invite link to be edited.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -64,7 +64,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Get New name of the link; 0-32 characters
+     * Get New name of the link; 0-32 characters.
      */
     public function getName(): string
     {
@@ -72,7 +72,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Set New name of the link; 0-32 characters
+     * Set New name of the link; 0-32 characters.
      */
     public function setName(string $name): self
     {
@@ -82,7 +82,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Get New identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link editing
+     * Get New identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link editing.
      */
     public function getChatIds(): array|null
     {
@@ -90,7 +90,7 @@ class EditChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSeri
     }
 
     /**
-     * Set New identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link editing
+     * Set New identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link editing.
      */
     public function setChatIds(array|null $chatIds): self
     {

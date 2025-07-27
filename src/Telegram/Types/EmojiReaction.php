@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an emoji reaction
+ * Contains information about an emoji reaction.
  */
 class EmojiReaction implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Text representation of the reaction
+     * Get Text representation of the reaction.
      */
     public function getEmoji(): string
     {
@@ -54,7 +54,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Text representation of the reaction
+     * Set Text representation of the reaction.
      */
     public function setEmoji(string $emoji): self
     {
@@ -64,7 +64,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Reaction title
+     * Get Reaction title.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Reaction title
+     * Set Reaction title.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reaction can be added to new messages and enabled in chats
+     * Get True, if the reaction can be added to new messages and enabled in chats.
      */
     public function getIsActive(): bool
     {
@@ -90,7 +90,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reaction can be added to new messages and enabled in chats
+     * Set True, if the reaction can be added to new messages and enabled in chats.
      */
     public function setIsActive(bool $isActive): self
     {
@@ -100,7 +100,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Static icon for the reaction
+     * Get Static icon for the reaction.
      */
     public function getStaticIcon(): Sticker|null
     {
@@ -108,7 +108,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Static icon for the reaction
+     * Set Static icon for the reaction.
      */
     public function setStaticIcon(Sticker|null $staticIcon): self
     {
@@ -118,7 +118,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Appear animation for the reaction
+     * Get Appear animation for the reaction.
      */
     public function getAppearAnimation(): Sticker|null
     {
@@ -126,7 +126,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Appear animation for the reaction
+     * Set Appear animation for the reaction.
      */
     public function setAppearAnimation(Sticker|null $appearAnimation): self
     {
@@ -136,7 +136,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Select animation for the reaction
+     * Get Select animation for the reaction.
      */
     public function getSelectAnimation(): Sticker|null
     {
@@ -144,7 +144,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Select animation for the reaction
+     * Set Select animation for the reaction.
      */
     public function setSelectAnimation(Sticker|null $selectAnimation): self
     {
@@ -154,7 +154,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Activate animation for the reaction
+     * Get Activate animation for the reaction.
      */
     public function getActivateAnimation(): Sticker|null
     {
@@ -162,7 +162,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Activate animation for the reaction
+     * Set Activate animation for the reaction.
      */
     public function setActivateAnimation(Sticker|null $activateAnimation): self
     {
@@ -172,7 +172,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Effect animation for the reaction
+     * Get Effect animation for the reaction.
      */
     public function getEffectAnimation(): Sticker|null
     {
@@ -180,7 +180,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Effect animation for the reaction
+     * Set Effect animation for the reaction.
      */
     public function setEffectAnimation(Sticker|null $effectAnimation): self
     {
@@ -190,7 +190,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Around animation for the reaction; may be null
+     * Get Around animation for the reaction; may be null.
      */
     public function getAroundAnimation(): Sticker|null
     {
@@ -198,7 +198,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Around animation for the reaction; may be null
+     * Set Around animation for the reaction; may be null.
      */
     public function setAroundAnimation(Sticker|null $aroundAnimation): self
     {
@@ -208,7 +208,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Get Center animation for the reaction; may be null
+     * Get Center animation for the reaction; may be null.
      */
     public function getCenterAnimation(): Sticker|null
     {
@@ -216,7 +216,7 @@ class EmojiReaction implements \JsonSerializable
     }
 
     /**
-     * Set Center animation for the reaction; may be null
+     * Set Center animation for the reaction; may be null.
      */
     public function setCenterAnimation(Sticker|null $centerAnimation): self
     {

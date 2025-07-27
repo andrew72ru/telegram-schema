@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of chats @total_count Approximate total number of chats found @chat_ids List of chat identifiers
+ * Represents a list of chats @total_count Approximate total number of chats found @chat_ids List of chat identifiers.
  */
 class Chats implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a purchase of Telegram Premium subscription; for regular users and bots only
+ * The transaction is a purchase of Telegram Premium subscription; for regular users and bots only.
  */
 class StarTransactionTypePremiumPurchase extends StarTransactionType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarTransactionTypePremiumPurchase extends StarTransactionType implements 
     }
 
     /**
-     * Get Identifier of the user that received the Telegram Premium subscription
+     * Get Identifier of the user that received the Telegram Premium subscription.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class StarTransactionTypePremiumPurchase extends StarTransactionType implements 
     }
 
     /**
-     * Set Identifier of the user that received the Telegram Premium subscription
+     * Set Identifier of the user that received the Telegram Premium subscription.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class StarTransactionTypePremiumPurchase extends StarTransactionType implements 
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active
+     * Get Number of months the Telegram Premium subscription will be active.
      */
     public function getMonthCount(): int
     {
@@ -51,7 +51,7 @@ class StarTransactionTypePremiumPurchase extends StarTransactionType implements 
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active
+     * Set Number of months the Telegram Premium subscription will be active.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -61,7 +61,7 @@ class StarTransactionTypePremiumPurchase extends StarTransactionType implements 
     }
 
     /**
-     * Get A sticker to be shown in the transaction information; may be null if unknown
+     * Get A sticker to be shown in the transaction information; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -69,7 +69,7 @@ class StarTransactionTypePremiumPurchase extends StarTransactionType implements 
     }
 
     /**
-     * Set A sticker to be shown in the transaction information; may be null if unknown
+     * Set A sticker to be shown in the transaction information; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {

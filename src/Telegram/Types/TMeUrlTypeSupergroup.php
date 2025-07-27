@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A URL linking to a public supergroup or channel @supergroup_id Identifier of the supergroup or channel
+ * A URL linking to a public supergroup or channel @supergroup_id Identifier of the supergroup or channel.
  */
 class TMeUrlTypeSupergroup extends TMeUrlType implements \JsonSerializable
 {

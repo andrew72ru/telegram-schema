@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a secret chat by its identifier. This is an offline method @secret_chat_id Secret chat identifier
+ * Returns information about a secret chat by its identifier. This is an offline method @secret_chat_id Secret chat identifier.
  */
 class GetSecretChat extends SecretChat implements \JsonSerializable
 {

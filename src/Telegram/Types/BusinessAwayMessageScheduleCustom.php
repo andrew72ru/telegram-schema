@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Send away messages only in the specified time span
+ * Send away messages only in the specified time span.
  */
 class BusinessAwayMessageScheduleCustom extends BusinessAwayMessageSchedule implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BusinessAwayMessageScheduleCustom extends BusinessAwayMessageSchedule impl
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the away messages will start to be sent
+     * Get Point in time (Unix timestamp) when the away messages will start to be sent.
      */
     public function getStartDate(): int
     {
@@ -30,7 +30,7 @@ class BusinessAwayMessageScheduleCustom extends BusinessAwayMessageSchedule impl
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the away messages will start to be sent
+     * Set Point in time (Unix timestamp) when the away messages will start to be sent.
      */
     public function setStartDate(int $startDate): self
     {
@@ -40,7 +40,7 @@ class BusinessAwayMessageScheduleCustom extends BusinessAwayMessageSchedule impl
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the away messages will stop to be sent
+     * Get Point in time (Unix timestamp) when the away messages will stop to be sent.
      */
     public function getEndDate(): int
     {
@@ -48,7 +48,7 @@ class BusinessAwayMessageScheduleCustom extends BusinessAwayMessageSchedule impl
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the away messages will stop to be sent
+     * Set Point in time (Unix timestamp) when the away messages will stop to be sent.
      */
     public function setEndDate(int $endDate): self
     {

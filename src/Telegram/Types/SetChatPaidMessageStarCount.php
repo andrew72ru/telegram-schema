@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the amount of Telegram Stars that must be paid to send a message to a supergroup chat; requires can_restrict_members administrator right and supergroupFullInfo.can_enable_paid_messages
+ * Changes the amount of Telegram Stars that must be paid to send a message to a supergroup chat; requires can_restrict_members administrator right and supergroupFullInfo.can_enable_paid_messages.
  */
 class SetChatPaidMessageStarCount extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatPaidMessageStarCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup chat
+     * Get Identifier of the supergroup chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatPaidMessageStarCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup chat
+     * Set Identifier of the supergroup chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatPaidMessageStarCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new number of Telegram Stars that must be paid for each message that is sent to the supergroup chat unless the sender is an administrator of the chat; 0-getOption("paid_message_star_count_max").
+     * Get The new number of Telegram Stars that must be paid for each message that is sent to the supergroup chat unless the sender is an administrator of the chat; 0-getOption("paid_message_star_count_max")..
      */
     public function getPaidMessageStarCount(): int
     {
@@ -48,7 +48,7 @@ class SetChatPaidMessageStarCount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new number of Telegram Stars that must be paid for each message that is sent to the supergroup chat unless the sender is an administrator of the chat; 0-getOption("paid_message_star_count_max").
+     * Set The new number of Telegram Stars that must be paid for each message that is sent to the supergroup chat unless the sender is an administrator of the chat; 0-getOption("paid_message_star_count_max")..
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of video chat streams @streams A list of video chat streams
+ * Represents a list of video chat streams @streams A list of video chat streams.
  */
 class VideoChatStreams implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of features available on a specific chat boost level
+ * Contains a list of features available on a specific chat boost level.
  */
 class ChatBoostLevelFeatures implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Target chat boost level
+     * Get Target chat boost level.
      */
     public function getLevel(): int
     {
@@ -69,7 +69,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Target chat boost level
+     * Set Target chat boost level.
      */
     public function setLevel(int $level): self
     {
@@ -79,7 +79,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Number of stories that the chat can publish daily
+     * Get Number of stories that the chat can publish daily.
      */
     public function getStoryPerDayCount(): int
     {
@@ -87,7 +87,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Number of stories that the chat can publish daily
+     * Set Number of stories that the chat can publish daily.
      */
     public function setStoryPerDayCount(int $storyPerDayCount): self
     {
@@ -97,7 +97,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Number of custom emoji reactions that can be added to the list of available reactions
+     * Get Number of custom emoji reactions that can be added to the list of available reactions.
      */
     public function getCustomEmojiReactionCount(): int
     {
@@ -105,7 +105,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Number of custom emoji reactions that can be added to the list of available reactions
+     * Set Number of custom emoji reactions that can be added to the list of available reactions.
      */
     public function setCustomEmojiReactionCount(int $customEmojiReactionCount): self
     {
@@ -115,7 +115,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Number of custom colors for chat title
+     * Get Number of custom colors for chat title.
      */
     public function getTitleColorCount(): int
     {
@@ -123,7 +123,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Number of custom colors for chat title
+     * Set Number of custom colors for chat title.
      */
     public function setTitleColorCount(int $titleColorCount): self
     {
@@ -133,7 +133,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Number of custom colors for profile photo background
+     * Get Number of custom colors for profile photo background.
      */
     public function getProfileAccentColorCount(): int
     {
@@ -141,7 +141,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Number of custom colors for profile photo background
+     * Set Number of custom colors for profile photo background.
      */
     public function setProfileAccentColorCount(int $profileAccentColorCount): self
     {
@@ -151,7 +151,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if custom emoji for profile background can be set
+     * Get True, if custom emoji for profile background can be set.
      */
     public function getCanSetProfileBackgroundCustomEmoji(): bool
     {
@@ -159,7 +159,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if custom emoji for profile background can be set
+     * Set True, if custom emoji for profile background can be set.
      */
     public function setCanSetProfileBackgroundCustomEmoji(bool $canSetProfileBackgroundCustomEmoji): self
     {
@@ -169,7 +169,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Number of custom colors for background of empty chat photo, replies to messages and link previews
+     * Get Number of custom colors for background of empty chat photo, replies to messages and link previews.
      */
     public function getAccentColorCount(): int
     {
@@ -177,7 +177,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Number of custom colors for background of empty chat photo, replies to messages and link previews
+     * Set Number of custom colors for background of empty chat photo, replies to messages and link previews.
      */
     public function setAccentColorCount(int $accentColorCount): self
     {
@@ -187,7 +187,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if custom emoji for reply header and link preview background can be set
+     * Get True, if custom emoji for reply header and link preview background can be set.
      */
     public function getCanSetBackgroundCustomEmoji(): bool
     {
@@ -195,7 +195,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if custom emoji for reply header and link preview background can be set
+     * Set True, if custom emoji for reply header and link preview background can be set.
      */
     public function setCanSetBackgroundCustomEmoji(bool $canSetBackgroundCustomEmoji): self
     {
@@ -205,7 +205,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if emoji status can be set
+     * Get True, if emoji status can be set.
      */
     public function getCanSetEmojiStatus(): bool
     {
@@ -213,7 +213,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if emoji status can be set
+     * Set True, if emoji status can be set.
      */
     public function setCanSetEmojiStatus(bool $canSetEmojiStatus): self
     {
@@ -223,7 +223,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get Number of chat theme backgrounds that can be set as chat background
+     * Get Number of chat theme backgrounds that can be set as chat background.
      */
     public function getChatThemeBackgroundCount(): int
     {
@@ -231,7 +231,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set Number of chat theme backgrounds that can be set as chat background
+     * Set Number of chat theme backgrounds that can be set as chat background.
      */
     public function setChatThemeBackgroundCount(int $chatThemeBackgroundCount): self
     {
@@ -241,7 +241,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if custom background can be set in the chat for all users
+     * Get True, if custom background can be set in the chat for all users.
      */
     public function getCanSetCustomBackground(): bool
     {
@@ -249,7 +249,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if custom background can be set in the chat for all users
+     * Set True, if custom background can be set in the chat for all users.
      */
     public function setCanSetCustomBackground(bool $canSetCustomBackground): self
     {
@@ -259,7 +259,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if custom emoji sticker set can be set for the chat
+     * Get True, if custom emoji sticker set can be set for the chat.
      */
     public function getCanSetCustomEmojiStickerSet(): bool
     {
@@ -267,7 +267,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if custom emoji sticker set can be set for the chat
+     * Set True, if custom emoji sticker set can be set for the chat.
      */
     public function setCanSetCustomEmojiStickerSet(bool $canSetCustomEmojiStickerSet): self
     {
@@ -277,7 +277,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if automatic translation of messages can be enabled in the chat
+     * Get True, if automatic translation of messages can be enabled in the chat.
      */
     public function getCanEnableAutomaticTranslation(): bool
     {
@@ -285,7 +285,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if automatic translation of messages can be enabled in the chat
+     * Set True, if automatic translation of messages can be enabled in the chat.
      */
     public function setCanEnableAutomaticTranslation(bool $canEnableAutomaticTranslation): self
     {
@@ -295,7 +295,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if speech recognition can be used for video note and voice note messages by all users
+     * Get True, if speech recognition can be used for video note and voice note messages by all users.
      */
     public function getCanRecognizeSpeech(): bool
     {
@@ -303,7 +303,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if speech recognition can be used for video note and voice note messages by all users
+     * Set True, if speech recognition can be used for video note and voice note messages by all users.
      */
     public function setCanRecognizeSpeech(bool $canRecognizeSpeech): self
     {
@@ -313,7 +313,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Get True, if sponsored messages can be disabled in the chat
+     * Get True, if sponsored messages can be disabled in the chat.
      */
     public function getCanDisableSponsoredMessages(): bool
     {
@@ -321,7 +321,7 @@ class ChatBoostLevelFeatures implements \JsonSerializable
     }
 
     /**
-     * Set True, if sponsored messages can be disabled in the chat
+     * Set True, if sponsored messages can be disabled in the chat.
      */
     public function setCanDisableSponsoredMessages(bool $canDisableSponsoredMessages): self
     {

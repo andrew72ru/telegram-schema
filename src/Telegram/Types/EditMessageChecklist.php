@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the message content of a checklist. Returns the edited message after the edit is completed on the server side
+ * Edits the message content of a checklist. Returns the edited message after the edit is completed on the server side.
  */
 class EditMessageChecklist extends Message implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited
+     * Get Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited
+     * Set Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none; for bots only
+     * Get The new message reply markup; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -72,7 +72,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none; for bots only
+     * Set The new message reply markup; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -82,7 +82,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The new checklist. If some tasks were completed, this information will be kept
+     * Get The new checklist. If some tasks were completed, this information will be kept.
      */
     public function getChecklist(): InputChecklist|null
     {
@@ -90,7 +90,7 @@ class EditMessageChecklist extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The new checklist. If some tasks were completed, this information will be kept
+     * Set The new checklist. If some tasks were completed, this information will be kept.
      */
     public function setChecklist(InputChecklist|null $checklist): self
     {

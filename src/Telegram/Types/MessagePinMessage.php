@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message has been pinned @message_id Identifier of the pinned message, can be an identifier of a deleted message or 0
+ * A message has been pinned @message_id Identifier of the pinned message, can be an identifier of a deleted message or 0.
  */
 class MessagePinMessage extends MessageContent implements \JsonSerializable
 {

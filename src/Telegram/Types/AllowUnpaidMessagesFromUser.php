@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Allows the specified user to send unpaid private messages to the current user by adding a rule to userPrivacySettingAllowUnpaidMessages
+ * Allows the specified user to send unpaid private messages to the current user by adding a rule to userPrivacySettingAllowUnpaidMessages.
  */
 class AllowUnpaidMessagesFromUser extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AllowUnpaidMessagesFromUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user
+     * Get Identifier of the user.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class AllowUnpaidMessagesFromUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user
+     * Set Identifier of the user.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class AllowUnpaidMessagesFromUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to refund the user previously paid messages
+     * Get Pass true to refund the user previously paid messages.
      */
     public function getRefundPayments(): bool
     {
@@ -48,7 +48,7 @@ class AllowUnpaidMessagesFromUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to refund the user previously paid messages
+     * Set Pass true to refund the user previously paid messages.
      */
     public function setRefundPayments(bool $refundPayments): self
     {

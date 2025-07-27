@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a venue @venue Information about the venue
+ * An area pointing to a venue @venue Information about the venue.
  */
 class StoryAreaTypeVenue extends StoryAreaType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A bot (see https://core.telegram.org/bots)
+ * A bot (see https://core.telegram.org/bots).
  */
 class UserTypeBot extends UserType implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot is owned by the current user and can be edited using the methods toggleBotUsernameIsActive, reorderBotActiveUsernames, setBotProfilePhoto, setBotName, setBotInfoDescription, and setBotInfoShortDescription
+     * Get True, if the bot is owned by the current user and can be edited using the methods toggleBotUsernameIsActive, reorderBotActiveUsernames, setBotProfilePhoto, setBotName, setBotInfoDescription, and setBotInfoShortDescription.
      */
     public function getCanBeEdited(): bool
     {
@@ -54,7 +54,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot is owned by the current user and can be edited using the methods toggleBotUsernameIsActive, reorderBotActiveUsernames, setBotProfilePhoto, setBotName, setBotInfoDescription, and setBotInfoShortDescription
+     * Set True, if the bot is owned by the current user and can be edited using the methods toggleBotUsernameIsActive, reorderBotActiveUsernames, setBotProfilePhoto, setBotName, setBotInfoDescription, and setBotInfoShortDescription.
      */
     public function setCanBeEdited(bool $canBeEdited): self
     {
@@ -64,7 +64,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can be invited to basic group and supergroup chats
+     * Get True, if the bot can be invited to basic group and supergroup chats.
      */
     public function getCanJoinGroups(): bool
     {
@@ -72,7 +72,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can be invited to basic group and supergroup chats
+     * Set True, if the bot can be invited to basic group and supergroup chats.
      */
     public function setCanJoinGroups(bool $canJoinGroups): self
     {
@@ -82,7 +82,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can read all messages in basic group or supergroup chats and not just those addressed to the bot. In private and channel chats a bot can always read all messages
+     * Get True, if the bot can read all messages in basic group or supergroup chats and not just those addressed to the bot. In private and channel chats a bot can always read all messages.
      */
     public function getCanReadAllGroupMessages(): bool
     {
@@ -90,7 +90,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can read all messages in basic group or supergroup chats and not just those addressed to the bot. In private and channel chats a bot can always read all messages
+     * Set True, if the bot can read all messages in basic group or supergroup chats and not just those addressed to the bot. In private and channel chats a bot can always read all messages.
      */
     public function setCanReadAllGroupMessages(bool $canReadAllGroupMessages): self
     {
@@ -100,7 +100,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot has the main Web App
+     * Get True, if the bot has the main Web App.
      */
     public function getHasMainWebApp(): bool
     {
@@ -108,7 +108,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot has the main Web App
+     * Set True, if the bot has the main Web App.
      */
     public function setHasMainWebApp(bool $hasMainWebApp): self
     {
@@ -118,7 +118,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports inline queries
+     * Get True, if the bot supports inline queries.
      */
     public function getIsInline(): bool
     {
@@ -126,7 +126,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports inline queries
+     * Set True, if the bot supports inline queries.
      */
     public function setIsInline(bool $isInline): self
     {
@@ -136,7 +136,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get Placeholder for inline queries (displayed on the application input field)
+     * Get Placeholder for inline queries (displayed on the application input field).
      */
     public function getInlineQueryPlaceholder(): string
     {
@@ -144,7 +144,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set Placeholder for inline queries (displayed on the application input field)
+     * Set Placeholder for inline queries (displayed on the application input field).
      */
     public function setInlineQueryPlaceholder(string $inlineQueryPlaceholder): self
     {
@@ -154,7 +154,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the location of the user is expected to be sent with every inline query to this bot
+     * Get True, if the location of the user is expected to be sent with every inline query to this bot.
      */
     public function getNeedLocation(): bool
     {
@@ -162,7 +162,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the location of the user is expected to be sent with every inline query to this bot
+     * Set True, if the location of the user is expected to be sent with every inline query to this bot.
      */
     public function setNeedLocation(bool $needLocation): self
     {
@@ -172,7 +172,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot supports connection to Telegram Business accounts
+     * Get True, if the bot supports connection to Telegram Business accounts.
      */
     public function getCanConnectToBusiness(): bool
     {
@@ -180,7 +180,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot supports connection to Telegram Business accounts
+     * Set True, if the bot supports connection to Telegram Business accounts.
      */
     public function setCanConnectToBusiness(bool $canConnectToBusiness): self
     {
@@ -190,7 +190,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can be added to attachment or side menu
+     * Get True, if the bot can be added to attachment or side menu.
      */
     public function getCanBeAddedToAttachmentMenu(): bool
     {
@@ -198,7 +198,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can be added to attachment or side menu
+     * Set True, if the bot can be added to attachment or side menu.
      */
     public function setCanBeAddedToAttachmentMenu(bool $canBeAddedToAttachmentMenu): self
     {
@@ -208,7 +208,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Get The number of recently active users of the bot
+     * Get The number of recently active users of the bot.
      */
     public function getActiveUserCount(): int
     {
@@ -216,7 +216,7 @@ class UserTypeBot extends UserType implements \JsonSerializable
     }
 
     /**
-     * Set The number of recently active users of the bot
+     * Set The number of recently active users of the bot.
      */
     public function setActiveUserCount(int $activeUserCount): self
     {

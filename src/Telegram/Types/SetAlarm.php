@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Succeeds after a specified amount of time has passed. Can be called before initialization @seconds Number of seconds before the function returns
+ * Succeeds after a specified amount of time has passed. Can be called before initialization @seconds Number of seconds before the function returns.
  */
 class SetAlarm extends Ok implements \JsonSerializable
 {

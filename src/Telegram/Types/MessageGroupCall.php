@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with information about a group call not bound to a chat. If the message is incoming, the call isn't active, isn't missed, and has no duration,
+ * A message with information about a group call not bound to a chat. If the message is incoming, the call isn't active, isn't missed, and has no duration,.
  */
 class MessageGroupCall extends MessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is active, i.e. the called user joined the call
+     * Get True, if the call is active, i.e. the called user joined the call.
      */
     public function getIsActive(): bool
     {
@@ -39,7 +39,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is active, i.e. the called user joined the call
+     * Set True, if the call is active, i.e. the called user joined the call.
      */
     public function setIsActive(bool $isActive): self
     {
@@ -49,7 +49,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the called user missed or declined the call
+     * Get True, if the called user missed or declined the call.
      */
     public function getWasMissed(): bool
     {
@@ -57,7 +57,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the called user missed or declined the call
+     * Set True, if the called user missed or declined the call.
      */
     public function setWasMissed(bool $wasMissed): self
     {
@@ -67,7 +67,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call is a video call
+     * Get True, if the call is a video call.
      */
     public function getIsVideo(): bool
     {
@@ -75,7 +75,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call is a video call
+     * Set True, if the call is a video call.
      */
     public function setIsVideo(bool $isVideo): self
     {
@@ -85,7 +85,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Call duration, in seconds; for left calls only
+     * Get Call duration, in seconds; for left calls only.
      */
     public function getDuration(): int
     {
@@ -93,7 +93,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Call duration, in seconds; for left calls only
+     * Set Call duration, in seconds; for left calls only.
      */
     public function setDuration(int $duration): self
     {
@@ -103,7 +103,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of some other call participants
+     * Get Identifiers of some other call participants.
      */
     public function getOtherParticipantIds(): array|null
     {
@@ -111,7 +111,7 @@ class MessageGroupCall extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of some other call participants
+     * Set Identifiers of some other call participants.
      */
     public function setOtherParticipantIds(array|null $otherParticipantIds): self
     {

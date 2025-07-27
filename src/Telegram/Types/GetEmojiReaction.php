@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about an emoji reaction. Returns a 404 error if the reaction is not found @emoji Text representation of the reaction
+ * Returns information about an emoji reaction. Returns a 404 error if the reaction is not found @emoji Text representation of the reaction.
  */
 class GetEmojiReaction extends EmojiReaction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to an audio @audio The audio description
+ * The link is a link to an audio @audio The audio description.
  */
 class LinkPreviewTypeAudio extends LinkPreviewType implements \JsonSerializable
 {

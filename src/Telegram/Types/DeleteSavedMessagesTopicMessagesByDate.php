@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all messages between the specified dates in a Saved Messages topic. Messages sent in the last 30 seconds will not be deleted
+ * Deletes all messages between the specified dates in a Saved Messages topic. Messages sent in the last 30 seconds will not be deleted.
  */
 class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get Identifier of Saved Messages topic which messages will be deleted
+     * Get Identifier of Saved Messages topic which messages will be deleted.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -33,7 +33,7 @@ class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set Identifier of Saved Messages topic which messages will be deleted
+     * Set Identifier of Saved Messages topic which messages will be deleted.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {
@@ -43,7 +43,7 @@ class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get The minimum date of the messages to delete
+     * Get The minimum date of the messages to delete.
      */
     public function getMinDate(): int
     {
@@ -51,7 +51,7 @@ class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set The minimum date of the messages to delete
+     * Set The minimum date of the messages to delete.
      */
     public function setMinDate(int $minDate): self
     {
@@ -61,7 +61,7 @@ class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get The maximum date of the messages to delete
+     * Get The maximum date of the messages to delete.
      */
     public function getMaxDate(): int
     {
@@ -69,7 +69,7 @@ class DeleteSavedMessagesTopicMessagesByDate extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set The maximum date of the messages to delete
+     * Set The maximum date of the messages to delete.
      */
     public function setMaxDate(int $maxDate): self
     {

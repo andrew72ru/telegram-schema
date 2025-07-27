@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of stickers @stickers List of stickers
+ * Represents a list of stickers @stickers List of stickers.
  */
 class Stickers implements \JsonSerializable
 {

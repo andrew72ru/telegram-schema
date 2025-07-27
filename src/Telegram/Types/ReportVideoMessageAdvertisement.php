@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports a video message advertisement to Telegram moderators
+ * Reports a video message advertisement to Telegram moderators.
  */
 class ReportVideoMessageAdvertisement extends ReportSponsoredResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ReportVideoMessageAdvertisement extends ReportSponsoredResult implements \
     }
 
     /**
-     * Get Unique identifier of the advertisement
+     * Get Unique identifier of the advertisement.
      */
     public function getAdvertisementUniqueId(): int
     {
@@ -30,7 +30,7 @@ class ReportVideoMessageAdvertisement extends ReportSponsoredResult implements \
     }
 
     /**
-     * Set Unique identifier of the advertisement
+     * Set Unique identifier of the advertisement.
      */
     public function setAdvertisementUniqueId(int $advertisementUniqueId): self
     {
@@ -40,7 +40,7 @@ class ReportVideoMessageAdvertisement extends ReportSponsoredResult implements \
     }
 
     /**
-     * Get Option identifier chosen by the user; leave empty for the initial request
+     * Get Option identifier chosen by the user; leave empty for the initial request.
      */
     public function getOptionId(): string
     {
@@ -48,7 +48,7 @@ class ReportVideoMessageAdvertisement extends ReportSponsoredResult implements \
     }
 
     /**
-     * Set Option identifier chosen by the user; leave empty for the initial request
+     * Set Option identifier chosen by the user; leave empty for the initial request.
      */
     public function setOptionId(string $optionId): self
     {

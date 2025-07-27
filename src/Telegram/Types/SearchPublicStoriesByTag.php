@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for public stories containing the given hashtag or cashtag. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit
+ * Searches for public stories containing the given hashtag or cashtag. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
  */
 class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the stories to search for; pass 0 to search stories in all chats
+     * Get Identifier of the chat that posted the stories to search for; pass 0 to search stories in all chats.
      */
     public function getStoryPosterChatId(): int
     {
@@ -36,7 +36,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the stories to search for; pass 0 to search stories in all chats
+     * Set Identifier of the chat that posted the stories to search for; pass 0 to search stories in all chats.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -46,7 +46,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Get Hashtag or cashtag to search for
+     * Get Hashtag or cashtag to search for.
      */
     public function getTag(): string
     {
@@ -54,7 +54,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Set Hashtag or cashtag to search for
+     * Set Hashtag or cashtag to search for.
      */
     public function setTag(string $tag): self
     {
@@ -64,7 +64,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -72,7 +72,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -82,7 +82,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -90,7 +90,7 @@ class SearchPublicStoriesByTag extends FoundStories implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

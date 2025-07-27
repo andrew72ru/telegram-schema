@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains an inline keyboard layout
+ * Contains an inline keyboard layout.
  */
 class ReplyMarkupInlineKeyboard extends ReplyMarkup implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ReplyMarkupInlineKeyboard extends ReplyMarkup implements \JsonSerializable
     }
 
     /**
-     * Get A list of rows of inline keyboard buttons
+     * Get A list of rows of inline keyboard buttons.
      */
     public function getRows(): array|null
     {
@@ -27,7 +27,7 @@ class ReplyMarkupInlineKeyboard extends ReplyMarkup implements \JsonSerializable
     }
 
     /**
-     * Set A list of rows of inline keyboard buttons
+     * Set A list of rows of inline keyboard buttons.
      */
     public function setRows(array|null $rows): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a video chat, i.e. a group call bound to a chat
+ * Describes a video chat, i.e. a group call bound to a chat.
  */
 class VideoChat implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class VideoChat implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier of an active video chat; 0 if none. Full information about the video chat can be received through the method getGroupCall
+     * Get Group call identifier of an active video chat; 0 if none. Full information about the video chat can be received through the method getGroupCall.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class VideoChat implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier of an active video chat; 0 if none. Full information about the video chat can be received through the method getGroupCall
+     * Set Group call identifier of an active video chat; 0 if none. Full information about the video chat can be received through the method getGroupCall.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class VideoChat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video chat has participants
+     * Get True, if the video chat has participants.
      */
     public function getHasParticipants(): bool
     {
@@ -51,7 +51,7 @@ class VideoChat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video chat has participants
+     * Set True, if the video chat has participants.
      */
     public function setHasParticipants(bool $hasParticipants): self
     {
@@ -61,7 +61,7 @@ class VideoChat implements \JsonSerializable
     }
 
     /**
-     * Get Default group call participant identifier to join the video chat; may be null
+     * Get Default group call participant identifier to join the video chat; may be null.
      */
     public function getDefaultParticipantId(): MessageSender|null
     {
@@ -69,7 +69,7 @@ class VideoChat implements \JsonSerializable
     }
 
     /**
-     * Set Default group call participant identifier to join the video chat; may be null
+     * Set Default group call participant identifier to join the video chat; may be null.
      */
     public function setDefaultParticipantId(MessageSender|null $defaultParticipantId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Handles a push notification. Returns error with code 406 if the push notification is not supported and connection to the server is required to fetch new data. Can be called before authorization
+ * Handles a push notification. Returns error with code 406 if the push notification is not supported and connection to the server is required to fetch new data. Can be called before authorization.
  */
 class ProcessPushNotification extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ProcessPushNotification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get JSON-encoded push notification payload with all fields sent by the server, and "google.sent_time" and "google.notification.sound" fields added
+     * Get JSON-encoded push notification payload with all fields sent by the server, and "google.sent_time" and "google.notification.sound" fields added.
      */
     public function getPayload(): string
     {
@@ -27,7 +27,7 @@ class ProcessPushNotification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set JSON-encoded push notification payload with all fields sent by the server, and "google.sent_time" and "google.notification.sound" fields added
+     * Set JSON-encoded push notification payload with all fields sent by the server, and "google.sent_time" and "google.notification.sound" fields added.
      */
     public function setPayload(string $payload): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A sticker message @sticker The sticker description @is_premium True, if premium animation of the sticker must be played
+ * A sticker message @sticker The sticker description @is_premium True, if premium animation of the sticker must be played.
  */
 class MessageSticker extends MessageContent implements \JsonSerializable
 {

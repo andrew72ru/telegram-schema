@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a video player
+ * The link is a link to a video player.
  */
 class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Get URL of the external video player
+     * Get URL of the external video player.
      */
     public function getUrl(): string
     {
@@ -39,7 +39,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Set URL of the external video player
+     * Set URL of the external video player.
      */
     public function setUrl(string $url): self
     {
@@ -49,7 +49,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Get Thumbnail of the video; may be null if unknown
+     * Get Thumbnail of the video; may be null if unknown.
      */
     public function getThumbnail(): Photo|null
     {
@@ -57,7 +57,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Set Thumbnail of the video; may be null if unknown
+     * Set Thumbnail of the video; may be null if unknown.
      */
     public function setThumbnail(Photo|null $thumbnail): self
     {
@@ -67,7 +67,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Get Duration of the video, in seconds
+     * Get Duration of the video, in seconds.
      */
     public function getDuration(): int
     {
@@ -75,7 +75,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Set Duration of the video, in seconds
+     * Set Duration of the video, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -85,7 +85,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Get Expected width of the embedded player
+     * Get Expected width of the embedded player.
      */
     public function getWidth(): int
     {
@@ -93,7 +93,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Set Expected width of the embedded player
+     * Set Expected width of the embedded player.
      */
     public function setWidth(int $width): self
     {
@@ -103,7 +103,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Get Expected height of the embedded player
+     * Get Expected height of the embedded player.
      */
     public function getHeight(): int
     {
@@ -111,7 +111,7 @@ class LinkPreviewTypeEmbeddedVideoPlayer extends LinkPreviewType implements \Jso
     }
 
     /**
-     * Set Expected height of the embedded player
+     * Set Expected height of the embedded player.
      */
     public function setHeight(int $height): self
     {

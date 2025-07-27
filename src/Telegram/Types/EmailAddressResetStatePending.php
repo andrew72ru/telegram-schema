@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Email address reset has already been requested. Call resetAuthenticationEmailAddress to check whether immediate reset is possible
+ * Email address reset has already been requested. Call resetAuthenticationEmailAddress to check whether immediate reset is possible.
  */
 class EmailAddressResetStatePending extends EmailAddressResetState implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class EmailAddressResetStatePending extends EmailAddressResetState implements \J
     }
 
     /**
-     * Get Left time before the email address will be reset, in seconds. updateAuthorizationState is not sent when this field changes
+     * Get Left time before the email address will be reset, in seconds. updateAuthorizationState is not sent when this field changes.
      */
     public function getResetIn(): int
     {
@@ -27,7 +27,7 @@ class EmailAddressResetStatePending extends EmailAddressResetState implements \J
     }
 
     /**
-     * Set Left time before the email address will be reset, in seconds. updateAuthorizationState is not sent when this field changes
+     * Set Left time before the email address will be reset, in seconds. updateAuthorizationState is not sent when this field changes.
      */
     public function setResetIn(int $resetIn): self
     {

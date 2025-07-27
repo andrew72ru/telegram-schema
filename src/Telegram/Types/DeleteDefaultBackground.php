@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes default background for chats @for_dark_theme Pass true if the background is deleted for a dark theme
+ * Deletes default background for chats @for_dark_theme Pass true if the background is deleted for a dark theme.
  */
 class DeleteDefaultBackground extends Ok implements \JsonSerializable
 {

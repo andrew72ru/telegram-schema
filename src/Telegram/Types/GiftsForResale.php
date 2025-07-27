@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes gifts available for resale
+ * Describes gifts available for resale.
  */
 class GiftsForResale implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Total number of gifts found
+     * Get Total number of gifts found.
      */
     public function getTotalCount(): int
     {
@@ -42,7 +42,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Total number of gifts found
+     * Set Total number of gifts found.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -52,7 +52,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get The gifts
+     * Get The gifts.
      */
     public function getGifts(): array|null
     {
@@ -60,7 +60,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set The gifts
+     * Set The gifts.
      */
     public function setGifts(array|null $gifts): self
     {
@@ -70,7 +70,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Available models; for searchGiftsForResale requests without offset and attributes only
+     * Get Available models; for searchGiftsForResale requests without offset and attributes only.
      */
     public function getModels(): array|null
     {
@@ -78,7 +78,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Available models; for searchGiftsForResale requests without offset and attributes only
+     * Set Available models; for searchGiftsForResale requests without offset and attributes only.
      */
     public function setModels(array|null $models): self
     {
@@ -88,7 +88,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Available symbols; for searchGiftsForResale requests without offset and attributes only
+     * Get Available symbols; for searchGiftsForResale requests without offset and attributes only.
      */
     public function getSymbols(): array|null
     {
@@ -96,7 +96,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Available symbols; for searchGiftsForResale requests without offset and attributes only
+     * Set Available symbols; for searchGiftsForResale requests without offset and attributes only.
      */
     public function setSymbols(array|null $symbols): self
     {
@@ -106,7 +106,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Available backdrops; for searchGiftsForResale requests without offset and attributes only
+     * Get Available backdrops; for searchGiftsForResale requests without offset and attributes only.
      */
     public function getBackdrops(): array|null
     {
@@ -114,7 +114,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Available backdrops; for searchGiftsForResale requests without offset and attributes only
+     * Set Available backdrops; for searchGiftsForResale requests without offset and attributes only.
      */
     public function setBackdrops(array|null $backdrops): self
     {
@@ -124,7 +124,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -132,7 +132,7 @@ class GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

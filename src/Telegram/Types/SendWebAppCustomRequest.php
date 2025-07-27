@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a custom request from a Web App
+ * Sends a custom request from a Web App.
  */
 class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerial
     }
 
     /**
-     * Get Identifier of the bot
+     * Get Identifier of the bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerial
     }
 
     /**
-     * Set Identifier of the bot
+     * Set Identifier of the bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerial
     }
 
     /**
-     * Get The method name
+     * Get The method name.
      */
     public function getMethod(): string
     {
@@ -51,7 +51,7 @@ class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerial
     }
 
     /**
-     * Set The method name
+     * Set The method name.
      */
     public function setMethod(string $method): self
     {
@@ -61,7 +61,7 @@ class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerial
     }
 
     /**
-     * Get JSON-serialized method parameters
+     * Get JSON-serialized method parameters.
      */
     public function getParameters(): string
     {
@@ -69,7 +69,7 @@ class SendWebAppCustomRequest extends CustomRequestResult implements \JsonSerial
     }
 
     /**
-     * Set JSON-serialized method parameters
+     * Set JSON-serialized method parameters.
      */
     public function setParameters(string $parameters): self
     {

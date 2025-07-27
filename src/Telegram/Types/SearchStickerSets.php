@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for sticker sets by looking for specified query in their title and name. Excludes installed sticker sets from the results
+ * Searches for sticker sets by looking for specified query in their title and name. Excludes installed sticker sets from the results.
  */
 class SearchStickerSets extends StickerSets implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get Type of the sticker sets to return
+     * Get Type of the sticker sets to return.
      */
     public function getStickerType(): StickerType|null
     {
@@ -30,7 +30,7 @@ class SearchStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set Type of the sticker sets to return
+     * Set Type of the sticker sets to return.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -40,7 +40,7 @@ class SearchStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -48,7 +48,7 @@ class SearchStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {

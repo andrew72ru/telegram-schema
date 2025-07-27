@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An embedded web page
+ * An embedded web page.
  */
 class PageBlockEmbedded extends PageBlock implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get URL of the embedded page, if available
+     * Get URL of the embedded page, if available.
      */
     public function getUrl(): string
     {
@@ -48,7 +48,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set URL of the embedded page, if available
+     * Set URL of the embedded page, if available.
      */
     public function setUrl(string $url): self
     {
@@ -58,7 +58,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get HTML-markup of the embedded page
+     * Get HTML-markup of the embedded page.
      */
     public function getHtml(): string
     {
@@ -66,7 +66,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set HTML-markup of the embedded page
+     * Set HTML-markup of the embedded page.
      */
     public function setHtml(string $html): self
     {
@@ -76,7 +76,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Poster photo, if available; may be null
+     * Get Poster photo, if available; may be null.
      */
     public function getPosterPhoto(): Photo|null
     {
@@ -84,7 +84,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Poster photo, if available; may be null
+     * Set Poster photo, if available; may be null.
      */
     public function setPosterPhoto(Photo|null $posterPhoto): self
     {
@@ -94,7 +94,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block width; 0 if unknown
+     * Get Block width; 0 if unknown.
      */
     public function getWidth(): int
     {
@@ -102,7 +102,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block width; 0 if unknown
+     * Set Block width; 0 if unknown.
      */
     public function setWidth(int $width): self
     {
@@ -112,7 +112,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block height; 0 if unknown
+     * Get Block height; 0 if unknown.
      */
     public function getHeight(): int
     {
@@ -120,7 +120,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block height; 0 if unknown
+     * Set Block height; 0 if unknown.
      */
     public function setHeight(int $height): self
     {
@@ -130,7 +130,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block caption
+     * Get Block caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -138,7 +138,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block caption
+     * Set Block caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {
@@ -148,7 +148,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the block must be full width
+     * Get True, if the block must be full width.
      */
     public function getIsFullWidth(): bool
     {
@@ -156,7 +156,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the block must be full width
+     * Set True, if the block must be full width.
      */
     public function setIsFullWidth(bool $isFullWidth): self
     {
@@ -166,7 +166,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if scrolling needs to be allowed
+     * Get True, if scrolling needs to be allowed.
      */
     public function getAllowScrolling(): bool
     {
@@ -174,7 +174,7 @@ class PageBlockEmbedded extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if scrolling needs to be allowed
+     * Set True, if scrolling needs to be allowed.
      */
     public function setAllowScrolling(bool $allowScrolling): self
     {

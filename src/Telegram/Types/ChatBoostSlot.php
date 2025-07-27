@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a slot for chat boost
+ * Describes a slot for chat boost.
  */
 class ChatBoostSlot implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the slot
+     * Get Unique identifier of the slot.
      */
     public function getSlotId(): int
     {
@@ -39,7 +39,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the slot
+     * Set Unique identifier of the slot.
      */
     public function setSlotId(int $slotId): self
     {
@@ -49,7 +49,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the currently boosted chat; 0 if none
+     * Get Identifier of the currently boosted chat; 0 if none.
      */
     public function getCurrentlyBoostedChatId(): int
     {
@@ -57,7 +57,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the currently boosted chat; 0 if none
+     * Set Identifier of the currently boosted chat; 0 if none.
      */
     public function setCurrentlyBoostedChatId(int $currentlyBoostedChatId): self
     {
@@ -67,7 +67,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the chat was boosted; 0 if none
+     * Get Point in time (Unix timestamp) when the chat was boosted; 0 if none.
      */
     public function getStartDate(): int
     {
@@ -75,7 +75,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the chat was boosted; 0 if none
+     * Set Point in time (Unix timestamp) when the chat was boosted; 0 if none.
      */
     public function setStartDate(int $startDate): self
     {
@@ -85,7 +85,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the boost will expire
+     * Get Point in time (Unix timestamp) when the boost will expire.
      */
     public function getExpirationDate(): int
     {
@@ -93,7 +93,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the boost will expire
+     * Set Point in time (Unix timestamp) when the boost will expire.
      */
     public function setExpirationDate(int $expirationDate): self
     {
@@ -103,7 +103,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) after which the boost can be used for another chat
+     * Get Point in time (Unix timestamp) after which the boost can be used for another chat.
      */
     public function getCooldownUntilDate(): int
     {
@@ -111,7 +111,7 @@ class ChatBoostSlot implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) after which the boost can be used for another chat
+     * Set Point in time (Unix timestamp) after which the boost can be used for another chat.
      */
     public function setCooldownUntilDate(int $cooldownUntilDate): self
     {

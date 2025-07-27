@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of message sender identifiers, which can be used to send a paid reaction in a chat @chat_id Chat identifier
+ * Returns the list of message sender identifiers, which can be used to send a paid reaction in a chat @chat_id Chat identifier.
  */
 class GetChatAvailablePaidMessageReactionSenders extends MessageSenders implements \JsonSerializable
 {

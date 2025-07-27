@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches a user by a token from the user's link @token Token to search for
+ * Searches a user by a token from the user's link @token Token to search for.
  */
 class SearchUserByToken extends User implements \JsonSerializable
 {

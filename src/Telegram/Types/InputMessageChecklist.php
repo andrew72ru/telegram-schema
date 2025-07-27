@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a checklist. Checklists can't be sent to secret chats, channel chats and channel direct messages chats; for Telegram Premium users only
+ * A message with a checklist. Checklists can't be sent to secret chats, channel chats and channel direct messages chats; for Telegram Premium users only.
  */
 class InputMessageChecklist extends InputMessageContent implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class InputMessageChecklist extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get The checklist to send
+     * Get The checklist to send.
      */
     public function getChecklist(): InputChecklist|null
     {
@@ -27,7 +27,7 @@ class InputMessageChecklist extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set The checklist to send
+     * Set The checklist to send.
      */
     public function setChecklist(InputChecklist|null $checklist): self
     {

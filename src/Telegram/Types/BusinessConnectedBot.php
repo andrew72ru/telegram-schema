@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a bot connected to a business account
+ * Describes a bot connected to a business account.
  */
 class BusinessConnectedBot implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class BusinessConnectedBot implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the bot
+     * Get User identifier of the bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class BusinessConnectedBot implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the bot
+     * Set User identifier of the bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class BusinessConnectedBot implements \JsonSerializable
     }
 
     /**
-     * Get Private chats that will be accessible to the bot
+     * Get Private chats that will be accessible to the bot.
      */
     public function getRecipients(): BusinessRecipients|null
     {
@@ -51,7 +51,7 @@ class BusinessConnectedBot implements \JsonSerializable
     }
 
     /**
-     * Set Private chats that will be accessible to the bot
+     * Set Private chats that will be accessible to the bot.
      */
     public function setRecipients(BusinessRecipients|null $recipients): self
     {
@@ -61,7 +61,7 @@ class BusinessConnectedBot implements \JsonSerializable
     }
 
     /**
-     * Get Rights of the bot
+     * Get Rights of the bot.
      */
     public function getRights(): BusinessBotRights|null
     {
@@ -69,7 +69,7 @@ class BusinessConnectedBot implements \JsonSerializable
     }
 
     /**
-     * Set Rights of the bot
+     * Set Rights of the bot.
      */
     public function setRights(BusinessBotRights|null $rights): self
     {

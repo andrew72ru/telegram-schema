@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * A bot command, beginning with "/"
+ * A bot command, beginning with "/".
  */
 class TextEntityTypeBotCommand extends TextEntityType implements \JsonSerializable
 {

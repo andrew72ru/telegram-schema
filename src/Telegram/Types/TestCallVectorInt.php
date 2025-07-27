@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the received vector of numbers; for testing only. This is an offline method. Can be called before authorization @x Vector of numbers to return
+ * Returns the received vector of numbers; for testing only. This is an offline method. Can be called before authorization @x Vector of numbers to return.
  */
 class TestCallVectorInt extends TestVectorInt implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a connection of the bot with a business account
+ * Describes a connection of the bot with a business account.
  */
 class BusinessConnection implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the connection
+     * Get Unique identifier of the connection.
      */
     public function getId(): string
     {
@@ -42,7 +42,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the connection
+     * Set Unique identifier of the connection.
      */
     public function setId(string $id): self
     {
@@ -52,7 +52,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the business user that created the connection
+     * Get Identifier of the business user that created the connection.
      */
     public function getUserId(): int
     {
@@ -60,7 +60,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the business user that created the connection
+     * Set Identifier of the business user that created the connection.
      */
     public function setUserId(int $userId): self
     {
@@ -70,7 +70,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the private chat with the user
+     * Get Chat identifier of the private chat with the user.
      */
     public function getUserChatId(): int
     {
@@ -78,7 +78,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the private chat with the user
+     * Set Chat identifier of the private chat with the user.
      */
     public function setUserChatId(int $userChatId): self
     {
@@ -88,7 +88,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the connection was established
+     * Get Point in time (Unix timestamp) when the connection was established.
      */
     public function getDate(): int
     {
@@ -96,7 +96,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the connection was established
+     * Set Point in time (Unix timestamp) when the connection was established.
      */
     public function setDate(int $date): self
     {
@@ -106,7 +106,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Get Rights of the bot; may be null if the connection was disabled
+     * Get Rights of the bot; may be null if the connection was disabled.
      */
     public function getRights(): BusinessBotRights|null
     {
@@ -114,7 +114,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Set Rights of the bot; may be null if the connection was disabled
+     * Set Rights of the bot; may be null if the connection was disabled.
      */
     public function setRights(BusinessBotRights|null $rights): self
     {
@@ -124,7 +124,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Get True, if the connection is enabled; false otherwise
+     * Get True, if the connection is enabled; false otherwise.
      */
     public function getIsEnabled(): bool
     {
@@ -132,7 +132,7 @@ class BusinessConnection implements \JsonSerializable
     }
 
     /**
-     * Set True, if the connection is enabled; false otherwise
+     * Set True, if the connection is enabled; false otherwise.
      */
     public function setIsEnabled(bool $isEnabled): self
     {

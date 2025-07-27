@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches a user by their phone number. Returns a 404 error if the user can't be found
+ * Searches a user by their phone number. Returns a 404 error if the user can't be found.
  */
 class SearchUserByPhoneNumber extends User implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchUserByPhoneNumber extends User implements \JsonSerializable
     }
 
     /**
-     * Get Phone number to search for
+     * Get Phone number to search for.
      */
     public function getPhoneNumber(): string
     {
@@ -30,7 +30,7 @@ class SearchUserByPhoneNumber extends User implements \JsonSerializable
     }
 
     /**
-     * Set Phone number to search for
+     * Set Phone number to search for.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -40,7 +40,7 @@ class SearchUserByPhoneNumber extends User implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get only locally available information without sending network requests
+     * Get Pass true to get only locally available information without sending network requests.
      */
     public function getOnlyLocal(): bool
     {
@@ -48,7 +48,7 @@ class SearchUserByPhoneNumber extends User implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get only locally available information without sending network requests
+     * Set Pass true to get only locally available information without sending network requests.
      */
     public function setOnlyLocal(bool $onlyLocal): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message failed to send. Be aware that some messages being sent can be irrecoverably deleted, in which case updateDeleteMessages will be received instead of this update
+ * A message failed to send. Be aware that some messages being sent can be irrecoverably deleted, in which case updateDeleteMessages will be received instead of this update.
  */
 class UpdateMessageSendFailed extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateMessageSendFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The failed to send message
+     * Get The failed to send message.
      */
     public function getMessage(): Message|null
     {
@@ -33,7 +33,7 @@ class UpdateMessageSendFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The failed to send message
+     * Set The failed to send message.
      */
     public function setMessage(Message|null $message): self
     {
@@ -43,7 +43,7 @@ class UpdateMessageSendFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The previous temporary message identifier
+     * Get The previous temporary message identifier.
      */
     public function getOldMessageId(): int
     {
@@ -51,7 +51,7 @@ class UpdateMessageSendFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The previous temporary message identifier
+     * Set The previous temporary message identifier.
      */
     public function setOldMessageId(int $oldMessageId): self
     {
@@ -61,7 +61,7 @@ class UpdateMessageSendFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The cause of the message sending failure
+     * Get The cause of the message sending failure.
      */
     public function getError(): Error|null
     {
@@ -69,7 +69,7 @@ class UpdateMessageSendFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The cause of the message sending failure
+     * Set The cause of the message sending failure.
      */
     public function setError(Error|null $error): self
     {

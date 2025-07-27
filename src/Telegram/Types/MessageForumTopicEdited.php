@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forum topic has been edited
+ * A forum topic has been edited.
  */
 class MessageForumTopicEdited extends MessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class MessageForumTopicEdited extends MessageContent implements \JsonSerializabl
     }
 
     /**
-     * Get If non-empty, the new name of the topic
+     * Get If non-empty, the new name of the topic.
      */
     public function getName(): string
     {
@@ -33,7 +33,7 @@ class MessageForumTopicEdited extends MessageContent implements \JsonSerializabl
     }
 
     /**
-     * Set If non-empty, the new name of the topic
+     * Set If non-empty, the new name of the topic.
      */
     public function setName(string $name): self
     {
@@ -43,7 +43,7 @@ class MessageForumTopicEdited extends MessageContent implements \JsonSerializabl
     }
 
     /**
-     * Get True, if icon's custom_emoji_id is changed
+     * Get True, if icon's custom_emoji_id is changed.
      */
     public function getEditIconCustomEmojiId(): bool
     {
@@ -51,7 +51,7 @@ class MessageForumTopicEdited extends MessageContent implements \JsonSerializabl
     }
 
     /**
-     * Set True, if icon's custom_emoji_id is changed
+     * Set True, if icon's custom_emoji_id is changed.
      */
     public function setEditIconCustomEmojiId(bool $editIconCustomEmojiId): self
     {
@@ -61,7 +61,7 @@ class MessageForumTopicEdited extends MessageContent implements \JsonSerializabl
     }
 
     /**
-     * Get New unique identifier of the custom emoji shown on the topic icon; 0 if none. Must be ignored if edit_icon_custom_emoji_id is false
+     * Get New unique identifier of the custom emoji shown on the topic icon; 0 if none. Must be ignored if edit_icon_custom_emoji_id is false.
      */
     public function getIconCustomEmojiId(): int
     {
@@ -69,7 +69,7 @@ class MessageForumTopicEdited extends MessageContent implements \JsonSerializabl
     }
 
     /**
-     * Set New unique identifier of the custom emoji shown on the topic icon; 0 if none. Must be ignored if edit_icon_custom_emoji_id is false
+     * Set New unique identifier of the custom emoji shown on the topic icon; 0 if none. Must be ignored if edit_icon_custom_emoji_id is false.
      */
     public function setIconCustomEmojiId(int $iconCustomEmojiId): self
     {

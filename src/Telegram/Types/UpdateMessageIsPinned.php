@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message pinned state was changed @chat_id Chat identifier @message_id The message identifier @is_pinned True, if the message is pinned
+ * The message pinned state was changed @chat_id Chat identifier @message_id The message identifier @is_pinned True, if the message is pinned.
  */
 class UpdateMessageIsPinned extends Update implements \JsonSerializable
 {

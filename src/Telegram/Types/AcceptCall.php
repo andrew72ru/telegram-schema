@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Accepts an incoming call @call_id Call identifier @protocol The call protocols supported by the application
+ * Accepts an incoming call @call_id Call identifier @protocol The call protocols supported by the application.
  */
 class AcceptCall extends Ok implements \JsonSerializable
 {

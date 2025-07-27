@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Saves application log event on the server. Can be called before authorization @type Event type @chat_id Optional chat identifier, associated with the event @data The log event data
+ * Saves application log event on the server. Can be called before authorization @var Event type @chat_id Optional chat identifier, associated with the event @data The log event data.
  */
 class SaveApplicationLogEvent extends Ok implements \JsonSerializable
 {

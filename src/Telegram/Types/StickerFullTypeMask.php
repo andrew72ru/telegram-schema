@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The sticker is a mask in WEBP format to be placed on photos or videos @mask_position Position where the mask is placed; may be null
+ * The sticker is a mask in WEBP format to be placed on photos or videos @mask_position Position where the mask is placed; may be null.
  */
 class StickerFullTypeMask extends StickerFullType implements \JsonSerializable
 {

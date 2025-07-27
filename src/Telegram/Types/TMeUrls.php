@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of t.me URLs @urls List of URLs
+ * Contains a list of t.me URLs @urls List of URLs.
  */
 class TMeUrls implements \JsonSerializable
 {

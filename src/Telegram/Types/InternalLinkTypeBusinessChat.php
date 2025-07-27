@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a business chat. Use getBusinessChatLinkInfo with the provided link name to get information about the link,
+ * The link is a link to a business chat. Use getBusinessChatLinkInfo with the provided link name to get information about the link,.
  */
 class InternalLinkTypeBusinessChat extends InternalLinkType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class InternalLinkTypeBusinessChat extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Get Name of the link
+     * Get Name of the link.
      */
     public function getLinkName(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeBusinessChat extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Set Name of the link
+     * Set Name of the link.
      */
     public function setLinkName(string $linkName): self
     {

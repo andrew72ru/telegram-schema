@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat created a Telegram Premium gift code for a user
+ * The chat created a Telegram Premium gift code for a user.
  */
 class ChatBoostSourceGiftCode extends ChatBoostSource implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatBoostSourceGiftCode extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of a user, for which the gift code was created
+     * Get Identifier of a user, for which the gift code was created.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class ChatBoostSourceGiftCode extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of a user, for which the gift code was created
+     * Set Identifier of a user, for which the gift code was created.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class ChatBoostSourceGiftCode extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get The created Telegram Premium gift code, which is known only if this is a gift code for the current user, or it has already been claimed
+     * Get The created Telegram Premium gift code, which is known only if this is a gift code for the current user, or it has already been claimed.
      */
     public function getGiftCode(): string
     {
@@ -48,7 +48,7 @@ class ChatBoostSourceGiftCode extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set The created Telegram Premium gift code, which is known only if this is a gift code for the current user, or it has already been claimed
+     * Set The created Telegram Premium gift code, which is known only if this is a gift code for the current user, or it has already been claimed.
      */
     public function setGiftCode(string $giftCode): self
     {

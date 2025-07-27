@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An invoice for a payment toward Telegram; must not be used in the in-store apps @purpose Transaction purpose
+ * An invoice for a payment toward Telegram; must not be used in the in-store apps @purpose Transaction purpose.
  */
 class InputInvoiceTelegram extends InputInvoice implements \JsonSerializable
 {

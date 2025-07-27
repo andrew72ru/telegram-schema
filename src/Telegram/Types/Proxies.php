@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of proxy servers @proxies List of proxy servers
+ * Represents a list of proxy servers @proxies List of proxy servers.
  */
 class Proxies implements \JsonSerializable
 {

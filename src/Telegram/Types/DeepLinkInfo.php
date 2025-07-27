@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a tg: deep link @text Text to be shown to the user @need_update_application True, if the user must be asked to update the application
+ * Contains information about a tg: deep link @text Text to be shown to the user @need_update_application True, if the user must be asked to update the application.
  */
 class DeepLinkInfo implements \JsonSerializable
 {

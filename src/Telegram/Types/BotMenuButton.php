@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a button to be shown instead of bot commands menu button
+ * Describes a button to be shown instead of bot commands menu button.
  */
 class BotMenuButton implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BotMenuButton implements \JsonSerializable
     }
 
     /**
-     * Get Text of the button
+     * Get Text of the button.
      */
     public function getText(): string
     {
@@ -30,7 +30,7 @@ class BotMenuButton implements \JsonSerializable
     }
 
     /**
-     * Set Text of the button
+     * Set Text of the button.
      */
     public function setText(string $text): self
     {
@@ -40,7 +40,7 @@ class BotMenuButton implements \JsonSerializable
     }
 
     /**
-     * Get URL of a Web App to open when the button is pressed. If the link is of the type internalLinkTypeWebApp, then it must be processed accordingly. Otherwise, the link must be passed to openWebApp
+     * Get URL of a Web App to open when the button is pressed. If the link is of the type internalLinkTypeWebApp, then it must be processed accordingly. Otherwise, the link must be passed to openWebApp.
      */
     public function getUrl(): string
     {
@@ -48,7 +48,7 @@ class BotMenuButton implements \JsonSerializable
     }
 
     /**
-     * Set URL of a Web App to open when the button is pressed. If the link is of the type internalLinkTypeWebApp, then it must be processed accordingly. Otherwise, the link must be passed to openWebApp
+     * Set URL of a Web App to open when the button is pressed. If the link is of the type internalLinkTypeWebApp, then it must be processed accordingly. Otherwise, the link must be passed to openWebApp.
      */
     public function setUrl(string $url): self
     {

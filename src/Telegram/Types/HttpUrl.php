@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains an HTTP URL @url The URL
+ * Contains an HTTP URL @url The URL.
  */
 class HttpUrl implements \JsonSerializable
 {

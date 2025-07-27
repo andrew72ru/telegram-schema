@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for ChatMemberStatus types
+ * Abstract base class for ChatMemberStatus types.
  */
 abstract class ChatMemberStatus implements \JsonSerializable
 {

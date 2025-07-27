@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a video note. The video must be equal in width and height, cropped to a circle, and stored in MPEG4 format
+ * Describes a video note. The video must be equal in width and height, cropped to a circle, and stored in MPEG4 format.
  */
 class VideoNote implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the video, in seconds; as defined by the sender
+     * Get Duration of the video, in seconds; as defined by the sender.
      */
     public function getDuration(): int
     {
@@ -45,7 +45,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the video, in seconds; as defined by the sender
+     * Set Duration of the video, in seconds; as defined by the sender.
      */
     public function setDuration(int $duration): self
     {
@@ -55,7 +55,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get A waveform representation of the video note's audio in 5-bit format; may be empty if unknown
+     * Get A waveform representation of the video note's audio in 5-bit format; may be empty if unknown.
      */
     public function getWaveform(): string
     {
@@ -63,7 +63,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set A waveform representation of the video note's audio in 5-bit format; may be empty if unknown
+     * Set A waveform representation of the video note's audio in 5-bit format; may be empty if unknown.
      */
     public function setWaveform(string $waveform): self
     {
@@ -73,7 +73,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get Video width and height; as defined by the sender
+     * Get Video width and height; as defined by the sender.
      */
     public function getLength(): int
     {
@@ -81,7 +81,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set Video width and height; as defined by the sender
+     * Set Video width and height; as defined by the sender.
      */
     public function setLength(int $length): self
     {
@@ -91,7 +91,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get Video minithumbnail; may be null
+     * Get Video minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -99,7 +99,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set Video minithumbnail; may be null
+     * Set Video minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -109,7 +109,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get Video thumbnail in JPEG format; as defined by the sender; may be null
+     * Get Video thumbnail in JPEG format; as defined by the sender; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -117,7 +117,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set Video thumbnail in JPEG format; as defined by the sender; may be null
+     * Set Video thumbnail in JPEG format; as defined by the sender; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -127,7 +127,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get Result of speech recognition in the video note; may be null
+     * Get Result of speech recognition in the video note; may be null.
      */
     public function getSpeechRecognitionResult(): SpeechRecognitionResult|null
     {
@@ -135,7 +135,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set Result of speech recognition in the video note; may be null
+     * Set Result of speech recognition in the video note; may be null.
      */
     public function setSpeechRecognitionResult(SpeechRecognitionResult|null $speechRecognitionResult): self
     {
@@ -145,7 +145,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Get File containing the video
+     * Get File containing the video.
      */
     public function getVideo(): File|null
     {
@@ -153,7 +153,7 @@ class VideoNote implements \JsonSerializable
     }
 
     /**
-     * Set File containing the video
+     * Set File containing the video.
      */
     public function setVideo(File|null $video): self
     {

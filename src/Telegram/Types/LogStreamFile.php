@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The log is written to a file
+ * The log is written to a file.
  */
 class LogStreamFile extends LogStream implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class LogStreamFile extends LogStream implements \JsonSerializable
     }
 
     /**
-     * Get Path to the file to where the internal TDLib log will be written
+     * Get Path to the file to where the internal TDLib log will be written.
      */
     public function getPath(): string
     {
@@ -33,7 +33,7 @@ class LogStreamFile extends LogStream implements \JsonSerializable
     }
 
     /**
-     * Set Path to the file to where the internal TDLib log will be written
+     * Set Path to the file to where the internal TDLib log will be written.
      */
     public function setPath(string $path): self
     {
@@ -43,7 +43,7 @@ class LogStreamFile extends LogStream implements \JsonSerializable
     }
 
     /**
-     * Get The maximum size of the file to where the internal TDLib log is written before the file will automatically be rotated, in bytes
+     * Get The maximum size of the file to where the internal TDLib log is written before the file will automatically be rotated, in bytes.
      */
     public function getMaxFileSize(): int
     {
@@ -51,7 +51,7 @@ class LogStreamFile extends LogStream implements \JsonSerializable
     }
 
     /**
-     * Set The maximum size of the file to where the internal TDLib log is written before the file will automatically be rotated, in bytes
+     * Set The maximum size of the file to where the internal TDLib log is written before the file will automatically be rotated, in bytes.
      */
     public function setMaxFileSize(int $maxFileSize): self
     {
@@ -61,7 +61,7 @@ class LogStreamFile extends LogStream implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to additionally redirect stderr to the log file. Ignored on Windows
+     * Get Pass true to additionally redirect stderr to the log file. Ignored on Windows.
      */
     public function getRedirectStderr(): bool
     {
@@ -69,7 +69,7 @@ class LogStreamFile extends LogStream implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to additionally redirect stderr to the log file. Ignored on Windows
+     * Set Pass true to additionally redirect stderr to the log file. Ignored on Windows.
      */
     public function setRedirectStderr(bool $redirectStderr): self
     {

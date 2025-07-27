@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a link preview
+ * Describes a link preview.
  */
 class LinkPreview implements \JsonSerializable
 {
@@ -55,7 +55,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Original URL of the link
+     * Get Original URL of the link.
      */
     public function getUrl(): string
     {
@@ -63,7 +63,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Original URL of the link
+     * Set Original URL of the link.
      */
     public function setUrl(string $url): self
     {
@@ -73,7 +73,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get URL to display
+     * Get URL to display.
      */
     public function getDisplayUrl(): string
     {
@@ -81,7 +81,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set URL to display
+     * Set URL to display.
      */
     public function setDisplayUrl(string $displayUrl): self
     {
@@ -91,7 +91,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Short name of the site (e.g., Google Docs, App Store)
+     * Get Short name of the site (e.g., Google Docs, App Store).
      */
     public function getSiteName(): string
     {
@@ -99,7 +99,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Short name of the site (e.g., Google Docs, App Store)
+     * Set Short name of the site (e.g., Google Docs, App Store).
      */
     public function setSiteName(string $siteName): self
     {
@@ -109,7 +109,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Title of the content
+     * Get Title of the content.
      */
     public function getTitle(): string
     {
@@ -117,7 +117,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Title of the content
+     * Set Title of the content.
      */
     public function setTitle(string $title): self
     {
@@ -127,7 +127,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Describes a link preview
+     * Get Describes a link preview.
      */
     public function getDescription(): FormattedText|null
     {
@@ -135,7 +135,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Describes a link preview
+     * Set Describes a link preview.
      */
     public function setDescription(FormattedText|null $description): self
     {
@@ -145,7 +145,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Author of the content
+     * Get Author of the content.
      */
     public function getAuthor(): string
     {
@@ -153,7 +153,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Author of the content
+     * Set Author of the content.
      */
     public function setAuthor(string $author): self
     {
@@ -163,7 +163,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Type of the link preview
+     * Get Type of the link preview.
      */
     public function getType(): LinkPreviewType|null
     {
@@ -171,7 +171,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Type of the link preview
+     * Set Type of the link preview.
      */
     public function setType(LinkPreviewType|null $type): self
     {
@@ -181,7 +181,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get True, if size of media in the preview can be changed
+     * Get True, if size of media in the preview can be changed.
      */
     public function getHasLargeMedia(): bool
     {
@@ -189,7 +189,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set True, if size of media in the preview can be changed
+     * Set True, if size of media in the preview can be changed.
      */
     public function setHasLargeMedia(bool $hasLargeMedia): self
     {
@@ -199,7 +199,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get True, if large media preview must be shown; otherwise, the media preview must be shown small and only the first frame must be shown for videos
+     * Get True, if large media preview must be shown; otherwise, the media preview must be shown small and only the first frame must be shown for videos.
      */
     public function getShowLargeMedia(): bool
     {
@@ -207,7 +207,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set True, if large media preview must be shown; otherwise, the media preview must be shown small and only the first frame must be shown for videos
+     * Set True, if large media preview must be shown; otherwise, the media preview must be shown small and only the first frame must be shown for videos.
      */
     public function setShowLargeMedia(bool $showLargeMedia): self
     {
@@ -217,7 +217,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get True, if media must be shown above link preview description; otherwise, the media must be shown below the description
+     * Get True, if media must be shown above link preview description; otherwise, the media must be shown below the description.
      */
     public function getShowMediaAboveDescription(): bool
     {
@@ -225,7 +225,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set True, if media must be shown above link preview description; otherwise, the media must be shown below the description
+     * Set True, if media must be shown above link preview description; otherwise, the media must be shown below the description.
      */
     public function setShowMediaAboveDescription(bool $showMediaAboveDescription): self
     {
@@ -235,7 +235,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get True, if there is no need to show an ordinary open URL confirmation, when opening the URL from the preview, because the URL is shown in the message text in clear
+     * Get True, if there is no need to show an ordinary open URL confirmation, when opening the URL from the preview, because the URL is shown in the message text in clear.
      */
     public function getSkipConfirmation(): bool
     {
@@ -243,7 +243,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set True, if there is no need to show an ordinary open URL confirmation, when opening the URL from the preview, because the URL is shown in the message text in clear
+     * Set True, if there is no need to show an ordinary open URL confirmation, when opening the URL from the preview, because the URL is shown in the message text in clear.
      */
     public function setSkipConfirmation(bool $skipConfirmation): self
     {
@@ -253,7 +253,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link preview must be shown above message text; otherwise, the link preview must be shown below the message text
+     * Get True, if the link preview must be shown above message text; otherwise, the link preview must be shown below the message text.
      */
     public function getShowAboveText(): bool
     {
@@ -261,7 +261,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link preview must be shown above message text; otherwise, the link preview must be shown below the message text
+     * Set True, if the link preview must be shown above message text; otherwise, the link preview must be shown below the message text.
      */
     public function setShowAboveText(bool $showAboveText): self
     {
@@ -271,7 +271,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Get Version of instant view (currently, can be 1 or 2) for the web page; 0 if none
+     * Get Version of instant view (currently, can be 1 or 2) for the web page; 0 if none.
      */
     public function getInstantViewVersion(): int
     {
@@ -279,7 +279,7 @@ class LinkPreview implements \JsonSerializable
     }
 
     /**
-     * Set Version of instant view (currently, can be 1 or 2) for the web page; 0 if none
+     * Set Version of instant view (currently, can be 1 or 2) for the web page; 0 if none.
      */
     public function setInstantViewVersion(int $instantViewVersion): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An option changed its value @name The option name @value The new option value
+ * An option changed its value @name The option name @value The new option value.
  */
 class UpdateOption extends Update implements \JsonSerializable
 {

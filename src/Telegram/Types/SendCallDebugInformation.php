@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends debug information for a call to Telegram servers @call_id Call identifier @debug_information Debug information in application-specific format
+ * Sends debug information for a call to Telegram servers @call_id Call identifier @debug_information Debug information in application-specific format.
  */
 class SendCallDebugInformation extends Ok implements \JsonSerializable
 {

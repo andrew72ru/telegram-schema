@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Ends screen sharing in a joined group call @group_call_id Group call identifier
+ * Ends screen sharing in a joined group call @group_call_id Group call identifier.
  */
 class EndGroupCallScreenSharing extends Ok implements \JsonSerializable
 {

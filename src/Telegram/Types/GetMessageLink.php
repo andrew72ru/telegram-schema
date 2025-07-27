@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an HTTPS link to a message in a chat. Available only if messageProperties.can_get_link, or if messageProperties.can_get_media_timestamp_links and a media timestamp link is generated. This is an offline method
+ * Returns an HTTPS link to a message in a chat. Available only if messageProperties.can_get_link, or if messageProperties.can_get_media_timestamp_links and a media timestamp link is generated. This is an offline method.
  */
 class GetMessageLink extends MessageLink implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, timestamp from which the video/audio/video note/voice note/story playing must start, in seconds. The media can be in the message content or in its link preview
+     * Get If not 0, timestamp from which the video/audio/video note/voice note/story playing must start, in seconds. The media can be in the message content or in its link preview.
      */
     public function getMediaTimestamp(): int
     {
@@ -75,7 +75,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, timestamp from which the video/audio/video note/voice note/story playing must start, in seconds. The media can be in the message content or in its link preview
+     * Set If not 0, timestamp from which the video/audio/video note/voice note/story playing must start, in seconds. The media can be in the message content or in its link preview.
      */
     public function setMediaTimestamp(int $mediaTimestamp): self
     {
@@ -85,7 +85,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create a link for the whole media album
+     * Get Pass true to create a link for the whole media album.
      */
     public function getForAlbum(): bool
     {
@@ -93,7 +93,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create a link for the whole media album
+     * Set Pass true to create a link for the whole media album.
      */
     public function setForAlbum(bool $forAlbum): self
     {
@@ -103,7 +103,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create a link to the message as a channel post comment, in a message thread, or a forum topic
+     * Get Pass true to create a link to the message as a channel post comment, in a message thread, or a forum topic.
      */
     public function getInMessageThread(): bool
     {
@@ -111,7 +111,7 @@ class GetMessageLink extends MessageLink implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create a link to the message as a channel post comment, in a message thread, or a forum topic
+     * Set Pass true to create a link to the message as a channel post comment, in a message thread, or a forum topic.
      */
     public function setInMessageThread(bool $inMessageThread): self
     {

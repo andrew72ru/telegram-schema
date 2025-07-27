@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an RTMP URL @url The URL @stream_key Stream key
+ * Represents an RTMP URL @url The URL @stream_key Stream key.
  */
 class RtmpUrl implements \JsonSerializable
 {

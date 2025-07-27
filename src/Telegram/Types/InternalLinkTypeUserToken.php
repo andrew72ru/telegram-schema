@@ -19,7 +19,7 @@ class InternalLinkTypeUserToken extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Get The token
+     * Get The token.
      */
     public function getToken(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeUserToken extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Set The token
+     * Set The token.
      */
     public function setToken(string $token): self
     {

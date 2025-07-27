@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The ability to use tags in Saved Messages
+ * The ability to use tags in Saved Messages.
  */
 class PremiumFeatureSavedMessagesTags extends PremiumFeature implements \JsonSerializable
 {

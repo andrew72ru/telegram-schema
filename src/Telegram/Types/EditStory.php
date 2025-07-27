@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes content and caption of a story. Can be called only if story.can_be_edited == true
+ * Changes content and caption of a story. Can be called only if story.can_be_edited == true.
  */
 class EditStory extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -39,7 +39,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -49,7 +49,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story to edit
+     * Get Identifier of the story to edit.
      */
     public function getStoryId(): int
     {
@@ -57,7 +57,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story to edit
+     * Set Identifier of the story to edit.
      */
     public function setStoryId(int $storyId): self
     {
@@ -67,7 +67,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New content of the story; pass null to keep the current content
+     * Get New content of the story; pass null to keep the current content.
      */
     public function getContent(): InputStoryContent|null
     {
@@ -75,7 +75,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New content of the story; pass null to keep the current content
+     * Set New content of the story; pass null to keep the current content.
      */
     public function setContent(InputStoryContent|null $content): self
     {
@@ -85,7 +85,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New clickable rectangle areas to be shown on the story media; pass null to keep the current areas. Areas can't be edited if story content isn't changed
+     * Get New clickable rectangle areas to be shown on the story media; pass null to keep the current areas. Areas can't be edited if story content isn't changed.
      */
     public function getAreas(): InputStoryAreas|null
     {
@@ -93,7 +93,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New clickable rectangle areas to be shown on the story media; pass null to keep the current areas. Areas can't be edited if story content isn't changed
+     * Set New clickable rectangle areas to be shown on the story media; pass null to keep the current areas. Areas can't be edited if story content isn't changed.
      */
     public function setAreas(InputStoryAreas|null $areas): self
     {
@@ -103,7 +103,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New story caption; pass null to keep the current caption
+     * Get New story caption; pass null to keep the current caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -111,7 +111,7 @@ class EditStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New story caption; pass null to keep the current caption
+     * Set New story caption; pass null to keep the current caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {

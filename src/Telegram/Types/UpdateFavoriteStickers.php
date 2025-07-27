@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of favorite stickers was updated @sticker_ids The new list of file identifiers of favorite stickers
+ * The list of favorite stickers was updated @sticker_ids The new list of file identifiers of favorite stickers.
  */
 class UpdateFavoriteStickers extends Update implements \JsonSerializable
 {

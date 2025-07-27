@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A sticker on a custom background @sticker Information about the sticker
+ * A sticker on a custom background @sticker Information about the sticker.
  */
 class InputChatPhotoSticker extends InputChatPhoto implements \JsonSerializable
 {

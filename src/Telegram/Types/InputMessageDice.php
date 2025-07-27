@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A dice message @emoji Emoji on which the dice throw animation is based @clear_draft True, if the chat message draft must be deleted
+ * A dice message @emoji Emoji on which the dice throw animation is based @clear_draft True, if the chat message draft must be deleted.
  */
 class InputMessageDice extends InputMessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The story can be viewed by certain specified users @user_ids Identifiers of the users; always unknown and empty for non-owned stories
+ * The story can be viewed by certain specified users @user_ids Identifiers of the users; always unknown and empty for non-owned stories.
  */
 class StoryPrivacySettingsSelectedUsers extends StoryPrivacySettings implements \JsonSerializable
 {

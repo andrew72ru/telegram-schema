@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a code to verify an email address to be added to a user's Telegram Passport @email_address Email address
+ * Sends a code to verify an email address to be added to a user's Telegram Passport @email_address Email address.
  */
 class SendEmailAddressVerificationCode extends EmailAddressAuthenticationCodeInfo implements \JsonSerializable
 {

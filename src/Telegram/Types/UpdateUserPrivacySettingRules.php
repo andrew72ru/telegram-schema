@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some privacy setting rules have been changed @setting The privacy setting @rules New privacy rules
+ * Some privacy setting rules have been changed @setting The privacy setting @rules New privacy rules.
  */
 class UpdateUserPrivacySettingRules extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Blocks an original sender of a message in the Replies chat
+ * Blocks an original sender of a message in the Replies chat.
  */
 class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of an incoming message in the Replies chat
+     * Get The identifier of an incoming message in the Replies chat.
      */
     public function getMessageId(): int
     {
@@ -36,7 +36,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of an incoming message in the Replies chat
+     * Set The identifier of an incoming message in the Replies chat.
      */
     public function setMessageId(int $messageId): self
     {
@@ -46,7 +46,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete the message
+     * Get Pass true to delete the message.
      */
     public function getDeleteMessage(): bool
     {
@@ -54,7 +54,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete the message
+     * Set Pass true to delete the message.
      */
     public function setDeleteMessage(bool $deleteMessage): self
     {
@@ -64,7 +64,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete all messages from the same sender
+     * Get Pass true to delete all messages from the same sender.
      */
     public function getDeleteAllMessages(): bool
     {
@@ -72,7 +72,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete all messages from the same sender
+     * Set Pass true to delete all messages from the same sender.
      */
     public function setDeleteAllMessages(bool $deleteAllMessages): self
     {
@@ -82,7 +82,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to report the sender to the Telegram moderators
+     * Get Pass true to report the sender to the Telegram moderators.
      */
     public function getReportSpam(): bool
     {
@@ -90,7 +90,7 @@ class BlockMessageSenderFromReplies extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to report the sender to the Telegram moderators
+     * Set Pass true to report the sender to the Telegram moderators.
      */
     public function setReportSpam(bool $reportSpam): self
     {

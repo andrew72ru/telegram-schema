@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A username @username The username
+ * A username @username The username.
  */
 class CollectibleItemTypeUsername extends CollectibleItemType implements \JsonSerializable
 {

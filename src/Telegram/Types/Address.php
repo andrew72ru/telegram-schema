@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an address
+ * Describes an address.
  */
 class Address implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code
+     * Get A two-letter ISO 3166-1 alpha-2 country code.
      */
     public function getCountryCode(): string
     {
@@ -42,7 +42,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code
+     * Set A two-letter ISO 3166-1 alpha-2 country code.
      */
     public function setCountryCode(string $countryCode): self
     {
@@ -52,7 +52,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Get State, if applicable
+     * Get State, if applicable.
      */
     public function getState(): string
     {
@@ -60,7 +60,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Set State, if applicable
+     * Set State, if applicable.
      */
     public function setState(string $state): self
     {
@@ -70,7 +70,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Get City
+     * Get City.
      */
     public function getCity(): string
     {
@@ -78,7 +78,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Set City
+     * Set City.
      */
     public function setCity(string $city): self
     {
@@ -88,7 +88,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Get First line of the address
+     * Get First line of the address.
      */
     public function getStreetLine1(): string
     {
@@ -96,7 +96,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Set First line of the address
+     * Set First line of the address.
      */
     public function setStreetLine1(string $streetLine1): self
     {
@@ -106,7 +106,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Get Second line of the address
+     * Get Second line of the address.
      */
     public function getStreetLine2(): string
     {
@@ -114,7 +114,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Set Second line of the address
+     * Set Second line of the address.
      */
     public function setStreetLine2(string $streetLine2): self
     {
@@ -124,7 +124,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Get Address postal code
+     * Get Address postal code.
      */
     public function getPostalCode(): string
     {
@@ -132,7 +132,7 @@ class Address implements \JsonSerializable
     }
 
     /**
-     * Set Address postal code
+     * Set Address postal code.
      */
     public function setPostalCode(string $postalCode): self
     {

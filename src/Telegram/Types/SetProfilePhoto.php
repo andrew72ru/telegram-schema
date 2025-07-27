@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes a profile photo for the current user
+ * Changes a profile photo for the current user.
  */
 class SetProfilePhoto extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Profile photo to set
+     * Get Profile photo to set.
      */
     public function getPhoto(): InputChatPhoto|null
     {
@@ -30,7 +30,7 @@ class SetProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Profile photo to set
+     * Set Profile photo to set.
      */
     public function setPhoto(InputChatPhoto|null $photo): self
     {
@@ -40,7 +40,7 @@ class SetProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings
+     * Get Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings.
      */
     public function getIsPublic(): bool
     {
@@ -48,7 +48,7 @@ class SetProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings
+     * Set Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings.
      */
     public function setIsPublic(bool $isPublic): self
     {

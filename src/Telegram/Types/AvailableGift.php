@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a gift that is available for purchase
+ * Describes a gift that is available for purchase.
  */
 class AvailableGift implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Get The gift
+     * Get The gift.
      */
     public function getGift(): Gift|null
     {
@@ -36,7 +36,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Set The gift
+     * Set The gift.
      */
     public function setGift(Gift|null $gift): self
     {
@@ -46,7 +46,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Get Number of gifts that are available for resale
+     * Get Number of gifts that are available for resale.
      */
     public function getResaleCount(): int
     {
@@ -54,7 +54,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Set Number of gifts that are available for resale
+     * Set Number of gifts that are available for resale.
      */
     public function setResaleCount(int $resaleCount): self
     {
@@ -64,7 +64,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Get The minimum price for the gifts available for resale; 0 if there are no such gifts
+     * Get The minimum price for the gifts available for resale; 0 if there are no such gifts.
      */
     public function getMinResaleStarCount(): int
     {
@@ -72,7 +72,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Set The minimum price for the gifts available for resale; 0 if there are no such gifts
+     * Set The minimum price for the gifts available for resale; 0 if there are no such gifts.
      */
     public function setMinResaleStarCount(int $minResaleStarCount): self
     {
@@ -82,7 +82,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Get The title of the upgraded gift; empty if the gift isn't available for resale
+     * Get The title of the upgraded gift; empty if the gift isn't available for resale.
      */
     public function getTitle(): string
     {
@@ -90,7 +90,7 @@ class AvailableGift implements \JsonSerializable
     }
 
     /**
-     * Set The title of the upgraded gift; empty if the gift isn't available for resale
+     * Set The title of the upgraded gift; empty if the gift isn't available for resale.
      */
     public function setTitle(string $title): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link contains a message draft text. A share screen needs to be shown to the user, then the chosen chat must be opened and the text is added to the input field
+ * The link contains a message draft text. A share screen needs to be shown to the user, then the chosen chat must be opened and the text is added to the input field.
  */
 class InternalLinkTypeMessageDraft extends InternalLinkType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InternalLinkTypeMessageDraft extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Get Message draft text
+     * Get Message draft text.
      */
     public function getText(): FormattedText|null
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeMessageDraft extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Set Message draft text
+     * Set Message draft text.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeMessageDraft extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Get True, if the first line of the text contains a link. If true, the input field needs to be focused and the text after the link must be selected
+     * Get True, if the first line of the text contains a link. If true, the input field needs to be focused and the text after the link must be selected.
      */
     public function getContainsLink(): bool
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeMessageDraft extends InternalLinkType implements \JsonSeri
     }
 
     /**
-     * Set True, if the first line of the text contains a link. If true, the input field needs to be focused and the text after the link must be selected
+     * Set True, if the first line of the text contains a link. If true, the input field needs to be focused and the text after the link must be selected.
      */
     public function setContainsLink(bool $containsLink): self
     {

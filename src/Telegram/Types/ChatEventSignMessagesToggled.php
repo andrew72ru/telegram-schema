@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The sign_messages setting of a channel was toggled @sign_messages New value of sign_messages
+ * The sign_messages setting of a channel was toggled @sign_messages New value of sign_messages.
  */
 class ChatEventSignMessagesToggled extends ChatEventAction implements \JsonSerializable
 {

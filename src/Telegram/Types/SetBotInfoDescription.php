@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the text shown in the chat with a bot if the chat is empty. Can be called only if userTypeBot.can_be_edited == true
+ * Sets the text shown in the chat with a bot if the chat is empty. Can be called only if userTypeBot.can_be_edited == true.
  */
 class SetBotInfoDescription extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetBotInfoDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SetBotInfoDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SetBotInfoDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code. If empty, the description will be shown to all users for whose languages there is no dedicated description
+     * Get A two-letter ISO 639-1 language code. If empty, the description will be shown to all users for whose languages there is no dedicated description.
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class SetBotInfoDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code. If empty, the description will be shown to all users for whose languages there is no dedicated description
+     * Set A two-letter ISO 639-1 language code. If empty, the description will be shown to all users for whose languages there is no dedicated description.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class SetBotInfoDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sets the text shown in the chat with a bot if the chat is empty. Can be called only if userTypeBot.can_be_edited == true
+     * Get Sets the text shown in the chat with a bot if the chat is empty. Can be called only if userTypeBot.can_be_edited == true.
      */
     public function getDescription(): string
     {
@@ -69,7 +69,7 @@ class SetBotInfoDescription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sets the text shown in the chat with a bot if the chat is empty. Can be called only if userTypeBot.can_be_edited == true
+     * Set Sets the text shown in the chat with a bot if the chat is empty. Can be called only if userTypeBot.can_be_edited == true.
      */
     public function setDescription(string $description): self
     {

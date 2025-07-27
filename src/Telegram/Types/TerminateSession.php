@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Terminates a session of the current user @session_id Session identifier
+ * Terminates a session of the current user @session_id Session identifier.
  */
 class TerminateSession extends Ok implements \JsonSerializable
 {

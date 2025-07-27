@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Traverse all chats in a chat list and marks all messages in the chats as read @chat_list Chat list in which to mark all chats as read
+ * Traverse all chats in a chat list and marks all messages in the chats as read @chat_list Chat list in which to mark all chats as read.
  */
 class ReadChatList extends Ok implements \JsonSerializable
 {

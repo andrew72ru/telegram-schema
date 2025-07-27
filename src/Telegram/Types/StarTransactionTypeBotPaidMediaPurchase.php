@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a purchase of paid media from a bot or a business account by the current user; for regular users only
+ * The transaction is a purchase of paid media from a bot or a business account by the current user; for regular users only.
  */
 class StarTransactionTypeBotPaidMediaPurchase extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeBotPaidMediaPurchase extends StarTransactionType implem
     }
 
     /**
-     * Get Identifier of the bot or the business account user that sent the paid media
+     * Get Identifier of the bot or the business account user that sent the paid media.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeBotPaidMediaPurchase extends StarTransactionType implem
     }
 
     /**
-     * Set Identifier of the bot or the business account user that sent the paid media
+     * Set Identifier of the bot or the business account user that sent the paid media.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeBotPaidMediaPurchase extends StarTransactionType implem
     }
 
     /**
-     * Get The bought media if the transaction wasn't refunded
+     * Get The bought media if the transaction wasn't refunded.
      */
     public function getMedia(): array|null
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeBotPaidMediaPurchase extends StarTransactionType implem
     }
 
     /**
-     * Set The bought media if the transaction wasn't refunded
+     * Set The bought media if the transaction wasn't refunded.
      */
     public function setMedia(array|null $media): self
     {

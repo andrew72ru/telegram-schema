@@ -28,7 +28,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the poster of the story
+     * Get The identifier of the poster of the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -36,7 +36,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the poster of the story
+     * Set The identifier of the poster of the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -46,7 +46,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the story
+     * Get The identifier of the story.
      */
     public function getStoryId(): int
     {
@@ -54,7 +54,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the story
+     * Set The identifier of the story.
      */
     public function setStoryId(int $storyId): self
     {
@@ -64,7 +64,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -72,7 +72,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -82,7 +82,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages and stories to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of messages and stories to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -90,7 +90,7 @@ class GetStoryPublicForwards extends PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages and stories to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of messages and stories to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

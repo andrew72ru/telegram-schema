@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * TDLib needs the user's authentication code sent to an email address to authorize. Call checkAuthenticationEmailCode to provide the code
+ * TDLib needs the user's authentication code sent to an email address to authorize. Call checkAuthenticationEmailCode to provide the code.
  */
 class AuthorizationStateWaitEmailCode extends AuthorizationState implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Get True, if authorization through Apple ID is allowed
+     * Get True, if authorization through Apple ID is allowed.
      */
     public function getAllowAppleId(): bool
     {
@@ -36,7 +36,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Set True, if authorization through Apple ID is allowed
+     * Set True, if authorization through Apple ID is allowed.
      */
     public function setAllowAppleId(bool $allowAppleId): self
     {
@@ -46,7 +46,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Get True, if authorization through Google ID is allowed
+     * Get True, if authorization through Google ID is allowed.
      */
     public function getAllowGoogleId(): bool
     {
@@ -54,7 +54,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Set True, if authorization through Google ID is allowed
+     * Set True, if authorization through Google ID is allowed.
      */
     public function setAllowGoogleId(bool $allowGoogleId): self
     {
@@ -64,7 +64,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Get Information about the sent authentication code
+     * Get Information about the sent authentication code.
      */
     public function getCodeInfo(): EmailAddressAuthenticationCodeInfo|null
     {
@@ -72,7 +72,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Set Information about the sent authentication code
+     * Set Information about the sent authentication code.
      */
     public function setCodeInfo(EmailAddressAuthenticationCodeInfo|null $codeInfo): self
     {
@@ -82,7 +82,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Get Reset state of the email address; may be null if the email address can't be reset
+     * Get Reset state of the email address; may be null if the email address can't be reset.
      */
     public function getEmailAddressResetState(): EmailAddressResetState|null
     {
@@ -90,7 +90,7 @@ class AuthorizationStateWaitEmailCode extends AuthorizationState implements \Jso
     }
 
     /**
-     * Set Reset state of the email address; may be null if the email address can't be reset
+     * Set Reset state of the email address; may be null if the email address can't be reset.
      */
     public function setEmailAddressResetState(EmailAddressResetState|null $emailAddressResetState): self
     {

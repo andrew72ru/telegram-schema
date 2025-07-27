@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a business chat link of the current account @link The link to delete
+ * Deletes a business chat link of the current account @see The link to delete.
  */
 class DeleteBusinessChatLink extends Ok implements \JsonSerializable
 {

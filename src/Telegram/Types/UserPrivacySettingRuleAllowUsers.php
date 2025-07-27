@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A rule to allow certain specified users to do something @user_ids The user identifiers, total number of users in all rules must not exceed 1000
+ * A rule to allow certain specified users to do something @user_ids The user identifiers, total number of users in all rules must not exceed 1000.
  */
 class UserPrivacySettingRuleAllowUsers extends UserPrivacySettingRule implements \JsonSerializable
 {

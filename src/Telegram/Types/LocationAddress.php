@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an address of a location
+ * Describes an address of a location.
  */
 class LocationAddress implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code
+     * Get A two-letter ISO 3166-1 alpha-2 country code.
      */
     public function getCountryCode(): string
     {
@@ -36,7 +36,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code
+     * Set A two-letter ISO 3166-1 alpha-2 country code.
      */
     public function setCountryCode(string $countryCode): self
     {
@@ -46,7 +46,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Get State, if applicable; empty if unknown
+     * Get State, if applicable; empty if unknown.
      */
     public function getState(): string
     {
@@ -54,7 +54,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Set State, if applicable; empty if unknown
+     * Set State, if applicable; empty if unknown.
      */
     public function setState(string $state): self
     {
@@ -64,7 +64,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Get City; empty if unknown
+     * Get City; empty if unknown.
      */
     public function getCity(): string
     {
@@ -72,7 +72,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Set City; empty if unknown
+     * Set City; empty if unknown.
      */
     public function setCity(string $city): self
     {
@@ -82,7 +82,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Get The address; empty if unknown
+     * Get The address; empty if unknown.
      */
     public function getStreet(): string
     {
@@ -90,7 +90,7 @@ class LocationAddress implements \JsonSerializable
     }
 
     /**
-     * Set The address; empty if unknown
+     * Set The address; empty if unknown.
      */
     public function setStreet(string $street): self
     {

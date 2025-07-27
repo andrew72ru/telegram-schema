@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a giveaway
+ * Returns information about a giveaway.
  */
 class GetGiveawayInfo extends GiveawayInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetGiveawayInfo extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the channel chat which started the giveaway
+     * Get Identifier of the channel chat which started the giveaway.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetGiveawayInfo extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the channel chat which started the giveaway
+     * Set Identifier of the channel chat which started the giveaway.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetGiveawayInfo extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the giveaway or a giveaway winners message in the chat
+     * Get Identifier of the giveaway or a giveaway winners message in the chat.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class GetGiveawayInfo extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the giveaway or a giveaway winners message in the chat
+     * Set Identifier of the giveaway or a giveaway winners message in the chat.
      */
     public function setMessageId(int $messageId): self
     {

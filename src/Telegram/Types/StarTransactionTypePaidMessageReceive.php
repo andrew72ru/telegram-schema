@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a receiving of a paid message; for regular users, supergroup and channel chats only
+ * The transaction is a receiving of a paid message; for regular users, supergroup and channel chats only.
  */
 class StarTransactionTypePaidMessageReceive extends StarTransactionType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Get Identifier of the sender of the message
+     * Get Identifier of the sender of the message.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -36,7 +36,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Set Identifier of the sender of the message
+     * Set Identifier of the sender of the message.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -46,7 +46,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Get Number of received paid messages
+     * Get Number of received paid messages.
      */
     public function getMessageCount(): int
     {
@@ -54,7 +54,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Set Number of received paid messages
+     * Set Number of received paid messages.
      */
     public function setMessageCount(int $messageCount): self
     {
@@ -64,7 +64,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Get The number of Telegram Stars received by the Telegram for each 1000 Telegram Stars paid for message sending
+     * Get The number of Telegram Stars received by the Telegram for each 1000 Telegram Stars paid for message sending.
      */
     public function getCommissionPerMille(): int
     {
@@ -72,7 +72,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Set The number of Telegram Stars received by the Telegram for each 1000 Telegram Stars paid for message sending
+     * Set The number of Telegram Stars received by the Telegram for each 1000 Telegram Stars paid for message sending.
      */
     public function setCommissionPerMille(int $commissionPerMille): self
     {
@@ -82,7 +82,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Get The amount of Telegram Stars that were received by Telegram; can be negative for refunds
+     * Get The amount of Telegram Stars that were received by Telegram; can be negative for refunds.
      */
     public function getCommissionStarAmount(): StarAmount|null
     {
@@ -90,7 +90,7 @@ class StarTransactionTypePaidMessageReceive extends StarTransactionType implemen
     }
 
     /**
-     * Set The amount of Telegram Stars that were received by Telegram; can be negative for refunds
+     * Set The amount of Telegram Stars that were received by Telegram; can be negative for refunds.
      */
     public function setCommissionStarAmount(StarAmount|null $commissionStarAmount): self
     {

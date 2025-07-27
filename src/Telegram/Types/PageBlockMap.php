@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A map
+ * A map.
  */
 class PageBlockMap extends PageBlock implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Location of the map center
+     * Get Location of the map center.
      */
     public function getLocation(): Location|null
     {
@@ -39,7 +39,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Location of the map center
+     * Set Location of the map center.
      */
     public function setLocation(Location|null $location): self
     {
@@ -49,7 +49,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Map zoom level
+     * Get Map zoom level.
      */
     public function getZoom(): int
     {
@@ -57,7 +57,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Map zoom level
+     * Set Map zoom level.
      */
     public function setZoom(int $zoom): self
     {
@@ -67,7 +67,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Map width
+     * Get Map width.
      */
     public function getWidth(): int
     {
@@ -75,7 +75,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Map width
+     * Set Map width.
      */
     public function setWidth(int $width): self
     {
@@ -85,7 +85,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Map height
+     * Get Map height.
      */
     public function getHeight(): int
     {
@@ -93,7 +93,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Map height
+     * Set Map height.
      */
     public function setHeight(int $height): self
     {
@@ -103,7 +103,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block caption
+     * Get Block caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -111,7 +111,7 @@ class PageBlockMap extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block caption
+     * Set Block caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {

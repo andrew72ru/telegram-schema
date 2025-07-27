@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message was originally sent by a user, which is hidden by their privacy settings @sender_name Name of the sender
+ * The message was originally sent by a user, which is hidden by their privacy settings @sender_name Name of the sender.
  */
 class MessageOriginHiddenUser extends MessageOrigin implements \JsonSerializable
 {

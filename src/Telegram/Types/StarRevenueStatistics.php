@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A detailed statistics about Telegram Stars earned by a bot or a chat
+ * A detailed statistics about Telegram Stars earned by a bot or a chat.
  */
 class StarRevenueStatistics implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing amount of revenue in a given day
+     * Get A graph containing amount of revenue in a given day.
      */
     public function getRevenueByDayGraph(): StatisticalGraph|null
     {
@@ -33,7 +33,7 @@ class StarRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing amount of revenue in a given day
+     * Set A graph containing amount of revenue in a given day.
      */
     public function setRevenueByDayGraph(StatisticalGraph|null $revenueByDayGraph): self
     {
@@ -43,7 +43,7 @@ class StarRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Telegram Star revenue status
+     * Get Telegram Star revenue status.
      */
     public function getStatus(): StarRevenueStatus|null
     {
@@ -51,7 +51,7 @@ class StarRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Telegram Star revenue status
+     * Set Telegram Star revenue status.
      */
     public function setStatus(StarRevenueStatus|null $status): self
     {
@@ -61,7 +61,7 @@ class StarRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Current conversion rate of a Telegram Star to USD
+     * Get Current conversion rate of a Telegram Star to USD.
      */
     public function getUsdRate(): float
     {
@@ -69,7 +69,7 @@ class StarRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Current conversion rate of a Telegram Star to USD
+     * Set Current conversion rate of a Telegram Star to USD.
      */
     public function setUsdRate(float $usdRate): self
     {

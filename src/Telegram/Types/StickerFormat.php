@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for StickerFormat types
+ * Abstract base class for StickerFormat types.
  */
 abstract class StickerFormat implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat background was changed @old_background Previous background; may be null if none @new_background New background; may be null if none
+ * The chat background was changed @old_background Previous background; may be null if none @new_background New background; may be null if none.
  */
 class ChatEventBackgroundChanged extends ChatEventAction implements \JsonSerializable
 {

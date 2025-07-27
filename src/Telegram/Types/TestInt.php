@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A simple object containing a number; for testing only @value Number
+ * A simple object containing a number; for testing only @value Number.
  */
 class TestInt implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a user contact
+ * Represents a user contact.
  */
 class InlineQueryResultContact extends InlineQueryResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InlineQueryResultContact extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class InlineQueryResultContact extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class InlineQueryResultContact extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get A user contact
+     * Get A user contact.
      */
     public function getContact(): Contact|null
     {
@@ -51,7 +51,7 @@ class InlineQueryResultContact extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set A user contact
+     * Set A user contact.
      */
     public function setContact(Contact|null $contact): self
     {
@@ -61,7 +61,7 @@ class InlineQueryResultContact extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Result thumbnail in JPEG format; may be null
+     * Get Result thumbnail in JPEG format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -69,7 +69,7 @@ class InlineQueryResultContact extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Result thumbnail in JPEG format; may be null
+     * Set Result thumbnail in JPEG format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {

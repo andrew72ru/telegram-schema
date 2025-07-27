@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A newly created video chat @group_call_id Identifier of the video chat. The video chat can be received through the method getGroupCall
+ * A newly created video chat @group_call_id Identifier of the video chat. The video chat can be received through the method getGroupCall.
  */
 class MessageVideoChatStarted extends MessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a call rating
+ * Sends a call rating.
  */
 class SendCallRating extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Call identifier
+     * Get Call identifier.
      */
     public function getCallId(): int
     {
@@ -36,7 +36,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Call identifier
+     * Set Call identifier.
      */
     public function setCallId(int $callId): self
     {
@@ -46,7 +46,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Call rating; 1-5
+     * Get Call rating; 1-5.
      */
     public function getRating(): int
     {
@@ -54,7 +54,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Call rating; 1-5
+     * Set Call rating; 1-5.
      */
     public function setRating(int $rating): self
     {
@@ -64,7 +64,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get An optional user comment if the rating is less than 5
+     * Get An optional user comment if the rating is less than 5.
      */
     public function getComment(): string
     {
@@ -72,7 +72,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set An optional user comment if the rating is less than 5
+     * Set An optional user comment if the rating is less than 5.
      */
     public function setComment(string $comment): self
     {
@@ -82,7 +82,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get List of the exact types of problems with the call, specified by the user
+     * Get List of the exact types of problems with the call, specified by the user.
      */
     public function getProblems(): array|null
     {
@@ -90,7 +90,7 @@ class SendCallRating extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set List of the exact types of problems with the call, specified by the user
+     * Set List of the exact types of problems with the call, specified by the user.
      */
     public function setProblems(array|null $problems): self
     {

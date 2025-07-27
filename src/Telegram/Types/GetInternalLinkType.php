@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about the type of internal link. Returns a 404 error if the link is not internal. Can be called before authorization @link The link
+ * Returns information about the type of internal link. Returns a 404 error if the link is not internal. Can be called before authorization @see The link.
  */
 class GetInternalLinkType extends InternalLinkType implements \JsonSerializable
 {

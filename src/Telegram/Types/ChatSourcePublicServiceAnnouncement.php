@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat contains a public service announcement @type The type of the announcement @text The text of the announcement
+ * The chat contains a public service announcement @var The type of the announcement @text The text of the announcement.
  */
 class ChatSourcePublicServiceAnnouncement extends ChatSource implements \JsonSerializable
 {

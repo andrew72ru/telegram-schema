@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a group of notifications
+ * Describes a group of notifications.
  */
 class NotificationGroup implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Get Unique persistent auto-incremented from 1 identifier of the notification group
+     * Get Unique persistent auto-incremented from 1 identifier of the notification group.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Set Unique persistent auto-incremented from 1 identifier of the notification group
+     * Set Unique persistent auto-incremented from 1 identifier of the notification group.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Get Type of the group
+     * Get Type of the group.
      */
     public function getType(): NotificationGroupType|null
     {
@@ -57,7 +57,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Set Type of the group
+     * Set Type of the group.
      */
     public function setType(NotificationGroupType|null $type): self
     {
@@ -67,7 +67,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat to which all notifications in the group belong
+     * Get Identifier of a chat to which all notifications in the group belong.
      */
     public function getChatId(): int
     {
@@ -75,7 +75,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat to which all notifications in the group belong
+     * Set Identifier of a chat to which all notifications in the group belong.
      */
     public function setChatId(int $chatId): self
     {
@@ -85,7 +85,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Get Total number of active notifications in the group
+     * Get Total number of active notifications in the group.
      */
     public function getTotalCount(): int
     {
@@ -93,7 +93,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Set Total number of active notifications in the group
+     * Set Total number of active notifications in the group.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -103,7 +103,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Get The list of active notifications
+     * Get The list of active notifications.
      */
     public function getNotifications(): array|null
     {
@@ -111,7 +111,7 @@ class NotificationGroup implements \JsonSerializable
     }
 
     /**
-     * Set The list of active notifications
+     * Set The list of active notifications.
      */
     public function setNotifications(array|null $notifications): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Number of chats in a story list has changed @story_list The story list @chat_count Approximate total number of chats with active stories in the list
+ * Number of chats in a story list has changed @story_list The story list @chat_count Approximate total number of chats with active stories in the list.
  */
 class UpdateStoryListChatCount extends Update implements \JsonSerializable
 {

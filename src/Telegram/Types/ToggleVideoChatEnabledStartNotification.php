@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether the current user will receive a notification when the video chat starts; for scheduled video chats only
+ * Toggles whether the current user will receive a notification when the video chat starts; for scheduled video chats only.
  */
 class ToggleVideoChatEnabledStartNotification extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleVideoChatEnabledStartNotification extends Ok implements \JsonSeriali
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class ToggleVideoChatEnabledStartNotification extends Ok implements \JsonSeriali
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class ToggleVideoChatEnabledStartNotification extends Ok implements \JsonSeriali
     }
 
     /**
-     * Get New value of the enabled_start_notification setting
+     * Get New value of the enabled_start_notification setting.
      */
     public function getEnabledStartNotification(): bool
     {
@@ -48,7 +48,7 @@ class ToggleVideoChatEnabledStartNotification extends Ok implements \JsonSeriali
     }
 
     /**
-     * Set New value of the enabled_start_notification setting
+     * Set New value of the enabled_start_notification setting.
      */
     public function setEnabledStartNotification(bool $enabledStartNotification): self
     {

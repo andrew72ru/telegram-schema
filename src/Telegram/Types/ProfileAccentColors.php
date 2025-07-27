@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about supported accent colors for user profile photo background in RGB format
+ * Contains information about supported accent colors for user profile photo background in RGB format.
  */
 class ProfileAccentColors implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ProfileAccentColors implements \JsonSerializable
     }
 
     /**
-     * Get The list of 1-2 colors in RGB format, describing the colors, as expected to be shown in the color palette settings
+     * Get The list of 1-2 colors in RGB format, describing the colors, as expected to be shown in the color palette settings.
      */
     public function getPaletteColors(): array|null
     {
@@ -33,7 +33,7 @@ class ProfileAccentColors implements \JsonSerializable
     }
 
     /**
-     * Set The list of 1-2 colors in RGB format, describing the colors, as expected to be shown in the color palette settings
+     * Set The list of 1-2 colors in RGB format, describing the colors, as expected to be shown in the color palette settings.
      */
     public function setPaletteColors(array|null $paletteColors): self
     {
@@ -43,7 +43,7 @@ class ProfileAccentColors implements \JsonSerializable
     }
 
     /**
-     * Get The list of 1-2 colors in RGB format, describing the colors, as expected to be used for the profile photo background
+     * Get The list of 1-2 colors in RGB format, describing the colors, as expected to be used for the profile photo background.
      */
     public function getBackgroundColors(): array|null
     {
@@ -51,7 +51,7 @@ class ProfileAccentColors implements \JsonSerializable
     }
 
     /**
-     * Set The list of 1-2 colors in RGB format, describing the colors, as expected to be used for the profile photo background
+     * Set The list of 1-2 colors in RGB format, describing the colors, as expected to be used for the profile photo background.
      */
     public function setBackgroundColors(array|null $backgroundColors): self
     {
@@ -61,7 +61,7 @@ class ProfileAccentColors implements \JsonSerializable
     }
 
     /**
-     * Get The list of 2 colors in RGB format, describing the colors of the gradient to be used for the unread active story indicator around profile photo
+     * Get The list of 2 colors in RGB format, describing the colors of the gradient to be used for the unread active story indicator around profile photo.
      */
     public function getStoryColors(): array|null
     {
@@ -69,7 +69,7 @@ class ProfileAccentColors implements \JsonSerializable
     }
 
     /**
-     * Set The list of 2 colors in RGB format, describing the colors of the gradient to be used for the unread active story indicator around profile photo
+     * Set The list of 2 colors in RGB format, describing the colors of the gradient to be used for the unread active story indicator around profile photo.
      */
     public function setStoryColors(array|null $storyColors): self
     {

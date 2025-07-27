@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents the results of the inline query. Use sendInlineQueryResultMessage to send the result of the query
+ * Represents the results of the inline query. Use sendInlineQueryResultMessage to send the result of the query.
  */
 class InlineQueryResults implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the inline query
+     * Get Unique identifier of the inline query.
      */
     public function getInlineQueryId(): int
     {
@@ -36,7 +36,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the inline query
+     * Set Unique identifier of the inline query.
      */
     public function setInlineQueryId(int $inlineQueryId): self
     {
@@ -46,7 +46,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Get Button to be shown above inline query results; may be null
+     * Get Button to be shown above inline query results; may be null.
      */
     public function getButton(): InlineQueryResultsButton|null
     {
@@ -54,7 +54,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Set Button to be shown above inline query results; may be null
+     * Set Button to be shown above inline query results; may be null.
      */
     public function setButton(InlineQueryResultsButton|null $button): self
     {
@@ -64,7 +64,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Get Results of the query
+     * Get Results of the query.
      */
     public function getResults(): array|null
     {
@@ -72,7 +72,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Set Results of the query
+     * Set Results of the query.
      */
     public function setResults(array|null $results): self
     {
@@ -82,7 +82,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -90,7 +90,7 @@ class InlineQueryResults implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

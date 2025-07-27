@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with an invoice; can be used only by bots
+ * A message with an invoice; can be used only by bots.
  */
 class InputMessageInvoice extends InputMessageContent implements \JsonSerializable
 {
@@ -55,7 +55,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Invoice
+     * Get Invoice.
      */
     public function getInvoice(): Invoice|null
     {
@@ -63,7 +63,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Invoice
+     * Set Invoice.
      */
     public function setInvoice(Invoice|null $invoice): self
     {
@@ -73,7 +73,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Product title; 1-32 characters
+     * Get Product title; 1-32 characters.
      */
     public function getTitle(): string
     {
@@ -81,7 +81,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Product title; 1-32 characters
+     * Set Product title; 1-32 characters.
      */
     public function setTitle(string $title): self
     {
@@ -91,7 +91,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get A message with an invoice; can be used only by bots
+     * Get A message with an invoice; can be used only by bots.
      */
     public function getDescription(): string
     {
@@ -99,7 +99,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set A message with an invoice; can be used only by bots
+     * Set A message with an invoice; can be used only by bots.
      */
     public function setDescription(string $description): self
     {
@@ -109,7 +109,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Product photo URL; optional
+     * Get Product photo URL; optional.
      */
     public function getPhotoUrl(): string
     {
@@ -117,7 +117,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Product photo URL; optional
+     * Set Product photo URL; optional.
      */
     public function setPhotoUrl(string $photoUrl): self
     {
@@ -127,7 +127,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Product photo size
+     * Get Product photo size.
      */
     public function getPhotoSize(): int
     {
@@ -135,7 +135,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Product photo size
+     * Set Product photo size.
      */
     public function setPhotoSize(int $photoSize): self
     {
@@ -145,7 +145,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Product photo width
+     * Get Product photo width.
      */
     public function getPhotoWidth(): int
     {
@@ -153,7 +153,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Product photo width
+     * Set Product photo width.
      */
     public function setPhotoWidth(int $photoWidth): self
     {
@@ -163,7 +163,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Product photo height
+     * Get Product photo height.
      */
     public function getPhotoHeight(): int
     {
@@ -171,7 +171,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Product photo height
+     * Set Product photo height.
      */
     public function setPhotoHeight(int $photoHeight): self
     {
@@ -181,7 +181,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get The invoice payload
+     * Get The invoice payload.
      */
     public function getPayload(): string
     {
@@ -189,7 +189,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set The invoice payload
+     * Set The invoice payload.
      */
     public function setPayload(string $payload): self
     {
@@ -199,7 +199,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Payment provider token; may be empty for payments in Telegram Stars
+     * Get Payment provider token; may be empty for payments in Telegram Stars.
      */
     public function getProviderToken(): string
     {
@@ -207,7 +207,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Payment provider token; may be empty for payments in Telegram Stars
+     * Set Payment provider token; may be empty for payments in Telegram Stars.
      */
     public function setProviderToken(string $providerToken): self
     {
@@ -217,7 +217,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get JSON-encoded data about the invoice, which will be shared with the payment provider
+     * Get JSON-encoded data about the invoice, which will be shared with the payment provider.
      */
     public function getProviderData(): string
     {
@@ -225,7 +225,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set JSON-encoded data about the invoice, which will be shared with the payment provider
+     * Set JSON-encoded data about the invoice, which will be shared with the payment provider.
      */
     public function setProviderData(string $providerData): self
     {
@@ -235,7 +235,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Unique invoice bot deep link parameter for the generation of this invoice. If empty, it would be possible to pay directly from forwards of the invoice message
+     * Get Unique invoice bot deep link parameter for the generation of this invoice. If empty, it would be possible to pay directly from forwards of the invoice message.
      */
     public function getStartParameter(): string
     {
@@ -243,7 +243,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Unique invoice bot deep link parameter for the generation of this invoice. If empty, it would be possible to pay directly from forwards of the invoice message
+     * Set Unique invoice bot deep link parameter for the generation of this invoice. If empty, it would be possible to pay directly from forwards of the invoice message.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -253,7 +253,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get The content of paid media attached to the invoice; pass null if none
+     * Get The content of paid media attached to the invoice; pass null if none.
      */
     public function getPaidMedia(): InputPaidMedia|null
     {
@@ -261,7 +261,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set The content of paid media attached to the invoice; pass null if none
+     * Set The content of paid media attached to the invoice; pass null if none.
      */
     public function setPaidMedia(InputPaidMedia|null $paidMedia): self
     {
@@ -271,7 +271,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Paid media caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Paid media caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getPaidMediaCaption(): FormattedText|null
     {
@@ -279,7 +279,7 @@ class InputMessageInvoice extends InputMessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Paid media caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Paid media caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setPaidMediaCaption(FormattedText|null $paidMediaCaption): self
     {

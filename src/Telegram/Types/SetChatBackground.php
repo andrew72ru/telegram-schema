@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the background in a specific chat. Supported only in private and secret chats with non-deleted users, and in chats with sufficient boost level and can_change_info administrator right
+ * Sets the background in a specific chat. Supported only in private and secret chats with non-deleted users, and in chats with sufficient boost level and can_change_info administrator right.
  */
 class SetChatBackground extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The input background to use; pass null to create a new filled or chat theme background
+     * Get The input background to use; pass null to create a new filled or chat theme background.
      */
     public function getBackground(): InputBackground|null
     {
@@ -57,7 +57,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The input background to use; pass null to create a new filled or chat theme background
+     * Set The input background to use; pass null to create a new filled or chat theme background.
      */
     public function setBackground(InputBackground|null $background): self
     {
@@ -67,7 +67,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Background type; pass null to use default background type for the chosen background; backgroundTypeChatTheme isn't supported for private and secret chats.
+     * Get Background type; pass null to use default background type for the chosen background; backgroundTypeChatTheme isn't supported for private and secret chats..
      */
     public function getType(): BackgroundType|null
     {
@@ -75,7 +75,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Background type; pass null to use default background type for the chosen background; backgroundTypeChatTheme isn't supported for private and secret chats.
+     * Set Background type; pass null to use default background type for the chosen background; backgroundTypeChatTheme isn't supported for private and secret chats..
      */
     public function setType(BackgroundType|null $type): self
     {
@@ -85,7 +85,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Dimming of the background in dark themes, as a percentage; 0-100. Applied only to Wallpaper and Fill types of background
+     * Get Dimming of the background in dark themes, as a percentage; 0-100. Applied only to Wallpaper and Fill types of background.
      */
     public function getDarkThemeDimming(): int
     {
@@ -93,7 +93,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Dimming of the background in dark themes, as a percentage; 0-100. Applied only to Wallpaper and Fill types of background
+     * Set Dimming of the background in dark themes, as a percentage; 0-100. Applied only to Wallpaper and Fill types of background.
      */
     public function setDarkThemeDimming(int $darkThemeDimming): self
     {
@@ -103,7 +103,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to set background only for self; pass false to set background for all chat users. Always false for backgrounds set in boosted chats. Background can be set for both users only by Telegram Premium users and if set background isn't of the type inputBackgroundPrevious
+     * Get Pass true to set background only for self; pass false to set background for all chat users. Always false for backgrounds set in boosted chats. Background can be set for both users only by Telegram Premium users and if set background isn't of the type inputBackgroundPrevious.
      */
     public function getOnlyForSelf(): bool
     {
@@ -111,7 +111,7 @@ class SetChatBackground extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to set background only for self; pass false to set background for all chat users. Always false for backgrounds set in boosted chats. Background can be set for both users only by Telegram Premium users and if set background isn't of the type inputBackgroundPrevious
+     * Set Pass true to set background only for self; pass false to set background for all chat users. Always false for backgrounds set in boosted chats. Background can be set for both users only by Telegram Premium users and if set background isn't of the type inputBackgroundPrevious.
      */
     public function setOnlyForSelf(bool $onlyForSelf): self
     {

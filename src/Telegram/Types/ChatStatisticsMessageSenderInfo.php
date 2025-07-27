@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains statistics about messages sent by a user
+ * Contains statistics about messages sent by a user.
  */
 class ChatStatisticsMessageSenderInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatStatisticsMessageSenderInfo implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class ChatStatisticsMessageSenderInfo implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class ChatStatisticsMessageSenderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of sent messages
+     * Get Number of sent messages.
      */
     public function getSentMessageCount(): int
     {
@@ -51,7 +51,7 @@ class ChatStatisticsMessageSenderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of sent messages
+     * Set Number of sent messages.
      */
     public function setSentMessageCount(int $sentMessageCount): self
     {
@@ -61,7 +61,7 @@ class ChatStatisticsMessageSenderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Average number of characters in sent messages; 0 if unknown
+     * Get Average number of characters in sent messages; 0 if unknown.
      */
     public function getAverageCharacterCount(): int
     {
@@ -69,7 +69,7 @@ class ChatStatisticsMessageSenderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Average number of characters in sent messages; 0 if unknown
+     * Set Average number of characters in sent messages; 0 if unknown.
      */
     public function setAverageCharacterCount(int $averageCharacterCount): self
     {

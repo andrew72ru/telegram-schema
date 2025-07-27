@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains 0-based positions of matched objects @total_count Total number of matched objects @positions The positions of the matched objects
+ * Contains 0-based positions of matched objects @total_count Total number of matched objects @positions The positions of the matched objects.
  */
 class FoundPositions implements \JsonSerializable
 {

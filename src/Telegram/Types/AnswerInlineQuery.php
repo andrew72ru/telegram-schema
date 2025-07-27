@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the result of an inline query; for bots only
+ * Sets the result of an inline query; for bots only.
  */
 class AnswerInlineQuery extends Ok implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the inline query
+     * Get Identifier of the inline query.
      */
     public function getInlineQueryId(): int
     {
@@ -42,7 +42,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the inline query
+     * Set Identifier of the inline query.
      */
     public function setInlineQueryId(int $inlineQueryId): self
     {
@@ -52,7 +52,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if results may be cached and returned only for the user that sent the query. By default, results may be returned to any user who sends the same query
+     * Get Pass true if results may be cached and returned only for the user that sent the query. By default, results may be returned to any user who sends the same query.
      */
     public function getIsPersonal(): bool
     {
@@ -60,7 +60,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if results may be cached and returned only for the user that sent the query. By default, results may be returned to any user who sends the same query
+     * Set Pass true if results may be cached and returned only for the user that sent the query. By default, results may be returned to any user who sends the same query.
      */
     public function setIsPersonal(bool $isPersonal): self
     {
@@ -70,7 +70,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Button to be shown above inline query results; pass null if none
+     * Get Button to be shown above inline query results; pass null if none.
      */
     public function getButton(): InlineQueryResultsButton|null
     {
@@ -78,7 +78,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Button to be shown above inline query results; pass null if none
+     * Set Button to be shown above inline query results; pass null if none.
      */
     public function setButton(InlineQueryResultsButton|null $button): self
     {
@@ -88,7 +88,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The results of the query
+     * Get The results of the query.
      */
     public function getResults(): array|null
     {
@@ -96,7 +96,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The results of the query
+     * Set The results of the query.
      */
     public function setResults(array|null $results): self
     {
@@ -106,7 +106,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Allowed time to cache the results of the query, in seconds
+     * Get Allowed time to cache the results of the query, in seconds.
      */
     public function getCacheTime(): int
     {
@@ -114,7 +114,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Allowed time to cache the results of the query, in seconds
+     * Set Allowed time to cache the results of the query, in seconds.
      */
     public function setCacheTime(int $cacheTime): self
     {
@@ -124,7 +124,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Offset for the next inline query; pass an empty string if there are no more results
+     * Get Offset for the next inline query; pass an empty string if there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -132,7 +132,7 @@ class AnswerInlineQuery extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Offset for the next inline query; pass an empty string if there are no more results
+     * Set Offset for the next inline query; pass an empty string if there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

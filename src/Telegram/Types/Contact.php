@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a user contact
+ * Describes a user contact.
  */
 class Contact implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Get Phone number of the user
+     * Get Phone number of the user.
      */
     public function getPhoneNumber(): string
     {
@@ -39,7 +39,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Set Phone number of the user
+     * Set Phone number of the user.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -49,7 +49,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Get First name of the user; 1-255 characters in length
+     * Get First name of the user; 1-255 characters in length.
      */
     public function getFirstName(): string
     {
@@ -57,7 +57,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Set First name of the user; 1-255 characters in length
+     * Set First name of the user; 1-255 characters in length.
      */
     public function setFirstName(string $firstName): self
     {
@@ -67,7 +67,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Get Last name of the user
+     * Get Last name of the user.
      */
     public function getLastName(): string
     {
@@ -75,7 +75,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Set Last name of the user
+     * Set Last name of the user.
      */
     public function setLastName(string $lastName): self
     {
@@ -85,7 +85,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Get Additional data about the user in a form of vCard; 0-2048 bytes in length
+     * Get Additional data about the user in a form of vCard; 0-2048 bytes in length.
      */
     public function getVcard(): string
     {
@@ -93,7 +93,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Set Additional data about the user in a form of vCard; 0-2048 bytes in length
+     * Set Additional data about the user in a form of vCard; 0-2048 bytes in length.
      */
     public function setVcard(string $vcard): self
     {
@@ -103,7 +103,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user, if known; 0 otherwise
+     * Get Identifier of the user, if known; 0 otherwise.
      */
     public function getUserId(): int
     {
@@ -111,7 +111,7 @@ class Contact implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user, if known; 0 otherwise
+     * Set Identifier of the user, if known; 0 otherwise.
      */
     public function setUserId(int $userId): self
     {

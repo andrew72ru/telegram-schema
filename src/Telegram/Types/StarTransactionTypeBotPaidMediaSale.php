@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a sale of paid media by the bot or a business account managed by the bot; for bots only
+ * The transaction is a sale of paid media by the bot or a business account managed by the bot; for bots only.
  */
 class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Get Identifier of the user that bought the media
+     * Get Identifier of the user that bought the media.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Set Identifier of the user that bought the media
+     * Set Identifier of the user that bought the media.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Get The bought media
+     * Get The bought media.
      */
     public function getMedia(): array|null
     {
@@ -54,7 +54,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Set The bought media
+     * Set The bought media.
      */
     public function setMedia(array|null $media): self
     {
@@ -64,7 +64,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Get Bot-provided payload
+     * Get Bot-provided payload.
      */
     public function getPayload(): string
     {
@@ -72,7 +72,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Set Bot-provided payload
+     * Set Bot-provided payload.
      */
     public function setPayload(string $payload): self
     {
@@ -82,7 +82,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Get Information about the affiliate which received commission from the transaction; may be null if none
+     * Get Information about the affiliate which received commission from the transaction; may be null if none.
      */
     public function getAffiliate(): AffiliateInfo|null
     {
@@ -90,7 +90,7 @@ class StarTransactionTypeBotPaidMediaSale extends StarTransactionType implements
     }
 
     /**
-     * Set Information about the affiliate which received commission from the transaction; may be null if none
+     * Set Information about the affiliate which received commission from the transaction; may be null if none.
      */
     public function setAffiliate(AffiliateInfo|null $affiliate): self
     {

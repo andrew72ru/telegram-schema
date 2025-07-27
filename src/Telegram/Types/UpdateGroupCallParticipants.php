@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of group call participants that can send and receive encrypted call data has changed; for group calls not bound to a chat only
+ * The list of group call participants that can send and receive encrypted call data has changed; for group calls not bound to a chat only.
  */
 class UpdateGroupCallParticipants extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateGroupCallParticipants extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the group call
+     * Get Identifier of the group call.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class UpdateGroupCallParticipants extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the group call
+     * Set Identifier of the group call.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class UpdateGroupCallParticipants extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New list of group call participant user identifiers. The identifiers may be invalid or the corresponding users may be unknown.
+     * Get New list of group call participant user identifiers. The identifiers may be invalid or the corresponding users may be unknown..
      */
     public function getParticipantUserIds(): array|null
     {
@@ -48,7 +48,7 @@ class UpdateGroupCallParticipants extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New list of group call participant user identifiers. The identifiers may be invalid or the corresponding users may be unknown.
+     * Set New list of group call participant user identifiers. The identifiers may be invalid or the corresponding users may be unknown..
      */
     public function setParticipantUserIds(array|null $participantUserIds): self
     {

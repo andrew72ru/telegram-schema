@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a file with a map thumbnail in PNG format. Only map thumbnail files with size less than 1MB can be downloaded
+ * Returns information about a file with a map thumbnail in PNG format. Only map thumbnail files with size less than 1MB can be downloaded.
  */
 class GetMapThumbnailFile extends File implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Location of the map center
+     * Get Location of the map center.
      */
     public function getLocation(): Location|null
     {
@@ -42,7 +42,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Location of the map center
+     * Set Location of the map center.
      */
     public function setLocation(Location|null $location): self
     {
@@ -52,7 +52,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Map zoom level; 13-20
+     * Get Map zoom level; 13-20.
      */
     public function getZoom(): int
     {
@@ -60,7 +60,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Map zoom level; 13-20
+     * Set Map zoom level; 13-20.
      */
     public function setZoom(int $zoom): self
     {
@@ -70,7 +70,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Map width in pixels before applying scale; 16-1024
+     * Get Map width in pixels before applying scale; 16-1024.
      */
     public function getWidth(): int
     {
@@ -78,7 +78,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Map width in pixels before applying scale; 16-1024
+     * Set Map width in pixels before applying scale; 16-1024.
      */
     public function setWidth(int $width): self
     {
@@ -88,7 +88,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Map height in pixels before applying scale; 16-1024
+     * Get Map height in pixels before applying scale; 16-1024.
      */
     public function getHeight(): int
     {
@@ -96,7 +96,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Map height in pixels before applying scale; 16-1024
+     * Set Map height in pixels before applying scale; 16-1024.
      */
     public function setHeight(int $height): self
     {
@@ -106,7 +106,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Map scale; 1-3
+     * Get Map scale; 1-3.
      */
     public function getScale(): int
     {
@@ -114,7 +114,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Map scale; 1-3
+     * Set Map scale; 1-3.
      */
     public function setScale(int $scale): self
     {
@@ -124,7 +124,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat in which the thumbnail will be shown. Use 0 if unknown
+     * Get Identifier of a chat in which the thumbnail will be shown. Use 0 if unknown.
      */
     public function getChatId(): int
     {
@@ -132,7 +132,7 @@ class GetMapThumbnailFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat in which the thumbnail will be shown. Use 0 if unknown
+     * Set Identifier of a chat in which the thumbnail will be shown. Use 0 if unknown.
      */
     public function setChatId(int $chatId): self
     {

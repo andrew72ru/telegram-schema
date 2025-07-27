@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds tasks of a checklist in a message as done or not done
+ * Adds tasks of a checklist in a message as done or not done.
  */
 class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message containing the checklist. Use messageProperties.can_mark_tasks_as_done to check whether the tasks can be marked as done or not done
+     * Get Identifier of the message containing the checklist. Use messageProperties.can_mark_tasks_as_done to check whether the tasks can be marked as done or not done.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message containing the checklist. Use messageProperties.can_mark_tasks_as_done to check whether the tasks can be marked as done or not done
+     * Set Identifier of the message containing the checklist. Use messageProperties.can_mark_tasks_as_done to check whether the tasks can be marked as done or not done.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of tasks that were marked as done
+     * Get Identifiers of tasks that were marked as done.
      */
     public function getMarkedAsDoneTaskIds(): array|null
     {
@@ -72,7 +72,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of tasks that were marked as done
+     * Set Identifiers of tasks that were marked as done.
      */
     public function setMarkedAsDoneTaskIds(array|null $markedAsDoneTaskIds): self
     {
@@ -82,7 +82,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of tasks that were marked as not done
+     * Get Identifiers of tasks that were marked as not done.
      */
     public function getMarkedAsNotDoneTaskIds(): array|null
     {
@@ -90,7 +90,7 @@ class MarkChecklistTasksAsDone extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of tasks that were marked as not done
+     * Set Identifiers of tasks that were marked as not done.
      */
     public function setMarkedAsNotDoneTaskIds(array|null $markedAsNotDoneTaskIds): self
     {

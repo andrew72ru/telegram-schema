@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes a story posted by the bot on behalf of a business account; for bots only
+ * Changes a story posted by the bot on behalf of a business account; for bots only.
  */
 class EditBusinessStory extends Story implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -42,7 +42,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -52,7 +52,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story to edit
+     * Get Identifier of the story to edit.
      */
     public function getStoryId(): int
     {
@@ -60,7 +60,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story to edit
+     * Set Identifier of the story to edit.
      */
     public function setStoryId(int $storyId): self
     {
@@ -70,7 +70,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get New content of the story
+     * Get New content of the story.
      */
     public function getContent(): InputStoryContent|null
     {
@@ -78,7 +78,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set New content of the story
+     * Set New content of the story.
      */
     public function setContent(InputStoryContent|null $content): self
     {
@@ -88,7 +88,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get New clickable rectangle areas to be shown on the story media
+     * Get New clickable rectangle areas to be shown on the story media.
      */
     public function getAreas(): InputStoryAreas|null
     {
@@ -96,7 +96,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set New clickable rectangle areas to be shown on the story media
+     * Set New clickable rectangle areas to be shown on the story media.
      */
     public function setAreas(InputStoryAreas|null $areas): self
     {
@@ -106,7 +106,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get New story caption
+     * Get New story caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -114,7 +114,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set New story caption
+     * Set New story caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -124,7 +124,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get The new privacy settings for the story
+     * Get The new privacy settings for the story.
      */
     public function getPrivacySettings(): StoryPrivacySettings|null
     {
@@ -132,7 +132,7 @@ class EditBusinessStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set The new privacy settings for the story
+     * Set The new privacy settings for the story.
      */
     public function setPrivacySettings(StoryPrivacySettings|null $privacySettings): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about the current recovery email address @recovery_email_address Recovery email address
+ * Contains information about the current recovery email address @recovery_email_address Recovery email address.
  */
 class RecoveryEmailAddress implements \JsonSerializable
 {

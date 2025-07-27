@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the photo of a chat. Supported only for basic groups, supergroups and channels. Requires can_change_info member right
+ * Changes the photo of a chat. Supported only for basic groups, supergroups and channels. Requires can_change_info member right.
  */
 class SetChatPhoto extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New chat photo; pass null to delete the chat photo
+     * Get New chat photo; pass null to delete the chat photo.
      */
     public function getPhoto(): InputChatPhoto|null
     {
@@ -48,7 +48,7 @@ class SetChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New chat photo; pass null to delete the chat photo
+     * Set New chat photo; pass null to delete the chat photo.
      */
     public function setPhoto(InputChatPhoto|null $photo): self
     {

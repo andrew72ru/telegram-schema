@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a story posted on behalf of the chat @story_id Story identifier
+ * Describes a story posted on behalf of the chat @story_id Story identifier.
  */
 class ChatStatisticsObjectTypeStory extends ChatStatisticsObjectType implements \JsonSerializable
 {

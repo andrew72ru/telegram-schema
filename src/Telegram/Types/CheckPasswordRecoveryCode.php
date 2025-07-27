@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks whether a 2-step verification password recovery code sent to an email address is valid @recovery_code Recovery code to check
+ * Checks whether a 2-step verification password recovery code sent to an email address is valid @recovery_code Recovery code to check.
  */
 class CheckPasswordRecoveryCode extends Ok implements \JsonSerializable
 {

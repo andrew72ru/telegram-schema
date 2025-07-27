@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds the specified data to data usage statistics. Can be called before authorization @entry The network statistics entry with the data to be added to statistics
+ * Adds the specified data to data usage statistics. Can be called before authorization @entry The network statistics entry with the data to be added to statistics.
  */
 class AddNetworkStatistics extends Ok implements \JsonSerializable
 {

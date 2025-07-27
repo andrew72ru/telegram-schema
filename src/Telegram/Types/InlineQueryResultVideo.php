@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a video
+ * Represents a video.
  */
 class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -36,7 +36,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -46,7 +46,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Video
+     * Get Video.
      */
     public function getVideo(): Video|null
     {
@@ -54,7 +54,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Video
+     * Set Video.
      */
     public function setVideo(Video|null $video): self
     {
@@ -64,7 +64,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Title of the video
+     * Get Title of the video.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Title of the video
+     * Set Title of the video.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Represents a video
+     * Get Represents a video.
      */
     public function getDescription(): string
     {
@@ -90,7 +90,7 @@ class InlineQueryResultVideo extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Represents a video
+     * Set Represents a video.
      */
     public function setDescription(string $description): self
     {

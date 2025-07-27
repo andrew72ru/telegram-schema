@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message has been successfully sent
+ * A message has been successfully sent.
  */
 class UpdateMessageSendSucceeded extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateMessageSendSucceeded extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The sent message. Almost any field of the new message can be different from the corresponding field of the original message.
+     * Get The sent message. Almost any field of the new message can be different from the corresponding field of the original message..
      */
     public function getMessage(): Message|null
     {
@@ -30,7 +30,7 @@ class UpdateMessageSendSucceeded extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The sent message. Almost any field of the new message can be different from the corresponding field of the original message.
+     * Set The sent message. Almost any field of the new message can be different from the corresponding field of the original message..
      */
     public function setMessage(Message|null $message): self
     {
@@ -40,7 +40,7 @@ class UpdateMessageSendSucceeded extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The previous temporary message identifier
+     * Get The previous temporary message identifier.
      */
     public function getOldMessageId(): int
     {
@@ -48,7 +48,7 @@ class UpdateMessageSendSucceeded extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The previous temporary message identifier
+     * Set The previous temporary message identifier.
      */
     public function setOldMessageId(int $oldMessageId): self
     {

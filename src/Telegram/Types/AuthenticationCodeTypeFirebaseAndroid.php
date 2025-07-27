@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A digit-only authentication code is delivered via Firebase Authentication to the official Android application
+ * A digit-only authentication code is delivered via Firebase Authentication to the official Android application.
  */
 class AuthenticationCodeTypeFirebaseAndroid extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AuthenticationCodeTypeFirebaseAndroid extends AuthenticationCodeType imple
     }
 
     /**
-     * Get Parameters to be used for device verification
+     * Get Parameters to be used for device verification.
      */
     public function getDeviceVerificationParameters(): FirebaseDeviceVerificationParameters|null
     {
@@ -30,7 +30,7 @@ class AuthenticationCodeTypeFirebaseAndroid extends AuthenticationCodeType imple
     }
 
     /**
-     * Set Parameters to be used for device verification
+     * Set Parameters to be used for device verification.
      */
     public function setDeviceVerificationParameters(
         FirebaseDeviceVerificationParameters|null $deviceVerificationParameters,
@@ -41,7 +41,7 @@ class AuthenticationCodeTypeFirebaseAndroid extends AuthenticationCodeType imple
     }
 
     /**
-     * Get Length of the code
+     * Get Length of the code.
      */
     public function getLength(): int
     {
@@ -49,7 +49,7 @@ class AuthenticationCodeTypeFirebaseAndroid extends AuthenticationCodeType imple
     }
 
     /**
-     * Set Length of the code
+     * Set Length of the code.
      */
     public function setLength(int $length): self
     {

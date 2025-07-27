@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An error message to be shown to the user instead of the graph @error_message The error message
+ * An error message to be shown to the user instead of the graph @error_message The error message.
  */
 class StatisticalGraphError extends StatisticalGraph implements \JsonSerializable
 {

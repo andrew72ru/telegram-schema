@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits a business chat link of the current account. Requires Telegram Business subscription. Returns the edited link
+ * Edits a business chat link of the current account. Requires Telegram Business subscription. Returns the edited link.
  */
 class EditBusinessChatLink extends BusinessChatLink implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class EditBusinessChatLink extends BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Get The link to edit
+     * Get The link to edit.
      */
     public function getLink(): string
     {
@@ -30,7 +30,7 @@ class EditBusinessChatLink extends BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Set The link to edit
+     * Set The link to edit.
      */
     public function setLink(string $link): self
     {
@@ -40,7 +40,7 @@ class EditBusinessChatLink extends BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Get New description of the link
+     * Get New description of the link.
      */
     public function getLinkInfo(): InputBusinessChatLink|null
     {
@@ -48,7 +48,7 @@ class EditBusinessChatLink extends BusinessChatLink implements \JsonSerializable
     }
 
     /**
-     * Set New description of the link
+     * Set New description of the link.
      */
     public function setLinkInfo(InputBusinessChatLink|null $linkInfo): self
     {

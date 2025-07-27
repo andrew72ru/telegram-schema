@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Clears the list of recently used emoji statuses for self status
+ * Clears the list of recently used emoji statuses for self status.
  */
 class ClearRecentEmojiStatuses extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports a chat photo to the Telegram moderators. A chat photo can be reported only if chat.can_be_reported
+ * Reports a chat photo to the Telegram moderators. A chat photo can be reported only if chat.can_be_reported.
  */
 class ReportChatPhoto extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the photo to report. Only full photos from chatPhoto can be reported
+     * Get Identifier of the photo to report. Only full photos from chatPhoto can be reported.
      */
     public function getFileId(): int
     {
@@ -54,7 +54,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the photo to report. Only full photos from chatPhoto can be reported
+     * Set Identifier of the photo to report. Only full photos from chatPhoto can be reported.
      */
     public function setFileId(int $fileId): self
     {
@@ -64,7 +64,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The reason for reporting the chat photo
+     * Get The reason for reporting the chat photo.
      */
     public function getReason(): ReportReason|null
     {
@@ -72,7 +72,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The reason for reporting the chat photo
+     * Set The reason for reporting the chat photo.
      */
     public function setReason(ReportReason|null $reason): self
     {
@@ -82,7 +82,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Additional report details; 0-1024 characters
+     * Get Additional report details; 0-1024 characters.
      */
     public function getText(): string
     {
@@ -90,7 +90,7 @@ class ReportChatPhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Additional report details; 0-1024 characters
+     * Set Additional report details; 0-1024 characters.
      */
     public function setText(string $text): self
     {

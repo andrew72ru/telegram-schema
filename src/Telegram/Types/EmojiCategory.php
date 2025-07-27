@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an emoji category
+ * Describes an emoji category.
  */
 class EmojiCategory implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Get Name of the category
+     * Get Name of the category.
      */
     public function getName(): string
     {
@@ -36,7 +36,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Set Name of the category
+     * Set Name of the category.
      */
     public function setName(string $name): self
     {
@@ -46,7 +46,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Get Custom emoji sticker, which represents icon of the category
+     * Get Custom emoji sticker, which represents icon of the category.
      */
     public function getIcon(): Sticker|null
     {
@@ -54,7 +54,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Set Custom emoji sticker, which represents icon of the category
+     * Set Custom emoji sticker, which represents icon of the category.
      */
     public function setIcon(Sticker|null $icon): self
     {
@@ -64,7 +64,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Get Source of stickers for the emoji category
+     * Get Source of stickers for the emoji category.
      */
     public function getSource(): EmojiCategorySource|null
     {
@@ -72,7 +72,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Set Source of stickers for the emoji category
+     * Set Source of stickers for the emoji category.
      */
     public function setSource(EmojiCategorySource|null $source): self
     {
@@ -82,7 +82,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Get True, if the category must be shown first when choosing a sticker for the start page
+     * Get True, if the category must be shown first when choosing a sticker for the start page.
      */
     public function getIsGreeting(): bool
     {
@@ -90,7 +90,7 @@ class EmojiCategory implements \JsonSerializable
     }
 
     /**
-     * Set True, if the category must be shown first when choosing a sticker for the start page
+     * Set True, if the category must be shown first when choosing a sticker for the start page.
      */
     public function setIsGreeting(bool $isGreeting): self
     {

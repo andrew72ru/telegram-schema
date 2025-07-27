@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user is a member of the chat, without any additional privileges or restrictions
+ * The user is a member of the chat, without any additional privileges or restrictions.
  */
 class ChatMemberStatusMember extends ChatMemberStatus implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ChatMemberStatusMember extends ChatMemberStatus implements \JsonSerializab
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user will be removed from the chat because of the expired subscription; 0 if never. Ignored in setChatMemberStatus
+     * Get Point in time (Unix timestamp) when the user will be removed from the chat because of the expired subscription; 0 if never. Ignored in setChatMemberStatus.
      */
     public function getMemberUntilDate(): int
     {
@@ -27,7 +27,7 @@ class ChatMemberStatusMember extends ChatMemberStatus implements \JsonSerializab
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user will be removed from the chat because of the expired subscription; 0 if never. Ignored in setChatMemberStatus
+     * Set Point in time (Unix timestamp) when the user will be removed from the chat because of the expired subscription; 0 if never. Ignored in setChatMemberStatus.
      */
     public function setMemberUntilDate(int $memberUntilDate): self
     {

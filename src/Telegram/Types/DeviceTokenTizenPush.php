@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A token for Tizen Push Service @reg_id Push service registration identifier; may be empty to deregister a device
+ * A token for Tizen Push Service @reg_id Push service registration identifier; may be empty to deregister a device.
  */
 class DeviceTokenTizenPush extends DeviceToken implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * New message was received @message The message @show_preview True, if message content must be displayed in notifications
+ * New message was received @message The message @show_preview True, if message content must be displayed in notifications.
  */
 class NotificationTypeNewMessage extends NotificationType implements \JsonSerializable
 {

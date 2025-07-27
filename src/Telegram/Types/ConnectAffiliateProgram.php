@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Connects an affiliate program to the given affiliate. Returns information about the connected affiliate program
+ * Connects an affiliate program to the given affiliate. Returns information about the connected affiliate program.
  */
 class ConnectAffiliateProgram extends ConnectedAffiliateProgram implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ConnectAffiliateProgram extends ConnectedAffiliateProgram implements \Json
     }
 
     /**
-     * Get The affiliate to which the affiliate program will be connected
+     * Get The affiliate to which the affiliate program will be connected.
      */
     public function getAffiliate(): AffiliateType|null
     {
@@ -30,7 +30,7 @@ class ConnectAffiliateProgram extends ConnectedAffiliateProgram implements \Json
     }
 
     /**
-     * Set The affiliate to which the affiliate program will be connected
+     * Set The affiliate to which the affiliate program will be connected.
      */
     public function setAffiliate(AffiliateType|null $affiliate): self
     {
@@ -40,7 +40,7 @@ class ConnectAffiliateProgram extends ConnectedAffiliateProgram implements \Json
     }
 
     /**
-     * Get Identifier of the bot, which affiliate program is connected
+     * Get Identifier of the bot, which affiliate program is connected.
      */
     public function getBotUserId(): int
     {
@@ -48,7 +48,7 @@ class ConnectAffiliateProgram extends ConnectedAffiliateProgram implements \Json
     }
 
     /**
-     * Set Identifier of the bot, which affiliate program is connected
+     * Set Identifier of the bot, which affiliate program is connected.
      */
     public function setBotUserId(int $botUserId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video chat participant was muted or unmuted @participant_id Identifier of the affected group call participant @is_muted New value of is_muted
+ * A video chat participant was muted or unmuted @participant_id Identifier of the affected group call participant @is_muted New value of is_muted.
  */
 class ChatEventVideoChatParticipantIsMutedToggled extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a photo
+ * Represents a photo.
  */
 class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -36,7 +36,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -46,7 +46,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Photo
+     * Get Photo.
      */
     public function getPhoto(): Photo|null
     {
@@ -54,7 +54,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Photo
+     * Set Photo.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -64,7 +64,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Title of the result, if known
+     * Get Title of the result, if known.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Title of the result, if known
+     * Set Title of the result, if known.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Get Represents a photo
+     * Get Represents a photo.
      */
     public function getDescription(): string
     {
@@ -90,7 +90,7 @@ class InlineQueryResultPhoto extends InlineQueryResult implements \JsonSerializa
     }
 
     /**
-     * Set Represents a photo
+     * Set Represents a photo.
      */
     public function setDescription(string $description): self
     {

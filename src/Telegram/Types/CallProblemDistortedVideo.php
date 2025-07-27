@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The video was distorted
+ * The video was distorted.
  */
 class CallProblemDistortedVideo extends CallProblem implements \JsonSerializable
 {

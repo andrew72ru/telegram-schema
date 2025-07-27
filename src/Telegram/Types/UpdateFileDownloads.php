@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The state of the file download list has changed
+ * The state of the file download list has changed.
  */
 class UpdateFileDownloads extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateFileDownloads extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total size of files in the file download list, in bytes
+     * Get Total size of files in the file download list, in bytes.
      */
     public function getTotalSize(): int
     {
@@ -33,7 +33,7 @@ class UpdateFileDownloads extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total size of files in the file download list, in bytes
+     * Set Total size of files in the file download list, in bytes.
      */
     public function setTotalSize(int $totalSize): self
     {
@@ -43,7 +43,7 @@ class UpdateFileDownloads extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of files in the file download list
+     * Get Total number of files in the file download list.
      */
     public function getTotalCount(): int
     {
@@ -51,7 +51,7 @@ class UpdateFileDownloads extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of files in the file download list
+     * Set Total number of files in the file download list.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -61,7 +61,7 @@ class UpdateFileDownloads extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total downloaded size of files in the file download list, in bytes
+     * Get Total downloaded size of files in the file download list, in bytes.
      */
     public function getDownloadedSize(): int
     {
@@ -69,7 +69,7 @@ class UpdateFileDownloads extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total downloaded size of files in the file download list, in bytes
+     * Set Total downloaded size of files in the file download list, in bytes.
      */
     public function setDownloadedSize(int $downloadedSize): self
     {

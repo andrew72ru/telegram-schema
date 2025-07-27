@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a Telegram bot, which is expected to be added to a group chat. Call searchPublicChat with the given bot username, check that the user is a bot and can be added to groups,
+ * The link is a link to a Telegram bot, which is expected to be added to a group chat. Call searchPublicChat with the given bot username, check that the user is a bot and can be added to groups,.
  */
 class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Username of the bot
+     * Get Username of the bot.
      */
     public function getBotUsername(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Username of the bot
+     * Set Username of the bot.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get The parameter to be passed to sendBotStartMessage
+     * Get The parameter to be passed to sendBotStartMessage.
      */
     public function getStartParameter(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set The parameter to be passed to sendBotStartMessage
+     * Set The parameter to be passed to sendBotStartMessage.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Expected administrator rights for the bot; may be null
+     * Get Expected administrator rights for the bot; may be null.
      */
     public function getAdministratorRights(): ChatAdministratorRights|null
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeBotStartInGroup extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Expected administrator rights for the bot; may be null
+     * Set Expected administrator rights for the bot; may be null.
      */
     public function setAdministratorRights(ChatAdministratorRights|null $administratorRights): self
     {

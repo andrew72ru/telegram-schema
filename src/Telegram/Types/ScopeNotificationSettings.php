@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about notification settings for several chats
+ * Contains information about notification settings for several chats.
  */
 class ScopeNotificationSettings implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Time left before notifications will be unmuted, in seconds
+     * Get Time left before notifications will be unmuted, in seconds.
      */
     public function getMuteFor(): int
     {
@@ -51,7 +51,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Time left before notifications will be unmuted, in seconds
+     * Set Time left before notifications will be unmuted, in seconds.
      */
     public function setMuteFor(int $muteFor): self
     {
@@ -61,7 +61,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the notification sound to be played; 0 if sound is disabled
+     * Get Identifier of the notification sound to be played; 0 if sound is disabled.
      */
     public function getSoundId(): int
     {
@@ -69,7 +69,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the notification sound to be played; 0 if sound is disabled
+     * Set Identifier of the notification sound to be played; 0 if sound is disabled.
      */
     public function setSoundId(int $soundId): self
     {
@@ -79,7 +79,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if message content must be displayed in notifications
+     * Get True, if message content must be displayed in notifications.
      */
     public function getShowPreview(): bool
     {
@@ -87,7 +87,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if message content must be displayed in notifications
+     * Set True, if message content must be displayed in notifications.
      */
     public function setShowPreview(bool $showPreview): self
     {
@@ -97,7 +97,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, story notifications are received only for the first 5 chats from topChatCategoryUsers regardless of the value of mute_stories
+     * Get If true, story notifications are received only for the first 5 chats from topChatCategoryUsers regardless of the value of mute_stories.
      */
     public function getUseDefaultMuteStories(): bool
     {
@@ -105,7 +105,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, story notifications are received only for the first 5 chats from topChatCategoryUsers regardless of the value of mute_stories
+     * Set If true, story notifications are received only for the first 5 chats from topChatCategoryUsers regardless of the value of mute_stories.
      */
     public function setUseDefaultMuteStories(bool $useDefaultMuteStories): self
     {
@@ -115,7 +115,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if story notifications are disabled
+     * Get True, if story notifications are disabled.
      */
     public function getMuteStories(): bool
     {
@@ -123,7 +123,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if story notifications are disabled
+     * Set True, if story notifications are disabled.
      */
     public function setMuteStories(bool $muteStories): self
     {
@@ -133,7 +133,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the notification sound to be played for stories; 0 if sound is disabled
+     * Get Identifier of the notification sound to be played for stories; 0 if sound is disabled.
      */
     public function getStorySoundId(): int
     {
@@ -141,7 +141,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the notification sound to be played for stories; 0 if sound is disabled
+     * Set Identifier of the notification sound to be played for stories; 0 if sound is disabled.
      */
     public function setStorySoundId(int $storySoundId): self
     {
@@ -151,7 +151,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat that posted a story must be displayed in notifications
+     * Get True, if the chat that posted a story must be displayed in notifications.
      */
     public function getShowStoryPoster(): bool
     {
@@ -159,7 +159,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat that posted a story must be displayed in notifications
+     * Set True, if the chat that posted a story must be displayed in notifications.
      */
     public function setShowStoryPoster(bool $showStoryPoster): self
     {
@@ -169,7 +169,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if notifications for incoming pinned messages will be created as for an ordinary unread message
+     * Get True, if notifications for incoming pinned messages will be created as for an ordinary unread message.
      */
     public function getDisablePinnedMessageNotifications(): bool
     {
@@ -177,7 +177,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if notifications for incoming pinned messages will be created as for an ordinary unread message
+     * Set True, if notifications for incoming pinned messages will be created as for an ordinary unread message.
      */
     public function setDisablePinnedMessageNotifications(bool $disablePinnedMessageNotifications): self
     {
@@ -187,7 +187,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if notifications for messages with mentions will be created as for an ordinary unread message
+     * Get True, if notifications for messages with mentions will be created as for an ordinary unread message.
      */
     public function getDisableMentionNotifications(): bool
     {
@@ -195,7 +195,7 @@ class ScopeNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if notifications for messages with mentions will be created as for an ordinary unread message
+     * Set True, if notifications for messages with mentions will be created as for an ordinary unread message.
      */
     public function setDisableMentionNotifications(bool $disableMentionNotifications): self
     {

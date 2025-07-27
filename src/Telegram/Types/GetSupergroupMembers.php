@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about members or banned users in a supergroup or channel. Can be used only if supergroupFullInfo.can_get_members == true; additionally, administrator privileges may be required for some filters
+ * Returns information about members or banned users in a supergroup or channel. Can be used only if supergroupFullInfo.can_get_members == true; additionally, administrator privileges may be required for some filters.
  */
 class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup or channel
+     * Get Identifier of the supergroup or channel.
      */
     public function getSupergroupId(): int
     {
@@ -36,7 +36,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup or channel
+     * Set Identifier of the supergroup or channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -46,7 +46,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get The type of users to return; pass null to use supergroupMembersFilterRecent
+     * Get The type of users to return; pass null to use supergroupMembersFilterRecent.
      */
     public function getFilter(): SupergroupMembersFilter|null
     {
@@ -54,7 +54,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set The type of users to return; pass null to use supergroupMembersFilterRecent
+     * Set The type of users to return; pass null to use supergroupMembersFilterRecent.
      */
     public function setFilter(SupergroupMembersFilter|null $filter): self
     {
@@ -64,7 +64,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get Number of users to skip
+     * Get Number of users to skip.
      */
     public function getOffset(): int
     {
@@ -72,7 +72,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set Number of users to skip
+     * Set Number of users to skip.
      */
     public function setOffset(int $offset): self
     {
@@ -82,7 +82,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of users to be returned; up to 200
+     * Get The maximum number of users to be returned; up to 200.
      */
     public function getLimit(): int
     {
@@ -90,7 +90,7 @@ class GetSupergroupMembers extends ChatMembers implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of users to be returned; up to 200
+     * Set The maximum number of users to be returned; up to 200.
      */
     public function setLimit(int $limit): self
     {

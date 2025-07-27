@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A media album
+ * A media album.
  */
 class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Get Number of messages in the album
+     * Get Number of messages in the album.
      */
     public function getTotalCount(): int
     {
@@ -39,7 +39,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Set Number of messages in the album
+     * Set Number of messages in the album.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -49,7 +49,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Get True, if the album has at least one photo
+     * Get True, if the album has at least one photo.
      */
     public function getHasPhotos(): bool
     {
@@ -57,7 +57,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Set True, if the album has at least one photo
+     * Set True, if the album has at least one photo.
      */
     public function setHasPhotos(bool $hasPhotos): self
     {
@@ -67,7 +67,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Get True, if the album has at least one video file
+     * Get True, if the album has at least one video file.
      */
     public function getHasVideos(): bool
     {
@@ -75,7 +75,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Set True, if the album has at least one video file
+     * Set True, if the album has at least one video file.
      */
     public function setHasVideos(bool $hasVideos): self
     {
@@ -85,7 +85,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Get True, if the album has at least one audio file
+     * Get True, if the album has at least one audio file.
      */
     public function getHasAudios(): bool
     {
@@ -93,7 +93,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Set True, if the album has at least one audio file
+     * Set True, if the album has at least one audio file.
      */
     public function setHasAudios(bool $hasAudios): self
     {
@@ -103,7 +103,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Get True, if the album has at least one document
+     * Get True, if the album has at least one document.
      */
     public function getHasDocuments(): bool
     {
@@ -111,7 +111,7 @@ class PushMessageContentMediaAlbum extends PushMessageContent implements \JsonSe
     }
 
     /**
-     * Set True, if the album has at least one document
+     * Set True, if the album has at least one document.
      */
     public function setHasDocuments(bool $hasDocuments): self
     {

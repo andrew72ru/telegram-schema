@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A rich text email link @text Text @email_address Email address
+ * A rich text email link @text Text @email_address Email address.
  */
 class RichTextEmailAddress extends RichText implements \JsonSerializable
 {

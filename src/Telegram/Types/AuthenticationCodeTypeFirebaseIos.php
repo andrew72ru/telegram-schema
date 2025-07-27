@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A digit-only authentication code is delivered via Firebase Authentication to the official iOS application
+ * A digit-only authentication code is delivered via Firebase Authentication to the official iOS application.
  */
 class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implement
     }
 
     /**
-     * Get Receipt of successful application token validation to compare with receipt from push notification
+     * Get Receipt of successful application token validation to compare with receipt from push notification.
      */
     public function getReceipt(): string
     {
@@ -33,7 +33,7 @@ class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implement
     }
 
     /**
-     * Set Receipt of successful application token validation to compare with receipt from push notification
+     * Set Receipt of successful application token validation to compare with receipt from push notification.
      */
     public function setReceipt(string $receipt): self
     {
@@ -43,7 +43,7 @@ class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implement
     }
 
     /**
-     * Get Time after the next authentication method is expected to be used if verification push notification isn't received, in seconds
+     * Get Time after the next authentication method is expected to be used if verification push notification isn't received, in seconds.
      */
     public function getPushTimeout(): int
     {
@@ -51,7 +51,7 @@ class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implement
     }
 
     /**
-     * Set Time after the next authentication method is expected to be used if verification push notification isn't received, in seconds
+     * Set Time after the next authentication method is expected to be used if verification push notification isn't received, in seconds.
      */
     public function setPushTimeout(int $pushTimeout): self
     {
@@ -61,7 +61,7 @@ class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implement
     }
 
     /**
-     * Get Length of the code
+     * Get Length of the code.
      */
     public function getLength(): int
     {
@@ -69,7 +69,7 @@ class AuthenticationCodeTypeFirebaseIos extends AuthenticationCodeType implement
     }
 
     /**
-     * Set Length of the code
+     * Set Length of the code.
      */
     public function setLength(int $length): self
     {

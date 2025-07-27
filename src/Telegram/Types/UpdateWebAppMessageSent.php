@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message was sent by an opened Web App, so the Web App needs to be closed @web_app_launch_id Identifier of Web App launch
+ * A message was sent by an opened Web App, so the Web App needs to be closed @web_app_launch_id Identifier of Web App launch.
  */
 class UpdateWebAppMessageSent extends Update implements \JsonSerializable
 {

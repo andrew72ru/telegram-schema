@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The connection state has changed. This update must be used only to show a human-readable description of the connection state @state The new connection state
+ * The connection state has changed. This update must be used only to show a human-readable description of the connection state @state The new connection state.
  */
 class UpdateConnectionState extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about subscription plan that must be paid by the user to use a chat invite link
+ * Contains information about subscription plan that must be paid by the user to use a chat invite link.
  */
 class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about subscription plan that must be paid by the user to use the link
+     * Get Information about subscription plan that must be paid by the user to use the link.
      */
     public function getPricing(): StarSubscriptionPricing|null
     {
@@ -33,7 +33,7 @@ class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about subscription plan that must be paid by the user to use the link
+     * Set Information about subscription plan that must be paid by the user to use the link.
      */
     public function setPricing(StarSubscriptionPricing|null $pricing): self
     {
@@ -43,7 +43,7 @@ class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has already paid for the subscription and can use joinChatByInviteLink to join the subscribed chat again
+     * Get True, if the user has already paid for the subscription and can use joinChatByInviteLink to join the subscribed chat again.
      */
     public function getCanReuse(): bool
     {
@@ -51,7 +51,7 @@ class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has already paid for the subscription and can use joinChatByInviteLink to join the subscribed chat again
+     * Set True, if the user has already paid for the subscription and can use joinChatByInviteLink to join the subscribed chat again.
      */
     public function setCanReuse(bool $canReuse): self
     {
@@ -61,7 +61,7 @@ class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the payment form to use for subscription payment; 0 if the subscription can't be paid
+     * Get Identifier of the payment form to use for subscription payment; 0 if the subscription can't be paid.
      */
     public function getFormId(): int
     {
@@ -69,7 +69,7 @@ class ChatInviteLinkSubscriptionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the payment form to use for subscription payment; 0 if the subscription can't be paid
+     * Set Identifier of the payment form to use for subscription payment; 0 if the subscription can't be paid.
      */
     public function setFormId(int $formId): self
     {

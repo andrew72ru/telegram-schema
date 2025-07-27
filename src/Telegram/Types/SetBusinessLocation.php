@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the business location of the current user. Requires Telegram Business subscription @location The new location of the business; pass null to remove the location
+ * Changes the business location of the current user. Requires Telegram Business subscription @location The new location of the business; pass null to remove the location.
  */
 class SetBusinessLocation extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the list of emojis corresponding to a sticker. The sticker must belong to a regular or custom emoji sticker set that is owned by the current user
+ * Changes the list of emojis corresponding to a sticker. The sticker must belong to a regular or custom emoji sticker set that is owned by the current user.
  */
 class SetStickerEmojis extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetStickerEmojis extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker
+     * Get Sticker.
      */
     public function getSticker(): InputFile|null
     {
@@ -30,7 +30,7 @@ class SetStickerEmojis extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker
+     * Set Sticker.
      */
     public function setSticker(InputFile|null $sticker): self
     {
@@ -40,7 +40,7 @@ class SetStickerEmojis extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New string with 1-20 emoji corresponding to the sticker
+     * Get New string with 1-20 emoji corresponding to the sticker.
      */
     public function getEmojis(): string
     {
@@ -48,7 +48,7 @@ class SetStickerEmojis extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New string with 1-20 emoji corresponding to the sticker
+     * Set New string with 1-20 emoji corresponding to the sticker.
      */
     public function setEmojis(string $emojis): self
     {

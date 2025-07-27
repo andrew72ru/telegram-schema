@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A wallpaper in JPEG format
+ * A wallpaper in JPEG format.
  */
 class BackgroundTypeWallpaper extends BackgroundType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BackgroundTypeWallpaper extends BackgroundType implements \JsonSerializabl
     }
 
     /**
-     * Get True, if the wallpaper must be downscaled to fit in 450x450 square and then box-blurred with radius 12
+     * Get True, if the wallpaper must be downscaled to fit in 450x450 square and then box-blurred with radius 12.
      */
     public function getIsBlurred(): bool
     {
@@ -30,7 +30,7 @@ class BackgroundTypeWallpaper extends BackgroundType implements \JsonSerializabl
     }
 
     /**
-     * Set True, if the wallpaper must be downscaled to fit in 450x450 square and then box-blurred with radius 12
+     * Set True, if the wallpaper must be downscaled to fit in 450x450 square and then box-blurred with radius 12.
      */
     public function setIsBlurred(bool $isBlurred): self
     {
@@ -40,7 +40,7 @@ class BackgroundTypeWallpaper extends BackgroundType implements \JsonSerializabl
     }
 
     /**
-     * Get True, if the background needs to be slightly moved when device is tilted
+     * Get True, if the background needs to be slightly moved when device is tilted.
      */
     public function getIsMoving(): bool
     {
@@ -48,7 +48,7 @@ class BackgroundTypeWallpaper extends BackgroundType implements \JsonSerializabl
     }
 
     /**
-     * Set True, if the background needs to be slightly moved when device is tilted
+     * Set True, if the background needs to be slightly moved when device is tilted.
      */
     public function setIsMoving(bool $isMoving): self
     {

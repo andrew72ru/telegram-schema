@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Text that must be formatted as if inside pre, and code HTML tags @language Programming language of the code; as defined by the sender
+ * Text that must be formatted as if inside pre, and code HTML tags @language Programming language of the code; as defined by the sender.
  */
 class TextEntityTypePreCode extends TextEntityType implements \JsonSerializable
 {

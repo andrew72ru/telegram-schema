@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains basic information about another user that started a chat with the current user
+ * Contains basic information about another user that started a chat with the current user.
  */
 class AccountInfo implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Get Month when the user was registered in Telegram; 0-12; may be 0 if unknown
+     * Get Month when the user was registered in Telegram; 0-12; may be 0 if unknown.
      */
     public function getRegistrationMonth(): int
     {
@@ -39,7 +39,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Set Month when the user was registered in Telegram; 0-12; may be 0 if unknown
+     * Set Month when the user was registered in Telegram; 0-12; may be 0 if unknown.
      */
     public function setRegistrationMonth(int $registrationMonth): self
     {
@@ -49,7 +49,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Get Year when the user was registered in Telegram; 0-9999; may be 0 if unknown
+     * Get Year when the user was registered in Telegram; 0-9999; may be 0 if unknown.
      */
     public function getRegistrationYear(): int
     {
@@ -57,7 +57,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Set Year when the user was registered in Telegram; 0-9999; may be 0 if unknown
+     * Set Year when the user was registered in Telegram; 0-9999; may be 0 if unknown.
      */
     public function setRegistrationYear(int $registrationYear): self
     {
@@ -67,7 +67,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code based on the phone number of the user; may be empty if unknown
+     * Get A two-letter ISO 3166-1 alpha-2 country code based on the phone number of the user; may be empty if unknown.
      */
     public function getPhoneNumberCountryCode(): string
     {
@@ -75,7 +75,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code based on the phone number of the user; may be empty if unknown
+     * Set A two-letter ISO 3166-1 alpha-2 country code based on the phone number of the user; may be empty if unknown.
      */
     public function setPhoneNumberCountryCode(string $phoneNumberCountryCode): self
     {
@@ -85,7 +85,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user changed name last time; 0 if unknown
+     * Get Point in time (Unix timestamp) when the user changed name last time; 0 if unknown.
      */
     public function getLastNameChangeDate(): int
     {
@@ -93,7 +93,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user changed name last time; 0 if unknown
+     * Set Point in time (Unix timestamp) when the user changed name last time; 0 if unknown.
      */
     public function setLastNameChangeDate(int $lastNameChangeDate): self
     {
@@ -103,7 +103,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user changed photo last time; 0 if unknown
+     * Get Point in time (Unix timestamp) when the user changed photo last time; 0 if unknown.
      */
     public function getLastPhotoChangeDate(): int
     {
@@ -111,7 +111,7 @@ class AccountInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user changed photo last time; 0 if unknown
+     * Set Point in time (Unix timestamp) when the user changed photo last time; 0 if unknown.
      */
     public function setLastPhotoChangeDate(int $lastPhotoChangeDate): self
     {

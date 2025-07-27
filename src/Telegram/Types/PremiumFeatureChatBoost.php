@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The ability to boost chats
+ * The ability to boost chats.
  */
 class PremiumFeatureChatBoost extends PremiumFeature implements \JsonSerializable
 {

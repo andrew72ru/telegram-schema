@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a message to TDLib internal log. Can be called synchronously
+ * Adds a message to TDLib internal log. Can be called synchronously.
  */
 class AddLogMessage extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AddLogMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The minimum verbosity level needed for the message to be logged; 0-1023
+     * Get The minimum verbosity level needed for the message to be logged; 0-1023.
      */
     public function getVerbosityLevel(): int
     {
@@ -30,7 +30,7 @@ class AddLogMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The minimum verbosity level needed for the message to be logged; 0-1023
+     * Set The minimum verbosity level needed for the message to be logged; 0-1023.
      */
     public function setVerbosityLevel(int $verbosityLevel): self
     {
@@ -40,7 +40,7 @@ class AddLogMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Text of a message to log
+     * Get Text of a message to log.
      */
     public function getText(): string
     {
@@ -48,7 +48,7 @@ class AddLogMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Text of a message to log
+     * Set Text of a message to log.
      */
     public function setText(string $text): self
     {

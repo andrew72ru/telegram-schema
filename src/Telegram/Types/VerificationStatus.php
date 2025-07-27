@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about verification status of a chat or a user
+ * Contains information about verification status of a chat or a user.
  */
 class VerificationStatus implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat or the user is verified by Telegram
+     * Get True, if the chat or the user is verified by Telegram.
      */
     public function getIsVerified(): bool
     {
@@ -36,7 +36,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat or the user is verified by Telegram
+     * Set True, if the chat or the user is verified by Telegram.
      */
     public function setIsVerified(bool $isVerified): self
     {
@@ -46,7 +46,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat or the user is marked as scam by Telegram
+     * Get True, if the chat or the user is marked as scam by Telegram.
      */
     public function getIsScam(): bool
     {
@@ -54,7 +54,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat or the user is marked as scam by Telegram
+     * Set True, if the chat or the user is marked as scam by Telegram.
      */
     public function setIsScam(bool $isScam): self
     {
@@ -64,7 +64,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat or the user is marked as fake by Telegram
+     * Get True, if the chat or the user is marked as fake by Telegram.
      */
     public function getIsFake(): bool
     {
@@ -72,7 +72,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat or the user is marked as fake by Telegram
+     * Set True, if the chat or the user is marked as fake by Telegram.
      */
     public function setIsFake(bool $isFake): self
     {
@@ -82,7 +82,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the custom emoji to be shown as verification sign provided by a bot for the user; 0 if none
+     * Get Identifier of the custom emoji to be shown as verification sign provided by a bot for the user; 0 if none.
      */
     public function getBotVerificationIconCustomEmojiId(): int
     {
@@ -90,7 +90,7 @@ class VerificationStatus implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the custom emoji to be shown as verification sign provided by a bot for the user; 0 if none
+     * Set Identifier of the custom emoji to be shown as verification sign provided by a bot for the user; 0 if none.
      */
     public function setBotVerificationIconCustomEmojiId(int $botVerificationIconCustomEmojiId): self
     {

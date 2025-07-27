@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message content has changed @chat_id Chat identifier @message_id Message identifier @new_content New message content
+ * The message content has changed @chat_id Chat identifier @message_id Message identifier @new_content New message content.
  */
 class UpdateMessageContent extends Update implements \JsonSerializable
 {

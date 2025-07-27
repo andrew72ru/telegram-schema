@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of Telegram Star subscriptions
+ * Represents a list of Telegram Star subscriptions.
  */
 class StarSubscriptions implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Get The amount of owned Telegram Stars
+     * Get The amount of owned Telegram Stars.
      */
     public function getStarAmount(): StarAmount|null
     {
@@ -36,7 +36,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Set The amount of owned Telegram Stars
+     * Set The amount of owned Telegram Stars.
      */
     public function setStarAmount(StarAmount|null $starAmount): self
     {
@@ -46,7 +46,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Get List of subscriptions for Telegram Stars
+     * Get List of subscriptions for Telegram Stars.
      */
     public function getSubscriptions(): array|null
     {
@@ -54,7 +54,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Set List of subscriptions for Telegram Stars
+     * Set List of subscriptions for Telegram Stars.
      */
     public function setSubscriptions(array|null $subscriptions): self
     {
@@ -64,7 +64,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars required to buy to extend subscriptions expiring soon
+     * Get The number of Telegram Stars required to buy to extend subscriptions expiring soon.
      */
     public function getRequiredStarCount(): int
     {
@@ -72,7 +72,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars required to buy to extend subscriptions expiring soon
+     * Set The number of Telegram Stars required to buy to extend subscriptions expiring soon.
      */
     public function setRequiredStarCount(int $requiredStarCount): self
     {
@@ -82,7 +82,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -90,7 +90,7 @@ class StarSubscriptions implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

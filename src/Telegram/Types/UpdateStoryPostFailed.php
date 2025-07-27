@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A story failed to post. If the story posting is canceled, then updateStoryDeleted will be received instead of this update
+ * A story failed to post. If the story posting is canceled, then updateStoryDeleted will be received instead of this update.
  */
 class UpdateStoryPostFailed extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateStoryPostFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The failed to post story
+     * Get The failed to post story.
      */
     public function getStory(): Story|null
     {
@@ -33,7 +33,7 @@ class UpdateStoryPostFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The failed to post story
+     * Set The failed to post story.
      */
     public function setStory(Story|null $story): self
     {
@@ -43,7 +43,7 @@ class UpdateStoryPostFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The cause of the story posting failure
+     * Get The cause of the story posting failure.
      */
     public function getError(): Error|null
     {
@@ -51,7 +51,7 @@ class UpdateStoryPostFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The cause of the story posting failure
+     * Set The cause of the story posting failure.
      */
     public function setError(Error|null $error): self
     {
@@ -61,7 +61,7 @@ class UpdateStoryPostFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Type of the error; may be null if unknown
+     * Get Type of the error; may be null if unknown.
      */
     public function getErrorType(): CanPostStoryResult|null
     {
@@ -69,7 +69,7 @@ class UpdateStoryPostFailed extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Type of the error; may be null if unknown
+     * Set Type of the error; may be null if unknown.
      */
     public function setErrorType(CanPostStoryResult|null $errorType): self
     {

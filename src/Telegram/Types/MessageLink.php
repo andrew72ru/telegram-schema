@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains an HTTPS link to a message in a supergroup or channel, or a forum topic @link The link @is_public True, if the link will work for non-members of the chat
+ * Contains an HTTPS link to a message in a supergroup or channel, or a forum topic @see The link @is_public True, if the link will work for non-members of the chat.
  */
 class MessageLink implements \JsonSerializable
 {

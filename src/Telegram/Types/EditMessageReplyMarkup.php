@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the message reply markup; for bots only. Returns the edited message after the edit is completed on the server side
+ * Edits the message reply markup; for bots only. Returns the edited message after the edit is completed on the server side.
  */
 class EditMessageReplyMarkup extends Message implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditMessageReplyMarkup extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class EditMessageReplyMarkup extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class EditMessageReplyMarkup extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited
+     * Get Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class EditMessageReplyMarkup extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited
+     * Set Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class EditMessageReplyMarkup extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -69,7 +69,7 @@ class EditMessageReplyMarkup extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

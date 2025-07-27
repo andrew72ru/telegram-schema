@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the ability of users to save, forward, or copy chat content. Supported only for basic groups, supergroups and channels. Requires owner privileges
+ * Changes the ability of users to save, forward, or copy chat content. Supported only for basic groups, supergroups and channels. Requires owner privileges.
  */
 class ToggleChatHasProtectedContent extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleChatHasProtectedContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class ToggleChatHasProtectedContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class ToggleChatHasProtectedContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of has_protected_content
+     * Get New value of has_protected_content.
      */
     public function getHasProtectedContent(): bool
     {
@@ -48,7 +48,7 @@ class ToggleChatHasProtectedContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of has_protected_content
+     * Set New value of has_protected_content.
      */
     public function setHasProtectedContent(bool $hasProtectedContent): self
     {

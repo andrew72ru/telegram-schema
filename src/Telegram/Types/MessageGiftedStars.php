@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Telegram Stars were gifted to a user
+ * Telegram Stars were gifted to a user.
  */
 class MessageGiftedStars extends MessageContent implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of a user that gifted Telegram Stars; 0 if the gift was anonymous or is outgoing
+     * Get The identifier of a user that gifted Telegram Stars; 0 if the gift was anonymous or is outgoing.
      */
     public function getGifterUserId(): int
     {
@@ -51,7 +51,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of a user that gifted Telegram Stars; 0 if the gift was anonymous or is outgoing
+     * Set The identifier of a user that gifted Telegram Stars; 0 if the gift was anonymous or is outgoing.
      */
     public function setGifterUserId(int $gifterUserId): self
     {
@@ -61,7 +61,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of a user that received Telegram Stars; 0 if the gift is incoming
+     * Get The identifier of a user that received Telegram Stars; 0 if the gift is incoming.
      */
     public function getReceiverUserId(): int
     {
@@ -69,7 +69,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of a user that received Telegram Stars; 0 if the gift is incoming
+     * Set The identifier of a user that received Telegram Stars; 0 if the gift is incoming.
      */
     public function setReceiverUserId(int $receiverUserId): self
     {
@@ -79,7 +79,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Currency for the paid amount
+     * Get Currency for the paid amount.
      */
     public function getCurrency(): string
     {
@@ -87,7 +87,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Currency for the paid amount
+     * Set Currency for the paid amount.
      */
     public function setCurrency(string $currency): self
     {
@@ -97,7 +97,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The paid amount, in the smallest units of the currency
+     * Get The paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -105,7 +105,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The paid amount, in the smallest units of the currency
+     * Set The paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -115,7 +115,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Cryptocurrency used to pay for the gift; may be empty if none
+     * Get Cryptocurrency used to pay for the gift; may be empty if none.
      */
     public function getCryptocurrency(): string
     {
@@ -123,7 +123,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Cryptocurrency used to pay for the gift; may be empty if none
+     * Set Cryptocurrency used to pay for the gift; may be empty if none.
      */
     public function setCryptocurrency(string $cryptocurrency): self
     {
@@ -133,7 +133,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The paid amount, in the smallest units of the cryptocurrency; 0 if none
+     * Get The paid amount, in the smallest units of the cryptocurrency; 0 if none.
      */
     public function getCryptocurrencyAmount(): int
     {
@@ -141,7 +141,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The paid amount, in the smallest units of the cryptocurrency; 0 if none
+     * Set The paid amount, in the smallest units of the cryptocurrency; 0 if none.
      */
     public function setCryptocurrencyAmount(int $cryptocurrencyAmount): self
     {
@@ -151,7 +151,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that were gifted
+     * Get Number of Telegram Stars that were gifted.
      */
     public function getStarCount(): int
     {
@@ -159,7 +159,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that were gifted
+     * Set Number of Telegram Stars that were gifted.
      */
     public function setStarCount(int $starCount): self
     {
@@ -169,7 +169,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the transaction for Telegram Stars purchase; for receiver only
+     * Get Identifier of the transaction for Telegram Stars purchase; for receiver only.
      */
     public function getTransactionId(): string
     {
@@ -177,7 +177,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the transaction for Telegram Stars purchase; for receiver only
+     * Set Identifier of the transaction for Telegram Stars purchase; for receiver only.
      */
     public function setTransactionId(string $transactionId): self
     {
@@ -187,7 +187,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get A sticker to be shown in the message; may be null if unknown
+     * Get A sticker to be shown in the message; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -195,7 +195,7 @@ class MessageGiftedStars extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set A sticker to be shown in the message; may be null if unknown
+     * Set A sticker to be shown in the message; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {

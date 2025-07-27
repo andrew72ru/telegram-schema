@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The ability to use all available message effects
+ * The ability to use all available message effects.
  */
 class PremiumFeatureMessageEffects extends PremiumFeature implements \JsonSerializable
 {

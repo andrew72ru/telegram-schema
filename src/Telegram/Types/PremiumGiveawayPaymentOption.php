@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for creating of Telegram Premium giveaway or manual distribution of Telegram Premium among chat members. Use telegramPaymentPurposePremiumGiftCodes or telegramPaymentPurposePremiumGiveaway for out-of-store payments
+ * Describes an option for creating of Telegram Premium giveaway or manual distribution of Telegram Premium among chat members. Use telegramPaymentPurposePremiumGiftCodes or telegramPaymentPurposePremiumGiveaway for out-of-store payments.
  */
 class PremiumGiveawayPaymentOption implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code for Telegram Premium gift code payment
+     * Get ISO 4217 currency code for Telegram Premium gift code payment.
      */
     public function getCurrency(): string
     {
@@ -42,7 +42,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code for Telegram Premium gift code payment
+     * Set ISO 4217 currency code for Telegram Premium gift code payment.
      */
     public function setCurrency(string $currency): self
     {
@@ -52,7 +52,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The amount to pay, in the smallest units of the currency
+     * Get The amount to pay, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -60,7 +60,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The amount to pay, in the smallest units of the currency
+     * Set The amount to pay, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -70,7 +70,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of users which will be able to activate the gift codes
+     * Get Number of users which will be able to activate the gift codes.
      */
     public function getWinnerCount(): int
     {
@@ -78,7 +78,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of users which will be able to activate the gift codes
+     * Set Number of users which will be able to activate the gift codes.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -88,7 +88,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active
+     * Get Number of months the Telegram Premium subscription will be active.
      */
     public function getMonthCount(): int
     {
@@ -96,7 +96,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active
+     * Set Number of months the Telegram Premium subscription will be active.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -106,7 +106,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the store product associated with the option; may be empty if none
+     * Get Identifier of the store product associated with the option; may be empty if none.
      */
     public function getStoreProductId(): string
     {
@@ -114,7 +114,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the store product associated with the option; may be empty if none
+     * Set Identifier of the store product associated with the option; may be empty if none.
      */
     public function setStoreProductId(string $storeProductId): self
     {
@@ -124,7 +124,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the store product must be paid
+     * Get Number of times the store product must be paid.
      */
     public function getStoreProductQuantity(): int
     {
@@ -132,7 +132,7 @@ class PremiumGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the store product must be paid
+     * Set Number of times the store product must be paid.
      */
     public function setStoreProductQuantity(int $storeProductQuantity): self
     {

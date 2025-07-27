@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about the main Web App of a bot @url URL of the Web App to open @mode The mode in which the Web App must be opened
+ * Contains information about the main Web App of a bot @url URL of the Web App to open @mode The mode in which the Web App must be opened.
  */
 class MainWebApp implements \JsonSerializable
 {

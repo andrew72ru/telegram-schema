@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for buying or upgrading Telegram Premium for self
+ * Describes an option for buying or upgrading Telegram Premium for self.
  */
 class PremiumStatePaymentOption implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Information about the payment option
+     * Get Information about the payment option.
      */
     public function getPaymentOption(): PremiumPaymentOption|null
     {
@@ -36,7 +36,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Information about the payment option
+     * Set Information about the payment option.
      */
     public function setPaymentOption(PremiumPaymentOption|null $paymentOption): self
     {
@@ -46,7 +46,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if this is the currently used Telegram Premium subscription option
+     * Get True, if this is the currently used Telegram Premium subscription option.
      */
     public function getIsCurrent(): bool
     {
@@ -54,7 +54,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if this is the currently used Telegram Premium subscription option
+     * Set True, if this is the currently used Telegram Premium subscription option.
      */
     public function setIsCurrent(bool $isCurrent): self
     {
@@ -64,7 +64,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the payment option can be used to upgrade the existing Telegram Premium subscription
+     * Get True, if the payment option can be used to upgrade the existing Telegram Premium subscription.
      */
     public function getIsUpgrade(): bool
     {
@@ -72,7 +72,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the payment option can be used to upgrade the existing Telegram Premium subscription
+     * Set True, if the payment option can be used to upgrade the existing Telegram Premium subscription.
      */
     public function setIsUpgrade(bool $isUpgrade): self
     {
@@ -82,7 +82,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last in-store transaction for the currently used option
+     * Get Identifier of the last in-store transaction for the currently used option.
      */
     public function getLastTransactionId(): string
     {
@@ -90,7 +90,7 @@ class PremiumStatePaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last in-store transaction for the currently used option
+     * Set Identifier of the last in-store transaction for the currently used option.
      */
     public function setLastTransactionId(string $lastTransactionId): self
     {

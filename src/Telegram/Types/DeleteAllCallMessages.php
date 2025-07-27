@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all call messages @revoke Pass true to delete the messages for all users
+ * Deletes all call messages @revoke Pass true to delete the messages for all users.
  */
 class DeleteAllCallMessages extends Ok implements \JsonSerializable
 {

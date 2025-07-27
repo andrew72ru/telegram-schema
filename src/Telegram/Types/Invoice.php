@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Product invoice
+ * Product invoice.
  */
 class Invoice implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code
+     * Get ISO 4217 currency code.
      */
     public function getCurrency(): string
     {
@@ -69,7 +69,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code
+     * Set ISO 4217 currency code.
      */
     public function setCurrency(string $currency): self
     {
@@ -79,7 +79,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get A list of objects used to calculate the total price of the product
+     * Get A list of objects used to calculate the total price of the product.
      */
     public function getPriceParts(): array|null
     {
@@ -87,7 +87,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set A list of objects used to calculate the total price of the product
+     * Set A list of objects used to calculate the total price of the product.
      */
     public function setPriceParts(array|null $priceParts): self
     {
@@ -97,7 +97,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get The number of seconds between consecutive Telegram Star debiting for subscription invoices; 0 if the invoice doesn't create subscription
+     * Get The number of seconds between consecutive Telegram Star debiting for subscription invoices; 0 if the invoice doesn't create subscription.
      */
     public function getSubscriptionPeriod(): int
     {
@@ -105,7 +105,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set The number of seconds between consecutive Telegram Star debiting for subscription invoices; 0 if the invoice doesn't create subscription
+     * Set The number of seconds between consecutive Telegram Star debiting for subscription invoices; 0 if the invoice doesn't create subscription.
      */
     public function setSubscriptionPeriod(int $subscriptionPeriod): self
     {
@@ -115,7 +115,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get The maximum allowed amount of tip in the smallest units of the currency
+     * Get The maximum allowed amount of tip in the smallest units of the currency.
      */
     public function getMaxTipAmount(): int
     {
@@ -123,7 +123,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set The maximum allowed amount of tip in the smallest units of the currency
+     * Set The maximum allowed amount of tip in the smallest units of the currency.
      */
     public function setMaxTipAmount(int $maxTipAmount): self
     {
@@ -133,7 +133,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get Suggested amounts of tip in the smallest units of the currency
+     * Get Suggested amounts of tip in the smallest units of the currency.
      */
     public function getSuggestedTipAmounts(): array|null
     {
@@ -141,7 +141,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set Suggested amounts of tip in the smallest units of the currency
+     * Set Suggested amounts of tip in the smallest units of the currency.
      */
     public function setSuggestedTipAmounts(array|null $suggestedTipAmounts): self
     {
@@ -151,7 +151,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get An HTTP URL with terms of service for recurring payments. If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service before allowed to pay
+     * Get An HTTP URL with terms of service for recurring payments. If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service before allowed to pay.
      */
     public function getRecurringPaymentTermsOfServiceUrl(): string
     {
@@ -159,7 +159,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set An HTTP URL with terms of service for recurring payments. If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service before allowed to pay
+     * Set An HTTP URL with terms of service for recurring payments. If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service before allowed to pay.
      */
     public function setRecurringPaymentTermsOfServiceUrl(string $recurringPaymentTermsOfServiceUrl): self
     {
@@ -169,7 +169,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get An HTTP URL with terms of service for non-recurring payments. If non-empty, then the user must accept the terms of service before allowed to pay
+     * Get An HTTP URL with terms of service for non-recurring payments. If non-empty, then the user must accept the terms of service before allowed to pay.
      */
     public function getTermsOfServiceUrl(): string
     {
@@ -177,7 +177,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set An HTTP URL with terms of service for non-recurring payments. If non-empty, then the user must accept the terms of service before allowed to pay
+     * Set An HTTP URL with terms of service for non-recurring payments. If non-empty, then the user must accept the terms of service before allowed to pay.
      */
     public function setTermsOfServiceUrl(string $termsOfServiceUrl): self
     {
@@ -187,7 +187,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the payment is a test payment
+     * Get True, if the payment is a test payment.
      */
     public function getIsTest(): bool
     {
@@ -195,7 +195,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the payment is a test payment
+     * Set True, if the payment is a test payment.
      */
     public function setIsTest(bool $isTest): self
     {
@@ -205,7 +205,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user's name is needed for payment
+     * Get True, if the user's name is needed for payment.
      */
     public function getNeedName(): bool
     {
@@ -213,7 +213,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user's name is needed for payment
+     * Set True, if the user's name is needed for payment.
      */
     public function setNeedName(bool $needName): self
     {
@@ -223,7 +223,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user's phone number is needed for payment
+     * Get True, if the user's phone number is needed for payment.
      */
     public function getNeedPhoneNumber(): bool
     {
@@ -231,7 +231,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user's phone number is needed for payment
+     * Set True, if the user's phone number is needed for payment.
      */
     public function setNeedPhoneNumber(bool $needPhoneNumber): self
     {
@@ -241,7 +241,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user's email address is needed for payment
+     * Get True, if the user's email address is needed for payment.
      */
     public function getNeedEmailAddress(): bool
     {
@@ -249,7 +249,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user's email address is needed for payment
+     * Set True, if the user's email address is needed for payment.
      */
     public function setNeedEmailAddress(bool $needEmailAddress): self
     {
@@ -259,7 +259,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user's shipping address is needed for payment
+     * Get True, if the user's shipping address is needed for payment.
      */
     public function getNeedShippingAddress(): bool
     {
@@ -267,7 +267,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user's shipping address is needed for payment
+     * Set True, if the user's shipping address is needed for payment.
      */
     public function setNeedShippingAddress(bool $needShippingAddress): self
     {
@@ -277,7 +277,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user's phone number will be sent to the provider
+     * Get True, if the user's phone number will be sent to the provider.
      */
     public function getSendPhoneNumberToProvider(): bool
     {
@@ -285,7 +285,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user's phone number will be sent to the provider
+     * Set True, if the user's phone number will be sent to the provider.
      */
     public function setSendPhoneNumberToProvider(bool $sendPhoneNumberToProvider): self
     {
@@ -295,7 +295,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user's email address will be sent to the provider
+     * Get True, if the user's email address will be sent to the provider.
      */
     public function getSendEmailAddressToProvider(): bool
     {
@@ -303,7 +303,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user's email address will be sent to the provider
+     * Set True, if the user's email address will be sent to the provider.
      */
     public function setSendEmailAddressToProvider(bool $sendEmailAddressToProvider): self
     {
@@ -313,7 +313,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Get True, if the total price depends on the shipping method
+     * Get True, if the total price depends on the shipping method.
      */
     public function getIsFlexible(): bool
     {
@@ -321,7 +321,7 @@ class Invoice implements \JsonSerializable
     }
 
     /**
-     * Set True, if the total price depends on the shipping method
+     * Set True, if the total price depends on the shipping method.
      */
     public function setIsFlexible(bool $isFlexible): self
     {

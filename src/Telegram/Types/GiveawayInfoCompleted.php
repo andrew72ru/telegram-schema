@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a completed giveaway
+ * Describes a completed giveaway.
  */
 class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the giveaway was created
+     * Get Point in time (Unix timestamp) when the giveaway was created.
      */
     public function getCreationDate(): int
     {
@@ -48,7 +48,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the giveaway was created
+     * Set Point in time (Unix timestamp) when the giveaway was created.
      */
     public function setCreationDate(int $creationDate): self
     {
@@ -58,7 +58,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway
+     * Get Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway.
      */
     public function getActualWinnersSelectionDate(): int
     {
@@ -66,7 +66,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway
+     * Set Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway.
      */
     public function setActualWinnersSelectionDate(int $actualWinnersSelectionDate): self
     {
@@ -76,7 +76,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the giveaway was canceled and was fully refunded
+     * Get True, if the giveaway was canceled and was fully refunded.
      */
     public function getWasRefunded(): bool
     {
@@ -84,7 +84,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the giveaway was canceled and was fully refunded
+     * Set True, if the giveaway was canceled and was fully refunded.
      */
     public function setWasRefunded(bool $wasRefunded): self
     {
@@ -94,7 +94,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user is a winner of the giveaway
+     * Get True, if the current user is a winner of the giveaway.
      */
     public function getIsWinner(): bool
     {
@@ -102,7 +102,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user is a winner of the giveaway
+     * Set True, if the current user is a winner of the giveaway.
      */
     public function setIsWinner(bool $isWinner): self
     {
@@ -112,7 +112,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of winners in the giveaway
+     * Get Number of winners in the giveaway.
      */
     public function getWinnerCount(): int
     {
@@ -120,7 +120,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of winners in the giveaway
+     * Set Number of winners in the giveaway.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -130,7 +130,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of winners, which activated their gift codes; for Telegram Premium giveaways only
+     * Get Number of winners, which activated their gift codes; for Telegram Premium giveaways only.
      */
     public function getActivationCount(): int
     {
@@ -138,7 +138,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of winners, which activated their gift codes; for Telegram Premium giveaways only
+     * Set Number of winners, which activated their gift codes; for Telegram Premium giveaways only.
      */
     public function setActivationCount(int $activationCount): self
     {
@@ -148,7 +148,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Telegram Premium gift code that was received by the current user; empty if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Premium giveaway
+     * Get Telegram Premium gift code that was received by the current user; empty if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Premium giveaway.
      */
     public function getGiftCode(): string
     {
@@ -156,7 +156,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Telegram Premium gift code that was received by the current user; empty if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Premium giveaway
+     * Set Telegram Premium gift code that was received by the current user; empty if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Premium giveaway.
      */
     public function setGiftCode(string $giftCode): self
     {
@@ -166,7 +166,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars won by the current user; 0 if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Star giveaway
+     * Get The amount of Telegram Stars won by the current user; 0 if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Star giveaway.
      */
     public function getWonStarCount(): int
     {
@@ -174,7 +174,7 @@ class GiveawayInfoCompleted extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars won by the current user; 0 if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Star giveaway
+     * Set The amount of Telegram Stars won by the current user; 0 if the user isn't a winner in the giveaway or the giveaway isn't a Telegram Star giveaway.
      */
     public function setWonStarCount(int $wonStarCount): self
     {

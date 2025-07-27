@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message was edited @old_message The original message before the edit @new_message The message after it was edited
+ * A message was edited @old_message The original message before the edit @new_message The message after it was edited.
  */
 class ChatEventMessageEdited extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a ready to send inline message. Use sendInlineQueryResultMessage to send the message
+ * Represents a ready to send inline message. Use sendInlineQueryResultMessage to send the message.
  */
 class PreparedInlineMessage implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PreparedInlineMessage implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the inline query to pass to sendInlineQueryResultMessage
+     * Get Unique identifier of the inline query to pass to sendInlineQueryResultMessage.
      */
     public function getInlineQueryId(): int
     {
@@ -33,7 +33,7 @@ class PreparedInlineMessage implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the inline query to pass to sendInlineQueryResultMessage
+     * Set Unique identifier of the inline query to pass to sendInlineQueryResultMessage.
      */
     public function setInlineQueryId(int $inlineQueryId): self
     {
@@ -43,7 +43,7 @@ class PreparedInlineMessage implements \JsonSerializable
     }
 
     /**
-     * Get Resulted inline message of the query
+     * Get Resulted inline message of the query.
      */
     public function getResult(): InlineQueryResult|null
     {
@@ -51,7 +51,7 @@ class PreparedInlineMessage implements \JsonSerializable
     }
 
     /**
-     * Set Resulted inline message of the query
+     * Set Resulted inline message of the query.
      */
     public function setResult(InlineQueryResult|null $result): self
     {
@@ -61,7 +61,7 @@ class PreparedInlineMessage implements \JsonSerializable
     }
 
     /**
-     * Get Types of the chats to which the message can be sent
+     * Get Types of the chats to which the message can be sent.
      */
     public function getChatTypes(): TargetChatTypes|null
     {
@@ -69,7 +69,7 @@ class PreparedInlineMessage implements \JsonSerializable
     }
 
     /**
-     * Set Types of the chats to which the message can be sent
+     * Set Types of the chats to which the message can be sent.
      */
     public function setChatTypes(TargetChatTypes|null $chatTypes): self
     {

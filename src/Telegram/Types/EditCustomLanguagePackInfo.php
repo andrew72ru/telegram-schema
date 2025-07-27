@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits information about a custom local language pack in the current localization target. Can be called before authorization @info New information about the custom local language pack
+ * Edits information about a custom local language pack in the current localization target. Can be called before authorization @info New information about the custom local language pack.
  */
 class EditCustomLanguagePackInfo extends Ok implements \JsonSerializable
 {

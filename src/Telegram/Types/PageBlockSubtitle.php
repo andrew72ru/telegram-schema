@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The subtitle of a page @subtitle Subtitle
+ * The subtitle of a page @subtitle Subtitle.
  */
 class PageBlockSubtitle extends PageBlock implements \JsonSerializable
 {

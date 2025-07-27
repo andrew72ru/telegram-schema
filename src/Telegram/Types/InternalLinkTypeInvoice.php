@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to an invoice. Call getPaymentForm with the given invoice name to process the link @invoice_name Name of the invoice
+ * The link is a link to an invoice. Call getPaymentForm with the given invoice name to process the link @invoice_name Name of the invoice.
  */
 class InternalLinkTypeInvoice extends InternalLinkType implements \JsonSerializable
 {

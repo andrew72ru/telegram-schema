@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains custom information about the user @message Information message @author Information author @date Information change date
+ * Contains custom information about the user @message Information message @author Information author @date Information change date.
  */
 class UserSupportInfo implements \JsonSerializable
 {

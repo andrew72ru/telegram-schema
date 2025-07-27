@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An italicized rich text @text Text
+ * An italicized rich text @text Text.
  */
 class RichTextItalic extends RichText implements \JsonSerializable
 {

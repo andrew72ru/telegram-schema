@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user changed the answer to a poll; for bots only
+ * A user changed the answer to a poll; for bots only.
  */
 class UpdatePollAnswer extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdatePollAnswer extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique poll identifier
+     * Get Unique poll identifier.
      */
     public function getPollId(): int
     {
@@ -33,7 +33,7 @@ class UpdatePollAnswer extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique poll identifier
+     * Set Unique poll identifier.
      */
     public function setPollId(int $pollId): self
     {
@@ -43,7 +43,7 @@ class UpdatePollAnswer extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message sender that changed the answer to the poll
+     * Get Identifier of the message sender that changed the answer to the poll.
      */
     public function getVoterId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class UpdatePollAnswer extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message sender that changed the answer to the poll
+     * Set Identifier of the message sender that changed the answer to the poll.
      */
     public function setVoterId(MessageSender|null $voterId): self
     {
@@ -61,7 +61,7 @@ class UpdatePollAnswer extends Update implements \JsonSerializable
     }
 
     /**
-     * Get 0-based identifiers of answer options, chosen by the user
+     * Get 0-based identifiers of answer options, chosen by the user.
      */
     public function getOptionIds(): array|null
     {
@@ -69,7 +69,7 @@ class UpdatePollAnswer extends Update implements \JsonSerializable
     }
 
     /**
-     * Set 0-based identifiers of answer options, chosen by the user
+     * Set 0-based identifiers of answer options, chosen by the user.
      */
     public function setOptionIds(array|null $optionIds): self
     {

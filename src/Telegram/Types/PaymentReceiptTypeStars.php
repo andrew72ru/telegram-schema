@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The payment was done using Telegram Stars
+ * The payment was done using Telegram Stars.
  */
 class PaymentReceiptTypeStars extends PaymentReceiptType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PaymentReceiptTypeStars extends PaymentReceiptType implements \JsonSeriali
     }
 
     /**
-     * Get Number of Telegram Stars that were paid
+     * Get Number of Telegram Stars that were paid.
      */
     public function getStarCount(): int
     {
@@ -30,7 +30,7 @@ class PaymentReceiptTypeStars extends PaymentReceiptType implements \JsonSeriali
     }
 
     /**
-     * Set Number of Telegram Stars that were paid
+     * Set Number of Telegram Stars that were paid.
      */
     public function setStarCount(int $starCount): self
     {
@@ -40,7 +40,7 @@ class PaymentReceiptTypeStars extends PaymentReceiptType implements \JsonSeriali
     }
 
     /**
-     * Get Unique identifier of the transaction that can be used to dispute it
+     * Get Unique identifier of the transaction that can be used to dispute it.
      */
     public function getTransactionId(): string
     {
@@ -48,7 +48,7 @@ class PaymentReceiptTypeStars extends PaymentReceiptType implements \JsonSeriali
     }
 
     /**
-     * Set Unique identifier of the transaction that can be used to dispute it
+     * Set Unique identifier of the transaction that can be used to dispute it.
      */
     public function setTransactionId(string $transactionId): self
     {

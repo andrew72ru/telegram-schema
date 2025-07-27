@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a deposit of Telegram Stars by another user; for regular users only
+ * The transaction is a deposit of Telegram Stars by another user; for regular users only.
  */
 class StarTransactionTypeUserDeposit extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeUserDeposit extends StarTransactionType implements \Jso
     }
 
     /**
-     * Get Identifier of the user that gifted Telegram Stars; 0 if the user was anonymous
+     * Get Identifier of the user that gifted Telegram Stars; 0 if the user was anonymous.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeUserDeposit extends StarTransactionType implements \Jso
     }
 
     /**
-     * Set Identifier of the user that gifted Telegram Stars; 0 if the user was anonymous
+     * Set Identifier of the user that gifted Telegram Stars; 0 if the user was anonymous.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeUserDeposit extends StarTransactionType implements \Jso
     }
 
     /**
-     * Get The sticker to be shown in the transaction information; may be null if unknown
+     * Get The sticker to be shown in the transaction information; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeUserDeposit extends StarTransactionType implements \Jso
     }
 
     /**
-     * Set The sticker to be shown in the transaction information; may be null if unknown
+     * Set The sticker to be shown in the transaction information; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {

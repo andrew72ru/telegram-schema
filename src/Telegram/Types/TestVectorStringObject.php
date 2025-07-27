@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A simple object containing a vector of objects that hold a string; for testing only @value Vector of objects
+ * A simple object containing a vector of objects that hold a string; for testing only @value Vector of objects.
  */
 class TestVectorStringObject implements \JsonSerializable
 {

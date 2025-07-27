@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an instant view version of a web page if available. This is an offline method if only_local is true. Returns a 404 error if the web page has no instant view page
+ * Returns an instant view version of a web page if available. This is an offline method if only_local is true. Returns a 404 error if the web page has no instant view page.
  */
 class GetWebPageInstantView extends WebPageInstantView implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetWebPageInstantView extends WebPageInstantView implements \JsonSerializa
     }
 
     /**
-     * Get The web page URL
+     * Get The web page URL.
      */
     public function getUrl(): string
     {
@@ -30,7 +30,7 @@ class GetWebPageInstantView extends WebPageInstantView implements \JsonSerializa
     }
 
     /**
-     * Set The web page URL
+     * Set The web page URL.
      */
     public function setUrl(string $url): self
     {
@@ -40,7 +40,7 @@ class GetWebPageInstantView extends WebPageInstantView implements \JsonSerializa
     }
 
     /**
-     * Get Pass true to get only locally available information without sending network requests
+     * Get Pass true to get only locally available information without sending network requests.
      */
     public function getOnlyLocal(): bool
     {
@@ -48,7 +48,7 @@ class GetWebPageInstantView extends WebPageInstantView implements \JsonSerializa
     }
 
     /**
-     * Set Pass true to get only locally available information without sending network requests
+     * Set Pass true to get only locally available information without sending network requests.
      */
     public function setOnlyLocal(bool $onlyLocal): self
     {

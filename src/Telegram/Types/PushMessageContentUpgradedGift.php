@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with an upgraded gift
+ * A message with an upgraded gift.
  */
 class PushMessageContentUpgradedGift extends PushMessageContent implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class PushMessageContentUpgradedGift extends PushMessageContent implements \Json
     }
 
     /**
-     * Get True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift
+     * Get True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift.
      */
     public function getIsUpgrade(): bool
     {
@@ -27,7 +27,7 @@ class PushMessageContentUpgradedGift extends PushMessageContent implements \Json
     }
 
     /**
-     * Set True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift
+     * Set True, if the gift was obtained by upgrading of a previously received gift; otherwise, this is a transferred or resold gift.
      */
     public function setIsUpgrade(bool $isUpgrade): self
     {

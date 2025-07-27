@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A document message (a general file) @document Message content; may be null @is_pinned True, if the message is a pinned message with the specified content
+ * A document message (a general file) @document Message content; may be null @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentDocument extends PushMessageContent implements \JsonSerializable
 {

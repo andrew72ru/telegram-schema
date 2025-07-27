@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The title of a chat was changed @chat_id Chat identifier @title The new chat title
+ * The title of a chat was changed @chat_id Chat identifier @title The new chat title.
  */
 class UpdateChatTitle extends Update implements \JsonSerializable
 {

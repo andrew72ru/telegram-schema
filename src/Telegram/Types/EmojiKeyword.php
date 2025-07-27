@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an emoji with its keyword @emoji The emoji @keyword The keyword
+ * Represents an emoji with its keyword @emoji The emoji @keyword The keyword.
  */
 class EmojiKeyword implements \JsonSerializable
 {

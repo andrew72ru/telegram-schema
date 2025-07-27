@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area with information about weather
+ * An area with information about weather.
  */
 class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get Temperature, in degree Celsius
+     * Get Temperature, in degree Celsius.
      */
     public function getTemperature(): float
     {
@@ -33,7 +33,7 @@ class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set Temperature, in degree Celsius
+     * Set Temperature, in degree Celsius.
      */
     public function setTemperature(float $temperature): self
     {
@@ -43,7 +43,7 @@ class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get Emoji representing the weather
+     * Get Emoji representing the weather.
      */
     public function getEmoji(): string
     {
@@ -51,7 +51,7 @@ class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set Emoji representing the weather
+     * Set Emoji representing the weather.
      */
     public function setEmoji(string $emoji): self
     {
@@ -61,7 +61,7 @@ class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get A color of the area background in the ARGB format
+     * Get A color of the area background in the ARGB format.
      */
     public function getBackgroundColor(): int
     {
@@ -69,7 +69,7 @@ class InputStoryAreaTypeWeather extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set A color of the area background in the ARGB format
+     * Set A color of the area background in the ARGB format.
      */
     public function setBackgroundColor(int $backgroundColor): self
     {

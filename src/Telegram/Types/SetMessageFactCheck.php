@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the fact-check of a message. Can be only used if messageProperties.can_set_fact_check == true
+ * Changes the fact-check of a message. Can be only used if messageProperties.can_set_fact_check == true.
  */
 class SetMessageFactCheck extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetMessageFactCheck extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The channel chat the message belongs to
+     * Get The channel chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetMessageFactCheck extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The channel chat the message belongs to
+     * Set The channel chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetMessageFactCheck extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class SetMessageFactCheck extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class SetMessageFactCheck extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New text of the fact-check; 0-getOption("fact_check_length_max") characters; pass null to remove it. Only Bold, Italic, and TextUrl entities with https://t.me/ links are supported
+     * Get New text of the fact-check; 0-getOption("fact_check_length_max") characters; pass null to remove it. Only Bold, Italic, and TextUrl entities with https://t.me/ links are supported.
      */
     public function getText(): FormattedText|null
     {
@@ -69,7 +69,7 @@ class SetMessageFactCheck extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New text of the fact-check; 0-getOption("fact_check_length_max") characters; pass null to remove it. Only Bold, Italic, and TextUrl entities with https://t.me/ links are supported
+     * Set New text of the fact-check; 0-getOption("fact_check_length_max") characters; pass null to remove it. Only Bold, Italic, and TextUrl entities with https://t.me/ links are supported.
      */
     public function setText(FormattedText|null $text): self
     {

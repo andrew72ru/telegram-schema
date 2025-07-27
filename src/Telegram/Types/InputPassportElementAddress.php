@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Passport element to be saved containing the user's address @address The address to be saved
+ * A Telegram Passport element to be saved containing the user's address @address The address to be saved.
  */
 class InputPassportElementAddress extends InputPassportElement implements \JsonSerializable
 {

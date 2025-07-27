@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about a group call participant was changed. The updates are sent only after the group call is received through getGroupCall and only if the call is joined or being joined
+ * Information about a group call participant was changed. The updates are sent only after the group call is received through getGroupCall and only if the call is joined or being joined.
  */
 class UpdateGroupCallParticipant extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateGroupCallParticipant extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the group call
+     * Get Identifier of the group call.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class UpdateGroupCallParticipant extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the group call
+     * Set Identifier of the group call.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class UpdateGroupCallParticipant extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New data about the participant
+     * Get New data about the participant.
      */
     public function getParticipant(): GroupCallParticipant|null
     {
@@ -48,7 +48,7 @@ class UpdateGroupCallParticipant extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New data about the participant
+     * Set New data about the participant.
      */
     public function setParticipant(GroupCallParticipant|null $participant): self
     {

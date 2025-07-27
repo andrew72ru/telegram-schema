@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a chat or user profile photo
+ * Describes a chat or user profile photo.
  */
 class ChatPhoto implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Unique photo identifier
+     * Get Unique photo identifier.
      */
     public function getId(): int
     {
@@ -45,7 +45,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Unique photo identifier
+     * Set Unique photo identifier.
      */
     public function setId(int $id): self
     {
@@ -55,7 +55,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the photo has been added
+     * Get Point in time (Unix timestamp) when the photo has been added.
      */
     public function getAddedDate(): int
     {
@@ -63,7 +63,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the photo has been added
+     * Set Point in time (Unix timestamp) when the photo has been added.
      */
     public function setAddedDate(int $addedDate): self
     {
@@ -73,7 +73,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Photo minithumbnail; may be null
+     * Get Photo minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -81,7 +81,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Photo minithumbnail; may be null
+     * Set Photo minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -91,7 +91,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Available variants of the photo in JPEG format, in different size
+     * Get Available variants of the photo in JPEG format, in different size.
      */
     public function getSizes(): array|null
     {
@@ -99,7 +99,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Available variants of the photo in JPEG format, in different size
+     * Set Available variants of the photo in JPEG format, in different size.
      */
     public function setSizes(array|null $sizes): self
     {
@@ -109,7 +109,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get A big (up to 1280x1280) animated variant of the photo in MPEG4 format; may be null
+     * Get A big (up to 1280x1280) animated variant of the photo in MPEG4 format; may be null.
      */
     public function getAnimation(): AnimatedChatPhoto|null
     {
@@ -117,7 +117,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set A big (up to 1280x1280) animated variant of the photo in MPEG4 format; may be null
+     * Set A big (up to 1280x1280) animated variant of the photo in MPEG4 format; may be null.
      */
     public function setAnimation(AnimatedChatPhoto|null $animation): self
     {
@@ -127,7 +127,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get A small (160x160) animated variant of the photo in MPEG4 format; may be null even if the big animation is available
+     * Get A small (160x160) animated variant of the photo in MPEG4 format; may be null even if the big animation is available.
      */
     public function getSmallAnimation(): AnimatedChatPhoto|null
     {
@@ -135,7 +135,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set A small (160x160) animated variant of the photo in MPEG4 format; may be null even if the big animation is available
+     * Set A small (160x160) animated variant of the photo in MPEG4 format; may be null even if the big animation is available.
      */
     public function setSmallAnimation(AnimatedChatPhoto|null $smallAnimation): self
     {
@@ -145,7 +145,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Sticker-based version of the chat photo; may be null
+     * Get Sticker-based version of the chat photo; may be null.
      */
     public function getSticker(): ChatPhotoSticker|null
     {
@@ -153,7 +153,7 @@ class ChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Sticker-based version of the chat photo; may be null
+     * Set Sticker-based version of the chat photo; may be null.
      */
     public function setSticker(ChatPhotoSticker|null $sticker): self
     {

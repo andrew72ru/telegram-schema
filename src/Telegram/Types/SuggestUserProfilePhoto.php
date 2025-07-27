@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Suggests a profile photo to another regular user with common messages and allowing non-paid messages
+ * Suggests a profile photo to another regular user with common messages and allowing non-paid messages.
  */
 class SuggestUserProfilePhoto extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SuggestUserProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class SuggestUserProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class SuggestUserProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Profile photo to suggest; inputChatPhotoPrevious isn't supported in this function
+     * Get Profile photo to suggest; inputChatPhotoPrevious isn't supported in this function.
      */
     public function getPhoto(): InputChatPhoto|null
     {
@@ -48,7 +48,7 @@ class SuggestUserProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Profile photo to suggest; inputChatPhotoPrevious isn't supported in this function
+     * Set Profile photo to suggest; inputChatPhotoPrevious isn't supported in this function.
      */
     public function setPhoto(InputChatPhoto|null $photo): self
     {

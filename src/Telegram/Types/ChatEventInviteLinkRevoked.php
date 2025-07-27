@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat invite link was revoked @invite_link The invite link
+ * A chat invite link was revoked @invite_link The invite link.
  */
 class ChatEventInviteLinkRevoked extends ChatEventAction implements \JsonSerializable
 {

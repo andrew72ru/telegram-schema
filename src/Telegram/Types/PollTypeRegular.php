@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A regular poll @allow_multiple_answers True, if multiple answer options can be chosen simultaneously
+ * A regular poll @allow_multiple_answers True, if multiple answer options can be chosen simultaneously.
  */
 class PollTypeRegular extends PollType implements \JsonSerializable
 {

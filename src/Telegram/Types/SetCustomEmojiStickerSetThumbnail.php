@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets a custom emoji sticker set thumbnail
+ * Sets a custom emoji sticker set thumbnail.
  */
 class SetCustomEmojiStickerSetThumbnail extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetCustomEmojiStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set name. The sticker set must be owned by the current user
+     * Get Sticker set name. The sticker set must be owned by the current user.
      */
     public function getName(): string
     {
@@ -30,7 +30,7 @@ class SetCustomEmojiStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set name. The sticker set must be owned by the current user
+     * Set Sticker set name. The sticker set must be owned by the current user.
      */
     public function setName(string $name): self
     {
@@ -40,7 +40,7 @@ class SetCustomEmojiStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the custom emoji from the sticker set, which will be set as sticker set thumbnail; pass 0 to remove the sticker set thumbnail
+     * Get Identifier of the custom emoji from the sticker set, which will be set as sticker set thumbnail; pass 0 to remove the sticker set thumbnail.
      */
     public function getCustomEmojiId(): int
     {
@@ -48,7 +48,7 @@ class SetCustomEmojiStickerSetThumbnail extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the custom emoji from the sticker set, which will be set as sticker set thumbnail; pass 0 to remove the sticker set thumbnail
+     * Set Identifier of the custom emoji from the sticker set, which will be set as sticker set thumbnail; pass 0 to remove the sticker set thumbnail.
      */
     public function setCustomEmojiId(int $customEmojiId): self
     {

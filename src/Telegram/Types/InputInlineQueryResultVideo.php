@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to a page containing an embedded video player or a video file
+ * Represents a link to a page containing an embedded video player or a video file.
  */
 class InputInlineQueryResultVideo extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -57,7 +57,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -67,7 +67,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Title of the result
+     * Get Title of the result.
      */
     public function getTitle(): string
     {
@@ -75,7 +75,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Title of the result
+     * Set Title of the result.
      */
     public function setTitle(string $title): self
     {
@@ -85,7 +85,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Represents a link to a page containing an embedded video player or a video file
+     * Get Represents a link to a page containing an embedded video player or a video file.
      */
     public function getDescription(): string
     {
@@ -93,7 +93,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Represents a link to a page containing an embedded video player or a video file
+     * Set Represents a link to a page containing an embedded video player or a video file.
      */
     public function setDescription(string $description): self
     {
@@ -103,7 +103,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The URL of the video thumbnail (JPEG), if it exists
+     * Get The URL of the video thumbnail (JPEG), if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -111,7 +111,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The URL of the video thumbnail (JPEG), if it exists
+     * Set The URL of the video thumbnail (JPEG), if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -121,7 +121,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get URL of the embedded video player or video file
+     * Get URL of the embedded video player or video file.
      */
     public function getVideoUrl(): string
     {
@@ -129,7 +129,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set URL of the embedded video player or video file
+     * Set URL of the embedded video player or video file.
      */
     public function setVideoUrl(string $videoUrl): self
     {
@@ -139,7 +139,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get MIME type of the content of the video URL, only "text/html" or "video/mp4" are currently supported
+     * Get MIME type of the content of the video URL, only "text/html" or "video/mp4" are currently supported.
      */
     public function getMimeType(): string
     {
@@ -147,7 +147,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set MIME type of the content of the video URL, only "text/html" or "video/mp4" are currently supported
+     * Set MIME type of the content of the video URL, only "text/html" or "video/mp4" are currently supported.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -157,7 +157,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Width of the video
+     * Get Width of the video.
      */
     public function getVideoWidth(): int
     {
@@ -165,7 +165,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Width of the video
+     * Set Width of the video.
      */
     public function setVideoWidth(int $videoWidth): self
     {
@@ -175,7 +175,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Height of the video
+     * Get Height of the video.
      */
     public function getVideoHeight(): int
     {
@@ -183,7 +183,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Height of the video
+     * Set Height of the video.
      */
     public function setVideoHeight(int $videoHeight): self
     {
@@ -193,7 +193,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Video duration, in seconds
+     * Get Video duration, in seconds.
      */
     public function getVideoDuration(): int
     {
@@ -201,7 +201,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Video duration, in seconds
+     * Set Video duration, in seconds.
      */
     public function setVideoDuration(int $videoDuration): self
     {
@@ -211,7 +211,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -219,7 +219,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -229,7 +229,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVideo, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVideo, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -237,7 +237,7 @@ class InputInlineQueryResultVideo extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVideo, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVideo, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

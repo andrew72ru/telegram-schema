@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A button that requests a chat to be shared by the current user; available only in private chats. Use the method shareChatWithBot to complete the request
+ * A button that requests a chat to be shared by the current user; available only in private chats. Use the method shareChatWithBot to complete the request.
  */
 class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonSerializable
 {
@@ -55,7 +55,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get Unique button identifier
+     * Get Unique button identifier.
      */
     public function getId(): int
     {
@@ -63,7 +63,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set Unique button identifier
+     * Set Unique button identifier.
      */
     public function setId(int $id): self
     {
@@ -73,7 +73,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the chat must be a channel; otherwise, a basic group or a supergroup chat is shared
+     * Get True, if the chat must be a channel; otherwise, a basic group or a supergroup chat is shared.
      */
     public function getChatIsChannel(): bool
     {
@@ -81,7 +81,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the chat must be a channel; otherwise, a basic group or a supergroup chat is shared
+     * Set True, if the chat must be a channel; otherwise, a basic group or a supergroup chat is shared.
      */
     public function setChatIsChannel(bool $chatIsChannel): self
     {
@@ -91,7 +91,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the chat must or must not be a forum supergroup
+     * Get True, if the chat must or must not be a forum supergroup.
      */
     public function getRestrictChatIsForum(): bool
     {
@@ -99,7 +99,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the chat must or must not be a forum supergroup
+     * Set True, if the chat must or must not be a forum supergroup.
      */
     public function setRestrictChatIsForum(bool $restrictChatIsForum): self
     {
@@ -109,7 +109,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the chat must be a forum supergroup; otherwise, the chat must not be a forum supergroup. Ignored if restrict_chat_is_forum is false
+     * Get True, if the chat must be a forum supergroup; otherwise, the chat must not be a forum supergroup. Ignored if restrict_chat_is_forum is false.
      */
     public function getChatIsForum(): bool
     {
@@ -117,7 +117,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the chat must be a forum supergroup; otherwise, the chat must not be a forum supergroup. Ignored if restrict_chat_is_forum is false
+     * Set True, if the chat must be a forum supergroup; otherwise, the chat must not be a forum supergroup. Ignored if restrict_chat_is_forum is false.
      */
     public function setChatIsForum(bool $chatIsForum): self
     {
@@ -127,7 +127,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the chat must or must not have a username
+     * Get True, if the chat must or must not have a username.
      */
     public function getRestrictChatHasUsername(): bool
     {
@@ -135,7 +135,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the chat must or must not have a username
+     * Set True, if the chat must or must not have a username.
      */
     public function setRestrictChatHasUsername(bool $restrictChatHasUsername): self
     {
@@ -145,7 +145,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the chat must have a username; otherwise, the chat must not have a username. Ignored if restrict_chat_has_username is false
+     * Get True, if the chat must have a username; otherwise, the chat must not have a username. Ignored if restrict_chat_has_username is false.
      */
     public function getChatHasUsername(): bool
     {
@@ -153,7 +153,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the chat must have a username; otherwise, the chat must not have a username. Ignored if restrict_chat_has_username is false
+     * Set True, if the chat must have a username; otherwise, the chat must not have a username. Ignored if restrict_chat_has_username is false.
      */
     public function setChatHasUsername(bool $chatHasUsername): self
     {
@@ -163,7 +163,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the chat must be created by the current user
+     * Get True, if the chat must be created by the current user.
      */
     public function getChatIsCreated(): bool
     {
@@ -171,7 +171,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the chat must be created by the current user
+     * Set True, if the chat must be created by the current user.
      */
     public function setChatIsCreated(bool $chatIsCreated): self
     {
@@ -181,7 +181,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get Expected user administrator rights in the chat; may be null if they aren't restricted
+     * Get Expected user administrator rights in the chat; may be null if they aren't restricted.
      */
     public function getUserAdministratorRights(): ChatAdministratorRights|null
     {
@@ -189,7 +189,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set Expected user administrator rights in the chat; may be null if they aren't restricted
+     * Set Expected user administrator rights in the chat; may be null if they aren't restricted.
      */
     public function setUserAdministratorRights(ChatAdministratorRights|null $userAdministratorRights): self
     {
@@ -199,7 +199,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get Expected bot administrator rights in the chat; may be null if they aren't restricted
+     * Get Expected bot administrator rights in the chat; may be null if they aren't restricted.
      */
     public function getBotAdministratorRights(): ChatAdministratorRights|null
     {
@@ -207,7 +207,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set Expected bot administrator rights in the chat; may be null if they aren't restricted
+     * Set Expected bot administrator rights in the chat; may be null if they aren't restricted.
      */
     public function setBotAdministratorRights(ChatAdministratorRights|null $botAdministratorRights): self
     {
@@ -217,7 +217,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get True, if the bot must be a member of the chat; for basic group and supergroup chats only
+     * Get True, if the bot must be a member of the chat; for basic group and supergroup chats only.
      */
     public function getBotIsMember(): bool
     {
@@ -225,7 +225,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set True, if the bot must be a member of the chat; for basic group and supergroup chats only
+     * Set True, if the bot must be a member of the chat; for basic group and supergroup chats only.
      */
     public function setBotIsMember(bool $botIsMember): self
     {
@@ -235,7 +235,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get Pass true to request title of the chat; bots only
+     * Get Pass true to request title of the chat; bots only.
      */
     public function getRequestTitle(): bool
     {
@@ -243,7 +243,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set Pass true to request title of the chat; bots only
+     * Set Pass true to request title of the chat; bots only.
      */
     public function setRequestTitle(bool $requestTitle): self
     {
@@ -253,7 +253,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get Pass true to request username of the chat; bots only
+     * Get Pass true to request username of the chat; bots only.
      */
     public function getRequestUsername(): bool
     {
@@ -261,7 +261,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set Pass true to request username of the chat; bots only
+     * Set Pass true to request username of the chat; bots only.
      */
     public function setRequestUsername(bool $requestUsername): self
     {
@@ -271,7 +271,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Get Pass true to request photo of the chat; bots only
+     * Get Pass true to request photo of the chat; bots only.
      */
     public function getRequestPhoto(): bool
     {
@@ -279,7 +279,7 @@ class KeyboardButtonTypeRequestChat extends KeyboardButtonType implements \JsonS
     }
 
     /**
-     * Set Pass true to request photo of the chat; bots only
+     * Set Pass true to request photo of the chat; bots only.
      */
     public function setRequestPhoto(bool $requestPhoto): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some tasks were added to a checklist @task_count Number of added tasks
+ * Some tasks were added to a checklist @task_count Number of added tasks.
  */
 class PushMessageContentChecklistTasksAdded extends PushMessageContent implements \JsonSerializable
 {

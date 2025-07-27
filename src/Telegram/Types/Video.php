@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a video file
+ * Describes a video file.
  */
 class Video implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the video, in seconds; as defined by the sender
+     * Get Duration of the video, in seconds; as defined by the sender.
      */
     public function getDuration(): int
     {
@@ -54,7 +54,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the video, in seconds; as defined by the sender
+     * Set Duration of the video, in seconds; as defined by the sender.
      */
     public function setDuration(int $duration): self
     {
@@ -64,7 +64,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get Video width; as defined by the sender
+     * Get Video width; as defined by the sender.
      */
     public function getWidth(): int
     {
@@ -72,7 +72,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set Video width; as defined by the sender
+     * Set Video width; as defined by the sender.
      */
     public function setWidth(int $width): self
     {
@@ -82,7 +82,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get Video height; as defined by the sender
+     * Get Video height; as defined by the sender.
      */
     public function getHeight(): int
     {
@@ -90,7 +90,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set Video height; as defined by the sender
+     * Set Video height; as defined by the sender.
      */
     public function setHeight(int $height): self
     {
@@ -100,7 +100,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get Original name of the file; as defined by the sender
+     * Get Original name of the file; as defined by the sender.
      */
     public function getFileName(): string
     {
@@ -108,7 +108,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set Original name of the file; as defined by the sender
+     * Set Original name of the file; as defined by the sender.
      */
     public function setFileName(string $fileName): self
     {
@@ -118,7 +118,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get MIME type of the file; as defined by the sender
+     * Get MIME type of the file; as defined by the sender.
      */
     public function getMimeType(): string
     {
@@ -126,7 +126,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set MIME type of the file; as defined by the sender
+     * Set MIME type of the file; as defined by the sender.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -136,7 +136,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets
+     * Get True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets.
      */
     public function getHasStickers(): bool
     {
@@ -144,7 +144,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets
+     * Set True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets.
      */
     public function setHasStickers(bool $hasStickers): self
     {
@@ -154,7 +154,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video is expected to be streamed
+     * Get True, if the video is expected to be streamed.
      */
     public function getSupportsStreaming(): bool
     {
@@ -162,7 +162,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video is expected to be streamed
+     * Set True, if the video is expected to be streamed.
      */
     public function setSupportsStreaming(bool $supportsStreaming): self
     {
@@ -172,7 +172,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get Video minithumbnail; may be null
+     * Get Video minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -180,7 +180,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set Video minithumbnail; may be null
+     * Set Video minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -190,7 +190,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get Video thumbnail in JPEG or MPEG4 format; as defined by the sender; may be null
+     * Get Video thumbnail in JPEG or MPEG4 format; as defined by the sender; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -198,7 +198,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set Video thumbnail in JPEG or MPEG4 format; as defined by the sender; may be null
+     * Set Video thumbnail in JPEG or MPEG4 format; as defined by the sender; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -208,7 +208,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Get File containing the video
+     * Get File containing the video.
      */
     public function getVideo(): File|null
     {
@@ -216,7 +216,7 @@ class Video implements \JsonSerializable
     }
 
     /**
-     * Set File containing the video
+     * Set File containing the video.
      */
     public function setVideo(File|null $video): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Recognizes speech in a video note or a voice note message
+ * Recognizes speech in a video note or a voice note message.
  */
 class RecognizeSpeech extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class RecognizeSpeech extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class RecognizeSpeech extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class RecognizeSpeech extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_recognize_speech to check whether the message is suitable
+     * Get Identifier of the message. Use messageProperties.can_recognize_speech to check whether the message is suitable.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class RecognizeSpeech extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_recognize_speech to check whether the message is suitable
+     * Set Identifier of the message. Use messageProperties.can_recognize_speech to check whether the message is suitable.
      */
     public function setMessageId(int $messageId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes rights of the administrator
+ * Describes rights of the administrator.
  */
 class ChatAdministratorRights implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can access the chat event log, get boost list, see hidden supergroup and channel members, report supergroup spam messages,
+     * Get True, if the administrator can access the chat event log, get boost list, see hidden supergroup and channel members, report supergroup spam messages,.
      */
     public function getCanManageChat(): bool
     {
@@ -69,7 +69,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can access the chat event log, get boost list, see hidden supergroup and channel members, report supergroup spam messages,
+     * Set True, if the administrator can access the chat event log, get boost list, see hidden supergroup and channel members, report supergroup spam messages,.
      */
     public function setCanManageChat(bool $canManageChat): self
     {
@@ -79,7 +79,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can change the chat title, photo, and other settings
+     * Get True, if the administrator can change the chat title, photo, and other settings.
      */
     public function getCanChangeInfo(): bool
     {
@@ -87,7 +87,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can change the chat title, photo, and other settings
+     * Set True, if the administrator can change the chat title, photo, and other settings.
      */
     public function setCanChangeInfo(bool $canChangeInfo): self
     {
@@ -97,7 +97,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can create channel posts, answer to channel direct messages, or view channel statistics; applicable to channels only
+     * Get True, if the administrator can create channel posts, answer to channel direct messages, or view channel statistics; applicable to channels only.
      */
     public function getCanPostMessages(): bool
     {
@@ -105,7 +105,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can create channel posts, answer to channel direct messages, or view channel statistics; applicable to channels only
+     * Set True, if the administrator can create channel posts, answer to channel direct messages, or view channel statistics; applicable to channels only.
      */
     public function setCanPostMessages(bool $canPostMessages): self
     {
@@ -115,7 +115,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can edit messages of other users and pin messages; applicable to channels only
+     * Get True, if the administrator can edit messages of other users and pin messages; applicable to channels only.
      */
     public function getCanEditMessages(): bool
     {
@@ -123,7 +123,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can edit messages of other users and pin messages; applicable to channels only
+     * Set True, if the administrator can edit messages of other users and pin messages; applicable to channels only.
      */
     public function setCanEditMessages(bool $canEditMessages): self
     {
@@ -133,7 +133,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can delete messages of other users
+     * Get True, if the administrator can delete messages of other users.
      */
     public function getCanDeleteMessages(): bool
     {
@@ -141,7 +141,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can delete messages of other users
+     * Set True, if the administrator can delete messages of other users.
      */
     public function setCanDeleteMessages(bool $canDeleteMessages): self
     {
@@ -151,7 +151,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can invite new users to the chat
+     * Get True, if the administrator can invite new users to the chat.
      */
     public function getCanInviteUsers(): bool
     {
@@ -159,7 +159,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can invite new users to the chat
+     * Set True, if the administrator can invite new users to the chat.
      */
     public function setCanInviteUsers(bool $canInviteUsers): self
     {
@@ -169,7 +169,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can restrict, ban, or unban chat members or view supergroup statistics; always true for channels
+     * Get True, if the administrator can restrict, ban, or unban chat members or view supergroup statistics; always true for channels.
      */
     public function getCanRestrictMembers(): bool
     {
@@ -177,7 +177,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can restrict, ban, or unban chat members or view supergroup statistics; always true for channels
+     * Set True, if the administrator can restrict, ban, or unban chat members or view supergroup statistics; always true for channels.
      */
     public function setCanRestrictMembers(bool $canRestrictMembers): self
     {
@@ -187,7 +187,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can pin messages; applicable to basic groups and supergroups only
+     * Get True, if the administrator can pin messages; applicable to basic groups and supergroups only.
      */
     public function getCanPinMessages(): bool
     {
@@ -195,7 +195,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can pin messages; applicable to basic groups and supergroups only
+     * Set True, if the administrator can pin messages; applicable to basic groups and supergroups only.
      */
     public function setCanPinMessages(bool $canPinMessages): self
     {
@@ -205,7 +205,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can create, rename, close, reopen, hide, and unhide forum topics; applicable to forum supergroups only
+     * Get True, if the administrator can create, rename, close, reopen, hide, and unhide forum topics; applicable to forum supergroups only.
      */
     public function getCanManageTopics(): bool
     {
@@ -213,7 +213,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can create, rename, close, reopen, hide, and unhide forum topics; applicable to forum supergroups only
+     * Set True, if the administrator can create, rename, close, reopen, hide, and unhide forum topics; applicable to forum supergroups only.
      */
     public function setCanManageTopics(bool $canManageTopics): self
     {
@@ -223,7 +223,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can add new administrators with a subset of their own privileges or demote administrators that were directly or indirectly promoted by them
+     * Get True, if the administrator can add new administrators with a subset of their own privileges or demote administrators that were directly or indirectly promoted by them.
      */
     public function getCanPromoteMembers(): bool
     {
@@ -231,7 +231,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can add new administrators with a subset of their own privileges or demote administrators that were directly or indirectly promoted by them
+     * Set True, if the administrator can add new administrators with a subset of their own privileges or demote administrators that were directly or indirectly promoted by them.
      */
     public function setCanPromoteMembers(bool $canPromoteMembers): self
     {
@@ -241,7 +241,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can manage video chats
+     * Get True, if the administrator can manage video chats.
      */
     public function getCanManageVideoChats(): bool
     {
@@ -249,7 +249,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can manage video chats
+     * Set True, if the administrator can manage video chats.
      */
     public function setCanManageVideoChats(bool $canManageVideoChats): self
     {
@@ -259,7 +259,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can create new chat stories, or edit and delete posted stories; applicable to supergroups and channels only
+     * Get True, if the administrator can create new chat stories, or edit and delete posted stories; applicable to supergroups and channels only.
      */
     public function getCanPostStories(): bool
     {
@@ -267,7 +267,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can create new chat stories, or edit and delete posted stories; applicable to supergroups and channels only
+     * Set True, if the administrator can create new chat stories, or edit and delete posted stories; applicable to supergroups and channels only.
      */
     public function setCanPostStories(bool $canPostStories): self
     {
@@ -277,7 +277,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can edit stories posted by other users, post stories to the chat page, pin chat stories, and access story archive; applicable to supergroups and channels only
+     * Get True, if the administrator can edit stories posted by other users, post stories to the chat page, pin chat stories, and access story archive; applicable to supergroups and channels only.
      */
     public function getCanEditStories(): bool
     {
@@ -285,7 +285,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can edit stories posted by other users, post stories to the chat page, pin chat stories, and access story archive; applicable to supergroups and channels only
+     * Set True, if the administrator can edit stories posted by other users, post stories to the chat page, pin chat stories, and access story archive; applicable to supergroups and channels only.
      */
     public function setCanEditStories(bool $canEditStories): self
     {
@@ -295,7 +295,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator can delete stories posted by other users; applicable to supergroups and channels only
+     * Get True, if the administrator can delete stories posted by other users; applicable to supergroups and channels only.
      */
     public function getCanDeleteStories(): bool
     {
@@ -303,7 +303,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator can delete stories posted by other users; applicable to supergroups and channels only
+     * Set True, if the administrator can delete stories posted by other users; applicable to supergroups and channels only.
      */
     public function setCanDeleteStories(bool $canDeleteStories): self
     {
@@ -313,7 +313,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the administrator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only
+     * Get True, if the administrator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only.
      */
     public function getIsAnonymous(): bool
     {
@@ -321,7 +321,7 @@ class ChatAdministratorRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the administrator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only
+     * Set True, if the administrator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only.
      */
     public function setIsAnonymous(bool $isAnonymous): self
     {

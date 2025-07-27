@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an animation file
+ * Represents an animation file.
  */
 class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Get Animation file
+     * Get Animation file.
      */
     public function getAnimation(): Animation|null
     {
@@ -51,7 +51,7 @@ class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Set Animation file
+     * Set Animation file.
      */
     public function setAnimation(Animation|null $animation): self
     {
@@ -61,7 +61,7 @@ class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Get Animation title
+     * Get Animation title.
      */
     public function getTitle(): string
     {
@@ -69,7 +69,7 @@ class InlineQueryResultAnimation extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Set Animation title
+     * Set Animation title.
      */
     public function setTitle(string $title): self
     {

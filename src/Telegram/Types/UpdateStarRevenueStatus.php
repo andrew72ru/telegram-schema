@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The Telegram Star revenue earned by a bot or a chat has changed. If Telegram Star transaction screen of the chat is opened, then getStarTransactions may be called to fetch new transactions
+ * The Telegram Star revenue earned by a bot or a chat has changed. If Telegram Star transaction screen of the chat is opened, then getStarTransactions may be called to fetch new transactions.
  */
 class UpdateStarRevenueStatus extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateStarRevenueStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the owner of the Telegram Stars
+     * Get Identifier of the owner of the Telegram Stars.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -30,7 +30,7 @@ class UpdateStarRevenueStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the owner of the Telegram Stars
+     * Set Identifier of the owner of the Telegram Stars.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -40,7 +40,7 @@ class UpdateStarRevenueStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New Telegram Star revenue status
+     * Get New Telegram Star revenue status.
      */
     public function getStatus(): StarRevenueStatus|null
     {
@@ -48,7 +48,7 @@ class UpdateStarRevenueStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New Telegram Star revenue status
+     * Set New Telegram Star revenue status.
      */
     public function setStatus(StarRevenueStatus|null $status): self
     {

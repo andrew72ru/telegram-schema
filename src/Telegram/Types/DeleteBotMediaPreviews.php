@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Delete media previews from the list of media previews of a bot
+ * Delete media previews from the list of media previews of a bot.
  */
 class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Get Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Set Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Language code of the media previews to delete
+     * Get Language code of the media previews to delete.
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Language code of the media previews to delete
+     * Set Language code of the media previews to delete.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get File identifiers of the media to delete
+     * Get File identifiers of the media to delete.
      */
     public function getFileIds(): array|null
     {
@@ -69,7 +69,7 @@ class DeleteBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set File identifiers of the media to delete
+     * Set File identifiers of the media to delete.
      */
     public function setFileIds(array|null $fileIds): self
     {

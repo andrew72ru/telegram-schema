@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat active usernames were changed @old_usernames Previous list of active usernames @new_usernames New list of active usernames
+ * The chat active usernames were changed @old_usernames Previous list of active usernames @new_usernames New list of active usernames.
  */
 class ChatEventActiveUsernamesChanged extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of media previews for the given language and the list of languages for which the bot has dedicated previews
+ * Returns the list of media previews for the given language and the list of languages for which the bot has dedicated previews.
  */
 class GetBotMediaPreviewInfo extends BotMediaPreviewInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetBotMediaPreviewInfo extends BotMediaPreviewInfo implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Get Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class GetBotMediaPreviewInfo extends BotMediaPreviewInfo implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Set Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class GetBotMediaPreviewInfo extends BotMediaPreviewInfo implements \JsonSeriali
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code for which to get previews. If empty, then default previews are returned
+     * Get A two-letter ISO 639-1 language code for which to get previews. If empty, then default previews are returned.
      */
     public function getLanguageCode(): string
     {
@@ -48,7 +48,7 @@ class GetBotMediaPreviewInfo extends BotMediaPreviewInfo implements \JsonSeriali
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code for which to get previews. If empty, then default previews are returned
+     * Set A two-letter ISO 639-1 language code for which to get previews. If empty, then default previews are returned.
      */
     public function setLanguageCode(string $languageCode): self
     {

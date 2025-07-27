@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a file added to file download list
+ * Describes a file added to file download list.
  */
 class FileDownload implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Get File identifier
+     * Get File identifier.
      */
     public function getFileId(): int
     {
@@ -39,7 +39,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Set File identifier
+     * Set File identifier.
      */
     public function setFileId(int $fileId): self
     {
@@ -49,7 +49,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Get The message with the file
+     * Get The message with the file.
      */
     public function getMessage(): Message|null
     {
@@ -57,7 +57,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Set The message with the file
+     * Set The message with the file.
      */
     public function setMessage(Message|null $message): self
     {
@@ -67,7 +67,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the file was added to the download list
+     * Get Point in time (Unix timestamp) when the file was added to the download list.
      */
     public function getAddDate(): int
     {
@@ -75,7 +75,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the file was added to the download list
+     * Set Point in time (Unix timestamp) when the file was added to the download list.
      */
     public function setAddDate(int $addDate): self
     {
@@ -85,7 +85,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed
+     * Get Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed.
      */
     public function getCompleteDate(): int
     {
@@ -93,7 +93,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed
+     * Set Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed.
      */
     public function setCompleteDate(int $completeDate): self
     {
@@ -103,7 +103,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Get True, if downloading of the file is paused
+     * Get True, if downloading of the file is paused.
      */
     public function getIsPaused(): bool
     {
@@ -111,7 +111,7 @@ class FileDownload implements \JsonSerializable
     }
 
     /**
-     * Set True, if downloading of the file is paused
+     * Set True, if downloading of the file is paused.
      */
     public function setIsPaused(bool $isPaused): self
     {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The file is a video note
+ * The file is a video note.
  */
 class FileTypeVideoNote extends FileType implements \JsonSerializable
 {

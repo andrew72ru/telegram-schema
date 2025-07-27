@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes colors of a backdrop of an upgraded gift
+ * Describes colors of a backdrop of an upgraded gift.
  */
 class UpgradedGiftBackdropColors implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Get A color in the center of the backdrop in the RGB format
+     * Get A color in the center of the backdrop in the RGB format.
      */
     public function getCenterColor(): int
     {
@@ -36,7 +36,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Set A color in the center of the backdrop in the RGB format
+     * Set A color in the center of the backdrop in the RGB format.
      */
     public function setCenterColor(int $centerColor): self
     {
@@ -46,7 +46,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Get A color on the edges of the backdrop in the RGB format
+     * Get A color on the edges of the backdrop in the RGB format.
      */
     public function getEdgeColor(): int
     {
@@ -54,7 +54,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Set A color on the edges of the backdrop in the RGB format
+     * Set A color on the edges of the backdrop in the RGB format.
      */
     public function setEdgeColor(int $edgeColor): self
     {
@@ -64,7 +64,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Get A color to be applied for the symbol in the RGB format
+     * Get A color to be applied for the symbol in the RGB format.
      */
     public function getSymbolColor(): int
     {
@@ -72,7 +72,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Set A color to be applied for the symbol in the RGB format
+     * Set A color to be applied for the symbol in the RGB format.
      */
     public function setSymbolColor(int $symbolColor): self
     {
@@ -82,7 +82,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Get A color for the text on the backdrop in the RGB format
+     * Get A color for the text on the backdrop in the RGB format.
      */
     public function getTextColor(): int
     {
@@ -90,7 +90,7 @@ class UpgradedGiftBackdropColors implements \JsonSerializable
     }
 
     /**
-     * Set A color for the text on the backdrop in the RGB format
+     * Set A color for the text on the backdrop in the RGB format.
      */
     public function setTextColor(int $textColor): self
     {

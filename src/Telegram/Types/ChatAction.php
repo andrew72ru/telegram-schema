@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for ChatAction types
+ * Abstract base class for ChatAction types.
  */
 abstract class ChatAction implements \JsonSerializable
 {

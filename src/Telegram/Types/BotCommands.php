@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of bot commands @bot_user_id Bot's user identifier @commands List of bot commands
+ * Contains a list of bot commands @bot_user_id Bot's user identifier @commands List of bot commands.
  */
 class BotCommands implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the most grossing Web App bots
+ * Returns the most grossing Web App bots.
  */
 class GetGrossingWebAppBots extends FoundUsers implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetGrossingWebAppBots extends FoundUsers implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -30,7 +30,7 @@ class GetGrossingWebAppBots extends FoundUsers implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -40,7 +40,7 @@ class GetGrossingWebAppBots extends FoundUsers implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of bots to be returned; up to 100
+     * Get The maximum number of bots to be returned; up to 100.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class GetGrossingWebAppBots extends FoundUsers implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of bots to be returned; up to 100
+     * Set The maximum number of bots to be returned; up to 100.
      */
     public function setLimit(int $limit): self
     {

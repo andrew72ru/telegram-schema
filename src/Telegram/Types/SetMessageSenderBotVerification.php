@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the verification status of a user or a chat by an owned bot
+ * Changes the verification status of a user or a chat by an owned bot.
  */
 class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the owned bot, which will verify the user or the chat
+     * Get Identifier of the owned bot, which will verify the user or the chat.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the owned bot, which will verify the user or the chat
+     * Set Identifier of the owned bot, which will verify the user or the chat.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the supergroup or channel chat, which will be verified by the bot
+     * Get Identifier of the user or the supergroup or channel chat, which will be verified by the bot.
      */
     public function getVerifiedId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the supergroup or channel chat, which will be verified by the bot
+     * Set Identifier of the user or the supergroup or channel chat, which will be verified by the bot.
      */
     public function setVerifiedId(MessageSender|null $verifiedId): self
     {
@@ -61,7 +61,7 @@ class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Custom description of verification reason; 0-getOption("bot_verification_custom_description_length_max").
+     * Get Custom description of verification reason; 0-getOption("bot_verification_custom_description_length_max")..
      */
     public function getCustomDescription(): string
     {
@@ -69,7 +69,7 @@ class SetMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Custom description of verification reason; 0-getOption("bot_verification_custom_description_length_max").
+     * Set Custom description of verification reason; 0-getOption("bot_verification_custom_description_length_max")..
      */
     public function setCustomDescription(string $customDescription): self
     {

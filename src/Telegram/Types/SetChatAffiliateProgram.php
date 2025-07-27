@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes affiliate program for a bot
+ * Changes affiliate program for a bot.
  */
 class SetChatAffiliateProgram extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatAffiliateProgram extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with an owned bot for which affiliate program is changed
+     * Get Identifier of the chat with an owned bot for which affiliate program is changed.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatAffiliateProgram extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with an owned bot for which affiliate program is changed
+     * Set Identifier of the chat with an owned bot for which affiliate program is changed.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatAffiliateProgram extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Parameters of the affiliate program; pass null to close the currently active program. If there is an active program, then commission and program duration can only be increased.
+     * Get Parameters of the affiliate program; pass null to close the currently active program. If there is an active program, then commission and program duration can only be increased..
      */
     public function getParameters(): AffiliateProgramParameters|null
     {
@@ -48,7 +48,7 @@ class SetChatAffiliateProgram extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Parameters of the affiliate program; pass null to close the currently active program. If there is an active program, then commission and program duration can only be increased.
+     * Set Parameters of the affiliate program; pass null to close the currently active program. If there is an active program, then commission and program duration can only be increased..
      */
     public function setParameters(AffiliateProgramParameters|null $parameters): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns interactions with a story. The method can be called only for stories posted on behalf of the current user
+ * Returns interactions with a story. The method can be called only for stories posted on behalf of the current user.
  */
 class GetStoryInteractions extends StoryInteractions implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get Story identifier
+     * Get Story identifier.
      */
     public function getStoryId(): int
     {
@@ -45,7 +45,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set Story identifier
+     * Set Story identifier.
      */
     public function setStoryId(int $storyId): self
     {
@@ -55,7 +55,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get Query to search for in names, usernames and titles; may be empty to get all relevant interactions
+     * Get Query to search for in names, usernames and titles; may be empty to get all relevant interactions.
      */
     public function getQuery(): string
     {
@@ -63,7 +63,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set Query to search for in names, usernames and titles; may be empty to get all relevant interactions
+     * Set Query to search for in names, usernames and titles; may be empty to get all relevant interactions.
      */
     public function setQuery(string $query): self
     {
@@ -73,7 +73,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get Pass true to get only interactions by contacts; pass false to get all relevant interactions
+     * Get Pass true to get only interactions by contacts; pass false to get all relevant interactions.
      */
     public function getOnlyContacts(): bool
     {
@@ -81,7 +81,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set Pass true to get only interactions by contacts; pass false to get all relevant interactions
+     * Set Pass true to get only interactions by contacts; pass false to get all relevant interactions.
      */
     public function setOnlyContacts(bool $onlyContacts): self
     {
@@ -91,7 +91,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date
+     * Get Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date.
      */
     public function getPreferForwards(): bool
     {
@@ -99,7 +99,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date
+     * Set Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date.
      */
     public function setPreferForwards(bool $preferForwards): self
     {
@@ -109,7 +109,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get Pass true to get interactions with reaction first; pass false to get interactions sorted just by interaction date. Ignored if prefer_forwards == true
+     * Get Pass true to get interactions with reaction first; pass false to get interactions sorted just by interaction date. Ignored if prefer_forwards == true.
      */
     public function getPreferWithReaction(): bool
     {
@@ -117,7 +117,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set Pass true to get interactions with reaction first; pass false to get interactions sorted just by interaction date. Ignored if prefer_forwards == true
+     * Set Pass true to get interactions with reaction first; pass false to get interactions sorted just by interaction date. Ignored if prefer_forwards == true.
      */
     public function setPreferWithReaction(bool $preferWithReaction): self
     {
@@ -127,7 +127,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -135,7 +135,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -145,7 +145,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Get The maximum number of story interactions to return
+     * Get The maximum number of story interactions to return.
      */
     public function getLimit(): int
     {
@@ -153,7 +153,7 @@ class GetStoryInteractions extends StoryInteractions implements \JsonSerializabl
     }
 
     /**
-     * Set The maximum number of story interactions to return
+     * Set The maximum number of story interactions to return.
      */
     public function setLimit(int $limit): self
     {

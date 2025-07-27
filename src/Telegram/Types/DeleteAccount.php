@@ -22,7 +22,7 @@ class DeleteAccount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The reason why the account was deleted; optional
+     * Get The reason why the account was deleted; optional.
      */
     public function getReason(): string
     {
@@ -30,7 +30,7 @@ class DeleteAccount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The reason why the account was deleted; optional
+     * Set The reason why the account was deleted; optional.
      */
     public function setReason(string $reason): self
     {
@@ -40,7 +40,7 @@ class DeleteAccount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user. If the current user isn't authorized, then an empty string can be passed and account deletion can be canceled within one week
+     * Get The 2-step verification password of the current user. If the current user isn't authorized, then an empty string can be passed and account deletion can be canceled within one week.
      */
     public function getPassword(): string
     {
@@ -48,7 +48,7 @@ class DeleteAccount extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user. If the current user isn't authorized, then an empty string can be passed and account deletion can be canceled within one week
+     * Set The 2-step verification password of the current user. If the current user isn't authorized, then an empty string can be passed and account deletion can be canceled within one week.
      */
     public function setPassword(string $password): self
     {

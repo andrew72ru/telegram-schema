@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An invoice from a link of the type internalLinkTypeInvoice @name Name of the invoice
+ * An invoice from a link of the type internalLinkTypeInvoice @name Name of the invoice.
  */
 class InputInvoiceName extends InputInvoice implements \JsonSerializable
 {

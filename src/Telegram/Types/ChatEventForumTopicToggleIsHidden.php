@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The General forum topic was hidden or unhidden @topic_info New information about the topic
+ * The General forum topic was hidden or unhidden @topic_info New information about the topic.
  */
 class ChatEventForumTopicToggleIsHidden extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a user that has failed to be added to a chat
+ * Contains information about a user that has failed to be added to a chat.
  */
 class FailedToAddMember implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class FailedToAddMember implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class FailedToAddMember implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class FailedToAddMember implements \JsonSerializable
     }
 
     /**
-     * Get True, if subscription to Telegram Premium would have allowed to add the user to the chat
+     * Get True, if subscription to Telegram Premium would have allowed to add the user to the chat.
      */
     public function getPremiumWouldAllowInvite(): bool
     {
@@ -51,7 +51,7 @@ class FailedToAddMember implements \JsonSerializable
     }
 
     /**
-     * Set True, if subscription to Telegram Premium would have allowed to add the user to the chat
+     * Set True, if subscription to Telegram Premium would have allowed to add the user to the chat.
      */
     public function setPremiumWouldAllowInvite(bool $premiumWouldAllowInvite): self
     {
@@ -61,7 +61,7 @@ class FailedToAddMember implements \JsonSerializable
     }
 
     /**
-     * Get True, if subscription to Telegram Premium is required to send the user chat invite link
+     * Get True, if subscription to Telegram Premium is required to send the user chat invite link.
      */
     public function getPremiumRequiredToSendMessages(): bool
     {
@@ -69,7 +69,7 @@ class FailedToAddMember implements \JsonSerializable
     }
 
     /**
-     * Set True, if subscription to Telegram Premium is required to send the user chat invite link
+     * Set True, if subscription to Telegram Premium is required to send the user chat invite link.
      */
     public function setPremiumRequiredToSendMessages(bool $premiumRequiredToSendMessages): self
     {

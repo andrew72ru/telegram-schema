@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns the list of available chat boost slots for the current user
+ * Returns the list of available chat boost slots for the current user.
  */
 class GetAvailableChatBoostSlots extends ChatBoostSlots implements \JsonSerializable
 {

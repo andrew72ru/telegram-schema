@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the verbosity level for a specified TDLib internal log tag. Can be called synchronously
+ * Sets the verbosity level for a specified TDLib internal log tag. Can be called synchronously.
  */
 class SetLogTagVerbosityLevel extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetLogTagVerbosityLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Logging tag to change verbosity level
+     * Get Logging tag to change verbosity level.
      */
     public function getTag(): string
     {
@@ -30,7 +30,7 @@ class SetLogTagVerbosityLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Logging tag to change verbosity level
+     * Set Logging tag to change verbosity level.
      */
     public function setTag(string $tag): self
     {
@@ -40,7 +40,7 @@ class SetLogTagVerbosityLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New verbosity level; 1-1024
+     * Get New verbosity level; 1-1024.
      */
     public function getNewVerbosityLevel(): int
     {
@@ -48,7 +48,7 @@ class SetLogTagVerbosityLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New verbosity level; 1-1024
+     * Set New verbosity level; 1-1024.
      */
     public function setNewVerbosityLevel(int $newVerbosityLevel): self
     {

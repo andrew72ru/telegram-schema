@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a checklist
+ * A message with a checklist.
  */
 class PushMessageContentChecklist extends PushMessageContent implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PushMessageContentChecklist extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Get Checklist title
+     * Get Checklist title.
      */
     public function getTitle(): string
     {
@@ -30,7 +30,7 @@ class PushMessageContentChecklist extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Set Checklist title
+     * Set Checklist title.
      */
     public function setTitle(string $title): self
     {
@@ -40,7 +40,7 @@ class PushMessageContentChecklist extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Get True, if the message is a pinned message with the specified content
+     * Get True, if the message is a pinned message with the specified content.
      */
     public function getIsPinned(): bool
     {
@@ -48,7 +48,7 @@ class PushMessageContentChecklist extends PushMessageContent implements \JsonSer
     }
 
     /**
-     * Set True, if the message is a pinned message with the specified content
+     * Set True, if the message is a pinned message with the specified content.
      */
     public function setIsPinned(bool $isPinned): self
     {

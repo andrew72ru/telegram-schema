@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat is a private chat with an administrator of a chat to which the user sent join request
+ * The chat is a private chat with an administrator of a chat to which the user sent join request.
  */
 class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializabl
     }
 
     /**
-     * Get Title of the chat to which the join request was sent
+     * Get Title of the chat to which the join request was sent.
      */
     public function getTitle(): string
     {
@@ -33,7 +33,7 @@ class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializabl
     }
 
     /**
-     * Set Title of the chat to which the join request was sent
+     * Set Title of the chat to which the join request was sent.
      */
     public function setTitle(string $title): self
     {
@@ -43,7 +43,7 @@ class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializabl
     }
 
     /**
-     * Get True, if the join request was sent to a channel chat
+     * Get True, if the join request was sent to a channel chat.
      */
     public function getIsChannel(): bool
     {
@@ -51,7 +51,7 @@ class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializabl
     }
 
     /**
-     * Set True, if the join request was sent to a channel chat
+     * Set True, if the join request was sent to a channel chat.
      */
     public function setIsChannel(bool $isChannel): self
     {
@@ -61,7 +61,7 @@ class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializabl
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the join request was sent
+     * Get Point in time (Unix timestamp) when the join request was sent.
      */
     public function getRequestDate(): int
     {
@@ -69,7 +69,7 @@ class ChatActionBarJoinRequest extends ChatActionBar implements \JsonSerializabl
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the join request was sent
+     * Set Point in time (Unix timestamp) when the join request was sent.
      */
     public function setRequestDate(int $requestDate): self
     {

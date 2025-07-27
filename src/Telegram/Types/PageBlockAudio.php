@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An audio file
+ * An audio file.
  */
 class PageBlockAudio extends PageBlock implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PageBlockAudio extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Audio file; may be null
+     * Get Audio file; may be null.
      */
     public function getAudio(): Audio|null
     {
@@ -30,7 +30,7 @@ class PageBlockAudio extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Audio file; may be null
+     * Set Audio file; may be null.
      */
     public function setAudio(Audio|null $audio): self
     {
@@ -40,7 +40,7 @@ class PageBlockAudio extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Audio file caption
+     * Get Audio file caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -48,7 +48,7 @@ class PageBlockAudio extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Audio file caption
+     * Set Audio file caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {

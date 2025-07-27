@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * A regular user
+ * A regular user.
  */
 class UserTypeRegular extends UserType implements \JsonSerializable
 {

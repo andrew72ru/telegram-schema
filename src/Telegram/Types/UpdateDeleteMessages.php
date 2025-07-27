@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some messages were deleted
+ * Some messages were deleted.
  */
 class UpdateDeleteMessages extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the deleted messages
+     * Get Identifiers of the deleted messages.
      */
     public function getMessageIds(): array|null
     {
@@ -54,7 +54,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the deleted messages
+     * Set Identifiers of the deleted messages.
      */
     public function setMessageIds(array|null $messageIds): self
     {
@@ -64,7 +64,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if the messages are permanently deleted by a user (as opposed to just becoming inaccessible)
+     * Get True, if the messages are permanently deleted by a user (as opposed to just becoming inaccessible).
      */
     public function getIsPermanent(): bool
     {
@@ -72,7 +72,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if the messages are permanently deleted by a user (as opposed to just becoming inaccessible)
+     * Set True, if the messages are permanently deleted by a user (as opposed to just becoming inaccessible).
      */
     public function setIsPermanent(bool $isPermanent): self
     {
@@ -82,7 +82,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if the messages are deleted only from the cache and can possibly be retrieved again in the future
+     * Get True, if the messages are deleted only from the cache and can possibly be retrieved again in the future.
      */
     public function getFromCache(): bool
     {
@@ -90,7 +90,7 @@ class UpdateDeleteMessages extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if the messages are deleted only from the cache and can possibly be retrieved again in the future
+     * Set True, if the messages are deleted only from the cache and can possibly be retrieved again in the future.
      */
     public function setFromCache(bool $fromCache): self
     {

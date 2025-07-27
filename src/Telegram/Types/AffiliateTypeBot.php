@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The affiliate is a bot owned by the current user @user_id User identifier of the bot
+ * The affiliate is a bot owned by the current user @user_id User identifier of the bot.
  */
 class AffiliateTypeBot extends AffiliateType implements \JsonSerializable
 {

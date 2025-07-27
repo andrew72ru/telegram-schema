@@ -22,7 +22,7 @@ class RevokeChatInviteLink extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class RevokeChatInviteLink extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class RevokeChatInviteLink extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get Invite link to be revoked
+     * Get Invite link to be revoked.
      */
     public function getInviteLink(): string
     {
@@ -48,7 +48,7 @@ class RevokeChatInviteLink extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set Invite link to be revoked
+     * Set Invite link to be revoked.
      */
     public function setInviteLink(string $inviteLink): self
     {

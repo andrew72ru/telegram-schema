@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains number of being downloaded and recently downloaded files found
+ * Contains number of being downloaded and recently downloaded files found.
  */
 class DownloadedFileCounts implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class DownloadedFileCounts implements \JsonSerializable
     }
 
     /**
-     * Get Number of active file downloads found, including paused
+     * Get Number of active file downloads found, including paused.
      */
     public function getActiveCount(): int
     {
@@ -33,7 +33,7 @@ class DownloadedFileCounts implements \JsonSerializable
     }
 
     /**
-     * Set Number of active file downloads found, including paused
+     * Set Number of active file downloads found, including paused.
      */
     public function setActiveCount(int $activeCount): self
     {
@@ -43,7 +43,7 @@ class DownloadedFileCounts implements \JsonSerializable
     }
 
     /**
-     * Get Number of paused file downloads found
+     * Get Number of paused file downloads found.
      */
     public function getPausedCount(): int
     {
@@ -51,7 +51,7 @@ class DownloadedFileCounts implements \JsonSerializable
     }
 
     /**
-     * Set Number of paused file downloads found
+     * Set Number of paused file downloads found.
      */
     public function setPausedCount(int $pausedCount): self
     {
@@ -61,7 +61,7 @@ class DownloadedFileCounts implements \JsonSerializable
     }
 
     /**
-     * Get Number of completed file downloads found
+     * Get Number of completed file downloads found.
      */
     public function getCompletedCount(): int
     {
@@ -69,7 +69,7 @@ class DownloadedFileCounts implements \JsonSerializable
     }
 
     /**
-     * Set Number of completed file downloads found
+     * Set Number of completed file downloads found.
      */
     public function setCompletedCount(int $completedCount): self
     {

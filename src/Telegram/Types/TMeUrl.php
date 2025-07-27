@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a URL linking to an internal Telegram entity @url URL @type Type of the URL
+ * Represents a URL linking to an internal Telegram entity @url URL @var Type of the URL.
  */
 class TMeUrl implements \JsonSerializable
 {

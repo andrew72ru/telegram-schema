@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a message @chat_id Identifier of the chat with the message @message_id Identifier of the message
+ * An area pointing to a message @chat_id Identifier of the chat with the message @message_id Identifier of the message.
  */
 class StoryAreaTypeMessage extends StoryAreaType implements \JsonSerializable
 {

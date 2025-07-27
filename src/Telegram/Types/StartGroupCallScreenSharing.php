@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Starts screen sharing in a joined group call. Returns join response payload for tgcalls
+ * Starts screen sharing in a joined group call. Returns join response payload for tgcalls.
  */
 class StartGroupCallScreenSharing extends Text implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StartGroupCallScreenSharing extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class StartGroupCallScreenSharing extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class StartGroupCallScreenSharing extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Screen sharing audio channel synchronization source identifier; received from tgcalls
+     * Get Screen sharing audio channel synchronization source identifier; received from tgcalls.
      */
     public function getAudioSourceId(): int
     {
@@ -51,7 +51,7 @@ class StartGroupCallScreenSharing extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Screen sharing audio channel synchronization source identifier; received from tgcalls
+     * Set Screen sharing audio channel synchronization source identifier; received from tgcalls.
      */
     public function setAudioSourceId(int $audioSourceId): self
     {
@@ -61,7 +61,7 @@ class StartGroupCallScreenSharing extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Group call join payload; received from tgcalls
+     * Get Group call join payload; received from tgcalls.
      */
     public function getPayload(): string
     {
@@ -69,7 +69,7 @@ class StartGroupCallScreenSharing extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Group call join payload; received from tgcalls
+     * Set Group call join payload; received from tgcalls.
      */
     public function setPayload(string $payload): self
     {

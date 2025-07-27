@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the current privacy settings @setting The privacy setting
+ * Returns the current privacy settings @setting The privacy setting.
  */
 class GetUserPrivacySettingRules extends UserPrivacySettingRules implements \JsonSerializable
 {

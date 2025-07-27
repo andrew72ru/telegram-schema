@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes type of paid message reaction of the current user on a message. The message must have paid reaction added by the current user
+ * Changes type of paid message reaction of the current user on a message. The message must have paid reaction added by the current user.
  */
 class SetPaidMessageReactionType extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetPaidMessageReactionType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetPaidMessageReactionType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetPaidMessageReactionType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class SetPaidMessageReactionType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class SetPaidMessageReactionType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New type of the paid reaction
+     * Get New type of the paid reaction.
      */
     public function getType(): PaidReactionType|null
     {
@@ -69,7 +69,7 @@ class SetPaidMessageReactionType extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New type of the paid reaction
+     * Set New type of the paid reaction.
      */
     public function setType(PaidReactionType|null $type): self
     {

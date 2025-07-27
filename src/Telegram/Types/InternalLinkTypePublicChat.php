@@ -25,7 +25,7 @@ class InternalLinkTypePublicChat extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get Username of the chat
+     * Get Username of the chat.
      */
     public function getChatUsername(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypePublicChat extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set Username of the chat
+     * Set Username of the chat.
      */
     public function setChatUsername(string $chatUsername): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypePublicChat extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get Draft text for message to send in the chat
+     * Get Draft text for message to send in the chat.
      */
     public function getDraftText(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypePublicChat extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set Draft text for message to send in the chat
+     * Set Draft text for message to send in the chat.
      */
     public function setDraftText(string $draftText): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypePublicChat extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get True, if chat profile information screen must be opened; otherwise, the chat itself must be opened
+     * Get True, if chat profile information screen must be opened; otherwise, the chat itself must be opened.
      */
     public function getOpenProfile(): bool
     {
@@ -69,7 +69,7 @@ class InternalLinkTypePublicChat extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set True, if chat profile information screen must be opened; otherwise, the chat itself must be opened
+     * Set True, if chat profile information screen must be opened; otherwise, the chat itself must be opened.
      */
     public function setOpenProfile(bool $openProfile): self
     {

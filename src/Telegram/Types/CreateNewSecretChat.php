@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new secret chat. Returns the newly created chat @user_id Identifier of the target user
+ * Creates a new secret chat. Returns the newly created chat @user_id Identifier of the target user.
  */
 class CreateNewSecretChat extends Chat implements \JsonSerializable
 {

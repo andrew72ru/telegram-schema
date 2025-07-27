@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the text shown on a bot's profile page and sent together with the link when users share the bot in the given language. Can be called only if userTypeBot.can_be_edited == true
+ * Returns the text shown on a bot's profile page and sent together with the link when users share the bot in the given language. Can be called only if userTypeBot.can_be_edited == true.
  */
 class GetBotInfoShortDescription extends Text implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetBotInfoShortDescription extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class GetBotInfoShortDescription extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class GetBotInfoShortDescription extends Text implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code or an empty string
+     * Get A two-letter ISO 639-1 language code or an empty string.
      */
     public function getLanguageCode(): string
     {
@@ -48,7 +48,7 @@ class GetBotInfoShortDescription extends Text implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code or an empty string
+     * Set A two-letter ISO 639-1 language code or an empty string.
      */
     public function setLanguageCode(string $languageCode): self
     {

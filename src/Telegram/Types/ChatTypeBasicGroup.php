@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A basic group (a chat with 0-200 other users) @basic_group_id Basic group identifier
+ * A basic group (a chat with 0-200 other users) @basic_group_id Basic group identifier.
  */
 class ChatTypeBasicGroup extends ChatType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An authorization confirmation dialog needs to be shown to the user
+ * An authorization confirmation dialog needs to be shown to the user.
  */
 class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Get An HTTP URL to be opened
+     * Get An HTTP URL to be opened.
      */
     public function getUrl(): string
     {
@@ -36,7 +36,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Set An HTTP URL to be opened
+     * Set An HTTP URL to be opened.
      */
     public function setUrl(string $url): self
     {
@@ -46,7 +46,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Get A domain of the URL
+     * Get A domain of the URL.
      */
     public function getDomain(): string
     {
@@ -54,7 +54,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Set A domain of the URL
+     * Set A domain of the URL.
      */
     public function setDomain(string $domain): self
     {
@@ -64,7 +64,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Get User identifier of a bot linked with the website
+     * Get User identifier of a bot linked with the website.
      */
     public function getBotUserId(): int
     {
@@ -72,7 +72,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Set User identifier of a bot linked with the website
+     * Set User identifier of a bot linked with the website.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -82,7 +82,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Get True, if the user must be asked for the permission to the bot to send them messages
+     * Get True, if the user must be asked for the permission to the bot to send them messages.
      */
     public function getRequestWriteAccess(): bool
     {
@@ -90,7 +90,7 @@ class LoginUrlInfoRequestConfirmation extends LoginUrlInfo implements \JsonSeria
     }
 
     /**
-     * Set True, if the user must be asked for the permission to the bot to send them messages
+     * Set True, if the user must be asked for the permission to the bot to send them messages.
      */
     public function setRequestWriteAccess(bool $requestWriteAccess): self
     {

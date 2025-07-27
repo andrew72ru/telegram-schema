@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a Web App @photo Web App photo; may be null if none
+ * The link is a link to a Web App @photo Web App photo; may be null if none.
  */
 class LinkPreviewTypeWebApp extends LinkPreviewType implements \JsonSerializable
 {

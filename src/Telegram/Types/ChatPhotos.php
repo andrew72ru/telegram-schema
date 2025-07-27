@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of chat or user profile photos @total_count Total number of photos @photos List of photos
+ * Contains a list of chat or user profile photos @total_count Total number of photos @photos List of photos.
  */
 class ChatPhotos implements \JsonSerializable
 {

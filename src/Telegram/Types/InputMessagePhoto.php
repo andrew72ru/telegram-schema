@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A photo message
+ * A photo message.
  */
 class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo to send. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20
+     * Get Photo to send. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20.
      */
     public function getPhoto(): InputFile|null
     {
@@ -51,7 +51,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo to send. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20
+     * Set Photo to send. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20.
      */
     public function setPhoto(InputFile|null $photo): self
     {
@@ -61,7 +61,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo thumbnail to be sent; pass null to skip thumbnail uploading. The thumbnail is sent to the other party only in secret chats
+     * Get Photo thumbnail to be sent; pass null to skip thumbnail uploading. The thumbnail is sent to the other party only in secret chats.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -69,7 +69,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo thumbnail to be sent; pass null to skip thumbnail uploading. The thumbnail is sent to the other party only in secret chats
+     * Set Photo thumbnail to be sent; pass null to skip thumbnail uploading. The thumbnail is sent to the other party only in secret chats.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -79,7 +79,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get File identifiers of the stickers added to the photo, if applicable
+     * Get File identifiers of the stickers added to the photo, if applicable.
      */
     public function getAddedStickerFileIds(): array|null
     {
@@ -87,7 +87,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set File identifiers of the stickers added to the photo, if applicable
+     * Set File identifiers of the stickers added to the photo, if applicable.
      */
     public function setAddedStickerFileIds(array|null $addedStickerFileIds): self
     {
@@ -97,7 +97,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo width
+     * Get Photo width.
      */
     public function getWidth(): int
     {
@@ -105,7 +105,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo width
+     * Set Photo width.
      */
     public function setWidth(int $width): self
     {
@@ -115,7 +115,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo height
+     * Get Photo height.
      */
     public function getHeight(): int
     {
@@ -123,7 +123,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo height
+     * Set Photo height.
      */
     public function setHeight(int $height): self
     {
@@ -133,7 +133,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Photo caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -141,7 +141,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Photo caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -151,7 +151,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo; not supported in secret chats
+     * Get True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo; not supported in secret chats.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -159,7 +159,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo; not supported in secret chats
+     * Set True, if the caption must be shown above the photo; otherwise, the caption must be shown below the photo; not supported in secret chats.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -169,7 +169,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Photo self-destruct type; pass null if none; private chats only
+     * Get Photo self-destruct type; pass null if none; private chats only.
      */
     public function getSelfDestructType(): MessageSelfDestructType|null
     {
@@ -177,7 +177,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Photo self-destruct type; pass null if none; private chats only
+     * Set Photo self-destruct type; pass null if none; private chats only.
      */
     public function setSelfDestructType(MessageSelfDestructType|null $selfDestructType): self
     {
@@ -187,7 +187,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo preview must be covered by a spoiler animation; not supported in secret chats
+     * Get True, if the photo preview must be covered by a spoiler animation; not supported in secret chats.
      */
     public function getHasSpoiler(): bool
     {
@@ -195,7 +195,7 @@ class InputMessagePhoto extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo preview must be covered by a spoiler animation; not supported in secret chats
+     * Set True, if the photo preview must be covered by a spoiler animation; not supported in secret chats.
      */
     public function setHasSpoiler(bool $hasSpoiler): self
     {

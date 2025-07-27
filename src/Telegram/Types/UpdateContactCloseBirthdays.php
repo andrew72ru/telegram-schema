@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of contacts that had birthdays recently or will have birthday soon has changed @close_birthday_users List of contact users with close birthday
+ * The list of contacts that had birthdays recently or will have birthday soon has changed @close_birthday_users List of contact users with close birthday.
  */
 class UpdateContactCloseBirthdays extends Update implements \JsonSerializable
 {

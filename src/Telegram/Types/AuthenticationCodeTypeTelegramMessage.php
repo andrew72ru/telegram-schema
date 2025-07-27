@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A digit-only authentication code is delivered via a private Telegram message, which can be viewed from another active session
+ * A digit-only authentication code is delivered via a private Telegram message, which can be viewed from another active session.
  */
 class AuthenticationCodeTypeTelegramMessage extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class AuthenticationCodeTypeTelegramMessage extends AuthenticationCodeType imple
     }
 
     /**
-     * Get Length of the code
+     * Get Length of the code.
      */
     public function getLength(): int
     {
@@ -27,7 +27,7 @@ class AuthenticationCodeTypeTelegramMessage extends AuthenticationCodeType imple
     }
 
     /**
-     * Set Length of the code
+     * Set Length of the code.
      */
     public function setLength(int $length): self
     {

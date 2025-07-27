@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a video file posted as a story
+ * Describes a video file posted as a story.
  */
 class StoryVideo implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the video, in seconds
+     * Get Duration of the video, in seconds.
      */
     public function getDuration(): float
     {
@@ -54,7 +54,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the video, in seconds
+     * Set Duration of the video, in seconds.
      */
     public function setDuration(float $duration): self
     {
@@ -64,7 +64,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Video width
+     * Get Video width.
      */
     public function getWidth(): int
     {
@@ -72,7 +72,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Video width
+     * Set Video width.
      */
     public function setWidth(int $width): self
     {
@@ -82,7 +82,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Video height
+     * Get Video height.
      */
     public function getHeight(): int
     {
@@ -90,7 +90,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Video height
+     * Set Video height.
      */
     public function setHeight(int $height): self
     {
@@ -100,7 +100,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets
+     * Get True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets.
      */
     public function getHasStickers(): bool
     {
@@ -108,7 +108,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets
+     * Set True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets.
      */
     public function setHasStickers(bool $hasStickers): self
     {
@@ -118,7 +118,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video has no sound
+     * Get True, if the video has no sound.
      */
     public function getIsAnimation(): bool
     {
@@ -126,7 +126,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video has no sound
+     * Set True, if the video has no sound.
      */
     public function setIsAnimation(bool $isAnimation): self
     {
@@ -136,7 +136,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Video minithumbnail; may be null
+     * Get Video minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -144,7 +144,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Video minithumbnail; may be null
+     * Set Video minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -154,7 +154,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Video thumbnail in JPEG or MPEG4 format; may be null
+     * Get Video thumbnail in JPEG or MPEG4 format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -162,7 +162,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Video thumbnail in JPEG or MPEG4 format; may be null
+     * Set Video thumbnail in JPEG or MPEG4 format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -172,7 +172,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Size of file prefix, which is expected to be preloaded, in bytes
+     * Get Size of file prefix, which is expected to be preloaded, in bytes.
      */
     public function getPreloadPrefixSize(): int
     {
@@ -180,7 +180,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Size of file prefix, which is expected to be preloaded, in bytes
+     * Set Size of file prefix, which is expected to be preloaded, in bytes.
      */
     public function setPreloadPrefixSize(int $preloadPrefixSize): self
     {
@@ -190,7 +190,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp of the frame used as video thumbnail
+     * Get Timestamp of the frame used as video thumbnail.
      */
     public function getCoverFrameTimestamp(): float
     {
@@ -198,7 +198,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp of the frame used as video thumbnail
+     * Set Timestamp of the frame used as video thumbnail.
      */
     public function setCoverFrameTimestamp(float $coverFrameTimestamp): self
     {
@@ -208,7 +208,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Get File containing the video
+     * Get File containing the video.
      */
     public function getVideo(): File|null
     {
@@ -216,7 +216,7 @@ class StoryVideo implements \JsonSerializable
     }
 
     /**
-     * Set File containing the video
+     * Set File containing the video.
      */
     public function setVideo(File|null $video): self
     {

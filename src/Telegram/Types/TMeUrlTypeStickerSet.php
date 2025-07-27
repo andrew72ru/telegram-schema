@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A URL linking to a sticker set @sticker_set_id Identifier of the sticker set
+ * A URL linking to a sticker set @sticker_set_id Identifier of the sticker set.
  */
 class TMeUrlTypeStickerSet extends TMeUrlType implements \JsonSerializable
 {

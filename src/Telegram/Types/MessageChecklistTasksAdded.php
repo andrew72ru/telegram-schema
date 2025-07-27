@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some tasks were added to a checklist
+ * Some tasks were added to a checklist.
  */
 class MessageChecklistTasksAdded extends MessageContent implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class MessageChecklistTasksAdded extends MessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Identifier of the message with the checklist; can be 0 if the message was deleted
+     * Get Identifier of the message with the checklist; can be 0 if the message was deleted.
      */
     public function getChecklistMessageId(): int
     {
@@ -30,7 +30,7 @@ class MessageChecklistTasksAdded extends MessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Identifier of the message with the checklist; can be 0 if the message was deleted
+     * Set Identifier of the message with the checklist; can be 0 if the message was deleted.
      */
     public function setChecklistMessageId(int $checklistMessageId): self
     {
@@ -40,7 +40,7 @@ class MessageChecklistTasksAdded extends MessageContent implements \JsonSerializ
     }
 
     /**
-     * Get List of tasks added to the checklist
+     * Get List of tasks added to the checklist.
      */
     public function getTasks(): array|null
     {
@@ -48,7 +48,7 @@ class MessageChecklistTasksAdded extends MessageContent implements \JsonSerializ
     }
 
     /**
-     * Set List of tasks added to the checklist
+     * Set List of tasks added to the checklist.
      */
     public function setTasks(array|null $tasks): self
     {

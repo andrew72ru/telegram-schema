@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Answers a custom query; for bots only @custom_query_id Identifier of a custom query @data JSON-serialized answer to the query
+ * Answers a custom query; for bots only @custom_query_id Identifier of a custom query @data JSON-serialized answer to the query.
  */
 class AnswerCustomQuery extends Ok implements \JsonSerializable
 {

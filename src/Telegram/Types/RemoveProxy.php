@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a proxy server. Can be called before authorization @proxy_id Proxy identifier
+ * Removes a proxy server. Can be called before authorization @proxy_id Proxy identifier.
  */
 class RemoveProxy extends Ok implements \JsonSerializable
 {

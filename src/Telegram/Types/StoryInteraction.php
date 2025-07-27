@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents interaction with a story
+ * Represents interaction with a story.
  */
 class StoryInteraction implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or chat that made the interaction
+     * Get Identifier of the user or chat that made the interaction.
      */
     public function getActorId(): MessageSender|null
     {
@@ -36,7 +36,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or chat that made the interaction
+     * Set Identifier of the user or chat that made the interaction.
      */
     public function setActorId(MessageSender|null $actorId): self
     {
@@ -46,7 +46,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Get Approximate point in time (Unix timestamp) when the interaction happened
+     * Get Approximate point in time (Unix timestamp) when the interaction happened.
      */
     public function getInteractionDate(): int
     {
@@ -54,7 +54,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Set Approximate point in time (Unix timestamp) when the interaction happened
+     * Set Approximate point in time (Unix timestamp) when the interaction happened.
      */
     public function setInteractionDate(int $interactionDate): self
     {
@@ -64,7 +64,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Get Block list to which the actor is added; may be null if none or for chat stories
+     * Get Block list to which the actor is added; may be null if none or for chat stories.
      */
     public function getBlockList(): BlockList|null
     {
@@ -72,7 +72,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Set Block list to which the actor is added; may be null if none or for chat stories
+     * Set Block list to which the actor is added; may be null if none or for chat stories.
      */
     public function setBlockList(BlockList|null $blockList): self
     {
@@ -82,7 +82,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Get Type of the interaction
+     * Get Type of the interaction.
      */
     public function getType(): StoryInteractionType|null
     {
@@ -90,7 +90,7 @@ class StoryInteraction implements \JsonSerializable
     }
 
     /**
-     * Set Type of the interaction
+     * Set Type of the interaction.
      */
     public function setType(StoryInteractionType|null $type): self
     {

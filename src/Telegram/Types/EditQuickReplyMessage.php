@@ -25,7 +25,7 @@ class EditQuickReplyMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the quick reply shortcut with the message
+     * Get Unique identifier of the quick reply shortcut with the message.
      */
     public function getShortcutId(): int
     {
@@ -33,7 +33,7 @@ class EditQuickReplyMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the quick reply shortcut with the message
+     * Set Unique identifier of the quick reply shortcut with the message.
      */
     public function setShortcutId(int $shortcutId): self
     {
@@ -43,7 +43,7 @@ class EditQuickReplyMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class EditQuickReplyMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class EditQuickReplyMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageChecklist, inputMessageDocument, inputMessagePhoto, inputMessageText, or inputMessageVideo
+     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageChecklist, inputMessageDocument, inputMessagePhoto, inputMessageText, or inputMessageVideo.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -69,7 +69,7 @@ class EditQuickReplyMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageChecklist, inputMessageDocument, inputMessagePhoto, inputMessageText, or inputMessageVideo
+     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageChecklist, inputMessageDocument, inputMessagePhoto, inputMessageText, or inputMessageVideo.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

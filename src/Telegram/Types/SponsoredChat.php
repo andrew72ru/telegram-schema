@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a sponsored chat
+ * Describes a sponsored chat.
  */
 class SponsoredChat implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of this result
+     * Get Unique identifier of this result.
      */
     public function getUniqueId(): int
     {
@@ -36,7 +36,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of this result
+     * Set Unique identifier of this result.
      */
     public function setUniqueId(int $uniqueId): self
     {
@@ -46,7 +46,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -54,7 +54,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -64,7 +64,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Get Additional optional information about the sponsor to be shown along with the chat
+     * Get Additional optional information about the sponsor to be shown along with the chat.
      */
     public function getSponsorInfo(): string
     {
@@ -72,7 +72,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Set Additional optional information about the sponsor to be shown along with the chat
+     * Set Additional optional information about the sponsor to be shown along with the chat.
      */
     public function setSponsorInfo(string $sponsorInfo): self
     {
@@ -82,7 +82,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, additional information about the sponsored chat to be shown along with the chat
+     * Get If non-empty, additional information about the sponsored chat to be shown along with the chat.
      */
     public function getAdditionalInfo(): string
     {
@@ -90,7 +90,7 @@ class SponsoredChat implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, additional information about the sponsored chat to be shown along with the chat
+     * Set If non-empty, additional information about the sponsored chat to be shown along with the chat.
      */
     public function setAdditionalInfo(string $additionalInfo): self
     {

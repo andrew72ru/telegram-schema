@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Number of unread messages in a chat list has changed. This update is sent only if the message database is used
+ * Number of unread messages in a chat list has changed. This update is sent only if the message database is used.
  */
 class UpdateUnreadMessageCount extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateUnreadMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The chat list with changed number of unread messages
+     * Get The chat list with changed number of unread messages.
      */
     public function getChatList(): ChatList|null
     {
@@ -33,7 +33,7 @@ class UpdateUnreadMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The chat list with changed number of unread messages
+     * Set The chat list with changed number of unread messages.
      */
     public function setChatList(ChatList|null $chatList): self
     {
@@ -43,7 +43,7 @@ class UpdateUnreadMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of unread messages
+     * Get Total number of unread messages.
      */
     public function getUnreadCount(): int
     {
@@ -51,7 +51,7 @@ class UpdateUnreadMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of unread messages
+     * Set Total number of unread messages.
      */
     public function setUnreadCount(int $unreadCount): self
     {
@@ -61,7 +61,7 @@ class UpdateUnreadMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of unread messages in unmuted chats
+     * Get Total number of unread messages in unmuted chats.
      */
     public function getUnreadUnmutedCount(): int
     {
@@ -69,7 +69,7 @@ class UpdateUnreadMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of unread messages in unmuted chats
+     * Set Total number of unread messages in unmuted chats.
      */
     public function setUnreadUnmutedCount(int $unreadUnmutedCount): self
     {

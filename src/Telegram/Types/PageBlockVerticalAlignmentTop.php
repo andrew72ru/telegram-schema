@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The content must be top-aligned
+ * The content must be top-aligned.
  */
 class PageBlockVerticalAlignmentTop extends PageBlockVerticalAlignment implements \JsonSerializable
 {

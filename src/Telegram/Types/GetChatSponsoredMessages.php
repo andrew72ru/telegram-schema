@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns sponsored messages to be shown in a chat; for channel chats and chats with bots only @chat_id Identifier of the chat
+ * Returns sponsored messages to be shown in a chat; for channel chats and chats with bots only @chat_id Identifier of the chat.
  */
 class GetChatSponsoredMessages extends SponsoredMessages implements \JsonSerializable
 {

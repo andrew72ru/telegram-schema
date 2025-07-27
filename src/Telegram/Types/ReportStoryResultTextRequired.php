@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user must add additional text details to the report @option_id Option identifier for the next reportStory request @is_optional True, if the user can skip text adding
+ * The user must add additional text details to the report @option_id Option identifier for the next reportStory request @is_optional True, if the user can skip text adding.
  */
 class ReportStoryResultTextRequired extends ReportStoryResult implements \JsonSerializable
 {

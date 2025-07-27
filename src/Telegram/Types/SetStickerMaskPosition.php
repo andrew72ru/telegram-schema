@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the mask position of a mask sticker. The sticker must belong to a mask sticker set that is owned by the current user
+ * Changes the mask position of a mask sticker. The sticker must belong to a mask sticker set that is owned by the current user.
  */
 class SetStickerMaskPosition extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetStickerMaskPosition extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker
+     * Get Sticker.
      */
     public function getSticker(): InputFile|null
     {
@@ -30,7 +30,7 @@ class SetStickerMaskPosition extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker
+     * Set Sticker.
      */
     public function setSticker(InputFile|null $sticker): self
     {
@@ -40,7 +40,7 @@ class SetStickerMaskPosition extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Position where the mask is placed; pass null to remove mask position
+     * Get Position where the mask is placed; pass null to remove mask position.
      */
     public function getMaskPosition(): MaskPosition|null
     {
@@ -48,7 +48,7 @@ class SetStickerMaskPosition extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Position where the mask is placed; pass null to remove mask position
+     * Set Position where the mask is placed; pass null to remove mask position.
      */
     public function setMaskPosition(MaskPosition|null $maskPosition): self
     {

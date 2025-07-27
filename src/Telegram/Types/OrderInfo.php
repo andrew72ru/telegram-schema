@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Order information
+ * Order information.
  */
 class OrderInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Name of the user
+     * Get Name of the user.
      */
     public function getName(): string
     {
@@ -36,7 +36,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Name of the user
+     * Set Name of the user.
      */
     public function setName(string $name): self
     {
@@ -46,7 +46,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Phone number of the user
+     * Get Phone number of the user.
      */
     public function getPhoneNumber(): string
     {
@@ -54,7 +54,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Phone number of the user
+     * Set Phone number of the user.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -64,7 +64,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Email address of the user
+     * Get Email address of the user.
      */
     public function getEmailAddress(): string
     {
@@ -72,7 +72,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Email address of the user
+     * Set Email address of the user.
      */
     public function setEmailAddress(string $emailAddress): self
     {
@@ -82,7 +82,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Shipping address for this order; may be null
+     * Get Shipping address for this order; may be null.
      */
     public function getShippingAddress(): Address|null
     {
@@ -90,7 +90,7 @@ class OrderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Shipping address for this order; may be null
+     * Set Shipping address for this order; may be null.
      */
     public function setShippingAddress(Address|null $shippingAddress): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user needs to confirm authorization on another logged in device by scanning a QR code with the provided link @link A tg:// URL for the QR code. The link will be updated frequently
+ * The user needs to confirm authorization on another logged in device by scanning a QR code with the provided link @see A tg:// URL for the QR code. The link will be updated frequently.
  */
 class AuthorizationStateWaitOtherDeviceConfirmation extends AuthorizationState implements \JsonSerializable
 {

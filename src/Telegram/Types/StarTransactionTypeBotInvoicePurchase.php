@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a purchase of a product from a bot or a business account by the current user; for regular users only
+ * The transaction is a purchase of a product from a bot or a business account by the current user; for regular users only.
  */
 class StarTransactionTypeBotInvoicePurchase extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeBotInvoicePurchase extends StarTransactionType implemen
     }
 
     /**
-     * Get Identifier of the bot or the business account user that created the invoice
+     * Get Identifier of the bot or the business account user that created the invoice.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeBotInvoicePurchase extends StarTransactionType implemen
     }
 
     /**
-     * Set Identifier of the bot or the business account user that created the invoice
+     * Set Identifier of the bot or the business account user that created the invoice.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeBotInvoicePurchase extends StarTransactionType implemen
     }
 
     /**
-     * Get Information about the bought product
+     * Get Information about the bought product.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeBotInvoicePurchase extends StarTransactionType implemen
     }
 
     /**
-     * Set Information about the bought product
+     * Set Information about the bought product.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {

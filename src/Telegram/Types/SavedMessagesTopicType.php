@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for SavedMessagesTopicType types
+ * Abstract base class for SavedMessagesTopicType types.
  */
 abstract class SavedMessagesTopicType implements \JsonSerializable
 {

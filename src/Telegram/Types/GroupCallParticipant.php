@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a group call participant
+ * Represents a group call participant.
  */
 class GroupCallParticipant implements \JsonSerializable
 {
@@ -70,7 +70,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the group call participant
+     * Get Identifier of the group call participant.
      */
     public function getParticipantId(): MessageSender|null
     {
@@ -78,7 +78,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the group call participant
+     * Set Identifier of the group call participant.
      */
     public function setParticipantId(MessageSender|null $participantId): self
     {
@@ -88,7 +88,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get User's audio channel synchronization source identifier
+     * Get User's audio channel synchronization source identifier.
      */
     public function getAudioSourceId(): int
     {
@@ -96,7 +96,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set User's audio channel synchronization source identifier
+     * Set User's audio channel synchronization source identifier.
      */
     public function setAudioSourceId(int $audioSourceId): self
     {
@@ -106,7 +106,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get User's screen sharing audio channel synchronization source identifier
+     * Get User's screen sharing audio channel synchronization source identifier.
      */
     public function getScreenSharingAudioSourceId(): int
     {
@@ -114,7 +114,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set User's screen sharing audio channel synchronization source identifier
+     * Set User's screen sharing audio channel synchronization source identifier.
      */
     public function setScreenSharingAudioSourceId(int $screenSharingAudioSourceId): self
     {
@@ -124,7 +124,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get Information about user's video channel; may be null if there is no active video
+     * Get Information about user's video channel; may be null if there is no active video.
      */
     public function getVideoInfo(): GroupCallParticipantVideoInfo|null
     {
@@ -132,7 +132,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set Information about user's video channel; may be null if there is no active video
+     * Set Information about user's video channel; may be null if there is no active video.
      */
     public function setVideoInfo(GroupCallParticipantVideoInfo|null $videoInfo): self
     {
@@ -142,7 +142,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get Information about user's screen sharing video channel; may be null if there is no active screen sharing video
+     * Get Information about user's screen sharing video channel; may be null if there is no active screen sharing video.
      */
     public function getScreenSharingVideoInfo(): GroupCallParticipantVideoInfo|null
     {
@@ -150,7 +150,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set Information about user's screen sharing video channel; may be null if there is no active screen sharing video
+     * Set Information about user's screen sharing video channel; may be null if there is no active screen sharing video.
      */
     public function setScreenSharingVideoInfo(GroupCallParticipantVideoInfo|null $screenSharingVideoInfo): self
     {
@@ -160,7 +160,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get The participant user's bio or the participant chat's description
+     * Get The participant user's bio or the participant chat's description.
      */
     public function getBio(): string
     {
@@ -168,7 +168,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set The participant user's bio or the participant chat's description
+     * Set The participant user's bio or the participant chat's description.
      */
     public function setBio(string $bio): self
     {
@@ -178,7 +178,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the participant is the current user
+     * Get True, if the participant is the current user.
      */
     public function getIsCurrentUser(): bool
     {
@@ -186,7 +186,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the participant is the current user
+     * Set True, if the participant is the current user.
      */
     public function setIsCurrentUser(bool $isCurrentUser): self
     {
@@ -196,7 +196,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the participant is speaking as set by setGroupCallParticipantIsSpeaking
+     * Get True, if the participant is speaking as set by setGroupCallParticipantIsSpeaking.
      */
     public function getIsSpeaking(): bool
     {
@@ -204,7 +204,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the participant is speaking as set by setGroupCallParticipantIsSpeaking
+     * Set True, if the participant is speaking as set by setGroupCallParticipantIsSpeaking.
      */
     public function setIsSpeaking(bool $isSpeaking): self
     {
@@ -214,7 +214,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the participant hand is raised
+     * Get True, if the participant hand is raised.
      */
     public function getIsHandRaised(): bool
     {
@@ -222,7 +222,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the participant hand is raised
+     * Set True, if the participant hand is raised.
      */
     public function setIsHandRaised(bool $isHandRaised): self
     {
@@ -232,7 +232,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can mute the participant for all other group call participants
+     * Get True, if the current user can mute the participant for all other group call participants.
      */
     public function getCanBeMutedForAllUsers(): bool
     {
@@ -240,7 +240,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can mute the participant for all other group call participants
+     * Set True, if the current user can mute the participant for all other group call participants.
      */
     public function setCanBeMutedForAllUsers(bool $canBeMutedForAllUsers): self
     {
@@ -250,7 +250,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can allow the participant to unmute themselves or unmute the participant (if the participant is the current user)
+     * Get True, if the current user can allow the participant to unmute themselves or unmute the participant (if the participant is the current user).
      */
     public function getCanBeUnmutedForAllUsers(): bool
     {
@@ -258,7 +258,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can allow the participant to unmute themselves or unmute the participant (if the participant is the current user)
+     * Set True, if the current user can allow the participant to unmute themselves or unmute the participant (if the participant is the current user).
      */
     public function setCanBeUnmutedForAllUsers(bool $canBeUnmutedForAllUsers): self
     {
@@ -268,7 +268,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can mute the participant only for self
+     * Get True, if the current user can mute the participant only for self.
      */
     public function getCanBeMutedForCurrentUser(): bool
     {
@@ -276,7 +276,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can mute the participant only for self
+     * Set True, if the current user can mute the participant only for self.
      */
     public function setCanBeMutedForCurrentUser(bool $canBeMutedForCurrentUser): self
     {
@@ -286,7 +286,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the current user can unmute the participant for self
+     * Get True, if the current user can unmute the participant for self.
      */
     public function getCanBeUnmutedForCurrentUser(): bool
     {
@@ -294,7 +294,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the current user can unmute the participant for self
+     * Set True, if the current user can unmute the participant for self.
      */
     public function setCanBeUnmutedForCurrentUser(bool $canBeUnmutedForCurrentUser): self
     {
@@ -304,7 +304,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the participant is muted for all users
+     * Get True, if the participant is muted for all users.
      */
     public function getIsMutedForAllUsers(): bool
     {
@@ -312,7 +312,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the participant is muted for all users
+     * Set True, if the participant is muted for all users.
      */
     public function setIsMutedForAllUsers(bool $isMutedForAllUsers): self
     {
@@ -322,7 +322,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the participant is muted for the current user
+     * Get True, if the participant is muted for the current user.
      */
     public function getIsMutedForCurrentUser(): bool
     {
@@ -330,7 +330,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the participant is muted for the current user
+     * Set True, if the participant is muted for the current user.
      */
     public function setIsMutedForCurrentUser(bool $isMutedForCurrentUser): self
     {
@@ -340,7 +340,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get True, if the participant is muted for all users, but can unmute themselves
+     * Get True, if the participant is muted for all users, but can unmute themselves.
      */
     public function getCanUnmuteSelf(): bool
     {
@@ -348,7 +348,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set True, if the participant is muted for all users, but can unmute themselves
+     * Set True, if the participant is muted for all users, but can unmute themselves.
      */
     public function setCanUnmuteSelf(bool $canUnmuteSelf): self
     {
@@ -358,7 +358,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get Participant's volume level; 1-20000 in hundreds of percents
+     * Get Participant's volume level; 1-20000 in hundreds of percents.
      */
     public function getVolumeLevel(): int
     {
@@ -366,7 +366,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set Participant's volume level; 1-20000 in hundreds of percents
+     * Set Participant's volume level; 1-20000 in hundreds of percents.
      */
     public function setVolumeLevel(int $volumeLevel): self
     {
@@ -376,7 +376,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Get User's order in the group call participant list. Orders must be compared lexicographically. The bigger is order, the higher is user in the list. If order is empty, the user must be removed from the participant list
+     * Get User's order in the group call participant list. Orders must be compared lexicographically. The bigger is order, the higher is user in the list. If order is empty, the user must be removed from the participant list.
      */
     public function getOrder(): string
     {
@@ -384,7 +384,7 @@ class GroupCallParticipant implements \JsonSerializable
     }
 
     /**
-     * Set User's order in the group call participant list. Orders must be compared lexicographically. The bigger is order, the higher is user in the list. If order is empty, the user must be removed from the participant list
+     * Set User's order in the group call participant list. Orders must be compared lexicographically. The bigger is order, the higher is user in the list. If order is empty, the user must be removed from the participant list.
      */
     public function setOrder(string $order): self
     {

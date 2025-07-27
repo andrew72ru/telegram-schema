@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether a topic is closed in a forum supergroup chat; requires can_manage_topics right in the supergroup unless the user is creator of the topic
+ * Toggles whether a topic is closed in a forum supergroup chat; requires can_manage_topics right in the supergroup unless the user is creator of the topic.
  */
 class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier of the forum topic
+     * Get Message thread identifier of the forum topic.
      */
     public function getMessageThreadId(): int
     {
@@ -51,7 +51,7 @@ class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier of the forum topic
+     * Set Message thread identifier of the forum topic.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -61,7 +61,7 @@ class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to close the topic; pass false to reopen it
+     * Get Pass true to close the topic; pass false to reopen it.
      */
     public function getIsClosed(): bool
     {
@@ -69,7 +69,7 @@ class ToggleForumTopicIsClosed extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to close the topic; pass false to reopen it
+     * Set Pass true to close the topic; pass false to reopen it.
      */
     public function setIsClosed(bool $isClosed): self
     {

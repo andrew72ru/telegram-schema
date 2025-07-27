@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user tried to use a Premium story feature @feature The used feature
+ * A user tried to use a Premium story feature @feature The used feature.
  */
 class PremiumSourceStoryFeature extends PremiumSource implements \JsonSerializable
 {

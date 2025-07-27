@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a list of forum topics
+ * Describes a list of forum topics.
  */
 class ForumTopics implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of forum topics found
+     * Get Approximate total number of forum topics found.
      */
     public function getTotalCount(): int
     {
@@ -39,7 +39,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of forum topics found
+     * Set Approximate total number of forum topics found.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -49,7 +49,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get List of forum topics
+     * Get List of forum topics.
      */
     public function getTopics(): array|null
     {
@@ -57,7 +57,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set List of forum topics
+     * Set List of forum topics.
      */
     public function setTopics(array|null $topics): self
     {
@@ -67,7 +67,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get Offset date for the next getForumTopics request
+     * Get Offset date for the next getForumTopics request.
      */
     public function getNextOffsetDate(): int
     {
@@ -75,7 +75,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set Offset date for the next getForumTopics request
+     * Set Offset date for the next getForumTopics request.
      */
     public function setNextOffsetDate(int $nextOffsetDate): self
     {
@@ -85,7 +85,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get Offset message identifier for the next getForumTopics request
+     * Get Offset message identifier for the next getForumTopics request.
      */
     public function getNextOffsetMessageId(): int
     {
@@ -93,7 +93,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set Offset message identifier for the next getForumTopics request
+     * Set Offset message identifier for the next getForumTopics request.
      */
     public function setNextOffsetMessageId(int $nextOffsetMessageId): self
     {
@@ -103,7 +103,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Get Offset message thread identifier for the next getForumTopics request
+     * Get Offset message thread identifier for the next getForumTopics request.
      */
     public function getNextOffsetMessageThreadId(): int
     {
@@ -111,7 +111,7 @@ class ForumTopics implements \JsonSerializable
     }
 
     /**
-     * Set Offset message thread identifier for the next getForumTopics request
+     * Set Offset message thread identifier for the next getForumTopics request.
      */
     public function setNextOffsetMessageThreadId(int $nextOffsetMessageThreadId): self
     {

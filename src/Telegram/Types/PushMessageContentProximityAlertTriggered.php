@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user in the chat came within proximity alert range from the current user @distance The distance to the user
+ * A user in the chat came within proximity alert range from the current user @distance The distance to the user.
  */
 class PushMessageContentProximityAlertTriggered extends PushMessageContent implements \JsonSerializable
 {

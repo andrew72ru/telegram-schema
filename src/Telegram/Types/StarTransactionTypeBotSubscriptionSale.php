@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a sale of a subscription by the bot; for bots only
+ * The transaction is a sale of a subscription by the bot; for bots only.
  */
 class StarTransactionTypeBotSubscriptionSale extends StarTransactionType implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Get Identifier of the user that bought the subscription
+     * Get Identifier of the user that bought the subscription.
      */
     public function getUserId(): int
     {
@@ -39,7 +39,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Set Identifier of the user that bought the subscription
+     * Set Identifier of the user that bought the subscription.
      */
     public function setUserId(int $userId): self
     {
@@ -49,7 +49,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Get The number of seconds between consecutive Telegram Star debitings
+     * Get The number of seconds between consecutive Telegram Star debitings.
      */
     public function getSubscriptionPeriod(): int
     {
@@ -57,7 +57,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Set The number of seconds between consecutive Telegram Star debitings
+     * Set The number of seconds between consecutive Telegram Star debitings.
      */
     public function setSubscriptionPeriod(int $subscriptionPeriod): self
     {
@@ -67,7 +67,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Get Information about the bought subscription
+     * Get Information about the bought subscription.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -75,7 +75,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Set Information about the bought subscription
+     * Set Information about the bought subscription.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {
@@ -85,7 +85,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Get Invoice payload
+     * Get Invoice payload.
      */
     public function getInvoicePayload(): string
     {
@@ -93,7 +93,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Set Invoice payload
+     * Set Invoice payload.
      */
     public function setInvoicePayload(string $invoicePayload): self
     {
@@ -103,7 +103,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Get Information about the affiliate which received commission from the transaction; may be null if none
+     * Get Information about the affiliate which received commission from the transaction; may be null if none.
      */
     public function getAffiliate(): AffiliateInfo|null
     {
@@ -111,7 +111,7 @@ class StarTransactionTypeBotSubscriptionSale extends StarTransactionType impleme
     }
 
     /**
-     * Set Information about the affiliate which received commission from the transaction; may be null if none
+     * Set Information about the affiliate which received commission from the transaction; may be null if none.
      */
     public function setAffiliate(AffiliateInfo|null $affiliate): self
     {

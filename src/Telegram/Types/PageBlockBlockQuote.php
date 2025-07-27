@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A block quote
+ * A block quote.
  */
 class PageBlockBlockQuote extends PageBlock implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PageBlockBlockQuote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Quote text
+     * Get Quote text.
      */
     public function getText(): RichText|null
     {
@@ -30,7 +30,7 @@ class PageBlockBlockQuote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Quote text
+     * Set Quote text.
      */
     public function setText(RichText|null $text): self
     {
@@ -40,7 +40,7 @@ class PageBlockBlockQuote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Quote credit
+     * Get Quote credit.
      */
     public function getCredit(): RichText|null
     {
@@ -48,7 +48,7 @@ class PageBlockBlockQuote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Quote credit
+     * Set Quote credit.
      */
     public function setCredit(RichText|null $credit): self
     {

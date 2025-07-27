@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for public channel posts containing the given hashtag or cashtag. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+ * Searches for public channel posts containing the given hashtag or cashtag. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
  */
 class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializab
     }
 
     /**
-     * Get Hashtag or cashtag to search for
+     * Get Hashtag or cashtag to search for.
      */
     public function getTag(): string
     {
@@ -33,7 +33,7 @@ class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializab
     }
 
     /**
-     * Set Hashtag or cashtag to search for
+     * Set Hashtag or cashtag to search for.
      */
     public function setTag(string $tag): self
     {
@@ -43,7 +43,7 @@ class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializab
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -51,7 +51,7 @@ class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializab
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -61,7 +61,7 @@ class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializab
     }
 
     /**
-     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class SearchPublicMessagesByTag extends FoundMessages implements \JsonSerializab
     }
 
     /**
-     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an unread reaction to a message
+ * Contains information about an unread reaction to a message.
  */
 class UnreadReaction implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UnreadReaction implements \JsonSerializable
     }
 
     /**
-     * Get Type of the reaction
+     * Get Type of the reaction.
      */
     public function getType(): ReactionType|null
     {
@@ -33,7 +33,7 @@ class UnreadReaction implements \JsonSerializable
     }
 
     /**
-     * Set Type of the reaction
+     * Set Type of the reaction.
      */
     public function setType(ReactionType|null $type): self
     {
@@ -43,7 +43,7 @@ class UnreadReaction implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sender, added the reaction
+     * Get Identifier of the sender, added the reaction.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class UnreadReaction implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sender, added the reaction
+     * Set Identifier of the sender, added the reaction.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -61,7 +61,7 @@ class UnreadReaction implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reaction was added with a big animation
+     * Get True, if the reaction was added with a big animation.
      */
     public function getIsBig(): bool
     {
@@ -69,7 +69,7 @@ class UnreadReaction implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reaction was added with a big animation
+     * Set True, if the reaction was added with a big animation.
      */
     public function setIsBig(bool $isBig): self
     {

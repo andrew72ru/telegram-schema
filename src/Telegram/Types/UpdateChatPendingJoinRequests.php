@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat pending join requests were changed @chat_id Chat identifier @pending_join_requests The new data about pending join requests; may be null
+ * The chat pending join requests were changed @chat_id Chat identifier @pending_join_requests The new data about pending join requests; may be null.
  */
 class UpdateChatPendingJoinRequests extends Update implements \JsonSerializable
 {

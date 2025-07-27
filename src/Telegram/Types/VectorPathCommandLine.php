@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A straight line to a given point @end_point The end point of the straight line
+ * A straight line to a given point @end_point The end point of the straight line.
  */
 class VectorPathCommandLine extends VectorPathCommand implements \JsonSerializable
 {

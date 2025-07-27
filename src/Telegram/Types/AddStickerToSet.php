@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a new sticker to a set
+ * Adds a new sticker to a set.
  */
 class AddStickerToSet extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AddStickerToSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set owner; ignored for regular users
+     * Get Sticker set owner; ignored for regular users.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class AddStickerToSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set owner; ignored for regular users
+     * Set Sticker set owner; ignored for regular users.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class AddStickerToSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set name. The sticker set must be owned by the current user, and contain less than 200 stickers for custom emoji sticker sets and less than 120 otherwise
+     * Get Sticker set name. The sticker set must be owned by the current user, and contain less than 200 stickers for custom emoji sticker sets and less than 120 otherwise.
      */
     public function getName(): string
     {
@@ -51,7 +51,7 @@ class AddStickerToSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set name. The sticker set must be owned by the current user, and contain less than 200 stickers for custom emoji sticker sets and less than 120 otherwise
+     * Set Sticker set name. The sticker set must be owned by the current user, and contain less than 200 stickers for custom emoji sticker sets and less than 120 otherwise.
      */
     public function setName(string $name): self
     {
@@ -61,7 +61,7 @@ class AddStickerToSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker to add to the set
+     * Get Sticker to add to the set.
      */
     public function getSticker(): InputSticker|null
     {
@@ -69,7 +69,7 @@ class AddStickerToSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker to add to the set
+     * Set Sticker to add to the set.
      */
     public function setSticker(InputSticker|null $sticker): self
     {

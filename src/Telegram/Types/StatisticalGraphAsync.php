@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The graph data to be asynchronously loaded through getStatisticalGraph @token The token to use for data loading
+ * The graph data to be asynchronously loaded through getStatisticalGraph @token The token to use for data loading.
  */
 class StatisticalGraphAsync extends StatisticalGraph implements \JsonSerializable
 {

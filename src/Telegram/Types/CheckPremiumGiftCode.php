@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Return information about a Telegram Premium gift code @code The code to check
+ * Return information about a Telegram Premium gift code @code The code to check.
  */
 class CheckPremiumGiftCode extends PremiumGiftCodeInfo implements \JsonSerializable
 {

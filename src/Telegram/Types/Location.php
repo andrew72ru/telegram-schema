@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a location on planet Earth
+ * Describes a location on planet Earth.
  */
 class Location implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class Location implements \JsonSerializable
     }
 
     /**
-     * Get Latitude of the location in degrees; as defined by the sender
+     * Get Latitude of the location in degrees; as defined by the sender.
      */
     public function getLatitude(): float
     {
@@ -33,7 +33,7 @@ class Location implements \JsonSerializable
     }
 
     /**
-     * Set Latitude of the location in degrees; as defined by the sender
+     * Set Latitude of the location in degrees; as defined by the sender.
      */
     public function setLatitude(float $latitude): self
     {
@@ -43,7 +43,7 @@ class Location implements \JsonSerializable
     }
 
     /**
-     * Get Longitude of the location, in degrees; as defined by the sender
+     * Get Longitude of the location, in degrees; as defined by the sender.
      */
     public function getLongitude(): float
     {
@@ -51,7 +51,7 @@ class Location implements \JsonSerializable
     }
 
     /**
-     * Set Longitude of the location, in degrees; as defined by the sender
+     * Set Longitude of the location, in degrees; as defined by the sender.
      */
     public function setLongitude(float $longitude): self
     {
@@ -61,7 +61,7 @@ class Location implements \JsonSerializable
     }
 
     /**
-     * Get The estimated horizontal accuracy of the location, in meters; as defined by the sender. 0 if unknown
+     * Get The estimated horizontal accuracy of the location, in meters; as defined by the sender. 0 if unknown.
      */
     public function getHorizontalAccuracy(): float
     {
@@ -69,7 +69,7 @@ class Location implements \JsonSerializable
     }
 
     /**
-     * Set The estimated horizontal accuracy of the location, in meters; as defined by the sender. 0 if unknown
+     * Set The estimated horizontal accuracy of the location, in meters; as defined by the sender. 0 if unknown.
      */
     public function setHorizontalAccuracy(float $horizontalAccuracy): self
     {

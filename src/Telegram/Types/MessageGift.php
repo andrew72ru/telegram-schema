@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A regular gift was received or sent by the current user, or the current user was notified about a channel gift
+ * A regular gift was received or sent by the current user, or the current user was notified about a channel gift.
  */
 class MessageGift extends MessageContent implements \JsonSerializable
 {
@@ -58,7 +58,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The gift
+     * Get The gift.
      */
     public function getGift(): Gift|null
     {
@@ -66,7 +66,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The gift
+     * Set The gift.
      */
     public function setGift(Gift|null $gift): self
     {
@@ -76,7 +76,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Sender of the gift
+     * Get Sender of the gift.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -84,7 +84,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Sender of the gift
+     * Set Sender of the gift.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -94,7 +94,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Receiver of the gift
+     * Get Receiver of the gift.
      */
     public function getReceiverId(): MessageSender|null
     {
@@ -102,7 +102,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Receiver of the gift
+     * Set Receiver of the gift.
      */
     public function setReceiverId(MessageSender|null $receiverId): self
     {
@@ -112,7 +112,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the received gift for the current user; only for the receiver of the gift
+     * Get Unique identifier of the received gift for the current user; only for the receiver of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -120,7 +120,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the received gift for the current user; only for the receiver of the gift
+     * Set Unique identifier of the received gift for the current user; only for the receiver of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -130,7 +130,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Message added to the gift
+     * Get Message added to the gift.
      */
     public function getText(): FormattedText|null
     {
@@ -138,7 +138,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Message added to the gift
+     * Set Message added to the gift.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -148,7 +148,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the receiver
+     * Get Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the receiver.
      */
     public function getSellStarCount(): int
     {
@@ -156,7 +156,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the receiver
+     * Set Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the receiver.
      */
     public function setSellStarCount(int $sellStarCount): self
     {
@@ -166,7 +166,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift
+     * Get Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
      */
     public function getPrepaidUpgradeStarCount(): int
     {
@@ -174,7 +174,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift
+     * Set Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
      */
     public function setPrepaidUpgradeStarCount(int $prepaidUpgradeStarCount): self
     {
@@ -184,7 +184,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them
+     * Get True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them.
      */
     public function getIsPrivate(): bool
     {
@@ -192,7 +192,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them
+     * Set True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone will be able to see them.
      */
     public function setIsPrivate(bool $isPrivate): self
     {
@@ -202,7 +202,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift
+     * Get True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift.
      */
     public function getIsSaved(): bool
     {
@@ -210,7 +210,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift
+     * Set True, if the gift is displayed on the user's or the channel's profile page; only for the receiver of the gift.
      */
     public function setIsSaved(bool $isSaved): self
     {
@@ -220,7 +220,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift can be upgraded to a unique gift; only for the receiver of the gift
+     * Get True, if the gift can be upgraded to a unique gift; only for the receiver of the gift.
      */
     public function getCanBeUpgraded(): bool
     {
@@ -228,7 +228,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift can be upgraded to a unique gift; only for the receiver of the gift
+     * Set True, if the gift can be upgraded to a unique gift; only for the receiver of the gift.
      */
     public function setCanBeUpgraded(bool $canBeUpgraded): self
     {
@@ -238,7 +238,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift was converted to Telegram Stars; only for the receiver of the gift
+     * Get True, if the gift was converted to Telegram Stars; only for the receiver of the gift.
      */
     public function getWasConverted(): bool
     {
@@ -246,7 +246,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift was converted to Telegram Stars; only for the receiver of the gift
+     * Set True, if the gift was converted to Telegram Stars; only for the receiver of the gift.
      */
     public function setWasConverted(bool $wasConverted): self
     {
@@ -256,7 +256,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift was upgraded to a unique gift
+     * Get True, if the gift was upgraded to a unique gift.
      */
     public function getWasUpgraded(): bool
     {
@@ -264,7 +264,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift was upgraded to a unique gift
+     * Set True, if the gift was upgraded to a unique gift.
      */
     public function setWasUpgraded(bool $wasUpgraded): self
     {
@@ -274,7 +274,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift was refunded and isn't available anymore
+     * Get True, if the gift was refunded and isn't available anymore.
      */
     public function getWasRefunded(): bool
     {
@@ -282,7 +282,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift was refunded and isn't available anymore
+     * Set True, if the gift was refunded and isn't available anymore.
      */
     public function setWasRefunded(bool $wasRefunded): self
     {
@@ -292,7 +292,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the corresponding upgraded gift; may be empty if unknown. Use getReceivedGift to get information about the gift
+     * Get Identifier of the corresponding upgraded gift; may be empty if unknown. Use getReceivedGift to get information about the gift.
      */
     public function getUpgradedReceivedGiftId(): string
     {
@@ -300,7 +300,7 @@ class MessageGift extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the corresponding upgraded gift; may be empty if unknown. Use getReceivedGift to get information about the gift
+     * Set Identifier of the corresponding upgraded gift; may be empty if unknown. Use getReceivedGift to get information about the gift.
      */
     public function setUpgradedReceivedGiftId(string $upgradedReceivedGiftId): self
     {

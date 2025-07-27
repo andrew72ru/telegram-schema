@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Email address can be reset after the given period. Call resetAuthenticationEmailAddress to reset it and allow the user to authorize with a code sent to the user's phone number
+ * Email address can be reset after the given period. Call resetAuthenticationEmailAddress to reset it and allow the user to authorize with a code sent to the user's phone number.
  */
 class EmailAddressResetStateAvailable extends EmailAddressResetState implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class EmailAddressResetStateAvailable extends EmailAddressResetState implements 
     }
 
     /**
-     * Get Time required to wait before the email address can be reset; 0 if the user is subscribed to Telegram Premium
+     * Get Time required to wait before the email address can be reset; 0 if the user is subscribed to Telegram Premium.
      */
     public function getWaitPeriod(): int
     {
@@ -27,7 +27,7 @@ class EmailAddressResetStateAvailable extends EmailAddressResetState implements 
     }
 
     /**
-     * Set Time required to wait before the email address can be reset; 0 if the user is subscribed to Telegram Premium
+     * Set Time required to wait before the email address can be reset; 0 if the user is subscribed to Telegram Premium.
      */
     public function setWaitPeriod(int $waitPeriod): self
     {

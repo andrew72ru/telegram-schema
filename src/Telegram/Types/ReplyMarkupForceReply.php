@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Instructs application to force a reply to this message
+ * Instructs application to force a reply to this message.
  */
 class ReplyMarkupForceReply extends ReplyMarkup implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ReplyMarkupForceReply extends ReplyMarkup implements \JsonSerializable
     }
 
     /**
-     * Get True, if a forced reply must automatically be shown to the current user. For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply
+     * Get True, if a forced reply must automatically be shown to the current user. For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply.
      */
     public function getIsPersonal(): bool
     {
@@ -30,7 +30,7 @@ class ReplyMarkupForceReply extends ReplyMarkup implements \JsonSerializable
     }
 
     /**
-     * Set True, if a forced reply must automatically be shown to the current user. For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply
+     * Set True, if a forced reply must automatically be shown to the current user. For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply.
      */
     public function setIsPersonal(bool $isPersonal): self
     {
@@ -40,7 +40,7 @@ class ReplyMarkupForceReply extends ReplyMarkup implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, the placeholder to be shown in the input field when the reply is active; 0-64 characters
+     * Get If non-empty, the placeholder to be shown in the input field when the reply is active; 0-64 characters.
      */
     public function getInputFieldPlaceholder(): string
     {
@@ -48,7 +48,7 @@ class ReplyMarkupForceReply extends ReplyMarkup implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, the placeholder to be shown in the input field when the reply is active; 0-64 characters
+     * Set If non-empty, the placeholder to be shown in the input field when the reply is active; 0-64 characters.
      */
     public function setInputFieldPlaceholder(string $inputFieldPlaceholder): self
     {

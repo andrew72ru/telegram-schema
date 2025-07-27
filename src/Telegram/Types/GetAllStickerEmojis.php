@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns unique emoji that correspond to stickers to be found by the getStickers(sticker_type, query, 1000000, chat_id)
+ * Returns unique emoji that correspond to stickers to be found by the getStickers(sticker_type, query, 1000000, chat_id).
  */
 class GetAllStickerEmojis extends Emojis implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Get Type of the stickers to search for
+     * Get Type of the stickers to search for.
      */
     public function getStickerType(): StickerType|null
     {
@@ -36,7 +36,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Set Type of the stickers to search for
+     * Set Type of the stickers to search for.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -46,7 +46,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Get Search query
+     * Get Search query.
      */
     public function getQuery(): string
     {
@@ -54,7 +54,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Set Search query
+     * Set Search query.
      */
     public function setQuery(string $query): self
     {
@@ -64,7 +64,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier for which to find stickers
+     * Get Chat identifier for which to find stickers.
      */
     public function getChatId(): int
     {
@@ -72,7 +72,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier for which to find stickers
+     * Set Chat identifier for which to find stickers.
      */
     public function setChatId(int $chatId): self
     {
@@ -82,7 +82,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if only main emoji for each found sticker must be included in the result
+     * Get Pass true if only main emoji for each found sticker must be included in the result.
      */
     public function getReturnOnlyMainEmoji(): bool
     {
@@ -90,7 +90,7 @@ class GetAllStickerEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if only main emoji for each found sticker must be included in the result
+     * Set Pass true if only main emoji for each found sticker must be included in the result.
      */
     public function setReturnOnlyMainEmoji(bool $returnOnlyMainEmoji): self
     {

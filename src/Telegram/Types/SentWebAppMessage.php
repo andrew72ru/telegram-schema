@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about the message sent by answerWebAppQuery @inline_message_id Identifier of the sent inline message, if known
+ * Information about the message sent by answerWebAppQuery @inline_message_id Identifier of the sent inline message, if known.
  */
 class SentWebAppMessage implements \JsonSerializable
 {

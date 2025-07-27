@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for the number of winners of a Telegram Star giveaway
+ * Describes an option for the number of winners of a Telegram Star giveaway.
  */
 class StarGiveawayWinnerOption implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarGiveawayWinnerOption implements \JsonSerializable
     }
 
     /**
-     * Get The number of users that will be chosen as winners
+     * Get The number of users that will be chosen as winners.
      */
     public function getWinnerCount(): int
     {
@@ -33,7 +33,7 @@ class StarGiveawayWinnerOption implements \JsonSerializable
     }
 
     /**
-     * Set The number of users that will be chosen as winners
+     * Set The number of users that will be chosen as winners.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -43,7 +43,7 @@ class StarGiveawayWinnerOption implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars that will be won by the winners of the giveaway
+     * Get The number of Telegram Stars that will be won by the winners of the giveaway.
      */
     public function getWonStarCount(): int
     {
@@ -51,7 +51,7 @@ class StarGiveawayWinnerOption implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars that will be won by the winners of the giveaway
+     * Set The number of Telegram Stars that will be won by the winners of the giveaway.
      */
     public function setWonStarCount(int $wonStarCount): self
     {
@@ -61,7 +61,7 @@ class StarGiveawayWinnerOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the option must be chosen by default
+     * Get True, if the option must be chosen by default.
      */
     public function getIsDefault(): bool
     {
@@ -69,7 +69,7 @@ class StarGiveawayWinnerOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the option must be chosen by default
+     * Set True, if the option must be chosen by default.
      */
     public function setIsDefault(bool $isDefault): self
     {

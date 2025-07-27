@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of active emoji reactions has changed @emojis The new list of active emoji reactions
+ * The list of active emoji reactions has changed @emojis The new list of active emoji reactions.
  */
 class UpdateActiveEmojiReactions extends Update implements \JsonSerializable
 {

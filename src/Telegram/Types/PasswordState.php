@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents the current state of 2-step verification
+ * Represents the current state of 2-step verification.
  */
 class PasswordState implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get True, if a 2-step verification password is set
+     * Get True, if a 2-step verification password is set.
      */
     public function getHasPassword(): bool
     {
@@ -45,7 +45,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set True, if a 2-step verification password is set
+     * Set True, if a 2-step verification password is set.
      */
     public function setHasPassword(bool $hasPassword): self
     {
@@ -55,7 +55,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get Hint for the password; may be empty
+     * Get Hint for the password; may be empty.
      */
     public function getPasswordHint(): string
     {
@@ -63,7 +63,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set Hint for the password; may be empty
+     * Set Hint for the password; may be empty.
      */
     public function setPasswordHint(string $passwordHint): self
     {
@@ -73,7 +73,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get True, if a recovery email is set
+     * Get True, if a recovery email is set.
      */
     public function getHasRecoveryEmailAddress(): bool
     {
@@ -81,7 +81,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set True, if a recovery email is set
+     * Set True, if a recovery email is set.
      */
     public function setHasRecoveryEmailAddress(bool $hasRecoveryEmailAddress): self
     {
@@ -91,7 +91,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get True, if some Telegram Passport elements were saved
+     * Get True, if some Telegram Passport elements were saved.
      */
     public function getHasPassportData(): bool
     {
@@ -99,7 +99,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set True, if some Telegram Passport elements were saved
+     * Set True, if some Telegram Passport elements were saved.
      */
     public function setHasPassportData(bool $hasPassportData): self
     {
@@ -109,7 +109,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get Information about the recovery email address to which the confirmation email was sent; may be null
+     * Get Information about the recovery email address to which the confirmation email was sent; may be null.
      */
     public function getRecoveryEmailAddressCodeInfo(): EmailAddressAuthenticationCodeInfo|null
     {
@@ -117,7 +117,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set Information about the recovery email address to which the confirmation email was sent; may be null
+     * Set Information about the recovery email address to which the confirmation email was sent; may be null.
      */
     public function setRecoveryEmailAddressCodeInfo(
         EmailAddressAuthenticationCodeInfo|null $recoveryEmailAddressCodeInfo,
@@ -128,7 +128,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get Pattern of the email address set up for logging in
+     * Get Pattern of the email address set up for logging in.
      */
     public function getLoginEmailAddressPattern(): string
     {
@@ -136,7 +136,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set Pattern of the email address set up for logging in
+     * Set Pattern of the email address set up for logging in.
      */
     public function setLoginEmailAddressPattern(string $loginEmailAddressPattern): self
     {
@@ -146,7 +146,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, point in time (Unix timestamp) after which the 2-step verification password can be reset immediately using resetPassword
+     * Get If not 0, point in time (Unix timestamp) after which the 2-step verification password can be reset immediately using resetPassword.
      */
     public function getPendingResetDate(): int
     {
@@ -154,7 +154,7 @@ class PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, point in time (Unix timestamp) after which the 2-step verification password can be reset immediately using resetPassword
+     * Set If not 0, point in time (Unix timestamp) after which the 2-step verification password can be reset immediately using resetPassword.
      */
     public function setPendingResetDate(int $pendingResetDate): self
     {

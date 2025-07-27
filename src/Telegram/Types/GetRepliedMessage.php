@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a non-bundled message that is replied by a given message. Also, returns the pinned message, the game message, the invoice message,
+ * Returns information about a non-bundled message that is replied by a given message. Also, returns the pinned message, the game message, the invoice message,.
  */
 class GetRepliedMessage extends Message implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetRepliedMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat the message belongs to
+     * Get Identifier of the chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetRepliedMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat the message belongs to
+     * Set Identifier of the chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetRepliedMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the reply message
+     * Get Identifier of the reply message.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class GetRepliedMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the reply message
+     * Set Identifier of the reply message.
      */
     public function setMessageId(int $messageId): self
     {

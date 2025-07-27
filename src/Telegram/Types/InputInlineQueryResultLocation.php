@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a point on the map
+ * Represents a point on the map.
  */
 class InputInlineQueryResultLocation extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -51,7 +51,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -61,7 +61,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Location result
+     * Get Location result.
      */
     public function getLocation(): Location|null
     {
@@ -69,7 +69,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Location result
+     * Set Location result.
      */
     public function setLocation(Location|null $location): self
     {
@@ -79,7 +79,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Amount of time relative to the message sent time until the location can be updated, in seconds
+     * Get Amount of time relative to the message sent time until the location can be updated, in seconds.
      */
     public function getLivePeriod(): int
     {
@@ -87,7 +87,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Amount of time relative to the message sent time until the location can be updated, in seconds
+     * Set Amount of time relative to the message sent time until the location can be updated, in seconds.
      */
     public function setLivePeriod(int $livePeriod): self
     {
@@ -97,7 +97,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Title of the result
+     * Get Title of the result.
      */
     public function getTitle(): string
     {
@@ -105,7 +105,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Title of the result
+     * Set Title of the result.
      */
     public function setTitle(string $title): self
     {
@@ -115,7 +115,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get URL of the result thumbnail, if it exists
+     * Get URL of the result thumbnail, if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -123,7 +123,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set URL of the result thumbnail, if it exists
+     * Set URL of the result thumbnail, if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -133,7 +133,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Thumbnail width, if known
+     * Get Thumbnail width, if known.
      */
     public function getThumbnailWidth(): int
     {
@@ -141,7 +141,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Thumbnail width, if known
+     * Set Thumbnail width, if known.
      */
     public function setThumbnailWidth(int $thumbnailWidth): self
     {
@@ -151,7 +151,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get Thumbnail height, if known
+     * Get Thumbnail height, if known.
      */
     public function getThumbnailHeight(): int
     {
@@ -159,7 +159,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set Thumbnail height, if known
+     * Set Thumbnail height, if known.
      */
     public function setThumbnailHeight(int $thumbnailHeight): self
     {
@@ -169,7 +169,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -177,7 +177,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -187,7 +187,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -195,7 +195,7 @@ class InputInlineQueryResultLocation extends InputInlineQueryResult implements \
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

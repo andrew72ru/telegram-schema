@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a profile photo @profile_photo_id Identifier of the profile photo to delete
+ * Deletes a profile photo @profile_photo_id Identifier of the profile photo to delete.
  */
 class DeleteProfilePhoto extends Ok implements \JsonSerializable
 {

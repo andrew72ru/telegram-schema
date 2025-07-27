@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A personal document, containing some information about a user @files List of files containing the pages of the document @translation List of files containing a certified English translation of the document
+ * A personal document, containing some information about a user @files List of files containing the pages of the document @translation List of files containing a certified English translation of the document.
  */
 class PersonalDocument implements \JsonSerializable
 {

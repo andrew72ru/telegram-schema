@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An underlined rich text @text Text
+ * An underlined rich text @text Text.
  */
 class RichTextUnderline extends RichText implements \JsonSerializable
 {

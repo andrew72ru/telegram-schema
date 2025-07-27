@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns approximate number of messages of the specified type in the chat or its topic
+ * Returns approximate number of messages of the specified type in the chat or its topic.
  */
 class GetChatMessageCount extends Count implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which to count messages
+     * Get Identifier of the chat in which to count messages.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which to count messages
+     * Set Identifier of the chat in which to count messages.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Pass topic identifier to get number of messages only in specific topic; pass null to get number of messages in all topics
+     * Get Pass topic identifier to get number of messages only in specific topic; pass null to get number of messages in all topics.
      */
     public function getTopicId(): MessageTopic|null
     {
@@ -54,7 +54,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Pass topic identifier to get number of messages only in specific topic; pass null to get number of messages in all topics
+     * Set Pass topic identifier to get number of messages only in specific topic; pass null to get number of messages in all topics.
      */
     public function setTopicId(MessageTopic|null $topicId): self
     {
@@ -64,7 +64,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Filter for message content; searchMessagesFilterEmpty is unsupported in this function
+     * Get Filter for message content; searchMessagesFilterEmpty is unsupported in this function.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -72,7 +72,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Filter for message content; searchMessagesFilterEmpty is unsupported in this function
+     * Set Filter for message content; searchMessagesFilterEmpty is unsupported in this function.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {
@@ -82,7 +82,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get the number of messages without sending network requests, or -1 if the number of messages is unknown locally
+     * Get Pass true to get the number of messages without sending network requests, or -1 if the number of messages is unknown locally.
      */
     public function getReturnLocal(): bool
     {
@@ -90,7 +90,7 @@ class GetChatMessageCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get the number of messages without sending network requests, or -1 if the number of messages is unknown locally
+     * Set Pass true to get the number of messages without sending network requests, or -1 if the number of messages is unknown locally.
      */
     public function setReturnLocal(bool $returnLocal): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an alternative re-encoded quality of a video file
+ * Describes an alternative re-encoded quality of a video file.
  */
 class AlternativeVideo implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the alternative video, which is used in the HLS file
+     * Get Unique identifier of the alternative video, which is used in the HLS file.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the alternative video, which is used in the HLS file
+     * Set Unique identifier of the alternative video, which is used in the HLS file.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Get Video width
+     * Get Video width.
      */
     public function getWidth(): int
     {
@@ -60,7 +60,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Set Video width
+     * Set Video width.
      */
     public function setWidth(int $width): self
     {
@@ -70,7 +70,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Get Video height
+     * Get Video height.
      */
     public function getHeight(): int
     {
@@ -78,7 +78,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Set Video height
+     * Set Video height.
      */
     public function setHeight(int $height): self
     {
@@ -88,7 +88,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Get Codec used for video file encoding, for example, "h264", "h265", or "av1"
+     * Get Codec used for video file encoding, for example, "h264", "h265", or "av1".
      */
     public function getCodec(): string
     {
@@ -96,7 +96,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Set Codec used for video file encoding, for example, "h264", "h265", or "av1"
+     * Set Codec used for video file encoding, for example, "h264", "h265", or "av1".
      */
     public function setCodec(string $codec): self
     {
@@ -106,7 +106,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Get HLS file describing the video
+     * Get HLS file describing the video.
      */
     public function getHlsFile(): File|null
     {
@@ -114,7 +114,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Set HLS file describing the video
+     * Set HLS file describing the video.
      */
     public function setHlsFile(File|null $hlsFile): self
     {
@@ -124,7 +124,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Get File containing the video
+     * Get File containing the video.
      */
     public function getVideo(): File|null
     {
@@ -132,7 +132,7 @@ class AlternativeVideo implements \JsonSerializable
     }
 
     /**
-     * Set File containing the video
+     * Set File containing the video.
      */
     public function setVideo(File|null $video): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a possibly non-integer amount of Telegram Stars
+ * Describes a possibly non-integer amount of Telegram Stars.
  */
 class StarAmount implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarAmount implements \JsonSerializable
     }
 
     /**
-     * Get The integer amount of Telegram Stars rounded to 0
+     * Get The integer amount of Telegram Stars rounded to 0.
      */
     public function getStarCount(): int
     {
@@ -30,7 +30,7 @@ class StarAmount implements \JsonSerializable
     }
 
     /**
-     * Set The integer amount of Telegram Stars rounded to 0
+     * Set The integer amount of Telegram Stars rounded to 0.
      */
     public function setStarCount(int $starCount): self
     {
@@ -40,7 +40,7 @@ class StarAmount implements \JsonSerializable
     }
 
     /**
-     * Get The number of 1/1000000000 shares of Telegram Stars; from -999999999 to 999999999
+     * Get The number of 1/1000000000 shares of Telegram Stars; from -999999999 to 999999999.
      */
     public function getNanostarCount(): int
     {
@@ -48,7 +48,7 @@ class StarAmount implements \JsonSerializable
     }
 
     /**
-     * Set The number of 1/1000000000 shares of Telegram Stars; from -999999999 to 999999999
+     * Set The number of 1/1000000000 shares of Telegram Stars; from -999999999 to 999999999.
      */
     public function setNanostarCount(int $nanostarCount): self
     {

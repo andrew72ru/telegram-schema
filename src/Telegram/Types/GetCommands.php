@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of commands supported by the bot for the given user scope and language; for bots only
+ * Returns the list of commands supported by the bot for the given user scope and language; for bots only.
  */
 class GetCommands extends BotCommands implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetCommands extends BotCommands implements \JsonSerializable
     }
 
     /**
-     * Get The scope to which the commands are relevant; pass null to get commands in the default bot command scope
+     * Get The scope to which the commands are relevant; pass null to get commands in the default bot command scope.
      */
     public function getScope(): BotCommandScope|null
     {
@@ -30,7 +30,7 @@ class GetCommands extends BotCommands implements \JsonSerializable
     }
 
     /**
-     * Set The scope to which the commands are relevant; pass null to get commands in the default bot command scope
+     * Set The scope to which the commands are relevant; pass null to get commands in the default bot command scope.
      */
     public function setScope(BotCommandScope|null $scope): self
     {
@@ -40,7 +40,7 @@ class GetCommands extends BotCommands implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code or an empty string
+     * Get A two-letter ISO 639-1 language code or an empty string.
      */
     public function getLanguageCode(): string
     {
@@ -48,7 +48,7 @@ class GetCommands extends BotCommands implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code or an empty string
+     * Set A two-letter ISO 639-1 language code or an empty string.
      */
     public function setLanguageCode(string $languageCode): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about one website the current user is logged in with Telegram
+ * Contains information about one website the current user is logged in with Telegram.
  */
 class ConnectedWebsite implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get Website identifier
+     * Get Website identifier.
      */
     public function getId(): int
     {
@@ -51,7 +51,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set Website identifier
+     * Set Website identifier.
      */
     public function setId(int $id): self
     {
@@ -61,7 +61,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get The domain name of the website
+     * Get The domain name of the website.
      */
     public function getDomainName(): string
     {
@@ -69,7 +69,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set The domain name of the website
+     * Set The domain name of the website.
      */
     public function setDomainName(string $domainName): self
     {
@@ -79,7 +79,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of a bot linked with the website
+     * Get User identifier of a bot linked with the website.
      */
     public function getBotUserId(): int
     {
@@ -87,7 +87,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of a bot linked with the website
+     * Set User identifier of a bot linked with the website.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -97,7 +97,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get The version of a browser used to log in
+     * Get The version of a browser used to log in.
      */
     public function getBrowser(): string
     {
@@ -105,7 +105,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set The version of a browser used to log in
+     * Set The version of a browser used to log in.
      */
     public function setBrowser(string $browser): self
     {
@@ -115,7 +115,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get Operating system the browser is running on
+     * Get Operating system the browser is running on.
      */
     public function getPlatform(): string
     {
@@ -123,7 +123,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set Operating system the browser is running on
+     * Set Operating system the browser is running on.
      */
     public function setPlatform(string $platform): self
     {
@@ -133,7 +133,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user was logged in
+     * Get Point in time (Unix timestamp) when the user was logged in.
      */
     public function getLogInDate(): int
     {
@@ -141,7 +141,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user was logged in
+     * Set Point in time (Unix timestamp) when the user was logged in.
      */
     public function setLogInDate(int $logInDate): self
     {
@@ -151,7 +151,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when obtained authorization was last used
+     * Get Point in time (Unix timestamp) when obtained authorization was last used.
      */
     public function getLastActiveDate(): int
     {
@@ -159,7 +159,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when obtained authorization was last used
+     * Set Point in time (Unix timestamp) when obtained authorization was last used.
      */
     public function setLastActiveDate(int $lastActiveDate): self
     {
@@ -169,7 +169,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get IP address from which the user was logged in, in human-readable format
+     * Get IP address from which the user was logged in, in human-readable format.
      */
     public function getIpAddress(): string
     {
@@ -177,7 +177,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set IP address from which the user was logged in, in human-readable format
+     * Set IP address from which the user was logged in, in human-readable format.
      */
     public function setIpAddress(string $ipAddress): self
     {
@@ -187,7 +187,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Get Human-readable description of a country and a region from which the user was logged in, based on the IP address
+     * Get Human-readable description of a country and a region from which the user was logged in, based on the IP address.
      */
     public function getLocation(): string
     {
@@ -195,7 +195,7 @@ class ConnectedWebsite implements \JsonSerializable
     }
 
     /**
-     * Set Human-readable description of a country and a region from which the user was logged in, based on the IP address
+     * Set Human-readable description of a country and a region from which the user was logged in, based on the IP address.
      */
     public function setLocation(string $location): self
     {

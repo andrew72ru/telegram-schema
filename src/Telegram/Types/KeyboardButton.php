@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a single button in a bot keyboard @text Text of the button @type Type of the button
+ * Represents a single button in a bot keyboard @text Text of the button @var Type of the button.
  */
 class KeyboardButton implements \JsonSerializable
 {

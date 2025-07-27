@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all messages in the topic in a channel direct messages chat administered by the current user
+ * Deletes all messages in the topic in a channel direct messages chat administered by the current user.
  */
 class DeleteDirectMessagesChatTopicHistory extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteDirectMessagesChatTopicHistory extends Ok implements \JsonSerializab
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class DeleteDirectMessagesChatTopicHistory extends Ok implements \JsonSerializab
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class DeleteDirectMessagesChatTopicHistory extends Ok implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the topic which messages will be deleted
+     * Get Identifier of the topic which messages will be deleted.
      */
     public function getTopicId(): int
     {
@@ -48,7 +48,7 @@ class DeleteDirectMessagesChatTopicHistory extends Ok implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the topic which messages will be deleted
+     * Set Identifier of the topic which messages will be deleted.
      */
     public function setTopicId(int $topicId): self
     {

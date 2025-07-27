@@ -25,7 +25,7 @@ class AddQuickReplyShortcutMessage extends QuickReplyMessage implements \JsonSer
     }
 
     /**
-     * Get Name of the target shortcut
+     * Get Name of the target shortcut.
      */
     public function getShortcutName(): string
     {
@@ -33,7 +33,7 @@ class AddQuickReplyShortcutMessage extends QuickReplyMessage implements \JsonSer
     }
 
     /**
-     * Set Name of the target shortcut
+     * Set Name of the target shortcut.
      */
     public function setShortcutName(string $shortcutName): self
     {
@@ -43,7 +43,7 @@ class AddQuickReplyShortcutMessage extends QuickReplyMessage implements \JsonSer
     }
 
     /**
-     * Get Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none
+     * Get Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none.
      */
     public function getReplyToMessageId(): int
     {
@@ -51,7 +51,7 @@ class AddQuickReplyShortcutMessage extends QuickReplyMessage implements \JsonSer
     }
 
     /**
-     * Set Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none
+     * Set Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none.
      */
     public function setReplyToMessageId(int $replyToMessageId): self
     {
@@ -61,7 +61,7 @@ class AddQuickReplyShortcutMessage extends QuickReplyMessage implements \JsonSer
     }
 
     /**
-     * Get The content of the message to be added; inputMessagePaidMedia, inputMessageForwarded and inputMessageLocation with live_period aren't supported
+     * Get The content of the message to be added; inputMessagePaidMedia, inputMessageForwarded and inputMessageLocation with live_period aren't supported.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -69,7 +69,7 @@ class AddQuickReplyShortcutMessage extends QuickReplyMessage implements \JsonSer
     }
 
     /**
-     * Set The content of the message to be added; inputMessagePaidMedia, inputMessageForwarded and inputMessageLocation with live_period aren't supported
+     * Set The content of the message to be added; inputMessagePaidMedia, inputMessageForwarded and inputMessageLocation with live_period aren't supported.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

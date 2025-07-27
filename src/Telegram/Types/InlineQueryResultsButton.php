@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a button to be shown above inline query results @text The text of the button @type Type of the button
+ * Represents a button to be shown above inline query results @text The text of the button @var Type of the button.
  */
 class InlineQueryResultsButton implements \JsonSerializable
 {

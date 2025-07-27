@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a giveaway
+ * A message with a giveaway.
  */
 class PushMessageContentGiveaway extends PushMessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PushMessageContentGiveaway extends PushMessageContent implements \JsonSeri
     }
 
     /**
-     * Get Number of users which will receive giveaway prizes; 0 for pinned message
+     * Get Number of users which will receive giveaway prizes; 0 for pinned message.
      */
     public function getWinnerCount(): int
     {
@@ -33,7 +33,7 @@ class PushMessageContentGiveaway extends PushMessageContent implements \JsonSeri
     }
 
     /**
-     * Set Number of users which will receive giveaway prizes; 0 for pinned message
+     * Set Number of users which will receive giveaway prizes; 0 for pinned message.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -43,7 +43,7 @@ class PushMessageContentGiveaway extends PushMessageContent implements \JsonSeri
     }
 
     /**
-     * Get Prize of the giveaway; may be null for pinned message
+     * Get Prize of the giveaway; may be null for pinned message.
      */
     public function getPrize(): GiveawayPrize|null
     {
@@ -51,7 +51,7 @@ class PushMessageContentGiveaway extends PushMessageContent implements \JsonSeri
     }
 
     /**
-     * Set Prize of the giveaway; may be null for pinned message
+     * Set Prize of the giveaway; may be null for pinned message.
      */
     public function setPrize(GiveawayPrize|null $prize): self
     {
@@ -61,7 +61,7 @@ class PushMessageContentGiveaway extends PushMessageContent implements \JsonSeri
     }
 
     /**
-     * Get True, if the message is a pinned message with the specified content
+     * Get True, if the message is a pinned message with the specified content.
      */
     public function getIsPinned(): bool
     {
@@ -69,7 +69,7 @@ class PushMessageContentGiveaway extends PushMessageContent implements \JsonSeri
     }
 
     /**
-     * Set True, if the message is a pinned message with the specified content
+     * Set True, if the message is a pinned message with the specified content.
      */
     public function setIsPinned(bool $isPinned): self
     {

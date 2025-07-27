@@ -28,7 +28,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Get Username of the bot that owns the Web App
+     * Get Username of the bot that owns the Web App.
      */
     public function getBotUsername(): string
     {
@@ -36,7 +36,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Set Username of the bot that owns the Web App
+     * Set Username of the bot that owns the Web App.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -46,7 +46,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Get Short name of the Web App
+     * Get Short name of the Web App.
      */
     public function getWebAppShortName(): string
     {
@@ -54,7 +54,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Set Short name of the Web App
+     * Set Short name of the Web App.
      */
     public function setWebAppShortName(string $webAppShortName): self
     {
@@ -64,7 +64,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Get Start parameter to be passed to getWebAppLinkUrl
+     * Get Start parameter to be passed to getWebAppLinkUrl.
      */
     public function getStartParameter(): string
     {
@@ -72,7 +72,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Set Start parameter to be passed to getWebAppLinkUrl
+     * Set Start parameter to be passed to getWebAppLinkUrl.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -82,7 +82,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Get The mode in which the Web App must be opened
+     * Get The mode in which the Web App must be opened.
      */
     public function getMode(): WebAppOpenMode|null
     {
@@ -90,7 +90,7 @@ class InternalLinkTypeWebApp extends InternalLinkType implements \JsonSerializab
     }
 
     /**
-     * Set The mode in which the Web App must be opened
+     * Set The mode in which the Web App must be opened.
      */
     public function setMode(WebAppOpenMode|null $mode): self
     {

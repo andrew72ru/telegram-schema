@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat can be reported as spam using the method reportChat with an empty option_id and message_ids. If the chat is a private chat with a user with an emoji status, then a notice about emoji status usage must be shown
+ * The chat can be reported as spam using the method reportChat with an empty option_id and message_ids. If the chat is a private chat with a user with an emoji status, then a notice about emoji status usage must be shown.
  */
 class ChatActionBarReportSpam extends ChatActionBar implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ChatActionBarReportSpam extends ChatActionBar implements \JsonSerializable
     }
 
     /**
-     * Get If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings
+     * Get If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings.
      */
     public function getCanUnarchive(): bool
     {
@@ -27,7 +27,7 @@ class ChatActionBarReportSpam extends ChatActionBar implements \JsonSerializable
     }
 
     /**
-     * Set If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings
+     * Set If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings.
      */
     public function setCanUnarchive(bool $canUnarchive): self
     {

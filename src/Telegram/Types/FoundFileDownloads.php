@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of downloaded files, found by a search
+ * Contains a list of downloaded files, found by a search.
  */
 class FoundFileDownloads implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class FoundFileDownloads implements \JsonSerializable
     }
 
     /**
-     * Get Total number of suitable files, ignoring offset
+     * Get Total number of suitable files, ignoring offset.
      */
     public function getTotalCounts(): DownloadedFileCounts|null
     {
@@ -33,7 +33,7 @@ class FoundFileDownloads implements \JsonSerializable
     }
 
     /**
-     * Set Total number of suitable files, ignoring offset
+     * Set Total number of suitable files, ignoring offset.
      */
     public function setTotalCounts(DownloadedFileCounts|null $totalCounts): self
     {
@@ -43,7 +43,7 @@ class FoundFileDownloads implements \JsonSerializable
     }
 
     /**
-     * Get The list of files
+     * Get The list of files.
      */
     public function getFiles(): array|null
     {
@@ -51,7 +51,7 @@ class FoundFileDownloads implements \JsonSerializable
     }
 
     /**
-     * Set The list of files
+     * Set The list of files.
      */
     public function setFiles(array|null $files): self
     {
@@ -61,7 +61,7 @@ class FoundFileDownloads implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -69,7 +69,7 @@ class FoundFileDownloads implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

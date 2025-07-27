@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes the verification status of a user or a chat by an owned bot
+ * Removes the verification status of a user or a chat by an owned bot.
  */
 class RemoveMessageSenderBotVerification extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class RemoveMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the owned bot, which verified the user or the chat
+     * Get Identifier of the owned bot, which verified the user or the chat.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class RemoveMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the owned bot, which verified the user or the chat
+     * Set Identifier of the owned bot, which verified the user or the chat.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class RemoveMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the supergroup or channel chat, which verification is removed
+     * Get Identifier of the user or the supergroup or channel chat, which verification is removed.
      */
     public function getVerifiedId(): MessageSender|null
     {
@@ -48,7 +48,7 @@ class RemoveMessageSenderBotVerification extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the supergroup or channel chat, which verification is removed
+     * Set Identifier of the user or the supergroup or channel chat, which verification is removed.
      */
     public function setVerifiedId(MessageSender|null $verifiedId): self
     {

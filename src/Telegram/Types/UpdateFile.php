@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about a file was updated @file New data about the file
+ * Information about a file was updated @file New data about the file.
  */
 class UpdateFile extends Update implements \JsonSerializable
 {

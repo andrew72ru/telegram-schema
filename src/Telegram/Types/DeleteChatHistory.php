@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all messages in the chat. Use chat.can_be_deleted_only_for_self and chat.can_be_deleted_for_all_users fields to find whether and how the method can be applied to the chat
+ * Deletes all messages in the chat. Use chat.can_be_deleted_only_for_self and chat.can_be_deleted_for_all_users fields to find whether and how the method can be applied to the chat.
  */
 class DeleteChatHistory extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class DeleteChatHistory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class DeleteChatHistory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class DeleteChatHistory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to remove the chat from all chat lists
+     * Get Pass true to remove the chat from all chat lists.
      */
     public function getRemoveFromChatList(): bool
     {
@@ -51,7 +51,7 @@ class DeleteChatHistory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to remove the chat from all chat lists
+     * Set Pass true to remove the chat from all chat lists.
      */
     public function setRemoveFromChatList(bool $removeFromChatList): self
     {
@@ -61,7 +61,7 @@ class DeleteChatHistory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete chat history for all users
+     * Get Pass true to delete chat history for all users.
      */
     public function getRevoke(): bool
     {
@@ -69,7 +69,7 @@ class DeleteChatHistory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete chat history for all users
+     * Set Pass true to delete chat history for all users.
      */
     public function setRevoke(bool $revoke): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A filled background @fill The background fill
+ * A filled background @fill The background fill.
  */
 class BackgroundTypeFill extends BackgroundType implements \JsonSerializable
 {

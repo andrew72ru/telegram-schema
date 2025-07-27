@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns default icon name for a folder. Can be called synchronously @folder Chat folder
+ * Returns default icon name for a folder. Can be called synchronously @folder Chat folder.
  */
 class GetChatFolderDefaultIconName extends ChatFolderIcon implements \JsonSerializable
 {

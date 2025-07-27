@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a reaction to a message
+ * Contains information about a reaction to a message.
  */
 class MessageReaction implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Get Type of the reaction
+     * Get Type of the reaction.
      */
     public function getType(): ReactionType|null
     {
@@ -39,7 +39,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Set Type of the reaction
+     * Set Type of the reaction.
      */
     public function setType(ReactionType|null $type): self
     {
@@ -49,7 +49,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the reaction was added
+     * Get Number of times the reaction was added.
      */
     public function getTotalCount(): int
     {
@@ -57,7 +57,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the reaction was added
+     * Set Number of times the reaction was added.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -67,7 +67,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reaction is chosen by the current user
+     * Get True, if the reaction is chosen by the current user.
      */
     public function getIsChosen(): bool
     {
@@ -75,7 +75,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reaction is chosen by the current user
+     * Set True, if the reaction is chosen by the current user.
      */
     public function setIsChosen(bool $isChosen): self
     {
@@ -85,7 +85,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message sender used by the current user to add the reaction; may be null if unknown or the reaction isn't chosen
+     * Get Identifier of the message sender used by the current user to add the reaction; may be null if unknown or the reaction isn't chosen.
      */
     public function getUsedSenderId(): MessageSender|null
     {
@@ -93,7 +93,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message sender used by the current user to add the reaction; may be null if unknown or the reaction isn't chosen
+     * Set Identifier of the message sender used by the current user to add the reaction; may be null if unknown or the reaction isn't chosen.
      */
     public function setUsedSenderId(MessageSender|null $usedSenderId): self
     {
@@ -103,7 +103,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of at most 3 recent message senders, added the reaction; available in private, basic group and supergroup chats
+     * Get Identifiers of at most 3 recent message senders, added the reaction; available in private, basic group and supergroup chats.
      */
     public function getRecentSenderIds(): array|null
     {
@@ -111,7 +111,7 @@ class MessageReaction implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of at most 3 recent message senders, added the reaction; available in private, basic group and supergroup chats
+     * Set Identifiers of at most 3 recent message senders, added the reaction; available in private, basic group and supergroup chats.
      */
     public function setRecentSenderIds(array|null $recentSenderIds): self
     {

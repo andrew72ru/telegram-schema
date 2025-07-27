@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat background was changed @chat_id Chat identifier @background The new chat background; may be null if background was reset to default
+ * The chat background was changed @chat_id Chat identifier @background The new chat background; may be null if background was reset to default.
  */
 class UpdateChatBackground extends Update implements \JsonSerializable
 {

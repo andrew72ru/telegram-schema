@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of saved animations was updated @animation_ids The new list of file identifiers of saved animations
+ * The list of saved animations was updated @animation_ids The new list of file identifiers of saved animations.
  */
 class UpdateSavedAnimations extends Update implements \JsonSerializable
 {

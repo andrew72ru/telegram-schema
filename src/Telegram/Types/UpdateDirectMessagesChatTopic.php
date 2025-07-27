@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Basic information about a topic in a channel direct messages chat administered by the current user has changed. This update is guaranteed to come before the topic identifier is returned to the application
+ * Basic information about a topic in a channel direct messages chat administered by the current user has changed. This update is guaranteed to come before the topic identifier is returned to the application.
  */
 class UpdateDirectMessagesChatTopic extends Update implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class UpdateDirectMessagesChatTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New data about the topic
+     * Get New data about the topic.
      */
     public function getTopic(): DirectMessagesChatTopic|null
     {
@@ -27,7 +27,7 @@ class UpdateDirectMessagesChatTopic extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New data about the topic
+     * Set New data about the topic.
      */
     public function setTopic(DirectMessagesChatTopic|null $topic): self
     {

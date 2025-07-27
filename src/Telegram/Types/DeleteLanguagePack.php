@@ -19,7 +19,7 @@ class DeleteLanguagePack extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the language pack to delete
+     * Get Identifier of the language pack to delete.
      */
     public function getLanguagePackId(): string
     {
@@ -27,7 +27,7 @@ class DeleteLanguagePack extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the language pack to delete
+     * Set Identifier of the language pack to delete.
      */
     public function setLanguagePackId(string $languagePackId): self
     {

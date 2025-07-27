@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the group call identifier @id Group call identifier
+ * Contains the group call identifier @id Group call identifier.
  */
 class GroupCallId implements \JsonSerializable
 {

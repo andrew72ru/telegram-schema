@@ -28,7 +28,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_edit_media to check whether the message can be edited
+     * Get Identifier of the message. Use messageProperties.can_edit_media to check whether the message can be edited.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_edit_media to check whether the message can be edited
+     * Set Identifier of the message. Use messageProperties.can_edit_media to check whether the message can be edited.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none; for bots only
+     * Get The new message reply markup; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -72,7 +72,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none; for bots only
+     * Set The new message reply markup; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -82,7 +82,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -90,7 +90,7 @@ class EditMessageMedia extends Message implements \JsonSerializable
     }
 
     /**
-     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

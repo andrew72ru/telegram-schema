@@ -25,7 +25,7 @@ class ToggleSupergroupUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup or channel
+     * Get Identifier of the supergroup or channel.
      */
     public function getSupergroupId(): int
     {
@@ -33,7 +33,7 @@ class ToggleSupergroupUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup or channel
+     * Set Identifier of the supergroup or channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -43,7 +43,7 @@ class ToggleSupergroupUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The username to change
+     * Get The username to change.
      */
     public function getUsername(): string
     {
@@ -51,7 +51,7 @@ class ToggleSupergroupUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The username to change
+     * Set The username to change.
      */
     public function setUsername(string $username): self
     {
@@ -61,7 +61,7 @@ class ToggleSupergroupUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to activate the username; pass false to disable it
+     * Get Pass true to activate the username; pass false to disable it.
      */
     public function getIsActive(): bool
     {
@@ -69,7 +69,7 @@ class ToggleSupergroupUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to activate the username; pass false to disable it
+     * Set Pass true to activate the username; pass false to disable it.
      */
     public function setIsActive(bool $isActive): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about supported accent color for user/chat name, background of empty chat photo, replies to messages and link previews
+ * Contains information about supported accent color for user/chat name, background of empty chat photo, replies to messages and link previews.
  */
 class AccentColor implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Get Accent color identifier
+     * Get Accent color identifier.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Set Accent color identifier
+     * Set Accent color identifier.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a built-in color to use in places, where only one color is needed; 0-6
+     * Get Identifier of a built-in color to use in places, where only one color is needed; 0-6.
      */
     public function getBuiltInAccentColorId(): int
     {
@@ -57,7 +57,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a built-in color to use in places, where only one color is needed; 0-6
+     * Set Identifier of a built-in color to use in places, where only one color is needed; 0-6.
      */
     public function setBuiltInAccentColorId(int $builtInAccentColorId): self
     {
@@ -67,7 +67,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Get The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in light themes
+     * Get The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in light themes.
      */
     public function getLightThemeColors(): array|null
     {
@@ -75,7 +75,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Set The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in light themes
+     * Set The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in light themes.
      */
     public function setLightThemeColors(array|null $lightThemeColors): self
     {
@@ -85,7 +85,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Get The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in dark themes
+     * Get The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in dark themes.
      */
     public function getDarkThemeColors(): array|null
     {
@@ -93,7 +93,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Set The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in dark themes
+     * Set The list of 1-3 colors in RGB format, describing the accent color, as expected to be shown in dark themes.
      */
     public function setDarkThemeColors(array|null $darkThemeColors): self
     {
@@ -103,7 +103,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Get The minimum chat boost level required to use the color in a channel chat
+     * Get The minimum chat boost level required to use the color in a channel chat.
      */
     public function getMinChannelChatBoostLevel(): int
     {
@@ -111,7 +111,7 @@ class AccentColor implements \JsonSerializable
     }
 
     /**
-     * Set The minimum chat boost level required to use the color in a channel chat
+     * Set The minimum chat boost level required to use the color in a channel chat.
      */
     public function setMinChannelChatBoostLevel(int $minChannelChatBoostLevel): self
     {

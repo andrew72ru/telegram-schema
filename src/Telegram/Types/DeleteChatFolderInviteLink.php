@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes an invite link for a chat folder
+ * Deletes an invite link for a chat folder.
  */
 class DeleteChatFolderInviteLink extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteChatFolderInviteLink extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat folder identifier
+     * Get Chat folder identifier.
      */
     public function getChatFolderId(): int
     {
@@ -30,7 +30,7 @@ class DeleteChatFolderInviteLink extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat folder identifier
+     * Set Chat folder identifier.
      */
     public function setChatFolderId(int $chatFolderId): self
     {
@@ -40,7 +40,7 @@ class DeleteChatFolderInviteLink extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Invite link to be deleted
+     * Get Invite link to be deleted.
      */
     public function getInviteLink(): string
     {
@@ -48,7 +48,7 @@ class DeleteChatFolderInviteLink extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Invite link to be deleted
+     * Set Invite link to be deleted.
      */
     public function setInviteLink(string $inviteLink): self
     {

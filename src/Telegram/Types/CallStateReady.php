@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The call is ready to use
+ * The call is ready to use.
  */
 class CallStateReady extends CallState implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get Call protocols supported by the other call participant
+     * Get Call protocols supported by the other call participant.
      */
     public function getProtocol(): CallProtocol|null
     {
@@ -48,7 +48,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set Call protocols supported by the other call participant
+     * Set Call protocols supported by the other call participant.
      */
     public function setProtocol(CallProtocol|null $protocol): self
     {
@@ -58,7 +58,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get List of available call servers
+     * Get List of available call servers.
      */
     public function getServers(): array|null
     {
@@ -66,7 +66,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set List of available call servers
+     * Set List of available call servers.
      */
     public function setServers(array|null $servers): self
     {
@@ -76,7 +76,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get A JSON-encoded call config
+     * Get A JSON-encoded call config.
      */
     public function getConfig(): string
     {
@@ -84,7 +84,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set A JSON-encoded call config
+     * Set A JSON-encoded call config.
      */
     public function setConfig(string $config): self
     {
@@ -94,7 +94,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get Call encryption key
+     * Get Call encryption key.
      */
     public function getEncryptionKey(): string
     {
@@ -102,7 +102,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set Call encryption key
+     * Set Call encryption key.
      */
     public function setEncryptionKey(string $encryptionKey): self
     {
@@ -112,7 +112,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get Encryption key fingerprint represented as 4 emoji
+     * Get Encryption key fingerprint represented as 4 emoji.
      */
     public function getEmojis(): array|null
     {
@@ -120,7 +120,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set Encryption key fingerprint represented as 4 emoji
+     * Set Encryption key fingerprint represented as 4 emoji.
      */
     public function setEmojis(array|null $emojis): self
     {
@@ -130,7 +130,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get True, if peer-to-peer connection is allowed by users privacy settings
+     * Get True, if peer-to-peer connection is allowed by users privacy settings.
      */
     public function getAllowP2p(): bool
     {
@@ -138,7 +138,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set True, if peer-to-peer connection is allowed by users privacy settings
+     * Set True, if peer-to-peer connection is allowed by users privacy settings.
      */
     public function setAllowP2p(bool $allowP2p): self
     {
@@ -148,7 +148,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get True, if the other party supports upgrading of the call to a group call
+     * Get True, if the other party supports upgrading of the call to a group call.
      */
     public function getIsGroupCallSupported(): bool
     {
@@ -156,7 +156,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set True, if the other party supports upgrading of the call to a group call
+     * Set True, if the other party supports upgrading of the call to a group call.
      */
     public function setIsGroupCallSupported(bool $isGroupCallSupported): self
     {
@@ -166,7 +166,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get Custom JSON-encoded call parameters to be passed to tgcalls
+     * Get Custom JSON-encoded call parameters to be passed to tgcalls.
      */
     public function getCustomParameters(): string
     {
@@ -174,7 +174,7 @@ class CallStateReady extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set Custom JSON-encoded call parameters to be passed to tgcalls
+     * Set Custom JSON-encoded call parameters to be passed to tgcalls.
      */
     public function setCustomParameters(string $customParameters): self
     {

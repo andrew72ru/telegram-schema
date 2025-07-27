@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The can_invite_users permission of a supergroup chat was toggled @can_invite_users New value of can_invite_users permission
+ * The can_invite_users permission of a supergroup chat was toggled @can_invite_users New value of can_invite_users permission.
  */
 class ChatEventInvitesToggled extends ChatEventAction implements \JsonSerializable
 {

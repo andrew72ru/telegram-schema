@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a forum topic
+ * Describes a forum topic.
  */
 class ForumTopic implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Basic information about the topic
+     * Get Basic information about the topic.
      */
     public function getInfo(): ForumTopicInfo|null
     {
@@ -57,7 +57,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Basic information about the topic
+     * Set Basic information about the topic.
      */
     public function setInfo(ForumTopicInfo|null $info): self
     {
@@ -67,7 +67,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Last message in the topic; may be null if unknown
+     * Get Last message in the topic; may be null if unknown.
      */
     public function getLastMessage(): Message|null
     {
@@ -75,7 +75,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Last message in the topic; may be null if unknown
+     * Set Last message in the topic; may be null if unknown.
      */
     public function setLastMessage(Message|null $lastMessage): self
     {
@@ -85,7 +85,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order
+     * Get A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order.
      */
     public function getOrder(): int
     {
@@ -93,7 +93,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order
+     * Set A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order.
      */
     public function setOrder(int $order): self
     {
@@ -103,7 +103,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic is pinned in the topic list
+     * Get True, if the topic is pinned in the topic list.
      */
     public function getIsPinned(): bool
     {
@@ -111,7 +111,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic is pinned in the topic list
+     * Set True, if the topic is pinned in the topic list.
      */
     public function setIsPinned(bool $isPinned): self
     {
@@ -121,7 +121,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Number of unread messages in the topic
+     * Get Number of unread messages in the topic.
      */
     public function getUnreadCount(): int
     {
@@ -129,7 +129,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Number of unread messages in the topic
+     * Set Number of unread messages in the topic.
      */
     public function setUnreadCount(int $unreadCount): self
     {
@@ -139,7 +139,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read incoming message
+     * Get Identifier of the last read incoming message.
      */
     public function getLastReadInboxMessageId(): int
     {
@@ -147,7 +147,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read incoming message
+     * Set Identifier of the last read incoming message.
      */
     public function setLastReadInboxMessageId(int $lastReadInboxMessageId): self
     {
@@ -157,7 +157,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read outgoing message
+     * Get Identifier of the last read outgoing message.
      */
     public function getLastReadOutboxMessageId(): int
     {
@@ -165,7 +165,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read outgoing message
+     * Set Identifier of the last read outgoing message.
      */
     public function setLastReadOutboxMessageId(int $lastReadOutboxMessageId): self
     {
@@ -175,7 +175,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Number of unread messages with a mention/reply in the topic
+     * Get Number of unread messages with a mention/reply in the topic.
      */
     public function getUnreadMentionCount(): int
     {
@@ -183,7 +183,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Number of unread messages with a mention/reply in the topic
+     * Set Number of unread messages with a mention/reply in the topic.
      */
     public function setUnreadMentionCount(int $unreadMentionCount): self
     {
@@ -193,7 +193,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Number of messages with unread reactions in the topic
+     * Get Number of messages with unread reactions in the topic.
      */
     public function getUnreadReactionCount(): int
     {
@@ -201,7 +201,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Number of messages with unread reactions in the topic
+     * Set Number of messages with unread reactions in the topic.
      */
     public function setUnreadReactionCount(int $unreadReactionCount): self
     {
@@ -211,7 +211,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get Notification settings for the topic
+     * Get Notification settings for the topic.
      */
     public function getNotificationSettings(): ChatNotificationSettings|null
     {
@@ -219,7 +219,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set Notification settings for the topic
+     * Set Notification settings for the topic.
      */
     public function setNotificationSettings(ChatNotificationSettings|null $notificationSettings): self
     {
@@ -229,7 +229,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Get A draft of a message in the topic; may be null if none
+     * Get A draft of a message in the topic; may be null if none.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -237,7 +237,7 @@ class ForumTopic implements \JsonSerializable
     }
 
     /**
-     * Set A draft of a message in the topic; may be null if none
+     * Set A draft of a message in the topic; may be null if none.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {

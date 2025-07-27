@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to an audio file
+ * The link is a link to an audio file.
  */
 class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get URL of the audio file
+     * Get URL of the audio file.
      */
     public function getUrl(): string
     {
@@ -33,7 +33,7 @@ class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set URL of the audio file
+     * Set URL of the audio file.
      */
     public function setUrl(string $url): self
     {
@@ -43,7 +43,7 @@ class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get MIME type of the audio file
+     * Get MIME type of the audio file.
      */
     public function getMimeType(): string
     {
@@ -51,7 +51,7 @@ class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set MIME type of the audio file
+     * Set MIME type of the audio file.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -61,7 +61,7 @@ class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get Duration of the audio, in seconds; 0 if unknown
+     * Get Duration of the audio, in seconds; 0 if unknown.
      */
     public function getDuration(): int
     {
@@ -69,7 +69,7 @@ class LinkPreviewTypeExternalAudio extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set Duration of the audio, in seconds; 0 if unknown
+     * Set Duration of the audio, in seconds; 0 if unknown.
      */
     public function setDuration(int $duration): self
     {

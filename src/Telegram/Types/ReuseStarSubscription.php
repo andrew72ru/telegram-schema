@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reuses an active Telegram Star subscription to a channel chat and joins the chat again @subscription_id Identifier of the subscription
+ * Reuses an active Telegram Star subscription to a channel chat and joins the chat again @subscription_id Identifier of the subscription.
  */
 class ReuseStarSubscription extends Ok implements \JsonSerializable
 {

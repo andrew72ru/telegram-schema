@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A non-standard action has happened in the chat @text Message text to be shown in the chat
+ * A non-standard action has happened in the chat @text Message text to be shown in the chat.
  */
 class MessageCustomServiceAction extends MessageContent implements \JsonSerializable
 {

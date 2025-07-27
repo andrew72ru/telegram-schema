@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes earnings from sponsored messages in a chat in some time frame
+ * Describes earnings from sponsored messages in a chat in some time frame.
  */
 class ChatRevenueTransactionTypeEarnings extends ChatRevenueTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatRevenueTransactionTypeEarnings extends ChatRevenueTransactionType impl
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the earnings started
+     * Get Point in time (Unix timestamp) when the earnings started.
      */
     public function getStartDate(): int
     {
@@ -30,7 +30,7 @@ class ChatRevenueTransactionTypeEarnings extends ChatRevenueTransactionType impl
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the earnings started
+     * Set Point in time (Unix timestamp) when the earnings started.
      */
     public function setStartDate(int $startDate): self
     {
@@ -40,7 +40,7 @@ class ChatRevenueTransactionTypeEarnings extends ChatRevenueTransactionType impl
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the earnings ended
+     * Get Point in time (Unix timestamp) when the earnings ended.
      */
     public function getEndDate(): int
     {
@@ -48,7 +48,7 @@ class ChatRevenueTransactionTypeEarnings extends ChatRevenueTransactionType impl
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the earnings ended
+     * Set Point in time (Unix timestamp) when the earnings ended.
      */
     public function setEndDate(int $endDate): self
     {

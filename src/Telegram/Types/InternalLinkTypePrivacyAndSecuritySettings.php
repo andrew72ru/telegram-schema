@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The link is a link to the privacy and security section of the application settings
+ * The link is a link to the privacy and security section of the application settings.
  */
 class InternalLinkTypePrivacyAndSecuritySettings extends InternalLinkType implements \JsonSerializable
 {

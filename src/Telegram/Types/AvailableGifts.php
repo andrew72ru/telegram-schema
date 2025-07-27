@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of gifts that can be sent to another user or channel chat @gifts The list of gifts
+ * Contains a list of gifts that can be sent to another user or channel chat @gifts The list of gifts.
  */
 class AvailableGifts implements \JsonSerializable
 {

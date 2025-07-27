@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes specified quick reply messages
+ * Deletes specified quick reply messages.
  */
 class DeleteQuickReplyShortcutMessages extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteQuickReplyShortcutMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the quick reply shortcut to which the messages belong
+     * Get Unique identifier of the quick reply shortcut to which the messages belong.
      */
     public function getShortcutId(): int
     {
@@ -30,7 +30,7 @@ class DeleteQuickReplyShortcutMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the quick reply shortcut to which the messages belong
+     * Set Unique identifier of the quick reply shortcut to which the messages belong.
      */
     public function setShortcutId(int $shortcutId): self
     {
@@ -40,7 +40,7 @@ class DeleteQuickReplyShortcutMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifiers of the messages
+     * Get Unique identifiers of the messages.
      */
     public function getMessageIds(): array|null
     {
@@ -48,7 +48,7 @@ class DeleteQuickReplyShortcutMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifiers of the messages
+     * Set Unique identifiers of the messages.
      */
     public function setMessageIds(array|null $messageIds): self
     {

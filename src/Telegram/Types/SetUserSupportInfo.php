@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets support information for the given user; for Telegram support only @user_id User identifier @message New information message
+ * Sets support information for the given user; for Telegram support only @user_id User identifier @message New information message.
  */
 class SetUserSupportInfo extends UserSupportInfo implements \JsonSerializable
 {

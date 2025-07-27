@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns recently opened chats. This is an offline method. Returns chats in the order of last opening @limit The maximum number of chats to be returned
+ * Returns recently opened chats. This is an offline method. Returns chats in the order of last opening @limit The maximum number of chats to be returned.
  */
 class GetRecentlyOpenedChats extends Chats implements \JsonSerializable
 {

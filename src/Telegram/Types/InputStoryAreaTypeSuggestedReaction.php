@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a suggested reaction
+ * An area pointing to a suggested reaction.
  */
 class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements 
     }
 
     /**
-     * Get Type of the reaction
+     * Get Type of the reaction.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -33,7 +33,7 @@ class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements 
     }
 
     /**
-     * Set Type of the reaction
+     * Set Type of the reaction.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {
@@ -43,7 +43,7 @@ class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements 
     }
 
     /**
-     * Get True, if reaction has a dark background
+     * Get True, if reaction has a dark background.
      */
     public function getIsDark(): bool
     {
@@ -51,7 +51,7 @@ class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements 
     }
 
     /**
-     * Set True, if reaction has a dark background
+     * Set True, if reaction has a dark background.
      */
     public function setIsDark(bool $isDark): self
     {
@@ -61,7 +61,7 @@ class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements 
     }
 
     /**
-     * Get True, if reaction corner is flipped
+     * Get True, if reaction corner is flipped.
      */
     public function getIsFlipped(): bool
     {
@@ -69,7 +69,7 @@ class InputStoryAreaTypeSuggestedReaction extends InputStoryAreaType implements 
     }
 
     /**
-     * Set True, if reaction corner is flipped
+     * Set True, if reaction corner is flipped.
      */
     public function setIsFlipped(bool $isFlipped): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the verbosity level of the internal logging of TDLib. Can be called synchronously
+ * Sets the verbosity level of the internal logging of TDLib. Can be called synchronously.
  */
 class SetLogVerbosityLevel extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class SetLogVerbosityLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of the verbosity level for logging. Value 0 corresponds to fatal errors, value 1 corresponds to errors, value 2 corresponds to warnings and debug warnings,
+     * Get New value of the verbosity level for logging. Value 0 corresponds to fatal errors, value 1 corresponds to errors, value 2 corresponds to warnings and debug warnings,.
      */
     public function getNewVerbosityLevel(): int
     {
@@ -27,7 +27,7 @@ class SetLogVerbosityLevel extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of the verbosity level for logging. Value 0 corresponds to fatal errors, value 1 corresponds to errors, value 2 corresponds to warnings and debug warnings,
+     * Set New value of the verbosity level for logging. Value 0 corresponds to fatal errors, value 1 corresponds to errors, value 2 corresponds to warnings and debug warnings,.
      */
     public function setNewVerbosityLevel(int $newVerbosityLevel): self
     {

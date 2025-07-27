@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains state of Telegram Premium subscription and promotion videos for Premium features
+ * Contains state of Telegram Premium subscription and promotion videos for Premium features.
  */
 class PremiumState implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Get Text description of the state of the current Premium subscription; may be empty if the current user has no Telegram Premium subscription
+     * Get Text description of the state of the current Premium subscription; may be empty if the current user has no Telegram Premium subscription.
      */
     public function getState(): FormattedText|null
     {
@@ -36,7 +36,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Set Text description of the state of the current Premium subscription; may be empty if the current user has no Telegram Premium subscription
+     * Set Text description of the state of the current Premium subscription; may be empty if the current user has no Telegram Premium subscription.
      */
     public function setState(FormattedText|null $state): self
     {
@@ -46,7 +46,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Get The list of available options for buying Telegram Premium
+     * Get The list of available options for buying Telegram Premium.
      */
     public function getPaymentOptions(): array|null
     {
@@ -54,7 +54,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Set The list of available options for buying Telegram Premium
+     * Set The list of available options for buying Telegram Premium.
      */
     public function setPaymentOptions(array|null $paymentOptions): self
     {
@@ -64,7 +64,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Get The list of available promotion animations for Premium features
+     * Get The list of available promotion animations for Premium features.
      */
     public function getAnimations(): array|null
     {
@@ -72,7 +72,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Set The list of available promotion animations for Premium features
+     * Set The list of available promotion animations for Premium features.
      */
     public function setAnimations(array|null $animations): self
     {
@@ -82,7 +82,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Get The list of available promotion animations for Business features
+     * Get The list of available promotion animations for Business features.
      */
     public function getBusinessAnimations(): array|null
     {
@@ -90,7 +90,7 @@ class PremiumState implements \JsonSerializable
     }
 
     /**
-     * Set The list of available promotion animations for Business features
+     * Set The list of available promotion animations for Business features.
      */
     public function setBusinessAnimations(array|null $businessAnimations): self
     {

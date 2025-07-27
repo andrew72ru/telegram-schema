@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The title of a page @title Title
+ * The title of a page @title Title.
  */
 class PageBlockTitle extends PageBlock implements \JsonSerializable
 {

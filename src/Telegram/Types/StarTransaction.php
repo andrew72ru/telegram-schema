@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a transaction changing the amount of owned Telegram Stars
+ * Represents a transaction changing the amount of owned Telegram Stars.
  */
 class StarTransaction implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the transaction
+     * Get Unique identifier of the transaction.
      */
     public function getId(): string
     {
@@ -39,7 +39,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the transaction
+     * Set Unique identifier of the transaction.
      */
     public function setId(string $id): self
     {
@@ -49,7 +49,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Get The amount of added owned Telegram Stars; negative for outgoing transactions
+     * Get The amount of added owned Telegram Stars; negative for outgoing transactions.
      */
     public function getStarAmount(): StarAmount|null
     {
@@ -57,7 +57,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Set The amount of added owned Telegram Stars; negative for outgoing transactions
+     * Set The amount of added owned Telegram Stars; negative for outgoing transactions.
      */
     public function setStarAmount(StarAmount|null $starAmount): self
     {
@@ -67,7 +67,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Get True, if the transaction is a refund of a previous transaction
+     * Get True, if the transaction is a refund of a previous transaction.
      */
     public function getIsRefund(): bool
     {
@@ -75,7 +75,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Set True, if the transaction is a refund of a previous transaction
+     * Set True, if the transaction is a refund of a previous transaction.
      */
     public function setIsRefund(bool $isRefund): self
     {
@@ -85,7 +85,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the transaction was completed
+     * Get Point in time (Unix timestamp) when the transaction was completed.
      */
     public function getDate(): int
     {
@@ -93,7 +93,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the transaction was completed
+     * Set Point in time (Unix timestamp) when the transaction was completed.
      */
     public function setDate(int $date): self
     {
@@ -103,7 +103,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Get Type of the transaction
+     * Get Type of the transaction.
      */
     public function getType(): StarTransactionType|null
     {
@@ -111,7 +111,7 @@ class StarTransaction implements \JsonSerializable
     }
 
     /**
-     * Set Type of the transaction
+     * Set Type of the transaction.
      */
     public function setType(StarTransactionType|null $type): self
     {

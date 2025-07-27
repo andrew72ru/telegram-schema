@@ -28,7 +28,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the message with the button
+     * Get Chat identifier of the message with the button.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the message with the button
+     * Set Chat identifier of the message with the button.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier of the message with the button
+     * Get Message identifier of the message with the button.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier of the message with the button
+     * Set Message identifier of the message with the button.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Button identifier
+     * Get Button identifier.
      */
     public function getButtonId(): int
     {
@@ -72,7 +72,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Button identifier
+     * Set Button identifier.
      */
     public function setButtonId(int $buttonId): self
     {
@@ -82,7 +82,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to allow the bot to send messages to the current user
+     * Get Pass true to allow the bot to send messages to the current user.
      */
     public function getAllowWriteAccess(): bool
     {
@@ -90,7 +90,7 @@ class GetLoginUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to allow the bot to send messages to the current user
+     * Set Pass true to allow the bot to send messages to the current user.
      */
     public function setAllowWriteAccess(bool $allowWriteAccess): self
     {

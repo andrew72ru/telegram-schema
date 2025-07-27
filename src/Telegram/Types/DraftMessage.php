@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a message draft
+ * Contains information about a message draft.
  */
 class DraftMessage implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message to be replied; must be of the type inputMessageReplyToMessage; may be null if none
+     * Get Information about the message to be replied; must be of the type inputMessageReplyToMessage; may be null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -36,7 +36,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message to be replied; must be of the type inputMessageReplyToMessage; may be null if none
+     * Set Information about the message to be replied; must be of the type inputMessageReplyToMessage; may be null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -46,7 +46,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the draft was created
+     * Get Point in time (Unix timestamp) when the draft was created.
      */
     public function getDate(): int
     {
@@ -54,7 +54,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the draft was created
+     * Set Point in time (Unix timestamp) when the draft was created.
      */
     public function setDate(int $date): self
     {
@@ -64,7 +64,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Get Content of the message draft; must be of the type inputMessageText, inputMessageVideoNote, or inputMessageVoiceNote
+     * Get Content of the message draft; must be of the type inputMessageText, inputMessageVideoNote, or inputMessageVoiceNote.
      */
     public function getInputMessageText(): InputMessageContent|null
     {
@@ -72,7 +72,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Set Content of the message draft; must be of the type inputMessageText, inputMessageVideoNote, or inputMessageVoiceNote
+     * Set Content of the message draft; must be of the type inputMessageText, inputMessageVideoNote, or inputMessageVoiceNote.
      */
     public function setInputMessageText(InputMessageContent|null $inputMessageText): self
     {
@@ -82,7 +82,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the effect to apply to the message when it is sent; 0 if none
+     * Get Identifier of the effect to apply to the message when it is sent; 0 if none.
      */
     public function getEffectId(): int
     {
@@ -90,7 +90,7 @@ class DraftMessage implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the effect to apply to the message when it is sent; 0 if none
+     * Set Identifier of the effect to apply to the message when it is sent; 0 if none.
      */
     public function setEffectId(int $effectId): self
     {

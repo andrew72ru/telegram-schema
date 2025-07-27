@@ -19,7 +19,7 @@ class InternalLinkTypeChatBoost extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Get URL to be passed to getChatBoostLinkInfo
+     * Get URL to be passed to getChatBoostLinkInfo.
      */
     public function getUrl(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeChatBoost extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Set URL to be passed to getChatBoostLinkInfo
+     * Set URL to be passed to getChatBoostLinkInfo.
      */
     public function setUrl(string $url): self
     {

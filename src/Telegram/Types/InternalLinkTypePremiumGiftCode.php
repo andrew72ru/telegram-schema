@@ -19,7 +19,7 @@ class InternalLinkTypePremiumGiftCode extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get The Telegram Premium gift code
+     * Get The Telegram Premium gift code.
      */
     public function getCode(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypePremiumGiftCode extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set The Telegram Premium gift code
+     * Set The Telegram Premium gift code.
      */
     public function setCode(string $code): self
     {

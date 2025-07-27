@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat draft has changed. Be aware that the update may come in the currently opened chat but with old content of the draft. If the user has changed the content of the draft, this update mustn't be applied
+ * A chat draft has changed. Be aware that the update may come in the currently opened chat but with old content of the draft. If the user has changed the content of the draft, this update mustn't be applied.
  */
 class UpdateChatDraftMessage extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateChatDraftMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class UpdateChatDraftMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class UpdateChatDraftMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new draft message; may be null if none
+     * Get The new draft message; may be null if none.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -51,7 +51,7 @@ class UpdateChatDraftMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new draft message; may be null if none
+     * Set The new draft message; may be null if none.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {
@@ -61,7 +61,7 @@ class UpdateChatDraftMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new chat positions in the chat lists
+     * Get The new chat positions in the chat lists.
      */
     public function getPositions(): array|null
     {
@@ -69,7 +69,7 @@ class UpdateChatDraftMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new chat positions in the chat lists
+     * Set The new chat positions in the chat lists.
      */
     public function setPositions(array|null $positions): self
     {

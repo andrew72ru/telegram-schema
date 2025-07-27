@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a new member to a chat; requires can_invite_users member right. Members can't be added to private or secret chats. Returns information about members that weren't added
+ * Adds a new member to a chat; requires can_invite_users member right. Members can't be added to private or secret chats. Returns information about members that weren't added.
  */
 class AddChatMember extends FailedToAddMembers implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AddChatMember extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class AddChatMember extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class AddChatMember extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user
+     * Get Identifier of the user.
      */
     public function getUserId(): int
     {
@@ -51,7 +51,7 @@ class AddChatMember extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user
+     * Set Identifier of the user.
      */
     public function setUserId(int $userId): self
     {
@@ -61,7 +61,7 @@ class AddChatMember extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Get The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot
+     * Get The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot.
      */
     public function getForwardLimit(): int
     {
@@ -69,7 +69,7 @@ class AddChatMember extends FailedToAddMembers implements \JsonSerializable
     }
 
     /**
-     * Set The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot
+     * Set The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot.
      */
     public function setForwardLimit(int $forwardLimit): self
     {

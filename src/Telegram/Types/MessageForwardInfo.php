@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a forwarded message
+ * Contains information about a forwarded message.
  */
 class MessageForwardInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Get Origin of the forwarded message
+     * Get Origin of the forwarded message.
      */
     public function getOrigin(): MessageOrigin|null
     {
@@ -36,7 +36,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Set Origin of the forwarded message
+     * Set Origin of the forwarded message.
      */
     public function setOrigin(MessageOrigin|null $origin): self
     {
@@ -46,7 +46,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message was originally sent
+     * Get Point in time (Unix timestamp) when the message was originally sent.
      */
     public function getDate(): int
     {
@@ -54,7 +54,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message was originally sent
+     * Set Point in time (Unix timestamp) when the message was originally sent.
      */
     public function setDate(int $date): self
     {
@@ -64,7 +64,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Get For messages forwarded to the chat with the current user (Saved Messages), to the Replies bot chat, or to the channel's discussion group, information about the source message from which the message was forwarded last time; may be null for other forwards or if unknown
+     * Get For messages forwarded to the chat with the current user (Saved Messages), to the Replies bot chat, or to the channel's discussion group, information about the source message from which the message was forwarded last time; may be null for other forwards or if unknown.
      */
     public function getSource(): ForwardSource|null
     {
@@ -72,7 +72,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Set For messages forwarded to the chat with the current user (Saved Messages), to the Replies bot chat, or to the channel's discussion group, information about the source message from which the message was forwarded last time; may be null for other forwards or if unknown
+     * Set For messages forwarded to the chat with the current user (Saved Messages), to the Replies bot chat, or to the channel's discussion group, information about the source message from which the message was forwarded last time; may be null for other forwards or if unknown.
      */
     public function setSource(ForwardSource|null $source): self
     {
@@ -82,7 +82,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Get The type of public service announcement for the forwarded message
+     * Get The type of public service announcement for the forwarded message.
      */
     public function getPublicServiceAnnouncementType(): string
     {
@@ -90,7 +90,7 @@ class MessageForwardInfo implements \JsonSerializable
     }
 
     /**
-     * Set The type of public service announcement for the forwarded message
+     * Set The type of public service announcement for the forwarded message.
      */
     public function setPublicServiceAnnouncementType(string $publicServiceAnnouncementType): self
     {

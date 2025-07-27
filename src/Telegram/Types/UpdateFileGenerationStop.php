@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * File generation is no longer needed @generation_id Unique identifier for the generation process
+ * File generation is no longer needed @generation_id Unique identifier for the generation process.
  */
 class UpdateFileGenerationStop extends Update implements \JsonSerializable
 {

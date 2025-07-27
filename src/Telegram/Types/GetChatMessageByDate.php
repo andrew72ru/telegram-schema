@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the last message sent in a chat no later than the specified date. Returns a 404 error if such message doesn't exist
+ * Returns the last message sent in a chat no later than the specified date. Returns a 404 error if such message doesn't exist.
  */
 class GetChatMessageByDate extends Message implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChatMessageByDate extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetChatMessageByDate extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetChatMessageByDate extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) relative to which to search for messages
+     * Get Point in time (Unix timestamp) relative to which to search for messages.
      */
     public function getDate(): int
     {
@@ -48,7 +48,7 @@ class GetChatMessageByDate extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) relative to which to search for messages
+     * Set Point in time (Unix timestamp) relative to which to search for messages.
      */
     public function setDate(int $date): self
     {

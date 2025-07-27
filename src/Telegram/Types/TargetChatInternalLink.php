@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat needs to be open with the provided internal link @link An internal link pointing to the chat
+ * The chat needs to be open with the provided internal link @see An internal link pointing to the chat.
  */
 class TargetChatInternalLink extends TargetChat implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The maximum number of created public chats
+ * The maximum number of created public chats.
  */
 class PremiumLimitTypeCreatedPublicChatCount extends PremiumLimitType implements \JsonSerializable
 {

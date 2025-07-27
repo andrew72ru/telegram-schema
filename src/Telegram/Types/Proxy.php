@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a proxy server
+ * Contains information about a proxy server.
  */
 class Proxy implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the proxy
+     * Get Unique identifier of the proxy.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the proxy
+     * Set Unique identifier of the proxy.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server domain or IP address
+     * Get Proxy server domain or IP address.
      */
     public function getServer(): string
     {
@@ -60,7 +60,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server domain or IP address
+     * Set Proxy server domain or IP address.
      */
     public function setServer(string $server): self
     {
@@ -70,7 +70,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server port
+     * Get Proxy server port.
      */
     public function getPort(): int
     {
@@ -78,7 +78,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server port
+     * Set Proxy server port.
      */
     public function setPort(int $port): self
     {
@@ -88,7 +88,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the proxy was last used; 0 if never
+     * Get Point in time (Unix timestamp) when the proxy was last used; 0 if never.
      */
     public function getLastUsedDate(): int
     {
@@ -96,7 +96,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the proxy was last used; 0 if never
+     * Set Point in time (Unix timestamp) when the proxy was last used; 0 if never.
      */
     public function setLastUsedDate(int $lastUsedDate): self
     {
@@ -106,7 +106,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Get True, if the proxy is enabled now
+     * Get True, if the proxy is enabled now.
      */
     public function getIsEnabled(): bool
     {
@@ -114,7 +114,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Set True, if the proxy is enabled now
+     * Set True, if the proxy is enabled now.
      */
     public function setIsEnabled(bool $isEnabled): self
     {
@@ -124,7 +124,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Type of the proxy
+     * Get Type of the proxy.
      */
     public function getType(): ProxyType|null
     {
@@ -132,7 +132,7 @@ class Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Type of the proxy
+     * Set Type of the proxy.
      */
     public function setType(ProxyType|null $type): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains properties of a message and describes actions that can be done with the message right now
+ * Contains properties of a message and describes actions that can be done with the message right now.
  */
 class MessageProperties implements \JsonSerializable
 {
@@ -109,7 +109,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if tasks can be added to the message's checklist using addChecklistTasks if the current user has Telegram Premium subscription
+     * Get True, if tasks can be added to the message's checklist using addChecklistTasks if the current user has Telegram Premium subscription.
      */
     public function getCanAddTasks(): bool
     {
@@ -117,7 +117,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if tasks can be added to the message's checklist using addChecklistTasks if the current user has Telegram Premium subscription
+     * Set True, if tasks can be added to the message's checklist using addChecklistTasks if the current user has Telegram Premium subscription.
      */
     public function setCanAddTasks(bool $canAddTasks): self
     {
@@ -127,7 +127,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if content of the message can be copied using inputMessageForwarded or forwardMessages with copy options
+     * Get True, if content of the message can be copied using inputMessageForwarded or forwardMessages with copy options.
      */
     public function getCanBeCopied(): bool
     {
@@ -135,7 +135,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if content of the message can be copied using inputMessageForwarded or forwardMessages with copy options
+     * Set True, if content of the message can be copied using inputMessageForwarded or forwardMessages with copy options.
      */
     public function setCanBeCopied(bool $canBeCopied): self
     {
@@ -145,7 +145,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if content of the message can be copied to a secret chat using inputMessageForwarded or forwardMessages with copy options
+     * Get True, if content of the message can be copied to a secret chat using inputMessageForwarded or forwardMessages with copy options.
      */
     public function getCanBeCopiedToSecretChat(): bool
     {
@@ -153,7 +153,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if content of the message can be copied to a secret chat using inputMessageForwarded or forwardMessages with copy options
+     * Set True, if content of the message can be copied to a secret chat using inputMessageForwarded or forwardMessages with copy options.
      */
     public function setCanBeCopiedToSecretChat(bool $canBeCopiedToSecretChat): self
     {
@@ -163,7 +163,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be deleted only for the current user while other users will continue to see it using the method deleteMessages with revoke == false
+     * Get True, if the message can be deleted only for the current user while other users will continue to see it using the method deleteMessages with revoke == false.
      */
     public function getCanBeDeletedOnlyForSelf(): bool
     {
@@ -171,7 +171,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be deleted only for the current user while other users will continue to see it using the method deleteMessages with revoke == false
+     * Set True, if the message can be deleted only for the current user while other users will continue to see it using the method deleteMessages with revoke == false.
      */
     public function setCanBeDeletedOnlyForSelf(bool $canBeDeletedOnlyForSelf): self
     {
@@ -181,7 +181,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be deleted for all users using the method deleteMessages with revoke == true
+     * Get True, if the message can be deleted for all users using the method deleteMessages with revoke == true.
      */
     public function getCanBeDeletedForAllUsers(): bool
     {
@@ -189,7 +189,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be deleted for all users using the method deleteMessages with revoke == true
+     * Set True, if the message can be deleted for all users using the method deleteMessages with revoke == true.
      */
     public function setCanBeDeletedForAllUsers(bool $canBeDeletedForAllUsers): self
     {
@@ -199,7 +199,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be edited using the methods editMessageText, editMessageCaption, or editMessageReplyMarkup.
+     * Get True, if the message can be edited using the methods editMessageText, editMessageCaption, or editMessageReplyMarkup..
      */
     public function getCanBeEdited(): bool
     {
@@ -207,7 +207,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be edited using the methods editMessageText, editMessageCaption, or editMessageReplyMarkup.
+     * Set True, if the message can be edited using the methods editMessageText, editMessageCaption, or editMessageReplyMarkup..
      */
     public function setCanBeEdited(bool $canBeEdited): self
     {
@@ -217,7 +217,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be forwarded using inputMessageForwarded or forwardMessages without copy options
+     * Get True, if the message can be forwarded using inputMessageForwarded or forwardMessages without copy options.
      */
     public function getCanBeForwarded(): bool
     {
@@ -225,7 +225,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be forwarded using inputMessageForwarded or forwardMessages without copy options
+     * Set True, if the message can be forwarded using inputMessageForwarded or forwardMessages without copy options.
      */
     public function setCanBeForwarded(bool $canBeForwarded): self
     {
@@ -235,7 +235,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be paid using inputInvoiceMessage
+     * Get True, if the message can be paid using inputInvoiceMessage.
      */
     public function getCanBePaid(): bool
     {
@@ -243,7 +243,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be paid using inputInvoiceMessage
+     * Set True, if the message can be paid using inputInvoiceMessage.
      */
     public function setCanBePaid(bool $canBePaid): self
     {
@@ -253,7 +253,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be pinned or unpinned in the chat using pinChatMessage or unpinChatMessage
+     * Get True, if the message can be pinned or unpinned in the chat using pinChatMessage or unpinChatMessage.
      */
     public function getCanBePinned(): bool
     {
@@ -261,7 +261,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be pinned or unpinned in the chat using pinChatMessage or unpinChatMessage
+     * Set True, if the message can be pinned or unpinned in the chat using pinChatMessage or unpinChatMessage.
      */
     public function setCanBePinned(bool $canBePinned): self
     {
@@ -271,7 +271,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be replied in the same chat and forum topic using inputMessageReplyToMessage
+     * Get True, if the message can be replied in the same chat and forum topic using inputMessageReplyToMessage.
      */
     public function getCanBeReplied(): bool
     {
@@ -279,7 +279,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be replied in the same chat and forum topic using inputMessageReplyToMessage
+     * Set True, if the message can be replied in the same chat and forum topic using inputMessageReplyToMessage.
      */
     public function setCanBeReplied(bool $canBeReplied): self
     {
@@ -289,7 +289,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be replied in another chat or forum topic using inputMessageReplyToExternalMessage
+     * Get True, if the message can be replied in another chat or forum topic using inputMessageReplyToExternalMessage.
      */
     public function getCanBeRepliedInAnotherChat(): bool
     {
@@ -297,7 +297,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be replied in another chat or forum topic using inputMessageReplyToExternalMessage
+     * Set True, if the message can be replied in another chat or forum topic using inputMessageReplyToExternalMessage.
      */
     public function setCanBeRepliedInAnotherChat(bool $canBeRepliedInAnotherChat): self
     {
@@ -307,7 +307,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if content of the message can be saved locally
+     * Get True, if content of the message can be saved locally.
      */
     public function getCanBeSaved(): bool
     {
@@ -315,7 +315,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if content of the message can be saved locally
+     * Set True, if content of the message can be saved locally.
      */
     public function setCanBeSaved(bool $canBeSaved): self
     {
@@ -325,7 +325,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be shared in a story using inputStoryAreaTypeMessage
+     * Get True, if the message can be shared in a story using inputStoryAreaTypeMessage.
      */
     public function getCanBeSharedInStory(): bool
     {
@@ -333,7 +333,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be shared in a story using inputStoryAreaTypeMessage
+     * Set True, if the message can be shared in a story using inputStoryAreaTypeMessage.
      */
     public function setCanBeSharedInStory(bool $canBeSharedInStory): self
     {
@@ -343,7 +343,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be edited using the method editMessageMedia
+     * Get True, if the message can be edited using the method editMessageMedia.
      */
     public function getCanEditMedia(): bool
     {
@@ -351,7 +351,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be edited using the method editMessageMedia
+     * Set True, if the message can be edited using the method editMessageMedia.
      */
     public function setCanEditMedia(bool $canEditMedia): self
     {
@@ -361,7 +361,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if scheduling state of the message can be edited
+     * Get True, if scheduling state of the message can be edited.
      */
     public function getCanEditSchedulingState(): bool
     {
@@ -369,7 +369,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if scheduling state of the message can be edited
+     * Set True, if scheduling state of the message can be edited.
      */
     public function setCanEditSchedulingState(bool $canEditSchedulingState): self
     {
@@ -379,7 +379,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if author of the message sent on behalf of a chat can be received through getMessageAuthor
+     * Get True, if author of the message sent on behalf of a chat can be received through getMessageAuthor.
      */
     public function getCanGetAuthor(): bool
     {
@@ -387,7 +387,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if author of the message sent on behalf of a chat can be received through getMessageAuthor
+     * Set True, if author of the message sent on behalf of a chat can be received through getMessageAuthor.
      */
     public function setCanGetAuthor(bool $canGetAuthor): self
     {
@@ -397,7 +397,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if code for message embedding can be received using getMessageEmbeddingCode
+     * Get True, if code for message embedding can be received using getMessageEmbeddingCode.
      */
     public function getCanGetEmbeddingCode(): bool
     {
@@ -405,7 +405,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if code for message embedding can be received using getMessageEmbeddingCode
+     * Set True, if code for message embedding can be received using getMessageEmbeddingCode.
      */
     public function setCanGetEmbeddingCode(bool $canGetEmbeddingCode): self
     {
@@ -415,7 +415,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if a link can be generated for the message using getMessageLink
+     * Get True, if a link can be generated for the message using getMessageLink.
      */
     public function getCanGetLink(): bool
     {
@@ -423,7 +423,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if a link can be generated for the message using getMessageLink
+     * Set True, if a link can be generated for the message using getMessageLink.
      */
     public function setCanGetLink(bool $canGetLink): self
     {
@@ -433,7 +433,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if media timestamp links can be generated for media timestamp entities in the message text, caption or link preview description using getMessageLink
+     * Get True, if media timestamp links can be generated for media timestamp entities in the message text, caption or link preview description using getMessageLink.
      */
     public function getCanGetMediaTimestampLinks(): bool
     {
@@ -441,7 +441,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if media timestamp links can be generated for media timestamp entities in the message text, caption or link preview description using getMessageLink
+     * Set True, if media timestamp links can be generated for media timestamp entities in the message text, caption or link preview description using getMessageLink.
      */
     public function setCanGetMediaTimestampLinks(bool $canGetMediaTimestampLinks): self
     {
@@ -451,7 +451,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if information about the message thread is available through getMessageThread and getMessageThreadHistory
+     * Get True, if information about the message thread is available through getMessageThread and getMessageThreadHistory.
      */
     public function getCanGetMessageThread(): bool
     {
@@ -459,7 +459,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if information about the message thread is available through getMessageThread and getMessageThreadHistory
+     * Set True, if information about the message thread is available through getMessageThread and getMessageThreadHistory.
      */
     public function setCanGetMessageThread(bool $canGetMessageThread): self
     {
@@ -469,7 +469,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if read date of the message can be received through getMessageReadDate
+     * Get True, if read date of the message can be received through getMessageReadDate.
      */
     public function getCanGetReadDate(): bool
     {
@@ -477,7 +477,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if read date of the message can be received through getMessageReadDate
+     * Set True, if read date of the message can be received through getMessageReadDate.
      */
     public function setCanGetReadDate(bool $canGetReadDate): self
     {
@@ -487,7 +487,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if message statistics are available through getMessageStatistics and message forwards can be received using getMessagePublicForwards
+     * Get True, if message statistics are available through getMessageStatistics and message forwards can be received using getMessagePublicForwards.
      */
     public function getCanGetStatistics(): bool
     {
@@ -495,7 +495,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if message statistics are available through getMessageStatistics and message forwards can be received using getMessagePublicForwards
+     * Set True, if message statistics are available through getMessageStatistics and message forwards can be received using getMessagePublicForwards.
      */
     public function setCanGetStatistics(bool $canGetStatistics): self
     {
@@ -505,7 +505,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if advertisements for video of the message can be received though getVideoMessageAdvertisements
+     * Get True, if advertisements for video of the message can be received though getVideoMessageAdvertisements.
      */
     public function getCanGetVideoAdvertisements(): bool
     {
@@ -513,7 +513,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if advertisements for video of the message can be received though getVideoMessageAdvertisements
+     * Set True, if advertisements for video of the message can be received though getVideoMessageAdvertisements.
      */
     public function setCanGetVideoAdvertisements(bool $canGetVideoAdvertisements): self
     {
@@ -523,7 +523,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if chat members already viewed the message can be received through getMessageViewers
+     * Get True, if chat members already viewed the message can be received through getMessageViewers.
      */
     public function getCanGetViewers(): bool
     {
@@ -531,7 +531,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if chat members already viewed the message can be received through getMessageViewers
+     * Set True, if chat members already viewed the message can be received through getMessageViewers.
      */
     public function setCanGetViewers(bool $canGetViewers): self
     {
@@ -541,7 +541,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if tasks can be marked as done or not done in the message's checklist using markChecklistTasksAsDone if the current user has Telegram Premium subscription
+     * Get True, if tasks can be marked as done or not done in the message's checklist using markChecklistTasksAsDone if the current user has Telegram Premium subscription.
      */
     public function getCanMarkTasksAsDone(): bool
     {
@@ -549,7 +549,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if tasks can be marked as done or not done in the message's checklist using markChecklistTasksAsDone if the current user has Telegram Premium subscription
+     * Set True, if tasks can be marked as done or not done in the message's checklist using markChecklistTasksAsDone if the current user has Telegram Premium subscription.
      */
     public function setCanMarkTasksAsDone(bool $canMarkTasksAsDone): self
     {
@@ -559,7 +559,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if speech can be recognized for the message through recognizeSpeech
+     * Get True, if speech can be recognized for the message through recognizeSpeech.
      */
     public function getCanRecognizeSpeech(): bool
     {
@@ -567,7 +567,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if speech can be recognized for the message through recognizeSpeech
+     * Set True, if speech can be recognized for the message through recognizeSpeech.
      */
     public function setCanRecognizeSpeech(bool $canRecognizeSpeech): self
     {
@@ -577,7 +577,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be reported using reportChat
+     * Get True, if the message can be reported using reportChat.
      */
     public function getCanReportChat(): bool
     {
@@ -585,7 +585,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be reported using reportChat
+     * Set True, if the message can be reported using reportChat.
      */
     public function setCanReportChat(bool $canReportChat): self
     {
@@ -595,7 +595,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if reactions on the message can be reported through reportMessageReactions
+     * Get True, if reactions on the message can be reported through reportMessageReactions.
      */
     public function getCanReportReactions(): bool
     {
@@ -603,7 +603,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if reactions on the message can be reported through reportMessageReactions
+     * Set True, if reactions on the message can be reported through reportMessageReactions.
      */
     public function setCanReportReactions(bool $canReportReactions): self
     {
@@ -613,7 +613,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be reported using reportSupergroupSpam
+     * Get True, if the message can be reported using reportSupergroupSpam.
      */
     public function getCanReportSupergroupSpam(): bool
     {
@@ -621,7 +621,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be reported using reportSupergroupSpam
+     * Set True, if the message can be reported using reportSupergroupSpam.
      */
     public function setCanReportSupergroupSpam(bool $canReportSupergroupSpam): self
     {
@@ -631,7 +631,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if fact check for the message can be changed through setMessageFactCheck
+     * Get True, if fact check for the message can be changed through setMessageFactCheck.
      */
     public function getCanSetFactCheck(): bool
     {
@@ -639,7 +639,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if fact check for the message can be changed through setMessageFactCheck
+     * Set True, if fact check for the message can be changed through setMessageFactCheck.
      */
     public function setCanSetFactCheck(bool $canSetFactCheck): self
     {
@@ -649,7 +649,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Get True, if message statistics must be available from context menu of the message
+     * Get True, if message statistics must be available from context menu of the message.
      */
     public function getNeedShowStatistics(): bool
     {
@@ -657,7 +657,7 @@ class MessageProperties implements \JsonSerializable
     }
 
     /**
-     * Set True, if message statistics must be available from context menu of the message
+     * Set True, if message statistics must be available from context menu of the message.
      */
     public function setNeedShowStatistics(bool $needShowStatistics): self
     {

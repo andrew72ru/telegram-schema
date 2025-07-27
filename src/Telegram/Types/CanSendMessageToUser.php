@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Check whether the current user can message another user or try to create a chat with them
+ * Check whether the current user can message another user or try to create a chat with them.
  */
 class CanSendMessageToUser extends CanSendMessageToUserResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class CanSendMessageToUser extends CanSendMessageToUserResult implements \JsonSe
     }
 
     /**
-     * Get Identifier of the other user
+     * Get Identifier of the other user.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class CanSendMessageToUser extends CanSendMessageToUserResult implements \JsonSe
     }
 
     /**
-     * Set Identifier of the other user
+     * Set Identifier of the other user.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class CanSendMessageToUser extends CanSendMessageToUserResult implements \JsonSe
     }
 
     /**
-     * Get Pass true to get only locally available information without sending network requests
+     * Get Pass true to get only locally available information without sending network requests.
      */
     public function getOnlyLocal(): bool
     {
@@ -48,7 +48,7 @@ class CanSendMessageToUser extends CanSendMessageToUserResult implements \JsonSe
     }
 
     /**
-     * Set Pass true to get only locally available information without sending network requests
+     * Set Pass true to get only locally available information without sending network requests.
      */
     public function setOnlyLocal(bool $onlyLocal): self
     {

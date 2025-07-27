@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Updates the game score of the specified user in a game; for bots only
+ * Updates the game score of the specified user in a game; for bots only.
  */
 class SetInlineGameScore extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Inline message identifier
+     * Get Inline message identifier.
      */
     public function getInlineMessageId(): string
     {
@@ -39,7 +39,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Inline message identifier
+     * Set Inline message identifier.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {
@@ -49,7 +49,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to edit the game message to include the current scoreboard
+     * Get Pass true to edit the game message to include the current scoreboard.
      */
     public function getEditMessage(): bool
     {
@@ -57,7 +57,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to edit the game message to include the current scoreboard
+     * Set Pass true to edit the game message to include the current scoreboard.
      */
     public function setEditMessage(bool $editMessage): self
     {
@@ -67,7 +67,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -75,7 +75,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -85,7 +85,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new score
+     * Get The new score.
      */
     public function getScore(): int
     {
@@ -93,7 +93,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new score
+     * Set The new score.
      */
     public function setScore(int $score): self
     {
@@ -103,7 +103,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
+     * Get Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table.
      */
     public function getForce(): bool
     {
@@ -111,7 +111,7 @@ class SetInlineGameScore extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
+     * Set Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table.
      */
     public function setForce(bool $force): self
     {

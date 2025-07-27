@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A newly created supergroup or channel @title Title of the supergroup or channel
+ * A newly created supergroup or channel @title Title of the supergroup or channel.
  */
 class MessageSupergroupChatCreate extends MessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Animated variant of a chat photo in MPEG4 format
+ * Animated variant of a chat photo in MPEG4 format.
  */
 class AnimatedChatPhoto implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AnimatedChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Animation width and height
+     * Get Animation width and height.
      */
     public function getLength(): int
     {
@@ -33,7 +33,7 @@ class AnimatedChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Animation width and height
+     * Set Animation width and height.
      */
     public function setLength(int $length): self
     {
@@ -43,7 +43,7 @@ class AnimatedChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Information about the animation file
+     * Get Information about the animation file.
      */
     public function getFile(): File|null
     {
@@ -51,7 +51,7 @@ class AnimatedChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Information about the animation file
+     * Set Information about the animation file.
      */
     public function setFile(File|null $file): self
     {
@@ -61,7 +61,7 @@ class AnimatedChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp of the frame, used as a static chat photo
+     * Get Timestamp of the frame, used as a static chat photo.
      */
     public function getMainFrameTimestamp(): float
     {
@@ -69,7 +69,7 @@ class AnimatedChatPhoto implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp of the frame, used as a static chat photo
+     * Set Timestamp of the frame, used as a static chat photo.
      */
     public function setMainFrameTimestamp(float $mainFrameTimestamp): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that the user viewed detailed information about a Premium feature on the Premium features screen @feature The viewed premium feature
+ * Informs TDLib that the user viewed detailed information about a Premium feature on the Premium features screen @feature The viewed premium feature.
  */
 class ViewPremiumFeature extends Ok implements \JsonSerializable
 {

@@ -25,7 +25,7 @@ class AddQuickReplyShortcutMessageAlbum extends QuickReplyMessages implements \J
     }
 
     /**
-     * Get Name of the target shortcut
+     * Get Name of the target shortcut.
      */
     public function getShortcutName(): string
     {
@@ -33,7 +33,7 @@ class AddQuickReplyShortcutMessageAlbum extends QuickReplyMessages implements \J
     }
 
     /**
-     * Set Name of the target shortcut
+     * Set Name of the target shortcut.
      */
     public function setShortcutName(string $shortcutName): self
     {
@@ -43,7 +43,7 @@ class AddQuickReplyShortcutMessageAlbum extends QuickReplyMessages implements \J
     }
 
     /**
-     * Get Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none
+     * Get Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none.
      */
     public function getReplyToMessageId(): int
     {
@@ -51,7 +51,7 @@ class AddQuickReplyShortcutMessageAlbum extends QuickReplyMessages implements \J
     }
 
     /**
-     * Set Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none
+     * Set Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none.
      */
     public function setReplyToMessageId(int $replyToMessageId): self
     {
@@ -61,7 +61,7 @@ class AddQuickReplyShortcutMessageAlbum extends QuickReplyMessages implements \J
     }
 
     /**
-     * Get Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media
+     * Get Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media.
      */
     public function getInputMessageContents(): array|null
     {
@@ -69,7 +69,7 @@ class AddQuickReplyShortcutMessageAlbum extends QuickReplyMessages implements \J
     }
 
     /**
-     * Set Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media
+     * Set Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media.
      */
     public function setInputMessageContents(array|null $inputMessageContents): self
     {

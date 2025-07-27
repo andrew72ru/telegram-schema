@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Discards a call
+ * Discards a call.
  */
 class DiscardCall extends Ok implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Call identifier
+     * Get Call identifier.
      */
     public function getCallId(): int
     {
@@ -42,7 +42,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Call identifier
+     * Set Call identifier.
      */
     public function setCallId(int $callId): self
     {
@@ -52,7 +52,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the user was disconnected
+     * Get Pass true if the user was disconnected.
      */
     public function getIsDisconnected(): bool
     {
@@ -60,7 +60,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the user was disconnected
+     * Set Pass true if the user was disconnected.
      */
     public function setIsDisconnected(bool $isDisconnected): self
     {
@@ -70,7 +70,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get If the call was upgraded to a group call, pass invite link to the group call
+     * Get If the call was upgraded to a group call, pass invite link to the group call.
      */
     public function getInviteLink(): string
     {
@@ -78,7 +78,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set If the call was upgraded to a group call, pass invite link to the group call
+     * Set If the call was upgraded to a group call, pass invite link to the group call.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -88,7 +88,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The call duration, in seconds
+     * Get The call duration, in seconds.
      */
     public function getDuration(): int
     {
@@ -96,7 +96,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The call duration, in seconds
+     * Set The call duration, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -106,7 +106,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the call was a video call
+     * Get Pass true if the call was a video call.
      */
     public function getIsVideo(): bool
     {
@@ -114,7 +114,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the call was a video call
+     * Set Pass true if the call was a video call.
      */
     public function setIsVideo(bool $isVideo): self
     {
@@ -124,7 +124,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the connection used during the call
+     * Get Identifier of the connection used during the call.
      */
     public function getConnectionId(): int
     {
@@ -132,7 +132,7 @@ class DiscardCall extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the connection used during the call
+     * Set Identifier of the connection used during the call.
      */
     public function setConnectionId(int $connectionId): self
     {

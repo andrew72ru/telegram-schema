@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a payment for Telegram API usage; for bots only @request_count The number of billed requests
+ * The transaction is a payment for Telegram API usage; for bots only @request_count The number of billed requests.
  */
 class StarTransactionTypeTelegramApiUsage extends StarTransactionType implements \JsonSerializable
 {

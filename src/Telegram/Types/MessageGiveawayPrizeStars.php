@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Stars were received by the current user from a giveaway
+ * A Telegram Stars were received by the current user from a giveaway.
  */
 class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Number of Telegram Stars that were received
+     * Get Number of Telegram Stars that were received.
      */
     public function getStarCount(): int
     {
@@ -42,7 +42,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Number of Telegram Stars that were received
+     * Set Number of Telegram Stars that were received.
      */
     public function setStarCount(int $starCount): self
     {
@@ -52,7 +52,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the transaction for Telegram Stars credit
+     * Get Identifier of the transaction for Telegram Stars credit.
      */
     public function getTransactionId(): string
     {
@@ -60,7 +60,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the transaction for Telegram Stars credit
+     * Set Identifier of the transaction for Telegram Stars credit.
      */
     public function setTransactionId(string $transactionId): self
     {
@@ -70,7 +70,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway
+     * Get Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway.
      */
     public function getBoostedChatId(): int
     {
@@ -78,7 +78,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway
+     * Set Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway.
      */
     public function setBoostedChatId(int $boostedChatId): self
     {
@@ -88,7 +88,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the message with the giveaway in the boosted chat; can be 0 if the message was deleted
+     * Get Identifier of the message with the giveaway in the boosted chat; can be 0 if the message was deleted.
      */
     public function getGiveawayMessageId(): int
     {
@@ -96,7 +96,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the message with the giveaway in the boosted chat; can be 0 if the message was deleted
+     * Set Identifier of the message with the giveaway in the boosted chat; can be 0 if the message was deleted.
      */
     public function setGiveawayMessageId(int $giveawayMessageId): self
     {
@@ -106,7 +106,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get True, if the corresponding winner wasn't chosen and the Telegram Stars were received by the owner of the boosted chat
+     * Get True, if the corresponding winner wasn't chosen and the Telegram Stars were received by the owner of the boosted chat.
      */
     public function getIsUnclaimed(): bool
     {
@@ -114,7 +114,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set True, if the corresponding winner wasn't chosen and the Telegram Stars were received by the owner of the boosted chat
+     * Set True, if the corresponding winner wasn't chosen and the Telegram Stars were received by the owner of the boosted chat.
      */
     public function setIsUnclaimed(bool $isUnclaimed): self
     {
@@ -124,7 +124,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Get A sticker to be shown in the message; may be null if unknown
+     * Get A sticker to be shown in the message; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -132,7 +132,7 @@ class MessageGiveawayPrizeStars extends MessageContent implements \JsonSerializa
     }
 
     /**
-     * Set A sticker to be shown in the message; may be null if unknown
+     * Set A sticker to be shown in the message; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {

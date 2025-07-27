@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a voice note
+ * Describes a voice note.
  */
 class VoiceNote implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the voice note, in seconds; as defined by the sender
+     * Get Duration of the voice note, in seconds; as defined by the sender.
      */
     public function getDuration(): int
     {
@@ -39,7 +39,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the voice note, in seconds; as defined by the sender
+     * Set Duration of the voice note, in seconds; as defined by the sender.
      */
     public function setDuration(int $duration): self
     {
@@ -49,7 +49,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Get A waveform representation of the voice note in 5-bit format
+     * Get A waveform representation of the voice note in 5-bit format.
      */
     public function getWaveform(): string
     {
@@ -57,7 +57,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Set A waveform representation of the voice note in 5-bit format
+     * Set A waveform representation of the voice note in 5-bit format.
      */
     public function setWaveform(string $waveform): self
     {
@@ -67,7 +67,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Get MIME type of the file; as defined by the sender. Usually, one of "audio/ogg" for Opus in an OGG container, "audio/mpeg" for an MP3 audio, or "audio/mp4" for an M4A audio
+     * Get MIME type of the file; as defined by the sender. Usually, one of "audio/ogg" for Opus in an OGG container, "audio/mpeg" for an MP3 audio, or "audio/mp4" for an M4A audio.
      */
     public function getMimeType(): string
     {
@@ -75,7 +75,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Set MIME type of the file; as defined by the sender. Usually, one of "audio/ogg" for Opus in an OGG container, "audio/mpeg" for an MP3 audio, or "audio/mp4" for an M4A audio
+     * Set MIME type of the file; as defined by the sender. Usually, one of "audio/ogg" for Opus in an OGG container, "audio/mpeg" for an MP3 audio, or "audio/mp4" for an M4A audio.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -85,7 +85,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Get Result of speech recognition in the voice note; may be null
+     * Get Result of speech recognition in the voice note; may be null.
      */
     public function getSpeechRecognitionResult(): SpeechRecognitionResult|null
     {
@@ -93,7 +93,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Set Result of speech recognition in the voice note; may be null
+     * Set Result of speech recognition in the voice note; may be null.
      */
     public function setSpeechRecognitionResult(SpeechRecognitionResult|null $speechRecognitionResult): self
     {
@@ -103,7 +103,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Get File containing the voice note
+     * Get File containing the voice note.
      */
     public function getVoice(): File|null
     {
@@ -111,7 +111,7 @@ class VoiceNote implements \JsonSerializable
     }
 
     /**
-     * Set File containing the voice note
+     * Set File containing the voice note.
      */
     public function setVoice(File|null $voice): self
     {

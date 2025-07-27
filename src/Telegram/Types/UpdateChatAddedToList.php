@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat was added to a chat list @chat_id Chat identifier @chat_list The chat list to which the chat was added
+ * A chat was added to a chat list @chat_id Chat identifier @chat_list The chat list to which the chat was added.
  */
 class UpdateChatAddedToList extends Update implements \JsonSerializable
 {

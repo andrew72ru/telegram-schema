@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns messages in the topic in a channel direct messages chat administered by the current user. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id)
+ * Returns messages in the topic in a channel direct messages chat administered by the current user. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id).
  */
 class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the topic which messages will be fetched
+     * Get Identifier of the topic which messages will be fetched.
      */
     public function getTopicId(): int
     {
@@ -57,7 +57,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the topic which messages will be fetched
+     * Set Identifier of the topic which messages will be fetched.
      */
     public function setTopicId(int $topicId): self
     {
@@ -67,7 +67,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message
+     * Get Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message.
      */
     public function getFromMessageId(): int
     {
@@ -75,7 +75,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message
+     * Set Identifier of the message starting from which messages must be fetched; use 0 to get results from the last message.
      */
     public function setFromMessageId(int $fromMessageId): self
     {
@@ -85,7 +85,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages
+     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages.
      */
     public function getOffset(): int
     {
@@ -93,7 +93,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages
+     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset up to 99 to get additionally some newer messages.
      */
     public function setOffset(int $offset): self
     {
@@ -103,7 +103,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.
+     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset..
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class GetDirectMessagesChatTopicHistory extends Messages implements \JsonSeriali
     }
 
     /**
-     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.
+     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset..
      */
     public function setLimit(int $limit): self
     {

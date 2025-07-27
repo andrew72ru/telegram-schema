@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a venue found by the bot getOption("venue_search_bot_username")
+ * An area pointing to a venue found by the bot getOption("venue_search_bot_username").
  */
 class InputStoryAreaTypeFoundVenue extends InputStoryAreaType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputStoryAreaTypeFoundVenue extends InputStoryAreaType implements \JsonSe
     }
 
     /**
-     * Get Identifier of the inline query, used to found the venue
+     * Get Identifier of the inline query, used to found the venue.
      */
     public function getQueryId(): int
     {
@@ -30,7 +30,7 @@ class InputStoryAreaTypeFoundVenue extends InputStoryAreaType implements \JsonSe
     }
 
     /**
-     * Set Identifier of the inline query, used to found the venue
+     * Set Identifier of the inline query, used to found the venue.
      */
     public function setQueryId(int $queryId): self
     {
@@ -40,7 +40,7 @@ class InputStoryAreaTypeFoundVenue extends InputStoryAreaType implements \JsonSe
     }
 
     /**
-     * Get Identifier of the inline query result
+     * Get Identifier of the inline query result.
      */
     public function getResultId(): string
     {
@@ -48,7 +48,7 @@ class InputStoryAreaTypeFoundVenue extends InputStoryAreaType implements \JsonSe
     }
 
     /**
-     * Set Identifier of the inline query result
+     * Set Identifier of the inline query result.
      */
     public function setResultId(string $resultId): self
     {

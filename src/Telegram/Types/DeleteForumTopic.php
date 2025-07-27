@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all messages in a forum topic; requires can_delete_messages administrator right in the supergroup unless the user is creator of the topic, the topic has no messages from other users and has at most 11 messages
+ * Deletes all messages in a forum topic; requires can_delete_messages administrator right in the supergroup unless the user is creator of the topic, the topic has no messages from other users and has at most 11 messages.
  */
 class DeleteForumTopic extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteForumTopic extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class DeleteForumTopic extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class DeleteForumTopic extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier of the forum topic
+     * Get Message thread identifier of the forum topic.
      */
     public function getMessageThreadId(): int
     {
@@ -48,7 +48,7 @@ class DeleteForumTopic extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier of the forum topic
+     * Set Message thread identifier of the forum topic.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {

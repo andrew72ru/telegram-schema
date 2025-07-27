@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The number of Telegram Stars owned by the current user has changed @star_amount The new amount of owned Telegram Stars
+ * The number of Telegram Stars owned by the current user has changed @star_amount The new amount of owned Telegram Stars.
  */
 class UpdateOwnedStarCount extends Update implements \JsonSerializable
 {

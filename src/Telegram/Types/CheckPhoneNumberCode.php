@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Check the authentication code and completes the request for which the code was sent if appropriate @code Authentication code to check
+ * Check the authentication code and completes the request for which the code was sent if appropriate @code Authentication code to check.
  */
 class CheckPhoneNumberCode extends Ok implements \JsonSerializable
 {

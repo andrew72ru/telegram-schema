@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A button with a user reference to be handled in the same way as textEntityTypeMentionName entities @user_id User identifier
+ * A button with a user reference to be handled in the same way as textEntityTypeMentionName entities @user_id User identifier.
  */
 class InlineKeyboardButtonTypeUser extends InlineKeyboardButtonType implements \JsonSerializable
 {

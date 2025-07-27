@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The maximum number of stories posted per week
+ * The maximum number of stories posted per week.
  */
 class PremiumLimitTypeWeeklyPostedStoryCount extends PremiumLimitType implements \JsonSerializable
 {

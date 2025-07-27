@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the total number of Telegram Stars received by the channel chat for direct messages from the given topic
+ * Returns the total number of Telegram Stars received by the channel chat for direct messages from the given topic.
  */
 class GetDirectMessagesChatTopicRevenue extends StarCount implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetDirectMessagesChatTopicRevenue extends StarCount implements \JsonSerial
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat administered by the current user
+     * Get Chat identifier of the channel direct messages chat administered by the current user.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetDirectMessagesChatTopicRevenue extends StarCount implements \JsonSerial
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat administered by the current user
+     * Set Chat identifier of the channel direct messages chat administered by the current user.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetDirectMessagesChatTopicRevenue extends StarCount implements \JsonSerial
     }
 
     /**
-     * Get Identifier of the topic
+     * Get Identifier of the topic.
      */
     public function getTopicId(): int
     {
@@ -48,7 +48,7 @@ class GetDirectMessagesChatTopicRevenue extends StarCount implements \JsonSerial
     }
 
     /**
-     * Set Identifier of the topic
+     * Set Identifier of the topic.
      */
     public function setTopicId(int $topicId): self
     {

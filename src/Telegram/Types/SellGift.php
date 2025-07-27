@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sells a gift for Telegram Stars
+ * Sells a gift for Telegram Stars.
  */
 class SellGift extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SellGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Get Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class SellGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Set Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class SellGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift
+     * Get Identifier of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -48,7 +48,7 @@ class SellGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift
+     * Set Identifier of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {

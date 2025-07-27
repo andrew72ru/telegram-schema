@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a given collectible item that was purchased at https://fragment.com
+ * Returns information about a given collectible item that was purchased at https://fragment.com.
  */
 class GetCollectibleItemInfo extends CollectibleItemInfo implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GetCollectibleItemInfo extends CollectibleItemInfo implements \JsonSeriali
     }
 
     /**
-     * Get Type of the collectible item. The item must be used by a user and must be visible to the current user
+     * Get Type of the collectible item. The item must be used by a user and must be visible to the current user.
      */
     public function getType(): CollectibleItemType|null
     {
@@ -27,7 +27,7 @@ class GetCollectibleItemInfo extends CollectibleItemInfo implements \JsonSeriali
     }
 
     /**
-     * Set Type of the collectible item. The item must be used by a user and must be visible to the current user
+     * Set Type of the collectible item. The item must be used by a user and must be visible to the current user.
      */
     public function setType(CollectibleItemType|null $type): self
     {

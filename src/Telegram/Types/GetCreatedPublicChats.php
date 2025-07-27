@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of public chats of the specified type, owned by the user @type Type of the public chats to return
+ * Returns a list of public chats of the specified type, owned by the user @var Type of the public chats to return.
  */
 class GetCreatedPublicChats extends Chats implements \JsonSerializable
 {

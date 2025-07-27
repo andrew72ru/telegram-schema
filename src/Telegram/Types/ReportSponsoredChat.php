@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports a sponsored chat to Telegram moderators
+ * Reports a sponsored chat to Telegram moderators.
  */
 class ReportSponsoredChat extends ReportSponsoredResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ReportSponsoredChat extends ReportSponsoredResult implements \JsonSerializ
     }
 
     /**
-     * Get Unique identifier of the sponsored chat
+     * Get Unique identifier of the sponsored chat.
      */
     public function getSponsoredChatUniqueId(): int
     {
@@ -30,7 +30,7 @@ class ReportSponsoredChat extends ReportSponsoredResult implements \JsonSerializ
     }
 
     /**
-     * Set Unique identifier of the sponsored chat
+     * Set Unique identifier of the sponsored chat.
      */
     public function setSponsoredChatUniqueId(int $sponsoredChatUniqueId): self
     {
@@ -40,7 +40,7 @@ class ReportSponsoredChat extends ReportSponsoredResult implements \JsonSerializ
     }
 
     /**
-     * Get Option identifier chosen by the user; leave empty for the initial request
+     * Get Option identifier chosen by the user; leave empty for the initial request.
      */
     public function getOptionId(): string
     {
@@ -48,7 +48,7 @@ class ReportSponsoredChat extends ReportSponsoredResult implements \JsonSerializ
     }
 
     /**
-     * Set Option identifier chosen by the user; leave empty for the initial request
+     * Set Option identifier chosen by the user; leave empty for the initial request.
      */
     public function setOptionId(string $optionId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A subscript rich text @text Text
+ * A subscript rich text @text Text.
  */
 class RichTextSubscript extends RichText implements \JsonSerializable
 {

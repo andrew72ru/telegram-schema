@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * An empty block separating a page
+ * An empty block separating a page.
  */
 class PageBlockDivider extends PageBlock implements \JsonSerializable
 {

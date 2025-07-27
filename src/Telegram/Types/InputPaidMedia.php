@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a paid media to be sent
+ * Describes a paid media to be sent.
  */
 class InputPaidMedia implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Type of the media
+     * Get Type of the media.
      */
     public function getType(): InputPaidMediaType|null
     {
@@ -42,7 +42,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Type of the media
+     * Set Type of the media.
      */
     public function setType(InputPaidMediaType|null $type): self
     {
@@ -52,7 +52,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Photo or video to be sent
+     * Get Photo or video to be sent.
      */
     public function getMedia(): InputFile|null
     {
@@ -60,7 +60,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Photo or video to be sent
+     * Set Photo or video to be sent.
      */
     public function setMedia(InputFile|null $media): self
     {
@@ -70,7 +70,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media thumbnail; pass null to skip thumbnail uploading
+     * Get Media thumbnail; pass null to skip thumbnail uploading.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -78,7 +78,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media thumbnail; pass null to skip thumbnail uploading
+     * Set Media thumbnail; pass null to skip thumbnail uploading.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -88,7 +88,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get File identifiers of the stickers added to the media, if applicable
+     * Get File identifiers of the stickers added to the media, if applicable.
      */
     public function getAddedStickerFileIds(): array|null
     {
@@ -96,7 +96,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set File identifiers of the stickers added to the media, if applicable
+     * Set File identifiers of the stickers added to the media, if applicable.
      */
     public function setAddedStickerFileIds(array|null $addedStickerFileIds): self
     {
@@ -106,7 +106,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media width
+     * Get Media width.
      */
     public function getWidth(): int
     {
@@ -114,7 +114,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media width
+     * Set Media width.
      */
     public function setWidth(int $width): self
     {
@@ -124,7 +124,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media height
+     * Get Media height.
      */
     public function getHeight(): int
     {
@@ -132,7 +132,7 @@ class InputPaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media height
+     * Set Media height.
      */
     public function setHeight(int $height): self
     {

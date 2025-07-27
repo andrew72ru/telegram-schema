@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns invite links created by the current user for a shareable chat folder @chat_folder_id Chat folder identifier
+ * Returns invite links created by the current user for a shareable chat folder @chat_folder_id Chat folder identifier.
  */
 class GetChatFolderInviteLinks extends ChatFolderInviteLinks implements \JsonSerializable
 {

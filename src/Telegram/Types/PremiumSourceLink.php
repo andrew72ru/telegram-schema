@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user opened an internal link of the type internalLinkTypePremiumFeatures @referrer The referrer from the link
+ * A user opened an internal link of the type internalLinkTypePremiumFeatures @referrer The referrer from the link.
  */
 class PremiumSourceLink extends PremiumSource implements \JsonSerializable
 {

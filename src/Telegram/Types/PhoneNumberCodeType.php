@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for PhoneNumberCodeType types
+ * Abstract base class for PhoneNumberCodeType types.
  */
 abstract class PhoneNumberCodeType implements \JsonSerializable
 {

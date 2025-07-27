@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A general message with hidden content @is_pinned True, if the message is a pinned message with the specified content
+ * A general message with hidden content @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentHidden extends PushMessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * User changed its reactions on a message with public reactions; for bots only
+ * User changed its reactions on a message with public reactions; for bots only.
  */
 class UpdateMessageReaction extends Update implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -60,7 +60,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -70,7 +70,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or chat that changed reactions
+     * Get Identifier of the user or chat that changed reactions.
      */
     public function getActorId(): MessageSender|null
     {
@@ -78,7 +78,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or chat that changed reactions
+     * Set Identifier of the user or chat that changed reactions.
      */
     public function setActorId(MessageSender|null $actorId): self
     {
@@ -88,7 +88,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the reactions were changed
+     * Get Point in time (Unix timestamp) when the reactions were changed.
      */
     public function getDate(): int
     {
@@ -96,7 +96,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the reactions were changed
+     * Set Point in time (Unix timestamp) when the reactions were changed.
      */
     public function setDate(int $date): self
     {
@@ -106,7 +106,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Old list of chosen reactions
+     * Get Old list of chosen reactions.
      */
     public function getOldReactionTypes(): array|null
     {
@@ -114,7 +114,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Old list of chosen reactions
+     * Set Old list of chosen reactions.
      */
     public function setOldReactionTypes(array|null $oldReactionTypes): self
     {
@@ -124,7 +124,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New list of chosen reactions
+     * Get New list of chosen reactions.
      */
     public function getNewReactionTypes(): array|null
     {
@@ -132,7 +132,7 @@ class UpdateMessageReaction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New list of chosen reactions
+     * Set New list of chosen reactions.
      */
     public function setNewReactionTypes(array|null $newReactionTypes): self
     {

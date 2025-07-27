@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Optimizes storage usage, i.e. deletes some files and returns new storage usage statistics. Secret thumbnails can't be deleted
+ * Optimizes storage usage, i.e. deletes some files and returns new storage usage statistics. Secret thumbnails can't be deleted.
  */
 class OptimizeStorage extends StorageStatistics implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Limit on the total size of files after deletion, in bytes. Pass -1 to use the default limit
+     * Get Limit on the total size of files after deletion, in bytes. Pass -1 to use the default limit.
      */
     public function getSize(): int
     {
@@ -51,7 +51,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Limit on the total size of files after deletion, in bytes. Pass -1 to use the default limit
+     * Set Limit on the total size of files after deletion, in bytes. Pass -1 to use the default limit.
      */
     public function setSize(int $size): self
     {
@@ -61,7 +61,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Limit on the time that has passed since the last time a file was accessed (or creation time for some filesystems). Pass -1 to use the default limit
+     * Get Limit on the time that has passed since the last time a file was accessed (or creation time for some filesystems). Pass -1 to use the default limit.
      */
     public function getTtl(): int
     {
@@ -69,7 +69,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Limit on the time that has passed since the last time a file was accessed (or creation time for some filesystems). Pass -1 to use the default limit
+     * Set Limit on the time that has passed since the last time a file was accessed (or creation time for some filesystems). Pass -1 to use the default limit.
      */
     public function setTtl(int $ttl): self
     {
@@ -79,7 +79,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Limit on the total number of files after deletion. Pass -1 to use the default limit
+     * Get Limit on the total number of files after deletion. Pass -1 to use the default limit.
      */
     public function getCount(): int
     {
@@ -87,7 +87,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Limit on the total number of files after deletion. Pass -1 to use the default limit
+     * Set Limit on the total number of files after deletion. Pass -1 to use the default limit.
      */
     public function setCount(int $count): self
     {
@@ -97,7 +97,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get The amount of time after the creation of a file during which it can't be deleted, in seconds. Pass -1 to use the default value
+     * Get The amount of time after the creation of a file during which it can't be deleted, in seconds. Pass -1 to use the default value.
      */
     public function getImmunityDelay(): int
     {
@@ -105,7 +105,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set The amount of time after the creation of a file during which it can't be deleted, in seconds. Pass -1 to use the default value
+     * Set The amount of time after the creation of a file during which it can't be deleted, in seconds. Pass -1 to use the default value.
      */
     public function setImmunityDelay(int $immunityDelay): self
     {
@@ -115,7 +115,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, only files with the given types are considered. By default, all types except thumbnails, profile photos, stickers and wallpapers are deleted
+     * Get If non-empty, only files with the given types are considered. By default, all types except thumbnails, profile photos, stickers and wallpapers are deleted.
      */
     public function getFileTypes(): array|null
     {
@@ -123,7 +123,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, only files with the given types are considered. By default, all types except thumbnails, profile photos, stickers and wallpapers are deleted
+     * Set If non-empty, only files with the given types are considered. By default, all types except thumbnails, profile photos, stickers and wallpapers are deleted.
      */
     public function setFileTypes(array|null $fileTypes): self
     {
@@ -133,7 +133,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, only files from the given chats are considered. Use 0 as chat identifier to delete files not belonging to any chat (e.g., profile photos)
+     * Get If non-empty, only files from the given chats are considered. Use 0 as chat identifier to delete files not belonging to any chat (e.g., profile photos).
      */
     public function getChatIds(): array|null
     {
@@ -141,7 +141,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, only files from the given chats are considered. Use 0 as chat identifier to delete files not belonging to any chat (e.g., profile photos)
+     * Set If non-empty, only files from the given chats are considered. Use 0 as chat identifier to delete files not belonging to any chat (e.g., profile photos).
      */
     public function setChatIds(array|null $chatIds): self
     {
@@ -151,7 +151,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, files from the given chats are excluded. Use 0 as chat identifier to exclude all files not belonging to any chat (e.g., profile photos)
+     * Get If non-empty, files from the given chats are excluded. Use 0 as chat identifier to exclude all files not belonging to any chat (e.g., profile photos).
      */
     public function getExcludeChatIds(): array|null
     {
@@ -159,7 +159,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, files from the given chats are excluded. Use 0 as chat identifier to exclude all files not belonging to any chat (e.g., profile photos)
+     * Set If non-empty, files from the given chats are excluded. Use 0 as chat identifier to exclude all files not belonging to any chat (e.g., profile photos).
      */
     public function setExcludeChatIds(array|null $excludeChatIds): self
     {
@@ -169,7 +169,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if statistics about the files that were deleted must be returned instead of the whole storage usage statistics. Affects only returned statistics
+     * Get Pass true if statistics about the files that were deleted must be returned instead of the whole storage usage statistics. Affects only returned statistics.
      */
     public function getReturnDeletedFileStatistics(): bool
     {
@@ -177,7 +177,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if statistics about the files that were deleted must be returned instead of the whole storage usage statistics. Affects only returned statistics
+     * Set Pass true if statistics about the files that were deleted must be returned instead of the whole storage usage statistics. Affects only returned statistics.
      */
     public function setReturnDeletedFileStatistics(bool $returnDeletedFileStatistics): self
     {
@@ -187,7 +187,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Same as in getStorageStatistics. Affects only returned statistics
+     * Get Same as in getStorageStatistics. Affects only returned statistics.
      */
     public function getChatLimit(): int
     {
@@ -195,7 +195,7 @@ class OptimizeStorage extends StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Same as in getStorageStatistics. Affects only returned statistics
+     * Set Same as in getStorageStatistics. Affects only returned statistics.
      */
     public function setChatLimit(int $chatLimit): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Confirms QR code authentication on another device. Returns created session on success @link A link from a QR code. The link must be scanned by the in-app camera
+ * Confirms QR code authentication on another device. Returns created session on success @see A link from a QR code. The link must be scanned by the in-app camera.
  */
 class ConfirmQrCodeAuthentication extends Session implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new message was received; can also be an outgoing message @message The new message
+ * A new message was received; can also be an outgoing message @message The new message.
  */
 class UpdateNewMessage extends Update implements \JsonSerializable
 {

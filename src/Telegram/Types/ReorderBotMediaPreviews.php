@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes order of media previews in the list of media previews of a bot
+ * Changes order of media previews in the list of media previews of a bot.
  */
 class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Get Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Set Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Language code of the media previews to reorder
+     * Get Language code of the media previews to reorder.
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Language code of the media previews to reorder
+     * Set Language code of the media previews to reorder.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get File identifiers of the media in the new order
+     * Get File identifiers of the media in the new order.
      */
     public function getFileIds(): array|null
     {
@@ -69,7 +69,7 @@ class ReorderBotMediaPreviews extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set File identifiers of the media in the new order
+     * Set File identifiers of the media in the new order.
      */
     public function setFileIds(array|null $fileIds): self
     {

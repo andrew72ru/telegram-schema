@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about supported accent color for user profile photo background
+ * Contains information about supported accent color for user profile photo background.
  */
 class ProfileAccentColor implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Get Profile accent color identifier
+     * Get Profile accent color identifier.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Set Profile accent color identifier
+     * Set Profile accent color identifier.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Get Accent colors expected to be used in light themes
+     * Get Accent colors expected to be used in light themes.
      */
     public function getLightThemeColors(): ProfileAccentColors|null
     {
@@ -57,7 +57,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Set Accent colors expected to be used in light themes
+     * Set Accent colors expected to be used in light themes.
      */
     public function setLightThemeColors(ProfileAccentColors|null $lightThemeColors): self
     {
@@ -67,7 +67,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Get Accent colors expected to be used in dark themes
+     * Get Accent colors expected to be used in dark themes.
      */
     public function getDarkThemeColors(): ProfileAccentColors|null
     {
@@ -75,7 +75,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Set Accent colors expected to be used in dark themes
+     * Set Accent colors expected to be used in dark themes.
      */
     public function setDarkThemeColors(ProfileAccentColors|null $darkThemeColors): self
     {
@@ -85,7 +85,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Get The minimum chat boost level required to use the color in a supergroup chat
+     * Get The minimum chat boost level required to use the color in a supergroup chat.
      */
     public function getMinSupergroupChatBoostLevel(): int
     {
@@ -93,7 +93,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Set The minimum chat boost level required to use the color in a supergroup chat
+     * Set The minimum chat boost level required to use the color in a supergroup chat.
      */
     public function setMinSupergroupChatBoostLevel(int $minSupergroupChatBoostLevel): self
     {
@@ -103,7 +103,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Get The minimum chat boost level required to use the color in a channel chat
+     * Get The minimum chat boost level required to use the color in a channel chat.
      */
     public function getMinChannelChatBoostLevel(): int
     {
@@ -111,7 +111,7 @@ class ProfileAccentColor implements \JsonSerializable
     }
 
     /**
-     * Set The minimum chat boost level required to use the color in a channel chat
+     * Set The minimum chat boost level required to use the color in a channel chat.
      */
     public function setMinChannelChatBoostLevel(int $minChannelChatBoostLevel): self
     {

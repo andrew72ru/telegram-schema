@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an invoice payment form
+ * Contains information about an invoice payment form.
  */
 class PaymentForm implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Get The payment form identifier
+     * Get The payment form identifier.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Set The payment form identifier
+     * Set The payment form identifier.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Get Type of the payment form
+     * Get Type of the payment form.
      */
     public function getType(): PaymentFormType|null
     {
@@ -54,7 +54,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Set Type of the payment form
+     * Set Type of the payment form.
      */
     public function setType(PaymentFormType|null $type): self
     {
@@ -64,7 +64,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the seller bot
+     * Get User identifier of the seller bot.
      */
     public function getSellerBotUserId(): int
     {
@@ -72,7 +72,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the seller bot
+     * Set User identifier of the seller bot.
      */
     public function setSellerBotUserId(int $sellerBotUserId): self
     {
@@ -82,7 +82,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Get Information about the product
+     * Get Information about the product.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -90,7 +90,7 @@ class PaymentForm implements \JsonSerializable
     }
 
     /**
-     * Set Information about the product
+     * Set Information about the product.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {

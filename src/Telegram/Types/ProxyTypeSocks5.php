@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A SOCKS5 proxy server @username Username for logging in; may be empty @password Password for logging in; may be empty
+ * A SOCKS5 proxy server @username Username for logging in; may be empty @password Password for logging in; may be empty.
  */
 class ProxyTypeSocks5 extends ProxyType implements \JsonSerializable
 {

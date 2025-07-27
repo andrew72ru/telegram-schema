@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an image in JPEG format
+ * Describes an image in JPEG format.
  */
 class PhotoSize implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Get Image type (see https://core.telegram.org/constructor/photoSize)
+     * Get Image type (see https://core.telegram.org/constructor/photoSize).
      */
     public function getType(): string
     {
@@ -39,7 +39,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Set Image type (see https://core.telegram.org/constructor/photoSize)
+     * Set Image type (see https://core.telegram.org/constructor/photoSize).
      */
     public function setType(string $type): self
     {
@@ -49,7 +49,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Get Information about the image file
+     * Get Information about the image file.
      */
     public function getPhoto(): File|null
     {
@@ -57,7 +57,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Set Information about the image file
+     * Set Information about the image file.
      */
     public function setPhoto(File|null $photo): self
     {
@@ -67,7 +67,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Get Image width
+     * Get Image width.
      */
     public function getWidth(): int
     {
@@ -75,7 +75,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Set Image width
+     * Set Image width.
      */
     public function setWidth(int $width): self
     {
@@ -85,7 +85,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Get Image height
+     * Get Image height.
      */
     public function getHeight(): int
     {
@@ -93,7 +93,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Set Image height
+     * Set Image height.
      */
     public function setHeight(int $height): self
     {
@@ -103,7 +103,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Get Sizes of progressive JPEG file prefixes, which can be used to preliminarily show the image; in bytes
+     * Get Sizes of progressive JPEG file prefixes, which can be used to preliminarily show the image; in bytes.
      */
     public function getProgressiveSizes(): array|null
     {
@@ -111,7 +111,7 @@ class PhotoSize implements \JsonSerializable
     }
 
     /**
-     * Set Sizes of progressive JPEG file prefixes, which can be used to preliminarily show the image; in bytes
+     * Set Sizes of progressive JPEG file prefixes, which can be used to preliminarily show the image; in bytes.
      */
     public function setProgressiveSizes(array|null $progressiveSizes): self
     {

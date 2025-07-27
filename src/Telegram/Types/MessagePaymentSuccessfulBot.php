@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A payment has been received by the bot or the business account
+ * A payment has been received by the bot or the business account.
  */
 class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Currency for price of the product
+     * Get Currency for price of the product.
      */
     public function getCurrency(): string
     {
@@ -54,7 +54,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Currency for price of the product
+     * Set Currency for price of the product.
      */
     public function setCurrency(string $currency): self
     {
@@ -64,7 +64,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Total price for the product, in the smallest units of the currency
+     * Get Total price for the product, in the smallest units of the currency.
      */
     public function getTotalAmount(): int
     {
@@ -72,7 +72,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Total price for the product, in the smallest units of the currency
+     * Set Total price for the product, in the smallest units of the currency.
      */
     public function setTotalAmount(int $totalAmount): self
     {
@@ -82,7 +82,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring
+     * Get Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
      */
     public function getSubscriptionUntilDate(): int
     {
@@ -90,7 +90,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring
+     * Set Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
      */
     public function setSubscriptionUntilDate(int $subscriptionUntilDate): self
     {
@@ -100,7 +100,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get True, if this is a recurring payment
+     * Get True, if this is a recurring payment.
      */
     public function getIsRecurring(): bool
     {
@@ -108,7 +108,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set True, if this is a recurring payment
+     * Set True, if this is a recurring payment.
      */
     public function setIsRecurring(bool $isRecurring): self
     {
@@ -118,7 +118,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get True, if this is the first recurring payment
+     * Get True, if this is the first recurring payment.
      */
     public function getIsFirstRecurring(): bool
     {
@@ -126,7 +126,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set True, if this is the first recurring payment
+     * Set True, if this is the first recurring payment.
      */
     public function setIsFirstRecurring(bool $isFirstRecurring): self
     {
@@ -136,7 +136,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Invoice payload
+     * Get Invoice payload.
      */
     public function getInvoicePayload(): string
     {
@@ -144,7 +144,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Invoice payload
+     * Set Invoice payload.
      */
     public function setInvoicePayload(string $invoicePayload): self
     {
@@ -154,7 +154,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the shipping option chosen by the user; may be empty if not applicable; for bots only
+     * Get Identifier of the shipping option chosen by the user; may be empty if not applicable; for bots only.
      */
     public function getShippingOptionId(): string
     {
@@ -162,7 +162,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the shipping option chosen by the user; may be empty if not applicable; for bots only
+     * Set Identifier of the shipping option chosen by the user; may be empty if not applicable; for bots only.
      */
     public function setShippingOptionId(string $shippingOptionId): self
     {
@@ -172,7 +172,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Information about the order; may be null; for bots only
+     * Get Information about the order; may be null; for bots only.
      */
     public function getOrderInfo(): OrderInfo|null
     {
@@ -180,7 +180,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Information about the order; may be null; for bots only
+     * Set Information about the order; may be null; for bots only.
      */
     public function setOrderInfo(OrderInfo|null $orderInfo): self
     {
@@ -190,7 +190,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Telegram payment identifier
+     * Get Telegram payment identifier.
      */
     public function getTelegramPaymentChargeId(): string
     {
@@ -198,7 +198,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Telegram payment identifier
+     * Set Telegram payment identifier.
      */
     public function setTelegramPaymentChargeId(string $telegramPaymentChargeId): self
     {
@@ -208,7 +208,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Provider payment identifier
+     * Get Provider payment identifier.
      */
     public function getProviderPaymentChargeId(): string
     {
@@ -216,7 +216,7 @@ class MessagePaymentSuccessfulBot extends MessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Provider payment identifier
+     * Set Provider payment identifier.
      */
     public function setProviderPaymentChargeId(string $providerPaymentChargeId): self
     {

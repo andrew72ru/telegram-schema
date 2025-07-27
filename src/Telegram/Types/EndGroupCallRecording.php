@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Ends recording of an active group call; for video chats only. Requires groupCall.can_be_managed right @group_call_id Group call identifier
+ * Ends recording of an active group call; for video chats only. Requires groupCall.can_be_managed right @group_call_id Group call identifier.
  */
 class EndGroupCallRecording extends Ok implements \JsonSerializable
 {

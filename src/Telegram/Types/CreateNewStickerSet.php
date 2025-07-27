@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new sticker set. Returns the newly created sticker set
+ * Creates a new sticker set. Returns the newly created sticker set.
  */
 class CreateNewStickerSet extends StickerSet implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set owner; ignored for regular users
+     * Get Sticker set owner; ignored for regular users.
      */
     public function getUserId(): int
     {
@@ -45,7 +45,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set owner; ignored for regular users
+     * Set Sticker set owner; ignored for regular users.
      */
     public function setUserId(int $userId): self
     {
@@ -55,7 +55,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set title; 1-64 characters
+     * Get Sticker set title; 1-64 characters.
      */
     public function getTitle(): string
     {
@@ -63,7 +63,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set title; 1-64 characters
+     * Set Sticker set title; 1-64 characters.
      */
     public function setTitle(string $title): self
     {
@@ -73,7 +73,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set name. Can contain only English letters, digits and underscores. Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive) for bots; 0-64 characters.
+     * Get Sticker set name. Can contain only English letters, digits and underscores. Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive) for bots; 0-64 characters..
      */
     public function getName(): string
     {
@@ -81,7 +81,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set name. Can contain only English letters, digits and underscores. Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive) for bots; 0-64 characters.
+     * Set Sticker set name. Can contain only English letters, digits and underscores. Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive) for bots; 0-64 characters..
      */
     public function setName(string $name): self
     {
@@ -91,7 +91,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Type of the stickers in the set
+     * Get Type of the stickers in the set.
      */
     public function getStickerType(): StickerType|null
     {
@@ -99,7 +99,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Type of the stickers in the set
+     * Set Type of the stickers in the set.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -109,7 +109,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if stickers in the sticker set must be repainted; for custom emoji sticker sets only
+     * Get Pass true if stickers in the sticker set must be repainted; for custom emoji sticker sets only.
      */
     public function getNeedsRepainting(): bool
     {
@@ -117,7 +117,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if stickers in the sticker set must be repainted; for custom emoji sticker sets only
+     * Set Pass true if stickers in the sticker set must be repainted; for custom emoji sticker sets only.
      */
     public function setNeedsRepainting(bool $needsRepainting): self
     {
@@ -127,7 +127,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get List of stickers to be added to the set; 1-200 stickers for custom emoji sticker sets, and 1-120 stickers otherwise. For TGS stickers, uploadStickerFile must be used before the sticker is shown
+     * Get List of stickers to be added to the set; 1-200 stickers for custom emoji sticker sets, and 1-120 stickers otherwise. For TGS stickers, uploadStickerFile must be used before the sticker is shown.
      */
     public function getStickers(): array|null
     {
@@ -135,7 +135,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set List of stickers to be added to the set; 1-200 stickers for custom emoji sticker sets, and 1-120 stickers otherwise. For TGS stickers, uploadStickerFile must be used before the sticker is shown
+     * Set List of stickers to be added to the set; 1-200 stickers for custom emoji sticker sets, and 1-120 stickers otherwise. For TGS stickers, uploadStickerFile must be used before the sticker is shown.
      */
     public function setStickers(array|null $stickers): self
     {
@@ -145,7 +145,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Get Source of the sticker set; may be empty if unknown
+     * Get Source of the sticker set; may be empty if unknown.
      */
     public function getSource(): string
     {
@@ -153,7 +153,7 @@ class CreateNewStickerSet extends StickerSet implements \JsonSerializable
     }
 
     /**
-     * Set Source of the sticker set; may be empty if unknown
+     * Set Source of the sticker set; may be empty if unknown.
      */
     public function setSource(string $source): self
     {

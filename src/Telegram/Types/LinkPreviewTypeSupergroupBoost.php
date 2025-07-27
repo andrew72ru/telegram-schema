@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to boost a supergroup chat @photo Photo of the chat; may be null
+ * The link is a link to boost a supergroup chat @photo Photo of the chat; may be null.
  */
 class LinkPreviewTypeSupergroupBoost extends LinkPreviewType implements \JsonSerializable
 {

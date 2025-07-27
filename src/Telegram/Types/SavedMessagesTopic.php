@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a Saved Messages topic
+ * Contains information about a Saved Messages topic.
  */
 class SavedMessagesTopic implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Get Unique topic identifier
+     * Get Unique topic identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Set Unique topic identifier
+     * Set Unique topic identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Get Type of the topic
+     * Get Type of the topic.
      */
     public function getType(): SavedMessagesTopicType|null
     {
@@ -60,7 +60,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Set Type of the topic
+     * Set Type of the topic.
      */
     public function setType(SavedMessagesTopicType|null $type): self
     {
@@ -70,7 +70,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Get True, if the topic is pinned
+     * Get True, if the topic is pinned.
      */
     public function getIsPinned(): bool
     {
@@ -78,7 +78,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Set True, if the topic is pinned
+     * Set True, if the topic is pinned.
      */
     public function setIsPinned(bool $isPinned): self
     {
@@ -88,7 +88,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Get A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order
+     * Get A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order.
      */
     public function getOrder(): int
     {
@@ -96,7 +96,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Set A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order
+     * Set A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order.
      */
     public function setOrder(int $order): self
     {
@@ -106,7 +106,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Get Last message in the topic; may be null if none or unknown
+     * Get Last message in the topic; may be null if none or unknown.
      */
     public function getLastMessage(): Message|null
     {
@@ -114,7 +114,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Set Last message in the topic; may be null if none or unknown
+     * Set Last message in the topic; may be null if none or unknown.
      */
     public function setLastMessage(Message|null $lastMessage): self
     {
@@ -124,7 +124,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Get A draft of a message in the topic; may be null if none
+     * Get A draft of a message in the topic; may be null if none.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -132,7 +132,7 @@ class SavedMessagesTopic implements \JsonSerializable
     }
 
     /**
-     * Set A draft of a message in the topic; may be null if none
+     * Set A draft of a message in the topic; may be null if none.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {

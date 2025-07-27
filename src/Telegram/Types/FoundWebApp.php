@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a Web App found by its short name
+ * Contains information about a Web App found by its short name.
  */
 class FoundWebApp implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Get The Web App
+     * Get The Web App.
      */
     public function getWebApp(): WebApp|null
     {
@@ -33,7 +33,7 @@ class FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Set The Web App
+     * Set The Web App.
      */
     public function setWebApp(WebApp|null $webApp): self
     {
@@ -43,7 +43,7 @@ class FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user must be asked for the permission to the bot to send them messages
+     * Get True, if the user must be asked for the permission to the bot to send them messages.
      */
     public function getRequestWriteAccess(): bool
     {
@@ -51,7 +51,7 @@ class FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user must be asked for the permission to the bot to send them messages
+     * Set True, if the user must be asked for the permission to the bot to send them messages.
      */
     public function setRequestWriteAccess(bool $requestWriteAccess): self
     {
@@ -61,7 +61,7 @@ class FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Get True, if there is no need to show an ordinary open URL confirmation before opening the Web App. The field must be ignored and confirmation must be shown anyway if the Web App link was hidden
+     * Get True, if there is no need to show an ordinary open URL confirmation before opening the Web App. The field must be ignored and confirmation must be shown anyway if the Web App link was hidden.
      */
     public function getSkipConfirmation(): bool
     {
@@ -69,7 +69,7 @@ class FoundWebApp implements \JsonSerializable
     }
 
     /**
-     * Set True, if there is no need to show an ordinary open URL confirmation before opening the Web App. The field must be ignored and confirmation must be shown anyway if the Web App link was hidden
+     * Set True, if there is no need to show an ordinary open URL confirmation before opening the Web App. The field must be ignored and confirmation must be shown anyway if the Web App link was hidden.
      */
     public function setSkipConfirmation(bool $skipConfirmation): self
     {

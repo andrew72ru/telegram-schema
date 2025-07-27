@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video story
+ * A video story.
  */
 class InputStoryContentVideo extends InputStoryContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get Video to be sent. The video size must be 720x1280. The video must be streamable and stored in MPEG4 format, after encoding with H.265 codec and key frames added each second
+     * Get Video to be sent. The video size must be 720x1280. The video must be streamable and stored in MPEG4 format, after encoding with H.265 codec and key frames added each second.
      */
     public function getVideo(): InputFile|null
     {
@@ -39,7 +39,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set Video to be sent. The video size must be 720x1280. The video must be streamable and stored in MPEG4 format, after encoding with H.265 codec and key frames added each second
+     * Set Video to be sent. The video size must be 720x1280. The video must be streamable and stored in MPEG4 format, after encoding with H.265 codec and key frames added each second.
      */
     public function setVideo(InputFile|null $video): self
     {
@@ -49,7 +49,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get File identifiers of the stickers added to the video, if applicable
+     * Get File identifiers of the stickers added to the video, if applicable.
      */
     public function getAddedStickerFileIds(): array|null
     {
@@ -57,7 +57,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set File identifiers of the stickers added to the video, if applicable
+     * Set File identifiers of the stickers added to the video, if applicable.
      */
     public function setAddedStickerFileIds(array|null $addedStickerFileIds): self
     {
@@ -67,7 +67,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get Precise duration of the video, in seconds; 0-60
+     * Get Precise duration of the video, in seconds; 0-60.
      */
     public function getDuration(): float
     {
@@ -75,7 +75,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set Precise duration of the video, in seconds; 0-60
+     * Set Precise duration of the video, in seconds; 0-60.
      */
     public function setDuration(float $duration): self
     {
@@ -85,7 +85,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get Timestamp of the frame, which will be used as video thumbnail
+     * Get Timestamp of the frame, which will be used as video thumbnail.
      */
     public function getCoverFrameTimestamp(): float
     {
@@ -93,7 +93,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set Timestamp of the frame, which will be used as video thumbnail
+     * Set Timestamp of the frame, which will be used as video thumbnail.
      */
     public function setCoverFrameTimestamp(float $coverFrameTimestamp): self
     {
@@ -103,7 +103,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get True, if the video has no sound
+     * Get True, if the video has no sound.
      */
     public function getIsAnimation(): bool
     {
@@ -111,7 +111,7 @@ class InputStoryContentVideo extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set True, if the video has no sound
+     * Set True, if the video has no sound.
      */
     public function setIsAnimation(bool $isAnimation): self
     {

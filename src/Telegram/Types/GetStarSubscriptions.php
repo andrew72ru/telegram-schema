@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of Telegram Star subscriptions for the current user
+ * Returns the list of Telegram Star subscriptions for the current user.
  */
 class GetStarSubscriptions extends StarSubscriptions implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetStarSubscriptions extends StarSubscriptions implements \JsonSerializabl
     }
 
     /**
-     * Get Pass true to receive only expiring subscriptions for which there are no enough Telegram Stars to extend
+     * Get Pass true to receive only expiring subscriptions for which there are no enough Telegram Stars to extend.
      */
     public function getOnlyExpiring(): bool
     {
@@ -30,7 +30,7 @@ class GetStarSubscriptions extends StarSubscriptions implements \JsonSerializabl
     }
 
     /**
-     * Set Pass true to receive only expiring subscriptions for which there are no enough Telegram Stars to extend
+     * Set Pass true to receive only expiring subscriptions for which there are no enough Telegram Stars to extend.
      */
     public function setOnlyExpiring(bool $onlyExpiring): self
     {
@@ -40,7 +40,7 @@ class GetStarSubscriptions extends StarSubscriptions implements \JsonSerializabl
     }
 
     /**
-     * Get Offset of the first subscription to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first subscription to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -48,7 +48,7 @@ class GetStarSubscriptions extends StarSubscriptions implements \JsonSerializabl
     }
 
     /**
-     * Set Offset of the first subscription to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first subscription to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {

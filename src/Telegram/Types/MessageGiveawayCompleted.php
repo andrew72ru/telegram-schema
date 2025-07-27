@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A giveaway without public winners has been completed for the chat
+ * A giveaway without public winners has been completed for the chat.
  */
 class MessageGiveawayCompleted extends MessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the message with the giveaway; can be 0 if the message was deleted
+     * Get Identifier of the message with the giveaway; can be 0 if the message was deleted.
      */
     public function getGiveawayMessageId(): int
     {
@@ -36,7 +36,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the message with the giveaway; can be 0 if the message was deleted
+     * Set Identifier of the message with the giveaway; can be 0 if the message was deleted.
      */
     public function setGiveawayMessageId(int $giveawayMessageId): self
     {
@@ -46,7 +46,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Number of winners in the giveaway
+     * Get Number of winners in the giveaway.
      */
     public function getWinnerCount(): int
     {
@@ -54,7 +54,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Number of winners in the giveaway
+     * Set Number of winners in the giveaway.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -64,7 +64,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get True, if the giveaway is a Telegram Star giveaway
+     * Get True, if the giveaway is a Telegram Star giveaway.
      */
     public function getIsStarGiveaway(): bool
     {
@@ -72,7 +72,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set True, if the giveaway is a Telegram Star giveaway
+     * Set True, if the giveaway is a Telegram Star giveaway.
      */
     public function setIsStarGiveaway(bool $isStarGiveaway): self
     {
@@ -82,7 +82,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Number of undistributed prizes; for Telegram Premium giveaways only
+     * Get Number of undistributed prizes; for Telegram Premium giveaways only.
      */
     public function getUnclaimedPrizeCount(): int
     {
@@ -90,7 +90,7 @@ class MessageGiveawayCompleted extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Number of undistributed prizes; for Telegram Premium giveaways only
+     * Set Number of undistributed prizes; for Telegram Premium giveaways only.
      */
     public function setUnclaimedPrizeCount(int $unclaimedPrizeCount): self
     {

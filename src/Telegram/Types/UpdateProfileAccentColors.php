@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of supported accent colors for user profiles has changed
+ * The list of supported accent colors for user profiles has changed.
  */
 class UpdateProfileAccentColors extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateProfileAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Information about supported colors
+     * Get Information about supported colors.
      */
     public function getColors(): array|null
     {
@@ -30,7 +30,7 @@ class UpdateProfileAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Information about supported colors
+     * Set Information about supported colors.
      */
     public function setColors(array|null $colors): self
     {
@@ -40,7 +40,7 @@ class UpdateProfileAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specified order
+     * Get The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specified order.
      */
     public function getAvailableAccentColorIds(): array|null
     {
@@ -48,7 +48,7 @@ class UpdateProfileAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specified order
+     * Set The list of accent color identifiers, which can be set through setProfileAccentColor and setChatProfileAccentColor. The colors must be shown in the specified order.
      */
     public function setAvailableAccentColorIds(array|null $availableAccentColorIds): self
     {

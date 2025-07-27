@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Used to search for supergroup or channel members via a (string) query @query Query to search for
+ * Used to search for supergroup or channel members via a (string) query @query Query to search for.
  */
 class SupergroupMembersFilterSearch extends SupergroupMembersFilter implements \JsonSerializable
 {

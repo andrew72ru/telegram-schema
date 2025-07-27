@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Resends an authentication code to the user. Works only when the current authorization state is authorizationStateWaitCode, the next_code_type of the result is not null
+ * Resends an authentication code to the user. Works only when the current authorization state is authorizationStateWaitCode, the next_code_type of the result is not null.
  */
 class ResendAuthenticationCode extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ResendAuthenticationCode extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Reason of code resending; pass null if unknown
+     * Get Reason of code resending; pass null if unknown.
      */
     public function getReason(): ResendCodeReason|null
     {
@@ -27,7 +27,7 @@ class ResendAuthenticationCode extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Reason of code resending; pass null if unknown
+     * Set Reason of code resending; pass null if unknown.
      */
     public function setReason(ResendCodeReason|null $reason): self
     {

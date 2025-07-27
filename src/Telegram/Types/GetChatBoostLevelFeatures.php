@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of features available on the specific chat boost level. This is an offline method
+ * Returns the list of features available on the specific chat boost level. This is an offline method.
  */
 class GetChatBoostLevelFeatures extends ChatBoostLevelFeatures implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChatBoostLevelFeatures extends ChatBoostLevelFeatures implements \JsonS
     }
 
     /**
-     * Get Pass true to get the list of features for channels; pass false to get the list of features for supergroups
+     * Get Pass true to get the list of features for channels; pass false to get the list of features for supergroups.
      */
     public function getIsChannel(): bool
     {
@@ -30,7 +30,7 @@ class GetChatBoostLevelFeatures extends ChatBoostLevelFeatures implements \JsonS
     }
 
     /**
-     * Set Pass true to get the list of features for channels; pass false to get the list of features for supergroups
+     * Set Pass true to get the list of features for channels; pass false to get the list of features for supergroups.
      */
     public function setIsChannel(bool $isChannel): self
     {
@@ -40,7 +40,7 @@ class GetChatBoostLevelFeatures extends ChatBoostLevelFeatures implements \JsonS
     }
 
     /**
-     * Get Chat boost level
+     * Get Chat boost level.
      */
     public function getLevel(): int
     {
@@ -48,7 +48,7 @@ class GetChatBoostLevelFeatures extends ChatBoostLevelFeatures implements \JsonS
     }
 
     /**
-     * Set Chat boost level
+     * Set Chat boost level.
      */
     public function setLevel(int $level): self
     {

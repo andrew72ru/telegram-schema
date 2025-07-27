@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The chat contains copyrighted content
+ * The chat contains copyrighted content.
  */
 class ReportReasonCopyright extends ReportReason implements \JsonSerializable
 {

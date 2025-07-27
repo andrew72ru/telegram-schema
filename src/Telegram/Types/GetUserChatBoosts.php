@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of boosts applied to a chat by a given user; requires administrator rights in the chat; for bots only
+ * Returns the list of boosts applied to a chat by a given user; requires administrator rights in the chat; for bots only.
  */
 class GetUserChatBoosts extends FoundChatBoosts implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetUserChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetUserChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetUserChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user
+     * Get Identifier of the user.
      */
     public function getUserId(): int
     {
@@ -48,7 +48,7 @@ class GetUserChatBoosts extends FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user
+     * Set Identifier of the user.
      */
     public function setUserId(int $userId): self
     {

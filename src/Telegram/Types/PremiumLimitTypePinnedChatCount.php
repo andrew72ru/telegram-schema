@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The maximum number of pinned chats in the main chat list
+ * The maximum number of pinned chats in the main chat list.
  */
 class PremiumLimitTypePinnedChatCount extends PremiumLimitType implements \JsonSerializable
 {

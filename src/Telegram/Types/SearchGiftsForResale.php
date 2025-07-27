@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns upgraded gifts that can be bought from other owners
+ * Returns upgraded gifts that can be bought from other owners.
  */
 class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the regular gift that was upgraded to a unique gift
+     * Get Identifier of the regular gift that was upgraded to a unique gift.
      */
     public function getGiftId(): int
     {
@@ -39,7 +39,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the regular gift that was upgraded to a unique gift
+     * Set Identifier of the regular gift that was upgraded to a unique gift.
      */
     public function setGiftId(int $giftId): self
     {
@@ -49,7 +49,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Order in which the results will be sorted
+     * Get Order in which the results will be sorted.
      */
     public function getOrder(): GiftForResaleOrder|null
     {
@@ -57,7 +57,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Order in which the results will be sorted
+     * Set Order in which the results will be sorted.
      */
     public function setOrder(GiftForResaleOrder|null $order): self
     {
@@ -67,7 +67,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Attributes used to filter received gifts. If multiple attributes of the same type are specified, then all of them are allowed.
+     * Get Attributes used to filter received gifts. If multiple attributes of the same type are specified, then all of them are allowed..
      */
     public function getAttributes(): array|null
     {
@@ -75,7 +75,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Attributes used to filter received gifts. If multiple attributes of the same type are specified, then all of them are allowed.
+     * Set Attributes used to filter received gifts. If multiple attributes of the same type are specified, then all of them are allowed..
      */
     public function setAttributes(array|null $attributes): self
     {
@@ -85,7 +85,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request with the same order and attributes; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request with the same order and attributes; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -93,7 +93,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request with the same order and attributes; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request with the same order and attributes; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -103,7 +103,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of gifts to return
+     * Get The maximum number of gifts to return.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class SearchGiftsForResale extends GiftsForResale implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of gifts to return
+     * Set The maximum number of gifts to return.
      */
     public function setLimit(int $limit): self
     {

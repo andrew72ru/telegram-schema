@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An audio message
+ * An audio message.
  */
 class InputMessageAudio extends InputMessageContent implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Audio file to be sent
+     * Get Audio file to be sent.
      */
     public function getAudio(): InputFile|null
     {
@@ -42,7 +42,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Audio file to be sent
+     * Set Audio file to be sent.
      */
     public function setAudio(InputFile|null $audio): self
     {
@@ -52,7 +52,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail of the cover for the album; pass null to skip thumbnail uploading
+     * Get Thumbnail of the cover for the album; pass null to skip thumbnail uploading.
      */
     public function getAlbumCoverThumbnail(): InputThumbnail|null
     {
@@ -60,7 +60,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail of the cover for the album; pass null to skip thumbnail uploading
+     * Set Thumbnail of the cover for the album; pass null to skip thumbnail uploading.
      */
     public function setAlbumCoverThumbnail(InputThumbnail|null $albumCoverThumbnail): self
     {
@@ -70,7 +70,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the audio, in seconds; may be replaced by the server
+     * Get Duration of the audio, in seconds; may be replaced by the server.
      */
     public function getDuration(): int
     {
@@ -78,7 +78,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the audio, in seconds; may be replaced by the server
+     * Set Duration of the audio, in seconds; may be replaced by the server.
      */
     public function setDuration(int $duration): self
     {
@@ -88,7 +88,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Title of the audio; 0-64 characters; may be replaced by the server
+     * Get Title of the audio; 0-64 characters; may be replaced by the server.
      */
     public function getTitle(): string
     {
@@ -96,7 +96,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Title of the audio; 0-64 characters; may be replaced by the server
+     * Set Title of the audio; 0-64 characters; may be replaced by the server.
      */
     public function setTitle(string $title): self
     {
@@ -106,7 +106,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Performer of the audio; 0-64 characters, may be replaced by the server
+     * Get Performer of the audio; 0-64 characters, may be replaced by the server.
      */
     public function getPerformer(): string
     {
@@ -114,7 +114,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Performer of the audio; 0-64 characters, may be replaced by the server
+     * Set Performer of the audio; 0-64 characters, may be replaced by the server.
      */
     public function setPerformer(string $performer): self
     {
@@ -124,7 +124,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Audio caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Audio caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -132,7 +132,7 @@ class InputMessageAudio extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Audio caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Audio caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {

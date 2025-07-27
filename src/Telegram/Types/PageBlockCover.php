@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A page cover
+ * A page cover.
  */
 class PageBlockCover extends PageBlock implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class PageBlockCover extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Cover
+     * Get Cover.
      */
     public function getCover(): PageBlock|null
     {
@@ -27,7 +27,7 @@ class PageBlockCover extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Cover
+     * Set Cover.
      */
     public function setCover(PageBlock|null $cover): self
     {

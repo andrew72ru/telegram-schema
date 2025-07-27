@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains basic information about the photo of a chat
+ * Contains basic information about the photo of a chat.
  */
 class ChatPhotoInfo implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Get A small (160x160) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed
+     * Get A small (160x160) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed.
      */
     public function getSmall(): File|null
     {
@@ -39,7 +39,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Set A small (160x160) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed
+     * Set A small (160x160) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed.
      */
     public function setSmall(File|null $small): self
     {
@@ -49,7 +49,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Get A big (640x640) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed
+     * Get A big (640x640) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed.
      */
     public function getBig(): File|null
     {
@@ -57,7 +57,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Set A big (640x640) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed
+     * Set A big (640x640) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed.
      */
     public function setBig(File|null $big): self
     {
@@ -67,7 +67,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat photo minithumbnail; may be null
+     * Get Chat photo minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -75,7 +75,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat photo minithumbnail; may be null
+     * Set Chat photo minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -85,7 +85,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo has animated variant
+     * Get True, if the photo has animated variant.
      */
     public function getHasAnimation(): bool
     {
@@ -93,7 +93,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo has animated variant
+     * Set True, if the photo has animated variant.
      */
     public function setHasAnimation(bool $hasAnimation): self
     {
@@ -103,7 +103,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo is visible only for the current user
+     * Get True, if the photo is visible only for the current user.
      */
     public function getIsPersonal(): bool
     {
@@ -111,7 +111,7 @@ class ChatPhotoInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo is visible only for the current user
+     * Set True, if the photo is visible only for the current user.
      */
     public function setIsPersonal(bool $isPersonal): self
     {

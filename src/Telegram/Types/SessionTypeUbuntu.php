@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The session is running on an Ubuntu device
+ * The session is running on an Ubuntu device.
  */
 class SessionTypeUbuntu extends SessionType implements \JsonSerializable
 {

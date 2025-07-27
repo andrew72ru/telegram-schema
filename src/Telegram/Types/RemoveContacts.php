@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes users from the contact list @user_ids Identifiers of users to be deleted
+ * Removes users from the contact list @user_ids Identifiers of users to be deleted.
  */
 class RemoveContacts extends Ok implements \JsonSerializable
 {

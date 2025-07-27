@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents the result of an importContacts request
+ * Represents the result of an importContacts request.
  */
 class ImportedContacts implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ImportedContacts implements \JsonSerializable
     }
 
     /**
-     * Get User identifiers of the imported contacts in the same order as they were specified in the request; 0 if the contact is not yet a registered user
+     * Get User identifiers of the imported contacts in the same order as they were specified in the request; 0 if the contact is not yet a registered user.
      */
     public function getUserIds(): array|null
     {
@@ -30,7 +30,7 @@ class ImportedContacts implements \JsonSerializable
     }
 
     /**
-     * Set User identifiers of the imported contacts in the same order as they were specified in the request; 0 if the contact is not yet a registered user
+     * Set User identifiers of the imported contacts in the same order as they were specified in the request; 0 if the contact is not yet a registered user.
      */
     public function setUserIds(array|null $userIds): self
     {
@@ -40,7 +40,7 @@ class ImportedContacts implements \JsonSerializable
     }
 
     /**
-     * Get The number of users that imported the corresponding contact; 0 for already registered users or if unavailable
+     * Get The number of users that imported the corresponding contact; 0 for already registered users or if unavailable.
      */
     public function getImporterCount(): array|null
     {
@@ -48,7 +48,7 @@ class ImportedContacts implements \JsonSerializable
     }
 
     /**
-     * Set The number of users that imported the corresponding contact; 0 for already registered users or if unavailable
+     * Set The number of users that imported the corresponding contact; 0 for already registered users or if unavailable.
      */
     public function setImporterCount(array|null $importerCount): self
     {

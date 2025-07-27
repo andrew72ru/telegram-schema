@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of options for buying Telegram Stars @options The list of options
+ * Contains a list of options for buying Telegram Stars @options The list of options.
  */
 class StarPaymentOptions implements \JsonSerializable
 {

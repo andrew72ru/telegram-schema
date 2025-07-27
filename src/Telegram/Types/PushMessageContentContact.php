@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a user contact @name Contact's name @is_pinned True, if the message is a pinned message with the specified content
+ * A message with a user contact @name Contact's name @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentContact extends PushMessageContent implements \JsonSerializable
 {

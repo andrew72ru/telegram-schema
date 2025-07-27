@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user authorization state has changed @authorization_state New authorization state
+ * The user authorization state has changed @authorization_state New authorization state.
  */
 class UpdateAuthorizationState extends Update implements \JsonSerializable
 {

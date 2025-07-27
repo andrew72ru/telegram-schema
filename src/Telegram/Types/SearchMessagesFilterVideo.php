@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns only video messages
+ * Returns only video messages.
  */
 class SearchMessagesFilterVideo extends SearchMessagesFilter implements \JsonSerializable
 {

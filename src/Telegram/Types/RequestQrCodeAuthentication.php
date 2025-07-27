@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Requests QR code authentication by scanning a QR code on another logged in device. Works only when the current authorization state is authorizationStateWaitPhoneNumber,
+ * Requests QR code authentication by scanning a QR code on another logged in device. Works only when the current authorization state is authorizationStateWaitPhoneNumber,.
  */
 class RequestQrCodeAuthentication extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class RequestQrCodeAuthentication extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get List of user identifiers of other users currently using the application
+     * Get List of user identifiers of other users currently using the application.
      */
     public function getOtherUserIds(): array|null
     {
@@ -27,7 +27,7 @@ class RequestQrCodeAuthentication extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set List of user identifiers of other users currently using the application
+     * Set List of user identifiers of other users currently using the application.
      */
     public function setOtherUserIds(array|null $otherUserIds): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the marked as unread state of the topic in a channel direct messages chat administered by the current user
+ * Changes the marked as unread state of the topic in a channel direct messages chat administered by the current user.
  */
 class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSeri
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSeri
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSeri
     }
 
     /**
-     * Get Topic identifier
+     * Get Topic identifier.
      */
     public function getTopicId(): int
     {
@@ -51,7 +51,7 @@ class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSeri
     }
 
     /**
-     * Set Topic identifier
+     * Set Topic identifier.
      */
     public function setTopicId(int $topicId): self
     {
@@ -61,7 +61,7 @@ class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSeri
     }
 
     /**
-     * Get New value of is_marked_as_unread
+     * Get New value of is_marked_as_unread.
      */
     public function getIsMarkedAsUnread(): bool
     {
@@ -69,7 +69,7 @@ class SetDirectMessagesChatTopicIsMarkedAsUnread extends Ok implements \JsonSeri
     }
 
     /**
-     * Set New value of is_marked_as_unread
+     * Set New value of is_marked_as_unread.
      */
     public function setIsMarkedAsUnread(bool $isMarkedAsUnread): self
     {

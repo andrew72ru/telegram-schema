@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains parameters of the application theme
+ * Contains parameters of the application theme.
  */
 class ThemeParameters implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the background in the RGB format
+     * Get A color of the background in the RGB format.
      */
     public function getBackgroundColor(): int
     {
@@ -69,7 +69,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the background in the RGB format
+     * Set A color of the background in the RGB format.
      */
     public function setBackgroundColor(int $backgroundColor): self
     {
@@ -79,7 +79,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A secondary color for the background in the RGB format
+     * Get A secondary color for the background in the RGB format.
      */
     public function getSecondaryBackgroundColor(): int
     {
@@ -87,7 +87,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A secondary color for the background in the RGB format
+     * Set A secondary color for the background in the RGB format.
      */
     public function setSecondaryBackgroundColor(int $secondaryBackgroundColor): self
     {
@@ -97,7 +97,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the header background in the RGB format
+     * Get A color of the header background in the RGB format.
      */
     public function getHeaderBackgroundColor(): int
     {
@@ -105,7 +105,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the header background in the RGB format
+     * Set A color of the header background in the RGB format.
      */
     public function setHeaderBackgroundColor(int $headerBackgroundColor): self
     {
@@ -115,7 +115,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the bottom bar background in the RGB format
+     * Get A color of the bottom bar background in the RGB format.
      */
     public function getBottomBarBackgroundColor(): int
     {
@@ -123,7 +123,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the bottom bar background in the RGB format
+     * Set A color of the bottom bar background in the RGB format.
      */
     public function setBottomBarBackgroundColor(int $bottomBarBackgroundColor): self
     {
@@ -133,7 +133,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the section background in the RGB format
+     * Get A color of the section background in the RGB format.
      */
     public function getSectionBackgroundColor(): int
     {
@@ -141,7 +141,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the section background in the RGB format
+     * Set A color of the section background in the RGB format.
      */
     public function setSectionBackgroundColor(int $sectionBackgroundColor): self
     {
@@ -151,7 +151,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the section separator in the RGB format
+     * Get A color of the section separator in the RGB format.
      */
     public function getSectionSeparatorColor(): int
     {
@@ -159,7 +159,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the section separator in the RGB format
+     * Set A color of the section separator in the RGB format.
      */
     public function setSectionSeparatorColor(int $sectionSeparatorColor): self
     {
@@ -169,7 +169,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of text in the RGB format
+     * Get A color of text in the RGB format.
      */
     public function getTextColor(): int
     {
@@ -177,7 +177,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of text in the RGB format
+     * Set A color of text in the RGB format.
      */
     public function setTextColor(int $textColor): self
     {
@@ -187,7 +187,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get An accent color of the text in the RGB format
+     * Get An accent color of the text in the RGB format.
      */
     public function getAccentTextColor(): int
     {
@@ -195,7 +195,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set An accent color of the text in the RGB format
+     * Set An accent color of the text in the RGB format.
      */
     public function setAccentTextColor(int $accentTextColor): self
     {
@@ -205,7 +205,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of text on the section headers in the RGB format
+     * Get A color of text on the section headers in the RGB format.
      */
     public function getSectionHeaderTextColor(): int
     {
@@ -213,7 +213,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of text on the section headers in the RGB format
+     * Set A color of text on the section headers in the RGB format.
      */
     public function setSectionHeaderTextColor(int $sectionHeaderTextColor): self
     {
@@ -223,7 +223,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the subtitle text in the RGB format
+     * Get A color of the subtitle text in the RGB format.
      */
     public function getSubtitleTextColor(): int
     {
@@ -231,7 +231,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the subtitle text in the RGB format
+     * Set A color of the subtitle text in the RGB format.
      */
     public function setSubtitleTextColor(int $subtitleTextColor): self
     {
@@ -241,7 +241,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the text for destructive actions in the RGB format
+     * Get A color of the text for destructive actions in the RGB format.
      */
     public function getDestructiveTextColor(): int
     {
@@ -249,7 +249,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the text for destructive actions in the RGB format
+     * Set A color of the text for destructive actions in the RGB format.
      */
     public function setDestructiveTextColor(int $destructiveTextColor): self
     {
@@ -259,7 +259,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of hints in the RGB format
+     * Get A color of hints in the RGB format.
      */
     public function getHintColor(): int
     {
@@ -267,7 +267,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of hints in the RGB format
+     * Set A color of hints in the RGB format.
      */
     public function setHintColor(int $hintColor): self
     {
@@ -277,7 +277,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of links in the RGB format
+     * Get A color of links in the RGB format.
      */
     public function getLinkColor(): int
     {
@@ -285,7 +285,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of links in the RGB format
+     * Set A color of links in the RGB format.
      */
     public function setLinkColor(int $linkColor): self
     {
@@ -295,7 +295,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of the buttons in the RGB format
+     * Get A color of the buttons in the RGB format.
      */
     public function getButtonColor(): int
     {
@@ -303,7 +303,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of the buttons in the RGB format
+     * Set A color of the buttons in the RGB format.
      */
     public function setButtonColor(int $buttonColor): self
     {
@@ -313,7 +313,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Get A color of text on the buttons in the RGB format
+     * Get A color of text on the buttons in the RGB format.
      */
     public function getButtonTextColor(): int
     {
@@ -321,7 +321,7 @@ class ThemeParameters implements \JsonSerializable
     }
 
     /**
-     * Set A color of text on the buttons in the RGB format
+     * Set A color of text on the buttons in the RGB format.
      */
     public function setButtonTextColor(int $buttonTextColor): self
     {

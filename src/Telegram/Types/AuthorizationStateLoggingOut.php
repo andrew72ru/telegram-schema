@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The user is currently logging out
+ * The user is currently logging out.
  */
 class AuthorizationStateLoggingOut extends AuthorizationState implements \JsonSerializable
 {

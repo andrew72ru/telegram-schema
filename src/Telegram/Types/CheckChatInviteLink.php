@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks the validity of an invite link for a chat and returns information about the corresponding chat @invite_link Invite link to be checked
+ * Checks the validity of an invite link for a chat and returns information about the corresponding chat @invite_link Invite link to be checked.
  */
 class CheckChatInviteLink extends ChatInviteLinkInfo implements \JsonSerializable
 {

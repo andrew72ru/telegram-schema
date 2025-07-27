@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes position of a clickable rectangle area on a story media
+ * Describes position of a clickable rectangle area on a story media.
  */
 class StoryAreaPosition implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Get The abscissa of the rectangle's center, as a percentage of the media width
+     * Get The abscissa of the rectangle's center, as a percentage of the media width.
      */
     public function getXPercentage(): float
     {
@@ -42,7 +42,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Set The abscissa of the rectangle's center, as a percentage of the media width
+     * Set The abscissa of the rectangle's center, as a percentage of the media width.
      */
     public function setXPercentage(float $xPercentage): self
     {
@@ -52,7 +52,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Get The ordinate of the rectangle's center, as a percentage of the media height
+     * Get The ordinate of the rectangle's center, as a percentage of the media height.
      */
     public function getYPercentage(): float
     {
@@ -60,7 +60,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Set The ordinate of the rectangle's center, as a percentage of the media height
+     * Set The ordinate of the rectangle's center, as a percentage of the media height.
      */
     public function setYPercentage(float $yPercentage): self
     {
@@ -70,7 +70,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Get The width of the rectangle, as a percentage of the media width
+     * Get The width of the rectangle, as a percentage of the media width.
      */
     public function getWidthPercentage(): float
     {
@@ -78,7 +78,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Set The width of the rectangle, as a percentage of the media width
+     * Set The width of the rectangle, as a percentage of the media width.
      */
     public function setWidthPercentage(float $widthPercentage): self
     {
@@ -88,7 +88,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Get The height of the rectangle, as a percentage of the media height
+     * Get The height of the rectangle, as a percentage of the media height.
      */
     public function getHeightPercentage(): float
     {
@@ -96,7 +96,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Set The height of the rectangle, as a percentage of the media height
+     * Set The height of the rectangle, as a percentage of the media height.
      */
     public function setHeightPercentage(float $heightPercentage): self
     {
@@ -106,7 +106,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Get Clockwise rotation angle of the rectangle, in degrees; 0-360
+     * Get Clockwise rotation angle of the rectangle, in degrees; 0-360.
      */
     public function getRotationAngle(): float
     {
@@ -114,7 +114,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Set Clockwise rotation angle of the rectangle, in degrees; 0-360
+     * Set Clockwise rotation angle of the rectangle, in degrees; 0-360.
      */
     public function setRotationAngle(float $rotationAngle): self
     {
@@ -124,7 +124,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Get The radius of the rectangle corner rounding, as a percentage of the media width
+     * Get The radius of the rectangle corner rounding, as a percentage of the media width.
      */
     public function getCornerRadiusPercentage(): float
     {
@@ -132,7 +132,7 @@ class StoryAreaPosition implements \JsonSerializable
     }
 
     /**
-     * Set The radius of the rectangle corner rounding, as a percentage of the media width
+     * Set The radius of the rectangle corner rounding, as a percentage of the media width.
      */
     public function setCornerRadiusPercentage(float $cornerRadiusPercentage): self
     {

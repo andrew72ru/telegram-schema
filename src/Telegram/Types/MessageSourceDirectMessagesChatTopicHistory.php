@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The message is from history of a topic in a channel direct messages chat administered by the current user
+ * The message is from history of a topic in a channel direct messages chat administered by the current user.
  */
 class MessageSourceDirectMessagesChatTopicHistory extends MessageSource implements \JsonSerializable
 {

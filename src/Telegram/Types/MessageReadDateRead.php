@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains read date of the message @read_date Point in time (Unix timestamp) when the message was read by the other user
+ * Contains read date of the message @read_date Point in time (Unix timestamp) when the message was read by the other user.
  */
 class MessageReadDateRead extends MessageReadDate implements \JsonSerializable
 {

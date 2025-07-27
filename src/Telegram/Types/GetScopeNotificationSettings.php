@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the notification settings for chats of a given type @scope Types of chats for which to return the notification settings information
+ * Returns the notification settings for chats of a given type @scope Types of chats for which to return the notification settings information.
  */
 class GetScopeNotificationSettings extends ScopeNotificationSettings implements \JsonSerializable
 {

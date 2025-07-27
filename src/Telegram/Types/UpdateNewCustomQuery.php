@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming query; for bots only @id The query identifier @data JSON-serialized query data @timeout Query timeout
+ * A new incoming query; for bots only @id The query identifier @data JSON-serialized query data @timeout Query timeout.
  */
 class UpdateNewCustomQuery extends Update implements \JsonSerializable
 {

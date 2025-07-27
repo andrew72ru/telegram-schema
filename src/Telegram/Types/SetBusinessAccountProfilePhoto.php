@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes a profile photo of a business account; for bots only
+ * Changes a profile photo of a business account; for bots only.
  */
 class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -33,7 +33,7 @@ class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -43,7 +43,7 @@ class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Profile photo to set; pass null to remove the photo
+     * Get Profile photo to set; pass null to remove the photo.
      */
     public function getPhoto(): InputChatPhoto|null
     {
@@ -51,7 +51,7 @@ class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Profile photo to set; pass null to remove the photo
+     * Set Profile photo to set; pass null to remove the photo.
      */
     public function setPhoto(InputChatPhoto|null $photo): self
     {
@@ -61,7 +61,7 @@ class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings
+     * Get Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings.
      */
     public function getIsPublic(): bool
     {
@@ -69,7 +69,7 @@ class SetBusinessAccountProfilePhoto extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings
+     * Set Pass true to set the public photo, which will be visible even if the main photo is hidden by privacy settings.
      */
     public function setIsPublic(bool $isPublic): self
     {

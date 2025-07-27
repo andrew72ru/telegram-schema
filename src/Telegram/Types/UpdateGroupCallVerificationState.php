@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The verification state of an encrypted group call has changed; for group calls not bound to a chat only
+ * The verification state of an encrypted group call has changed; for group calls not bound to a chat only.
  */
 class UpdateGroupCallVerificationState extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateGroupCallVerificationState extends Update implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the group call
+     * Get Identifier of the group call.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class UpdateGroupCallVerificationState extends Update implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the group call
+     * Set Identifier of the group call.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class UpdateGroupCallVerificationState extends Update implements \JsonSerializab
     }
 
     /**
-     * Get The call state generation to which the emoji corresponds. If generation is different for two users, then their emoji may be also different
+     * Get The call state generation to which the emoji corresponds. If generation is different for two users, then their emoji may be also different.
      */
     public function getGeneration(): int
     {
@@ -51,7 +51,7 @@ class UpdateGroupCallVerificationState extends Update implements \JsonSerializab
     }
 
     /**
-     * Set The call state generation to which the emoji corresponds. If generation is different for two users, then their emoji may be also different
+     * Set The call state generation to which the emoji corresponds. If generation is different for two users, then their emoji may be also different.
      */
     public function setGeneration(int $generation): self
     {
@@ -61,7 +61,7 @@ class UpdateGroupCallVerificationState extends Update implements \JsonSerializab
     }
 
     /**
-     * Get Group call state fingerprint represented as 4 emoji; may be empty if the state isn't verified yet
+     * Get Group call state fingerprint represented as 4 emoji; may be empty if the state isn't verified yet.
      */
     public function getEmojis(): array|null
     {
@@ -69,7 +69,7 @@ class UpdateGroupCallVerificationState extends Update implements \JsonSerializab
     }
 
     /**
-     * Set Group call state fingerprint represented as 4 emoji; may be empty if the state isn't verified yet
+     * Set Group call state fingerprint represented as 4 emoji; may be empty if the state isn't verified yet.
      */
     public function setEmojis(array|null $emojis): self
     {

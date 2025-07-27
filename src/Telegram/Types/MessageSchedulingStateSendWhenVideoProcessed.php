@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message will be sent when the video in the message is converted and optimized; can be used only by the server
+ * The message will be sent when the video in the message is converted and optimized; can be used only by the server.
  */
 class MessageSchedulingStateSendWhenVideoProcessed extends MessageSchedulingState implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class MessageSchedulingStateSendWhenVideoProcessed extends MessageSchedulingStat
     }
 
     /**
-     * Get Approximate point in time (Unix timestamp) when the message is expected to be sent
+     * Get Approximate point in time (Unix timestamp) when the message is expected to be sent.
      */
     public function getSendDate(): int
     {
@@ -27,7 +27,7 @@ class MessageSchedulingStateSendWhenVideoProcessed extends MessageSchedulingStat
     }
 
     /**
-     * Set Approximate point in time (Unix timestamp) when the message is expected to be sent
+     * Set Approximate point in time (Unix timestamp) when the message is expected to be sent.
      */
     public function setSendDate(int $sendDate): self
     {

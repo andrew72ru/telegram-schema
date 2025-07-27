@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of media previews of a bot for the given language and the list of languages for which the bot has dedicated previews
+ * Contains a list of media previews of a bot for the given language and the list of languages for which the bot has dedicated previews.
  */
 class BotMediaPreviewInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BotMediaPreviewInfo implements \JsonSerializable
     }
 
     /**
-     * Get List of media previews
+     * Get List of media previews.
      */
     public function getPreviews(): array|null
     {
@@ -30,7 +30,7 @@ class BotMediaPreviewInfo implements \JsonSerializable
     }
 
     /**
-     * Set List of media previews
+     * Set List of media previews.
      */
     public function setPreviews(array|null $previews): self
     {
@@ -40,7 +40,7 @@ class BotMediaPreviewInfo implements \JsonSerializable
     }
 
     /**
-     * Get List of language codes for which the bot has dedicated previews
+     * Get List of language codes for which the bot has dedicated previews.
      */
     public function getLanguageCodes(): array|null
     {
@@ -48,7 +48,7 @@ class BotMediaPreviewInfo implements \JsonSerializable
     }
 
     /**
-     * Set List of language codes for which the bot has dedicated previews
+     * Set List of language codes for which the bot has dedicated previews.
      */
     public function setLanguageCodes(array|null $languageCodes): self
     {

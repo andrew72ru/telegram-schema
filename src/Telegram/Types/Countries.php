@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about countries @countries The list of countries
+ * Contains information about countries @countries The list of countries.
  */
 class Countries implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a single member of a chat @chat_id Chat identifier @member_id Member identifier
+ * Returns information about a single member of a chat @chat_id Chat identifier @member_id Member identifier.
  */
 class GetChatMember extends ChatMember implements \JsonSerializable
 {

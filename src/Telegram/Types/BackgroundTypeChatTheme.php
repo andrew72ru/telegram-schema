@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A background from a chat theme; can be used only as a chat background in channels @theme_name Name of the chat theme
+ * A background from a chat theme; can be used only as a chat background in channels @theme_name Name of the chat theme.
  */
 class BackgroundTypeChatTheme extends BackgroundType implements \JsonSerializable
 {

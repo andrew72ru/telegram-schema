@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a video note message @video_note The video note
+ * The link is a link to a video note message @video_note The video note.
  */
 class LinkPreviewTypeVideoNote extends LinkPreviewType implements \JsonSerializable
 {

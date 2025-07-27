@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a filled-out payment form to the bot for final verification
+ * Sends a filled-out payment form to the bot for final verification.
  */
 class SendPaymentForm extends PaymentResult implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Get The invoice
+     * Get The invoice.
      */
     public function getInputInvoice(): InputInvoice|null
     {
@@ -42,7 +42,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Set The invoice
+     * Set The invoice.
      */
     public function setInputInvoice(InputInvoice|null $inputInvoice): self
     {
@@ -52,7 +52,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Get Payment form identifier returned by getPaymentForm
+     * Get Payment form identifier returned by getPaymentForm.
      */
     public function getPaymentFormId(): int
     {
@@ -60,7 +60,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Set Payment form identifier returned by getPaymentForm
+     * Set Payment form identifier returned by getPaymentForm.
      */
     public function setPaymentFormId(int $paymentFormId): self
     {
@@ -70,7 +70,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Get Identifier returned by validateOrderInfo, or an empty string
+     * Get Identifier returned by validateOrderInfo, or an empty string.
      */
     public function getOrderInfoId(): string
     {
@@ -78,7 +78,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Set Identifier returned by validateOrderInfo, or an empty string
+     * Set Identifier returned by validateOrderInfo, or an empty string.
      */
     public function setOrderInfoId(string $orderInfoId): self
     {
@@ -88,7 +88,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chosen shipping option, if applicable
+     * Get Identifier of a chosen shipping option, if applicable.
      */
     public function getShippingOptionId(): string
     {
@@ -96,7 +96,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chosen shipping option, if applicable
+     * Set Identifier of a chosen shipping option, if applicable.
      */
     public function setShippingOptionId(string $shippingOptionId): self
     {
@@ -106,7 +106,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Get The credentials chosen by user for payment; pass null for a payment in Telegram Stars
+     * Get The credentials chosen by user for payment; pass null for a payment in Telegram Stars.
      */
     public function getCredentials(): InputCredentials|null
     {
@@ -114,7 +114,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Set The credentials chosen by user for payment; pass null for a payment in Telegram Stars
+     * Set The credentials chosen by user for payment; pass null for a payment in Telegram Stars.
      */
     public function setCredentials(InputCredentials|null $credentials): self
     {
@@ -124,7 +124,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Get Chosen by the user amount of tip in the smallest units of the currency
+     * Get Chosen by the user amount of tip in the smallest units of the currency.
      */
     public function getTipAmount(): int
     {
@@ -132,7 +132,7 @@ class SendPaymentForm extends PaymentResult implements \JsonSerializable
     }
 
     /**
-     * Set Chosen by the user amount of tip in the smallest units of the currency
+     * Set Chosen by the user amount of tip in the smallest units of the currency.
      */
     public function setTipAmount(int $tipAmount): self
     {

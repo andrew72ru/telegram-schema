@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Identifier of a gift model @sticker_id Identifier of the sticker representing the model
+ * Identifier of a gift model @sticker_id Identifier of the sticker representing the model.
  */
 class UpgradedGiftAttributeIdModel extends UpgradedGiftAttributeId implements \JsonSerializable
 {

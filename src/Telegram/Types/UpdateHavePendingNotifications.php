@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes whether there are some pending notification updates. Can be used to prevent application from killing, while there are some pending notifications
+ * Describes whether there are some pending notification updates. Can be used to prevent application from killing, while there are some pending notifications.
  */
 class UpdateHavePendingNotifications extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateHavePendingNotifications extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if there are some delayed notification updates, which will be sent soon
+     * Get True, if there are some delayed notification updates, which will be sent soon.
      */
     public function getHaveDelayedNotifications(): bool
     {
@@ -30,7 +30,7 @@ class UpdateHavePendingNotifications extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if there are some delayed notification updates, which will be sent soon
+     * Set True, if there are some delayed notification updates, which will be sent soon.
      */
     public function setHaveDelayedNotifications(bool $haveDelayedNotifications): self
     {
@@ -40,7 +40,7 @@ class UpdateHavePendingNotifications extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if there can be some yet unreceived notifications, which are being fetched from the server
+     * Get True, if there can be some yet unreceived notifications, which are being fetched from the server.
      */
     public function getHaveUnreceivedNotifications(): bool
     {
@@ -48,7 +48,7 @@ class UpdateHavePendingNotifications extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if there can be some yet unreceived notifications, which are being fetched from the server
+     * Set True, if there can be some yet unreceived notifications, which are being fetched from the server.
      */
     public function setHaveUnreceivedNotifications(bool $haveUnreceivedNotifications): self
     {

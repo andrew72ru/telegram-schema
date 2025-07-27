@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A point on a Cartesian plane @x The point's first coordinate @y The point's second coordinate
+ * A point on a Cartesian plane @x The point's first coordinate @y The point's second coordinate.
  */
 class Point implements \JsonSerializable
 {

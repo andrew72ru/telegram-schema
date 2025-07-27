@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reactions added to a message with anonymous reactions have changed; for bots only
+ * Reactions added to a message with anonymous reactions have changed; for bots only.
  */
 class UpdateMessageReactions extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the reactions were changed
+     * Get Point in time (Unix timestamp) when the reactions were changed.
      */
     public function getDate(): int
     {
@@ -72,7 +72,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the reactions were changed
+     * Set Point in time (Unix timestamp) when the reactions were changed.
      */
     public function setDate(int $date): self
     {
@@ -82,7 +82,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The list of reactions added to the message
+     * Get The list of reactions added to the message.
      */
     public function getReactions(): array|null
     {
@@ -90,7 +90,7 @@ class UpdateMessageReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The list of reactions added to the message
+     * Set The list of reactions added to the message.
      */
     public function setReactions(array|null $reactions): self
     {

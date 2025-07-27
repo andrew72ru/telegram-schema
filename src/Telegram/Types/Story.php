@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a story
+ * Represents a story.
  */
 class Story implements \JsonSerializable
 {
@@ -88,7 +88,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Unique story identifier among stories posted by the given chat
+     * Get Unique story identifier among stories posted by the given chat.
      */
     public function getId(): int
     {
@@ -96,7 +96,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Unique story identifier among stories posted by the given chat
+     * Set Unique story identifier among stories posted by the given chat.
      */
     public function setId(int $id): self
     {
@@ -106,7 +106,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getPosterChatId(): int
     {
@@ -114,7 +114,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setPosterChatId(int $posterChatId): self
     {
@@ -124,7 +124,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or chat that posted the story; may be null if the story is posted on behalf of the poster_chat_id
+     * Get Identifier of the user or chat that posted the story; may be null if the story is posted on behalf of the poster_chat_id.
      */
     public function getPosterId(): MessageSender|null
     {
@@ -132,7 +132,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or chat that posted the story; may be null if the story is posted on behalf of the poster_chat_id
+     * Set Identifier of the user or chat that posted the story; may be null if the story is posted on behalf of the poster_chat_id.
      */
     public function setPosterId(MessageSender|null $posterId): self
     {
@@ -142,7 +142,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the story was published
+     * Get Point in time (Unix timestamp) when the story was published.
      */
     public function getDate(): int
     {
@@ -150,7 +150,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the story was published
+     * Set Point in time (Unix timestamp) when the story was published.
      */
     public function setDate(int $date): self
     {
@@ -160,7 +160,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story is being posted by the current user
+     * Get True, if the story is being posted by the current user.
      */
     public function getIsBeingPosted(): bool
     {
@@ -168,7 +168,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story is being posted by the current user
+     * Set True, if the story is being posted by the current user.
      */
     public function setIsBeingPosted(bool $isBeingPosted): self
     {
@@ -178,7 +178,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story is being edited by the current user
+     * Get True, if the story is being edited by the current user.
      */
     public function getIsBeingEdited(): bool
     {
@@ -186,7 +186,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story is being edited by the current user
+     * Set True, if the story is being edited by the current user.
      */
     public function setIsBeingEdited(bool $isBeingEdited): self
     {
@@ -196,7 +196,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story was edited
+     * Get True, if the story was edited.
      */
     public function getIsEdited(): bool
     {
@@ -204,7 +204,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story was edited
+     * Set True, if the story was edited.
      */
     public function setIsEdited(bool $isEdited): self
     {
@@ -214,7 +214,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story is saved in the profile of the chat that posted it and will be available there after expiration
+     * Get True, if the story is saved in the profile of the chat that posted it and will be available there after expiration.
      */
     public function getIsPostedToChatPage(): bool
     {
@@ -222,7 +222,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story is saved in the profile of the chat that posted it and will be available there after expiration
+     * Set True, if the story is saved in the profile of the chat that posted it and will be available there after expiration.
      */
     public function setIsPostedToChatPage(bool $isPostedToChatPage): self
     {
@@ -232,7 +232,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story is visible only for the current user
+     * Get True, if the story is visible only for the current user.
      */
     public function getIsVisibleOnlyForSelf(): bool
     {
@@ -240,7 +240,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story is visible only for the current user
+     * Set True, if the story is visible only for the current user.
      */
     public function setIsVisibleOnlyForSelf(bool $isVisibleOnlyForSelf): self
     {
@@ -250,7 +250,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story can be deleted
+     * Get True, if the story can be deleted.
      */
     public function getCanBeDeleted(): bool
     {
@@ -258,7 +258,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story can be deleted
+     * Set True, if the story can be deleted.
      */
     public function setCanBeDeleted(bool $canBeDeleted): self
     {
@@ -268,7 +268,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story can be edited
+     * Get True, if the story can be edited.
      */
     public function getCanBeEdited(): bool
     {
@@ -276,7 +276,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story can be edited
+     * Set True, if the story can be edited.
      */
     public function setCanBeEdited(bool $canBeEdited): self
     {
@@ -286,7 +286,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story can be forwarded as a message. Otherwise, screenshots and saving of the story content must be also forbidden
+     * Get True, if the story can be forwarded as a message. Otherwise, screenshots and saving of the story content must be also forbidden.
      */
     public function getCanBeForwarded(): bool
     {
@@ -294,7 +294,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story can be forwarded as a message. Otherwise, screenshots and saving of the story content must be also forbidden
+     * Set True, if the story can be forwarded as a message. Otherwise, screenshots and saving of the story content must be also forbidden.
      */
     public function setCanBeForwarded(bool $canBeForwarded): self
     {
@@ -304,7 +304,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story can be replied in the chat with the user that posted the story
+     * Get True, if the story can be replied in the chat with the user that posted the story.
      */
     public function getCanBeReplied(): bool
     {
@@ -312,7 +312,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story can be replied in the chat with the user that posted the story
+     * Set True, if the story can be replied in the chat with the user that posted the story.
      */
     public function setCanBeReplied(bool $canBeReplied): self
     {
@@ -322,7 +322,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story's is_posted_to_chat_page value can be changed
+     * Get True, if the story's is_posted_to_chat_page value can be changed.
      */
     public function getCanToggleIsPostedToChatPage(): bool
     {
@@ -330,7 +330,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story's is_posted_to_chat_page value can be changed
+     * Set True, if the story's is_posted_to_chat_page value can be changed.
      */
     public function setCanToggleIsPostedToChatPage(bool $canToggleIsPostedToChatPage): self
     {
@@ -340,7 +340,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story statistics are available through getStoryStatistics
+     * Get True, if the story statistics are available through getStoryStatistics.
      */
     public function getCanGetStatistics(): bool
     {
@@ -348,7 +348,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story statistics are available through getStoryStatistics
+     * Set True, if the story statistics are available through getStoryStatistics.
      */
     public function setCanGetStatistics(bool $canGetStatistics): self
     {
@@ -358,7 +358,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if interactions with the story can be received through getStoryInteractions
+     * Get True, if interactions with the story can be received through getStoryInteractions.
      */
     public function getCanGetInteractions(): bool
     {
@@ -366,7 +366,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if interactions with the story can be received through getStoryInteractions
+     * Set True, if interactions with the story can be received through getStoryInteractions.
      */
     public function setCanGetInteractions(bool $canGetInteractions): self
     {
@@ -376,7 +376,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get True, if users viewed the story can't be received, because the story has expired more than getOption("story_viewers_expiration_delay") seconds ago
+     * Get True, if users viewed the story can't be received, because the story has expired more than getOption("story_viewers_expiration_delay") seconds ago.
      */
     public function getHasExpiredViewers(): bool
     {
@@ -384,7 +384,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set True, if users viewed the story can't be received, because the story has expired more than getOption("story_viewers_expiration_delay") seconds ago
+     * Set True, if users viewed the story can't be received, because the story has expired more than getOption("story_viewers_expiration_delay") seconds ago.
      */
     public function setHasExpiredViewers(bool $hasExpiredViewers): self
     {
@@ -394,7 +394,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Information about the original story; may be null if the story wasn't reposted
+     * Get Information about the original story; may be null if the story wasn't reposted.
      */
     public function getRepostInfo(): StoryRepostInfo|null
     {
@@ -402,7 +402,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Information about the original story; may be null if the story wasn't reposted
+     * Set Information about the original story; may be null if the story wasn't reposted.
      */
     public function setRepostInfo(StoryRepostInfo|null $repostInfo): self
     {
@@ -412,7 +412,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Information about interactions with the story; may be null if the story isn't owned or there were no interactions
+     * Get Information about interactions with the story; may be null if the story isn't owned or there were no interactions.
      */
     public function getInteractionInfo(): StoryInteractionInfo|null
     {
@@ -420,7 +420,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Information about interactions with the story; may be null if the story isn't owned or there were no interactions
+     * Set Information about interactions with the story; may be null if the story isn't owned or there were no interactions.
      */
     public function setInteractionInfo(StoryInteractionInfo|null $interactionInfo): self
     {
@@ -430,7 +430,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Type of the chosen reaction; may be null if none
+     * Get Type of the chosen reaction; may be null if none.
      */
     public function getChosenReactionType(): ReactionType|null
     {
@@ -438,7 +438,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Type of the chosen reaction; may be null if none
+     * Set Type of the chosen reaction; may be null if none.
      */
     public function setChosenReactionType(ReactionType|null $chosenReactionType): self
     {
@@ -448,7 +448,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Privacy rules affecting story visibility; may be approximate for non-owned stories
+     * Get Privacy rules affecting story visibility; may be approximate for non-owned stories.
      */
     public function getPrivacySettings(): StoryPrivacySettings|null
     {
@@ -456,7 +456,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Privacy rules affecting story visibility; may be approximate for non-owned stories
+     * Set Privacy rules affecting story visibility; may be approximate for non-owned stories.
      */
     public function setPrivacySettings(StoryPrivacySettings|null $privacySettings): self
     {
@@ -466,7 +466,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Content of the story
+     * Get Content of the story.
      */
     public function getContent(): StoryContent|null
     {
@@ -474,7 +474,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Content of the story
+     * Set Content of the story.
      */
     public function setContent(StoryContent|null $content): self
     {
@@ -484,7 +484,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Clickable areas to be shown on the story content
+     * Get Clickable areas to be shown on the story content.
      */
     public function getAreas(): array|null
     {
@@ -492,7 +492,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Clickable areas to be shown on the story content
+     * Set Clickable areas to be shown on the story content.
      */
     public function setAreas(array|null $areas): self
     {
@@ -502,7 +502,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Get Caption of the story
+     * Get Caption of the story.
      */
     public function getCaption(): FormattedText|null
     {
@@ -510,7 +510,7 @@ class Story implements \JsonSerializable
     }
 
     /**
-     * Set Caption of the story
+     * Set Caption of the story.
      */
     public function setCaption(FormattedText|null $caption): self
     {

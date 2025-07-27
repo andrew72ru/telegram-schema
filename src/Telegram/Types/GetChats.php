@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an ordered list of chats from the beginning of a chat list. For informational purposes only. Use loadChats and updates processing instead to maintain chat lists in a consistent state
+ * Returns an ordered list of chats from the beginning of a chat list. For informational purposes only. Use loadChats and updates processing instead to maintain chat lists in a consistent state.
  */
 class GetChats extends Chats implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get The chat list in which to return chats; pass null to get chats from the main chat list
+     * Get The chat list in which to return chats; pass null to get chats from the main chat list.
      */
     public function getChatList(): ChatList|null
     {
@@ -30,7 +30,7 @@ class GetChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set The chat list in which to return chats; pass null to get chats from the main chat list
+     * Set The chat list in which to return chats; pass null to get chats from the main chat list.
      */
     public function setChatList(ChatList|null $chatList): self
     {
@@ -40,7 +40,7 @@ class GetChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of chats to be returned
+     * Get The maximum number of chats to be returned.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class GetChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of chats to be returned
+     * Set The maximum number of chats to be returned.
      */
     public function setLimit(int $limit): self
     {

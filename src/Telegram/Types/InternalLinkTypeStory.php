@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a story. Call searchPublicChat with the given poster username, then call getStory with the received chat identifier and the given story identifier, then show the story if received
+ * The link is a link to a story. Call searchPublicChat with the given poster username, then call getStory with the received chat identifier and the given story identifier, then show the story if received.
  */
 class InternalLinkTypeStory extends InternalLinkType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InternalLinkTypeStory extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Get Username of the poster of the story
+     * Get Username of the poster of the story.
      */
     public function getStoryPosterUsername(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeStory extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Set Username of the poster of the story
+     * Set Username of the poster of the story.
      */
     public function setStoryPosterUsername(string $storyPosterUsername): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeStory extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Get Story identifier
+     * Get Story identifier.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeStory extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Set Story identifier
+     * Set Story identifier.
      */
     public function setStoryId(int $storyId): self
     {

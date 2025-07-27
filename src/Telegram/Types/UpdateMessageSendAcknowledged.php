@@ -22,7 +22,7 @@ class UpdateMessageSendAcknowledged extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The chat identifier of the sent message
+     * Get The chat identifier of the sent message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateMessageSendAcknowledged extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The chat identifier of the sent message
+     * Set The chat identifier of the sent message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateMessageSendAcknowledged extends Update implements \JsonSerializable
     }
 
     /**
-     * Get A temporary message identifier
+     * Get A temporary message identifier.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class UpdateMessageSendAcknowledged extends Update implements \JsonSerializable
     }
 
     /**
-     * Set A temporary message identifier
+     * Set A temporary message identifier.
      */
     public function setMessageId(int $messageId): self
     {

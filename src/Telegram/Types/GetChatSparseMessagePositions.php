@@ -31,7 +31,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Get Identifier of the chat in which to return information about message positions
+     * Get Identifier of the chat in which to return information about message positions.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Set Identifier of the chat in which to return information about message positions
+     * Set Identifier of the chat in which to return information about message positions.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Get Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
+     * Get Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -57,7 +57,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Set Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
+     * Set Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {
@@ -67,7 +67,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Get The message identifier from which to return information about message positions
+     * Get The message identifier from which to return information about message positions.
      */
     public function getFromMessageId(): int
     {
@@ -75,7 +75,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Set The message identifier from which to return information about message positions
+     * Set The message identifier from which to return information about message positions.
      */
     public function setFromMessageId(int $fromMessageId): self
     {
@@ -85,7 +85,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Get The expected number of message positions to be returned; 50-2000. A smaller number of positions can be returned, if there are not enough appropriate messages
+     * Get The expected number of message positions to be returned; 50-2000. A smaller number of positions can be returned, if there are not enough appropriate messages.
      */
     public function getLimit(): int
     {
@@ -93,7 +93,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Set The expected number of message positions to be returned; 50-2000. A smaller number of positions can be returned, if there are not enough appropriate messages
+     * Set The expected number of message positions to be returned; 50-2000. A smaller number of positions can be returned, if there are not enough appropriate messages.
      */
     public function setLimit(int $limit): self
     {
@@ -103,7 +103,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Get If not 0, only messages in the specified Saved Messages topic will be considered; pass 0 to consider all messages, or for chats other than Saved Messages
+     * Get If not 0, only messages in the specified Saved Messages topic will be considered; pass 0 to consider all messages, or for chats other than Saved Messages.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -111,7 +111,7 @@ class GetChatSparseMessagePositions extends MessagePositions implements \JsonSer
     }
 
     /**
-     * Set If not 0, only messages in the specified Saved Messages topic will be considered; pass 0 to consider all messages, or for chats other than Saved Messages
+     * Set If not 0, only messages in the specified Saved Messages topic will be considered; pass 0 to consider all messages, or for chats other than Saved Messages.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {

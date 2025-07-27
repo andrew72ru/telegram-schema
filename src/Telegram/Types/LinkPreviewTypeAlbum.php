@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a media album consisting of photos and videos @media The list of album media @caption Album caption
+ * The link is a link to a media album consisting of photos and videos @media The list of album media @caption Album caption.
  */
 class LinkPreviewTypeAlbum extends LinkPreviewType implements \JsonSerializable
 {

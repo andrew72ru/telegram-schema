@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports a sponsored message to Telegram moderators
+ * Reports a sponsored message to Telegram moderators.
  */
 class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonS
     }
 
     /**
-     * Get Chat identifier of the sponsored message
+     * Get Chat identifier of the sponsored message.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonS
     }
 
     /**
-     * Set Chat identifier of the sponsored message
+     * Set Chat identifier of the sponsored message.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonS
     }
 
     /**
-     * Get Identifier of the sponsored message
+     * Get Identifier of the sponsored message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonS
     }
 
     /**
-     * Set Identifier of the sponsored message
+     * Set Identifier of the sponsored message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonS
     }
 
     /**
-     * Get Option identifier chosen by the user; leave empty for the initial request
+     * Get Option identifier chosen by the user; leave empty for the initial request.
      */
     public function getOptionId(): string
     {
@@ -69,7 +69,7 @@ class ReportChatSponsoredMessage extends ReportSponsoredResult implements \JsonS
     }
 
     /**
-     * Set Option identifier chosen by the user; leave empty for the initial request
+     * Set Option identifier chosen by the user; leave empty for the initial request.
      */
     public function setOptionId(string $optionId): self
     {

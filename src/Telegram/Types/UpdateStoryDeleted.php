@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A story became inaccessible @story_poster_chat_id Identifier of the chat that posted the story @story_id Story identifier
+ * A story became inaccessible @story_poster_chat_id Identifier of the chat that posted the story @story_id Story identifier.
  */
 class UpdateStoryDeleted extends Update implements \JsonSerializable
 {

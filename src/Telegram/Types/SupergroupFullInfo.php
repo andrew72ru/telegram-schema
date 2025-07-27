@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains full information about a supergroup or channel
+ * Contains full information about a supergroup or channel.
  */
 class SupergroupFullInfo implements \JsonSerializable
 {
@@ -133,7 +133,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo
+     * Get Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo.
      */
     public function getPhoto(): ChatPhoto|null
     {
@@ -141,7 +141,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo
+     * Set Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo.
      */
     public function setPhoto(ChatPhoto|null $photo): self
     {
@@ -151,7 +151,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Contains full information about a supergroup or channel
+     * Get Contains full information about a supergroup or channel.
      */
     public function getDescription(): string
     {
@@ -159,7 +159,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Contains full information about a supergroup or channel
+     * Set Contains full information about a supergroup or channel.
      */
     public function setDescription(string $description): self
     {
@@ -169,7 +169,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of members in the supergroup or channel; 0 if unknown
+     * Get Number of members in the supergroup or channel; 0 if unknown.
      */
     public function getMemberCount(): int
     {
@@ -177,7 +177,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of members in the supergroup or channel; 0 if unknown
+     * Set Number of members in the supergroup or channel; 0 if unknown.
      */
     public function setMemberCount(int $memberCount): self
     {
@@ -187,7 +187,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of privileged users in the supergroup or channel; 0 if unknown
+     * Get Number of privileged users in the supergroup or channel; 0 if unknown.
      */
     public function getAdministratorCount(): int
     {
@@ -195,7 +195,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of privileged users in the supergroup or channel; 0 if unknown
+     * Set Number of privileged users in the supergroup or channel; 0 if unknown.
      */
     public function setAdministratorCount(int $administratorCount): self
     {
@@ -205,7 +205,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of restricted users in the supergroup; 0 if unknown
+     * Get Number of restricted users in the supergroup; 0 if unknown.
      */
     public function getRestrictedCount(): int
     {
@@ -213,7 +213,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of restricted users in the supergroup; 0 if unknown
+     * Set Number of restricted users in the supergroup; 0 if unknown.
      */
     public function setRestrictedCount(int $restrictedCount): self
     {
@@ -223,7 +223,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of users banned from chat; 0 if unknown
+     * Get Number of users banned from chat; 0 if unknown.
      */
     public function getBannedCount(): int
     {
@@ -231,7 +231,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of users banned from chat; 0 if unknown
+     * Set Number of users banned from chat; 0 if unknown.
      */
     public function setBannedCount(int $bannedCount): self
     {
@@ -241,7 +241,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of a discussion group for the channel, or a channel, for which the supergroup is the designated discussion group; 0 if none or unknown
+     * Get Chat identifier of a discussion group for the channel, or a channel, for which the supergroup is the designated discussion group; 0 if none or unknown.
      */
     public function getLinkedChatId(): int
     {
@@ -249,7 +249,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of a discussion group for the channel, or a channel, for which the supergroup is the designated discussion group; 0 if none or unknown
+     * Set Chat identifier of a discussion group for the channel, or a channel, for which the supergroup is the designated discussion group; 0 if none or unknown.
      */
     public function setLinkedChatId(int $linkedChatId): self
     {
@@ -259,7 +259,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of a direct messages group for the channel, or a channel, for which the supergroup is the designated direct messages group; 0 if none
+     * Get Chat identifier of a direct messages group for the channel, or a channel, for which the supergroup is the designated direct messages group; 0 if none.
      */
     public function getDirectMessagesChatId(): int
     {
@@ -267,7 +267,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of a direct messages group for the channel, or a channel, for which the supergroup is the designated direct messages group; 0 if none
+     * Set Chat identifier of a direct messages group for the channel, or a channel, for which the supergroup is the designated direct messages group; 0 if none.
      */
     public function setDirectMessagesChatId(int $directMessagesChatId): self
     {
@@ -277,7 +277,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Delay between consecutive sent messages for non-administrator supergroup members, in seconds
+     * Get Delay between consecutive sent messages for non-administrator supergroup members, in seconds.
      */
     public function getSlowModeDelay(): int
     {
@@ -285,7 +285,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Delay between consecutive sent messages for non-administrator supergroup members, in seconds
+     * Set Delay between consecutive sent messages for non-administrator supergroup members, in seconds.
      */
     public function setSlowModeDelay(int $slowModeDelay): self
     {
@@ -295,7 +295,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Time left before next message can be sent in the supergroup, in seconds. An updateSupergroupFullInfo update is not triggered when value of this field changes, but both new and old values are non-zero
+     * Get Time left before next message can be sent in the supergroup, in seconds. An updateSupergroupFullInfo update is not triggered when value of this field changes, but both new and old values are non-zero.
      */
     public function getSlowModeDelayExpiresIn(): float
     {
@@ -303,7 +303,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Time left before next message can be sent in the supergroup, in seconds. An updateSupergroupFullInfo update is not triggered when value of this field changes, but both new and old values are non-zero
+     * Set Time left before next message can be sent in the supergroup, in seconds. An updateSupergroupFullInfo update is not triggered when value of this field changes, but both new and old values are non-zero.
      */
     public function setSlowModeDelayExpiresIn(float $slowModeDelayExpiresIn): self
     {
@@ -313,7 +313,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if paid messages can be enabled in the supergroup chat; for supergroup only
+     * Get True, if paid messages can be enabled in the supergroup chat; for supergroup only.
      */
     public function getCanEnablePaidMessages(): bool
     {
@@ -321,7 +321,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if paid messages can be enabled in the supergroup chat; for supergroup only
+     * Set True, if paid messages can be enabled in the supergroup chat; for supergroup only.
      */
     public function setCanEnablePaidMessages(bool $canEnablePaidMessages): self
     {
@@ -331,7 +331,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if paid reaction can be enabled in the channel chat; for channels only
+     * Get True, if paid reaction can be enabled in the channel chat; for channels only.
      */
     public function getCanEnablePaidReaction(): bool
     {
@@ -339,7 +339,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if paid reaction can be enabled in the channel chat; for channels only
+     * Set True, if paid reaction can be enabled in the channel chat; for channels only.
      */
     public function setCanEnablePaidReaction(bool $canEnablePaidReaction): self
     {
@@ -349,7 +349,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if members of the chat can be retrieved via getSupergroupMembers or searchChatMembers
+     * Get True, if members of the chat can be retrieved via getSupergroupMembers or searchChatMembers.
      */
     public function getCanGetMembers(): bool
     {
@@ -357,7 +357,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if members of the chat can be retrieved via getSupergroupMembers or searchChatMembers
+     * Set True, if members of the chat can be retrieved via getSupergroupMembers or searchChatMembers.
      */
     public function setCanGetMembers(bool $canGetMembers): self
     {
@@ -367,7 +367,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if non-administrators can receive only administrators and bots using getSupergroupMembers or searchChatMembers
+     * Get True, if non-administrators can receive only administrators and bots using getSupergroupMembers or searchChatMembers.
      */
     public function getHasHiddenMembers(): bool
     {
@@ -375,7 +375,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if non-administrators can receive only administrators and bots using getSupergroupMembers or searchChatMembers
+     * Set True, if non-administrators can receive only administrators and bots using getSupergroupMembers or searchChatMembers.
      */
     public function setHasHiddenMembers(bool $hasHiddenMembers): self
     {
@@ -385,7 +385,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators
+     * Get True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators.
      */
     public function getCanHideMembers(): bool
     {
@@ -393,7 +393,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators
+     * Set True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators.
      */
     public function setCanHideMembers(bool $canHideMembers): self
     {
@@ -403,7 +403,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup sticker set can be changed
+     * Get True, if the supergroup sticker set can be changed.
      */
     public function getCanSetStickerSet(): bool
     {
@@ -411,7 +411,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup sticker set can be changed
+     * Set True, if the supergroup sticker set can be changed.
      */
     public function setCanSetStickerSet(bool $canSetStickerSet): self
     {
@@ -421,7 +421,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup location can be changed
+     * Get True, if the supergroup location can be changed.
      */
     public function getCanSetLocation(): bool
     {
@@ -429,7 +429,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup location can be changed
+     * Set True, if the supergroup location can be changed.
      */
     public function setCanSetLocation(bool $canSetLocation): self
     {
@@ -439,7 +439,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup or channel statistics are available
+     * Get True, if the supergroup or channel statistics are available.
      */
     public function getCanGetStatistics(): bool
     {
@@ -447,7 +447,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup or channel statistics are available
+     * Set True, if the supergroup or channel statistics are available.
      */
     public function setCanGetStatistics(bool $canGetStatistics): self
     {
@@ -457,7 +457,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup or channel revenue statistics are available
+     * Get True, if the supergroup or channel revenue statistics are available.
      */
     public function getCanGetRevenueStatistics(): bool
     {
@@ -465,7 +465,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup or channel revenue statistics are available
+     * Set True, if the supergroup or channel revenue statistics are available.
      */
     public function setCanGetRevenueStatistics(bool $canGetRevenueStatistics): self
     {
@@ -475,7 +475,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup or channel Telegram Star revenue statistics are available
+     * Get True, if the supergroup or channel Telegram Star revenue statistics are available.
      */
     public function getCanGetStarRevenueStatistics(): bool
     {
@@ -483,7 +483,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup or channel Telegram Star revenue statistics are available
+     * Set True, if the supergroup or channel Telegram Star revenue statistics are available.
      */
     public function setCanGetStarRevenueStatistics(bool $canGetStarRevenueStatistics): self
     {
@@ -493,7 +493,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send a gift to the supergroup or channel using sendGift or transferGift
+     * Get True, if the user can send a gift to the supergroup or channel using sendGift or transferGift.
      */
     public function getCanSendGift(): bool
     {
@@ -501,7 +501,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send a gift to the supergroup or channel using sendGift or transferGift
+     * Set True, if the user can send a gift to the supergroup or channel using sendGift or transferGift.
      */
     public function setCanSendGift(bool $canSendGift): self
     {
@@ -511,7 +511,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if aggressive anti-spam checks can be enabled or disabled in the supergroup
+     * Get True, if aggressive anti-spam checks can be enabled or disabled in the supergroup.
      */
     public function getCanToggleAggressiveAntiSpam(): bool
     {
@@ -519,7 +519,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if aggressive anti-spam checks can be enabled or disabled in the supergroup
+     * Set True, if aggressive anti-spam checks can be enabled or disabled in the supergroup.
      */
     public function setCanToggleAggressiveAntiSpam(bool $canToggleAggressiveAntiSpam): self
     {
@@ -529,7 +529,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if new chat members will have access to old messages. In public, discussion, of forum groups and all channels, old messages are always available,
+     * Get True, if new chat members will have access to old messages. In public, discussion, of forum groups and all channels, old messages are always available,.
      */
     public function getIsAllHistoryAvailable(): bool
     {
@@ -537,7 +537,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if new chat members will have access to old messages. In public, discussion, of forum groups and all channels, old messages are always available,
+     * Set True, if new chat members will have access to old messages. In public, discussion, of forum groups and all channels, old messages are always available,.
      */
     public function setIsAllHistoryAvailable(bool $isAllHistoryAvailable): self
     {
@@ -547,7 +547,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat can have sponsored messages. The value of this field is only available to the owner of the chat
+     * Get True, if the chat can have sponsored messages. The value of this field is only available to the owner of the chat.
      */
     public function getCanHaveSponsoredMessages(): bool
     {
@@ -555,7 +555,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat can have sponsored messages. The value of this field is only available to the owner of the chat
+     * Set True, if the chat can have sponsored messages. The value of this field is only available to the owner of the chat.
      */
     public function setCanHaveSponsoredMessages(bool $canHaveSponsoredMessages): self
     {
@@ -565,7 +565,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if aggressive anti-spam checks are enabled in the supergroup. The value of this field is only available to chat administrators
+     * Get True, if aggressive anti-spam checks are enabled in the supergroup. The value of this field is only available to chat administrators.
      */
     public function getHasAggressiveAntiSpamEnabled(): bool
     {
@@ -573,7 +573,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if aggressive anti-spam checks are enabled in the supergroup. The value of this field is only available to chat administrators
+     * Set True, if aggressive anti-spam checks are enabled in the supergroup. The value of this field is only available to chat administrators.
      */
     public function setHasAggressiveAntiSpamEnabled(bool $hasAggressiveAntiSpamEnabled): self
     {
@@ -583,7 +583,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if paid media can be sent and forwarded to the channel chat; for channels only
+     * Get True, if paid media can be sent and forwarded to the channel chat; for channels only.
      */
     public function getHasPaidMediaAllowed(): bool
     {
@@ -591,7 +591,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if paid media can be sent and forwarded to the channel chat; for channels only
+     * Set True, if paid media can be sent and forwarded to the channel chat; for channels only.
      */
     public function setHasPaidMediaAllowed(bool $hasPaidMediaAllowed): self
     {
@@ -601,7 +601,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the supergroup or channel has pinned stories
+     * Get True, if the supergroup or channel has pinned stories.
      */
     public function getHasPinnedStories(): bool
     {
@@ -609,7 +609,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the supergroup or channel has pinned stories
+     * Set True, if the supergroup or channel has pinned stories.
      */
     public function setHasPinnedStories(bool $hasPinnedStories): self
     {
@@ -619,7 +619,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of saved to profile gifts for channels without can_post_messages administrator right, otherwise, the total number of received gifts
+     * Get Number of saved to profile gifts for channels without can_post_messages administrator right, otherwise, the total number of received gifts.
      */
     public function getGiftCount(): int
     {
@@ -627,7 +627,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of saved to profile gifts for channels without can_post_messages administrator right, otherwise, the total number of received gifts
+     * Set Number of saved to profile gifts for channels without can_post_messages administrator right, otherwise, the total number of received gifts.
      */
     public function setGiftCount(int $giftCount): self
     {
@@ -637,7 +637,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the current user boosted the supergroup or channel
+     * Get Number of times the current user boosted the supergroup or channel.
      */
     public function getMyBoostCount(): int
     {
@@ -645,7 +645,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the current user boosted the supergroup or channel
+     * Set Number of times the current user boosted the supergroup or channel.
      */
     public function setMyBoostCount(int $myBoostCount): self
     {
@@ -655,7 +655,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; 0 if unspecified
+     * Get Number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; 0 if unspecified.
      */
     public function getUnrestrictBoostCount(): int
     {
@@ -663,7 +663,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; 0 if unspecified
+     * Set Number of times the supergroup must be boosted by a user to ignore slow mode and chat permission restrictions; 0 if unspecified.
      */
     public function setUnrestrictBoostCount(int $unrestrictBoostCount): self
     {
@@ -673,7 +673,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid by the current user for each sent message to the supergroup
+     * Get Number of Telegram Stars that must be paid by the current user for each sent message to the supergroup.
      */
     public function getOutgoingPaidMessageStarCount(): int
     {
@@ -681,7 +681,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid by the current user for each sent message to the supergroup
+     * Set Number of Telegram Stars that must be paid by the current user for each sent message to the supergroup.
      */
     public function setOutgoingPaidMessageStarCount(int $outgoingPaidMessageStarCount): self
     {
@@ -691,7 +691,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup sticker set that must be shown before user sticker sets; 0 if none
+     * Get Identifier of the supergroup sticker set that must be shown before user sticker sets; 0 if none.
      */
     public function getStickerSetId(): int
     {
@@ -699,7 +699,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup sticker set that must be shown before user sticker sets; 0 if none
+     * Set Identifier of the supergroup sticker set that must be shown before user sticker sets; 0 if none.
      */
     public function setStickerSetId(int $stickerSetId): self
     {
@@ -709,7 +709,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the custom emoji sticker set that can be used in the supergroup without Telegram Premium subscription; 0 if none
+     * Get Identifier of the custom emoji sticker set that can be used in the supergroup without Telegram Premium subscription; 0 if none.
      */
     public function getCustomEmojiStickerSetId(): int
     {
@@ -717,7 +717,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the custom emoji sticker set that can be used in the supergroup without Telegram Premium subscription; 0 if none
+     * Set Identifier of the custom emoji sticker set that can be used in the supergroup without Telegram Premium subscription; 0 if none.
      */
     public function setCustomEmojiStickerSetId(int $customEmojiStickerSetId): self
     {
@@ -727,7 +727,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Location to which the supergroup is connected; may be null if none
+     * Get Location to which the supergroup is connected; may be null if none.
      */
     public function getLocation(): ChatLocation|null
     {
@@ -735,7 +735,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Location to which the supergroup is connected; may be null if none
+     * Set Location to which the supergroup is connected; may be null if none.
      */
     public function setLocation(ChatLocation|null $location): self
     {
@@ -745,7 +745,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Primary invite link for the chat; may be null. For chat administrators with can_invite_users right only
+     * Get Primary invite link for the chat; may be null. For chat administrators with can_invite_users right only.
      */
     public function getInviteLink(): ChatInviteLink|null
     {
@@ -753,7 +753,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Primary invite link for the chat; may be null. For chat administrators with can_invite_users right only
+     * Set Primary invite link for the chat; may be null. For chat administrators with can_invite_users right only.
      */
     public function setInviteLink(ChatInviteLink|null $inviteLink): self
     {
@@ -763,7 +763,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get List of commands of bots in the group
+     * Get List of commands of bots in the group.
      */
     public function getBotCommands(): array|null
     {
@@ -771,7 +771,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set List of commands of bots in the group
+     * Set List of commands of bots in the group.
      */
     public function setBotCommands(array|null $botCommands): self
     {
@@ -781,7 +781,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about verification status of the supergroup or the channel provided by a bot; may be null if none or unknown
+     * Get Information about verification status of the supergroup or the channel provided by a bot; may be null if none or unknown.
      */
     public function getBotVerification(): BotVerification|null
     {
@@ -789,7 +789,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about verification status of the supergroup or the channel provided by a bot; may be null if none or unknown
+     * Set Information about verification status of the supergroup or the channel provided by a bot; may be null if none or unknown.
      */
     public function setBotVerification(BotVerification|null $botVerification): self
     {
@@ -799,7 +799,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the basic group from which supergroup was upgraded; 0 if none
+     * Get Identifier of the basic group from which supergroup was upgraded; 0 if none.
      */
     public function getUpgradedFromBasicGroupId(): int
     {
@@ -807,7 +807,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the basic group from which supergroup was upgraded; 0 if none
+     * Set Identifier of the basic group from which supergroup was upgraded; 0 if none.
      */
     public function setUpgradedFromBasicGroupId(int $upgradedFromBasicGroupId): self
     {
@@ -817,7 +817,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last message in the basic group from which supergroup was upgraded; 0 if none
+     * Get Identifier of the last message in the basic group from which supergroup was upgraded; 0 if none.
      */
     public function getUpgradedFromMaxMessageId(): int
     {
@@ -825,7 +825,7 @@ class SupergroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last message in the basic group from which supergroup was upgraded; 0 if none
+     * Set Identifier of the last message in the basic group from which supergroup was upgraded; 0 if none.
      */
     public function setUpgradedFromMaxMessageId(int $upgradedFromMaxMessageId): self
     {

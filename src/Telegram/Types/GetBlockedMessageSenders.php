@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns users and chats that were blocked by the current user
+ * Returns users and chats that were blocked by the current user.
  */
 class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializab
     }
 
     /**
-     * Get Block list from which to return users
+     * Get Block list from which to return users.
      */
     public function getBlockList(): BlockList|null
     {
@@ -33,7 +33,7 @@ class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializab
     }
 
     /**
-     * Set Block list from which to return users
+     * Set Block list from which to return users.
      */
     public function setBlockList(BlockList|null $blockList): self
     {
@@ -43,7 +43,7 @@ class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializab
     }
 
     /**
-     * Get Number of users and chats to skip in the result; must be non-negative
+     * Get Number of users and chats to skip in the result; must be non-negative.
      */
     public function getOffset(): int
     {
@@ -51,7 +51,7 @@ class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializab
     }
 
     /**
-     * Set Number of users and chats to skip in the result; must be non-negative
+     * Set Number of users and chats to skip in the result; must be non-negative.
      */
     public function setOffset(int $offset): self
     {
@@ -61,7 +61,7 @@ class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializab
     }
 
     /**
-     * Get The maximum number of users and chats to return; up to 100
+     * Get The maximum number of users and chats to return; up to 100.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetBlockedMessageSenders extends MessageSenders implements \JsonSerializab
     }
 
     /**
-     * Set The maximum number of users and chats to return; up to 100
+     * Set The maximum number of users and chats to return; up to 100.
      */
     public function setLimit(int $limit): self
     {

@@ -19,7 +19,7 @@ class InternalLinkTypeGroupCall extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Get Internal representation of the invite link
+     * Get Internal representation of the invite link.
      */
     public function getInviteLink(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypeGroupCall extends InternalLinkType implements \JsonSeriali
     }
 
     /**
-     * Set Internal representation of the invite link
+     * Set Internal representation of the invite link.
      */
     public function setInviteLink(string $inviteLink): self
     {

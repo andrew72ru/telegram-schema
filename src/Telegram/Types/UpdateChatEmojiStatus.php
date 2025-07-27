@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Chat emoji status has changed
+ * Chat emoji status has changed.
  */
 class UpdateChatEmojiStatus extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateChatEmojiStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateChatEmojiStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateChatEmojiStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new chat emoji status; may be null
+     * Get The new chat emoji status; may be null.
      */
     public function getEmojiStatus(): EmojiStatus|null
     {
@@ -48,7 +48,7 @@ class UpdateChatEmojiStatus extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new chat emoji status; may be null
+     * Set The new chat emoji status; may be null.
      */
     public function setEmojiStatus(EmojiStatus|null $emojiStatus): self
     {

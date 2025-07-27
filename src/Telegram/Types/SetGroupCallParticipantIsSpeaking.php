@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that speaking state of a participant of an active group call has changed. Returns identifier of the participant if it is found
+ * Informs TDLib that speaking state of a participant of an active group call has changed. Returns identifier of the participant if it is found.
  */
 class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSe
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSe
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSe
     }
 
     /**
-     * Get Group call participant's synchronization audio source identifier, or 0 for the current user
+     * Get Group call participant's synchronization audio source identifier, or 0 for the current user.
      */
     public function getAudioSource(): int
     {
@@ -51,7 +51,7 @@ class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSe
     }
 
     /**
-     * Set Group call participant's synchronization audio source identifier, or 0 for the current user
+     * Set Group call participant's synchronization audio source identifier, or 0 for the current user.
      */
     public function setAudioSource(int $audioSource): self
     {
@@ -61,7 +61,7 @@ class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSe
     }
 
     /**
-     * Get Pass true if the user is speaking
+     * Get Pass true if the user is speaking.
      */
     public function getIsSpeaking(): bool
     {
@@ -69,7 +69,7 @@ class SetGroupCallParticipantIsSpeaking extends MessageSender implements \JsonSe
     }
 
     /**
-     * Set Pass true if the user is speaking
+     * Set Pass true if the user is speaking.
      */
     public function setIsSpeaking(bool $isSpeaking): self
     {

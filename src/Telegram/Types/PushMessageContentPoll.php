@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a poll
+ * A message with a poll.
  */
 class PushMessageContentPoll extends PushMessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PushMessageContentPoll extends PushMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Poll question
+     * Get Poll question.
      */
     public function getQuestion(): string
     {
@@ -33,7 +33,7 @@ class PushMessageContentPoll extends PushMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Poll question
+     * Set Poll question.
      */
     public function setQuestion(string $question): self
     {
@@ -43,7 +43,7 @@ class PushMessageContentPoll extends PushMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get True, if the poll is regular and not in quiz mode
+     * Get True, if the poll is regular and not in quiz mode.
      */
     public function getIsRegular(): bool
     {
@@ -51,7 +51,7 @@ class PushMessageContentPoll extends PushMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set True, if the poll is regular and not in quiz mode
+     * Set True, if the poll is regular and not in quiz mode.
      */
     public function setIsRegular(bool $isRegular): self
     {
@@ -61,7 +61,7 @@ class PushMessageContentPoll extends PushMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get True, if the message is a pinned message with the specified content
+     * Get True, if the message is a pinned message with the specified content.
      */
     public function getIsPinned(): bool
     {
@@ -69,7 +69,7 @@ class PushMessageContentPoll extends PushMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set True, if the message is a pinned message with the specified content
+     * Set True, if the message is a pinned message with the specified content.
      */
     public function setIsPinned(bool $isPinned): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains auto-download settings presets for the current user
+ * Contains auto-download settings presets for the current user.
  */
 class AutoDownloadSettingsPresets implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AutoDownloadSettingsPresets implements \JsonSerializable
     }
 
     /**
-     * Get Preset with lowest settings; expected to be used by default when roaming
+     * Get Preset with lowest settings; expected to be used by default when roaming.
      */
     public function getLow(): AutoDownloadSettings|null
     {
@@ -33,7 +33,7 @@ class AutoDownloadSettingsPresets implements \JsonSerializable
     }
 
     /**
-     * Set Preset with lowest settings; expected to be used by default when roaming
+     * Set Preset with lowest settings; expected to be used by default when roaming.
      */
     public function setLow(AutoDownloadSettings|null $low): self
     {
@@ -43,7 +43,7 @@ class AutoDownloadSettingsPresets implements \JsonSerializable
     }
 
     /**
-     * Get Preset with medium settings; expected to be used by default when using mobile data
+     * Get Preset with medium settings; expected to be used by default when using mobile data.
      */
     public function getMedium(): AutoDownloadSettings|null
     {
@@ -51,7 +51,7 @@ class AutoDownloadSettingsPresets implements \JsonSerializable
     }
 
     /**
-     * Set Preset with medium settings; expected to be used by default when using mobile data
+     * Set Preset with medium settings; expected to be used by default when using mobile data.
      */
     public function setMedium(AutoDownloadSettings|null $medium): self
     {
@@ -61,7 +61,7 @@ class AutoDownloadSettingsPresets implements \JsonSerializable
     }
 
     /**
-     * Get Preset with highest settings; expected to be used by default when connected on Wi-Fi
+     * Get Preset with highest settings; expected to be used by default when connected on Wi-Fi.
      */
     public function getHigh(): AutoDownloadSettings|null
     {
@@ -69,7 +69,7 @@ class AutoDownloadSettingsPresets implements \JsonSerializable
     }
 
     /**
-     * Set Preset with highest settings; expected to be used by default when connected on Wi-Fi
+     * Set Preset with highest settings; expected to be used by default when connected on Wi-Fi.
      */
     public function setHigh(AutoDownloadSettings|null $high): self
     {

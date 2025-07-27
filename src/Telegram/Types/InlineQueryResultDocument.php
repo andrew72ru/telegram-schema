@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a document
+ * Represents a document.
  */
 class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -36,7 +36,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -46,7 +46,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Document
+     * Get Document.
      */
     public function getDocument(): Document|null
     {
@@ -54,7 +54,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Document
+     * Set Document.
      */
     public function setDocument(Document|null $document): self
     {
@@ -64,7 +64,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Document title
+     * Get Document title.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Document title
+     * Set Document title.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Represents a document
+     * Get Represents a document.
      */
     public function getDescription(): string
     {
@@ -90,7 +90,7 @@ class InlineQueryResultDocument extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Represents a document
+     * Set Represents a document.
      */
     public function setDescription(string $description): self
     {

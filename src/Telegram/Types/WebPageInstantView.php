@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an instant view page for a web page
+ * Describes an instant view page for a web page.
  */
 class WebPageInstantView implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Get Content of the instant view page
+     * Get Content of the instant view page.
      */
     public function getPageBlocks(): array|null
     {
@@ -42,7 +42,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Set Content of the instant view page
+     * Set Content of the instant view page.
      */
     public function setPageBlocks(array|null $pageBlocks): self
     {
@@ -52,7 +52,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Get Number of the instant view views; 0 if unknown
+     * Get Number of the instant view views; 0 if unknown.
      */
     public function getViewCount(): int
     {
@@ -60,7 +60,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Set Number of the instant view views; 0 if unknown
+     * Set Number of the instant view views; 0 if unknown.
      */
     public function setViewCount(int $viewCount): self
     {
@@ -70,7 +70,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Get Version of the instant view; currently, can be 1 or 2
+     * Get Version of the instant view; currently, can be 1 or 2.
      */
     public function getVersion(): int
     {
@@ -78,7 +78,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Set Version of the instant view; currently, can be 1 or 2
+     * Set Version of the instant view; currently, can be 1 or 2.
      */
     public function setVersion(int $version): self
     {
@@ -88,7 +88,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Get True, if the instant view must be shown from right to left
+     * Get True, if the instant view must be shown from right to left.
      */
     public function getIsRtl(): bool
     {
@@ -96,7 +96,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Set True, if the instant view must be shown from right to left
+     * Set True, if the instant view must be shown from right to left.
      */
     public function setIsRtl(bool $isRtl): self
     {
@@ -106,7 +106,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Get True, if the instant view contains the full page. A network request might be needed to get the full instant view
+     * Get True, if the instant view contains the full page. A network request might be needed to get the full instant view.
      */
     public function getIsFull(): bool
     {
@@ -114,7 +114,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Set True, if the instant view contains the full page. A network request might be needed to get the full instant view
+     * Set True, if the instant view contains the full page. A network request might be needed to get the full instant view.
      */
     public function setIsFull(bool $isFull): self
     {
@@ -124,7 +124,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Get An internal link to be opened to leave feedback about the instant view
+     * Get An internal link to be opened to leave feedback about the instant view.
      */
     public function getFeedbackLink(): InternalLinkType|null
     {
@@ -132,7 +132,7 @@ class WebPageInstantView implements \JsonSerializable
     }
 
     /**
-     * Set An internal link to be opened to leave feedback about the instant view
+     * Set An internal link to be opened to leave feedback about the instant view.
      */
     public function setFeedbackLink(InternalLinkType|null $feedbackLink): self
     {

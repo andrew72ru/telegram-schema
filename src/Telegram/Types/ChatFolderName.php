@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes name of a chat folder
+ * Describes name of a chat folder.
  */
 class ChatFolderName implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatFolderName implements \JsonSerializable
     }
 
     /**
-     * Get The text of the chat folder name; 1-12 characters without line feeds. May contain only CustomEmoji entities
+     * Get The text of the chat folder name; 1-12 characters without line feeds. May contain only CustomEmoji entities.
      */
     public function getText(): FormattedText|null
     {
@@ -30,7 +30,7 @@ class ChatFolderName implements \JsonSerializable
     }
 
     /**
-     * Set The text of the chat folder name; 1-12 characters without line feeds. May contain only CustomEmoji entities
+     * Set The text of the chat folder name; 1-12 characters without line feeds. May contain only CustomEmoji entities.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -40,7 +40,7 @@ class ChatFolderName implements \JsonSerializable
     }
 
     /**
-     * Get True, if custom emoji in the name must be animated
+     * Get True, if custom emoji in the name must be animated.
      */
     public function getAnimateCustomEmoji(): bool
     {
@@ -48,7 +48,7 @@ class ChatFolderName implements \JsonSerializable
     }
 
     /**
-     * Set True, if custom emoji in the name must be animated
+     * Set True, if custom emoji in the name must be animated.
      */
     public function setAnimateCustomEmoji(bool $animateCustomEmoji): self
     {

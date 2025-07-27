@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a voice note
+ * Represents a voice note.
  */
 class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Get Voice note
+     * Get Voice note.
      */
     public function getVoiceNote(): VoiceNote|null
     {
@@ -51,7 +51,7 @@ class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Set Voice note
+     * Set Voice note.
      */
     public function setVoiceNote(VoiceNote|null $voiceNote): self
     {
@@ -61,7 +61,7 @@ class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Get Title of the voice note
+     * Get Title of the voice note.
      */
     public function getTitle(): string
     {
@@ -69,7 +69,7 @@ class InlineQueryResultVoiceNote extends InlineQueryResult implements \JsonSeria
     }
 
     /**
-     * Set Title of the voice note
+     * Set Title of the voice note.
      */
     public function setTitle(string $title): self
     {

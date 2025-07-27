@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a notification about user activity in a chat
+ * Sends a notification about user activity in a chat.
  */
 class SendChatAction extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier in which the action was performed
+     * Get If not 0, the message thread identifier in which the action was performed.
      */
     public function getMessageThreadId(): int
     {
@@ -54,7 +54,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier in which the action was performed
+     * Set If not 0, the message thread identifier in which the action was performed.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -64,7 +64,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Get Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function getBusinessConnectionId(): string
     {
@@ -72,7 +72,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Set Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -82,7 +82,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The action description; pass null to cancel the currently active action
+     * Get The action description; pass null to cancel the currently active action.
      */
     public function getAction(): ChatAction|null
     {
@@ -90,7 +90,7 @@ class SendChatAction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The action description; pass null to cancel the currently active action
+     * Set The action description; pass null to cancel the currently active action.
      */
     public function setAction(ChatAction|null $action): self
     {

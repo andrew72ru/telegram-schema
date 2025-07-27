@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an advertisent to be shown while a video from a message is watched
+ * Describes an advertisent to be shown while a video from a message is watched.
  */
 class VideoMessageAdvertisement implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of this result
+     * Get Unique identifier of this result.
      */
     public function getUniqueId(): int
     {
@@ -48,7 +48,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of this result
+     * Set Unique identifier of this result.
      */
     public function setUniqueId(int $uniqueId): self
     {
@@ -58,7 +58,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get Text of the advertisement
+     * Get Text of the advertisement.
      */
     public function getText(): string
     {
@@ -66,7 +66,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set Text of the advertisement
+     * Set Text of the advertisement.
      */
     public function setText(string $text): self
     {
@@ -76,7 +76,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get The minimum amount of time the advertisement must be displayed before it can be hidden by the user, in seconds
+     * Get The minimum amount of time the advertisement must be displayed before it can be hidden by the user, in seconds.
      */
     public function getMinDisplayDuration(): int
     {
@@ -84,7 +84,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set The minimum amount of time the advertisement must be displayed before it can be hidden by the user, in seconds
+     * Set The minimum amount of time the advertisement must be displayed before it can be hidden by the user, in seconds.
      */
     public function setMinDisplayDuration(int $minDisplayDuration): self
     {
@@ -94,7 +94,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get The maximum amount of time the advertisement must be displayed before it must be automatically hidden, in seconds
+     * Get The maximum amount of time the advertisement must be displayed before it must be automatically hidden, in seconds.
      */
     public function getMaxDisplayDuration(): int
     {
@@ -102,7 +102,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set The maximum amount of time the advertisement must be displayed before it must be automatically hidden, in seconds
+     * Set The maximum amount of time the advertisement must be displayed before it must be automatically hidden, in seconds.
      */
     public function setMaxDisplayDuration(int $maxDisplayDuration): self
     {
@@ -112,7 +112,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get True, if the advertisement can be reported to Telegram moderators through reportVideoMessageAdvertisement
+     * Get True, if the advertisement can be reported to Telegram moderators through reportVideoMessageAdvertisement.
      */
     public function getCanBeReported(): bool
     {
@@ -120,7 +120,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set True, if the advertisement can be reported to Telegram moderators through reportVideoMessageAdvertisement
+     * Set True, if the advertisement can be reported to Telegram moderators through reportVideoMessageAdvertisement.
      */
     public function setCanBeReported(bool $canBeReported): self
     {
@@ -130,7 +130,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get Information about the sponsor of the advertisement
+     * Get Information about the sponsor of the advertisement.
      */
     public function getSponsor(): AdvertisementSponsor|null
     {
@@ -138,7 +138,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set Information about the sponsor of the advertisement
+     * Set Information about the sponsor of the advertisement.
      */
     public function setSponsor(AdvertisementSponsor|null $sponsor): self
     {
@@ -148,7 +148,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get Title of the sponsored message
+     * Get Title of the sponsored message.
      */
     public function getTitle(): string
     {
@@ -156,7 +156,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set Title of the sponsored message
+     * Set Title of the sponsored message.
      */
     public function setTitle(string $title): self
     {
@@ -166,7 +166,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, additional information about the sponsored message to be shown along with the message
+     * Get If non-empty, additional information about the sponsored message to be shown along with the message.
      */
     public function getAdditionalInfo(): string
     {
@@ -174,7 +174,7 @@ class VideoMessageAdvertisement implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, additional information about the sponsored message to be shown along with the message
+     * Set If non-empty, additional information about the sponsored message to be shown along with the message.
      */
     public function setAdditionalInfo(string $additionalInfo): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Chat accent colors have changed
+ * Chat accent colors have changed.
  */
 class UpdateChatAccentColors extends Update implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new chat accent color identifier
+     * Get The new chat accent color identifier.
      */
     public function getAccentColorId(): int
     {
@@ -57,7 +57,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new chat accent color identifier
+     * Set The new chat accent color identifier.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -67,7 +67,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none
+     * Get The new identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
      */
     public function getBackgroundCustomEmojiId(): int
     {
@@ -75,7 +75,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none
+     * Set The new identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
      */
     public function setBackgroundCustomEmojiId(int $backgroundCustomEmojiId): self
     {
@@ -85,7 +85,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new chat profile accent color identifier; -1 if none
+     * Get The new chat profile accent color identifier; -1 if none.
      */
     public function getProfileAccentColorId(): int
     {
@@ -93,7 +93,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new chat profile accent color identifier; -1 if none
+     * Set The new chat profile accent color identifier; -1 if none.
      */
     public function setProfileAccentColorId(int $profileAccentColorId): self
     {
@@ -103,7 +103,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new identifier of a custom emoji to be shown on the profile background; 0 if none
+     * Get The new identifier of a custom emoji to be shown on the profile background; 0 if none.
      */
     public function getProfileBackgroundCustomEmojiId(): int
     {
@@ -111,7 +111,7 @@ class UpdateChatAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new identifier of a custom emoji to be shown on the profile background; 0 if none
+     * Set The new identifier of a custom emoji to be shown on the profile background; 0 if none.
      */
     public function setProfileBackgroundCustomEmojiId(int $profileBackgroundCustomEmojiId): self
     {

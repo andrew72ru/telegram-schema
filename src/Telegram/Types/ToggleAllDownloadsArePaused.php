@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes pause state of all files in the file download list @are_paused Pass true to pause all downloads; pass false to unpause them
+ * Changes pause state of all files in the file download list @are_paused Pass true to pause all downloads; pass false to unpause them.
  */
 class ToggleAllDownloadsArePaused extends Ok implements \JsonSerializable
 {

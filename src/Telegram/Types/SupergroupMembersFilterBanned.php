@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns users banned from the supergroup or channel; can be used only by administrators @query Query to search for
+ * Returns users banned from the supergroup or channel; can be used only by administrators @query Query to search for.
  */
 class SupergroupMembersFilterBanned extends SupergroupMembersFilter implements \JsonSerializable
 {

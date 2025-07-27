@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user creating a Telegram Premium giveaway
+ * The user creating a Telegram Premium giveaway.
  */
 class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements 
     }
 
     /**
-     * Get Giveaway parameters
+     * Get Giveaway parameters.
      */
     public function getParameters(): GiveawayParameters|null
     {
@@ -33,7 +33,7 @@ class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements 
     }
 
     /**
-     * Set Giveaway parameters
+     * Set Giveaway parameters.
      */
     public function setParameters(GiveawayParameters|null $parameters): self
     {
@@ -43,7 +43,7 @@ class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements 
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -51,7 +51,7 @@ class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements 
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -61,7 +61,7 @@ class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements 
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -69,7 +69,7 @@ class StorePaymentPurposePremiumGiveaway extends StorePaymentPurpose implements 
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {

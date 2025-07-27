@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes all files from the file download list
+ * Removes all files from the file download list.
  */
 class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to remove only active downloads, including paused
+     * Get Pass true to remove only active downloads, including paused.
      */
     public function getOnlyActive(): bool
     {
@@ -33,7 +33,7 @@ class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to remove only active downloads, including paused
+     * Set Pass true to remove only active downloads, including paused.
      */
     public function setOnlyActive(bool $onlyActive): self
     {
@@ -43,7 +43,7 @@ class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to remove only completed downloads
+     * Get Pass true to remove only completed downloads.
      */
     public function getOnlyCompleted(): bool
     {
@@ -51,7 +51,7 @@ class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to remove only completed downloads
+     * Set Pass true to remove only completed downloads.
      */
     public function setOnlyCompleted(bool $onlyCompleted): self
     {
@@ -61,7 +61,7 @@ class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete the file from the TDLib file cache
+     * Get Pass true to delete the file from the TDLib file cache.
      */
     public function getDeleteFromCache(): bool
     {
@@ -69,7 +69,7 @@ class RemoveAllFilesFromDownloads extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete the file from the TDLib file cache
+     * Set Pass true to delete the file from the TDLib file cache.
      */
     public function setDeleteFromCache(bool $deleteFromCache): self
     {

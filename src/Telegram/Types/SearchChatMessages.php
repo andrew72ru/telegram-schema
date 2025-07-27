@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for messages with given words in the chat. Returns the results in reverse chronological order, i.e. in order of decreasing message_id. Cannot be used in secret chats with a non-empty query
+ * Searches for messages with given words in the chat. Returns the results in reverse chronological order, i.e. in order of decreasing message_id. Cannot be used in secret chats with a non-empty query.
  */
 class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which to search messages
+     * Get Identifier of the chat in which to search messages.
      */
     public function getChatId(): int
     {
@@ -48,7 +48,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which to search messages
+     * Set Identifier of the chat in which to search messages.
      */
     public function setChatId(int $chatId): self
     {
@@ -58,7 +58,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Pass topic identifier to search messages only in specific topic; pass null to search for messages in all topics
+     * Get Pass topic identifier to search messages only in specific topic; pass null to search for messages in all topics.
      */
     public function getTopicId(): MessageTopic|null
     {
@@ -66,7 +66,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Pass topic identifier to search messages only in specific topic; pass null to search for messages in all topics
+     * Set Pass topic identifier to search messages only in specific topic; pass null to search for messages in all topics.
      */
     public function setTopicId(MessageTopic|null $topicId): self
     {
@@ -76,7 +76,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -84,7 +84,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {
@@ -94,7 +94,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sender of messages to search for; pass null to search for messages from any sender. Not supported in secret chats
+     * Get Identifier of the sender of messages to search for; pass null to search for messages from any sender. Not supported in secret chats.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -102,7 +102,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sender of messages to search for; pass null to search for messages from any sender. Not supported in secret chats
+     * Set Identifier of the sender of messages to search for; pass null to search for messages from any sender. Not supported in secret chats.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -112,7 +112,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message starting from which history must be fetched; use 0 to get results from the last message
+     * Get Identifier of the message starting from which history must be fetched; use 0 to get results from the last message.
      */
     public function getFromMessageId(): int
     {
@@ -120,7 +120,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message starting from which history must be fetched; use 0 to get results from the last message
+     * Set Identifier of the message starting from which history must be fetched; use 0 to get results from the last message.
      */
     public function setFromMessageId(int $fromMessageId): self
     {
@@ -130,7 +130,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset to get the specified message and some newer messages
+     * Get Specify 0 to get results from exactly the message from_message_id or a negative offset to get the specified message and some newer messages.
      */
     public function getOffset(): int
     {
@@ -138,7 +138,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset to get the specified message and some newer messages
+     * Set Specify 0 to get results from exactly the message from_message_id or a negative offset to get the specified message and some newer messages.
      */
     public function setOffset(int $offset): self
     {
@@ -148,7 +148,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than -offset.
+     * Get The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than -offset..
      */
     public function getLimit(): int
     {
@@ -156,7 +156,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than -offset.
+     * Set The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than -offset..
      */
     public function setLimit(int $limit): self
     {
@@ -166,7 +166,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Get Additional filter for messages to search; pass null to search for all messages
+     * Get Additional filter for messages to search; pass null to search for all messages.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -174,7 +174,7 @@ class SearchChatMessages extends FoundChatMessages implements \JsonSerializable
     }
 
     /**
-     * Set Additional filter for messages to search; pass null to search for all messages
+     * Set Additional filter for messages to search; pass null to search for all messages.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {

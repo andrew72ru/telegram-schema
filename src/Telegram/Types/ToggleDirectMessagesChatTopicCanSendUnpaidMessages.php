@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Allows to send unpaid messages to the given topic of the channel direct messages chat administered by the current user
+ * Allows to send unpaid messages to the given topic of the channel direct messages chat administered by the current user.
  */
 class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Get Identifier of the topic
+     * Get Identifier of the topic.
      */
     public function getTopicId(): int
     {
@@ -54,7 +54,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Set Identifier of the topic
+     * Set Identifier of the topic.
      */
     public function setTopicId(int $topicId): self
     {
@@ -64,7 +64,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Get Pass true to allow unpaid messages; pass false to disallow unpaid messages
+     * Get Pass true to allow unpaid messages; pass false to disallow unpaid messages.
      */
     public function getCanSendUnpaidMessages(): bool
     {
@@ -72,7 +72,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Set Pass true to allow unpaid messages; pass false to disallow unpaid messages
+     * Set Pass true to allow unpaid messages; pass false to disallow unpaid messages.
      */
     public function setCanSendUnpaidMessages(bool $canSendUnpaidMessages): self
     {
@@ -82,7 +82,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Get Pass true to refund the user previously paid messages
+     * Get Pass true to refund the user previously paid messages.
      */
     public function getRefundPayments(): bool
     {
@@ -90,7 +90,7 @@ class ToggleDirectMessagesChatTopicCanSendUnpaidMessages extends Ok implements \
     }
 
     /**
-     * Set Pass true to refund the user previously paid messages
+     * Set Pass true to refund the user previously paid messages.
      */
     public function setRefundPayments(bool $refundPayments): self
     {

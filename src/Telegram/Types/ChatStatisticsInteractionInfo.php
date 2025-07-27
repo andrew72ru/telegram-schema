@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains statistics about interactions with a message sent in the chat or a story posted on behalf of the chat
+ * Contains statistics about interactions with a message sent in the chat or a story posted on behalf of the chat.
  */
 class ChatStatisticsInteractionInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Type of the object
+     * Get Type of the object.
      */
     public function getObjectType(): ChatStatisticsObjectType|null
     {
@@ -36,7 +36,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Type of the object
+     * Set Type of the object.
      */
     public function setObjectType(ChatStatisticsObjectType|null $objectType): self
     {
@@ -46,7 +46,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the object was viewed
+     * Get Number of times the object was viewed.
      */
     public function getViewCount(): int
     {
@@ -54,7 +54,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the object was viewed
+     * Set Number of times the object was viewed.
      */
     public function setViewCount(int $viewCount): self
     {
@@ -64,7 +64,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the object was forwarded
+     * Get Number of times the object was forwarded.
      */
     public function getForwardCount(): int
     {
@@ -72,7 +72,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the object was forwarded
+     * Set Number of times the object was forwarded.
      */
     public function setForwardCount(int $forwardCount): self
     {
@@ -82,7 +82,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times reactions were added to the object
+     * Get Number of times reactions were added to the object.
      */
     public function getReactionCount(): int
     {
@@ -90,7 +90,7 @@ class ChatStatisticsInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times reactions were added to the object
+     * Set Number of times reactions were added to the object.
      */
     public function setReactionCount(int $reactionCount): self
     {

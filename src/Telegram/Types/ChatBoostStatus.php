@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes current boost status of a chat
+ * Describes current boost status of a chat.
  */
 class ChatBoostStatus implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get An HTTP URL, which can be used to boost the chat
+     * Get An HTTP URL, which can be used to boost the chat.
      */
     public function getBoostUrl(): string
     {
@@ -54,7 +54,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set An HTTP URL, which can be used to boost the chat
+     * Set An HTTP URL, which can be used to boost the chat.
      */
     public function setBoostUrl(string $boostUrl): self
     {
@@ -64,7 +64,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of boost slots of the current user applied to the chat
+     * Get Identifiers of boost slots of the current user applied to the chat.
      */
     public function getAppliedSlotIds(): array|null
     {
@@ -72,7 +72,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of boost slots of the current user applied to the chat
+     * Set Identifiers of boost slots of the current user applied to the chat.
      */
     public function setAppliedSlotIds(array|null $appliedSlotIds): self
     {
@@ -82,7 +82,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get Current boost level of the chat
+     * Get Current boost level of the chat.
      */
     public function getLevel(): int
     {
@@ -90,7 +90,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set Current boost level of the chat
+     * Set Current boost level of the chat.
      */
     public function setLevel(int $level): self
     {
@@ -100,7 +100,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get The number of boosts received by the chat from created Telegram Premium gift codes and giveaways; always 0 if the current user isn't an administrator in the chat
+     * Get The number of boosts received by the chat from created Telegram Premium gift codes and giveaways; always 0 if the current user isn't an administrator in the chat.
      */
     public function getGiftCodeBoostCount(): int
     {
@@ -108,7 +108,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set The number of boosts received by the chat from created Telegram Premium gift codes and giveaways; always 0 if the current user isn't an administrator in the chat
+     * Set The number of boosts received by the chat from created Telegram Premium gift codes and giveaways; always 0 if the current user isn't an administrator in the chat.
      */
     public function setGiftCodeBoostCount(int $giftCodeBoostCount): self
     {
@@ -118,7 +118,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get The number of boosts received by the chat
+     * Get The number of boosts received by the chat.
      */
     public function getBoostCount(): int
     {
@@ -126,7 +126,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set The number of boosts received by the chat
+     * Set The number of boosts received by the chat.
      */
     public function setBoostCount(int $boostCount): self
     {
@@ -136,7 +136,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get The number of boosts added to reach the current level
+     * Get The number of boosts added to reach the current level.
      */
     public function getCurrentLevelBoostCount(): int
     {
@@ -144,7 +144,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set The number of boosts added to reach the current level
+     * Set The number of boosts added to reach the current level.
      */
     public function setCurrentLevelBoostCount(int $currentLevelBoostCount): self
     {
@@ -154,7 +154,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get The number of boosts needed to reach the next level; 0 if the next level isn't available
+     * Get The number of boosts needed to reach the next level; 0 if the next level isn't available.
      */
     public function getNextLevelBoostCount(): int
     {
@@ -162,7 +162,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set The number of boosts needed to reach the next level; 0 if the next level isn't available
+     * Set The number of boosts needed to reach the next level; 0 if the next level isn't available.
      */
     public function setNextLevelBoostCount(int $nextLevelBoostCount): self
     {
@@ -172,7 +172,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get Approximate number of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat
+     * Get Approximate number of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat.
      */
     public function getPremiumMemberCount(): int
     {
@@ -180,7 +180,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set Approximate number of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat
+     * Set Approximate number of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat.
      */
     public function setPremiumMemberCount(int $premiumMemberCount): self
     {
@@ -190,7 +190,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get A percentage of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat
+     * Get A percentage of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat.
      */
     public function getPremiumMemberPercentage(): float
     {
@@ -198,7 +198,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set A percentage of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat
+     * Set A percentage of Telegram Premium subscribers joined the chat; always 0 if the current user isn't an administrator in the chat.
      */
     public function setPremiumMemberPercentage(float $premiumMemberPercentage): self
     {
@@ -208,7 +208,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Get The list of prepaid giveaways available for the chat; only for chat administrators
+     * Get The list of prepaid giveaways available for the chat; only for chat administrators.
      */
     public function getPrepaidGiveaways(): array|null
     {
@@ -216,7 +216,7 @@ class ChatBoostStatus implements \JsonSerializable
     }
 
     /**
-     * Set The list of prepaid giveaways available for the chat; only for chat administrators
+     * Set The list of prepaid giveaways available for the chat; only for chat administrators.
      */
     public function setPrepaidGiveaways(array|null $prepaidGiveaways): self
     {

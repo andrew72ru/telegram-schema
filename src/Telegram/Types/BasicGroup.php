@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a basic group of 0-200 users (must be upgraded to a supergroup to accommodate more than 200 users)
+ * Represents a basic group of 0-200 users (must be upgraded to a supergroup to accommodate more than 200 users).
  */
 class BasicGroup implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Get Group identifier
+     * Get Group identifier.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Set Group identifier
+     * Set Group identifier.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Get Number of members in the group
+     * Get Number of members in the group.
      */
     public function getMemberCount(): int
     {
@@ -57,7 +57,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Set Number of members in the group
+     * Set Number of members in the group.
      */
     public function setMemberCount(int $memberCount): self
     {
@@ -67,7 +67,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Get Status of the current user in the group
+     * Get Status of the current user in the group.
      */
     public function getStatus(): ChatMemberStatus|null
     {
@@ -75,7 +75,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Set Status of the current user in the group
+     * Set Status of the current user in the group.
      */
     public function setStatus(ChatMemberStatus|null $status): self
     {
@@ -85,7 +85,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Get True, if the group is active
+     * Get True, if the group is active.
      */
     public function getIsActive(): bool
     {
@@ -93,7 +93,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Set True, if the group is active
+     * Set True, if the group is active.
      */
     public function setIsActive(bool $isActive): self
     {
@@ -103,7 +103,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup to which this group was upgraded; 0 if none
+     * Get Identifier of the supergroup to which this group was upgraded; 0 if none.
      */
     public function getUpgradedToSupergroupId(): int
     {
@@ -111,7 +111,7 @@ class BasicGroup implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup to which this group was upgraded; 0 if none
+     * Set Identifier of the supergroup to which this group was upgraded; 0 if none.
      */
     public function setUpgradedToSupergroupId(int $upgradedToSupergroupId): self
     {

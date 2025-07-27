@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user is the owner of the chat and has all the administrator privileges
+ * The user is the owner of the chat and has all the administrator privileges.
  */
 class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializa
     }
 
     /**
-     * Get A custom title of the owner; 0-16 characters without emoji; applicable to supergroups only
+     * Get A custom title of the owner; 0-16 characters without emoji; applicable to supergroups only.
      */
     public function getCustomTitle(): string
     {
@@ -33,7 +33,7 @@ class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializa
     }
 
     /**
-     * Set A custom title of the owner; 0-16 characters without emoji; applicable to supergroups only
+     * Set A custom title of the owner; 0-16 characters without emoji; applicable to supergroups only.
      */
     public function setCustomTitle(string $customTitle): self
     {
@@ -43,7 +43,7 @@ class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializa
     }
 
     /**
-     * Get True, if the creator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only
+     * Get True, if the creator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only.
      */
     public function getIsAnonymous(): bool
     {
@@ -51,7 +51,7 @@ class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializa
     }
 
     /**
-     * Set True, if the creator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only
+     * Set True, if the creator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only.
      */
     public function setIsAnonymous(bool $isAnonymous): self
     {
@@ -61,7 +61,7 @@ class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializa
     }
 
     /**
-     * Get True, if the user is a member of the chat
+     * Get True, if the user is a member of the chat.
      */
     public function getIsMember(): bool
     {
@@ -69,7 +69,7 @@ class ChatMemberStatusCreator extends ChatMemberStatus implements \JsonSerializa
     }
 
     /**
-     * Set True, if the user is a member of the chat
+     * Set True, if the user is a member of the chat.
      */
     public function setIsMember(bool $isMember): self
     {

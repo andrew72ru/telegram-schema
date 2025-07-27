@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of sticker sets @total_count Approximate total number of sticker sets found @sets List of sticker sets
+ * Represents a list of sticker sets @total_count Approximate total number of sticker sets found @sets List of sticker sets.
  */
 class StickerSets implements \JsonSerializable
 {

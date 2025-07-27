@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of Telegram Star transactions
+ * Represents a list of Telegram Star transactions.
  */
 class StarTransactions implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get The amount of owned Telegram Stars
+     * Get The amount of owned Telegram Stars.
      */
     public function getStarAmount(): StarAmount|null
     {
@@ -33,7 +33,7 @@ class StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set The amount of owned Telegram Stars
+     * Set The amount of owned Telegram Stars.
      */
     public function setStarAmount(StarAmount|null $starAmount): self
     {
@@ -43,7 +43,7 @@ class StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get List of transactions with Telegram Stars
+     * Get List of transactions with Telegram Stars.
      */
     public function getTransactions(): array|null
     {
@@ -51,7 +51,7 @@ class StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set List of transactions with Telegram Stars
+     * Set List of transactions with Telegram Stars.
      */
     public function setTransactions(array|null $transactions): self
     {
@@ -61,7 +61,7 @@ class StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -69,7 +69,7 @@ class StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

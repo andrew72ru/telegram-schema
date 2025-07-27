@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user creating a Telegram Premium giveaway
+ * The user creating a Telegram Premium giveaway.
  */
 class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Get Giveaway parameters
+     * Get Giveaway parameters.
      */
     public function getParameters(): GiveawayParameters|null
     {
@@ -39,7 +39,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Set Giveaway parameters
+     * Set Giveaway parameters.
      */
     public function setParameters(GiveawayParameters|null $parameters): self
     {
@@ -49,7 +49,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -57,7 +57,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -67,7 +67,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -75,7 +75,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -85,7 +85,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Get Number of users which will be able to activate the gift codes
+     * Get Number of users which will be able to activate the gift codes.
      */
     public function getWinnerCount(): int
     {
@@ -93,7 +93,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Set Number of users which will be able to activate the gift codes
+     * Set Number of users which will be able to activate the gift codes.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -103,7 +103,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active for the users
+     * Get Number of months the Telegram Premium subscription will be active for the users.
      */
     public function getMonthCount(): int
     {
@@ -111,7 +111,7 @@ class TelegramPaymentPurposePremiumGiveaway extends TelegramPaymentPurpose imple
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active for the users
+     * Set Number of months the Telegram Premium subscription will be active for the users.
      */
     public function setMonthCount(int $monthCount): self
     {

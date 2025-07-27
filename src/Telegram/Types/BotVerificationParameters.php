@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes parameters of verification that is provided by a bot
+ * Describes parameters of verification that is provided by a bot.
  */
 class BotVerificationParameters implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the custom emoji that is used as the verification sign
+     * Get Identifier of the custom emoji that is used as the verification sign.
      */
     public function getIconCustomEmojiId(): int
     {
@@ -36,7 +36,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the custom emoji that is used as the verification sign
+     * Set Identifier of the custom emoji that is used as the verification sign.
      */
     public function setIconCustomEmojiId(int $iconCustomEmojiId): self
     {
@@ -46,7 +46,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Get Name of the organization that provides verification
+     * Get Name of the organization that provides verification.
      */
     public function getOrganizationName(): string
     {
@@ -54,7 +54,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Set Name of the organization that provides verification
+     * Set Name of the organization that provides verification.
      */
     public function setOrganizationName(string $organizationName): self
     {
@@ -64,7 +64,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Get Default custom description of verification reason to be used as placeholder in setMessageSenderBotVerification; may be null if none
+     * Get Default custom description of verification reason to be used as placeholder in setMessageSenderBotVerification; may be null if none.
      */
     public function getDefaultCustomDescription(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Set Default custom description of verification reason to be used as placeholder in setMessageSenderBotVerification; may be null if none
+     * Set Default custom description of verification reason to be used as placeholder in setMessageSenderBotVerification; may be null if none.
      */
     public function setDefaultCustomDescription(FormattedText|null $defaultCustomDescription): self
     {
@@ -82,7 +82,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot is allowed to provide custom description for verified entities
+     * Get True, if the bot is allowed to provide custom description for verified entities.
      */
     public function getCanSetCustomDescription(): bool
     {
@@ -90,7 +90,7 @@ class BotVerificationParameters implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot is allowed to provide custom description for verified entities
+     * Set True, if the bot is allowed to provide custom description for verified entities.
      */
     public function setCanSetCustomDescription(bool $canSetCustomDescription): self
     {

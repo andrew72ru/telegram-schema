@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns menu button set by the bot for the given user; for bots only @user_id Identifier of the user or 0 to get the default menu button
+ * Returns menu button set by the bot for the given user; for bots only @user_id Identifier of the user or 0 to get the default menu button.
  */
 class GetMenuButton extends BotMenuButton implements \JsonSerializable
 {

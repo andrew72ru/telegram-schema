@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about found messages sent on a specific day @total_count Total number of found messages sent on the day @message First message sent on the day
+ * Contains information about found messages sent on a specific day @total_count Total number of found messages sent on the day @message First message sent on the day.
  */
 class MessageCalendarDay implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the notification settings of a forum topic
+ * Changes the notification settings of a forum topic.
  */
 class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier of the forum topic
+     * Get Message thread identifier of the forum topic.
      */
     public function getMessageThreadId(): int
     {
@@ -51,7 +51,7 @@ class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier of the forum topic
+     * Set Message thread identifier of the forum topic.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -61,7 +61,7 @@ class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New notification settings for the forum topic. If the topic is muted for more than 366 days, it is considered to be muted forever
+     * Get New notification settings for the forum topic. If the topic is muted for more than 366 days, it is considered to be muted forever.
      */
     public function getNotificationSettings(): ChatNotificationSettings|null
     {
@@ -69,7 +69,7 @@ class SetForumTopicNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New notification settings for the forum topic. If the topic is muted for more than 366 days, it is considered to be muted forever
+     * Set New notification settings for the forum topic. If the topic is muted for more than 366 days, it is considered to be muted forever.
      */
     public function setNotificationSettings(ChatNotificationSettings|null $notificationSettings): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a sale of paid media by the channel chat; for channel chats only
+ * The transaction is a sale of paid media by the channel chat; for channel chats only.
  */
 class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implem
     }
 
     /**
-     * Get Identifier of the user that bought the media
+     * Get Identifier of the user that bought the media.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implem
     }
 
     /**
-     * Set Identifier of the user that bought the media
+     * Set Identifier of the user that bought the media.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implem
     }
 
     /**
-     * Get Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message
+     * Get Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implem
     }
 
     /**
-     * Set Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message
+     * Set Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implem
     }
 
     /**
-     * Get The bought media
+     * Get The bought media.
      */
     public function getMedia(): array|null
     {
@@ -69,7 +69,7 @@ class StarTransactionTypeChannelPaidMediaSale extends StarTransactionType implem
     }
 
     /**
-     * Set The bought media
+     * Set The bought media.
      */
     public function setMedia(array|null $media): self
     {

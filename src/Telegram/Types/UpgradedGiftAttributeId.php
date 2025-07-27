@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for UpgradedGiftAttributeId types
+ * Abstract base class for UpgradedGiftAttributeId types.
  */
 abstract class UpgradedGiftAttributeId implements \JsonSerializable
 {

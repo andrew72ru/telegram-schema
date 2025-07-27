@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The sticker is a custom emoji to be used inside message text and caption. Currently, only Telegram Premium users can use custom emoji
+ * The sticker is a custom emoji to be used inside message text and caption. Currently, only Telegram Premium users can use custom emoji.
  */
 class StickerFullTypeCustomEmoji extends StickerFullType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StickerFullTypeCustomEmoji extends StickerFullType implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the custom emoji
+     * Get Identifier of the custom emoji.
      */
     public function getCustomEmojiId(): int
     {
@@ -30,7 +30,7 @@ class StickerFullTypeCustomEmoji extends StickerFullType implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the custom emoji
+     * Set Identifier of the custom emoji.
      */
     public function setCustomEmojiId(int $customEmojiId): self
     {
@@ -40,7 +40,7 @@ class StickerFullTypeCustomEmoji extends StickerFullType implements \JsonSeriali
     }
 
     /**
-     * Get True, if the sticker must be repainted to a text color in messages, the color of the Telegram Premium badge in emoji status, white color on chat photos, or another appropriate color in other places
+     * Get True, if the sticker must be repainted to a text color in messages, the color of the Telegram Premium badge in emoji status, white color on chat photos, or another appropriate color in other places.
      */
     public function getNeedsRepainting(): bool
     {
@@ -48,7 +48,7 @@ class StickerFullTypeCustomEmoji extends StickerFullType implements \JsonSeriali
     }
 
     /**
-     * Set True, if the sticker must be repainted to a text color in messages, the color of the Telegram Premium badge in emoji status, white color on chat photos, or another appropriate color in other places
+     * Set True, if the sticker must be repainted to a text color in messages, the color of the Telegram Premium badge in emoji status, white color on chat photos, or another appropriate color in other places.
      */
     public function setNeedsRepainting(bool $needsRepainting): self
     {

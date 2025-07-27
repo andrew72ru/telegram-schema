@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a prepaid giveaway
+ * Describes a prepaid giveaway.
  */
 class PrepaidGiveaway implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the prepaid giveaway
+     * Get Unique identifier of the prepaid giveaway.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the prepaid giveaway
+     * Set Unique identifier of the prepaid giveaway.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Get Number of users which will receive giveaway prize
+     * Get Number of users which will receive giveaway prize.
      */
     public function getWinnerCount(): int
     {
@@ -57,7 +57,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Set Number of users which will receive giveaway prize
+     * Set Number of users which will receive giveaway prize.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -67,7 +67,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Get Prize of the giveaway
+     * Get Prize of the giveaway.
      */
     public function getPrize(): GiveawayPrize|null
     {
@@ -75,7 +75,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Set Prize of the giveaway
+     * Set Prize of the giveaway.
      */
     public function setPrize(GiveawayPrize|null $prize): self
     {
@@ -85,7 +85,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Get The number of boosts received by the chat from the giveaway; for Telegram Star giveaways only
+     * Get The number of boosts received by the chat from the giveaway; for Telegram Star giveaways only.
      */
     public function getBoostCount(): int
     {
@@ -93,7 +93,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Set The number of boosts received by the chat from the giveaway; for Telegram Star giveaways only
+     * Set The number of boosts received by the chat from the giveaway; for Telegram Star giveaways only.
      */
     public function setBoostCount(int $boostCount): self
     {
@@ -103,7 +103,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the giveaway was paid
+     * Get Point in time (Unix timestamp) when the giveaway was paid.
      */
     public function getPaymentDate(): int
     {
@@ -111,7 +111,7 @@ class PrepaidGiveaway implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the giveaway was paid
+     * Set Point in time (Unix timestamp) when the giveaway was paid.
      */
     public function setPaymentDate(int $paymentDate): self
     {

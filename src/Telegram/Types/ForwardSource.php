@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about the last message from which a new message was forwarded last time
+ * Contains information about the last message from which a new message was forwarded last time.
  */
 class ForwardSource implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message that was forwarded belonged; may be 0 if unknown
+     * Get Identifier of the chat to which the message that was forwarded belonged; may be 0 if unknown.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message that was forwarded belonged; may be 0 if unknown
+     * Set Identifier of the chat to which the message that was forwarded belonged; may be 0 if unknown.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message; may be 0 if unknown
+     * Get Identifier of the message; may be 0 if unknown.
      */
     public function getMessageId(): int
     {
@@ -60,7 +60,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message; may be 0 if unknown
+     * Set Identifier of the message; may be 0 if unknown.
      */
     public function setMessageId(int $messageId): self
     {
@@ -70,7 +70,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sender of the message; may be null if unknown or the new message was forwarded not to Saved Messages
+     * Get Identifier of the sender of the message; may be null if unknown or the new message was forwarded not to Saved Messages.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -78,7 +78,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sender of the message; may be null if unknown or the new message was forwarded not to Saved Messages
+     * Set Identifier of the sender of the message; may be null if unknown or the new message was forwarded not to Saved Messages.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -88,7 +88,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Get Name of the sender of the message if the sender is hidden by their privacy settings
+     * Get Name of the sender of the message if the sender is hidden by their privacy settings.
      */
     public function getSenderName(): string
     {
@@ -96,7 +96,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Set Name of the sender of the message if the sender is hidden by their privacy settings
+     * Set Name of the sender of the message if the sender is hidden by their privacy settings.
      */
     public function setSenderName(string $senderName): self
     {
@@ -106,7 +106,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message is sent; 0 if unknown
+     * Get Point in time (Unix timestamp) when the message is sent; 0 if unknown.
      */
     public function getDate(): int
     {
@@ -114,7 +114,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message is sent; 0 if unknown
+     * Set Point in time (Unix timestamp) when the message is sent; 0 if unknown.
      */
     public function setDate(int $date): self
     {
@@ -124,7 +124,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message that was forwarded is outgoing; always false if sender is unknown
+     * Get True, if the message that was forwarded is outgoing; always false if sender is unknown.
      */
     public function getIsOutgoing(): bool
     {
@@ -132,7 +132,7 @@ class ForwardSource implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message that was forwarded is outgoing; always false if sender is unknown
+     * Set True, if the message that was forwarded is outgoing; always false if sender is unknown.
      */
     public function setIsOutgoing(bool $isOutgoing): self
     {

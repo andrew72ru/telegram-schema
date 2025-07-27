@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a server for relaying call data
+ * Describes a server for relaying call data.
  */
 class CallServer implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Get Server identifier
+     * Get Server identifier.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Set Server identifier
+     * Set Server identifier.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Get Server IPv4 address
+     * Get Server IPv4 address.
      */
     public function getIpAddress(): string
     {
@@ -57,7 +57,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Set Server IPv4 address
+     * Set Server IPv4 address.
      */
     public function setIpAddress(string $ipAddress): self
     {
@@ -67,7 +67,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Get Server IPv6 address
+     * Get Server IPv6 address.
      */
     public function getIpv6Address(): string
     {
@@ -75,7 +75,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Set Server IPv6 address
+     * Set Server IPv6 address.
      */
     public function setIpv6Address(string $ipv6Address): self
     {
@@ -85,7 +85,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Get Server port number
+     * Get Server port number.
      */
     public function getPort(): int
     {
@@ -93,7 +93,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Set Server port number
+     * Set Server port number.
      */
     public function setPort(int $port): self
     {
@@ -103,7 +103,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Get Server type
+     * Get Server type.
      */
     public function getType(): CallServerType|null
     {
@@ -111,7 +111,7 @@ class CallServer implements \JsonSerializable
     }
 
     /**
-     * Set Server type
+     * Set Server type.
      */
     public function setType(CallServerType|null $type): self
     {

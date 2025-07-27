@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a user
+ * Represents a user.
  */
 class User implements \JsonSerializable
 {
@@ -97,7 +97,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getId(): int
     {
@@ -105,7 +105,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setId(int $id): self
     {
@@ -115,7 +115,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get First name of the user
+     * Get First name of the user.
      */
     public function getFirstName(): string
     {
@@ -123,7 +123,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set First name of the user
+     * Set First name of the user.
      */
     public function setFirstName(string $firstName): self
     {
@@ -133,7 +133,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Last name of the user
+     * Get Last name of the user.
      */
     public function getLastName(): string
     {
@@ -141,7 +141,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Last name of the user
+     * Set Last name of the user.
      */
     public function setLastName(string $lastName): self
     {
@@ -151,7 +151,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Usernames of the user; may be null
+     * Get Usernames of the user; may be null.
      */
     public function getUsernames(): Usernames|null
     {
@@ -159,7 +159,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Usernames of the user; may be null
+     * Set Usernames of the user; may be null.
      */
     public function setUsernames(Usernames|null $usernames): self
     {
@@ -169,7 +169,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Phone number of the user
+     * Get Phone number of the user.
      */
     public function getPhoneNumber(): string
     {
@@ -177,7 +177,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Phone number of the user
+     * Set Phone number of the user.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -187,7 +187,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Current online status of the user
+     * Get Current online status of the user.
      */
     public function getStatus(): UserStatus|null
     {
@@ -195,7 +195,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Current online status of the user
+     * Set Current online status of the user.
      */
     public function setStatus(UserStatus|null $status): self
     {
@@ -205,7 +205,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Profile photo of the user; may be null
+     * Get Profile photo of the user; may be null.
      */
     public function getProfilePhoto(): ProfilePhoto|null
     {
@@ -213,7 +213,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Profile photo of the user; may be null
+     * Set Profile photo of the user; may be null.
      */
     public function setProfilePhoto(ProfilePhoto|null $profilePhoto): self
     {
@@ -223,7 +223,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview
+     * Get Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview.
      */
     public function getAccentColorId(): int
     {
@@ -231,7 +231,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview
+     * Set Identifier of the accent color for name, and backgrounds of profile photo, reply header, and link preview.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -241,7 +241,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none
+     * Get Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
      */
     public function getBackgroundCustomEmojiId(): int
     {
@@ -249,7 +249,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none
+     * Set Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
      */
     public function setBackgroundCustomEmojiId(int $backgroundCustomEmojiId): self
     {
@@ -259,7 +259,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color for the user's profile; -1 if none
+     * Get Identifier of the accent color for the user's profile; -1 if none.
      */
     public function getProfileAccentColorId(): int
     {
@@ -267,7 +267,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color for the user's profile; -1 if none
+     * Set Identifier of the accent color for the user's profile; -1 if none.
      */
     public function setProfileAccentColorId(int $profileAccentColorId): self
     {
@@ -277,7 +277,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none
+     * Get Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none.
      */
     public function getProfileBackgroundCustomEmojiId(): int
     {
@@ -285,7 +285,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none
+     * Set Identifier of a custom emoji to be shown on the background of the user's profile; 0 if none.
      */
     public function setProfileBackgroundCustomEmojiId(int $profileBackgroundCustomEmojiId): self
     {
@@ -295,7 +295,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Emoji status to be shown instead of the default Telegram Premium badge; may be null
+     * Get Emoji status to be shown instead of the default Telegram Premium badge; may be null.
      */
     public function getEmojiStatus(): EmojiStatus|null
     {
@@ -303,7 +303,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Emoji status to be shown instead of the default Telegram Premium badge; may be null
+     * Set Emoji status to be shown instead of the default Telegram Premium badge; may be null.
      */
     public function setEmojiStatus(EmojiStatus|null $emojiStatus): self
     {
@@ -313,7 +313,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get The user is a contact of the current user
+     * Get The user is a contact of the current user.
      */
     public function getIsContact(): bool
     {
@@ -321,7 +321,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set The user is a contact of the current user
+     * Set The user is a contact of the current user.
      */
     public function setIsContact(bool $isContact): self
     {
@@ -331,7 +331,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get The user is a contact of the current user and the current user is a contact of the user
+     * Get The user is a contact of the current user and the current user is a contact of the user.
      */
     public function getIsMutualContact(): bool
     {
@@ -339,7 +339,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set The user is a contact of the current user and the current user is a contact of the user
+     * Set The user is a contact of the current user and the current user is a contact of the user.
      */
     public function setIsMutualContact(bool $isMutualContact): self
     {
@@ -349,7 +349,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get The user is a close friend of the current user; implies that the user is a contact
+     * Get The user is a close friend of the current user; implies that the user is a contact.
      */
     public function getIsCloseFriend(): bool
     {
@@ -357,7 +357,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set The user is a close friend of the current user; implies that the user is a contact
+     * Set The user is a close friend of the current user; implies that the user is a contact.
      */
     public function setIsCloseFriend(bool $isCloseFriend): self
     {
@@ -367,7 +367,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Information about verification status of the user; may be null if none
+     * Get Information about verification status of the user; may be null if none.
      */
     public function getVerificationStatus(): VerificationStatus|null
     {
@@ -375,7 +375,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Information about verification status of the user; may be null if none
+     * Set Information about verification status of the user; may be null if none.
      */
     public function setVerificationStatus(VerificationStatus|null $verificationStatus): self
     {
@@ -385,7 +385,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user is a Telegram Premium user
+     * Get True, if the user is a Telegram Premium user.
      */
     public function getIsPremium(): bool
     {
@@ -393,7 +393,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user is a Telegram Premium user
+     * Set True, if the user is a Telegram Premium user.
      */
     public function setIsPremium(bool $isPremium): self
     {
@@ -403,7 +403,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user is Telegram support account
+     * Get True, if the user is Telegram support account.
      */
     public function getIsSupport(): bool
     {
@@ -411,7 +411,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user is Telegram support account
+     * Set True, if the user is Telegram support account.
      */
     public function setIsSupport(bool $isSupport): self
     {
@@ -421,7 +421,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, it contains a human-readable description of the reason why access to this user must be restricted
+     * Get If non-empty, it contains a human-readable description of the reason why access to this user must be restricted.
      */
     public function getRestrictionReason(): string
     {
@@ -429,7 +429,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, it contains a human-readable description of the reason why access to this user must be restricted
+     * Set If non-empty, it contains a human-readable description of the reason why access to this user must be restricted.
      */
     public function setRestrictionReason(string $restrictionReason): self
     {
@@ -439,7 +439,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has non-expired stories available to the current user
+     * Get True, if the user has non-expired stories available to the current user.
      */
     public function getHasActiveStories(): bool
     {
@@ -447,7 +447,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has non-expired stories available to the current user
+     * Set True, if the user has non-expired stories available to the current user.
      */
     public function setHasActiveStories(bool $hasActiveStories): self
     {
@@ -457,7 +457,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has unread non-expired stories available to the current user
+     * Get True, if the user has unread non-expired stories available to the current user.
      */
     public function getHasUnreadActiveStories(): bool
     {
@@ -465,7 +465,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has unread non-expired stories available to the current user
+     * Set True, if the user has unread non-expired stories available to the current user.
      */
     public function setHasUnreadActiveStories(bool $hasUnreadActiveStories): self
     {
@@ -475,7 +475,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user may restrict new chats with non-contacts. Use canSendMessageToUser to check whether the current user can message the user or try to create a chat with them
+     * Get True, if the user may restrict new chats with non-contacts. Use canSendMessageToUser to check whether the current user can message the user or try to create a chat with them.
      */
     public function getRestrictsNewChats(): bool
     {
@@ -483,7 +483,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user may restrict new chats with non-contacts. Use canSendMessageToUser to check whether the current user can message the user or try to create a chat with them
+     * Set True, if the user may restrict new chats with non-contacts. Use canSendMessageToUser to check whether the current user can message the user or try to create a chat with them.
      */
     public function setRestrictsNewChats(bool $restrictsNewChats): self
     {
@@ -493,7 +493,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use canSendMessageToUser to check whether the current user must pay
+     * Get Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use canSendMessageToUser to check whether the current user must pay.
      */
     public function getPaidMessageStarCount(): int
     {
@@ -501,7 +501,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use canSendMessageToUser to check whether the current user must pay
+     * Set Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use canSendMessageToUser to check whether the current user must pay.
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {
@@ -511,7 +511,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get If false, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can't be passed to any method
+     * Get If false, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can't be passed to any method.
      */
     public function getHaveAccess(): bool
     {
@@ -519,7 +519,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set If false, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can't be passed to any method
+     * Set If false, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can't be passed to any method.
      */
     public function setHaveAccess(bool $haveAccess): self
     {
@@ -529,7 +529,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get Type of the user
+     * Get Type of the user.
      */
     public function getType(): UserType|null
     {
@@ -537,7 +537,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set Type of the user
+     * Set Type of the user.
      */
     public function setType(UserType|null $type): self
     {
@@ -547,7 +547,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get IETF language tag of the user's language; only available to bots
+     * Get IETF language tag of the user's language; only available to bots.
      */
     public function getLanguageCode(): string
     {
@@ -555,7 +555,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set IETF language tag of the user's language; only available to bots
+     * Set IETF language tag of the user's language; only available to bots.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -565,7 +565,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user added the current bot to attachment menu; only available to bots
+     * Get True, if the user added the current bot to attachment menu; only available to bots.
      */
     public function getAddedToAttachmentMenu(): bool
     {
@@ -573,7 +573,7 @@ class User implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user added the current bot to attachment menu; only available to bots
+     * Set True, if the user added the current bot to attachment menu; only available to bots.
      */
     public function setAddedToAttachmentMenu(bool $addedToAttachmentMenu): self
     {

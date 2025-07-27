@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A background from the server @background_id The background identifier
+ * A background from the server @background_id The background identifier.
  */
 class InputBackgroundRemote extends InputBackground implements \JsonSerializable
 {

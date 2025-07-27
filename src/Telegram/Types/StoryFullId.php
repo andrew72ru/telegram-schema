@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains identifier of a story along with identifier of the chat that posted it
+ * Contains identifier of a story along with identifier of the chat that posted it.
  */
 class StoryFullId implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StoryFullId implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getPosterChatId(): int
     {
@@ -30,7 +30,7 @@ class StoryFullId implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setPosterChatId(int $posterChatId): self
     {
@@ -40,7 +40,7 @@ class StoryFullId implements \JsonSerializable
     }
 
     /**
-     * Get Unique story identifier among stories of the chat
+     * Get Unique story identifier among stories of the chat.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class StoryFullId implements \JsonSerializable
     }
 
     /**
-     * Set Unique story identifier among stories of the chat
+     * Set Unique story identifier among stories of the chat.
      */
     public function setStoryId(int $storyId): self
     {

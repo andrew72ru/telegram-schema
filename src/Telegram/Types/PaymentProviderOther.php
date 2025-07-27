@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some other payment provider, for which a web payment form must be shown @url Payment form URL
+ * Some other payment provider, for which a web payment form must be shown @url Payment form URL.
  */
 class PaymentProviderOther extends PaymentProvider implements \JsonSerializable
 {

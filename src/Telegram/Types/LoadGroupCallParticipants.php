@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Loads more participants of a group call. The loaded participants will be received through updates. Use the field groupCall.loaded_all_participants to check whether all participants have already been loaded
+ * Loads more participants of a group call. The loaded participants will be received through updates. Use the field groupCall.loaded_all_participants to check whether all participants have already been loaded.
  */
 class LoadGroupCallParticipants extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class LoadGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined
+     * Get Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class LoadGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined
+     * Set Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class LoadGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of participants to load; up to 100
+     * Get The maximum number of participants to load; up to 100.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class LoadGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of participants to load; up to 100
+     * Set The maximum number of participants to load; up to 100.
      */
     public function setLimit(int $limit): self
     {

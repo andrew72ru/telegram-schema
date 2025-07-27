@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Passport element containing the user's bank statement @bank_statement Bank statement
+ * A Telegram Passport element containing the user's bank statement @bank_statement Bank statement.
  */
 class PassportElementBankStatement extends PassportElement implements \JsonSerializable
 {

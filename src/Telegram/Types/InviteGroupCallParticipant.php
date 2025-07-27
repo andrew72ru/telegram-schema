@@ -25,7 +25,7 @@ class InviteGroupCallParticipant extends InviteGroupCallParticipantResult implem
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class InviteGroupCallParticipant extends InviteGroupCallParticipantResult implem
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class InviteGroupCallParticipant extends InviteGroupCallParticipantResult implem
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -51,7 +51,7 @@ class InviteGroupCallParticipant extends InviteGroupCallParticipantResult implem
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -61,7 +61,7 @@ class InviteGroupCallParticipant extends InviteGroupCallParticipantResult implem
     }
 
     /**
-     * Get Pass true if the group call is a video call
+     * Get Pass true if the group call is a video call.
      */
     public function getIsVideo(): bool
     {
@@ -69,7 +69,7 @@ class InviteGroupCallParticipant extends InviteGroupCallParticipantResult implem
     }
 
     /**
-     * Set Pass true if the group call is a video call
+     * Set Pass true if the group call is a video call.
      */
     public function setIsVideo(bool $isVideo): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Passport element to be saved containing the user's utility bill @utility_bill The utility bill to be saved
+ * A Telegram Passport element to be saved containing the user's utility bill @utility_bill The utility bill to be saved.
  */
 class InputPassportElementUtilityBill extends InputPassportElement implements \JsonSerializable
 {

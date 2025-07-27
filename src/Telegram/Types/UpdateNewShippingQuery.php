@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming shipping query; for bots only. Only for invoices with flexible price
+ * A new incoming shipping query; for bots only. Only for invoices with flexible price.
  */
 class UpdateNewShippingQuery extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique query identifier
+     * Get Unique query identifier.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique query identifier
+     * Set Unique query identifier.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -54,7 +54,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -64,7 +64,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Invoice payload
+     * Get Invoice payload.
      */
     public function getInvoicePayload(): string
     {
@@ -72,7 +72,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Invoice payload
+     * Set Invoice payload.
      */
     public function setInvoicePayload(string $invoicePayload): self
     {
@@ -82,7 +82,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get User shipping address
+     * Get User shipping address.
      */
     public function getShippingAddress(): Address|null
     {
@@ -90,7 +90,7 @@ class UpdateNewShippingQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set User shipping address
+     * Set User shipping address.
      */
     public function setShippingAddress(Address|null $shippingAddress): self
     {

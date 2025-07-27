@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for public stories by the given address location. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit
+ * Searches for public stories by the given address location. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
  */
 class SearchPublicStoriesByLocation extends FoundStories implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SearchPublicStoriesByLocation extends FoundStories implements \JsonSeriali
     }
 
     /**
-     * Get Address of the location
+     * Get Address of the location.
      */
     public function getAddress(): LocationAddress|null
     {
@@ -33,7 +33,7 @@ class SearchPublicStoriesByLocation extends FoundStories implements \JsonSeriali
     }
 
     /**
-     * Set Address of the location
+     * Set Address of the location.
      */
     public function setAddress(LocationAddress|null $address): self
     {
@@ -43,7 +43,7 @@ class SearchPublicStoriesByLocation extends FoundStories implements \JsonSeriali
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -51,7 +51,7 @@ class SearchPublicStoriesByLocation extends FoundStories implements \JsonSeriali
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -61,7 +61,7 @@ class SearchPublicStoriesByLocation extends FoundStories implements \JsonSeriali
     }
 
     /**
-     * Get The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class SearchPublicStoriesByLocation extends FoundStories implements \JsonSeriali
     }
 
     /**
-     * Set The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of stories to be returned; up to 100. For optimal performance, the number of returned stories is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

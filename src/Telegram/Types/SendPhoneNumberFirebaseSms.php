@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends Firebase Authentication SMS to the specified phone number. Works only when received a code of the type authenticationCodeTypeFirebaseAndroid or authenticationCodeTypeFirebaseIos
+ * Sends Firebase Authentication SMS to the specified phone number. Works only when received a code of the type authenticationCodeTypeFirebaseAndroid or authenticationCodeTypeFirebaseIos.
  */
 class SendPhoneNumberFirebaseSms extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class SendPhoneNumberFirebaseSms extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Play Integrity API or SafetyNet Attestation API token for the Android application, or secret from push notification for the iOS application
+     * Get Play Integrity API or SafetyNet Attestation API token for the Android application, or secret from push notification for the iOS application.
      */
     public function getToken(): string
     {
@@ -27,7 +27,7 @@ class SendPhoneNumberFirebaseSms extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Play Integrity API or SafetyNet Attestation API token for the Android application, or secret from push notification for the iOS application
+     * Set Play Integrity API or SafetyNet Attestation API token for the Android application, or secret from push notification for the iOS application.
      */
     public function setToken(string $token): self
     {

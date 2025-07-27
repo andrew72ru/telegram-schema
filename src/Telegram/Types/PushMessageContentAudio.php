@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An audio message @audio Message content; may be null @is_pinned True, if the message is a pinned message with the specified content
+ * An audio message @audio Message content; may be null @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentAudio extends PushMessageContent implements \JsonSerializable
 {

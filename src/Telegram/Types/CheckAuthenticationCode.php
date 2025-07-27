@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks the authentication code. Works only when the current authorization state is authorizationStateWaitCode @code Authentication code to check
+ * Checks the authentication code. Works only when the current authorization state is authorizationStateWaitCode @code Authentication code to check.
  */
 class CheckAuthenticationCode extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Shares a chat after pressing a keyboardButtonTypeRequestChat button with the bot
+ * Shares a chat after pressing a keyboardButtonTypeRequestChat button with the bot.
  */
 class ShareChatWithBot extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the bot
+     * Get Identifier of the chat with the bot.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the bot
+     * Set Identifier of the chat with the bot.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message with the button
+     * Get Identifier of the message with the button.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message with the button
+     * Set Identifier of the message with the button.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the button
+     * Get Identifier of the button.
      */
     public function getButtonId(): int
     {
@@ -75,7 +75,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the button
+     * Set Identifier of the button.
      */
     public function setButtonId(int $buttonId): self
     {
@@ -85,7 +85,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the shared chat
+     * Get Identifier of the shared chat.
      */
     public function getSharedChatId(): int
     {
@@ -93,7 +93,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the shared chat
+     * Set Identifier of the shared chat.
      */
     public function setSharedChatId(int $sharedChatId): self
     {
@@ -103,7 +103,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to check that the chat can be shared by the button instead of actually sharing it. Doesn't check bot_is_member and bot_administrator_rights restrictions.
+     * Get Pass true to check that the chat can be shared by the button instead of actually sharing it. Doesn't check bot_is_member and bot_administrator_rights restrictions..
      */
     public function getOnlyCheck(): bool
     {
@@ -111,7 +111,7 @@ class ShareChatWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to check that the chat can be shared by the button instead of actually sharing it. Doesn't check bot_is_member and bot_administrator_rights restrictions.
+     * Set Pass true to check that the chat can be shared by the button instead of actually sharing it. Doesn't check bot_is_member and bot_administrator_rights restrictions..
      */
     public function setOnlyCheck(bool $onlyCheck): self
     {

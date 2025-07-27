@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new recurring payment was made by the current user @amount The paid amount
+ * A new recurring payment was made by the current user @amount The paid amount.
  */
 class PushMessageContentRecurringPayment extends PushMessageContent implements \JsonSerializable
 {

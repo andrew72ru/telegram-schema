@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a collectible item and its last purchase
+ * Contains information about a collectible item and its last purchase.
  */
 class CollectibleItemInfo implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the item was purchased
+     * Get Point in time (Unix timestamp) when the item was purchased.
      */
     public function getPurchaseDate(): int
     {
@@ -42,7 +42,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the item was purchased
+     * Set Point in time (Unix timestamp) when the item was purchased.
      */
     public function setPurchaseDate(int $purchaseDate): self
     {
@@ -52,7 +52,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Get Currency for the paid amount
+     * Get Currency for the paid amount.
      */
     public function getCurrency(): string
     {
@@ -60,7 +60,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Set Currency for the paid amount
+     * Set Currency for the paid amount.
      */
     public function setCurrency(string $currency): self
     {
@@ -70,7 +70,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Get The paid amount, in the smallest units of the currency
+     * Get The paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -78,7 +78,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Set The paid amount, in the smallest units of the currency
+     * Set The paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -88,7 +88,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Get Cryptocurrency used to pay for the item
+     * Get Cryptocurrency used to pay for the item.
      */
     public function getCryptocurrency(): string
     {
@@ -96,7 +96,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Set Cryptocurrency used to pay for the item
+     * Set Cryptocurrency used to pay for the item.
      */
     public function setCryptocurrency(string $cryptocurrency): self
     {
@@ -106,7 +106,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Get The paid amount, in the smallest units of the cryptocurrency
+     * Get The paid amount, in the smallest units of the cryptocurrency.
      */
     public function getCryptocurrencyAmount(): int
     {
@@ -114,7 +114,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Set The paid amount, in the smallest units of the cryptocurrency
+     * Set The paid amount, in the smallest units of the cryptocurrency.
      */
     public function setCryptocurrencyAmount(int $cryptocurrencyAmount): self
     {
@@ -124,7 +124,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Get Individual URL for the item on https://fragment.com
+     * Get Individual URL for the item on https://fragment.com.
      */
     public function getUrl(): string
     {
@@ -132,7 +132,7 @@ class CollectibleItemInfo implements \JsonSerializable
     }
 
     /**
-     * Set Individual URL for the item on https://fragment.com
+     * Set Individual URL for the item on https://fragment.com.
      */
     public function setUrl(string $url): self
     {

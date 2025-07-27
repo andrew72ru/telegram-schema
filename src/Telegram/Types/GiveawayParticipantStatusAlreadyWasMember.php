@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user can't participate in the giveaway, because they have already been member of the chat
+ * The user can't participate in the giveaway, because they have already been member of the chat.
  */
 class GiveawayParticipantStatusAlreadyWasMember extends GiveawayParticipantStatus implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GiveawayParticipantStatusAlreadyWasMember extends GiveawayParticipantStatu
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user joined the chat
+     * Get Point in time (Unix timestamp) when the user joined the chat.
      */
     public function getJoinedChatDate(): int
     {
@@ -27,7 +27,7 @@ class GiveawayParticipantStatusAlreadyWasMember extends GiveawayParticipantStatu
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user joined the chat
+     * Set Point in time (Unix timestamp) when the user joined the chat.
      */
     public function setJoinedChatDate(int $joinedChatDate): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes parameters of an affiliate program
+ * Describes parameters of an affiliate program.
  */
 class AffiliateProgramParameters implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AffiliateProgramParameters implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner;
+     * Get The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner;.
      */
     public function getCommissionPerMille(): int
     {
@@ -30,7 +30,7 @@ class AffiliateProgramParameters implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner;
+     * Set The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner;.
      */
     public function setCommissionPerMille(int $commissionPerMille): self
     {
@@ -40,7 +40,7 @@ class AffiliateProgramParameters implements \JsonSerializable
     }
 
     /**
-     * Get Number of months the program will be active; 0-36. If 0, then the program is eternal
+     * Get Number of months the program will be active; 0-36. If 0, then the program is eternal.
      */
     public function getMonthCount(): int
     {
@@ -48,7 +48,7 @@ class AffiliateProgramParameters implements \JsonSerializable
     }
 
     /**
-     * Set Number of months the program will be active; 0-36. If 0, then the program is eternal
+     * Set Number of months the program will be active; 0-36. If 0, then the program is eternal.
      */
     public function setMonthCount(int $monthCount): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the name of a bot. Can be called only if userTypeBot.can_be_edited == true
+ * Sets the name of a bot. Can be called only if userTypeBot.can_be_edited == true.
  */
 class SetBotName extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetBotName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SetBotName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SetBotName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code. If empty, the name will be shown to all users for whose languages there is no dedicated name
+     * Get A two-letter ISO 639-1 language code. If empty, the name will be shown to all users for whose languages there is no dedicated name.
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class SetBotName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code. If empty, the name will be shown to all users for whose languages there is no dedicated name
+     * Set A two-letter ISO 639-1 language code. If empty, the name will be shown to all users for whose languages there is no dedicated name.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class SetBotName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New bot's name on the specified language; 0-64 characters; must be non-empty if language code is empty
+     * Get New bot's name on the specified language; 0-64 characters; must be non-empty if language code is empty.
      */
     public function getName(): string
     {
@@ -69,7 +69,7 @@ class SetBotName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New bot's name on the specified language; 0-64 characters; must be non-empty if language code is empty
+     * Set New bot's name on the specified language; 0-64 characters; must be non-empty if language code is empty.
      */
     public function setName(string $name): self
     {

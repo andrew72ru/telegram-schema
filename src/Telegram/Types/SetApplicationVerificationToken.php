@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Application or reCAPTCHA verification has been completed. Can be called before authorization
+ * Application or reCAPTCHA verification has been completed. Can be called before authorization.
  */
 class SetApplicationVerificationToken extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetApplicationVerificationToken extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier for the verification process as received from updateApplicationVerificationRequired or updateApplicationRecaptchaVerificationRequired
+     * Get Unique identifier for the verification process as received from updateApplicationVerificationRequired or updateApplicationRecaptchaVerificationRequired.
      */
     public function getVerificationId(): int
     {
@@ -30,7 +30,7 @@ class SetApplicationVerificationToken extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier for the verification process as received from updateApplicationVerificationRequired or updateApplicationRecaptchaVerificationRequired
+     * Set Unique identifier for the verification process as received from updateApplicationVerificationRequired or updateApplicationRecaptchaVerificationRequired.
      */
     public function setVerificationId(int $verificationId): self
     {
@@ -40,7 +40,7 @@ class SetApplicationVerificationToken extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Play Integrity API token for the Android application, or secret from push notification for the iOS application for application verification, or reCAPTCHA token for reCAPTCHA verifications;
+     * Get Play Integrity API token for the Android application, or secret from push notification for the iOS application for application verification, or reCAPTCHA token for reCAPTCHA verifications;.
      */
     public function getToken(): string
     {
@@ -48,7 +48,7 @@ class SetApplicationVerificationToken extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Play Integrity API token for the Android application, or secret from push notification for the iOS application for application verification, or reCAPTCHA token for reCAPTCHA verifications;
+     * Set Play Integrity API token for the Android application, or secret from push notification for the iOS application for application verification, or reCAPTCHA token for reCAPTCHA verifications;.
      */
     public function setToken(string $token): self
     {

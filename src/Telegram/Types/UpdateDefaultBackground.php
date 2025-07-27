@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The default background has changed @for_dark_theme True, if default background for dark theme has changed @background The new default background; may be null
+ * The default background has changed @for_dark_theme True, if default background for dark theme has changed @background The new default background; may be null.
  */
 class UpdateDefaultBackground extends Update implements \JsonSerializable
 {

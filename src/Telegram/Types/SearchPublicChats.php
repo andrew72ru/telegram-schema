@@ -19,7 +19,7 @@ class SearchPublicChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -27,7 +27,7 @@ class SearchPublicChats extends Chats implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {

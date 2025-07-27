@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Identifier of a gift backdrop @backdrop_id Identifier of the backdrop
+ * Identifier of a gift backdrop @backdrop_id Identifier of the backdrop.
  */
 class UpgradedGiftAttributeIdBackdrop extends UpgradedGiftAttributeId implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a chat from the list of recently found chats @chat_id Identifier of the chat to be removed
+ * Removes a chat from the list of recently found chats @chat_id Identifier of the chat to be removed.
  */
 class RemoveRecentlyFoundChat extends Ok implements \JsonSerializable
 {

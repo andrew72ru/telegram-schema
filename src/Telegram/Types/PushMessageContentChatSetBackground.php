@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat background was edited @is_same True, if the set background is the same as the background of the current user
+ * A chat background was edited @is_same True, if the set background is the same as the background of the current user.
  */
 class PushMessageContentChatSetBackground extends PushMessageContent implements \JsonSerializable
 {

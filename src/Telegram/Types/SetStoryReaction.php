@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes chosen reaction on a story that has already been sent
+ * Changes chosen reaction on a story that has already been sent.
  */
 class SetStoryReaction extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the poster of the story
+     * Get The identifier of the poster of the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -36,7 +36,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the poster of the story
+     * Set The identifier of the poster of the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -46,7 +46,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the story
+     * Get The identifier of the story.
      */
     public function getStoryId(): int
     {
@@ -54,7 +54,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the story
+     * Set The identifier of the story.
      */
     public function setStoryId(int $storyId): self
     {
@@ -64,7 +64,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Type of the reaction to set; pass null to remove the reaction. Custom emoji reactions can be used only by Telegram Premium users. Paid reactions can't be set
+     * Get Type of the reaction to set; pass null to remove the reaction. Custom emoji reactions can be used only by Telegram Premium users. Paid reactions can't be set.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -72,7 +72,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Type of the reaction to set; pass null to remove the reaction. Custom emoji reactions can be used only by Telegram Premium users. Paid reactions can't be set
+     * Set Type of the reaction to set; pass null to remove the reaction. Custom emoji reactions can be used only by Telegram Premium users. Paid reactions can't be set.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {
@@ -82,7 +82,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the reaction needs to be added to recent reactions
+     * Get Pass true if the reaction needs to be added to recent reactions.
      */
     public function getUpdateRecentReactions(): bool
     {
@@ -90,7 +90,7 @@ class SetStoryReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the reaction needs to be added to recent reactions
+     * Set Pass true if the reaction needs to be added to recent reactions.
      */
     public function setUpdateRecentReactions(bool $updateRecentReactions): self
     {

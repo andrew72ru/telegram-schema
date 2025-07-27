@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns recent emoji statuses for self status
+ * Returns recent emoji statuses for self status.
  */
 class GetRecentEmojiStatuses extends EmojiStatuses implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The affiliate is a channel chat where the current user has can_post_messages administrator right @chat_id Identifier of the channel chat
+ * The affiliate is a channel chat where the current user has can_post_messages administrator right @chat_id Identifier of the channel chat.
  */
 class AffiliateTypeChannel extends AffiliateType implements \JsonSerializable
 {

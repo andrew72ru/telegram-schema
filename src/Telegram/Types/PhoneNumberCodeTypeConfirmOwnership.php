@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Confirms ownership of a phone number to prevent account deletion while handling links of the type internalLinkTypePhoneNumberConfirmation
+ * Confirms ownership of a phone number to prevent account deletion while handling links of the type internalLinkTypePhoneNumberConfirmation.
  */
 class PhoneNumberCodeTypeConfirmOwnership extends PhoneNumberCodeType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class PhoneNumberCodeTypeConfirmOwnership extends PhoneNumberCodeType implements
     }
 
     /**
-     * Get Hash value from the link
+     * Get Hash value from the link.
      */
     public function getHash(): string
     {
@@ -27,7 +27,7 @@ class PhoneNumberCodeTypeConfirmOwnership extends PhoneNumberCodeType implements
     }
 
     /**
-     * Set Hash value from the link
+     * Set Hash value from the link.
      */
     public function setHash(string $hash): self
     {

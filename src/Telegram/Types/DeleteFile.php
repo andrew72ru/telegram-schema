@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a file from the TDLib file cache @file_id Identifier of the file to delete
+ * Deletes a file from the TDLib file cache @file_id Identifier of the file to delete.
  */
 class DeleteFile extends Ok implements \JsonSerializable
 {

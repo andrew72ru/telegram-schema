@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the editable username of the current user
+ * Changes the editable username of the current user.
  */
 class SetUsername extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class SetUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username
+     * Get The new value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username.
      */
     public function getUsername(): string
     {
@@ -27,7 +27,7 @@ class SetUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username
+     * Set The new value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username.
      */
     public function setUsername(string $username): self
     {

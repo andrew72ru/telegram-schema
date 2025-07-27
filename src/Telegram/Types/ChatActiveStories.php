@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes active stories posted by a chat
+ * Describes active stories posted by a chat.
  */
 class ChatActiveStories implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the stories
+     * Get Identifier of the chat that posted the stories.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the stories
+     * Set Identifier of the chat that posted the stories.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story list in which the stories are shown; may be null if the stories aren't shown in a story list
+     * Get Identifier of the story list in which the stories are shown; may be null if the stories aren't shown in a story list.
      */
     public function getList(): StoryList|null
     {
@@ -57,7 +57,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story list in which the stories are shown; may be null if the stories aren't shown in a story list
+     * Set Identifier of the story list in which the stories are shown; may be null if the stories aren't shown in a story list.
      */
     public function setList(StoryList|null $list): self
     {
@@ -67,7 +67,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Get A parameter used to determine order of the stories in the story list; 0 if the stories doesn't need to be shown in the story list. Stories must be sorted by the pair (order, story_poster_chat_id) in descending order
+     * Get A parameter used to determine order of the stories in the story list; 0 if the stories doesn't need to be shown in the story list. Stories must be sorted by the pair (order, story_poster_chat_id) in descending order.
      */
     public function getOrder(): int
     {
@@ -75,7 +75,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Set A parameter used to determine order of the stories in the story list; 0 if the stories doesn't need to be shown in the story list. Stories must be sorted by the pair (order, story_poster_chat_id) in descending order
+     * Set A parameter used to determine order of the stories in the story list; 0 if the stories doesn't need to be shown in the story list. Stories must be sorted by the pair (order, story_poster_chat_id) in descending order.
      */
     public function setOrder(int $order): self
     {
@@ -85,7 +85,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read active story
+     * Get Identifier of the last read active story.
      */
     public function getMaxReadStoryId(): int
     {
@@ -93,7 +93,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read active story
+     * Set Identifier of the last read active story.
      */
     public function setMaxReadStoryId(int $maxReadStoryId): self
     {
@@ -103,7 +103,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Get Basic information about the stories; use getStory to get full information about the stories. The stories are in chronological order (i.e., in order of increasing story identifiers)
+     * Get Basic information about the stories; use getStory to get full information about the stories. The stories are in chronological order (i.e., in order of increasing story identifiers).
      */
     public function getStories(): array|null
     {
@@ -111,7 +111,7 @@ class ChatActiveStories implements \JsonSerializable
     }
 
     /**
-     * Set Basic information about the stories; use getStory to get full information about the stories. The stories are in chronological order (i.e., in order of increasing story identifiers)
+     * Set Basic information about the stories; use getStory to get full information about the stories. The stories are in chronological order (i.e., in order of increasing story identifiers).
      */
     public function setStories(array|null $stories): self
     {

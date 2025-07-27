@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of requests to join a chat @total_count Approximate total number of requests found @requests List of the requests
+ * Contains a list of requests to join a chat @total_count Approximate total number of requests found @requests List of the requests.
  */
 class ChatJoinRequests implements \JsonSerializable
 {

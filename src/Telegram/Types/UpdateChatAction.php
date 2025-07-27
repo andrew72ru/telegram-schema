@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message sender activity in the chat has changed
+ * A message sender activity in the chat has changed.
  */
 class UpdateChatAction extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier in which the action was performed
+     * Get If not 0, the message thread identifier in which the action was performed.
      */
     public function getMessageThreadId(): int
     {
@@ -54,7 +54,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier in which the action was performed
+     * Set If not 0, the message thread identifier in which the action was performed.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -64,7 +64,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a message sender performing the action
+     * Get Identifier of a message sender performing the action.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -72,7 +72,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a message sender performing the action
+     * Set Identifier of a message sender performing the action.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -82,7 +82,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The action
+     * Get The action.
      */
     public function getAction(): ChatAction|null
     {
@@ -90,7 +90,7 @@ class UpdateChatAction extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The action
+     * Set The action.
      */
     public function setAction(ChatAction|null $action): self
     {

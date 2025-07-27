@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains full information about a basic group
+ * Contains full information about a basic group.
  */
 class BasicGroupFullInfo implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo
+     * Get Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo.
      */
     public function getPhoto(): ChatPhoto|null
     {
@@ -48,7 +48,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo
+     * Set Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo.
      */
     public function setPhoto(ChatPhoto|null $photo): self
     {
@@ -58,7 +58,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Contains full information about a basic group
+     * Get Contains full information about a basic group.
      */
     public function getDescription(): string
     {
@@ -66,7 +66,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Contains full information about a basic group
+     * Set Contains full information about a basic group.
      */
     public function setDescription(string $description): self
     {
@@ -76,7 +76,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the creator of the group; 0 if unknown
+     * Get User identifier of the creator of the group; 0 if unknown.
      */
     public function getCreatorUserId(): int
     {
@@ -84,7 +84,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the creator of the group; 0 if unknown
+     * Set User identifier of the creator of the group; 0 if unknown.
      */
     public function setCreatorUserId(int $creatorUserId): self
     {
@@ -94,7 +94,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Group members
+     * Get Group members.
      */
     public function getMembers(): array|null
     {
@@ -102,7 +102,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Group members
+     * Set Group members.
      */
     public function setMembers(array|null $members): self
     {
@@ -112,7 +112,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators after upgrading the basic group to a supergroup
+     * Get True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators after upgrading the basic group to a supergroup.
      */
     public function getCanHideMembers(): bool
     {
@@ -120,7 +120,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators after upgrading the basic group to a supergroup
+     * Set True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators after upgrading the basic group to a supergroup.
      */
     public function setCanHideMembers(bool $canHideMembers): self
     {
@@ -130,7 +130,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if aggressive anti-spam checks can be enabled or disabled in the supergroup after upgrading the basic group to a supergroup
+     * Get True, if aggressive anti-spam checks can be enabled or disabled in the supergroup after upgrading the basic group to a supergroup.
      */
     public function getCanToggleAggressiveAntiSpam(): bool
     {
@@ -138,7 +138,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if aggressive anti-spam checks can be enabled or disabled in the supergroup after upgrading the basic group to a supergroup
+     * Set True, if aggressive anti-spam checks can be enabled or disabled in the supergroup after upgrading the basic group to a supergroup.
      */
     public function setCanToggleAggressiveAntiSpam(bool $canToggleAggressiveAntiSpam): self
     {
@@ -148,7 +148,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get Primary invite link for this group; may be null. For chat administrators with can_invite_users right only. Updated only after the basic group is opened
+     * Get Primary invite link for this group; may be null. For chat administrators with can_invite_users right only. Updated only after the basic group is opened.
      */
     public function getInviteLink(): ChatInviteLink|null
     {
@@ -156,7 +156,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set Primary invite link for this group; may be null. For chat administrators with can_invite_users right only. Updated only after the basic group is opened
+     * Set Primary invite link for this group; may be null. For chat administrators with can_invite_users right only. Updated only after the basic group is opened.
      */
     public function setInviteLink(ChatInviteLink|null $inviteLink): self
     {
@@ -166,7 +166,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Get List of commands of bots in the group
+     * Get List of commands of bots in the group.
      */
     public function getBotCommands(): array|null
     {
@@ -174,7 +174,7 @@ class BasicGroupFullInfo implements \JsonSerializable
     }
 
     /**
-     * Set List of commands of bots in the group
+     * Set List of commands of bots in the group.
      */
     public function setBotCommands(array|null $botCommands): self
     {

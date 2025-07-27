@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for the specified query in the first names, last names and usernames of the known user contacts
+ * Searches for the specified query in the first names, last names and usernames of the known user contacts.
  */
 class SearchContacts extends Users implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchContacts extends Users implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for; may be empty to return all contacts
+     * Get Query to search for; may be empty to return all contacts.
      */
     public function getQuery(): string
     {
@@ -30,7 +30,7 @@ class SearchContacts extends Users implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for; may be empty to return all contacts
+     * Set Query to search for; may be empty to return all contacts.
      */
     public function setQuery(string $query): self
     {
@@ -40,7 +40,7 @@ class SearchContacts extends Users implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of users to be returned
+     * Get The maximum number of users to be returned.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class SearchContacts extends Users implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of users to be returned
+     * Set The maximum number of users to be returned.
      */
     public function setLimit(int $limit): self
     {

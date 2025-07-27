@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of story areas to be added @areas List of input story areas. Currently, a story can have
+ * Contains a list of story areas to be added @areas List of input story areas. Currently, a story can have.
  */
 class InputStoryAreas implements \JsonSerializable
 {

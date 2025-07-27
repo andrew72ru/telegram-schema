@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A digit-only authentication code is delivered via a phone call to the specified phone number
+ * A digit-only authentication code is delivered via a phone call to the specified phone number.
  */
 class AuthenticationCodeTypeCall extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class AuthenticationCodeTypeCall extends AuthenticationCodeType implements \Json
     }
 
     /**
-     * Get Length of the code
+     * Get Length of the code.
      */
     public function getLength(): int
     {
@@ -27,7 +27,7 @@ class AuthenticationCodeTypeCall extends AuthenticationCodeType implements \Json
     }
 
     /**
-     * Set Length of the code
+     * Set Length of the code.
      */
     public function setLength(int $length): self
     {

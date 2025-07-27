@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat is a private or secret chat, which can be reported using the method reportChat, or the other user can be blocked using the method setMessageSenderBlockList,
+ * The chat is a private or secret chat, which can be reported using the method reportChat, or the other user can be blocked using the method setMessageSenderBlockList,.
  */
 class ChatActionBarReportAddBlock extends ChatActionBar implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatActionBarReportAddBlock extends ChatActionBar implements \JsonSerializ
     }
 
     /**
-     * Get If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings
+     * Get If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings.
      */
     public function getCanUnarchive(): bool
     {
@@ -30,7 +30,7 @@ class ChatActionBarReportAddBlock extends ChatActionBar implements \JsonSerializ
     }
 
     /**
-     * Set If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings
+     * Set If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings.
      */
     public function setCanUnarchive(bool $canUnarchive): self
     {
@@ -40,7 +40,7 @@ class ChatActionBarReportAddBlock extends ChatActionBar implements \JsonSerializ
     }
 
     /**
-     * Get Basic information about the other user in the chat; may be null if unknown
+     * Get Basic information about the other user in the chat; may be null if unknown.
      */
     public function getAccountInfo(): AccountInfo|null
     {
@@ -48,7 +48,7 @@ class ChatActionBarReportAddBlock extends ChatActionBar implements \JsonSerializ
     }
 
     /**
-     * Set Basic information about the other user in the chat; may be null if unknown
+     * Set Basic information about the other user in the chat; may be null if unknown.
      */
     public function setAccountInfo(AccountInfo|null $accountInfo): self
     {

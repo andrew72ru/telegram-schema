@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a sticker from the set to which it belongs. The sticker set must be owned by the current user @sticker Sticker to remove from the set
+ * Removes a sticker from the set to which it belongs. The sticker set must be owned by the current user @sticker Sticker to remove from the set.
  */
 class RemoveStickerFromSet extends Ok implements \JsonSerializable
 {

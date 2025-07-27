@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video message
+ * A video message.
  */
 class InputMessageVideo extends InputMessageContent implements \JsonSerializable
 {
@@ -55,7 +55,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video to be sent. The video is expected to be re-encoded to MPEG4 format with H.264 codec by the sender
+     * Get Video to be sent. The video is expected to be re-encoded to MPEG4 format with H.264 codec by the sender.
      */
     public function getVideo(): InputFile|null
     {
@@ -63,7 +63,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video to be sent. The video is expected to be re-encoded to MPEG4 format with H.264 codec by the sender
+     * Set Video to be sent. The video is expected to be re-encoded to MPEG4 format with H.264 codec by the sender.
      */
     public function setVideo(InputFile|null $video): self
     {
@@ -73,7 +73,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video thumbnail; pass null to skip thumbnail uploading
+     * Get Video thumbnail; pass null to skip thumbnail uploading.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -81,7 +81,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video thumbnail; pass null to skip thumbnail uploading
+     * Set Video thumbnail; pass null to skip thumbnail uploading.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -91,7 +91,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Cover of the video; pass null to skip cover uploading; not supported in secret chats and for self-destructing messages
+     * Get Cover of the video; pass null to skip cover uploading; not supported in secret chats and for self-destructing messages.
      */
     public function getCover(): InputFile|null
     {
@@ -99,7 +99,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Cover of the video; pass null to skip cover uploading; not supported in secret chats and for self-destructing messages
+     * Set Cover of the video; pass null to skip cover uploading; not supported in secret chats and for self-destructing messages.
      */
     public function setCover(InputFile|null $cover): self
     {
@@ -109,7 +109,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp from which the video playing must start, in seconds
+     * Get Timestamp from which the video playing must start, in seconds.
      */
     public function getStartTimestamp(): int
     {
@@ -117,7 +117,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp from which the video playing must start, in seconds
+     * Set Timestamp from which the video playing must start, in seconds.
      */
     public function setStartTimestamp(int $startTimestamp): self
     {
@@ -127,7 +127,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get File identifiers of the stickers added to the video, if applicable
+     * Get File identifiers of the stickers added to the video, if applicable.
      */
     public function getAddedStickerFileIds(): array|null
     {
@@ -135,7 +135,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set File identifiers of the stickers added to the video, if applicable
+     * Set File identifiers of the stickers added to the video, if applicable.
      */
     public function setAddedStickerFileIds(array|null $addedStickerFileIds): self
     {
@@ -145,7 +145,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the video, in seconds
+     * Get Duration of the video, in seconds.
      */
     public function getDuration(): int
     {
@@ -153,7 +153,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the video, in seconds
+     * Set Duration of the video, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -163,7 +163,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video width
+     * Get Video width.
      */
     public function getWidth(): int
     {
@@ -171,7 +171,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video width
+     * Set Video width.
      */
     public function setWidth(int $width): self
     {
@@ -181,7 +181,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video height
+     * Get Video height.
      */
     public function getHeight(): int
     {
@@ -189,7 +189,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video height
+     * Set Video height.
      */
     public function setHeight(int $height): self
     {
@@ -199,7 +199,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video is expected to be streamed
+     * Get True, if the video is expected to be streamed.
      */
     public function getSupportsStreaming(): bool
     {
@@ -207,7 +207,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video is expected to be streamed
+     * Set True, if the video is expected to be streamed.
      */
     public function setSupportsStreaming(bool $supportsStreaming): self
     {
@@ -217,7 +217,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Video caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -225,7 +225,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Video caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -235,7 +235,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the caption must be shown above the video; otherwise, the caption must be shown below the video; not supported in secret chats
+     * Get True, if the caption must be shown above the video; otherwise, the caption must be shown below the video; not supported in secret chats.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -243,7 +243,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the caption must be shown above the video; otherwise, the caption must be shown below the video; not supported in secret chats
+     * Set True, if the caption must be shown above the video; otherwise, the caption must be shown below the video; not supported in secret chats.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -253,7 +253,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video self-destruct type; pass null if none; private chats only
+     * Get Video self-destruct type; pass null if none; private chats only.
      */
     public function getSelfDestructType(): MessageSelfDestructType|null
     {
@@ -261,7 +261,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video self-destruct type; pass null if none; private chats only
+     * Set Video self-destruct type; pass null if none; private chats only.
      */
     public function setSelfDestructType(MessageSelfDestructType|null $selfDestructType): self
     {
@@ -271,7 +271,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video preview must be covered by a spoiler animation; not supported in secret chats
+     * Get True, if the video preview must be covered by a spoiler animation; not supported in secret chats.
      */
     public function getHasSpoiler(): bool
     {
@@ -279,7 +279,7 @@ class InputMessageVideo extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video preview must be covered by a spoiler animation; not supported in secret chats
+     * Set True, if the video preview must be covered by a spoiler animation; not supported in secret chats.
      */
     public function setHasSpoiler(bool $hasSpoiler): self
     {

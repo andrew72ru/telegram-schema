@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a general file @document The document description
+ * The link is a link to a general file @document The document description.
  */
 class LinkPreviewTypeDocument extends LinkPreviewType implements \JsonSerializable
 {

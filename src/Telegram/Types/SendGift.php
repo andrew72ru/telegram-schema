@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a gift to another user or channel chat. May return an error with a message "STARGIFT_USAGE_LIMITED" if the gift was sold out
+ * Sends a gift to another user or channel chat. May return an error with a message "STARGIFT_USAGE_LIMITED" if the gift was sold out.
  */
 class SendGift extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift to send
+     * Get Identifier of the gift to send.
      */
     public function getGiftId(): int
     {
@@ -39,7 +39,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift to send
+     * Set Identifier of the gift to send.
      */
     public function setGiftId(int $giftId): self
     {
@@ -49,7 +49,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the channel chat that will receive the gift
+     * Get Identifier of the user or the channel chat that will receive the gift.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -57,7 +57,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the channel chat that will receive the gift
+     * Set Identifier of the user or the channel chat that will receive the gift.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -67,7 +67,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Text to show along with the gift; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
+     * Get Text to show along with the gift; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed..
      */
     public function getText(): FormattedText|null
     {
@@ -75,7 +75,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Text to show along with the gift; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
+     * Set Text to show along with the gift; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed..
      */
     public function setText(FormattedText|null $text): self
     {
@@ -85,7 +85,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to show gift text and sender only to the gift receiver; otherwise, everyone will be able to see them
+     * Get Pass true to show gift text and sender only to the gift receiver; otherwise, everyone will be able to see them.
      */
     public function getIsPrivate(): bool
     {
@@ -93,7 +93,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to show gift text and sender only to the gift receiver; otherwise, everyone will be able to see them
+     * Set Pass true to show gift text and sender only to the gift receiver; otherwise, everyone will be able to see them.
      */
     public function setIsPrivate(bool $isPrivate): self
     {
@@ -103,7 +103,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to additionally pay for the gift upgrade and allow the receiver to upgrade it for free
+     * Get Pass true to additionally pay for the gift upgrade and allow the receiver to upgrade it for free.
      */
     public function getPayForUpgrade(): bool
     {
@@ -111,7 +111,7 @@ class SendGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to additionally pay for the gift upgrade and allow the receiver to upgrade it for free
+     * Set Pass true to additionally pay for the gift upgrade and allow the receiver to upgrade it for free.
      */
     public function setPayForUpgrade(bool $payForUpgrade): self
     {

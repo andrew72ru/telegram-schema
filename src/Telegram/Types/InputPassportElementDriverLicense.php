@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Passport element to be saved containing the user's driver license @driver_license The driver license to be saved
+ * A Telegram Passport element to be saved containing the user's driver license @driver_license The driver license to be saved.
  */
 class InputPassportElementDriverLicense extends InputPassportElement implements \JsonSerializable
 {

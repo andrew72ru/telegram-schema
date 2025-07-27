@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether a group call participant hand is rased; for video chats only
+ * Toggles whether a group call participant hand is rased; for video chats only.
  */
 class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -33,7 +33,7 @@ class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -43,7 +43,7 @@ class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get Participant identifier
+     * Get Participant identifier.
      */
     public function getParticipantId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set Participant identifier
+     * Set Participant identifier.
      */
     public function setParticipantId(MessageSender|null $participantId): self
     {
@@ -61,7 +61,7 @@ class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get Pass true if the user's hand needs to be raised. Only self hand can be raised. Requires groupCall.can_be_managed right to lower other's hand
+     * Get Pass true if the user's hand needs to be raised. Only self hand can be raised. Requires groupCall.can_be_managed right to lower other's hand.
      */
     public function getIsHandRaised(): bool
     {
@@ -69,7 +69,7 @@ class ToggleGroupCallParticipantIsHandRaised extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set Pass true if the user's hand needs to be raised. Only self hand can be raised. Requires groupCall.can_be_managed right to lower other's hand
+     * Set Pass true if the user's hand needs to be raised. Only self hand can be raised. Requires groupCall.can_be_managed right to lower other's hand.
      */
     public function setIsHandRaised(bool $isHandRaised): self
     {

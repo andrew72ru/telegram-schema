@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Enables a proxy. Only one proxy can be enabled at a time. Can be called before authorization @proxy_id Proxy identifier
+ * Enables a proxy. Only one proxy can be enabled at a time. Can be called before authorization @proxy_id Proxy identifier.
  */
 class EnableProxy extends Ok implements \JsonSerializable
 {

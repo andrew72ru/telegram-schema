@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a phone number
+ * Contains information about a phone number.
  */
 class PhoneNumberInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about the country to which the phone number belongs; may be null
+     * Get Information about the country to which the phone number belongs; may be null.
      */
     public function getCountry(): CountryInfo|null
     {
@@ -36,7 +36,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about the country to which the phone number belongs; may be null
+     * Set Information about the country to which the phone number belongs; may be null.
      */
     public function setCountry(CountryInfo|null $country): self
     {
@@ -46,7 +46,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Get The part of the phone number denoting country calling code or its part
+     * Get The part of the phone number denoting country calling code or its part.
      */
     public function getCountryCallingCode(): string
     {
@@ -54,7 +54,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Set The part of the phone number denoting country calling code or its part
+     * Set The part of the phone number denoting country calling code or its part.
      */
     public function setCountryCallingCode(string $countryCallingCode): self
     {
@@ -64,7 +64,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Get The phone number without country calling code formatted accordingly to local rules. Expected digits are returned as '-', but even more digits might be entered by the user
+     * Get The phone number without country calling code formatted accordingly to local rules. Expected digits are returned as '-', but even more digits might be entered by the user.
      */
     public function getFormattedPhoneNumber(): string
     {
@@ -72,7 +72,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Set The phone number without country calling code formatted accordingly to local rules. Expected digits are returned as '-', but even more digits might be entered by the user
+     * Set The phone number without country calling code formatted accordingly to local rules. Expected digits are returned as '-', but even more digits might be entered by the user.
      */
     public function setFormattedPhoneNumber(string $formattedPhoneNumber): self
     {
@@ -82,7 +82,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the phone number was bought at https://fragment.com and isn't tied to a SIM card. Information about the phone number can be received using getCollectibleItemInfo
+     * Get True, if the phone number was bought at https://fragment.com and isn't tied to a SIM card. Information about the phone number can be received using getCollectibleItemInfo.
      */
     public function getIsAnonymous(): bool
     {
@@ -90,7 +90,7 @@ class PhoneNumberInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the phone number was bought at https://fragment.com and isn't tied to a SIM card. Information about the phone number can be received using getCollectibleItemInfo
+     * Set True, if the phone number was bought at https://fragment.com and isn't tied to a SIM card. Information about the phone number can be received using getCollectibleItemInfo.
      */
     public function setIsAnonymous(bool $isAnonymous): self
     {

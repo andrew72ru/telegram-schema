@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a forum topic @chat_id Identifier of the chat @message_thread_id Message thread identifier of the forum topic
+ * Returns information about a forum topic @chat_id Identifier of the chat @message_thread_id Message thread identifier of the forum topic.
  */
 class GetForumTopic extends ForumTopic implements \JsonSerializable
 {

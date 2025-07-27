@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns saved animations
+ * Returns saved animations.
  */
 class GetSavedAnimations extends Animations implements \JsonSerializable
 {

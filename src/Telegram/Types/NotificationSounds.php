@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of notification sounds @notification_sounds A list of notification sounds
+ * Contains a list of notification sounds @notification_sounds A list of notification sounds.
  */
 class NotificationSounds implements \JsonSerializable
 {

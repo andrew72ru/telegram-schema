@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of active stories posted by the given chat @chat_id Chat identifier
+ * Returns the list of active stories posted by the given chat @chat_id Chat identifier.
  */
 class GetChatActiveStories extends ChatActiveStories implements \JsonSerializable
 {

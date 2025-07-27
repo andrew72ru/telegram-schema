@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the result of interaction with a Web App and sends corresponding message on behalf of the user to the chat from which the query originated; for bots only
+ * Sets the result of interaction with a Web App and sends corresponding message on behalf of the user to the chat from which the query originated; for bots only.
  */
 class AnswerWebAppQuery extends SentWebAppMessage implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AnswerWebAppQuery extends SentWebAppMessage implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the Web App query
+     * Get Identifier of the Web App query.
      */
     public function getWebAppQueryId(): string
     {
@@ -30,7 +30,7 @@ class AnswerWebAppQuery extends SentWebAppMessage implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the Web App query
+     * Set Identifier of the Web App query.
      */
     public function setWebAppQueryId(string $webAppQueryId): self
     {
@@ -40,7 +40,7 @@ class AnswerWebAppQuery extends SentWebAppMessage implements \JsonSerializable
     }
 
     /**
-     * Get The result of the query
+     * Get The result of the query.
      */
     public function getResult(): InputInlineQueryResult|null
     {
@@ -48,7 +48,7 @@ class AnswerWebAppQuery extends SentWebAppMessage implements \JsonSerializable
     }
 
     /**
-     * Set The result of the query
+     * Set The result of the query.
      */
     public function setResult(InputInlineQueryResult|null $result): self
     {

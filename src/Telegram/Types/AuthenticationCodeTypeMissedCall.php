@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An authentication code is delivered by an immediately canceled call to the specified phone number. The last digits of the phone number that calls are the code that must be entered manually by the user
+ * An authentication code is delivered by an immediately canceled call to the specified phone number. The last digits of the phone number that calls are the code that must be entered manually by the user.
  */
 class AuthenticationCodeTypeMissedCall extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AuthenticationCodeTypeMissedCall extends AuthenticationCodeType implements
     }
 
     /**
-     * Get Prefix of the phone number from which the call will be made
+     * Get Prefix of the phone number from which the call will be made.
      */
     public function getPhoneNumberPrefix(): string
     {
@@ -30,7 +30,7 @@ class AuthenticationCodeTypeMissedCall extends AuthenticationCodeType implements
     }
 
     /**
-     * Set Prefix of the phone number from which the call will be made
+     * Set Prefix of the phone number from which the call will be made.
      */
     public function setPhoneNumberPrefix(string $phoneNumberPrefix): self
     {
@@ -40,7 +40,7 @@ class AuthenticationCodeTypeMissedCall extends AuthenticationCodeType implements
     }
 
     /**
-     * Get Number of digits in the code, excluding the prefix
+     * Get Number of digits in the code, excluding the prefix.
      */
     public function getLength(): int
     {
@@ -48,7 +48,7 @@ class AuthenticationCodeTypeMissedCall extends AuthenticationCodeType implements
     }
 
     /**
-     * Set Number of digits in the code, excluding the prefix
+     * Set Number of digits in the code, excluding the prefix.
      */
     public function setLength(int $length): self
     {

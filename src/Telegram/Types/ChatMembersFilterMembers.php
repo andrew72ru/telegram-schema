@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns all chat members, including restricted chat members
+ * Returns all chat members, including restricted chat members.
  */
 class ChatMembersFilterMembers extends ChatMembersFilter implements \JsonSerializable
 {

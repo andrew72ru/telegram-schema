@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains size of downloaded prefix of a file @size The prefix size, in bytes
+ * Contains size of downloaded prefix of a file @size The prefix size, in bytes.
  */
 class FileDownloadedPrefixSize implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a bank card @bank_card_number The bank card number
+ * Returns information about a bank card @bank_card_number The bank card number.
  */
 class GetBankCardInfo extends BankCardInfo implements \JsonSerializable
 {

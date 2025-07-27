@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes pause state of a file in the file download list
+ * Changes pause state of a file in the file download list.
  */
 class ToggleDownloadIsPaused extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleDownloadIsPaused extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the downloaded file
+     * Get Identifier of the downloaded file.
      */
     public function getFileId(): int
     {
@@ -30,7 +30,7 @@ class ToggleDownloadIsPaused extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the downloaded file
+     * Set Identifier of the downloaded file.
      */
     public function setFileId(int $fileId): self
     {
@@ -40,7 +40,7 @@ class ToggleDownloadIsPaused extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the download is paused
+     * Get Pass true if the download is paused.
      */
     public function getIsPaused(): bool
     {
@@ -48,7 +48,7 @@ class ToggleDownloadIsPaused extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the download is paused
+     * Set Pass true if the download is paused.
      */
     public function setIsPaused(bool $isPaused): self
     {

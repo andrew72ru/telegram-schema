@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a group call participant's video channel
+ * Contains information about a group call participant's video channel.
  */
 class GroupCallParticipantVideoInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GroupCallParticipantVideoInfo implements \JsonSerializable
     }
 
     /**
-     * Get List of synchronization source groups of the video
+     * Get List of synchronization source groups of the video.
      */
     public function getSourceGroups(): array|null
     {
@@ -33,7 +33,7 @@ class GroupCallParticipantVideoInfo implements \JsonSerializable
     }
 
     /**
-     * Set List of synchronization source groups of the video
+     * Set List of synchronization source groups of the video.
      */
     public function setSourceGroups(array|null $sourceGroups): self
     {
@@ -43,7 +43,7 @@ class GroupCallParticipantVideoInfo implements \JsonSerializable
     }
 
     /**
-     * Get Video channel endpoint identifier
+     * Get Video channel endpoint identifier.
      */
     public function getEndpointId(): string
     {
@@ -51,7 +51,7 @@ class GroupCallParticipantVideoInfo implements \JsonSerializable
     }
 
     /**
-     * Set Video channel endpoint identifier
+     * Set Video channel endpoint identifier.
      */
     public function setEndpointId(string $endpointId): self
     {
@@ -61,7 +61,7 @@ class GroupCallParticipantVideoInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video is paused. This flag needs to be ignored, if new video frames are received
+     * Get True, if the video is paused. This flag needs to be ignored, if new video frames are received.
      */
     public function getIsPaused(): bool
     {
@@ -69,7 +69,7 @@ class GroupCallParticipantVideoInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video is paused. This flag needs to be ignored, if new video frames are received
+     * Set True, if the video is paused. This flag needs to be ignored, if new video frames are received.
      */
     public function setIsPaused(bool $isPaused): self
     {

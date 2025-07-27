@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all revoked chat invite links created by a given chat administrator. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
+ * Deletes all revoked chat invite links created by a given chat administrator. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links.
  */
 class DeleteAllRevokedChatInviteLinks extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteAllRevokedChatInviteLinks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class DeleteAllRevokedChatInviteLinks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class DeleteAllRevokedChatInviteLinks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of a chat administrator, which links will be deleted. Must be an identifier of the current user for non-owner
+     * Get User identifier of a chat administrator, which links will be deleted. Must be an identifier of the current user for non-owner.
      */
     public function getCreatorUserId(): int
     {
@@ -48,7 +48,7 @@ class DeleteAllRevokedChatInviteLinks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of a chat administrator, which links will be deleted. Must be an identifier of the current user for non-owner
+     * Set User identifier of a chat administrator, which links will be deleted. Must be an identifier of the current user for non-owner.
      */
     public function setCreatorUserId(int $creatorUserId): self
     {

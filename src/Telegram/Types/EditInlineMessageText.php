@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the text of an inline text or game message sent via a bot; for bots only
+ * Edits the text of an inline text or game message sent via a bot; for bots only.
  */
 class EditInlineMessageText extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditInlineMessageText extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Inline message identifier
+     * Get Inline message identifier.
      */
     public function getInlineMessageId(): string
     {
@@ -33,7 +33,7 @@ class EditInlineMessageText extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Inline message identifier
+     * Set Inline message identifier.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {
@@ -43,7 +43,7 @@ class EditInlineMessageText extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -51,7 +51,7 @@ class EditInlineMessageText extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -61,7 +61,7 @@ class EditInlineMessageText extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New text content of the message. Must be of type inputMessageText
+     * Get New text content of the message. Must be of type inputMessageText.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -69,7 +69,7 @@ class EditInlineMessageText extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New text content of the message. Must be of type inputMessageText
+     * Set New text content of the message. Must be of type inputMessageText.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

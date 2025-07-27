@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains approximate storage usage statistics, excluding files of unknown file type
+ * Contains approximate storage usage statistics, excluding files of unknown file type.
  */
 class StorageStatisticsFast implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total size of files, in bytes
+     * Get Approximate total size of files, in bytes.
      */
     public function getFilesSize(): int
     {
@@ -39,7 +39,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total size of files, in bytes
+     * Set Approximate total size of files, in bytes.
      */
     public function setFilesSize(int $filesSize): self
     {
@@ -49,7 +49,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Get Approximate number of files
+     * Get Approximate number of files.
      */
     public function getFileCount(): int
     {
@@ -57,7 +57,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Set Approximate number of files
+     * Set Approximate number of files.
      */
     public function setFileCount(int $fileCount): self
     {
@@ -67,7 +67,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Get Size of the database
+     * Get Size of the database.
      */
     public function getDatabaseSize(): int
     {
@@ -75,7 +75,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Set Size of the database
+     * Set Size of the database.
      */
     public function setDatabaseSize(int $databaseSize): self
     {
@@ -85,7 +85,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Get Size of the language pack database
+     * Get Size of the language pack database.
      */
     public function getLanguagePackDatabaseSize(): int
     {
@@ -93,7 +93,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Set Size of the language pack database
+     * Set Size of the language pack database.
      */
     public function setLanguagePackDatabaseSize(int $languagePackDatabaseSize): self
     {
@@ -103,7 +103,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Get Size of the TDLib internal log
+     * Get Size of the TDLib internal log.
      */
     public function getLogSize(): int
     {
@@ -111,7 +111,7 @@ class StorageStatisticsFast implements \JsonSerializable
     }
 
     /**
-     * Set Size of the TDLib internal log
+     * Set Size of the TDLib internal log.
      */
     public function setLogSize(int $logSize): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user boosting a chat by creating Telegram Premium gift codes for other users
+ * The user boosting a chat by creating Telegram Premium gift codes for other users.
  */
 class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Get Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user
+     * Get Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user.
      */
     public function getBoostedChatId(): int
     {
@@ -42,7 +42,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Set Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user
+     * Set Identifier of the supergroup or channel chat, which will be automatically boosted by the users for duration of the Premium subscription and which is administered by the user.
      */
     public function setBoostedChatId(int $boostedChatId): self
     {
@@ -52,7 +52,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -60,7 +60,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -70,7 +70,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -78,7 +78,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -88,7 +88,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Get Identifiers of the users which can activate the gift codes
+     * Get Identifiers of the users which can activate the gift codes.
      */
     public function getUserIds(): array|null
     {
@@ -96,7 +96,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Set Identifiers of the users which can activate the gift codes
+     * Set Identifiers of the users which can activate the gift codes.
      */
     public function setUserIds(array|null $userIds): self
     {
@@ -106,7 +106,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active for the users
+     * Get Number of months the Telegram Premium subscription will be active for the users.
      */
     public function getMonthCount(): int
     {
@@ -114,7 +114,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active for the users
+     * Set Number of months the Telegram Premium subscription will be active for the users.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -124,7 +124,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Get Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Get Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function getText(): FormattedText|null
     {
@@ -132,7 +132,7 @@ class TelegramPaymentPurposePremiumGiftCodes extends TelegramPaymentPurpose impl
     }
 
     /**
-     * Set Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Set Text to show along with the gift codes; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function setText(FormattedText|null $text): self
     {

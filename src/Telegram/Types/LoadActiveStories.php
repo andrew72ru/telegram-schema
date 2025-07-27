@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Loads more active stories from a story list. The loaded stories will be sent through updates. Active stories are sorted by
+ * Loads more active stories from a story list. The loaded stories will be sent through updates. Active stories are sorted by.
  */
 class LoadActiveStories extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class LoadActiveStories extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The story list in which to load active stories
+     * Get The story list in which to load active stories.
      */
     public function getStoryList(): StoryList|null
     {
@@ -27,7 +27,7 @@ class LoadActiveStories extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The story list in which to load active stories
+     * Set The story list in which to load active stories.
      */
     public function setStoryList(StoryList|null $storyList): self
     {

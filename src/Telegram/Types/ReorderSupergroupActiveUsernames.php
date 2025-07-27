@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes order of active usernames of a supergroup or channel, requires owner privileges in the supergroup or channel
+ * Changes order of active usernames of a supergroup or channel, requires owner privileges in the supergroup or channel.
  */
 class ReorderSupergroupActiveUsernames extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ReorderSupergroupActiveUsernames extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup or channel
+     * Get Identifier of the supergroup or channel.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ReorderSupergroupActiveUsernames extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup or channel
+     * Set Identifier of the supergroup or channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ReorderSupergroupActiveUsernames extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new order of active usernames. All currently active usernames must be specified
+     * Get The new order of active usernames. All currently active usernames must be specified.
      */
     public function getUsernames(): array|null
     {
@@ -48,7 +48,7 @@ class ReorderSupergroupActiveUsernames extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new order of active usernames. All currently active usernames must be specified
+     * Set The new order of active usernames. All currently active usernames must be specified.
      */
     public function setUsernames(array|null $usernames): self
     {

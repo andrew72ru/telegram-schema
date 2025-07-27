@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a TDLib internal log verbosity level @verbosity_level Log verbosity level
+ * Contains a TDLib internal log verbosity level @verbosity_level Log verbosity level.
  */
 class LogVerbosityLevel implements \JsonSerializable
 {

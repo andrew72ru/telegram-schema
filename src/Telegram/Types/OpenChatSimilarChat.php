@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that a chat was opened from the list of similar chats. The method is independent of openChat and closeChat methods
+ * Informs TDLib that a chat was opened from the list of similar chats. The method is independent of openChat and closeChat methods.
  */
 class OpenChatSimilarChat extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class OpenChatSimilarChat extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the original chat, which similar chats were requested
+     * Get Identifier of the original chat, which similar chats were requested.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class OpenChatSimilarChat extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the original chat, which similar chats were requested
+     * Set Identifier of the original chat, which similar chats were requested.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class OpenChatSimilarChat extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the opened chat
+     * Get Identifier of the opened chat.
      */
     public function getOpenedChatId(): int
     {
@@ -48,7 +48,7 @@ class OpenChatSimilarChat extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the opened chat
+     * Set Identifier of the opened chat.
      */
     public function setOpenedChatId(int $openedChatId): self
     {

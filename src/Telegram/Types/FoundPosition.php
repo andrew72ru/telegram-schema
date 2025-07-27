@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains 0-based match position @position The position of the match
+ * Contains 0-based match position @position The position of the match.
  */
 class FoundPosition implements \JsonSerializable
 {

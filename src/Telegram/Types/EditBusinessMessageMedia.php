@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only
+ * Edits the media content of a message with a text, an animation, an audio, a document, a photo or a video in a message sent on behalf of a business account; for bots only.
  */
 class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -39,7 +39,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -49,7 +49,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -57,7 +57,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -67,7 +67,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -75,7 +75,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -85,7 +85,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Get The new message reply markup; pass null if none; for bots only
+     * Get The new message reply markup; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -93,7 +93,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Set The new message reply markup; pass null if none; for bots only
+     * Set The new message reply markup; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -103,7 +103,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+     * Get New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -111,7 +111,7 @@ class EditBusinessMessageMedia extends BusinessMessage implements \JsonSerializa
     }
 
     /**
-     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+     * Set New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

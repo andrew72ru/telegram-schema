@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a language pack
+ * Contains information about a language pack.
  */
 class LanguagePackInfo implements \JsonSerializable
 {
@@ -55,7 +55,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Unique language pack identifier
+     * Get Unique language pack identifier.
      */
     public function getId(): string
     {
@@ -63,7 +63,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Unique language pack identifier
+     * Set Unique language pack identifier.
      */
     public function setId(string $id): self
     {
@@ -73,7 +73,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a base language pack; may be empty. If a string is missed in the language pack, then it must be fetched from base language pack. Unsupported in custom language packs
+     * Get Identifier of a base language pack; may be empty. If a string is missed in the language pack, then it must be fetched from base language pack. Unsupported in custom language packs.
      */
     public function getBaseLanguagePackId(): string
     {
@@ -81,7 +81,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a base language pack; may be empty. If a string is missed in the language pack, then it must be fetched from base language pack. Unsupported in custom language packs
+     * Set Identifier of a base language pack; may be empty. If a string is missed in the language pack, then it must be fetched from base language pack. Unsupported in custom language packs.
      */
     public function setBaseLanguagePackId(string $baseLanguagePackId): self
     {
@@ -91,7 +91,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Language name
+     * Get Language name.
      */
     public function getName(): string
     {
@@ -99,7 +99,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Language name
+     * Set Language name.
      */
     public function setName(string $name): self
     {
@@ -109,7 +109,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Name of the language in that language
+     * Get Name of the language in that language.
      */
     public function getNativeName(): string
     {
@@ -117,7 +117,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Name of the language in that language
+     * Set Name of the language in that language.
      */
     public function setNativeName(string $nativeName): self
     {
@@ -127,7 +127,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get A language code to be used to apply plural forms. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information
+     * Get A language code to be used to apply plural forms. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information.
      */
     public function getPluralCode(): string
     {
@@ -135,7 +135,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set A language code to be used to apply plural forms. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information
+     * Set A language code to be used to apply plural forms. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information.
      */
     public function setPluralCode(string $pluralCode): self
     {
@@ -145,7 +145,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the language pack is official
+     * Get True, if the language pack is official.
      */
     public function getIsOfficial(): bool
     {
@@ -153,7 +153,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the language pack is official
+     * Set True, if the language pack is official.
      */
     public function setIsOfficial(bool $isOfficial): self
     {
@@ -163,7 +163,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the language pack strings are RTL
+     * Get True, if the language pack strings are RTL.
      */
     public function getIsRtl(): bool
     {
@@ -171,7 +171,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the language pack strings are RTL
+     * Set True, if the language pack strings are RTL.
      */
     public function setIsRtl(bool $isRtl): self
     {
@@ -181,7 +181,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the language pack is a beta language pack
+     * Get True, if the language pack is a beta language pack.
      */
     public function getIsBeta(): bool
     {
@@ -189,7 +189,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the language pack is a beta language pack
+     * Set True, if the language pack is a beta language pack.
      */
     public function setIsBeta(bool $isBeta): self
     {
@@ -199,7 +199,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the language pack is installed by the current user
+     * Get True, if the language pack is installed by the current user.
      */
     public function getIsInstalled(): bool
     {
@@ -207,7 +207,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the language pack is installed by the current user
+     * Set True, if the language pack is installed by the current user.
      */
     public function setIsInstalled(bool $isInstalled): self
     {
@@ -217,7 +217,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Total number of non-deleted strings from the language pack
+     * Get Total number of non-deleted strings from the language pack.
      */
     public function getTotalStringCount(): int
     {
@@ -225,7 +225,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Total number of non-deleted strings from the language pack
+     * Set Total number of non-deleted strings from the language pack.
      */
     public function setTotalStringCount(int $totalStringCount): self
     {
@@ -235,7 +235,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Total number of translated strings from the language pack
+     * Get Total number of translated strings from the language pack.
      */
     public function getTranslatedStringCount(): int
     {
@@ -243,7 +243,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Total number of translated strings from the language pack
+     * Set Total number of translated strings from the language pack.
      */
     public function setTranslatedStringCount(int $translatedStringCount): self
     {
@@ -253,7 +253,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Total number of non-deleted strings from the language pack available locally
+     * Get Total number of non-deleted strings from the language pack available locally.
      */
     public function getLocalStringCount(): int
     {
@@ -261,7 +261,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Total number of non-deleted strings from the language pack available locally
+     * Set Total number of non-deleted strings from the language pack available locally.
      */
     public function setLocalStringCount(int $localStringCount): self
     {
@@ -271,7 +271,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Get Link to language translation interface; empty for custom local language packs
+     * Get Link to language translation interface; empty for custom local language packs.
      */
     public function getTranslationUrl(): string
     {
@@ -279,7 +279,7 @@ class LanguagePackInfo implements \JsonSerializable
     }
 
     /**
-     * Set Link to language translation interface; empty for custom local language packs
+     * Set Link to language translation interface; empty for custom local language packs.
      */
     public function setTranslationUrl(string $translationUrl): self
     {

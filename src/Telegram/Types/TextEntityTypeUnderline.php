@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * An underlined text
+ * An underlined text.
  */
 class TextEntityTypeUnderline extends TextEntityType implements \JsonSerializable
 {

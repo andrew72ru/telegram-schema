@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A photo story
+ * A photo story.
  */
 class InputStoryContentPhoto extends InputStoryContent implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputStoryContentPhoto extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get Photo to send. The photo must be at most 10 MB in size. The photo size must be 1080x1920
+     * Get Photo to send. The photo must be at most 10 MB in size. The photo size must be 1080x1920.
      */
     public function getPhoto(): InputFile|null
     {
@@ -30,7 +30,7 @@ class InputStoryContentPhoto extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set Photo to send. The photo must be at most 10 MB in size. The photo size must be 1080x1920
+     * Set Photo to send. The photo must be at most 10 MB in size. The photo size must be 1080x1920.
      */
     public function setPhoto(InputFile|null $photo): self
     {
@@ -40,7 +40,7 @@ class InputStoryContentPhoto extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Get File identifiers of the stickers added to the photo, if applicable
+     * Get File identifiers of the stickers added to the photo, if applicable.
      */
     public function getAddedStickerFileIds(): array|null
     {
@@ -48,7 +48,7 @@ class InputStoryContentPhoto extends InputStoryContent implements \JsonSerializa
     }
 
     /**
-     * Set File identifiers of the stickers added to the photo, if applicable
+     * Set File identifiers of the stickers added to the photo, if applicable.
      */
     public function setAddedStickerFileIds(array|null $addedStickerFileIds): self
     {

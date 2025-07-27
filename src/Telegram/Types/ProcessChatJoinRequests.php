@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Handles all pending join requests for a given link in a chat
+ * Handles all pending join requests for a given link in a chat.
  */
 class ProcessChatJoinRequests extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ProcessChatJoinRequests extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class ProcessChatJoinRequests extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class ProcessChatJoinRequests extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Invite link for which to process join requests. If empty, all join requests will be processed. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
+     * Get Invite link for which to process join requests. If empty, all join requests will be processed. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links.
      */
     public function getInviteLink(): string
     {
@@ -51,7 +51,7 @@ class ProcessChatJoinRequests extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Invite link for which to process join requests. If empty, all join requests will be processed. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
+     * Set Invite link for which to process join requests. If empty, all join requests will be processed. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -61,7 +61,7 @@ class ProcessChatJoinRequests extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to approve all requests; pass false to decline them
+     * Get Pass true to approve all requests; pass false to decline them.
      */
     public function getApprove(): bool
     {
@@ -69,7 +69,7 @@ class ProcessChatJoinRequests extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to approve all requests; pass false to decline them
+     * Set Pass true to approve all requests; pass false to decline them.
      */
     public function setApprove(bool $approve): self
     {

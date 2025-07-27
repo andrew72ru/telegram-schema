@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a chat folder invite link
+ * Contains a chat folder invite link.
  */
 class ChatFolderInviteLink implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatFolderInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get The chat folder invite link
+     * Get The chat folder invite link.
      */
     public function getInviteLink(): string
     {
@@ -33,7 +33,7 @@ class ChatFolderInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set The chat folder invite link
+     * Set The chat folder invite link.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -43,7 +43,7 @@ class ChatFolderInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Name of the link
+     * Get Name of the link.
      */
     public function getName(): string
     {
@@ -51,7 +51,7 @@ class ChatFolderInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Name of the link
+     * Set Name of the link.
      */
     public function setName(string $name): self
     {
@@ -61,7 +61,7 @@ class ChatFolderInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of chats, included in the link
+     * Get Identifiers of chats, included in the link.
      */
     public function getChatIds(): array|null
     {
@@ -69,7 +69,7 @@ class ChatFolderInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of chats, included in the link
+     * Set Identifiers of chats, included in the link.
      */
     public function setChatIds(array|null $chatIds): self
     {

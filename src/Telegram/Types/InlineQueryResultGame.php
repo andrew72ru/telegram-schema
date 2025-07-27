@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents information about a game
+ * Represents information about a game.
  */
 class InlineQueryResultGame extends InlineQueryResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InlineQueryResultGame extends InlineQueryResult implements \JsonSerializab
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -30,7 +30,7 @@ class InlineQueryResultGame extends InlineQueryResult implements \JsonSerializab
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -40,7 +40,7 @@ class InlineQueryResultGame extends InlineQueryResult implements \JsonSerializab
     }
 
     /**
-     * Get Game result
+     * Get Game result.
      */
     public function getGame(): Game|null
     {
@@ -48,7 +48,7 @@ class InlineQueryResultGame extends InlineQueryResult implements \JsonSerializab
     }
 
     /**
-     * Set Game result
+     * Set Game result.
      */
     public function setGame(Game|null $game): self
     {

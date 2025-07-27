@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a location
+ * A message with a location.
  */
 class InputMessageLocation extends InputMessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Location to be sent
+     * Get Location to be sent.
      */
     public function getLocation(): Location|null
     {
@@ -36,7 +36,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Location to be sent
+     * Set Location to be sent.
      */
     public function setLocation(Location|null $location): self
     {
@@ -46,7 +46,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Period for which the location can be updated, in seconds; must be between 60 and 86400 for a temporary live location, 0x7FFFFFFF for permanent live location, and 0 otherwise
+     * Get Period for which the location can be updated, in seconds; must be between 60 and 86400 for a temporary live location, 0x7FFFFFFF for permanent live location, and 0 otherwise.
      */
     public function getLivePeriod(): int
     {
@@ -54,7 +54,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Period for which the location can be updated, in seconds; must be between 60 and 86400 for a temporary live location, 0x7FFFFFFF for permanent live location, and 0 otherwise
+     * Set Period for which the location can be updated, in seconds; must be between 60 and 86400 for a temporary live location, 0x7FFFFFFF for permanent live location, and 0 otherwise.
      */
     public function setLivePeriod(int $livePeriod): self
     {
@@ -64,7 +64,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get For live locations, a direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
+     * Get For live locations, a direction in which the location moves, in degrees; 1-360. Pass 0 if unknown.
      */
     public function getHeading(): int
     {
@@ -72,7 +72,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set For live locations, a direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
+     * Set For live locations, a direction in which the location moves, in degrees; 1-360. Pass 0 if unknown.
      */
     public function setHeading(int $heading): self
     {
@@ -82,7 +82,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled. Can't be enabled in channels and Saved Messages
+     * Get For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled. Can't be enabled in channels and Saved Messages.
      */
     public function getProximityAlertRadius(): int
     {
@@ -90,7 +90,7 @@ class InputMessageLocation extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled. Can't be enabled in channels and Saved Messages
+     * Set For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled. Can't be enabled in channels and Saved Messages.
      */
     public function setProximityAlertRadius(int $proximityAlertRadius): self
     {

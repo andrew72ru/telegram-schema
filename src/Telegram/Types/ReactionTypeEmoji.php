@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A reaction with an emoji @emoji Text representation of the reaction
+ * A reaction with an emoji @emoji Text representation of the reaction.
  */
 class ReactionTypeEmoji extends ReactionType implements \JsonSerializable
 {

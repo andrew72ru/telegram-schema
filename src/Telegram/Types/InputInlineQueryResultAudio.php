@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to an MP3 audio file
+ * Represents a link to an MP3 audio file.
  */
 class InputInlineQueryResultAudio extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -45,7 +45,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -55,7 +55,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Title of the audio file
+     * Get Title of the audio file.
      */
     public function getTitle(): string
     {
@@ -63,7 +63,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Title of the audio file
+     * Set Title of the audio file.
      */
     public function setTitle(string $title): self
     {
@@ -73,7 +73,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Performer of the audio file
+     * Get Performer of the audio file.
      */
     public function getPerformer(): string
     {
@@ -81,7 +81,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Performer of the audio file
+     * Set Performer of the audio file.
      */
     public function setPerformer(string $performer): self
     {
@@ -91,7 +91,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The URL of the audio file
+     * Get The URL of the audio file.
      */
     public function getAudioUrl(): string
     {
@@ -99,7 +99,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The URL of the audio file
+     * Set The URL of the audio file.
      */
     public function setAudioUrl(string $audioUrl): self
     {
@@ -109,7 +109,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Audio file duration, in seconds
+     * Get Audio file duration, in seconds.
      */
     public function getAudioDuration(): int
     {
@@ -117,7 +117,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Audio file duration, in seconds
+     * Set Audio file duration, in seconds.
      */
     public function setAudioDuration(int $audioDuration): self
     {
@@ -127,7 +127,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -135,7 +135,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -145,7 +145,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAudio, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAudio, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -153,7 +153,7 @@ class InputInlineQueryResultAudio extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAudio, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAudio, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

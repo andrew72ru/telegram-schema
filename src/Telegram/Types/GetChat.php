@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a chat by its identifier. This is an offline method if the current user is not a bot @chat_id Chat identifier
+ * Returns information about a chat by its identifier. This is an offline method if the current user is not a bot @chat_id Chat identifier.
  */
 class GetChat extends Chat implements \JsonSerializable
 {

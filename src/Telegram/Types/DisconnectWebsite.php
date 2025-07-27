@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Disconnects website from the current user's Telegram account @website_id Website identifier
+ * Disconnects website from the current user's Telegram account @website_id Website identifier.
  */
 class DisconnectWebsite extends Ok implements \JsonSerializable
 {

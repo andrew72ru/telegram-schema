@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Disabled ads
+ * Disabled ads.
  */
 class PremiumFeatureDisabledAds extends PremiumFeature implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns message senders voted for the specified option in a non-anonymous polls. For optimal performance, the number of returned users is chosen by TDLib
+ * Returns message senders voted for the specified option in a non-anonymous polls. For optimal performance, the number of returned users is chosen by TDLib.
  */
 class GetPollVoters extends MessageSenders implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the poll belongs
+     * Get Identifier of the chat to which the poll belongs.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the poll belongs
+     * Set Identifier of the chat to which the poll belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message containing the poll
+     * Get Identifier of the message containing the poll.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message containing the poll
+     * Set Identifier of the message containing the poll.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Get 0-based identifier of the answer option
+     * Get 0-based identifier of the answer option.
      */
     public function getOptionId(): int
     {
@@ -75,7 +75,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Set 0-based identifier of the answer option
+     * Set 0-based identifier of the answer option.
      */
     public function setOptionId(int $optionId): self
     {
@@ -85,7 +85,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Get Number of voters to skip in the result; must be non-negative
+     * Get Number of voters to skip in the result; must be non-negative.
      */
     public function getOffset(): int
     {
@@ -93,7 +93,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Set Number of voters to skip in the result; must be non-negative
+     * Set Number of voters to skip in the result; must be non-negative.
      */
     public function setOffset(int $offset): self
     {
@@ -103,7 +103,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of voters to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned voters is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached
+     * Get The maximum number of voters to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned voters is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class GetPollVoters extends MessageSenders implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of voters to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned voters is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached
+     * Set The maximum number of voters to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned voters is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached.
      */
     public function setLimit(int $limit): self
     {

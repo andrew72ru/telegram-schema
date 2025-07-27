@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message failed to be sent
+ * The message failed to be sent.
  */
 class MessageSendingStateFailed extends MessageSendingState implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get The cause of the message sending failure
+     * Get The cause of the message sending failure.
      */
     public function getError(): Error|null
     {
@@ -45,7 +45,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set The cause of the message sending failure
+     * Set The cause of the message sending failure.
      */
     public function setError(Error|null $error): self
     {
@@ -55,7 +55,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get True, if the message can be re-sent using resendMessages or readdQuickReplyShortcutMessages
+     * Get True, if the message can be re-sent using resendMessages or readdQuickReplyShortcutMessages.
      */
     public function getCanRetry(): bool
     {
@@ -63,7 +63,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set True, if the message can be re-sent using resendMessages or readdQuickReplyShortcutMessages
+     * Set True, if the message can be re-sent using resendMessages or readdQuickReplyShortcutMessages.
      */
     public function setCanRetry(bool $canRetry): self
     {
@@ -73,7 +73,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get True, if the message can be re-sent only on behalf of a different sender
+     * Get True, if the message can be re-sent only on behalf of a different sender.
      */
     public function getNeedAnotherSender(): bool
     {
@@ -81,7 +81,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set True, if the message can be re-sent only on behalf of a different sender
+     * Set True, if the message can be re-sent only on behalf of a different sender.
      */
     public function setNeedAnotherSender(bool $needAnotherSender): self
     {
@@ -91,7 +91,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get True, if the message can be re-sent only if another quote is chosen in the message that is replied by the given message
+     * Get True, if the message can be re-sent only if another quote is chosen in the message that is replied by the given message.
      */
     public function getNeedAnotherReplyQuote(): bool
     {
@@ -99,7 +99,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set True, if the message can be re-sent only if another quote is chosen in the message that is replied by the given message
+     * Set True, if the message can be re-sent only if another quote is chosen in the message that is replied by the given message.
      */
     public function setNeedAnotherReplyQuote(bool $needAnotherReplyQuote): self
     {
@@ -109,7 +109,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get True, if the message can be re-sent only if the message to be replied is removed. This will be done automatically by resendMessages
+     * Get True, if the message can be re-sent only if the message to be replied is removed. This will be done automatically by resendMessages.
      */
     public function getNeedDropReply(): bool
     {
@@ -117,7 +117,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set True, if the message can be re-sent only if the message to be replied is removed. This will be done automatically by resendMessages
+     * Set True, if the message can be re-sent only if the message to be replied is removed. This will be done automatically by resendMessages.
      */
     public function setNeedDropReply(bool $needDropReply): self
     {
@@ -127,7 +127,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get The number of Telegram Stars that must be paid to send the message; 0 if the current amount is correct
+     * Get The number of Telegram Stars that must be paid to send the message; 0 if the current amount is correct.
      */
     public function getRequiredPaidMessageStarCount(): int
     {
@@ -135,7 +135,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set The number of Telegram Stars that must be paid to send the message; 0 if the current amount is correct
+     * Set The number of Telegram Stars that must be paid to send the message; 0 if the current amount is correct.
      */
     public function setRequiredPaidMessageStarCount(int $requiredPaidMessageStarCount): self
     {
@@ -145,7 +145,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Get Time left before the message can be re-sent, in seconds. No update is sent when this field changes
+     * Get Time left before the message can be re-sent, in seconds. No update is sent when this field changes.
      */
     public function getRetryAfter(): float
     {
@@ -153,7 +153,7 @@ class MessageSendingStateFailed extends MessageSendingState implements \JsonSeri
     }
 
     /**
-     * Set Time left before the message can be re-sent, in seconds. No update is sent when this field changes
+     * Set Time left before the message can be re-sent, in seconds. No update is sent when this field changes.
      */
     public function setRetryAfter(float $retryAfter): self
     {

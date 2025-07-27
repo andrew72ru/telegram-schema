@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of quick reply shortcut messages has changed
+ * The list of quick reply shortcut messages has changed.
  */
 class UpdateQuickReplyShortcutMessages extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateQuickReplyShortcutMessages extends Update implements \JsonSerializab
     }
 
     /**
-     * Get The identifier of the shortcut
+     * Get The identifier of the shortcut.
      */
     public function getShortcutId(): int
     {
@@ -30,7 +30,7 @@ class UpdateQuickReplyShortcutMessages extends Update implements \JsonSerializab
     }
 
     /**
-     * Set The identifier of the shortcut
+     * Set The identifier of the shortcut.
      */
     public function setShortcutId(int $shortcutId): self
     {
@@ -40,7 +40,7 @@ class UpdateQuickReplyShortcutMessages extends Update implements \JsonSerializab
     }
 
     /**
-     * Get The new list of quick reply messages for the shortcut in order from the first to the last sent
+     * Get The new list of quick reply messages for the shortcut in order from the first to the last sent.
      */
     public function getMessages(): array|null
     {
@@ -48,7 +48,7 @@ class UpdateQuickReplyShortcutMessages extends Update implements \JsonSerializab
     }
 
     /**
-     * Set The new list of quick reply messages for the shortcut in order from the first to the last sent
+     * Set The new list of quick reply messages for the shortcut in order from the first to the last sent.
      */
     public function setMessages(array|null $messages): self
     {

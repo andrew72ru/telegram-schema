@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a sticker from the list of favorite stickers @sticker Sticker file to delete from the list
+ * Removes a sticker from the list of favorite stickers @sticker Sticker file to delete from the list.
  */
 class RemoveFavoriteSticker extends Ok implements \JsonSerializable
 {

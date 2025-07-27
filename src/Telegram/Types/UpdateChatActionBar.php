@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat action bar was changed @chat_id Chat identifier @action_bar The new value of the action bar; may be null
+ * The chat action bar was changed @chat_id Chat identifier @action_bar The new value of the action bar; may be null.
  */
 class UpdateChatActionBar extends Update implements \JsonSerializable
 {

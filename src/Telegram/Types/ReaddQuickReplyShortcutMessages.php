@@ -22,7 +22,7 @@ class ReaddQuickReplyShortcutMessages extends QuickReplyMessages implements \Jso
     }
 
     /**
-     * Get Name of the target shortcut
+     * Get Name of the target shortcut.
      */
     public function getShortcutName(): string
     {
@@ -30,7 +30,7 @@ class ReaddQuickReplyShortcutMessages extends QuickReplyMessages implements \Jso
     }
 
     /**
-     * Set Name of the target shortcut
+     * Set Name of the target shortcut.
      */
     public function setShortcutName(string $shortcutName): self
     {
@@ -40,7 +40,7 @@ class ReaddQuickReplyShortcutMessages extends QuickReplyMessages implements \Jso
     }
 
     /**
-     * Get Identifiers of the quick reply messages to readd. Message identifiers must be in a strictly increasing order
+     * Get Identifiers of the quick reply messages to readd. Message identifiers must be in a strictly increasing order.
      */
     public function getMessageIds(): array|null
     {
@@ -48,7 +48,7 @@ class ReaddQuickReplyShortcutMessages extends QuickReplyMessages implements \Jso
     }
 
     /**
-     * Set Identifiers of the quick reply messages to readd. Message identifiers must be in a strictly increasing order
+     * Set Identifiers of the quick reply messages to readd. Message identifiers must be in a strictly increasing order.
      */
     public function setMessageIds(array|null $messageIds): self
     {

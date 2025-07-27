@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns detailed Telegram Star revenue statistics
+ * Returns detailed Telegram Star revenue statistics.
  */
 class GetStarRevenueStatistics extends StarRevenueStatistics implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetStarRevenueStatistics extends StarRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Get Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or a supergroup or a channel chat with supergroupFullInfo.can_get_star_revenue_statistics == true
+     * Get Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or a supergroup or a channel chat with supergroupFullInfo.can_get_star_revenue_statistics == true.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -30,7 +30,7 @@ class GetStarRevenueStatistics extends StarRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Set Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or a supergroup or a channel chat with supergroupFullInfo.can_get_star_revenue_statistics == true
+     * Set Identifier of the owner of the Telegram Stars; can be identifier of the current user, an owned bot, or a supergroup or a channel chat with supergroupFullInfo.can_get_star_revenue_statistics == true.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -40,7 +40,7 @@ class GetStarRevenueStatistics extends StarRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Get Pass true if a dark theme is used by the application
+     * Get Pass true if a dark theme is used by the application.
      */
     public function getIsDark(): bool
     {
@@ -48,7 +48,7 @@ class GetStarRevenueStatistics extends StarRevenueStatistics implements \JsonSer
     }
 
     /**
-     * Set Pass true if a dark theme is used by the application
+     * Set Pass true if a dark theme is used by the application.
      */
     public function setIsDark(bool $isDark): self
     {

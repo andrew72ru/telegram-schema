@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a message
+ * An area pointing to a message.
  */
 class InputStoryAreaTypeMessage extends InputStoryAreaType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputStoryAreaTypeMessage extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get Identifier of the chat with the message. Currently, the chat must be a supergroup or a channel chat
+     * Get Identifier of the chat with the message. Currently, the chat must be a supergroup or a channel chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class InputStoryAreaTypeMessage extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set Identifier of the chat with the message. Currently, the chat must be a supergroup or a channel chat
+     * Set Identifier of the chat with the message. Currently, the chat must be a supergroup or a channel chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class InputStoryAreaTypeMessage extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_be_shared_in_story to check whether the message is suitable
+     * Get Identifier of the message. Use messageProperties.can_be_shared_in_story to check whether the message is suitable.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class InputStoryAreaTypeMessage extends InputStoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_be_shared_in_story to check whether the message is suitable
+     * Set Identifier of the message. Use messageProperties.can_be_shared_in_story to check whether the message is suitable.
      */
     public function setMessageId(int $messageId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a sticker
+ * A message with a sticker.
  */
 class PushMessageContentSticker extends PushMessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PushMessageContentSticker extends PushMessageContent implements \JsonSeria
     }
 
     /**
-     * Get Message content; may be null
+     * Get Message content; may be null.
      */
     public function getSticker(): Sticker|null
     {
@@ -33,7 +33,7 @@ class PushMessageContentSticker extends PushMessageContent implements \JsonSeria
     }
 
     /**
-     * Set Message content; may be null
+     * Set Message content; may be null.
      */
     public function setSticker(Sticker|null $sticker): self
     {
@@ -43,7 +43,7 @@ class PushMessageContentSticker extends PushMessageContent implements \JsonSeria
     }
 
     /**
-     * Get Emoji corresponding to the sticker; may be empty
+     * Get Emoji corresponding to the sticker; may be empty.
      */
     public function getEmoji(): string
     {
@@ -51,7 +51,7 @@ class PushMessageContentSticker extends PushMessageContent implements \JsonSeria
     }
 
     /**
-     * Set Emoji corresponding to the sticker; may be empty
+     * Set Emoji corresponding to the sticker; may be empty.
      */
     public function setEmoji(string $emoji): self
     {
@@ -61,7 +61,7 @@ class PushMessageContentSticker extends PushMessageContent implements \JsonSeria
     }
 
     /**
-     * Get True, if the message is a pinned message with the specified content
+     * Get True, if the message is a pinned message with the specified content.
      */
     public function getIsPinned(): bool
     {
@@ -69,7 +69,7 @@ class PushMessageContentSticker extends PushMessageContent implements \JsonSeria
     }
 
     /**
-     * Set True, if the message is a pinned message with the specified content
+     * Set True, if the message is a pinned message with the specified content.
      */
     public function setIsPinned(bool $isPinned): self
     {

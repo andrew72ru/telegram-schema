@@ -31,7 +31,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The animation description
+     * Get The animation description.
      */
     public function getAnimation(): Animation|null
     {
@@ -39,7 +39,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The animation description
+     * Set The animation description.
      */
     public function setAnimation(Animation|null $animation): self
     {
@@ -49,7 +49,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Animation caption
+     * Get Animation caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -57,7 +57,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Animation caption
+     * Set Animation caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -67,7 +67,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation
+     * Get True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -75,7 +75,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation
+     * Set True, if the caption must be shown above the animation; otherwise, the caption must be shown below the animation.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -85,7 +85,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the animation preview must be covered by a spoiler animation
+     * Get True, if the animation preview must be covered by a spoiler animation.
      */
     public function getHasSpoiler(): bool
     {
@@ -93,7 +93,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the animation preview must be covered by a spoiler animation
+     * Set True, if the animation preview must be covered by a spoiler animation.
      */
     public function setHasSpoiler(bool $hasSpoiler): self
     {
@@ -103,7 +103,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the animation thumbnail must be blurred and the animation must be shown only while tapped
+     * Get True, if the animation thumbnail must be blurred and the animation must be shown only while tapped.
      */
     public function getIsSecret(): bool
     {
@@ -111,7 +111,7 @@ class MessageAnimation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the animation thumbnail must be blurred and the animation must be shown only while tapped
+     * Set True, if the animation thumbnail must be blurred and the animation must be shown only while tapped.
      */
     public function setIsSecret(bool $isSecret): self
     {

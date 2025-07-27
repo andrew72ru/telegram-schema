@@ -37,7 +37,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which the Web App is opened. The Web App can't be opened in secret chats
+     * Get Identifier of the chat in which the Web App is opened. The Web App can't be opened in secret chats.
      */
     public function getChatId(): int
     {
@@ -45,7 +45,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which the Web App is opened. The Web App can't be opened in secret chats
+     * Set Identifier of the chat in which the Web App is opened. The Web App can't be opened in secret chats.
      */
     public function setChatId(int $chatId): self
     {
@@ -55,7 +55,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the bot, providing the Web App. If the bot is restricted for the current user, then show an error instead of calling the method
+     * Get Identifier of the bot, providing the Web App. If the bot is restricted for the current user, then show an error instead of calling the method.
      */
     public function getBotUserId(): int
     {
@@ -63,7 +63,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the bot, providing the Web App. If the bot is restricted for the current user, then show an error instead of calling the method
+     * Set Identifier of the bot, providing the Web App. If the bot is restricted for the current user, then show an error instead of calling the method.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -73,7 +73,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get The URL from an inlineKeyboardButtonTypeWebApp button, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an empty string otherwise
+     * Get The URL from an inlineKeyboardButtonTypeWebApp button, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an empty string otherwise.
      */
     public function getUrl(): string
     {
@@ -81,7 +81,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set The URL from an inlineKeyboardButtonTypeWebApp button, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an empty string otherwise
+     * Set The URL from an inlineKeyboardButtonTypeWebApp button, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an empty string otherwise.
      */
     public function setUrl(string $url): self
     {
@@ -91,7 +91,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier to which the message will be sent
+     * Get If not 0, the message thread identifier to which the message will be sent.
      */
     public function getMessageThreadId(): int
     {
@@ -99,7 +99,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier to which the message will be sent
+     * Set If not 0, the message thread identifier to which the message will be sent.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -109,7 +109,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, unique identifier of the topic of channel direct messages chat to which the message will be sent
+     * Get If not 0, unique identifier of the topic of channel direct messages chat to which the message will be sent.
      */
     public function getDirectMessagesChatTopicId(): int
     {
@@ -117,7 +117,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, unique identifier of the topic of channel direct messages chat to which the message will be sent
+     * Set If not 0, unique identifier of the topic of channel direct messages chat to which the message will be sent.
      */
     public function setDirectMessagesChatTopicId(int $directMessagesChatTopicId): self
     {
@@ -127,7 +127,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message or story to be replied in the message sent by the Web App; pass null if none
+     * Get Information about the message or story to be replied in the message sent by the Web App; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -135,7 +135,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message or story to be replied in the message sent by the Web App; pass null if none
+     * Set Information about the message or story to be replied in the message sent by the Web App; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -145,7 +145,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Get Parameters to use to open the Web App
+     * Get Parameters to use to open the Web App.
      */
     public function getParameters(): WebAppOpenParameters|null
     {
@@ -153,7 +153,7 @@ class OpenWebApp extends WebAppInfo implements \JsonSerializable
     }
 
     /**
-     * Set Parameters to use to open the Web App
+     * Set Parameters to use to open the Web App.
      */
     public function setParameters(WebAppOpenParameters|null $parameters): self
     {

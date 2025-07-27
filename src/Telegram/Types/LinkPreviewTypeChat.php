@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a chat
+ * The link is a link to a chat.
  */
 class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Get Type of the chat
+     * Get Type of the chat.
      */
     public function getType(): InviteLinkChatType|null
     {
@@ -33,7 +33,7 @@ class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Set Type of the chat
+     * Set Type of the chat.
      */
     public function setType(InviteLinkChatType|null $type): self
     {
@@ -43,7 +43,7 @@ class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Get Photo of the chat; may be null
+     * Get Photo of the chat; may be null.
      */
     public function getPhoto(): ChatPhoto|null
     {
@@ -51,7 +51,7 @@ class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Set Photo of the chat; may be null
+     * Set Photo of the chat; may be null.
      */
     public function setPhoto(ChatPhoto|null $photo): self
     {
@@ -61,7 +61,7 @@ class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link only creates join request
+     * Get True, if the link only creates join request.
      */
     public function getCreatesJoinRequest(): bool
     {
@@ -69,7 +69,7 @@ class LinkPreviewTypeChat extends LinkPreviewType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link only creates join request
+     * Set True, if the link only creates join request.
      */
     public function setCreatesJoinRequest(bool $createsJoinRequest): self
     {

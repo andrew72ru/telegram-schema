@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An animation in MPEG4 format; must be square, at most 10 seconds long, have width between 160 and 1280 and be at most 2MB in size
+ * An animation in MPEG4 format; must be square, at most 10 seconds long, have width between 160 and 1280 and be at most 2MB in size.
  */
 class InputChatPhotoAnimation extends InputChatPhoto implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputChatPhotoAnimation extends InputChatPhoto implements \JsonSerializabl
     }
 
     /**
-     * Get Animation to be set as profile photo. Only inputFileLocal and inputFileGenerated are allowed
+     * Get Animation to be set as profile photo. Only inputFileLocal and inputFileGenerated are allowed.
      */
     public function getAnimation(): InputFile|null
     {
@@ -30,7 +30,7 @@ class InputChatPhotoAnimation extends InputChatPhoto implements \JsonSerializabl
     }
 
     /**
-     * Set Animation to be set as profile photo. Only inputFileLocal and inputFileGenerated are allowed
+     * Set Animation to be set as profile photo. Only inputFileLocal and inputFileGenerated are allowed.
      */
     public function setAnimation(InputFile|null $animation): self
     {
@@ -40,7 +40,7 @@ class InputChatPhotoAnimation extends InputChatPhoto implements \JsonSerializabl
     }
 
     /**
-     * Get Timestamp of the frame, which will be used as static chat photo
+     * Get Timestamp of the frame, which will be used as static chat photo.
      */
     public function getMainFrameTimestamp(): float
     {
@@ -48,7 +48,7 @@ class InputChatPhotoAnimation extends InputChatPhoto implements \JsonSerializabl
     }
 
     /**
-     * Set Timestamp of the frame, which will be used as static chat photo
+     * Set Timestamp of the frame, which will be used as static chat photo.
      */
     public function setMainFrameTimestamp(float $mainFrameTimestamp): self
     {

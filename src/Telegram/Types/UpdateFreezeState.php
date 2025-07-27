@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The freeze state of the current user's account has changed
+ * The freeze state of the current user's account has changed.
  */
 class UpdateFreezeState extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if the account is frozen
+     * Get True, if the account is frozen.
      */
     public function getIsFrozen(): bool
     {
@@ -36,7 +36,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if the account is frozen
+     * Set True, if the account is frozen.
      */
     public function setIsFrozen(bool $isFrozen): self
     {
@@ -46,7 +46,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the account was frozen; 0 if the account isn't frozen
+     * Get Point in time (Unix timestamp) when the account was frozen; 0 if the account isn't frozen.
      */
     public function getFreezingDate(): int
     {
@@ -54,7 +54,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the account was frozen; 0 if the account isn't frozen
+     * Set Point in time (Unix timestamp) when the account was frozen; 0 if the account isn't frozen.
      */
     public function setFreezingDate(int $freezingDate): self
     {
@@ -64,7 +64,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the account will be deleted and can't be unfrozen; 0 if the account isn't frozen
+     * Get Point in time (Unix timestamp) when the account will be deleted and can't be unfrozen; 0 if the account isn't frozen.
      */
     public function getDeletionDate(): int
     {
@@ -72,7 +72,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the account will be deleted and can't be unfrozen; 0 if the account isn't frozen
+     * Set Point in time (Unix timestamp) when the account will be deleted and can't be unfrozen; 0 if the account isn't frozen.
      */
     public function setDeletionDate(int $deletionDate): self
     {
@@ -82,7 +82,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The link to open to send an appeal to unfreeze the account
+     * Get The link to open to send an appeal to unfreeze the account.
      */
     public function getAppealLink(): string
     {
@@ -90,7 +90,7 @@ class UpdateFreezeState extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The link to open to send an appeal to unfreeze the account
+     * Set The link to open to send an appeal to unfreeze the account.
      */
     public function setAppealLink(string $appealLink): self
     {

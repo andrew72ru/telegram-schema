@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an available reaction @type Type of the reaction @needs_premium True, if Telegram Premium is needed to send the reaction
+ * Represents an available reaction @var Type of the reaction @needs_premium True, if Telegram Premium is needed to send the reaction.
  */
 class AvailableReaction implements \JsonSerializable
 {

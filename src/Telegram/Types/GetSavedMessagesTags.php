@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns tags used in Saved Messages or a Saved Messages topic
+ * Returns tags used in Saved Messages or a Saved Messages topic.
  */
 class GetSavedMessagesTags extends SavedMessagesTags implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GetSavedMessagesTags extends SavedMessagesTags implements \JsonSerializabl
     }
 
     /**
-     * Get Identifier of Saved Messages topic which tags will be returned; pass 0 to get all Saved Messages tags
+     * Get Identifier of Saved Messages topic which tags will be returned; pass 0 to get all Saved Messages tags.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -27,7 +27,7 @@ class GetSavedMessagesTags extends SavedMessagesTags implements \JsonSerializabl
     }
 
     /**
-     * Set Identifier of Saved Messages topic which tags will be returned; pass 0 to get all Saved Messages tags
+     * Set Identifier of Saved Messages topic which tags will be returned; pass 0 to get all Saved Messages tags.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {

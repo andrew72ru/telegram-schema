@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of message viewers @viewers List of message viewers
+ * Represents a list of message viewers @viewers List of message viewers.
  */
 class MessageViewers implements \JsonSerializable
 {

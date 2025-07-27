@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A subheader @subheader Subheader
+ * A subheader @subheader Subheader.
  */
 class PageBlockSubheader extends PageBlock implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An authentication token received through Apple ID @token The token
+ * An authentication token received through Apple ID @token The token.
  */
 class EmailAddressAuthenticationAppleId extends EmailAddressAuthentication implements \JsonSerializable
 {

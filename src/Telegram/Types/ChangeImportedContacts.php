@@ -19,7 +19,7 @@ class ChangeImportedContacts extends ImportedContacts implements \JsonSerializab
     }
 
     /**
-     * Get The new list of contacts, contact's vCard are ignored and are not imported
+     * Get The new list of contacts, contact's vCard are ignored and are not imported.
      */
     public function getContacts(): array|null
     {
@@ -27,7 +27,7 @@ class ChangeImportedContacts extends ImportedContacts implements \JsonSerializab
     }
 
     /**
-     * Set The new list of contacts, contact's vCard are ignored and are not imported
+     * Set The new list of contacts, contact's vCard are ignored and are not imported.
      */
     public function setContacts(array|null $contacts): self
     {

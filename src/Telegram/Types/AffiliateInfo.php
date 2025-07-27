@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an affiliate that received commission from a Telegram Star transaction
+ * Contains information about an affiliate that received commission from a Telegram Star transaction.
  */
 class AffiliateInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AffiliateInfo implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner
+     * Get The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
      */
     public function getCommissionPerMille(): int
     {
@@ -33,7 +33,7 @@ class AffiliateInfo implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner
+     * Set The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
      */
     public function setCommissionPerMille(int $commissionPerMille): self
     {
@@ -43,7 +43,7 @@ class AffiliateInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat which received the commission
+     * Get Identifier of the chat which received the commission.
      */
     public function getAffiliateChatId(): int
     {
@@ -51,7 +51,7 @@ class AffiliateInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat which received the commission
+     * Set Identifier of the chat which received the commission.
      */
     public function setAffiliateChatId(int $affiliateChatId): self
     {
@@ -61,7 +61,7 @@ class AffiliateInfo implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars that were received by the affiliate; can be negative for refunds
+     * Get The amount of Telegram Stars that were received by the affiliate; can be negative for refunds.
      */
     public function getStarAmount(): StarAmount|null
     {
@@ -69,7 +69,7 @@ class AffiliateInfo implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars that were received by the affiliate; can be negative for refunds
+     * Set The amount of Telegram Stars that were received by the affiliate; can be negative for refunds.
      */
     public function setStarAmount(StarAmount|null $starAmount): self
     {

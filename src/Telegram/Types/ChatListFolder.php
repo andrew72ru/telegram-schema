@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A list of chats added to a chat folder @chat_folder_id Chat folder identifier
+ * A list of chats added to a chat folder @chat_folder_id Chat folder identifier.
  */
 class ChatListFolder extends ChatList implements \JsonSerializable
 {

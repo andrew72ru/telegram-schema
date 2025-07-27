@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forwarded messages @total_count Number of forwarded messages
+ * A forwarded messages @total_count Number of forwarded messages.
  */
 class PushMessageContentMessageForwards extends PushMessageContent implements \JsonSerializable
 {

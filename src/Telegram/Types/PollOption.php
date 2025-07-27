@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes one answer option of a poll
+ * Describes one answer option of a poll.
  */
 class PollOption implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Get Option text; 1-100 characters. Only custom emoji entities are allowed
+     * Get Option text; 1-100 characters. Only custom emoji entities are allowed.
      */
     public function getText(): FormattedText|null
     {
@@ -39,7 +39,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Set Option text; 1-100 characters. Only custom emoji entities are allowed
+     * Set Option text; 1-100 characters. Only custom emoji entities are allowed.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -49,7 +49,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of voters for this option, available only for closed or voted polls
+     * Get Number of voters for this option, available only for closed or voted polls.
      */
     public function getVoterCount(): int
     {
@@ -57,7 +57,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of voters for this option, available only for closed or voted polls
+     * Set Number of voters for this option, available only for closed or voted polls.
      */
     public function setVoterCount(int $voterCount): self
     {
@@ -67,7 +67,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Get The percentage of votes for this option; 0-100
+     * Get The percentage of votes for this option; 0-100.
      */
     public function getVotePercentage(): int
     {
@@ -75,7 +75,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Set The percentage of votes for this option; 0-100
+     * Set The percentage of votes for this option; 0-100.
      */
     public function setVotePercentage(int $votePercentage): self
     {
@@ -85,7 +85,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the option was chosen by the user
+     * Get True, if the option was chosen by the user.
      */
     public function getIsChosen(): bool
     {
@@ -93,7 +93,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the option was chosen by the user
+     * Set True, if the option was chosen by the user.
      */
     public function setIsChosen(bool $isChosen): self
     {
@@ -103,7 +103,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the option is being chosen by a pending setPollAnswer request
+     * Get True, if the option is being chosen by a pending setPollAnswer request.
      */
     public function getIsBeingChosen(): bool
     {
@@ -111,7 +111,7 @@ class PollOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the option is being chosen by a pending setPollAnswer request
+     * Set True, if the option is being chosen by a pending setPollAnswer request.
      */
     public function setIsBeingChosen(bool $isBeingChosen): self
     {

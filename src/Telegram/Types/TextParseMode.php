@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for TextParseMode types
+ * Abstract base class for TextParseMode types.
  */
 abstract class TextParseMode implements \JsonSerializable
 {

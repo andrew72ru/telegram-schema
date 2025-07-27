@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An embedded post
+ * An embedded post.
  */
 class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get URL of the embedded post
+     * Get URL of the embedded post.
      */
     public function getUrl(): string
     {
@@ -42,7 +42,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set URL of the embedded post
+     * Set URL of the embedded post.
      */
     public function setUrl(string $url): self
     {
@@ -52,7 +52,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Post author
+     * Get Post author.
      */
     public function getAuthor(): string
     {
@@ -60,7 +60,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Post author
+     * Set Post author.
      */
     public function setAuthor(string $author): self
     {
@@ -70,7 +70,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Post author photo; may be null
+     * Get Post author photo; may be null.
      */
     public function getAuthorPhoto(): Photo|null
     {
@@ -78,7 +78,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Post author photo; may be null
+     * Set Post author photo; may be null.
      */
     public function setAuthorPhoto(Photo|null $authorPhoto): self
     {
@@ -88,7 +88,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the post was created; 0 if unknown
+     * Get Point in time (Unix timestamp) when the post was created; 0 if unknown.
      */
     public function getDate(): int
     {
@@ -96,7 +96,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the post was created; 0 if unknown
+     * Set Point in time (Unix timestamp) when the post was created; 0 if unknown.
      */
     public function setDate(int $date): self
     {
@@ -106,7 +106,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Post content
+     * Get Post content.
      */
     public function getPageBlocks(): array|null
     {
@@ -114,7 +114,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Post content
+     * Set Post content.
      */
     public function setPageBlocks(array|null $pageBlocks): self
     {
@@ -124,7 +124,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Post caption
+     * Get Post caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -132,7 +132,7 @@ class PageBlockEmbeddedPost extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Post caption
+     * Set Post caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {

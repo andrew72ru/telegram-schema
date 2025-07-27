@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of time zones @time_zones A list of time zones
+ * Contains a list of time zones @time_zones A list of time zones.
  */
 class TimeZones implements \JsonSerializable
 {

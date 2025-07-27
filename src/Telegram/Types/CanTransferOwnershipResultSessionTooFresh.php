@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The session was created recently, user needs to wait @retry_after Time left before the session can be used to transfer ownership of a chat, in seconds
+ * The session was created recently, user needs to wait @retry_after Time left before the session can be used to transfer ownership of a chat, in seconds.
  */
 class CanTransferOwnershipResultSessionTooFresh extends CanTransferOwnershipResult implements \JsonSerializable
 {

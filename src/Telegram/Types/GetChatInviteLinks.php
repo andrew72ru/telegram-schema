@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns invite links for a chat created by specified administrator. Requires administrator privileges and can_invite_users right in the chat to get own links and owner privileges to get other links
+ * Returns invite links for a chat created by specified administrator. Requires administrator privileges and can_invite_users right in the chat to get own links and owner privileges to get other links.
  */
 class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of a chat administrator. Must be an identifier of the current user for non-owner
+     * Get User identifier of a chat administrator. Must be an identifier of the current user for non-owner.
      */
     public function getCreatorUserId(): int
     {
@@ -60,7 +60,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of a chat administrator. Must be an identifier of the current user for non-owner
+     * Set User identifier of a chat administrator. Must be an identifier of the current user for non-owner.
      */
     public function setCreatorUserId(int $creatorUserId): self
     {
@@ -70,7 +70,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if revoked links needs to be returned instead of active or expired
+     * Get Pass true if revoked links needs to be returned instead of active or expired.
      */
     public function getIsRevoked(): bool
     {
@@ -78,7 +78,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if revoked links needs to be returned instead of active or expired
+     * Set Pass true if revoked links needs to be returned instead of active or expired.
      */
     public function setIsRevoked(bool $isRevoked): self
     {
@@ -88,7 +88,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning
+     * Get Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning.
      */
     public function getOffsetDate(): int
     {
@@ -96,7 +96,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning
+     * Set Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning.
      */
     public function setOffsetDate(int $offsetDate): self
     {
@@ -106,7 +106,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get Invite link starting after which to return invite links; use empty string to get results from the beginning
+     * Get Invite link starting after which to return invite links; use empty string to get results from the beginning.
      */
     public function getOffsetInviteLink(): string
     {
@@ -114,7 +114,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set Invite link starting after which to return invite links; use empty string to get results from the beginning
+     * Set Invite link starting after which to return invite links; use empty string to get results from the beginning.
      */
     public function setOffsetInviteLink(string $offsetInviteLink): self
     {
@@ -124,7 +124,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of invite links to return; up to 100
+     * Get The maximum number of invite links to return; up to 100.
      */
     public function getLimit(): int
     {
@@ -132,7 +132,7 @@ class GetChatInviteLinks extends ChatInviteLinks implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of invite links to return; up to 100
+     * Set The maximum number of invite links to return; up to 100.
      */
     public function setLimit(int $limit): self
     {

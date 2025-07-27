@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat created a giveaway
+ * The chat created a giveaway.
  */
 class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of a user that won in the giveaway; 0 if none
+     * Get Identifier of a user that won in the giveaway; 0 if none.
      */
     public function getUserId(): int
     {
@@ -39,7 +39,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of a user that won in the giveaway; 0 if none
+     * Set Identifier of a user that won in the giveaway; 0 if none.
      */
     public function setUserId(int $userId): self
     {
@@ -49,7 +49,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get The created Telegram Premium gift code if it was used by the user or can be claimed by the current user; an empty string otherwise; for Telegram Premium giveways only
+     * Get The created Telegram Premium gift code if it was used by the user or can be claimed by the current user; an empty string otherwise; for Telegram Premium giveways only.
      */
     public function getGiftCode(): string
     {
@@ -57,7 +57,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set The created Telegram Premium gift code if it was used by the user or can be claimed by the current user; an empty string otherwise; for Telegram Premium giveways only
+     * Set The created Telegram Premium gift code if it was used by the user or can be claimed by the current user; an empty string otherwise; for Telegram Premium giveways only.
      */
     public function setGiftCode(string $giftCode): self
     {
@@ -67,7 +67,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get Number of Telegram Stars distributed among winners of the giveaway
+     * Get Number of Telegram Stars distributed among winners of the giveaway.
      */
     public function getStarCount(): int
     {
@@ -75,7 +75,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set Number of Telegram Stars distributed among winners of the giveaway
+     * Set Number of Telegram Stars distributed among winners of the giveaway.
      */
     public function setStarCount(int $starCount): self
     {
@@ -85,7 +85,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the corresponding giveaway message; can be an identifier of a deleted message
+     * Get Identifier of the corresponding giveaway message; can be an identifier of a deleted message.
      */
     public function getGiveawayMessageId(): int
     {
@@ -93,7 +93,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the corresponding giveaway message; can be an identifier of a deleted message
+     * Set Identifier of the corresponding giveaway message; can be an identifier of a deleted message.
      */
     public function setGiveawayMessageId(int $giveawayMessageId): self
     {
@@ -103,7 +103,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Get True, if the winner for the corresponding giveaway prize wasn't chosen, because there were not enough participants
+     * Get True, if the winner for the corresponding giveaway prize wasn't chosen, because there were not enough participants.
      */
     public function getIsUnclaimed(): bool
     {
@@ -111,7 +111,7 @@ class ChatBoostSourceGiveaway extends ChatBoostSource implements \JsonSerializab
     }
 
     /**
-     * Set True, if the winner for the corresponding giveaway prize wasn't chosen, because there were not enough participants
+     * Set True, if the winner for the corresponding giveaway prize wasn't chosen, because there were not enough participants.
      */
     public function setIsUnclaimed(bool $isUnclaimed): self
     {

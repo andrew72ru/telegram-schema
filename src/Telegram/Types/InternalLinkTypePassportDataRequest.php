@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link contains a request of Telegram passport data. Call getPassportAuthorizationForm with the given parameters to process the link if the link was received from outside of the application; otherwise, ignore it
+ * The link contains a request of Telegram passport data. Call getPassportAuthorizationForm with the given parameters to process the link if the link was received from outside of the application; otherwise, ignore it.
  */
 class InternalLinkTypePassportDataRequest extends InternalLinkType implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Get User identifier of the service's bot; the corresponding user may be unknown yet
+     * Get User identifier of the service's bot; the corresponding user may be unknown yet.
      */
     public function getBotUserId(): int
     {
@@ -39,7 +39,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Set User identifier of the service's bot; the corresponding user may be unknown yet
+     * Set User identifier of the service's bot; the corresponding user may be unknown yet.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -49,7 +49,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Get Telegram Passport element types requested by the service
+     * Get Telegram Passport element types requested by the service.
      */
     public function getScope(): string
     {
@@ -57,7 +57,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Set Telegram Passport element types requested by the service
+     * Set Telegram Passport element types requested by the service.
      */
     public function setScope(string $scope): self
     {
@@ -67,7 +67,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Get Service's public key
+     * Get Service's public key.
      */
     public function getPublicKey(): string
     {
@@ -75,7 +75,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Set Service's public key
+     * Set Service's public key.
      */
     public function setPublicKey(string $publicKey): self
     {
@@ -85,7 +85,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Get Unique request identifier provided by the service
+     * Get Unique request identifier provided by the service.
      */
     public function getNonce(): string
     {
@@ -93,7 +93,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Set Unique request identifier provided by the service
+     * Set Unique request identifier provided by the service.
      */
     public function setNonce(string $nonce): self
     {
@@ -103,7 +103,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Get An HTTP URL to open once the request is finished, canceled, or failed with the parameters tg_passport=success, tg_passport=cancel, or tg_passport=error&error=... respectively.
+     * Get An HTTP URL to open once the request is finished, canceled, or failed with the parameters tg_passport=success, tg_passport=cancel, or tg_passport=error&error=... respectively..
      */
     public function getCallbackUrl(): string
     {
@@ -111,7 +111,7 @@ class InternalLinkTypePassportDataRequest extends InternalLinkType implements \J
     }
 
     /**
-     * Set An HTTP URL to open once the request is finished, canceled, or failed with the parameters tg_passport=success, tg_passport=cancel, or tg_passport=error&error=... respectively.
+     * Set An HTTP URL to open once the request is finished, canceled, or failed with the parameters tg_passport=success, tg_passport=cancel, or tg_passport=error&error=... respectively..
      */
     public function setCallbackUrl(string $callbackUrl): self
     {

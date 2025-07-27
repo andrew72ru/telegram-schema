@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video note message
+ * A video note message.
  */
 class InputMessageVideoNote extends InputMessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Video note to be sent. The video is expected to be encoded to MPEG4 format with H.264 codec and have no data outside of the visible circle
+     * Get Video note to be sent. The video is expected to be encoded to MPEG4 format with H.264 codec and have no data outside of the visible circle.
      */
     public function getVideoNote(): InputFile|null
     {
@@ -39,7 +39,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Video note to be sent. The video is expected to be encoded to MPEG4 format with H.264 codec and have no data outside of the visible circle
+     * Set Video note to be sent. The video is expected to be encoded to MPEG4 format with H.264 codec and have no data outside of the visible circle.
      */
     public function setVideoNote(InputFile|null $videoNote): self
     {
@@ -49,7 +49,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Video thumbnail; may be null if empty; pass null to skip thumbnail uploading
+     * Get Video thumbnail; may be null if empty; pass null to skip thumbnail uploading.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -57,7 +57,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Video thumbnail; may be null if empty; pass null to skip thumbnail uploading
+     * Set Video thumbnail; may be null if empty; pass null to skip thumbnail uploading.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -67,7 +67,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Duration of the video, in seconds; 0-60
+     * Get Duration of the video, in seconds; 0-60.
      */
     public function getDuration(): int
     {
@@ -75,7 +75,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Duration of the video, in seconds; 0-60
+     * Set Duration of the video, in seconds; 0-60.
      */
     public function setDuration(int $duration): self
     {
@@ -85,7 +85,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Video width and height; must be positive and not greater than 640
+     * Get Video width and height; must be positive and not greater than 640.
      */
     public function getLength(): int
     {
@@ -93,7 +93,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Video width and height; must be positive and not greater than 640
+     * Set Video width and height; must be positive and not greater than 640.
      */
     public function setLength(int $length): self
     {
@@ -103,7 +103,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Video note self-destruct type; may be null if none; pass null if none; private chats only
+     * Get Video note self-destruct type; may be null if none; pass null if none; private chats only.
      */
     public function getSelfDestructType(): MessageSelfDestructType|null
     {
@@ -111,7 +111,7 @@ class InputMessageVideoNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Video note self-destruct type; may be null if none; pass null if none; private chats only
+     * Set Video note self-destruct type; may be null if none; pass null if none; private chats only.
      */
     public function setSelfDestructType(MessageSelfDestructType|null $selfDestructType): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether sponsored messages are shown in the channel chat; requires owner privileges in the channel. The chat must have at least chatBoostFeatures.min_sponsored_message_disable_boost_level boost level to disable sponsored messages
+ * Toggles whether sponsored messages are shown in the channel chat; requires owner privileges in the channel. The chat must have at least chatBoostFeatures.min_sponsored_message_disable_boost_level boost level to disable sponsored messages.
  */
 class ToggleSupergroupCanHaveSponsoredMessages extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleSupergroupCanHaveSponsoredMessages extends Ok implements \JsonSerial
     }
 
     /**
-     * Get The identifier of the channel
+     * Get The identifier of the channel.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ToggleSupergroupCanHaveSponsoredMessages extends Ok implements \JsonSerial
     }
 
     /**
-     * Set The identifier of the channel
+     * Set The identifier of the channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ToggleSupergroupCanHaveSponsoredMessages extends Ok implements \JsonSerial
     }
 
     /**
-     * Get The new value of can_have_sponsored_messages
+     * Get The new value of can_have_sponsored_messages.
      */
     public function getCanHaveSponsoredMessages(): bool
     {
@@ -48,7 +48,7 @@ class ToggleSupergroupCanHaveSponsoredMessages extends Ok implements \JsonSerial
     }
 
     /**
-     * Set The new value of can_have_sponsored_messages
+     * Set The new value of can_have_sponsored_messages.
      */
     public function setCanHaveSponsoredMessages(bool $canHaveSponsoredMessages): self
     {

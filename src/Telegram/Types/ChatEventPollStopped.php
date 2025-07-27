@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A poll in a message was stopped @message The message with the poll
+ * A poll in a message was stopped @message The message with the poll.
  */
 class ChatEventPollStopped extends ChatEventAction implements \JsonSerializable
 {

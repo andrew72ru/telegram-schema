@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a clickable rectangle area on a story media @position Position of the area @type Type of the area
+ * Describes a clickable rectangle area on a story media @position Position of the area @var Type of the area.
  */
 class StoryArea implements \JsonSerializable
 {

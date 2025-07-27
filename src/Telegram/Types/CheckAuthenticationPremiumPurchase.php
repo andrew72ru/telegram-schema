@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks whether an in-store purchase of Telegram Premium is possible before authorization. Works only when the current authorization state is authorizationStateWaitPremiumPurchase
+ * Checks whether an in-store purchase of Telegram Premium is possible before authorization. Works only when the current authorization state is authorizationStateWaitPremiumPurchase.
  */
 class CheckAuthenticationPremiumPurchase extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class CheckAuthenticationPremiumPurchase extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -30,7 +30,7 @@ class CheckAuthenticationPremiumPurchase extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -40,7 +40,7 @@ class CheckAuthenticationPremiumPurchase extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -48,7 +48,7 @@ class CheckAuthenticationPremiumPurchase extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {

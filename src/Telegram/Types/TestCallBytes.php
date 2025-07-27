@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the received bytes; for testing only. This is an offline method. Can be called before authorization @x Bytes to return
+ * Returns the received bytes; for testing only. This is an offline method. Can be called before authorization @x Bytes to return.
  */
 class TestCallBytes extends TestBytes implements \JsonSerializable
 {

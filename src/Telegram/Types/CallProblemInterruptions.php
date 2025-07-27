@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The other side kept disappearing
+ * The other side kept disappearing.
  */
 class CallProblemInterruptions extends CallProblem implements \JsonSerializable
 {

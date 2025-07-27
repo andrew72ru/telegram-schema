@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a command supported by a bot @command Text of the bot command @param_description Description of the bot command
+ * Represents a command supported by a bot @command Text of the bot command @param_description Description of the bot command.
  */
 class BotCommand implements \JsonSerializable
 {
@@ -33,7 +33,7 @@ class BotCommand implements \JsonSerializable
     }
 
     /**
-     * Get Represents a command supported by a bot @command Text of the bot command @param_description Description of the bot command
+     * Get Represents a command supported by a bot @command Text of the bot command @param_description Description of the bot command.
      */
     public function getDescription(): string
     {
@@ -41,7 +41,7 @@ class BotCommand implements \JsonSerializable
     }
 
     /**
-     * Set Represents a command supported by a bot @command Text of the bot command @param_description Description of the bot command
+     * Set Represents a command supported by a bot @command Text of the bot command @param_description Description of the bot command.
      */
     public function setDescription(string $description): self
     {

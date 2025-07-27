@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of revenue transactions for a chat. Currently, this method can be used only
+ * Returns the list of revenue transactions for a chat. Currently, this method can be used only.
  */
 class GetChatRevenueTransactions extends ChatRevenueTransactions implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetChatRevenueTransactions extends ChatRevenueTransactions implements \Jso
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetChatRevenueTransactions extends ChatRevenueTransactions implements \Jso
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetChatRevenueTransactions extends ChatRevenueTransactions implements \Jso
     }
 
     /**
-     * Get Number of transactions to skip
+     * Get Number of transactions to skip.
      */
     public function getOffset(): int
     {
@@ -51,7 +51,7 @@ class GetChatRevenueTransactions extends ChatRevenueTransactions implements \Jso
     }
 
     /**
-     * Set Number of transactions to skip
+     * Set Number of transactions to skip.
      */
     public function setOffset(int $offset): self
     {
@@ -61,7 +61,7 @@ class GetChatRevenueTransactions extends ChatRevenueTransactions implements \Jso
     }
 
     /**
-     * Get The maximum number of transactions to be returned; up to 200
+     * Get The maximum number of transactions to be returned; up to 200.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetChatRevenueTransactions extends ChatRevenueTransactions implements \Jso
     }
 
     /**
-     * Set The maximum number of transactions to be returned; up to 200
+     * Set The maximum number of transactions to be returned; up to 200.
      */
     public function setLimit(int $limit): self
     {

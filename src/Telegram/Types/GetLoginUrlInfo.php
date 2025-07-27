@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a button of type inlineKeyboardButtonTypeLoginUrl. The method needs to be called when the user presses the button
+ * Returns information about a button of type inlineKeyboardButtonTypeLoginUrl. The method needs to be called when the user presses the button.
  */
 class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the message with the button
+     * Get Chat identifier of the message with the button.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the message with the button
+     * Set Chat identifier of the message with the button.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier of the message with the button. The message must not be scheduled
+     * Get Message identifier of the message with the button. The message must not be scheduled.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier of the message with the button. The message must not be scheduled
+     * Set Message identifier of the message with the button. The message must not be scheduled.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
     }
 
     /**
-     * Get Button identifier
+     * Get Button identifier.
      */
     public function getButtonId(): int
     {
@@ -69,7 +69,7 @@ class GetLoginUrlInfo extends LoginUrlInfo implements \JsonSerializable
     }
 
     /**
-     * Set Button identifier
+     * Set Button identifier.
      */
     public function setButtonId(int $buttonId): self
     {

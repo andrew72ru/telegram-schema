@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds or changes business bot that is connected to the current user account @bot Connection settings for the bot
+ * Adds or changes business bot that is connected to the current user account @bot Connection settings for the bot.
  */
 class SetBusinessConnectedBot extends Ok implements \JsonSerializable
 {

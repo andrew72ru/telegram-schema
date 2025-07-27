@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes the current user from chat members. Private and secret chats can't be left using this method @chat_id Chat identifier
+ * Removes the current user from chat members. Private and secret chats can't be left using this method @chat_id Chat identifier.
  */
 class LeaveChat extends Ok implements \JsonSerializable
 {

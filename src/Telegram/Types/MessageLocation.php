@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a location
+ * A message with a location.
  */
 class MessageLocation extends MessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The location description
+     * Get The location description.
      */
     public function getLocation(): Location|null
     {
@@ -39,7 +39,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The location description
+     * Set The location description.
      */
     public function setLocation(Location|null $location): self
     {
@@ -49,7 +49,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Time relative to the message send date, for which the location can be updated, in seconds; if 0x7FFFFFFF, then location can be updated forever
+     * Get Time relative to the message send date, for which the location can be updated, in seconds; if 0x7FFFFFFF, then location can be updated forever.
      */
     public function getLivePeriod(): int
     {
@@ -57,7 +57,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Time relative to the message send date, for which the location can be updated, in seconds; if 0x7FFFFFFF, then location can be updated forever
+     * Set Time relative to the message send date, for which the location can be updated, in seconds; if 0x7FFFFFFF, then location can be updated forever.
      */
     public function setLivePeriod(int $livePeriod): self
     {
@@ -67,7 +67,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Left time for which the location can be updated, in seconds. If 0, then the location can't be updated anymore. The update updateMessageContent is not sent when this field changes
+     * Get Left time for which the location can be updated, in seconds. If 0, then the location can't be updated anymore. The update updateMessageContent is not sent when this field changes.
      */
     public function getExpiresIn(): int
     {
@@ -75,7 +75,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Left time for which the location can be updated, in seconds. If 0, then the location can't be updated anymore. The update updateMessageContent is not sent when this field changes
+     * Set Left time for which the location can be updated, in seconds. If 0, then the location can't be updated anymore. The update updateMessageContent is not sent when this field changes.
      */
     public function setExpiresIn(int $expiresIn): self
     {
@@ -85,7 +85,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get For live locations, a direction in which the location moves, in degrees; 1-360. If 0 the direction is unknown
+     * Get For live locations, a direction in which the location moves, in degrees; 1-360. If 0 the direction is unknown.
      */
     public function getHeading(): int
     {
@@ -93,7 +93,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set For live locations, a direction in which the location moves, in degrees; 1-360. If 0 the direction is unknown
+     * Set For live locations, a direction in which the location moves, in degrees; 1-360. If 0 the direction is unknown.
      */
     public function setHeading(int $heading): self
     {
@@ -103,7 +103,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). 0 if the notification is disabled. Available only to the message sender
+     * Get For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). 0 if the notification is disabled. Available only to the message sender.
      */
     public function getProximityAlertRadius(): int
     {
@@ -111,7 +111,7 @@ class MessageLocation extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). 0 if the notification is disabled. Available only to the message sender
+     * Set For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). 0 if the notification is disabled. Available only to the message sender.
      */
     public function setProximityAlertRadius(int $proximityAlertRadius): self
     {

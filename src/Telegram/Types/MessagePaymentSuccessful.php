@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A payment has been sent to a bot or a business account
+ * A payment has been sent to a bot or a business account.
  */
 class MessagePaymentSuccessful extends MessageContent implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the chat, containing the corresponding invoice message
+     * Get Identifier of the chat, containing the corresponding invoice message.
      */
     public function getInvoiceChatId(): int
     {
@@ -48,7 +48,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the chat, containing the corresponding invoice message
+     * Set Identifier of the chat, containing the corresponding invoice message.
      */
     public function setInvoiceChatId(int $invoiceChatId): self
     {
@@ -58,7 +58,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the message with the corresponding invoice; can be 0 or an identifier of a deleted message
+     * Get Identifier of the message with the corresponding invoice; can be 0 or an identifier of a deleted message.
      */
     public function getInvoiceMessageId(): int
     {
@@ -66,7 +66,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the message with the corresponding invoice; can be 0 or an identifier of a deleted message
+     * Set Identifier of the message with the corresponding invoice; can be 0 or an identifier of a deleted message.
      */
     public function setInvoiceMessageId(int $invoiceMessageId): self
     {
@@ -76,7 +76,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Currency for the price of the product
+     * Get Currency for the price of the product.
      */
     public function getCurrency(): string
     {
@@ -84,7 +84,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Currency for the price of the product
+     * Set Currency for the price of the product.
      */
     public function setCurrency(string $currency): self
     {
@@ -94,7 +94,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Total price for the product, in the smallest units of the currency
+     * Get Total price for the product, in the smallest units of the currency.
      */
     public function getTotalAmount(): int
     {
@@ -102,7 +102,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Total price for the product, in the smallest units of the currency
+     * Set Total price for the product, in the smallest units of the currency.
      */
     public function setTotalAmount(int $totalAmount): self
     {
@@ -112,7 +112,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring
+     * Get Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
      */
     public function getSubscriptionUntilDate(): int
     {
@@ -120,7 +120,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring
+     * Set Point in time (Unix timestamp) when the subscription will expire; 0 if unknown or the payment isn't recurring.
      */
     public function setSubscriptionUntilDate(int $subscriptionUntilDate): self
     {
@@ -130,7 +130,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get True, if this is a recurring payment
+     * Get True, if this is a recurring payment.
      */
     public function getIsRecurring(): bool
     {
@@ -138,7 +138,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set True, if this is a recurring payment
+     * Set True, if this is a recurring payment.
      */
     public function setIsRecurring(bool $isRecurring): self
     {
@@ -148,7 +148,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get True, if this is the first recurring payment
+     * Get True, if this is the first recurring payment.
      */
     public function getIsFirstRecurring(): bool
     {
@@ -156,7 +156,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set True, if this is the first recurring payment
+     * Set True, if this is the first recurring payment.
      */
     public function setIsFirstRecurring(bool $isFirstRecurring): self
     {
@@ -166,7 +166,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Get Name of the invoice; may be empty if unknown
+     * Get Name of the invoice; may be empty if unknown.
      */
     public function getInvoiceName(): string
     {
@@ -174,7 +174,7 @@ class MessagePaymentSuccessful extends MessageContent implements \JsonSerializab
     }
 
     /**
-     * Set Name of the invoice; may be empty if unknown
+     * Set Name of the invoice; may be empty if unknown.
      */
     public function setInvoiceName(string $invoiceName): self
     {

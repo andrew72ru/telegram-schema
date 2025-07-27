@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with an invoice from a bot @price Product price @is_pinned True, if the message is a pinned message with the specified content
+ * A message with an invoice from a bot @price Product price @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentInvoice extends PushMessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a basic group by its identifier. This is an offline method if the current user is not a bot @basic_group_id Basic group identifier
+ * Returns information about a basic group by its identifier. This is an offline method if the current user is not a bot @basic_group_id Basic group identifier.
  */
 class GetBasicGroup extends BasicGroup implements \JsonSerializable
 {

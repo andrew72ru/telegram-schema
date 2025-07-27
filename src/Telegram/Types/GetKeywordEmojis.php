@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Return emojis matching the keyword. Supported only if the file database is enabled. Order of results is unspecified
+ * Return emojis matching the keyword. Supported only if the file database is enabled. Order of results is unspecified.
  */
 class GetKeywordEmojis extends Emojis implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetKeywordEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Get Text to search for
+     * Get Text to search for.
      */
     public function getText(): string
     {
@@ -30,7 +30,7 @@ class GetKeywordEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Set Text to search for
+     * Set Text to search for.
      */
     public function setText(string $text): self
     {
@@ -40,7 +40,7 @@ class GetKeywordEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Get List of possible IETF language tags of the user's input language; may be empty if unknown
+     * Get List of possible IETF language tags of the user's input language; may be empty if unknown.
      */
     public function getInputLanguageCodes(): array|null
     {
@@ -48,7 +48,7 @@ class GetKeywordEmojis extends Emojis implements \JsonSerializable
     }
 
     /**
-     * Set List of possible IETF language tags of the user's input language; may be empty if unknown
+     * Set List of possible IETF language tags of the user's input language; may be empty if unknown.
      */
     public function setInputLanguageCodes(array|null $inputLanguageCodes): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the user's personal details
+ * Contains the user's personal details.
  */
 class PersonalDetails implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get First name of the user written in English; 1-255 characters
+     * Get First name of the user written in English; 1-255 characters.
      */
     public function getFirstName(): string
     {
@@ -54,7 +54,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set First name of the user written in English; 1-255 characters
+     * Set First name of the user written in English; 1-255 characters.
      */
     public function setFirstName(string $firstName): self
     {
@@ -64,7 +64,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Middle name of the user written in English; 0-255 characters
+     * Get Middle name of the user written in English; 0-255 characters.
      */
     public function getMiddleName(): string
     {
@@ -72,7 +72,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Middle name of the user written in English; 0-255 characters
+     * Set Middle name of the user written in English; 0-255 characters.
      */
     public function setMiddleName(string $middleName): self
     {
@@ -82,7 +82,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Last name of the user written in English; 1-255 characters
+     * Get Last name of the user written in English; 1-255 characters.
      */
     public function getLastName(): string
     {
@@ -90,7 +90,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Last name of the user written in English; 1-255 characters
+     * Set Last name of the user written in English; 1-255 characters.
      */
     public function setLastName(string $lastName): self
     {
@@ -100,7 +100,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Native first name of the user; 1-255 characters
+     * Get Native first name of the user; 1-255 characters.
      */
     public function getNativeFirstName(): string
     {
@@ -108,7 +108,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Native first name of the user; 1-255 characters
+     * Set Native first name of the user; 1-255 characters.
      */
     public function setNativeFirstName(string $nativeFirstName): self
     {
@@ -118,7 +118,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Native middle name of the user; 0-255 characters
+     * Get Native middle name of the user; 0-255 characters.
      */
     public function getNativeMiddleName(): string
     {
@@ -126,7 +126,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Native middle name of the user; 0-255 characters
+     * Set Native middle name of the user; 0-255 characters.
      */
     public function setNativeMiddleName(string $nativeMiddleName): self
     {
@@ -136,7 +136,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Native last name of the user; 1-255 characters
+     * Get Native last name of the user; 1-255 characters.
      */
     public function getNativeLastName(): string
     {
@@ -144,7 +144,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Native last name of the user; 1-255 characters
+     * Set Native last name of the user; 1-255 characters.
      */
     public function setNativeLastName(string $nativeLastName): self
     {
@@ -154,7 +154,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Birthdate of the user
+     * Get Birthdate of the user.
      */
     public function getBirthdate(): Date|null
     {
@@ -162,7 +162,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Birthdate of the user
+     * Set Birthdate of the user.
      */
     public function setBirthdate(Date|null $birthdate): self
     {
@@ -172,7 +172,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Gender of the user, "male" or "female"
+     * Get Gender of the user, "male" or "female".
      */
     public function getGender(): string
     {
@@ -180,7 +180,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Gender of the user, "male" or "female"
+     * Set Gender of the user, "male" or "female".
      */
     public function setGender(string $gender): self
     {
@@ -190,7 +190,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code of the user's country
+     * Get A two-letter ISO 3166-1 alpha-2 country code of the user's country.
      */
     public function getCountryCode(): string
     {
@@ -198,7 +198,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code of the user's country
+     * Set A two-letter ISO 3166-1 alpha-2 country code of the user's country.
      */
     public function setCountryCode(string $countryCode): self
     {
@@ -208,7 +208,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code of the user's residence country
+     * Get A two-letter ISO 3166-1 alpha-2 country code of the user's residence country.
      */
     public function getResidenceCountryCode(): string
     {
@@ -216,7 +216,7 @@ class PersonalDetails implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code of the user's residence country
+     * Set A two-letter ISO 3166-1 alpha-2 country code of the user's residence country.
      */
     public function setResidenceCountryCode(string $residenceCountryCode): self
     {

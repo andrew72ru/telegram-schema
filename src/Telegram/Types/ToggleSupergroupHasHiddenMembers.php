@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether non-administrators can receive only administrators and bots using getSupergroupMembers or searchChatMembers. Can be called only if supergroupFullInfo.can_hide_members == true
+ * Toggles whether non-administrators can receive only administrators and bots using getSupergroupMembers or searchChatMembers. Can be called only if supergroupFullInfo.can_hide_members == true.
  */
 class ToggleSupergroupHasHiddenMembers extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleSupergroupHasHiddenMembers extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup
+     * Get Identifier of the supergroup.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ToggleSupergroupHasHiddenMembers extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup
+     * Set Identifier of the supergroup.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ToggleSupergroupHasHiddenMembers extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of has_hidden_members
+     * Get New value of has_hidden_members.
      */
     public function getHasHiddenMembers(): bool
     {
@@ -48,7 +48,7 @@ class ToggleSupergroupHasHiddenMembers extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of has_hidden_members
+     * Set New value of has_hidden_members.
      */
     public function setHasHiddenMembers(bool $hasHiddenMembers): self
     {

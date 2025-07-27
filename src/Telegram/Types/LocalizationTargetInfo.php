@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about the current localization target @language_packs List of available language packs for this application
+ * Contains information about the current localization target @language_packs List of available language packs for this application.
  */
 class LocalizationTargetInfo implements \JsonSerializable
 {

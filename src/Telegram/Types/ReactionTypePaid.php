@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The paid reaction in a channel chat
+ * The paid reaction in a channel chat.
  */
 class ReactionTypePaid extends ReactionType implements \JsonSerializable
 {

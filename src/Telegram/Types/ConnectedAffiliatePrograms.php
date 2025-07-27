@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of affiliate programs that were connected to an affiliate
+ * Represents a list of affiliate programs that were connected to an affiliate.
  */
 class ConnectedAffiliatePrograms implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ConnectedAffiliatePrograms implements \JsonSerializable
     }
 
     /**
-     * Get The total number of affiliate programs that were connected to the affiliate
+     * Get The total number of affiliate programs that were connected to the affiliate.
      */
     public function getTotalCount(): int
     {
@@ -33,7 +33,7 @@ class ConnectedAffiliatePrograms implements \JsonSerializable
     }
 
     /**
-     * Set The total number of affiliate programs that were connected to the affiliate
+     * Set The total number of affiliate programs that were connected to the affiliate.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -43,7 +43,7 @@ class ConnectedAffiliatePrograms implements \JsonSerializable
     }
 
     /**
-     * Get The list of connected affiliate programs
+     * Get The list of connected affiliate programs.
      */
     public function getPrograms(): array|null
     {
@@ -51,7 +51,7 @@ class ConnectedAffiliatePrograms implements \JsonSerializable
     }
 
     /**
-     * Set The list of connected affiliate programs
+     * Set The list of connected affiliate programs.
      */
     public function setPrograms(array|null $programs): self
     {
@@ -61,7 +61,7 @@ class ConnectedAffiliatePrograms implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -69,7 +69,7 @@ class ConnectedAffiliatePrograms implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The position of a chat in a chat list has changed. An updateChatLastMessage or updateChatDraftMessage update might be sent instead of the update
+ * The position of a chat in a chat list has changed. An updateChatLastMessage or updateChatDraftMessage update might be sent instead of the update.
  */
 class UpdateChatPosition extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateChatPosition extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateChatPosition extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateChatPosition extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New chat position. If new order is 0, then the chat needs to be removed from the list
+     * Get New chat position. If new order is 0, then the chat needs to be removed from the list.
      */
     public function getPosition(): ChatPosition|null
     {
@@ -48,7 +48,7 @@ class UpdateChatPosition extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New chat position. If new order is 0, then the chat needs to be removed from the list
+     * Set New chat position. If new order is 0, then the chat needs to be removed from the list.
      */
     public function setPosition(ChatPosition|null $position): self
     {

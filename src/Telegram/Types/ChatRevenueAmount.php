@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about revenue earned from sponsored messages in a chat
+ * Contains information about revenue earned from sponsored messages in a chat.
  */
 class ChatRevenueAmount implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Get Cryptocurrency in which revenue is calculated
+     * Get Cryptocurrency in which revenue is calculated.
      */
     public function getCryptocurrency(): string
     {
@@ -39,7 +39,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Set Cryptocurrency in which revenue is calculated
+     * Set Cryptocurrency in which revenue is calculated.
      */
     public function setCryptocurrency(string $cryptocurrency): self
     {
@@ -49,7 +49,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Get Total amount of the cryptocurrency earned, in the smallest units of the cryptocurrency
+     * Get Total amount of the cryptocurrency earned, in the smallest units of the cryptocurrency.
      */
     public function getTotalAmount(): int
     {
@@ -57,7 +57,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Set Total amount of the cryptocurrency earned, in the smallest units of the cryptocurrency
+     * Set Total amount of the cryptocurrency earned, in the smallest units of the cryptocurrency.
      */
     public function setTotalAmount(int $totalAmount): self
     {
@@ -67,7 +67,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Get Amount of the cryptocurrency that isn't withdrawn yet, in the smallest units of the cryptocurrency
+     * Get Amount of the cryptocurrency that isn't withdrawn yet, in the smallest units of the cryptocurrency.
      */
     public function getBalanceAmount(): int
     {
@@ -75,7 +75,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Set Amount of the cryptocurrency that isn't withdrawn yet, in the smallest units of the cryptocurrency
+     * Set Amount of the cryptocurrency that isn't withdrawn yet, in the smallest units of the cryptocurrency.
      */
     public function setBalanceAmount(int $balanceAmount): self
     {
@@ -85,7 +85,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Get Amount of the cryptocurrency available for withdrawal, in the smallest units of the cryptocurrency
+     * Get Amount of the cryptocurrency available for withdrawal, in the smallest units of the cryptocurrency.
      */
     public function getAvailableAmount(): int
     {
@@ -93,7 +93,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Set Amount of the cryptocurrency available for withdrawal, in the smallest units of the cryptocurrency
+     * Set Amount of the cryptocurrency available for withdrawal, in the smallest units of the cryptocurrency.
      */
     public function setAvailableAmount(int $availableAmount): self
     {
@@ -103,7 +103,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Get True, if Telegram Stars can be withdrawn now or later
+     * Get True, if Telegram Stars can be withdrawn now or later.
      */
     public function getWithdrawalEnabled(): bool
     {
@@ -111,7 +111,7 @@ class ChatRevenueAmount implements \JsonSerializable
     }
 
     /**
-     * Set True, if Telegram Stars can be withdrawn now or later
+     * Set True, if Telegram Stars can be withdrawn now or later.
      */
     public function setWithdrawalEnabled(bool $withdrawalEnabled): self
     {

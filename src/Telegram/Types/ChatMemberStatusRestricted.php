@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user is under certain restrictions in the chat. Not supported in basic groups and channels
+ * The user is under certain restrictions in the chat. Not supported in basic groups and channels.
  */
 class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerial
     }
 
     /**
-     * Get True, if the user is a member of the chat
+     * Get True, if the user is a member of the chat.
      */
     public function getIsMember(): bool
     {
@@ -33,7 +33,7 @@ class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerial
     }
 
     /**
-     * Set True, if the user is a member of the chat
+     * Set True, if the user is a member of the chat.
      */
     public function setIsMember(bool $isMember): self
     {
@@ -43,7 +43,7 @@ class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerial
     }
 
     /**
-     * Get Point in time (Unix timestamp) when restrictions will be lifted from the user; 0 if never. If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever
+     * Get Point in time (Unix timestamp) when restrictions will be lifted from the user; 0 if never. If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever.
      */
     public function getRestrictedUntilDate(): int
     {
@@ -51,7 +51,7 @@ class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerial
     }
 
     /**
-     * Set Point in time (Unix timestamp) when restrictions will be lifted from the user; 0 if never. If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever
+     * Set Point in time (Unix timestamp) when restrictions will be lifted from the user; 0 if never. If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever.
      */
     public function setRestrictedUntilDate(int $restrictedUntilDate): self
     {
@@ -61,7 +61,7 @@ class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerial
     }
 
     /**
-     * Get User permissions in the chat
+     * Get User permissions in the chat.
      */
     public function getPermissions(): ChatPermissions|null
     {
@@ -69,7 +69,7 @@ class ChatMemberStatusRestricted extends ChatMemberStatus implements \JsonSerial
     }
 
     /**
-     * Set User permissions in the chat
+     * Set User permissions in the chat.
      */
     public function setPermissions(ChatPermissions|null $permissions): self
     {

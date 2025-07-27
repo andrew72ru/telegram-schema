@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether chat folder tags are enabled @are_tags_enabled Pass true to enable folder tags; pass false to disable them
+ * Toggles whether chat folder tags are enabled @are_tags_enabled Pass true to enable folder tags; pass false to disable them.
  */
 class ToggleChatFolderTags extends Ok implements \JsonSerializable
 {

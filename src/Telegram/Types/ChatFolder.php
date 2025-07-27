@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a folder for user chats
+ * Represents a folder for user chats.
  */
 class ChatFolder implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get The name of the folder
+     * Get The name of the folder.
      */
     public function getName(): ChatFolderName|null
     {
@@ -69,7 +69,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set The name of the folder
+     * Set The name of the folder.
      */
     public function setName(ChatFolderName|null $name): self
     {
@@ -79,7 +79,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder
+     * Get The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder.
      */
     public function getIcon(): ChatFolderIcon|null
     {
@@ -87,7 +87,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder
+     * Set The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder.
      */
     public function setIcon(ChatFolderIcon|null $icon): self
     {
@@ -97,7 +97,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled. Can't be changed if folder tags are disabled or the current user doesn't have Telegram Premium subscription
+     * Get The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled. Can't be changed if folder tags are disabled or the current user doesn't have Telegram Premium subscription.
      */
     public function getColorId(): int
     {
@@ -105,7 +105,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled. Can't be changed if folder tags are disabled or the current user doesn't have Telegram Premium subscription
+     * Set The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled. Can't be changed if folder tags are disabled or the current user doesn't have Telegram Premium subscription.
      */
     public function setColorId(int $colorId): self
     {
@@ -115,7 +115,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if at least one link has been created for the folder
+     * Get True, if at least one link has been created for the folder.
      */
     public function getIsShareable(): bool
     {
@@ -123,7 +123,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if at least one link has been created for the folder
+     * Set True, if at least one link has been created for the folder.
      */
     public function setIsShareable(bool $isShareable): self
     {
@@ -133,7 +133,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get The chat identifiers of pinned chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
+     * Get The chat identifiers of pinned chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.
      */
     public function getPinnedChatIds(): array|null
     {
@@ -141,7 +141,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set The chat identifiers of pinned chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
+     * Set The chat identifiers of pinned chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.
      */
     public function setPinnedChatIds(array|null $pinnedChatIds): self
     {
@@ -151,7 +151,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get The chat identifiers of always included chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
+     * Get The chat identifiers of always included chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.
      */
     public function getIncludedChatIds(): array|null
     {
@@ -159,7 +159,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set The chat identifiers of always included chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
+     * Set The chat identifiers of always included chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.
      */
     public function setIncludedChatIds(array|null $includedChatIds): self
     {
@@ -169,7 +169,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get The chat identifiers of always excluded chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") always excluded non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
+     * Get The chat identifiers of always excluded chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") always excluded non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.
      */
     public function getExcludedChatIds(): array|null
     {
@@ -177,7 +177,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set The chat identifiers of always excluded chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") always excluded non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
+     * Set The chat identifiers of always excluded chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") always excluded non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.
      */
     public function setExcludedChatIds(array|null $excludedChatIds): self
     {
@@ -187,7 +187,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if muted chats need to be excluded
+     * Get True, if muted chats need to be excluded.
      */
     public function getExcludeMuted(): bool
     {
@@ -195,7 +195,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if muted chats need to be excluded
+     * Set True, if muted chats need to be excluded.
      */
     public function setExcludeMuted(bool $excludeMuted): self
     {
@@ -205,7 +205,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if read chats need to be excluded
+     * Get True, if read chats need to be excluded.
      */
     public function getExcludeRead(): bool
     {
@@ -213,7 +213,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if read chats need to be excluded
+     * Set True, if read chats need to be excluded.
      */
     public function setExcludeRead(bool $excludeRead): self
     {
@@ -223,7 +223,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if archived chats need to be excluded
+     * Get True, if archived chats need to be excluded.
      */
     public function getExcludeArchived(): bool
     {
@@ -231,7 +231,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if archived chats need to be excluded
+     * Set True, if archived chats need to be excluded.
      */
     public function setExcludeArchived(bool $excludeArchived): self
     {
@@ -241,7 +241,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if contacts need to be included
+     * Get True, if contacts need to be included.
      */
     public function getIncludeContacts(): bool
     {
@@ -249,7 +249,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if contacts need to be included
+     * Set True, if contacts need to be included.
      */
     public function setIncludeContacts(bool $includeContacts): self
     {
@@ -259,7 +259,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if non-contact users need to be included
+     * Get True, if non-contact users need to be included.
      */
     public function getIncludeNonContacts(): bool
     {
@@ -267,7 +267,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if non-contact users need to be included
+     * Set True, if non-contact users need to be included.
      */
     public function setIncludeNonContacts(bool $includeNonContacts): self
     {
@@ -277,7 +277,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if bots need to be included
+     * Get True, if bots need to be included.
      */
     public function getIncludeBots(): bool
     {
@@ -285,7 +285,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if bots need to be included
+     * Set True, if bots need to be included.
      */
     public function setIncludeBots(bool $includeBots): self
     {
@@ -295,7 +295,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if basic groups and supergroups need to be included
+     * Get True, if basic groups and supergroups need to be included.
      */
     public function getIncludeGroups(): bool
     {
@@ -303,7 +303,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if basic groups and supergroups need to be included
+     * Set True, if basic groups and supergroups need to be included.
      */
     public function setIncludeGroups(bool $includeGroups): self
     {
@@ -313,7 +313,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Get True, if channels need to be included
+     * Get True, if channels need to be included.
      */
     public function getIncludeChannels(): bool
     {
@@ -321,7 +321,7 @@ class ChatFolder implements \JsonSerializable
     }
 
     /**
-     * Set True, if channels need to be included
+     * Set True, if channels need to be included.
      */
     public function setIncludeChannels(bool $includeChannels): self
     {

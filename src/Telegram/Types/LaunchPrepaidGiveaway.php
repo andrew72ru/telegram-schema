@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Launches a prepaid giveaway
+ * Launches a prepaid giveaway.
  */
 class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the prepaid giveaway
+     * Get Unique identifier of the prepaid giveaway.
      */
     public function getGiveawayId(): int
     {
@@ -36,7 +36,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the prepaid giveaway
+     * Set Unique identifier of the prepaid giveaway.
      */
     public function setGiveawayId(int $giveawayId): self
     {
@@ -46,7 +46,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Giveaway parameters
+     * Get Giveaway parameters.
      */
     public function getParameters(): GiveawayParameters|null
     {
@@ -54,7 +54,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Giveaway parameters
+     * Set Giveaway parameters.
      */
     public function setParameters(GiveawayParameters|null $parameters): self
     {
@@ -64,7 +64,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The number of users to receive giveaway prize
+     * Get The number of users to receive giveaway prize.
      */
     public function getWinnerCount(): int
     {
@@ -72,7 +72,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The number of users to receive giveaway prize
+     * Set The number of users to receive giveaway prize.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -82,7 +82,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars to be distributed through the giveaway; pass 0 for Telegram Premium giveaways
+     * Get The number of Telegram Stars to be distributed through the giveaway; pass 0 for Telegram Premium giveaways.
      */
     public function getStarCount(): int
     {
@@ -90,7 +90,7 @@ class LaunchPrepaidGiveaway extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars to be distributed through the giveaway; pass 0 for Telegram Premium giveaways
+     * Set The number of Telegram Stars to be distributed through the giveaway; pass 0 for Telegram Premium giveaways.
      */
     public function setStarCount(int $starCount): self
     {

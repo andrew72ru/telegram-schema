@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents information about a venue
+ * Represents information about a venue.
  */
 class InputInlineQueryResultVenue extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -45,7 +45,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -55,7 +55,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Venue result
+     * Get Venue result.
      */
     public function getVenue(): Venue|null
     {
@@ -63,7 +63,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Venue result
+     * Set Venue result.
      */
     public function setVenue(Venue|null $venue): self
     {
@@ -73,7 +73,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get URL of the result thumbnail, if it exists
+     * Get URL of the result thumbnail, if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -81,7 +81,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set URL of the result thumbnail, if it exists
+     * Set URL of the result thumbnail, if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -91,7 +91,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Thumbnail width, if known
+     * Get Thumbnail width, if known.
      */
     public function getThumbnailWidth(): int
     {
@@ -99,7 +99,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Thumbnail width, if known
+     * Set Thumbnail width, if known.
      */
     public function setThumbnailWidth(int $thumbnailWidth): self
     {
@@ -109,7 +109,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Thumbnail height, if known
+     * Get Thumbnail height, if known.
      */
     public function getThumbnailHeight(): int
     {
@@ -117,7 +117,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Thumbnail height, if known
+     * Set Thumbnail height, if known.
      */
     public function setThumbnailHeight(int $thumbnailHeight): self
     {
@@ -127,7 +127,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -135,7 +135,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -145,7 +145,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -153,7 +153,7 @@ class InputInlineQueryResultVenue extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

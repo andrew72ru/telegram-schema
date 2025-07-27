@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a user to the contact list or edits an existing contact by their user identifier
+ * Adds a user to the contact list or edits an existing contact by their user identifier.
  */
 class AddContact extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AddContact extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The contact to add or edit; phone number may be empty and needs to be specified only if known, vCard is ignored
+     * Get The contact to add or edit; phone number may be empty and needs to be specified only if known, vCard is ignored.
      */
     public function getContact(): Contact|null
     {
@@ -30,7 +30,7 @@ class AddContact extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The contact to add or edit; phone number may be empty and needs to be specified only if known, vCard is ignored
+     * Set The contact to add or edit; phone number may be empty and needs to be specified only if known, vCard is ignored.
      */
     public function setContact(Contact|null $contact): self
     {
@@ -40,7 +40,7 @@ class AddContact extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to share the current user's phone number with the new contact. A corresponding rule to userPrivacySettingShowPhoneNumber will be added if needed.
+     * Get Pass true to share the current user's phone number with the new contact. A corresponding rule to userPrivacySettingShowPhoneNumber will be added if needed..
      */
     public function getSharePhoneNumber(): bool
     {
@@ -48,7 +48,7 @@ class AddContact extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to share the current user's phone number with the new contact. A corresponding rule to userPrivacySettingShowPhoneNumber will be added if needed.
+     * Set Pass true to share the current user's phone number with the new contact. A corresponding rule to userPrivacySettingShowPhoneNumber will be added if needed..
      */
     public function setSharePhoneNumber(bool $sharePhoneNumber): self
     {

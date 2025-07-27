@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The is_all_history_available setting of a supergroup was toggled @is_all_history_available New value of is_all_history_available
+ * The is_all_history_available setting of a supergroup was toggled @is_all_history_available New value of is_all_history_available.
  */
 class ChatEventIsAllHistoryAvailableToggled extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A giveaway with public winners has been completed for the chat
+ * A giveaway with public winners has been completed for the chat.
  */
 class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway
+     * Get Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway.
      */
     public function getBoostedChatId(): int
     {
@@ -57,7 +57,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway
+     * Set Identifier of the supergroup or channel chat, which was automatically boosted by the winners of the giveaway.
      */
     public function setBoostedChatId(int $boostedChatId): self
     {
@@ -67,7 +67,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message with the giveaway in the boosted chat
+     * Get Identifier of the message with the giveaway in the boosted chat.
      */
     public function getGiveawayMessageId(): int
     {
@@ -75,7 +75,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message with the giveaway in the boosted chat
+     * Set Identifier of the message with the giveaway in the boosted chat.
      */
     public function setGiveawayMessageId(int $giveawayMessageId): self
     {
@@ -85,7 +85,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of other chats that participated in the giveaway
+     * Get Number of other chats that participated in the giveaway.
      */
     public function getAdditionalChatCount(): int
     {
@@ -93,7 +93,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of other chats that participated in the giveaway
+     * Set Number of other chats that participated in the giveaway.
      */
     public function setAdditionalChatCount(int $additionalChatCount): self
     {
@@ -103,7 +103,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway
+     * Get Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway.
      */
     public function getActualWinnersSelectionDate(): int
     {
@@ -111,7 +111,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway
+     * Set Point in time (Unix timestamp) when the winners were selected. May be bigger than winners selection date specified in parameters of the giveaway.
      */
     public function setActualWinnersSelectionDate(int $actualWinnersSelectionDate): self
     {
@@ -121,7 +121,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if only new members of the chats were eligible for the giveaway
+     * Get True, if only new members of the chats were eligible for the giveaway.
      */
     public function getOnlyNewMembers(): bool
     {
@@ -129,7 +129,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if only new members of the chats were eligible for the giveaway
+     * Set True, if only new members of the chats were eligible for the giveaway.
      */
     public function setOnlyNewMembers(bool $onlyNewMembers): self
     {
@@ -139,7 +139,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the giveaway was canceled and was fully refunded
+     * Get True, if the giveaway was canceled and was fully refunded.
      */
     public function getWasRefunded(): bool
     {
@@ -147,7 +147,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the giveaway was canceled and was fully refunded
+     * Set True, if the giveaway was canceled and was fully refunded.
      */
     public function setWasRefunded(bool $wasRefunded): self
     {
@@ -157,7 +157,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Prize of the giveaway
+     * Get Prize of the giveaway.
      */
     public function getPrize(): GiveawayPrize|null
     {
@@ -165,7 +165,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Prize of the giveaway
+     * Set Prize of the giveaway.
      */
     public function setPrize(GiveawayPrize|null $prize): self
     {
@@ -175,7 +175,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Additional description of the giveaway prize
+     * Get Additional description of the giveaway prize.
      */
     public function getPrizeDescription(): string
     {
@@ -183,7 +183,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Additional description of the giveaway prize
+     * Set Additional description of the giveaway prize.
      */
     public function setPrizeDescription(string $prizeDescription): self
     {
@@ -193,7 +193,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Total number of winners in the giveaway
+     * Get Total number of winners in the giveaway.
      */
     public function getWinnerCount(): int
     {
@@ -201,7 +201,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Total number of winners in the giveaway
+     * Set Total number of winners in the giveaway.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -211,7 +211,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Up to 100 user identifiers of the winners of the giveaway
+     * Get Up to 100 user identifiers of the winners of the giveaway.
      */
     public function getWinnerUserIds(): array|null
     {
@@ -219,7 +219,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Up to 100 user identifiers of the winners of the giveaway
+     * Set Up to 100 user identifiers of the winners of the giveaway.
      */
     public function setWinnerUserIds(array|null $winnerUserIds): self
     {
@@ -229,7 +229,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of undistributed prizes; for Telegram Premium giveaways only
+     * Get Number of undistributed prizes; for Telegram Premium giveaways only.
      */
     public function getUnclaimedPrizeCount(): int
     {
@@ -237,7 +237,7 @@ class MessageGiveawayWinners extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of undistributed prizes; for Telegram Premium giveaways only
+     * Set Number of undistributed prizes; for Telegram Premium giveaways only.
      */
     public function setUnclaimedPrizeCount(int $unclaimedPrizeCount): self
     {

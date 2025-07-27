@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A token for Ubuntu Push Client service @token Token; may be empty to deregister a device
+ * A token for Ubuntu Push Client service @token Token; may be empty to deregister a device.
  */
 class DeviceTokenUbuntuPush extends DeviceToken implements \JsonSerializable
 {

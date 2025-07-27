@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about features, available to Business user accounts @features The list of available business features
+ * Contains information about features, available to Business user accounts @features The list of available business features.
  */
 class BusinessFeatures implements \JsonSerializable
 {

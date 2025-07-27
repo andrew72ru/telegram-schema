@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A detailed statistics about a story
+ * A detailed statistics about a story.
  */
 class StoryStatistics implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StoryStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of story views and shares
+     * Get A graph containing number of story views and shares.
      */
     public function getStoryInteractionGraph(): StatisticalGraph|null
     {
@@ -30,7 +30,7 @@ class StoryStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of story views and shares
+     * Set A graph containing number of story views and shares.
      */
     public function setStoryInteractionGraph(StatisticalGraph|null $storyInteractionGraph): self
     {
@@ -40,7 +40,7 @@ class StoryStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing number of story reactions
+     * Get A graph containing number of story reactions.
      */
     public function getStoryReactionGraph(): StatisticalGraph|null
     {
@@ -48,7 +48,7 @@ class StoryStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing number of story reactions
+     * Set A graph containing number of story reactions.
      */
     public function setStoryReactionGraph(StatisticalGraph|null $storyReactionGraph): self
     {

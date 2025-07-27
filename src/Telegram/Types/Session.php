@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about one session in a Telegram application used by the current user. Sessions must be shown to the user in the returned order
+ * Contains information about one session in a Telegram application used by the current user. Sessions must be shown to the user in the returned order.
  */
 class Session implements \JsonSerializable
 {
@@ -70,7 +70,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Session identifier
+     * Get Session identifier.
      */
     public function getId(): int
     {
@@ -78,7 +78,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Session identifier
+     * Set Session identifier.
      */
     public function setId(int $id): self
     {
@@ -88,7 +88,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get True, if this session is the current session
+     * Get True, if this session is the current session.
      */
     public function getIsCurrent(): bool
     {
@@ -96,7 +96,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set True, if this session is the current session
+     * Set True, if this session is the current session.
      */
     public function setIsCurrent(bool $isCurrent): self
     {
@@ -106,7 +106,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get True, if a 2-step verification password is needed to complete authorization of the session
+     * Get True, if a 2-step verification password is needed to complete authorization of the session.
      */
     public function getIsPasswordPending(): bool
     {
@@ -114,7 +114,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set True, if a 2-step verification password is needed to complete authorization of the session
+     * Set True, if a 2-step verification password is needed to complete authorization of the session.
      */
     public function setIsPasswordPending(bool $isPasswordPending): self
     {
@@ -124,7 +124,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get True, if the session wasn't confirmed from another session
+     * Get True, if the session wasn't confirmed from another session.
      */
     public function getIsUnconfirmed(): bool
     {
@@ -132,7 +132,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set True, if the session wasn't confirmed from another session
+     * Set True, if the session wasn't confirmed from another session.
      */
     public function setIsUnconfirmed(bool $isUnconfirmed): self
     {
@@ -142,7 +142,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get True, if incoming secret chats can be accepted by the session
+     * Get True, if incoming secret chats can be accepted by the session.
      */
     public function getCanAcceptSecretChats(): bool
     {
@@ -150,7 +150,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set True, if incoming secret chats can be accepted by the session
+     * Set True, if incoming secret chats can be accepted by the session.
      */
     public function setCanAcceptSecretChats(bool $canAcceptSecretChats): self
     {
@@ -160,7 +160,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get True, if incoming calls can be accepted by the session
+     * Get True, if incoming calls can be accepted by the session.
      */
     public function getCanAcceptCalls(): bool
     {
@@ -168,7 +168,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set True, if incoming calls can be accepted by the session
+     * Set True, if incoming calls can be accepted by the session.
      */
     public function setCanAcceptCalls(bool $canAcceptCalls): self
     {
@@ -178,7 +178,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Session type based on the system and application version, which can be used to display a corresponding icon
+     * Get Session type based on the system and application version, which can be used to display a corresponding icon.
      */
     public function getType(): SessionType|null
     {
@@ -186,7 +186,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Session type based on the system and application version, which can be used to display a corresponding icon
+     * Set Session type based on the system and application version, which can be used to display a corresponding icon.
      */
     public function setType(SessionType|null $type): self
     {
@@ -196,7 +196,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Telegram API identifier, as provided by the application
+     * Get Telegram API identifier, as provided by the application.
      */
     public function getApiId(): int
     {
@@ -204,7 +204,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Telegram API identifier, as provided by the application
+     * Set Telegram API identifier, as provided by the application.
      */
     public function setApiId(int $apiId): self
     {
@@ -214,7 +214,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Name of the application, as provided by the application
+     * Get Name of the application, as provided by the application.
      */
     public function getApplicationName(): string
     {
@@ -222,7 +222,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Name of the application, as provided by the application
+     * Set Name of the application, as provided by the application.
      */
     public function setApplicationName(string $applicationName): self
     {
@@ -232,7 +232,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get The version of the application, as provided by the application
+     * Get The version of the application, as provided by the application.
      */
     public function getApplicationVersion(): string
     {
@@ -240,7 +240,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set The version of the application, as provided by the application
+     * Set The version of the application, as provided by the application.
      */
     public function setApplicationVersion(string $applicationVersion): self
     {
@@ -250,7 +250,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get True, if the application is an official application or uses the api_id of an official application
+     * Get True, if the application is an official application or uses the api_id of an official application.
      */
     public function getIsOfficialApplication(): bool
     {
@@ -258,7 +258,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set True, if the application is an official application or uses the api_id of an official application
+     * Set True, if the application is an official application or uses the api_id of an official application.
      */
     public function setIsOfficialApplication(bool $isOfficialApplication): self
     {
@@ -268,7 +268,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Model of the device the application has been run or is running on, as provided by the application
+     * Get Model of the device the application has been run or is running on, as provided by the application.
      */
     public function getDeviceModel(): string
     {
@@ -276,7 +276,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Model of the device the application has been run or is running on, as provided by the application
+     * Set Model of the device the application has been run or is running on, as provided by the application.
      */
     public function setDeviceModel(string $deviceModel): self
     {
@@ -286,7 +286,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Operating system the application has been run or is running on, as provided by the application
+     * Get Operating system the application has been run or is running on, as provided by the application.
      */
     public function getPlatform(): string
     {
@@ -294,7 +294,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Operating system the application has been run or is running on, as provided by the application
+     * Set Operating system the application has been run or is running on, as provided by the application.
      */
     public function setPlatform(string $platform): self
     {
@@ -304,7 +304,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Version of the operating system the application has been run or is running on, as provided by the application
+     * Get Version of the operating system the application has been run or is running on, as provided by the application.
      */
     public function getSystemVersion(): string
     {
@@ -312,7 +312,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Version of the operating system the application has been run or is running on, as provided by the application
+     * Set Version of the operating system the application has been run or is running on, as provided by the application.
      */
     public function setSystemVersion(string $systemVersion): self
     {
@@ -322,7 +322,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user has logged in
+     * Get Point in time (Unix timestamp) when the user has logged in.
      */
     public function getLogInDate(): int
     {
@@ -330,7 +330,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user has logged in
+     * Set Point in time (Unix timestamp) when the user has logged in.
      */
     public function setLogInDate(int $logInDate): self
     {
@@ -340,7 +340,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the session was last used
+     * Get Point in time (Unix timestamp) when the session was last used.
      */
     public function getLastActiveDate(): int
     {
@@ -348,7 +348,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the session was last used
+     * Set Point in time (Unix timestamp) when the session was last used.
      */
     public function setLastActiveDate(int $lastActiveDate): self
     {
@@ -358,7 +358,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get IP address from which the session was created, in human-readable format
+     * Get IP address from which the session was created, in human-readable format.
      */
     public function getIpAddress(): string
     {
@@ -366,7 +366,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set IP address from which the session was created, in human-readable format
+     * Set IP address from which the session was created, in human-readable format.
      */
     public function setIpAddress(string $ipAddress): self
     {
@@ -376,7 +376,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Get A human-readable description of the location from which the session was created, based on the IP address
+     * Get A human-readable description of the location from which the session was created, based on the IP address.
      */
     public function getLocation(): string
     {
@@ -384,7 +384,7 @@ class Session implements \JsonSerializable
     }
 
     /**
-     * Set A human-readable description of the location from which the session was created, based on the IP address
+     * Set A human-readable description of the location from which the session was created, based on the IP address.
      */
     public function setLocation(string $location): self
     {

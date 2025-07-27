@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether the current user has sponsored messages enabled. The setting has no effect for users without Telegram Premium for which sponsored messages are always enabled
+ * Toggles whether the current user has sponsored messages enabled. The setting has no effect for users without Telegram Premium for which sponsored messages are always enabled.
  */
 class ToggleHasSponsoredMessagesEnabled extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ToggleHasSponsoredMessagesEnabled extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to enable sponsored messages for the current user; false to disable them
+     * Get Pass true to enable sponsored messages for the current user; false to disable them.
      */
     public function getHasSponsoredMessagesEnabled(): bool
     {
@@ -27,7 +27,7 @@ class ToggleHasSponsoredMessagesEnabled extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to enable sponsored messages for the current user; false to disable them
+     * Set Pass true to enable sponsored messages for the current user; false to disable them.
      */
     public function setHasSponsoredMessagesEnabled(bool $hasSponsoredMessagesEnabled): self
     {

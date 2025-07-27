@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about the custom emoji, which was used to create the chat photo
+ * Information about the custom emoji, which was used to create the chat photo.
  */
 class ChatPhotoStickerTypeCustomEmoji extends ChatPhotoStickerType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ChatPhotoStickerTypeCustomEmoji extends ChatPhotoStickerType implements \J
     }
 
     /**
-     * Get Identifier of the custom emoji
+     * Get Identifier of the custom emoji.
      */
     public function getCustomEmojiId(): int
     {
@@ -27,7 +27,7 @@ class ChatPhotoStickerTypeCustomEmoji extends ChatPhotoStickerType implements \J
     }
 
     /**
-     * Set Identifier of the custom emoji
+     * Set Identifier of the custom emoji.
      */
     public function setCustomEmojiId(int $customEmojiId): self
     {

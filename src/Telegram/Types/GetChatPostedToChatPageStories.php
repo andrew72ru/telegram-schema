@@ -25,7 +25,7 @@ class GetChatPostedToChatPageStories extends Stories implements \JsonSerializabl
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetChatPostedToChatPageStories extends Stories implements \JsonSerializabl
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetChatPostedToChatPageStories extends Stories implements \JsonSerializabl
     }
 
     /**
-     * Get Identifier of the story starting from which stories must be returned; use 0 to get results from pinned and the newest story
+     * Get Identifier of the story starting from which stories must be returned; use 0 to get results from pinned and the newest story.
      */
     public function getFromStoryId(): int
     {
@@ -51,7 +51,7 @@ class GetChatPostedToChatPageStories extends Stories implements \JsonSerializabl
     }
 
     /**
-     * Set Identifier of the story starting from which stories must be returned; use 0 to get results from pinned and the newest story
+     * Set Identifier of the story starting from which stories must be returned; use 0 to get results from pinned and the newest story.
      */
     public function setFromStoryId(int $fromStoryId): self
     {
@@ -61,7 +61,7 @@ class GetChatPostedToChatPageStories extends Stories implements \JsonSerializabl
     }
 
     /**
-     * Get The maximum number of stories to be returned.
+     * Get The maximum number of stories to be returned..
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetChatPostedToChatPageStories extends Stories implements \JsonSerializabl
     }
 
     /**
-     * Set The maximum number of stories to be returned.
+     * Set The maximum number of stories to be returned..
      */
     public function setLimit(int $limit): self
     {

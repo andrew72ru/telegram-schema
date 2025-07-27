@@ -22,7 +22,7 @@ class InternalLinkTypeInstantView extends InternalLinkType implements \JsonSeria
     }
 
     /**
-     * Get URL to be passed to getWebPageInstantView
+     * Get URL to be passed to getWebPageInstantView.
      */
     public function getUrl(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeInstantView extends InternalLinkType implements \JsonSeria
     }
 
     /**
-     * Set URL to be passed to getWebPageInstantView
+     * Set URL to be passed to getWebPageInstantView.
      */
     public function setUrl(string $url): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeInstantView extends InternalLinkType implements \JsonSeria
     }
 
     /**
-     * Get An URL to open if getWebPageInstantView fails
+     * Get An URL to open if getWebPageInstantView fails.
      */
     public function getFallbackUrl(): string
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeInstantView extends InternalLinkType implements \JsonSeria
     }
 
     /**
-     * Set An URL to open if getWebPageInstantView fails
+     * Set An URL to open if getWebPageInstantView fails.
      */
     public function setFallbackUrl(string $fallbackUrl): self
     {

@@ -22,7 +22,7 @@ class SetRecoveryEmailAddress extends PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -30,7 +30,7 @@ class SetRecoveryEmailAddress extends PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {
@@ -40,7 +40,7 @@ class SetRecoveryEmailAddress extends PasswordState implements \JsonSerializable
     }
 
     /**
-     * Get New recovery email address
+     * Get New recovery email address.
      */
     public function getNewRecoveryEmailAddress(): string
     {
@@ -48,7 +48,7 @@ class SetRecoveryEmailAddress extends PasswordState implements \JsonSerializable
     }
 
     /**
-     * Set New recovery email address
+     * Set New recovery email address.
      */
     public function setNewRecoveryEmailAddress(string $newRecoveryEmailAddress): self
     {

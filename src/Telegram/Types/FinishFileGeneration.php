@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Finishes the file generation
+ * Finishes the file generation.
  */
 class FinishFileGeneration extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class FinishFileGeneration extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the generation process
+     * Get The identifier of the generation process.
      */
     public function getGenerationId(): int
     {
@@ -30,7 +30,7 @@ class FinishFileGeneration extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the generation process
+     * Set The identifier of the generation process.
      */
     public function setGenerationId(int $generationId): self
     {
@@ -40,7 +40,7 @@ class FinishFileGeneration extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get If passed, the file generation has failed and must be terminated; pass null if the file generation succeeded
+     * Get If passed, the file generation has failed and must be terminated; pass null if the file generation succeeded.
      */
     public function getError(): Error|null
     {
@@ -48,7 +48,7 @@ class FinishFileGeneration extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set If passed, the file generation has failed and must be terminated; pass null if the file generation succeeded
+     * Set If passed, the file generation has failed and must be terminated; pass null if the file generation succeeded.
      */
     public function setError(Error|null $error): self
     {

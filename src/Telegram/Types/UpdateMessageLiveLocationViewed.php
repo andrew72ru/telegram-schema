@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a live location was viewed. When the update is received, the application is expected to update the live location
+ * A message with a live location was viewed. When the update is received, the application is expected to update the live location.
  */
 class UpdateMessageLiveLocationViewed extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateMessageLiveLocationViewed extends Update implements \JsonSerializabl
     }
 
     /**
-     * Get Identifier of the chat with the live location message
+     * Get Identifier of the chat with the live location message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateMessageLiveLocationViewed extends Update implements \JsonSerializabl
     }
 
     /**
-     * Set Identifier of the chat with the live location message
+     * Set Identifier of the chat with the live location message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateMessageLiveLocationViewed extends Update implements \JsonSerializabl
     }
 
     /**
-     * Get Identifier of the message with live location
+     * Get Identifier of the message with live location.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class UpdateMessageLiveLocationViewed extends Update implements \JsonSerializabl
     }
 
     /**
-     * Set Identifier of the message with live location
+     * Set Identifier of the message with live location.
      */
     public function setMessageId(int $messageId): self
     {

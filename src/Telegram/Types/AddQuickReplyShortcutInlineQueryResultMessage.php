@@ -31,7 +31,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Get Name of the target shortcut
+     * Get Name of the target shortcut.
      */
     public function getShortcutName(): string
     {
@@ -39,7 +39,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Set Name of the target shortcut
+     * Set Name of the target shortcut.
      */
     public function setShortcutName(string $shortcutName): self
     {
@@ -49,7 +49,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Get Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none
+     * Get Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none.
      */
     public function getReplyToMessageId(): int
     {
@@ -57,7 +57,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Set Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none
+     * Set Identifier of a quick reply message in the same shortcut to be replied; pass 0 if none.
      */
     public function setReplyToMessageId(int $replyToMessageId): self
     {
@@ -67,7 +67,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Get Identifier of the inline query
+     * Get Identifier of the inline query.
      */
     public function getQueryId(): int
     {
@@ -75,7 +75,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Set Identifier of the inline query
+     * Set Identifier of the inline query.
      */
     public function setQueryId(int $queryId): self
     {
@@ -85,7 +85,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Get Identifier of the inline query result
+     * Get Identifier of the inline query result.
      */
     public function getResultId(): string
     {
@@ -93,7 +93,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Set Identifier of the inline query result
+     * Set Identifier of the inline query result.
      */
     public function setResultId(string $resultId): self
     {
@@ -103,7 +103,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Get Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username")
+     * Get Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username").
      */
     public function getHideViaBot(): bool
     {
@@ -111,7 +111,7 @@ class AddQuickReplyShortcutInlineQueryResultMessage extends QuickReplyMessage im
     }
 
     /**
-     * Set Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username")
+     * Set Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username").
      */
     public function setHideViaBot(bool $hideViaBot): self
     {

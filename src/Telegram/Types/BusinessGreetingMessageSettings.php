@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes settings for greeting messages that are automatically sent by a Telegram Business account as response to incoming messages in an inactive private chat
+ * Describes settings for greeting messages that are automatically sent by a Telegram Business account as response to incoming messages in an inactive private chat.
  */
 class BusinessGreetingMessageSettings implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class BusinessGreetingMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get Unique quick reply shortcut identifier for the greeting messages
+     * Get Unique quick reply shortcut identifier for the greeting messages.
      */
     public function getShortcutId(): int
     {
@@ -33,7 +33,7 @@ class BusinessGreetingMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set Unique quick reply shortcut identifier for the greeting messages
+     * Set Unique quick reply shortcut identifier for the greeting messages.
      */
     public function setShortcutId(int $shortcutId): self
     {
@@ -43,7 +43,7 @@ class BusinessGreetingMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get Chosen recipients of the greeting messages
+     * Get Chosen recipients of the greeting messages.
      */
     public function getRecipients(): BusinessRecipients|null
     {
@@ -51,7 +51,7 @@ class BusinessGreetingMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set Chosen recipients of the greeting messages
+     * Set Chosen recipients of the greeting messages.
      */
     public function setRecipients(BusinessRecipients|null $recipients): self
     {
@@ -61,7 +61,7 @@ class BusinessGreetingMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Get The number of days after which a chat will be considered as inactive; currently, must be on of 7, 14, 21, or 28
+     * Get The number of days after which a chat will be considered as inactive; currently, must be on of 7, 14, 21, or 28.
      */
     public function getInactivityDays(): int
     {
@@ -69,7 +69,7 @@ class BusinessGreetingMessageSettings implements \JsonSerializable
     }
 
     /**
-     * Set The number of days after which a chat will be considered as inactive; currently, must be on of 7, 14, 21, or 28
+     * Set The number of days after which a chat will be considered as inactive; currently, must be on of 7, 14, 21, or 28.
      */
     public function setInactivityDays(int $inactivityDays): self
     {

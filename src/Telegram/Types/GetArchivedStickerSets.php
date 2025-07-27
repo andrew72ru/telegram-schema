@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of archived sticker sets
+ * Returns a list of archived sticker sets.
  */
 class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get Type of the sticker sets to return
+     * Get Type of the sticker sets to return.
      */
     public function getStickerType(): StickerType|null
     {
@@ -33,7 +33,7 @@ class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set Type of the sticker sets to return
+     * Set Type of the sticker sets to return.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -43,7 +43,7 @@ class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sticker set from which to return the result; use 0 to get results from the beginning
+     * Get Identifier of the sticker set from which to return the result; use 0 to get results from the beginning.
      */
     public function getOffsetStickerSetId(): int
     {
@@ -51,7 +51,7 @@ class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sticker set from which to return the result; use 0 to get results from the beginning
+     * Set Identifier of the sticker set from which to return the result; use 0 to get results from the beginning.
      */
     public function setOffsetStickerSetId(int $offsetStickerSetId): self
     {
@@ -61,7 +61,7 @@ class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of sticker sets to return; up to 100
+     * Get The maximum number of sticker sets to return; up to 100.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetArchivedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of sticker sets to return; up to 100
+     * Set The maximum number of sticker sets to return; up to 100.
      */
     public function setLimit(int $limit): self
     {

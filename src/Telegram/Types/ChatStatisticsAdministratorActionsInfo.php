@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains statistics about administrator actions done by a user
+ * Contains statistics about administrator actions done by a user.
  */
 class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Get Administrator user identifier
+     * Get Administrator user identifier.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Set Administrator user identifier
+     * Set Administrator user identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of messages deleted by the administrator
+     * Get Number of messages deleted by the administrator.
      */
     public function getDeletedMessageCount(): int
     {
@@ -54,7 +54,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of messages deleted by the administrator
+     * Set Number of messages deleted by the administrator.
      */
     public function setDeletedMessageCount(int $deletedMessageCount): self
     {
@@ -64,7 +64,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of users banned by the administrator
+     * Get Number of users banned by the administrator.
      */
     public function getBannedUserCount(): int
     {
@@ -72,7 +72,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of users banned by the administrator
+     * Set Number of users banned by the administrator.
      */
     public function setBannedUserCount(int $bannedUserCount): self
     {
@@ -82,7 +82,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of users restricted by the administrator
+     * Get Number of users restricted by the administrator.
      */
     public function getRestrictedUserCount(): int
     {
@@ -90,7 +90,7 @@ class ChatStatisticsAdministratorActionsInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of users restricted by the administrator
+     * Set Number of users restricted by the administrator.
      */
     public function setRestrictedUserCount(int $restrictedUserCount): self
     {

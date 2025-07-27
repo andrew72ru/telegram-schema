@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns advertisements to be shown while a video from a message is watched. Available only if messageProperties.can_get_video_advertisements
+ * Returns advertisements to be shown while a video from a message is watched. Available only if messageProperties.can_get_video_advertisements.
  */
 class GetVideoMessageAdvertisements extends VideoMessageAdvertisements implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetVideoMessageAdvertisements extends VideoMessageAdvertisements implement
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetVideoMessageAdvertisements extends VideoMessageAdvertisements implement
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetVideoMessageAdvertisements extends VideoMessageAdvertisements implement
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class GetVideoMessageAdvertisements extends VideoMessageAdvertisements implement
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {

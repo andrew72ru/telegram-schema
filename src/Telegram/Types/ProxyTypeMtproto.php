@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An MTProto proxy server @secret The proxy's secret in hexadecimal encoding
+ * An MTProto proxy server @secret The proxy's secret in hexadecimal encoding.
  */
 class ProxyTypeMtproto extends ProxyType implements \JsonSerializable
 {

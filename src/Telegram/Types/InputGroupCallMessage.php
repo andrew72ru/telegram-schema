@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The group call is accessible through a message of the type messageGroupCall
+ * The group call is accessible through a message of the type messageGroupCall.
  */
 class InputGroupCallMessage extends InputGroupCall implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputGroupCallMessage extends InputGroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class InputGroupCallMessage extends InputGroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class InputGroupCallMessage extends InputGroupCall implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message of the type messageGroupCall
+     * Get Identifier of the message of the type messageGroupCall.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class InputGroupCallMessage extends InputGroupCall implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message of the type messageGroupCall
+     * Set Identifier of the message of the type messageGroupCall.
      */
     public function setMessageId(int $messageId): self
     {

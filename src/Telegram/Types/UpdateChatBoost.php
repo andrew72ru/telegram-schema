@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat boost has changed; for bots only
+ * A chat boost has changed; for bots only.
  */
 class UpdateChatBoost extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateChatBoost extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateChatBoost extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateChatBoost extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New information about the boost
+     * Get New information about the boost.
      */
     public function getBoost(): ChatBoost|null
     {
@@ -48,7 +48,7 @@ class UpdateChatBoost extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New information about the boost
+     * Set New information about the boost.
      */
     public function setBoost(ChatBoost|null $boost): self
     {

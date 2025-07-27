@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of chat revenue transactions @total_count Total number of transactions @transactions List of transactions
+ * Contains a list of chat revenue transactions @total_count Total number of transactions @transactions List of transactions.
  */
 class ChatRevenueTransactions implements \JsonSerializable
 {

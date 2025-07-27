@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * One shipping option
+ * One shipping option.
  */
 class ShippingOption implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ShippingOption implements \JsonSerializable
     }
 
     /**
-     * Get Shipping option identifier
+     * Get Shipping option identifier.
      */
     public function getId(): string
     {
@@ -33,7 +33,7 @@ class ShippingOption implements \JsonSerializable
     }
 
     /**
-     * Set Shipping option identifier
+     * Set Shipping option identifier.
      */
     public function setId(string $id): self
     {
@@ -43,7 +43,7 @@ class ShippingOption implements \JsonSerializable
     }
 
     /**
-     * Get Option title
+     * Get Option title.
      */
     public function getTitle(): string
     {
@@ -51,7 +51,7 @@ class ShippingOption implements \JsonSerializable
     }
 
     /**
-     * Set Option title
+     * Set Option title.
      */
     public function setTitle(string $title): self
     {
@@ -61,7 +61,7 @@ class ShippingOption implements \JsonSerializable
     }
 
     /**
-     * Get A list of objects used to calculate the total shipping costs
+     * Get A list of objects used to calculate the total shipping costs.
      */
     public function getPriceParts(): array|null
     {
@@ -69,7 +69,7 @@ class ShippingOption implements \JsonSerializable
     }
 
     /**
-     * Set A list of objects used to calculate the total shipping costs
+     * Set A list of objects used to calculate the total shipping costs.
      */
     public function setPriceParts(array|null $priceParts): self
     {

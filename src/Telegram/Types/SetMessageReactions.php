@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets reactions on a message; for bots only
+ * Sets reactions on a message; for bots only.
  */
 class SetMessageReactions extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Types of the reaction to set; pass an empty list to remove the reactions
+     * Get Types of the reaction to set; pass an empty list to remove the reactions.
      */
     public function getReactionTypes(): array|null
     {
@@ -72,7 +72,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Types of the reaction to set; pass an empty list to remove the reactions
+     * Set Types of the reaction to set; pass an empty list to remove the reactions.
      */
     public function setReactionTypes(array|null $reactionTypes): self
     {
@@ -82,7 +82,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the reactions are added with a big animation
+     * Get Pass true if the reactions are added with a big animation.
      */
     public function getIsBig(): bool
     {
@@ -90,7 +90,7 @@ class SetMessageReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the reactions are added with a big animation
+     * Set Pass true if the reactions are added with a big animation.
      */
     public function setIsBig(bool $isBig): self
     {

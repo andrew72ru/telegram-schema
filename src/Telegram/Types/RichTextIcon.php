@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A small image inside the text
+ * A small image inside the text.
  */
 class RichTextIcon extends RichText implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class RichTextIcon extends RichText implements \JsonSerializable
     }
 
     /**
-     * Get The image represented as a document. The image can be in GIF, JPEG or PNG format
+     * Get The image represented as a document. The image can be in GIF, JPEG or PNG format.
      */
     public function getDocument(): Document|null
     {
@@ -33,7 +33,7 @@ class RichTextIcon extends RichText implements \JsonSerializable
     }
 
     /**
-     * Set The image represented as a document. The image can be in GIF, JPEG or PNG format
+     * Set The image represented as a document. The image can be in GIF, JPEG or PNG format.
      */
     public function setDocument(Document|null $document): self
     {
@@ -43,7 +43,7 @@ class RichTextIcon extends RichText implements \JsonSerializable
     }
 
     /**
-     * Get Width of a bounding box in which the image must be shown; 0 if unknown
+     * Get Width of a bounding box in which the image must be shown; 0 if unknown.
      */
     public function getWidth(): int
     {
@@ -51,7 +51,7 @@ class RichTextIcon extends RichText implements \JsonSerializable
     }
 
     /**
-     * Set Width of a bounding box in which the image must be shown; 0 if unknown
+     * Set Width of a bounding box in which the image must be shown; 0 if unknown.
      */
     public function setWidth(int $width): self
     {
@@ -61,7 +61,7 @@ class RichTextIcon extends RichText implements \JsonSerializable
     }
 
     /**
-     * Get Height of a bounding box in which the image must be shown; 0 if unknown
+     * Get Height of a bounding box in which the image must be shown; 0 if unknown.
      */
     public function getHeight(): int
     {
@@ -69,7 +69,7 @@ class RichTextIcon extends RichText implements \JsonSerializable
     }
 
     /**
-     * Set Height of a bounding box in which the image must be shown; 0 if unknown
+     * Set Height of a bounding box in which the image must be shown; 0 if unknown.
      */
     public function setHeight(int $height): self
     {

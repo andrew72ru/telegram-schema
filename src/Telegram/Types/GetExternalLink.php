@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns an HTTP URL which can be used to automatically authorize the current user on a website after clicking an HTTP link. Use the method getExternalLinkInfo to find whether a prior user confirmation is needed
+ * Returns an HTTP URL which can be used to automatically authorize the current user on a website after clicking an HTTP link. Use the method getExternalLinkInfo to find whether a prior user confirmation is needed.
  */
 class GetExternalLink extends HttpUrl implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetExternalLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get The HTTP link
+     * Get The HTTP link.
      */
     public function getLink(): string
     {
@@ -30,7 +30,7 @@ class GetExternalLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set The HTTP link
+     * Set The HTTP link.
      */
     public function setLink(string $link): self
     {
@@ -40,7 +40,7 @@ class GetExternalLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages
+     * Get Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages.
      */
     public function getAllowWriteAccess(): bool
     {
@@ -48,7 +48,7 @@ class GetExternalLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages
+     * Set Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages.
      */
     public function setAllowWriteAccess(bool $allowWriteAccess): self
     {

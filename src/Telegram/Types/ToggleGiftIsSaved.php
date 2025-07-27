@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether a gift is shown on the current user's or the channel's profile page; requires can_post_messages administrator right in the channel chat
+ * Toggles whether a gift is shown on the current user's or the channel's profile page; requires can_post_messages administrator right in the channel chat.
  */
 class ToggleGiftIsSaved extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleGiftIsSaved extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift
+     * Get Identifier of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -30,7 +30,7 @@ class ToggleGiftIsSaved extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift
+     * Set Identifier of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -40,7 +40,7 @@ class ToggleGiftIsSaved extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to display the gift on the user's or the channel's profile page; pass false to remove it from the profile page
+     * Get Pass true to display the gift on the user's or the channel's profile page; pass false to remove it from the profile page.
      */
     public function getIsSaved(): bool
     {
@@ -48,7 +48,7 @@ class ToggleGiftIsSaved extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to display the gift on the user's or the channel's profile page; pass false to remove it from the profile page
+     * Set Pass true to display the gift on the user's or the channel's profile page; pass false to remove it from the profile page.
      */
     public function setIsSaved(bool $isSaved): self
     {

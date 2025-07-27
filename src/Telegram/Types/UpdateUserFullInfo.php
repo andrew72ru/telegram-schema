@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some data in userFullInfo has been changed @user_id User identifier @user_full_info New full information about the user
+ * Some data in userFullInfo has been changed @user_id User identifier @user_full_info New full information about the user.
  */
 class UpdateUserFullInfo extends Update implements \JsonSerializable
 {

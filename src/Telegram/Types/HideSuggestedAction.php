@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Hides a suggested action @action Suggested action to hide
+ * Hides a suggested action @action Suggested action to hide.
  */
 class HideSuggestedAction extends Ok implements \JsonSerializable
 {

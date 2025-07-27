@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat description was changed @old_description Previous chat description @new_description New chat description
+ * The chat description was changed @old_description Previous chat description @new_description New chat description.
  */
 class ChatEventDescriptionChanged extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns affiliate programs that were connected to the given affiliate
+ * Returns affiliate programs that were connected to the given affiliate.
  */
 class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implement
     }
 
     /**
-     * Get The affiliate to which the affiliate program were connected
+     * Get The affiliate to which the affiliate program were connected.
      */
     public function getAffiliate(): AffiliateType|null
     {
@@ -33,7 +33,7 @@ class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implement
     }
 
     /**
-     * Set The affiliate to which the affiliate program were connected
+     * Set The affiliate to which the affiliate program were connected.
      */
     public function setAffiliate(AffiliateType|null $affiliate): self
     {
@@ -43,7 +43,7 @@ class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implement
     }
 
     /**
-     * Get Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -51,7 +51,7 @@ class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implement
     }
 
     /**
-     * Set Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -61,7 +61,7 @@ class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implement
     }
 
     /**
-     * Get The maximum number of affiliate programs to return
+     * Get The maximum number of affiliate programs to return.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetConnectedAffiliatePrograms extends ConnectedAffiliatePrograms implement
     }
 
     /**
-     * Set The maximum number of affiliate programs to return
+     * Set The maximum number of affiliate programs to return.
      */
     public function setLimit(int $limit): self
     {

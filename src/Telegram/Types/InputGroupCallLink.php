@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The group call is accessible through a link @link The link for the group call
+ * The group call is accessible through a link @see The link for the group call.
  */
 class InputGroupCallLink extends InputGroupCall implements \JsonSerializable
 {

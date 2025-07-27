@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user is online @expires Point in time (Unix timestamp) when the user's online status will expire
+ * The user is online @expires Point in time (Unix timestamp) when the user's online status will expire.
  */
 class UserStatusOnline extends UserStatus implements \JsonSerializable
 {

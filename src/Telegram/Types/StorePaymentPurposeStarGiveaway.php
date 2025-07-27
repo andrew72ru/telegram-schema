@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user creating a Telegram Star giveaway
+ * The user creating a Telegram Star giveaway.
  */
 class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Get Giveaway parameters
+     * Get Giveaway parameters.
      */
     public function getParameters(): GiveawayParameters|null
     {
@@ -39,7 +39,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Set Giveaway parameters
+     * Set Giveaway parameters.
      */
     public function setParameters(GiveawayParameters|null $parameters): self
     {
@@ -49,7 +49,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -57,7 +57,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -67,7 +67,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -75,7 +75,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -85,7 +85,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Get The number of users to receive Telegram Stars
+     * Get The number of users to receive Telegram Stars.
      */
     public function getWinnerCount(): int
     {
@@ -93,7 +93,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Set The number of users to receive Telegram Stars
+     * Set The number of users to receive Telegram Stars.
      */
     public function setWinnerCount(int $winnerCount): self
     {
@@ -103,7 +103,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Get The number of Telegram Stars to be distributed through the giveaway
+     * Get The number of Telegram Stars to be distributed through the giveaway.
      */
     public function getStarCount(): int
     {
@@ -111,7 +111,7 @@ class StorePaymentPurposeStarGiveaway extends StorePaymentPurpose implements \Js
     }
 
     /**
-     * Set The number of Telegram Stars to be distributed through the giveaway
+     * Set The number of Telegram Stars to be distributed through the giveaway.
      */
     public function setStarCount(int $starCount): self
     {

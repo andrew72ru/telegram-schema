@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes allowed types for the target chat
+ * Describes allowed types for the target chat.
  */
 class TargetChatTypes implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if private chats with ordinary users are allowed
+     * Get True, if private chats with ordinary users are allowed.
      */
     public function getAllowUserChats(): bool
     {
@@ -36,7 +36,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if private chats with ordinary users are allowed
+     * Set True, if private chats with ordinary users are allowed.
      */
     public function setAllowUserChats(bool $allowUserChats): self
     {
@@ -46,7 +46,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if private chats with other bots are allowed
+     * Get True, if private chats with other bots are allowed.
      */
     public function getAllowBotChats(): bool
     {
@@ -54,7 +54,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if private chats with other bots are allowed
+     * Set True, if private chats with other bots are allowed.
      */
     public function setAllowBotChats(bool $allowBotChats): self
     {
@@ -64,7 +64,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if basic group and supergroup chats are allowed
+     * Get True, if basic group and supergroup chats are allowed.
      */
     public function getAllowGroupChats(): bool
     {
@@ -72,7 +72,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if basic group and supergroup chats are allowed
+     * Set True, if basic group and supergroup chats are allowed.
      */
     public function setAllowGroupChats(bool $allowGroupChats): self
     {
@@ -82,7 +82,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Get True, if channel chats are allowed
+     * Get True, if channel chats are allowed.
      */
     public function getAllowChannelChats(): bool
     {
@@ -90,7 +90,7 @@ class TargetChatTypes implements \JsonSerializable
     }
 
     /**
-     * Set True, if channel chats are allowed
+     * Set True, if channel chats are allowed.
      */
     public function setAllowChannelChats(bool $allowChannelChats): self
     {

@@ -28,7 +28,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the file to download
+     * Get Identifier of the file to download.
      */
     public function getFileId(): int
     {
@@ -36,7 +36,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the file to download
+     * Set Identifier of the file to download.
      */
     public function setFileId(int $fileId): self
     {
@@ -46,7 +46,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the message with the file
+     * Get Chat identifier of the message with the file.
      */
     public function getChatId(): int
     {
@@ -54,7 +54,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the message with the file
+     * Set Chat identifier of the message with the file.
      */
     public function setChatId(int $chatId): self
     {
@@ -64,7 +64,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -72,7 +72,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -82,7 +82,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Get Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
+     * Get Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first.
      */
     public function getPriority(): int
     {
@@ -90,7 +90,7 @@ class AddFileToDownloads extends File implements \JsonSerializable
     }
 
     /**
-     * Set Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
+     * Set Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first.
      */
     public function setPriority(int $priority): self
     {

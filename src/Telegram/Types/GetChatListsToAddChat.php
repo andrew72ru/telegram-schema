@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns chat lists to which the chat can be added. This is an offline method @chat_id Chat identifier
+ * Returns chat lists to which the chat can be added. This is an offline method @chat_id Chat identifier.
  */
 class GetChatListsToAddChat extends ChatLists implements \JsonSerializable
 {

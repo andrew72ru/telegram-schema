@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a backdrop of an upgraded gift
+ * Describes a backdrop of an upgraded gift.
  */
 class UpgradedGiftBackdrop implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the backdrop
+     * Get Unique identifier of the backdrop.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the backdrop
+     * Set Unique identifier of the backdrop.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Get Name of the backdrop
+     * Get Name of the backdrop.
      */
     public function getName(): string
     {
@@ -54,7 +54,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Set Name of the backdrop
+     * Set Name of the backdrop.
      */
     public function setName(string $name): self
     {
@@ -64,7 +64,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Get Colors of the backdrop
+     * Get Colors of the backdrop.
      */
     public function getColors(): UpgradedGiftBackdropColors|null
     {
@@ -72,7 +72,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Set Colors of the backdrop
+     * Set Colors of the backdrop.
      */
     public function setColors(UpgradedGiftBackdropColors|null $colors): self
     {
@@ -82,7 +82,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Get The number of upgraded gifts that receive this backdrop for each 1000 gifts upgraded
+     * Get The number of upgraded gifts that receive this backdrop for each 1000 gifts upgraded.
      */
     public function getRarityPerMille(): int
     {
@@ -90,7 +90,7 @@ class UpgradedGiftBackdrop implements \JsonSerializable
     }
 
     /**
-     * Set The number of upgraded gifts that receive this backdrop for each 1000 gifts upgraded
+     * Set The number of upgraded gifts that receive this backdrop for each 1000 gifts upgraded.
      */
     public function setRarityPerMille(int $rarityPerMille): self
     {

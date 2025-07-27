@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * New chat members were invited to a group
+ * New chat members were invited to a group.
  */
 class PushMessageContentChatAddMembers extends PushMessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PushMessageContentChatAddMembers extends PushMessageContent implements \Js
     }
 
     /**
-     * Get Name of the added member
+     * Get Name of the added member.
      */
     public function getMemberName(): string
     {
@@ -33,7 +33,7 @@ class PushMessageContentChatAddMembers extends PushMessageContent implements \Js
     }
 
     /**
-     * Set Name of the added member
+     * Set Name of the added member.
      */
     public function setMemberName(string $memberName): self
     {
@@ -43,7 +43,7 @@ class PushMessageContentChatAddMembers extends PushMessageContent implements \Js
     }
 
     /**
-     * Get True, if the current user was added to the group
+     * Get True, if the current user was added to the group.
      */
     public function getIsCurrentUser(): bool
     {
@@ -51,7 +51,7 @@ class PushMessageContentChatAddMembers extends PushMessageContent implements \Js
     }
 
     /**
-     * Set True, if the current user was added to the group
+     * Set True, if the current user was added to the group.
      */
     public function setIsCurrentUser(bool $isCurrentUser): self
     {
@@ -61,7 +61,7 @@ class PushMessageContentChatAddMembers extends PushMessageContent implements \Js
     }
 
     /**
-     * Get True, if the user has returned to the group themselves
+     * Get True, if the user has returned to the group themselves.
      */
     public function getIsReturned(): bool
     {
@@ -69,7 +69,7 @@ class PushMessageContentChatAddMembers extends PushMessageContent implements \Js
     }
 
     /**
-     * Set True, if the user has returned to the group themselves
+     * Set True, if the user has returned to the group themselves.
      */
     public function setIsReturned(bool $isReturned): self
     {

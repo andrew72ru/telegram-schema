@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns full information about a basic group by its identifier @basic_group_id Basic group identifier
+ * Returns full information about a basic group by its identifier @basic_group_id Basic group identifier.
  */
 class GetBasicGroupFullInfo extends BasicGroupFullInfo implements \JsonSerializable
 {

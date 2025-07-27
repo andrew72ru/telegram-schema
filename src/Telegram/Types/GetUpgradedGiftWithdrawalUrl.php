@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a URL for upgraded gift withdrawal in the TON blockchain as an NFT; requires owner privileges for gifts owned by a chat
+ * Returns a URL for upgraded gift withdrawal in the TON blockchain as an NFT; requires owner privileges for gifts owned by a chat.
  */
 class GetUpgradedGiftWithdrawalUrl extends HttpUrl implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetUpgradedGiftWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift
+     * Get Identifier of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -30,7 +30,7 @@ class GetUpgradedGiftWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift
+     * Set Identifier of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -40,7 +40,7 @@ class GetUpgradedGiftWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -48,7 +48,7 @@ class GetUpgradedGiftWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {

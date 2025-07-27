@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to an app at App Store or Google Play @photo Photo for the app
+ * The link is a link to an app at App Store or Google Play @photo Photo for the app.
  */
 class LinkPreviewTypeApp extends LinkPreviewType implements \JsonSerializable
 {

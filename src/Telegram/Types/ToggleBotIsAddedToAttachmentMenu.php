@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds or removes a bot to attachment and side menu. Bot can be added to the menu, only if userTypeBot.can_be_added_to_attachment_menu == true
+ * Adds or removes a bot to attachment and side menu. Bot can be added to the menu, only if userTypeBot.can_be_added_to_attachment_menu == true.
  */
 class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Bot's user identifier
+     * Get Bot's user identifier.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Bot's user identifier
+     * Set Bot's user identifier.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to add the bot to attachment menu; pass false to remove the bot from attachment menu
+     * Get Pass true to add the bot to attachment menu; pass false to remove the bot from attachment menu.
      */
     public function getIsAdded(): bool
     {
@@ -51,7 +51,7 @@ class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to add the bot to attachment menu; pass false to remove the bot from attachment menu
+     * Set Pass true to add the bot to attachment menu; pass false to remove the bot from attachment menu.
      */
     public function setIsAdded(bool $isAdded): self
     {
@@ -61,7 +61,7 @@ class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the current user allowed the bot to send them messages. Ignored if is_added is false
+     * Get Pass true if the current user allowed the bot to send them messages. Ignored if is_added is false.
      */
     public function getAllowWriteAccess(): bool
     {
@@ -69,7 +69,7 @@ class ToggleBotIsAddedToAttachmentMenu extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the current user allowed the bot to send them messages. Ignored if is_added is false
+     * Set Pass true if the current user allowed the bot to send them messages. Ignored if is_added is false.
      */
     public function setAllowWriteAccess(bool $allowWriteAccess): self
     {

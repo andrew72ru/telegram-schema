@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains statistics about number of new members invited by a user
+ * Contains statistics about number of new members invited by a user.
  */
 class ChatStatisticsInviterInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatStatisticsInviterInfo implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class ChatStatisticsInviterInfo implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class ChatStatisticsInviterInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of new members invited by the user
+     * Get Number of new members invited by the user.
      */
     public function getAddedMemberCount(): int
     {
@@ -48,7 +48,7 @@ class ChatStatisticsInviterInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of new members invited by the user
+     * Set Number of new members invited by the user.
      */
     public function setAddedMemberCount(int $addedMemberCount): self
     {

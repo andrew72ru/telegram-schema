@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains some text @text Text
+ * Contains some text @text Text.
  */
 class Text implements \JsonSerializable
 {

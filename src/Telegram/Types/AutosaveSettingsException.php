@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains autosave settings for a chat, which overrides default settings for the corresponding scope
+ * Contains autosave settings for a chat, which overrides default settings for the corresponding scope.
  */
 class AutosaveSettingsException implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AutosaveSettingsException implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class AutosaveSettingsException implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class AutosaveSettingsException implements \JsonSerializable
     }
 
     /**
-     * Get Autosave settings for the chat
+     * Get Autosave settings for the chat.
      */
     public function getSettings(): ScopeAutosaveSettings|null
     {
@@ -48,7 +48,7 @@ class AutosaveSettingsException implements \JsonSerializable
     }
 
     /**
-     * Set Autosave settings for the chat
+     * Set Autosave settings for the chat.
      */
     public function setSettings(ScopeAutosaveSettings|null $settings): self
     {

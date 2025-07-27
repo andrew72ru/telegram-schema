@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a venue
+ * Describes a venue.
  */
 class Venue implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Get Venue location; as defined by the sender
+     * Get Venue location; as defined by the sender.
      */
     public function getLocation(): Location|null
     {
@@ -42,7 +42,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Set Venue location; as defined by the sender
+     * Set Venue location; as defined by the sender.
      */
     public function setLocation(Location|null $location): self
     {
@@ -52,7 +52,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Get Venue name; as defined by the sender
+     * Get Venue name; as defined by the sender.
      */
     public function getTitle(): string
     {
@@ -60,7 +60,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Set Venue name; as defined by the sender
+     * Set Venue name; as defined by the sender.
      */
     public function setTitle(string $title): self
     {
@@ -70,7 +70,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Get Venue address; as defined by the sender
+     * Get Venue address; as defined by the sender.
      */
     public function getAddress(): string
     {
@@ -78,7 +78,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Set Venue address; as defined by the sender
+     * Set Venue address; as defined by the sender.
      */
     public function setAddress(string $address): self
     {
@@ -88,7 +88,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Get Provider of the venue database; as defined by the sender. Currently, only "foursquare" and "gplaces" (Google Places) need to be supported
+     * Get Provider of the venue database; as defined by the sender. Currently, only "foursquare" and "gplaces" (Google Places) need to be supported.
      */
     public function getProvider(): string
     {
@@ -96,7 +96,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Set Provider of the venue database; as defined by the sender. Currently, only "foursquare" and "gplaces" (Google Places) need to be supported
+     * Set Provider of the venue database; as defined by the sender. Currently, only "foursquare" and "gplaces" (Google Places) need to be supported.
      */
     public function setProvider(string $provider): self
     {
@@ -106,7 +106,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the venue in the provider database; as defined by the sender
+     * Get Identifier of the venue in the provider database; as defined by the sender.
      */
     public function getId(): string
     {
@@ -114,7 +114,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the venue in the provider database; as defined by the sender
+     * Set Identifier of the venue in the provider database; as defined by the sender.
      */
     public function setId(string $id): self
     {
@@ -124,7 +124,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Get Type of the venue in the provider database; as defined by the sender
+     * Get Type of the venue in the provider database; as defined by the sender.
      */
     public function getType(): string
     {
@@ -132,7 +132,7 @@ class Venue implements \JsonSerializable
     }
 
     /**
-     * Set Type of the venue in the provider database; as defined by the sender
+     * Set Type of the venue in the provider database; as defined by the sender.
      */
     public function setType(string $type): self
     {

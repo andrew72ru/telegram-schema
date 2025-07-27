@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a previously posted story. Can be called only if story.can_be_deleted == true
+ * Deletes a previously posted story. Can be called only if story.can_be_deleted == true.
  */
 class DeleteStory extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -30,7 +30,7 @@ class DeleteStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -40,7 +40,7 @@ class DeleteStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story to delete
+     * Get Identifier of the story to delete.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class DeleteStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story to delete
+     * Set Identifier of the story to delete.
      */
     public function setStoryId(int $storyId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether new participants of a video chat can be unmuted only by administrators of the video chat. Requires groupCall.can_toggle_mute_new_participants right
+ * Toggles whether new participants of a video chat can be unmuted only by administrators of the video chat. Requires groupCall.can_toggle_mute_new_participants right.
  */
 class ToggleVideoChatMuteNewParticipants extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleVideoChatMuteNewParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class ToggleVideoChatMuteNewParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class ToggleVideoChatMuteNewParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of the mute_new_participants setting
+     * Get New value of the mute_new_participants setting.
      */
     public function getMuteNewParticipants(): bool
     {
@@ -48,7 +48,7 @@ class ToggleVideoChatMuteNewParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of the mute_new_participants setting
+     * Set New value of the mute_new_participants setting.
      */
     public function setMuteNewParticipants(bool $muteNewParticipants): self
     {

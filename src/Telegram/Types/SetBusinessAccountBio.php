@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the bio of a business account; for bots only
+ * Changes the bio of a business account; for bots only.
  */
 class SetBusinessAccountBio extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetBusinessAccountBio extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class SetBusinessAccountBio extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class SetBusinessAccountBio extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new value of the bio; 0-getOption("bio_length_max") characters without line feeds
+     * Get The new value of the bio; 0-getOption("bio_length_max") characters without line feeds.
      */
     public function getBio(): string
     {
@@ -48,7 +48,7 @@ class SetBusinessAccountBio extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new value of the bio; 0-getOption("bio_length_max") characters without line feeds
+     * Set The new value of the bio; 0-getOption("bio_length_max") characters without line feeds.
      */
     public function setBio(string $bio): self
     {

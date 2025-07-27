@@ -25,7 +25,7 @@ class InternalLinkTypeUserPhoneNumber extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Phone number of the user
+     * Get Phone number of the user.
      */
     public function getPhoneNumber(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeUserPhoneNumber extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Phone number of the user
+     * Set Phone number of the user.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeUserPhoneNumber extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Draft text for message to send in the chat
+     * Get Draft text for message to send in the chat.
      */
     public function getDraftText(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeUserPhoneNumber extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Draft text for message to send in the chat
+     * Set Draft text for message to send in the chat.
      */
     public function setDraftText(string $draftText): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeUserPhoneNumber extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get True, if user's profile information screen must be opened; otherwise, the chat itself must be opened
+     * Get True, if user's profile information screen must be opened; otherwise, the chat itself must be opened.
      */
     public function getOpenProfile(): bool
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeUserPhoneNumber extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set True, if user's profile information screen must be opened; otherwise, the chat itself must be opened
+     * Set True, if user's profile information screen must be opened; otherwise, the chat itself must be opened.
      */
     public function setOpenProfile(bool $openProfile): self
     {

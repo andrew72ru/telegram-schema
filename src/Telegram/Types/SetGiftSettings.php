@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes settings for gift receiving for the current user @settings The new settings
+ * Changes settings for gift receiving for the current user @settings The new settings.
  */
 class SetGiftSettings extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The last message of a chat was changed
+ * The last message of a chat was changed.
  */
 class UpdateChatLastMessage extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateChatLastMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class UpdateChatLastMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class UpdateChatLastMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new last message in the chat; may be null if the last message became unknown. While the last message is unknown, new messages can be added to the chat without corresponding updateNewMessage update
+     * Get The new last message in the chat; may be null if the last message became unknown. While the last message is unknown, new messages can be added to the chat without corresponding updateNewMessage update.
      */
     public function getLastMessage(): Message|null
     {
@@ -51,7 +51,7 @@ class UpdateChatLastMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new last message in the chat; may be null if the last message became unknown. While the last message is unknown, new messages can be added to the chat without corresponding updateNewMessage update
+     * Set The new last message in the chat; may be null if the last message became unknown. While the last message is unknown, new messages can be added to the chat without corresponding updateNewMessage update.
      */
     public function setLastMessage(Message|null $lastMessage): self
     {
@@ -61,7 +61,7 @@ class UpdateChatLastMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new chat positions in the chat lists
+     * Get The new chat positions in the chat lists.
      */
     public function getPositions(): array|null
     {
@@ -69,7 +69,7 @@ class UpdateChatLastMessage extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new chat positions in the chat lists
+     * Set The new chat positions in the chat lists.
      */
     public function setPositions(array|null $positions): self
     {

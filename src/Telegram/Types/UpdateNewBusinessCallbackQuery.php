@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming callback query from a business message; for bots only
+ * A new incoming callback query from a business message; for bots only.
  */
 class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique query identifier
+     * Get Unique query identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique query identifier
+     * Set Unique query identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -60,7 +60,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -70,7 +70,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the business connection
+     * Get Unique identifier of the business connection.
      */
     public function getConnectionId(): string
     {
@@ -78,7 +78,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the business connection
+     * Set Unique identifier of the business connection.
      */
     public function setConnectionId(string $connectionId): self
     {
@@ -88,7 +88,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The message from the business account from which the query originated
+     * Get The message from the business account from which the query originated.
      */
     public function getMessage(): BusinessMessage|null
     {
@@ -96,7 +96,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The message from the business account from which the query originated
+     * Set The message from the business account from which the query originated.
      */
     public function setMessage(BusinessMessage|null $message): self
     {
@@ -106,7 +106,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get An identifier uniquely corresponding to the chat a message was sent to
+     * Get An identifier uniquely corresponding to the chat a message was sent to.
      */
     public function getChatInstance(): int
     {
@@ -114,7 +114,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set An identifier uniquely corresponding to the chat a message was sent to
+     * Set An identifier uniquely corresponding to the chat a message was sent to.
      */
     public function setChatInstance(int $chatInstance): self
     {
@@ -124,7 +124,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Query payload
+     * Get Query payload.
      */
     public function getPayload(): CallbackQueryPayload|null
     {
@@ -132,7 +132,7 @@ class UpdateNewBusinessCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Query payload
+     * Set Query payload.
      */
     public function setPayload(CallbackQueryPayload|null $payload): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets a sticker set title @name Sticker set name. The sticker set must be owned by the current user @title New sticker set title
+ * Sets a sticker set title @name Sticker set name. The sticker set must be owned by the current user @title New sticker set title.
  */
 class SetStickerSetTitle extends Ok implements \JsonSerializable
 {

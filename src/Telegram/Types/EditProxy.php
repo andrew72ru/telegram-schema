@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits an existing proxy server for network requests. Can be called before authorization
+ * Edits an existing proxy server for network requests. Can be called before authorization.
  */
 class EditProxy extends Proxy implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy identifier
+     * Get Proxy identifier.
      */
     public function getProxyId(): int
     {
@@ -39,7 +39,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy identifier
+     * Set Proxy identifier.
      */
     public function setProxyId(int $proxyId): self
     {
@@ -49,7 +49,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server domain or IP address
+     * Get Proxy server domain or IP address.
      */
     public function getServer(): string
     {
@@ -57,7 +57,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server domain or IP address
+     * Set Proxy server domain or IP address.
      */
     public function setServer(string $server): self
     {
@@ -67,7 +67,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy server port
+     * Get Proxy server port.
      */
     public function getPort(): int
     {
@@ -75,7 +75,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy server port
+     * Set Proxy server port.
      */
     public function setPort(int $port): self
     {
@@ -85,7 +85,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to immediately enable the proxy
+     * Get Pass true to immediately enable the proxy.
      */
     public function getEnable(): bool
     {
@@ -93,7 +93,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to immediately enable the proxy
+     * Set Pass true to immediately enable the proxy.
      */
     public function setEnable(bool $enable): self
     {
@@ -103,7 +103,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Get Proxy type
+     * Get Proxy type.
      */
     public function getType(): ProxyType|null
     {
@@ -111,7 +111,7 @@ class EditProxy extends Proxy implements \JsonSerializable
     }
 
     /**
-     * Set Proxy type
+     * Set Proxy type.
      */
     public function setType(ProxyType|null $type): self
     {

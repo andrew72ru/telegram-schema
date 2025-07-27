@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns interactions with a story posted in a chat. Can be used only if story is posted on behalf of a chat and the user is an administrator in the chat
+ * Returns interactions with a story posted in a chat. Can be used only if story is posted on behalf of a chat and the user is an administrator in the chat.
  */
 class GetChatStoryInteractions extends StoryInteractions implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Get The identifier of the poster of the story
+     * Get The identifier of the poster of the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -42,7 +42,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Set The identifier of the poster of the story
+     * Set The identifier of the poster of the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -52,7 +52,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Get Story identifier
+     * Get Story identifier.
      */
     public function getStoryId(): int
     {
@@ -60,7 +60,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Set Story identifier
+     * Set Story identifier.
      */
     public function setStoryId(int $storyId): self
     {
@@ -70,7 +70,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Get Pass the default heart reaction or a suggested reaction type to receive only interactions with the specified reaction type; pass null to receive all interactions; reactionTypePaid isn't supported
+     * Get Pass the default heart reaction or a suggested reaction type to receive only interactions with the specified reaction type; pass null to receive all interactions; reactionTypePaid isn't supported.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -78,7 +78,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Set Pass the default heart reaction or a suggested reaction type to receive only interactions with the specified reaction type; pass null to receive all interactions; reactionTypePaid isn't supported
+     * Set Pass the default heart reaction or a suggested reaction type to receive only interactions with the specified reaction type; pass null to receive all interactions; reactionTypePaid isn't supported.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {
@@ -88,7 +88,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Get Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date
+     * Get Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date.
      */
     public function getPreferForwards(): bool
     {
@@ -96,7 +96,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Set Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date
+     * Set Pass true to get forwards and reposts first, then reactions, then other views; pass false to get interactions sorted just by interaction date.
      */
     public function setPreferForwards(bool $preferForwards): self
     {
@@ -106,7 +106,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -114,7 +114,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -124,7 +124,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Get The maximum number of story interactions to return
+     * Get The maximum number of story interactions to return.
      */
     public function getLimit(): int
     {
@@ -132,7 +132,7 @@ class GetChatStoryInteractions extends StoryInteractions implements \JsonSeriali
     }
 
     /**
-     * Set The maximum number of story interactions to return
+     * Set The maximum number of story interactions to return.
      */
     public function setLimit(int $limit): self
     {

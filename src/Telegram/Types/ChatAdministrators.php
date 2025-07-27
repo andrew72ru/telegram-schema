@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of chat administrators @administrators A list of chat administrators
+ * Represents a list of chat administrators @administrators A list of chat administrators.
  */
 class ChatAdministrators implements \JsonSerializable
 {

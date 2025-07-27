@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Allows the specified bot to send messages to the user @bot_user_id Identifier of the target bot
+ * Allows the specified bot to send messages to the user @bot_user_id Identifier of the target bot.
  */
 class AllowBotToSendMessages extends Ok implements \JsonSerializable
 {

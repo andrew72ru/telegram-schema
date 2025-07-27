@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with information about an ended video chat @duration Call duration, in seconds
+ * A message with information about an ended video chat @duration Call duration, in seconds.
  */
 class MessageVideoChatEnded extends MessageContent implements \JsonSerializable
 {

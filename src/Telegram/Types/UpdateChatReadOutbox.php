@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Outgoing messages were read @chat_id Chat identifier @last_read_outbox_message_id Identifier of last read outgoing message
+ * Outgoing messages were read @chat_id Chat identifier @last_read_outbox_message_id Identifier of last read outgoing message.
  */
 class UpdateChatReadOutbox extends Update implements \JsonSerializable
 {

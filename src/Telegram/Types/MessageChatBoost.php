@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat was boosted by the sender of the message @boost_count Number of times the chat was boosted
+ * The chat was boosted by the sender of the message @boost_count Number of times the chat was boosted.
  */
 class MessageChatBoost extends MessageContent implements \JsonSerializable
 {

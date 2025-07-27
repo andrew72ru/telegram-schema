@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat video chat state has changed @chat_id Chat identifier @video_chat New value of video_chat
+ * A chat video chat state has changed @chat_id Chat identifier @video_chat New value of video_chat.
  */
 class UpdateChatVideoChat extends Update implements \JsonSerializable
 {

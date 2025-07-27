@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat available reactions were changed @old_available_reactions Previous chat available reactions @new_available_reactions New chat available reactions
+ * The chat available reactions were changed @old_available_reactions Previous chat available reactions @new_available_reactions New chat available reactions.
  */
 class ChatEventAvailableReactionsChanged extends ChatEventAction implements \JsonSerializable
 {

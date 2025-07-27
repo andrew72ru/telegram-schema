@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming callback query; for bots only
+ * A new incoming callback query; for bots only.
  */
 class UpdateNewCallbackQuery extends Update implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique query identifier
+     * Get Unique query identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique query identifier
+     * Set Unique query identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -60,7 +60,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -70,7 +70,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat where the query was sent
+     * Get Identifier of the chat where the query was sent.
      */
     public function getChatId(): int
     {
@@ -78,7 +78,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat where the query was sent
+     * Set Identifier of the chat where the query was sent.
      */
     public function setChatId(int $chatId): self
     {
@@ -88,7 +88,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message from which the query originated
+     * Get Identifier of the message from which the query originated.
      */
     public function getMessageId(): int
     {
@@ -96,7 +96,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message from which the query originated
+     * Set Identifier of the message from which the query originated.
      */
     public function setMessageId(int $messageId): self
     {
@@ -106,7 +106,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier that uniquely corresponds to the chat to which the message was sent
+     * Get Identifier that uniquely corresponds to the chat to which the message was sent.
      */
     public function getChatInstance(): int
     {
@@ -114,7 +114,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier that uniquely corresponds to the chat to which the message was sent
+     * Set Identifier that uniquely corresponds to the chat to which the message was sent.
      */
     public function setChatInstance(int $chatInstance): self
     {
@@ -124,7 +124,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Query payload
+     * Get Query payload.
      */
     public function getPayload(): CallbackQueryPayload|null
     {
@@ -132,7 +132,7 @@ class UpdateNewCallbackQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Query payload
+     * Set Query payload.
      */
     public function setPayload(CallbackQueryPayload|null $payload): self
     {

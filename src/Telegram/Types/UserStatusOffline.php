@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user is offline @was_online Point in time (Unix timestamp) when the user was last online
+ * The user is offline @was_online Point in time (Unix timestamp) when the user was last online.
  */
 class UserStatusOffline extends UserStatus implements \JsonSerializable
 {

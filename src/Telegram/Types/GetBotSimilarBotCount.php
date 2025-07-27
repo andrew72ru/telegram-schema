@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns approximate number of bots similar to the given bot
+ * Returns approximate number of bots similar to the given bot.
  */
 class GetBotSimilarBotCount extends Count implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetBotSimilarBotCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the target bot
+     * Get User identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -30,7 +30,7 @@ class GetBotSimilarBotCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the target bot
+     * Set User identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -40,7 +40,7 @@ class GetBotSimilarBotCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get the number of bots without sending network requests, or -1 if the number of bots is unknown locally
+     * Get Pass true to get the number of bots without sending network requests, or -1 if the number of bots is unknown locally.
      */
     public function getReturnLocal(): bool
     {
@@ -48,7 +48,7 @@ class GetBotSimilarBotCount extends Count implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get the number of bots without sending network requests, or -1 if the number of bots is unknown locally
+     * Set Pass true to get the number of bots without sending network requests, or -1 if the number of bots is unknown locally.
      */
     public function setReturnLocal(bool $returnLocal): self
     {

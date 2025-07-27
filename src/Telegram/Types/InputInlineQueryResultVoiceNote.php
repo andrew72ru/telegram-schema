@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to an opus-encoded audio file within an OGG container, single channel audio
+ * Represents a link to an opus-encoded audio file within an OGG container, single channel audio.
  */
 class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -42,7 +42,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -52,7 +52,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Title of the voice note
+     * Get Title of the voice note.
      */
     public function getTitle(): string
     {
@@ -60,7 +60,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Title of the voice note
+     * Set Title of the voice note.
      */
     public function setTitle(string $title): self
     {
@@ -70,7 +70,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get The URL of the voice note file
+     * Get The URL of the voice note file.
      */
     public function getVoiceNoteUrl(): string
     {
@@ -78,7 +78,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set The URL of the voice note file
+     * Set The URL of the voice note file.
      */
     public function setVoiceNoteUrl(string $voiceNoteUrl): self
     {
@@ -88,7 +88,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Duration of the voice note, in seconds
+     * Get Duration of the voice note, in seconds.
      */
     public function getVoiceNoteDuration(): int
     {
@@ -96,7 +96,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Duration of the voice note, in seconds
+     * Set Duration of the voice note, in seconds.
      */
     public function setVoiceNoteDuration(int $voiceNoteDuration): self
     {
@@ -106,7 +106,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -114,7 +114,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -124,7 +124,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVoiceNote, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVoiceNote, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -132,7 +132,7 @@ class InputInlineQueryResultVoiceNote extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVoiceNote, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVoiceNote, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

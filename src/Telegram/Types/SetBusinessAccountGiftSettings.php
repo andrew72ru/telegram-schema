@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes settings for gift receiving of a business account; for bots only
+ * Changes settings for gift receiving of a business account; for bots only.
  */
 class SetBusinessAccountGiftSettings extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetBusinessAccountGiftSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class SetBusinessAccountGiftSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class SetBusinessAccountGiftSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new settings
+     * Get The new settings.
      */
     public function getSettings(): GiftSettings|null
     {
@@ -48,7 +48,7 @@ class SetBusinessAccountGiftSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new settings
+     * Set The new settings.
      */
     public function setSettings(GiftSettings|null $settings): self
     {

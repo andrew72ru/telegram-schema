@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * User rights changed in a chat; for bots only
+ * User rights changed in a chat; for bots only.
  */
 class UpdateChatMember extends Update implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -48,7 +48,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -58,7 +58,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user, changing the rights
+     * Get Identifier of the user, changing the rights.
      */
     public function getActorUserId(): int
     {
@@ -66,7 +66,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user, changing the rights
+     * Set Identifier of the user, changing the rights.
      */
     public function setActorUserId(int $actorUserId): self
     {
@@ -76,7 +76,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user rights were changed
+     * Get Point in time (Unix timestamp) when the user rights were changed.
      */
     public function getDate(): int
     {
@@ -84,7 +84,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user rights were changed
+     * Set Point in time (Unix timestamp) when the user rights were changed.
      */
     public function setDate(int $date): self
     {
@@ -94,7 +94,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get If user has joined the chat using an invite link, the invite link; may be null
+     * Get If user has joined the chat using an invite link, the invite link; may be null.
      */
     public function getInviteLink(): ChatInviteLink|null
     {
@@ -102,7 +102,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set If user has joined the chat using an invite link, the invite link; may be null
+     * Set If user has joined the chat using an invite link, the invite link; may be null.
      */
     public function setInviteLink(ChatInviteLink|null $inviteLink): self
     {
@@ -112,7 +112,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has joined the chat after sending a join request and being approved by an administrator
+     * Get True, if the user has joined the chat after sending a join request and being approved by an administrator.
      */
     public function getViaJoinRequest(): bool
     {
@@ -120,7 +120,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has joined the chat after sending a join request and being approved by an administrator
+     * Set True, if the user has joined the chat after sending a join request and being approved by an administrator.
      */
     public function setViaJoinRequest(bool $viaJoinRequest): self
     {
@@ -130,7 +130,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user has joined the chat using an invite link for a chat folder
+     * Get True, if the user has joined the chat using an invite link for a chat folder.
      */
     public function getViaChatFolderInviteLink(): bool
     {
@@ -138,7 +138,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user has joined the chat using an invite link for a chat folder
+     * Set True, if the user has joined the chat using an invite link for a chat folder.
      */
     public function setViaChatFolderInviteLink(bool $viaChatFolderInviteLink): self
     {
@@ -148,7 +148,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Previous chat member
+     * Get Previous chat member.
      */
     public function getOldChatMember(): ChatMember|null
     {
@@ -156,7 +156,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Previous chat member
+     * Set Previous chat member.
      */
     public function setOldChatMember(ChatMember|null $oldChatMember): self
     {
@@ -166,7 +166,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New chat member
+     * Get New chat member.
      */
     public function getNewChatMember(): ChatMember|null
     {
@@ -174,7 +174,7 @@ class UpdateChatMember extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New chat member
+     * Set New chat member.
      */
     public function setNewChatMember(ChatMember|null $newChatMember): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Starts a scheduled video chat @group_call_id Group call identifier of the video chat
+ * Starts a scheduled video chat @group_call_id Group call identifier of the video chat.
  */
 class StartScheduledVideoChat extends Ok implements \JsonSerializable
 {

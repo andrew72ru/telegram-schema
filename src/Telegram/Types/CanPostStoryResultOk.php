@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A story can be sent @story_count Number of stories that can be posted by the user
+ * A story can be sent @story_count Number of stories that can be posted by the user.
  */
 class CanPostStoryResultOk extends CanPostStoryResult implements \JsonSerializable
 {

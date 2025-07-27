@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about subscription to a channel chat, a bot, or a business account that was paid in Telegram Stars
+ * Contains information about subscription to a channel chat, a bot, or a business account that was paid in Telegram Stars.
  */
 class StarSubscription implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the subscription
+     * Get Unique identifier of the subscription.
      */
     public function getId(): string
     {
@@ -45,7 +45,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the subscription
+     * Set Unique identifier of the subscription.
      */
     public function setId(string $id): self
     {
@@ -55,7 +55,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that is subscribed
+     * Get Identifier of the chat that is subscribed.
      */
     public function getChatId(): int
     {
@@ -63,7 +63,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that is subscribed
+     * Set Identifier of the chat that is subscribed.
      */
     public function setChatId(int $chatId): self
     {
@@ -73,7 +73,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the subscription will expire or expired
+     * Get Point in time (Unix timestamp) when the subscription will expire or expired.
      */
     public function getExpirationDate(): int
     {
@@ -81,7 +81,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the subscription will expire or expired
+     * Set Point in time (Unix timestamp) when the subscription will expire or expired.
      */
     public function setExpirationDate(int $expirationDate): self
     {
@@ -91,7 +91,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get True, if the subscription was canceled
+     * Get True, if the subscription was canceled.
      */
     public function getIsCanceled(): bool
     {
@@ -99,7 +99,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set True, if the subscription was canceled
+     * Set True, if the subscription was canceled.
      */
     public function setIsCanceled(bool $isCanceled): self
     {
@@ -109,7 +109,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get True, if the subscription expires soon and there are no enough Telegram Stars on the user's balance to extend it
+     * Get True, if the subscription expires soon and there are no enough Telegram Stars on the user's balance to extend it.
      */
     public function getIsExpiring(): bool
     {
@@ -117,7 +117,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set True, if the subscription expires soon and there are no enough Telegram Stars on the user's balance to extend it
+     * Set True, if the subscription expires soon and there are no enough Telegram Stars on the user's balance to extend it.
      */
     public function setIsExpiring(bool $isExpiring): self
     {
@@ -127,7 +127,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get The subscription plan
+     * Get The subscription plan.
      */
     public function getPricing(): StarSubscriptionPricing|null
     {
@@ -135,7 +135,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set The subscription plan
+     * Set The subscription plan.
      */
     public function setPricing(StarSubscriptionPricing|null $pricing): self
     {
@@ -145,7 +145,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Get Type of the subscription
+     * Get Type of the subscription.
      */
     public function getType(): StarSubscriptionType|null
     {
@@ -153,7 +153,7 @@ class StarSubscription implements \JsonSerializable
     }
 
     /**
-     * Set Type of the subscription
+     * Set Type of the subscription.
      */
     public function setType(StarSubscriptionType|null $type): self
     {

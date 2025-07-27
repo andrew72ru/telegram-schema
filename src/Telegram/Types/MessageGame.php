@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a game @game The game description
+ * A message with a game @game The game description.
  */
 class MessageGame extends MessageContent implements \JsonSerializable
 {

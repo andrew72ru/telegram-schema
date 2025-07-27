@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a callback query to a bot and returns an answer. Returns an error with code 502 if the bot fails to answer the query before the query timeout expires
+ * Sends a callback query to a bot and returns an answer. Returns an error with code 502 if the bot fails to answer the query before the query timeout expires.
  */
 class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the message from which the query originated. The message must not be scheduled
+     * Get Identifier of the message from which the query originated. The message must not be scheduled.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the message from which the query originated. The message must not be scheduled
+     * Set Identifier of the message from which the query originated. The message must not be scheduled.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSeriali
     }
 
     /**
-     * Get Query payload
+     * Get Query payload.
      */
     public function getPayload(): CallbackQueryPayload|null
     {
@@ -69,7 +69,7 @@ class GetCallbackQueryAnswer extends CallbackQueryAnswer implements \JsonSeriali
     }
 
     /**
-     * Set Query payload
+     * Set Query payload.
      */
     public function setPayload(CallbackQueryPayload|null $payload): self
     {

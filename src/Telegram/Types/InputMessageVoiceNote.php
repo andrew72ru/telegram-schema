@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A voice note message
+ * A voice note message.
  */
 class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Voice note to be sent. The voice note must be encoded with the Opus codec and stored inside an OGG container with a single audio channel, or be in MP3 or M4A format as regular audio
+     * Get Voice note to be sent. The voice note must be encoded with the Opus codec and stored inside an OGG container with a single audio channel, or be in MP3 or M4A format as regular audio.
      */
     public function getVoiceNote(): InputFile|null
     {
@@ -39,7 +39,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Voice note to be sent. The voice note must be encoded with the Opus codec and stored inside an OGG container with a single audio channel, or be in MP3 or M4A format as regular audio
+     * Set Voice note to be sent. The voice note must be encoded with the Opus codec and stored inside an OGG container with a single audio channel, or be in MP3 or M4A format as regular audio.
      */
     public function setVoiceNote(InputFile|null $voiceNote): self
     {
@@ -49,7 +49,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Duration of the voice note, in seconds
+     * Get Duration of the voice note, in seconds.
      */
     public function getDuration(): int
     {
@@ -57,7 +57,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Duration of the voice note, in seconds
+     * Set Duration of the voice note, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -67,7 +67,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Waveform representation of the voice note in 5-bit format
+     * Get Waveform representation of the voice note in 5-bit format.
      */
     public function getWaveform(): string
     {
@@ -75,7 +75,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Waveform representation of the voice note in 5-bit format
+     * Set Waveform representation of the voice note in 5-bit format.
      */
     public function setWaveform(string $waveform): self
     {
@@ -85,7 +85,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Voice note caption; may be null if empty; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Voice note caption; may be null if empty; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -93,7 +93,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Voice note caption; may be null if empty; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Voice note caption; may be null if empty; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -103,7 +103,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Voice note self-destruct type; may be null if none; pass null if none; private chats only
+     * Get Voice note self-destruct type; may be null if none; pass null if none; private chats only.
      */
     public function getSelfDestructType(): MessageSelfDestructType|null
     {
@@ -111,7 +111,7 @@ class InputMessageVoiceNote extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Voice note self-destruct type; may be null if none; pass null if none; private chats only
+     * Set Voice note self-destruct type; may be null if none; pass null if none; private chats only.
      */
     public function setSelfDestructType(MessageSelfDestructType|null $selfDestructType): self
     {

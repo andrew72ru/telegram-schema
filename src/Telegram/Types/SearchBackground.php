@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for a background by its name @name The name of the background
+ * Searches for a background by its name @name The name of the background.
  */
 class SearchBackground extends Background implements \JsonSerializable
 {

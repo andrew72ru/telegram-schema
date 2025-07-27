@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about saved payment credentials @id Unique identifier of the saved credentials @title Title of the saved credentials
+ * Contains information about saved payment credentials @id Unique identifier of the saved credentials @title Title of the saved credentials.
  */
 class SavedCredentials implements \JsonSerializable
 {

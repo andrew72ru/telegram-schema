@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Suggests the user to set a 2-step verification password to be able to log in again
+ * Suggests the user to set a 2-step verification password to be able to log in again.
  */
 class SuggestedActionSetPassword extends SuggestedAction implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class SuggestedActionSetPassword extends SuggestedAction implements \JsonSeriali
     }
 
     /**
-     * Get The number of days to pass between consecutive authorizations if the user declines to set password; if 0, then the user is advised to set the password for security reasons
+     * Get The number of days to pass between consecutive authorizations if the user declines to set password; if 0, then the user is advised to set the password for security reasons.
      */
     public function getAuthorizationDelay(): int
     {
@@ -27,7 +27,7 @@ class SuggestedActionSetPassword extends SuggestedAction implements \JsonSeriali
     }
 
     /**
-     * Set The number of days to pass between consecutive authorizations if the user declines to set password; if 0, then the user is advised to set the password for security reasons
+     * Set The number of days to pass between consecutive authorizations if the user declines to set password; if 0, then the user is advised to set the password for security reasons.
      */
     public function setAuthorizationDelay(int $authorizationDelay): self
     {

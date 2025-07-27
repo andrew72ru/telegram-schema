@@ -25,7 +25,7 @@ class InternalLinkTypeAttachmentMenuBot extends InternalLinkType implements \Jso
     }
 
     /**
-     * Get Target chat to be opened
+     * Get Target chat to be opened.
      */
     public function getTargetChat(): TargetChat|null
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeAttachmentMenuBot extends InternalLinkType implements \Jso
     }
 
     /**
-     * Set Target chat to be opened
+     * Set Target chat to be opened.
      */
     public function setTargetChat(TargetChat|null $targetChat): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeAttachmentMenuBot extends InternalLinkType implements \Jso
     }
 
     /**
-     * Get Username of the bot
+     * Get Username of the bot.
      */
     public function getBotUsername(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeAttachmentMenuBot extends InternalLinkType implements \Jso
     }
 
     /**
-     * Set Username of the bot
+     * Set Username of the bot.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeAttachmentMenuBot extends InternalLinkType implements \Jso
     }
 
     /**
-     * Get URL to be passed to openWebApp
+     * Get URL to be passed to openWebApp.
      */
     public function getUrl(): string
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeAttachmentMenuBot extends InternalLinkType implements \Jso
     }
 
     /**
-     * Set URL to be passed to openWebApp
+     * Set URL to be passed to openWebApp.
      */
     public function setUrl(string $url): self
     {

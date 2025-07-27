@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes an animation from the list of saved animations @animation Animation file to be removed
+ * Removes an animation from the list of saved animations @animation Animation file to be removed.
  */
 class RemoveSavedAnimation extends Ok implements \JsonSerializable
 {

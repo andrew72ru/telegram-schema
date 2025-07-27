@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the content of a checklist in a message sent on behalf of a business account; for bots only
+ * Edits the content of a checklist in a message sent on behalf of a business account; for bots only.
  */
 class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -39,7 +39,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -49,7 +49,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -57,7 +57,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -67,7 +67,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -75,7 +75,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -85,7 +85,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -93,7 +93,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -103,7 +103,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Get The new checklist. If some tasks were completed, this information will be kept
+     * Get The new checklist. If some tasks were completed, this information will be kept.
      */
     public function getChecklist(): InputChecklist|null
     {
@@ -111,7 +111,7 @@ class EditBusinessMessageChecklist extends BusinessMessage implements \JsonSeria
     }
 
     /**
-     * Set The new checklist. If some tasks were completed, this information will be kept
+     * Set The new checklist. If some tasks were completed, this information will be kept.
      */
     public function setChecklist(InputChecklist|null $checklist): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Replaces existing sticker in a set. The function is equivalent to removeStickerFromSet, then addStickerToSet, then setStickerPositionInSet
+ * Replaces existing sticker in a set. The function is equivalent to removeStickerFromSet, then addStickerToSet, then setStickerPositionInSet.
  */
 class ReplaceStickerInSet extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set owner; ignored for regular users
+     * Get Sticker set owner; ignored for regular users.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set owner; ignored for regular users
+     * Set Sticker set owner; ignored for regular users.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker set name. The sticker set must be owned by the current user
+     * Get Sticker set name. The sticker set must be owned by the current user.
      */
     public function getName(): string
     {
@@ -54,7 +54,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker set name. The sticker set must be owned by the current user
+     * Set Sticker set name. The sticker set must be owned by the current user.
      */
     public function setName(string $name): self
     {
@@ -64,7 +64,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker to remove from the set
+     * Get Sticker to remove from the set.
      */
     public function getOldSticker(): InputFile|null
     {
@@ -72,7 +72,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker to remove from the set
+     * Set Sticker to remove from the set.
      */
     public function setOldSticker(InputFile|null $oldSticker): self
     {
@@ -82,7 +82,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Sticker to add to the set
+     * Get Sticker to add to the set.
      */
     public function getNewSticker(): InputSticker|null
     {
@@ -90,7 +90,7 @@ class ReplaceStickerInSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Sticker to add to the set
+     * Set Sticker to add to the set.
      */
     public function setNewSticker(InputSticker|null $newSticker): self
     {

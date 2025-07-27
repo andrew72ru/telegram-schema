@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks whether a file can be downloaded and saved locally by Web App request
+ * Checks whether a file can be downloaded and saved locally by Web App request.
  */
 class CheckWebAppFileDownload extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class CheckWebAppFileDownload extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the bot, providing the Web App
+     * Get Identifier of the bot, providing the Web App.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class CheckWebAppFileDownload extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the bot, providing the Web App
+     * Set Identifier of the bot, providing the Web App.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class CheckWebAppFileDownload extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Name of the file
+     * Get Name of the file.
      */
     public function getFileName(): string
     {
@@ -51,7 +51,7 @@ class CheckWebAppFileDownload extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Name of the file
+     * Set Name of the file.
      */
     public function setFileName(string $fileName): self
     {
@@ -61,7 +61,7 @@ class CheckWebAppFileDownload extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get URL of the file
+     * Get URL of the file.
      */
     public function getUrl(): string
     {
@@ -69,7 +69,7 @@ class CheckWebAppFileDownload extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set URL of the file
+     * Set URL of the file.
      */
     public function setUrl(string $url): self
     {

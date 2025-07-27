@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a new media preview to the beginning of the list of media previews of a bot. Returns the added preview after addition is completed server-side. The total number of previews must not exceed getOption("bot_media_preview_count_max") for the given language
+ * Adds a new media preview to the beginning of the list of media previews of a bot. Returns the added preview after addition is completed server-side. The total number of previews must not exceed getOption("bot_media_preview_count_max") for the given language.
  */
 class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Get Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot. The bot must be owned and must have the main Web App
+     * Set Identifier of the target bot. The bot must be owned and must have the main Web App.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code for which preview is added. If empty, then the preview will be shown to all users for whose languages there are no dedicated previews.
+     * Get A two-letter ISO 639-1 language code for which preview is added. If empty, then the preview will be shown to all users for whose languages there are no dedicated previews..
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code for which preview is added. If empty, then the preview will be shown to all users for whose languages there are no dedicated previews.
+     * Set A two-letter ISO 639-1 language code for which preview is added. If empty, then the preview will be shown to all users for whose languages there are no dedicated previews..
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Get Content of the added preview
+     * Get Content of the added preview.
      */
     public function getContent(): InputStoryContent|null
     {
@@ -69,7 +69,7 @@ class AddBotMediaPreview extends BotMediaPreview implements \JsonSerializable
     }
 
     /**
-     * Set Content of the added preview
+     * Set Content of the added preview.
      */
     public function setContent(InputStoryContent|null $content): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes manually or automatically chosen quote from another message
+ * Describes manually or automatically chosen quote from another message.
  */
 class TextQuote implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class TextQuote implements \JsonSerializable
     }
 
     /**
-     * Get Text of the quote. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities can be present in the text
+     * Get Text of the quote. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities can be present in the text.
      */
     public function getText(): FormattedText|null
     {
@@ -33,7 +33,7 @@ class TextQuote implements \JsonSerializable
     }
 
     /**
-     * Set Text of the quote. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities can be present in the text
+     * Set Text of the quote. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities can be present in the text.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -43,7 +43,7 @@ class TextQuote implements \JsonSerializable
     }
 
     /**
-     * Get Approximate quote position in the original message in UTF-16 code units as specified by the message sender
+     * Get Approximate quote position in the original message in UTF-16 code units as specified by the message sender.
      */
     public function getPosition(): int
     {
@@ -51,7 +51,7 @@ class TextQuote implements \JsonSerializable
     }
 
     /**
-     * Set Approximate quote position in the original message in UTF-16 code units as specified by the message sender
+     * Set Approximate quote position in the original message in UTF-16 code units as specified by the message sender.
      */
     public function setPosition(int $position): self
     {
@@ -61,7 +61,7 @@ class TextQuote implements \JsonSerializable
     }
 
     /**
-     * Get True, if the quote was manually chosen by the message sender
+     * Get True, if the quote was manually chosen by the message sender.
      */
     public function getIsManual(): bool
     {
@@ -69,7 +69,7 @@ class TextQuote implements \JsonSerializable
     }
 
     /**
-     * Set True, if the quote was manually chosen by the message sender
+     * Set True, if the quote was manually chosen by the message sender.
      */
     public function setIsManual(bool $isManual): self
     {

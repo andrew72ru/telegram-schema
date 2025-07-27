@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a receiving of a commission from an affiliate program; for regular users, bots and channel chats only
+ * The transaction is a receiving of a commission from an affiliate program; for regular users, bots and channel chats only.
  */
 class StarTransactionTypeAffiliateProgramCommission extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeAffiliateProgramCommission extends StarTransactionType 
     }
 
     /**
-     * Get Identifier of the chat that created the affiliate program
+     * Get Identifier of the chat that created the affiliate program.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeAffiliateProgramCommission extends StarTransactionType 
     }
 
     /**
-     * Set Identifier of the chat that created the affiliate program
+     * Set Identifier of the chat that created the affiliate program.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeAffiliateProgramCommission extends StarTransactionType 
     }
 
     /**
-     * Get The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner
+     * Get The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
      */
     public function getCommissionPerMille(): int
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeAffiliateProgramCommission extends StarTransactionType 
     }
 
     /**
-     * Set The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner
+     * Set The number of Telegram Stars received by the affiliate for each 1000 Telegram Stars received by the program owner.
      */
     public function setCommissionPerMille(int $commissionPerMille): self
     {

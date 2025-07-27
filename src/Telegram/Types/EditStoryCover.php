@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes cover of a video story. Can be called only if story.can_be_edited == true and the story isn't being edited now
+ * Changes cover of a video story. Can be called only if story.can_be_edited == true and the story isn't being edited now.
  */
 class EditStoryCover extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditStoryCover extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -33,7 +33,7 @@ class EditStoryCover extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -43,7 +43,7 @@ class EditStoryCover extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story to edit
+     * Get Identifier of the story to edit.
      */
     public function getStoryId(): int
     {
@@ -51,7 +51,7 @@ class EditStoryCover extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story to edit
+     * Set Identifier of the story to edit.
      */
     public function setStoryId(int $storyId): self
     {
@@ -61,7 +61,7 @@ class EditStoryCover extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New timestamp of the frame, which will be used as video thumbnail
+     * Get New timestamp of the frame, which will be used as video thumbnail.
      */
     public function getCoverFrameTimestamp(): float
     {
@@ -69,7 +69,7 @@ class EditStoryCover extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New timestamp of the frame, which will be used as video thumbnail
+     * Set New timestamp of the frame, which will be used as video thumbnail.
      */
     public function setCoverFrameTimestamp(float $coverFrameTimestamp): self
     {

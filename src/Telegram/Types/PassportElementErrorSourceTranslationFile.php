@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * One of files with the translation of the document contains an error. The error will be considered resolved when the file changes @file_index Index of a file with the error
+ * One of files with the translation of the document contains an error. The error will be considered resolved when the file changes @file_index Index of a file with the error.
  */
 class PassportElementErrorSourceTranslationFile extends PassportElementErrorSource implements \JsonSerializable
 {

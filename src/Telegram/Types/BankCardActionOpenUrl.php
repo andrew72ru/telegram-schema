@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an action associated with a bank card number @text Action text @url The URL to be opened
+ * Describes an action associated with a bank card number @text Action text @url The URL to be opened.
  */
 class BankCardActionOpenUrl implements \JsonSerializable
 {

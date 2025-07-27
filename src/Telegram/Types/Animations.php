@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of animations @animations List of animations
+ * Represents a list of animations @animations List of animations.
  */
 class Animations implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The current user shared users, which were requested by the bot @users The shared users @button_id Identifier of the keyboard button with the request
+ * The current user shared users, which were requested by the bot @users The shared users @button_id Identifier of the keyboard button with the request.
  */
 class MessageUsersShared extends MessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A list of active notifications in a notification group has changed
+ * A list of active notifications in a notification group has changed.
  */
 class UpdateNotificationGroup extends Update implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique notification group identifier
+     * Get Unique notification group identifier.
      */
     public function getNotificationGroupId(): int
     {
@@ -48,7 +48,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique notification group identifier
+     * Set Unique notification group identifier.
      */
     public function setNotificationGroupId(int $notificationGroupId): self
     {
@@ -58,7 +58,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New type of the notification group
+     * Get New type of the notification group.
      */
     public function getType(): NotificationGroupType|null
     {
@@ -66,7 +66,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New type of the notification group
+     * Set New type of the notification group.
      */
     public function setType(NotificationGroupType|null $type): self
     {
@@ -76,7 +76,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat to which all notifications in the group belong
+     * Get Identifier of a chat to which all notifications in the group belong.
      */
     public function getChatId(): int
     {
@@ -84,7 +84,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat to which all notifications in the group belong
+     * Set Identifier of a chat to which all notifications in the group belong.
      */
     public function setChatId(int $chatId): self
     {
@@ -94,7 +94,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier, which notification settings must be applied to the added notifications
+     * Get Chat identifier, which notification settings must be applied to the added notifications.
      */
     public function getNotificationSettingsChatId(): int
     {
@@ -102,7 +102,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier, which notification settings must be applied to the added notifications
+     * Set Chat identifier, which notification settings must be applied to the added notifications.
      */
     public function setNotificationSettingsChatId(int $notificationSettingsChatId): self
     {
@@ -112,7 +112,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the notification sound to be played; 0 if sound is disabled
+     * Get Identifier of the notification sound to be played; 0 if sound is disabled.
      */
     public function getNotificationSoundId(): int
     {
@@ -120,7 +120,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the notification sound to be played; 0 if sound is disabled
+     * Set Identifier of the notification sound to be played; 0 if sound is disabled.
      */
     public function setNotificationSoundId(int $notificationSoundId): self
     {
@@ -130,7 +130,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of unread notifications in the group, can be bigger than number of active notifications
+     * Get Total number of unread notifications in the group, can be bigger than number of active notifications.
      */
     public function getTotalCount(): int
     {
@@ -138,7 +138,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of unread notifications in the group, can be bigger than number of active notifications
+     * Set Total number of unread notifications in the group, can be bigger than number of active notifications.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -148,7 +148,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get List of added group notifications, sorted by notification identifier
+     * Get List of added group notifications, sorted by notification identifier.
      */
     public function getAddedNotifications(): array|null
     {
@@ -156,7 +156,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set List of added group notifications, sorted by notification identifier
+     * Set List of added group notifications, sorted by notification identifier.
      */
     public function setAddedNotifications(array|null $addedNotifications): self
     {
@@ -166,7 +166,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of removed group notifications, sorted by notification identifier
+     * Get Identifiers of removed group notifications, sorted by notification identifier.
      */
     public function getRemovedNotificationIds(): array|null
     {
@@ -174,7 +174,7 @@ class UpdateNotificationGroup extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of removed group notifications, sorted by notification identifier
+     * Set Identifiers of removed group notifications, sorted by notification identifier.
      */
     public function setRemovedNotificationIds(array|null $removedNotificationIds): self
     {

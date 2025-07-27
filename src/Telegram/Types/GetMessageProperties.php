@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns properties of a message. This is an offline method @chat_id Chat identifier @message_id Identifier of the message
+ * Returns properties of a message. This is an offline method @chat_id Chat identifier @message_id Identifier of the message.
  */
 class GetMessageProperties extends MessageProperties implements \JsonSerializable
 {

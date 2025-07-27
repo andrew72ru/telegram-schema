@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about available video chat streams @group_call_id Group call identifier
+ * Returns information about available video chat streams @group_call_id Group call identifier.
  */
 class GetVideoChatStreams extends VideoChatStreams implements \JsonSerializable
 {

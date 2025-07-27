@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Pins or unpins a message sent on behalf of a business account; for bots only
+ * Pins or unpins a message sent on behalf of a business account; for bots only.
  */
 class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -36,7 +36,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -46,7 +46,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -54,7 +54,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -64,7 +64,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -72,7 +72,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -82,7 +82,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to pin the message, pass false to unpin it
+     * Get Pass true to pin the message, pass false to unpin it.
      */
     public function getIsPinned(): bool
     {
@@ -90,7 +90,7 @@ class SetBusinessMessageIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to pin the message, pass false to unpin it
+     * Set Pass true to pin the message, pass false to unpin it.
      */
     public function setIsPinned(bool $isPinned): self
     {

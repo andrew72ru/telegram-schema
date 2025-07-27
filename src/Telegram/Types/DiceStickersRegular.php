@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A regular animated sticker @sticker The animated sticker with the dice animation
+ * A regular animated sticker @sticker The animated sticker with the dice animation.
  */
 class DiceStickersRegular extends DiceStickers implements \JsonSerializable
 {

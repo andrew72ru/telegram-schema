@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The media is hidden until the invoice is paid
+ * The media is hidden until the invoice is paid.
  */
 class PaidMediaPreview extends PaidMedia implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media width; 0 if unknown
+     * Get Media width; 0 if unknown.
      */
     public function getWidth(): int
     {
@@ -36,7 +36,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media width; 0 if unknown
+     * Set Media width; 0 if unknown.
      */
     public function setWidth(int $width): self
     {
@@ -46,7 +46,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media height; 0 if unknown
+     * Get Media height; 0 if unknown.
      */
     public function getHeight(): int
     {
@@ -54,7 +54,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media height; 0 if unknown
+     * Set Media height; 0 if unknown.
      */
     public function setHeight(int $height): self
     {
@@ -64,7 +64,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media duration, in seconds; 0 if unknown
+     * Get Media duration, in seconds; 0 if unknown.
      */
     public function getDuration(): int
     {
@@ -72,7 +72,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media duration, in seconds; 0 if unknown
+     * Set Media duration, in seconds; 0 if unknown.
      */
     public function setDuration(int $duration): self
     {
@@ -82,7 +82,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Media minithumbnail; may be null
+     * Get Media minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -90,7 +90,7 @@ class PaidMediaPreview extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Media minithumbnail; may be null
+     * Set Media minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {

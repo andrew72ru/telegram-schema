@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT
+ * Describes an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT.
  */
 class UpgradedGift implements \JsonSerializable
 {
@@ -61,7 +61,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the gift
+     * Get Unique identifier of the gift.
      */
     public function getId(): int
     {
@@ -69,7 +69,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the gift
+     * Set Unique identifier of the gift.
      */
     public function setId(int $id): self
     {
@@ -79,7 +79,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get The title of the upgraded gift
+     * Get The title of the upgraded gift.
      */
     public function getTitle(): string
     {
@@ -87,7 +87,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set The title of the upgraded gift
+     * Set The title of the upgraded gift.
      */
     public function setTitle(string $title): self
     {
@@ -97,7 +97,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift or sendResoldGift
+     * Get Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift or sendResoldGift.
      */
     public function getName(): string
     {
@@ -105,7 +105,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift or sendResoldGift
+     * Set Unique name of the upgraded gift that can be used with internalLinkTypeUpgradedGift or sendResoldGift.
      */
     public function setName(string $name): self
     {
@@ -115,7 +115,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Unique number of the upgraded gift among gifts upgraded from the same gift
+     * Get Unique number of the upgraded gift among gifts upgraded from the same gift.
      */
     public function getNumber(): int
     {
@@ -123,7 +123,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Unique number of the upgraded gift among gifts upgraded from the same gift
+     * Set Unique number of the upgraded gift among gifts upgraded from the same gift.
      */
     public function setNumber(int $number): self
     {
@@ -133,7 +133,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Total number of gifts that were upgraded from the same gift
+     * Get Total number of gifts that were upgraded from the same gift.
      */
     public function getTotalUpgradedCount(): int
     {
@@ -141,7 +141,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Total number of gifts that were upgraded from the same gift
+     * Set Total number of gifts that were upgraded from the same gift.
      */
     public function setTotalUpgradedCount(int $totalUpgradedCount): self
     {
@@ -151,7 +151,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of gifts that can be upgraded from the same gift
+     * Get The maximum number of gifts that can be upgraded from the same gift.
      */
     public function getMaxUpgradedCount(): int
     {
@@ -159,7 +159,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of gifts that can be upgraded from the same gift
+     * Set The maximum number of gifts that can be upgraded from the same gift.
      */
     public function setMaxUpgradedCount(int $maxUpgradedCount): self
     {
@@ -169,7 +169,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the chat that owns the upgraded gift; may be null if none or unknown
+     * Get Identifier of the user or the chat that owns the upgraded gift; may be null if none or unknown.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -177,7 +177,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the chat that owns the upgraded gift; may be null if none or unknown
+     * Set Identifier of the user or the chat that owns the upgraded gift; may be null if none or unknown.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -187,7 +187,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Address of the gift NFT owner in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address
+     * Get Address of the gift NFT owner in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address.
      */
     public function getOwnerAddress(): string
     {
@@ -195,7 +195,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Address of the gift NFT owner in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address
+     * Set Address of the gift NFT owner in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address.
      */
     public function setOwnerAddress(string $ownerAddress): self
     {
@@ -205,7 +205,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Name of the owner for the case when owner identifier and address aren't known
+     * Get Name of the owner for the case when owner identifier and address aren't known.
      */
     public function getOwnerName(): string
     {
@@ -213,7 +213,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Name of the owner for the case when owner identifier and address aren't known
+     * Set Name of the owner for the case when owner identifier and address aren't known.
      */
     public function setOwnerName(string $ownerName): self
     {
@@ -223,7 +223,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Address of the gift NFT in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address
+     * Get Address of the gift NFT in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address.
      */
     public function getGiftAddress(): string
     {
@@ -231,7 +231,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Address of the gift NFT in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address
+     * Set Address of the gift NFT in TON blockchain; may be empty if none. Append the address to getOption("ton_blockchain_explorer_url") to get a link with information about the address.
      */
     public function setGiftAddress(string $giftAddress): self
     {
@@ -241,7 +241,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Model of the upgraded gift
+     * Get Model of the upgraded gift.
      */
     public function getModel(): UpgradedGiftModel|null
     {
@@ -249,7 +249,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Model of the upgraded gift
+     * Set Model of the upgraded gift.
      */
     public function setModel(UpgradedGiftModel|null $model): self
     {
@@ -259,7 +259,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Symbol of the upgraded gift
+     * Get Symbol of the upgraded gift.
      */
     public function getSymbol(): UpgradedGiftSymbol|null
     {
@@ -267,7 +267,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Symbol of the upgraded gift
+     * Set Symbol of the upgraded gift.
      */
     public function setSymbol(UpgradedGiftSymbol|null $symbol): self
     {
@@ -277,7 +277,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Backdrop of the upgraded gift
+     * Get Backdrop of the upgraded gift.
      */
     public function getBackdrop(): UpgradedGiftBackdrop|null
     {
@@ -285,7 +285,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Backdrop of the upgraded gift
+     * Set Backdrop of the upgraded gift.
      */
     public function setBackdrop(UpgradedGiftBackdrop|null $backdrop): self
     {
@@ -295,7 +295,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Information about the originally sent gift; may be null if unknown
+     * Get Information about the originally sent gift; may be null if unknown.
      */
     public function getOriginalDetails(): UpgradedGiftOriginalDetails|null
     {
@@ -303,7 +303,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Information about the originally sent gift; may be null if unknown
+     * Set Information about the originally sent gift; may be null if unknown.
      */
     public function setOriginalDetails(UpgradedGiftOriginalDetails|null $originalDetails): self
     {
@@ -313,7 +313,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid to buy the gift and send it to someone else; 0 if resale isn't possible
+     * Get Number of Telegram Stars that must be paid to buy the gift and send it to someone else; 0 if resale isn't possible.
      */
     public function getResaleStarCount(): int
     {
@@ -321,7 +321,7 @@ class UpgradedGift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid to buy the gift and send it to someone else; 0 if resale isn't possible
+     * Set Number of Telegram Stars that must be paid to buy the gift and send it to someone else; 0 if resale isn't possible.
      */
     public function setResaleStarCount(int $resaleStarCount): self
     {

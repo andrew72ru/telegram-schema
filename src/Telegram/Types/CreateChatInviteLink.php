@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new invite link for a chat. Available for basic groups, supergroups, and channels. Requires administrator privileges and can_invite_users right in the chat
+ * Creates a new invite link for a chat. Available for basic groups, supergroups, and channels. Requires administrator privileges and can_invite_users right in the chat.
  */
 class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Invite link name; 0-32 characters
+     * Get Invite link name; 0-32 characters.
      */
     public function getName(): string
     {
@@ -57,7 +57,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Invite link name; 0-32 characters
+     * Set Invite link name; 0-32 characters.
      */
     public function setName(string $name): self
     {
@@ -67,7 +67,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the link will expire; pass 0 if never
+     * Get Point in time (Unix timestamp) when the link will expire; pass 0 if never.
      */
     public function getExpirationDate(): int
     {
@@ -75,7 +75,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the link will expire; pass 0 if never
+     * Set Point in time (Unix timestamp) when the link will expire; pass 0 if never.
      */
     public function setExpirationDate(int $expirationDate): self
     {
@@ -85,7 +85,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of chat members that can join the chat via the link simultaneously; 0-99999; pass 0 if not limited
+     * Get The maximum number of chat members that can join the chat via the link simultaneously; 0-99999; pass 0 if not limited.
      */
     public function getMemberLimit(): int
     {
@@ -93,7 +93,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of chat members that can join the chat via the link simultaneously; 0-99999; pass 0 if not limited
+     * Set The maximum number of chat members that can join the chat via the link simultaneously; 0-99999; pass 0 if not limited.
      */
     public function setMemberLimit(int $memberLimit): self
     {
@@ -103,7 +103,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if users joining the chat via the link need to be approved by chat administrators. In this case, member_limit must be 0
+     * Get Pass true if users joining the chat via the link need to be approved by chat administrators. In this case, member_limit must be 0.
      */
     public function getCreatesJoinRequest(): bool
     {
@@ -111,7 +111,7 @@ class CreateChatInviteLink extends ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if users joining the chat via the link need to be approved by chat administrators. In this case, member_limit must be 0
+     * Set Pass true if users joining the chat via the link need to be approved by chat administrators. In this case, member_limit must be 0.
      */
     public function setCreatesJoinRequest(bool $createsJoinRequest): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An authentication code is a word delivered via an SMS message to the specified phone number; non-official applications may not receive this type of code
+ * An authentication code is a word delivered via an SMS message to the specified phone number; non-official applications may not receive this type of code.
  */
 class AuthenticationCodeTypeSmsWord extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class AuthenticationCodeTypeSmsWord extends AuthenticationCodeType implements \J
     }
 
     /**
-     * Get The first letters of the word if known
+     * Get The first letters of the word if known.
      */
     public function getFirstLetter(): string
     {
@@ -27,7 +27,7 @@ class AuthenticationCodeTypeSmsWord extends AuthenticationCodeType implements \J
     }
 
     /**
-     * Set The first letters of the word if known
+     * Set The first letters of the word if known.
      */
     public function setFirstLetter(string $firstLetter): self
     {

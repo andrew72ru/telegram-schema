@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Chat permissions were changed @chat_id Chat identifier @permissions The new chat permissions
+ * Chat permissions were changed @chat_id Chat identifier @permissions The new chat permissions.
  */
 class UpdateChatPermissions extends Update implements \JsonSerializable
 {

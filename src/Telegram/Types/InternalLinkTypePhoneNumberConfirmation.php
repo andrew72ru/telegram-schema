@@ -22,7 +22,7 @@ class InternalLinkTypePhoneNumberConfirmation extends InternalLinkType implement
     }
 
     /**
-     * Get Hash value from the link
+     * Get Hash value from the link.
      */
     public function getHash(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypePhoneNumberConfirmation extends InternalLinkType implement
     }
 
     /**
-     * Set Hash value from the link
+     * Set Hash value from the link.
      */
     public function setHash(string $hash): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypePhoneNumberConfirmation extends InternalLinkType implement
     }
 
     /**
-     * Get Phone number value from the link
+     * Get Phone number value from the link.
      */
     public function getPhoneNumber(): string
     {
@@ -48,7 +48,7 @@ class InternalLinkTypePhoneNumberConfirmation extends InternalLinkType implement
     }
 
     /**
-     * Set Phone number value from the link
+     * Set Phone number value from the link.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {

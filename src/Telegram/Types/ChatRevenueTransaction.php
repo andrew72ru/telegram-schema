@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a chat revenue transactions
+ * Contains a chat revenue transactions.
  */
 class ChatRevenueTransaction implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatRevenueTransaction implements \JsonSerializable
     }
 
     /**
-     * Get Cryptocurrency in which revenue is calculated
+     * Get Cryptocurrency in which revenue is calculated.
      */
     public function getCryptocurrency(): string
     {
@@ -33,7 +33,7 @@ class ChatRevenueTransaction implements \JsonSerializable
     }
 
     /**
-     * Set Cryptocurrency in which revenue is calculated
+     * Set Cryptocurrency in which revenue is calculated.
      */
     public function setCryptocurrency(string $cryptocurrency): self
     {
@@ -43,7 +43,7 @@ class ChatRevenueTransaction implements \JsonSerializable
     }
 
     /**
-     * Get The withdrawn amount, in the smallest units of the cryptocurrency
+     * Get The withdrawn amount, in the smallest units of the cryptocurrency.
      */
     public function getCryptocurrencyAmount(): int
     {
@@ -51,7 +51,7 @@ class ChatRevenueTransaction implements \JsonSerializable
     }
 
     /**
-     * Set The withdrawn amount, in the smallest units of the cryptocurrency
+     * Set The withdrawn amount, in the smallest units of the cryptocurrency.
      */
     public function setCryptocurrencyAmount(int $cryptocurrencyAmount): self
     {
@@ -61,7 +61,7 @@ class ChatRevenueTransaction implements \JsonSerializable
     }
 
     /**
-     * Get Type of the transaction
+     * Get Type of the transaction.
      */
     public function getType(): ChatRevenueTransactionType|null
     {
@@ -69,7 +69,7 @@ class ChatRevenueTransaction implements \JsonSerializable
     }
 
     /**
-     * Set Type of the transaction
+     * Set Type of the transaction.
      */
     public function setType(ChatRevenueTransactionType|null $type): self
     {

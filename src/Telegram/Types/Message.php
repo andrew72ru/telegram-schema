@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a message
+ * Describes a message.
  */
 class Message implements \JsonSerializable
 {
@@ -124,7 +124,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier; unique for the chat to which the message belongs
+     * Get Message identifier; unique for the chat to which the message belongs.
      */
     public function getId(): int
     {
@@ -132,7 +132,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier; unique for the chat to which the message belongs
+     * Set Message identifier; unique for the chat to which the message belongs.
      */
     public function setId(int $id): self
     {
@@ -142,7 +142,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sender of the message
+     * Get Identifier of the sender of the message.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -150,7 +150,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sender of the message
+     * Set Identifier of the sender of the message.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -160,7 +160,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -168,7 +168,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -178,7 +178,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent
+     * Get The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent.
      */
     public function getSendingState(): MessageSendingState|null
     {
@@ -186,7 +186,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent
+     * Set The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent.
      */
     public function setSendingState(MessageSendingState|null $sendingState): self
     {
@@ -196,7 +196,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get The scheduling state of the message; may be null if the message isn't scheduled
+     * Get The scheduling state of the message; may be null if the message isn't scheduled.
      */
     public function getSchedulingState(): MessageSchedulingState|null
     {
@@ -204,7 +204,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set The scheduling state of the message; may be null if the message isn't scheduled
+     * Set The scheduling state of the message; may be null if the message isn't scheduled.
      */
     public function setSchedulingState(MessageSchedulingState|null $schedulingState): self
     {
@@ -214,7 +214,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message is outgoing
+     * Get True, if the message is outgoing.
      */
     public function getIsOutgoing(): bool
     {
@@ -222,7 +222,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message is outgoing
+     * Set True, if the message is outgoing.
      */
     public function setIsOutgoing(bool $isOutgoing): self
     {
@@ -232,7 +232,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message is pinned
+     * Get True, if the message is pinned.
      */
     public function getIsPinned(): bool
     {
@@ -240,7 +240,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message is pinned
+     * Set True, if the message is pinned.
      */
     public function setIsPinned(bool $isPinned): self
     {
@@ -250,7 +250,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message was sent because of a scheduled action by the message sender, for example, as away, or greeting service message
+     * Get True, if the message was sent because of a scheduled action by the message sender, for example, as away, or greeting service message.
      */
     public function getIsFromOffline(): bool
     {
@@ -258,7 +258,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message was sent because of a scheduled action by the message sender, for example, as away, or greeting service message
+     * Set True, if the message was sent because of a scheduled action by the message sender, for example, as away, or greeting service message.
      */
     public function setIsFromOffline(bool $isFromOffline): self
     {
@@ -268,7 +268,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if content of the message can be saved locally
+     * Get True, if content of the message can be saved locally.
      */
     public function getCanBeSaved(): bool
     {
@@ -276,7 +276,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if content of the message can be saved locally
+     * Set True, if content of the message can be saved locally.
      */
     public function setCanBeSaved(bool $canBeSaved): self
     {
@@ -286,7 +286,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if media timestamp entities refers to a media in this message as opposed to a media in the replied message
+     * Get True, if media timestamp entities refers to a media in this message as opposed to a media in the replied message.
      */
     public function getHasTimestampedMedia(): bool
     {
@@ -294,7 +294,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if media timestamp entities refers to a media in this message as opposed to a media in the replied message
+     * Set True, if media timestamp entities refers to a media in this message as opposed to a media in the replied message.
      */
     public function setHasTimestampedMedia(bool $hasTimestampedMedia): self
     {
@@ -304,7 +304,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message is a channel post. All messages to channels are channel posts, all other messages are not channel posts
+     * Get True, if the message is a channel post. All messages to channels are channel posts, all other messages are not channel posts.
      */
     public function getIsChannelPost(): bool
     {
@@ -312,7 +312,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message is a channel post. All messages to channels are channel posts, all other messages are not channel posts
+     * Set True, if the message is a channel post. All messages to channels are channel posts, all other messages are not channel posts.
      */
     public function setIsChannelPost(bool $isChannelPost): self
     {
@@ -322,7 +322,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message contains an unread mention for the current user
+     * Get True, if the message contains an unread mention for the current user.
      */
     public function getContainsUnreadMention(): bool
     {
@@ -330,7 +330,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message contains an unread mention for the current user
+     * Set True, if the message contains an unread mention for the current user.
      */
     public function setContainsUnreadMention(bool $containsUnreadMention): self
     {
@@ -340,7 +340,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message was sent; 0 for scheduled messages
+     * Get Point in time (Unix timestamp) when the message was sent; 0 for scheduled messages.
      */
     public function getDate(): int
     {
@@ -348,7 +348,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message was sent; 0 for scheduled messages
+     * Set Point in time (Unix timestamp) when the message was sent; 0 for scheduled messages.
      */
     public function setDate(int $date): self
     {
@@ -358,7 +358,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message was last edited; 0 for scheduled messages
+     * Get Point in time (Unix timestamp) when the message was last edited; 0 for scheduled messages.
      */
     public function getEditDate(): int
     {
@@ -366,7 +366,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message was last edited; 0 for scheduled messages
+     * Set Point in time (Unix timestamp) when the message was last edited; 0 for scheduled messages.
      */
     public function setEditDate(int $editDate): self
     {
@@ -376,7 +376,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about the initial message sender; may be null if none or unknown
+     * Get Information about the initial message sender; may be null if none or unknown.
      */
     public function getForwardInfo(): MessageForwardInfo|null
     {
@@ -384,7 +384,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about the initial message sender; may be null if none or unknown
+     * Set Information about the initial message sender; may be null if none or unknown.
      */
     public function setForwardInfo(MessageForwardInfo|null $forwardInfo): self
     {
@@ -394,7 +394,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about the initial message for messages created with importMessages; may be null if the message isn't imported
+     * Get Information about the initial message for messages created with importMessages; may be null if the message isn't imported.
      */
     public function getImportInfo(): MessageImportInfo|null
     {
@@ -402,7 +402,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about the initial message for messages created with importMessages; may be null if the message isn't imported
+     * Set Information about the initial message for messages created with importMessages; may be null if the message isn't imported.
      */
     public function setImportInfo(MessageImportInfo|null $importInfo): self
     {
@@ -412,7 +412,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about interactions with the message; may be null if none
+     * Get Information about interactions with the message; may be null if none.
      */
     public function getInteractionInfo(): MessageInteractionInfo|null
     {
@@ -420,7 +420,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about interactions with the message; may be null if none
+     * Set Information about interactions with the message; may be null if none.
      */
     public function setInteractionInfo(MessageInteractionInfo|null $interactionInfo): self
     {
@@ -430,7 +430,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about unread reactions added to the message
+     * Get Information about unread reactions added to the message.
      */
     public function getUnreadReactions(): array|null
     {
@@ -438,7 +438,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about unread reactions added to the message
+     * Set Information about unread reactions added to the message.
      */
     public function setUnreadReactions(array|null $unreadReactions): self
     {
@@ -448,7 +448,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about fact-check added to the message; may be null if none
+     * Get Information about fact-check added to the message; may be null if none.
      */
     public function getFactCheck(): FactCheck|null
     {
@@ -456,7 +456,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about fact-check added to the message; may be null if none
+     * Set Information about fact-check added to the message; may be null if none.
      */
     public function setFactCheck(FactCheck|null $factCheck): self
     {
@@ -466,7 +466,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message or the story this message is replying to; may be null if none
+     * Get Information about the message or the story this message is replying to; may be null if none.
      */
     public function getReplyTo(): MessageReplyTo|null
     {
@@ -474,7 +474,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message or the story this message is replying to; may be null if none
+     * Set Information about the message or the story this message is replying to; may be null if none.
      */
     public function setReplyTo(MessageReplyTo|null $replyTo): self
     {
@@ -484,7 +484,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get If non-zero, the identifier of the message thread the message belongs to; unique within the chat to which the message belongs
+     * Get If non-zero, the identifier of the message thread the message belongs to; unique within the chat to which the message belongs.
      */
     public function getMessageThreadId(): int
     {
@@ -492,7 +492,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set If non-zero, the identifier of the message thread the message belongs to; unique within the chat to which the message belongs
+     * Set If non-zero, the identifier of the message thread the message belongs to; unique within the chat to which the message belongs.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -502,7 +502,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the topic within the chat to which the message belongs; may be null if none
+     * Get Identifier of the topic within the chat to which the message belongs; may be null if none.
      */
     public function getTopicId(): MessageTopic|null
     {
@@ -510,7 +510,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the topic within the chat to which the message belongs; may be null if none
+     * Set Identifier of the topic within the chat to which the message belongs; may be null if none.
      */
     public function setTopicId(MessageTopic|null $topicId): self
     {
@@ -520,7 +520,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get The message's self-destruct type; may be null if none
+     * Get The message's self-destruct type; may be null if none.
      */
     public function getSelfDestructType(): MessageSelfDestructType|null
     {
@@ -528,7 +528,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set The message's self-destruct type; may be null if none
+     * Set The message's self-destruct type; may be null if none.
      */
     public function setSelfDestructType(MessageSelfDestructType|null $selfDestructType): self
     {
@@ -538,7 +538,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Time left before the message self-destruct timer expires, in seconds; 0 if self-destruction isn't scheduled yet
+     * Get Time left before the message self-destruct timer expires, in seconds; 0 if self-destruction isn't scheduled yet.
      */
     public function getSelfDestructIn(): float
     {
@@ -546,7 +546,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Time left before the message self-destruct timer expires, in seconds; 0 if self-destruction isn't scheduled yet
+     * Set Time left before the message self-destruct timer expires, in seconds; 0 if self-destruction isn't scheduled yet.
      */
     public function setSelfDestructIn(float $selfDestructIn): self
     {
@@ -556,7 +556,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Time left before the message will be automatically deleted by message_auto_delete_time setting of the chat, in seconds; 0 if never
+     * Get Time left before the message will be automatically deleted by message_auto_delete_time setting of the chat, in seconds; 0 if never.
      */
     public function getAutoDeleteIn(): float
     {
@@ -564,7 +564,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Time left before the message will be automatically deleted by message_auto_delete_time setting of the chat, in seconds; 0 if never
+     * Set Time left before the message will be automatically deleted by message_auto_delete_time setting of the chat, in seconds; 0 if never.
      */
     public function setAutoDeleteIn(float $autoDeleteIn): self
     {
@@ -574,7 +574,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get If non-zero, the user identifier of the inline bot through which this message was sent
+     * Get If non-zero, the user identifier of the inline bot through which this message was sent.
      */
     public function getViaBotUserId(): int
     {
@@ -582,7 +582,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set If non-zero, the user identifier of the inline bot through which this message was sent
+     * Set If non-zero, the user identifier of the inline bot through which this message was sent.
      */
     public function setViaBotUserId(int $viaBotUserId): self
     {
@@ -592,7 +592,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get If non-zero, the user identifier of the business bot that sent this message
+     * Get If non-zero, the user identifier of the business bot that sent this message.
      */
     public function getSenderBusinessBotUserId(): int
     {
@@ -600,7 +600,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set If non-zero, the user identifier of the business bot that sent this message
+     * Set If non-zero, the user identifier of the business bot that sent this message.
      */
     public function setSenderBusinessBotUserId(int $senderBusinessBotUserId): self
     {
@@ -610,7 +610,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the sender of the message boosted the supergroup at the time the message was sent; 0 if none or unknown. For messages sent by the current user, supergroupFullInfo.my_boost_count must be used instead
+     * Get Number of times the sender of the message boosted the supergroup at the time the message was sent; 0 if none or unknown. For messages sent by the current user, supergroupFullInfo.my_boost_count must be used instead.
      */
     public function getSenderBoostCount(): int
     {
@@ -618,7 +618,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the sender of the message boosted the supergroup at the time the message was sent; 0 if none or unknown. For messages sent by the current user, supergroupFullInfo.my_boost_count must be used instead
+     * Set Number of times the sender of the message boosted the supergroup at the time the message was sent; 0 if none or unknown. For messages sent by the current user, supergroupFullInfo.my_boost_count must be used instead.
      */
     public function setSenderBoostCount(int $senderBoostCount): self
     {
@@ -628,7 +628,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars the sender paid to send the message
+     * Get The number of Telegram Stars the sender paid to send the message.
      */
     public function getPaidMessageStarCount(): int
     {
@@ -636,7 +636,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars the sender paid to send the message
+     * Set The number of Telegram Stars the sender paid to send the message.
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {
@@ -646,7 +646,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get For channel posts and anonymous group messages, optional author signature
+     * Get For channel posts and anonymous group messages, optional author signature.
      */
     public function getAuthorSignature(): string
     {
@@ -654,7 +654,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set For channel posts and anonymous group messages, optional author signature
+     * Set For channel posts and anonymous group messages, optional author signature.
      */
     public function setAuthorSignature(string $authorSignature): self
     {
@@ -664,7 +664,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums
+     * Get Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums.
      */
     public function getMediaAlbumId(): int
     {
@@ -672,7 +672,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums
+     * Set Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums.
      */
     public function setMediaAlbumId(int $mediaAlbumId): self
     {
@@ -682,7 +682,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the effect added to the message; 0 if none
+     * Get Unique identifier of the effect added to the message; 0 if none.
      */
     public function getEffectId(): int
     {
@@ -690,7 +690,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the effect added to the message; 0 if none
+     * Set Unique identifier of the effect added to the message; 0 if none.
      */
     public function setEffectId(int $effectId): self
     {
@@ -700,7 +700,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get True, if media content of the message must be hidden with 18+ spoiler
+     * Get True, if media content of the message must be hidden with 18+ spoiler.
      */
     public function getHasSensitiveContent(): bool
     {
@@ -708,7 +708,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set True, if media content of the message must be hidden with 18+ spoiler
+     * Set True, if media content of the message must be hidden with 18+ spoiler.
      */
     public function setHasSensitiveContent(bool $hasSensitiveContent): self
     {
@@ -718,7 +718,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, contains a human-readable description of the reason why access to this message must be restricted
+     * Get If non-empty, contains a human-readable description of the reason why access to this message must be restricted.
      */
     public function getRestrictionReason(): string
     {
@@ -726,7 +726,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, contains a human-readable description of the reason why access to this message must be restricted
+     * Set If non-empty, contains a human-readable description of the reason why access to this message must be restricted.
      */
     public function setRestrictionReason(string $restrictionReason): self
     {
@@ -736,7 +736,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Content of the message
+     * Get Content of the message.
      */
     public function getContent(): MessageContent|null
     {
@@ -744,7 +744,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Content of the message
+     * Set Content of the message.
      */
     public function setContent(MessageContent|null $content): self
     {
@@ -754,7 +754,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Get Reply markup for the message; may be null if none
+     * Get Reply markup for the message; may be null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -762,7 +762,7 @@ class Message implements \JsonSerializable
     }
 
     /**
-     * Set Reply markup for the message; may be null if none
+     * Set Reply markup for the message; may be null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

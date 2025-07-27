@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user gifting Telegram Premium to another user
+ * The user gifting Telegram Premium to another user.
  */
 class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency, or "XTR" for payments in Telegram Stars
+     * Get ISO 4217 currency code of the payment currency, or "XTR" for payments in Telegram Stars.
      */
     public function getCurrency(): string
     {
@@ -39,7 +39,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency, or "XTR" for payments in Telegram Stars
+     * Set ISO 4217 currency code of the payment currency, or "XTR" for payments in Telegram Stars.
      */
     public function setCurrency(string $currency): self
     {
@@ -49,7 +49,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -57,7 +57,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -67,7 +67,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Get Identifier of the user which will receive Telegram Premium
+     * Get Identifier of the user which will receive Telegram Premium.
      */
     public function getUserId(): int
     {
@@ -75,7 +75,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Set Identifier of the user which will receive Telegram Premium
+     * Set Identifier of the user which will receive Telegram Premium.
      */
     public function setUserId(int $userId): self
     {
@@ -85,7 +85,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active for the user
+     * Get Number of months the Telegram Premium subscription will be active for the user.
      */
     public function getMonthCount(): int
     {
@@ -93,7 +93,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active for the user
+     * Set Number of months the Telegram Premium subscription will be active for the user.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -103,7 +103,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Get Text to show to the user receiving Telegram Premium; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Get Text to show to the user receiving Telegram Premium; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function getText(): FormattedText|null
     {
@@ -111,7 +111,7 @@ class TelegramPaymentPurposePremiumGift extends TelegramPaymentPurpose implement
     }
 
     /**
-     * Set Text to show to the user receiving Telegram Premium; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed
+     * Set Text to show to the user receiving Telegram Premium; 0-getOption("gift_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, and CustomEmoji entities are allowed.
      */
     public function setText(FormattedText|null $text): self
     {

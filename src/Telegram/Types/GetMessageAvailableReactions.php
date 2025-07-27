@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns reactions, which can be added to a message. The list can change after updateActiveEmojiReactions, updateChatAvailableReactions for the chat, or updateMessageInteractionInfo for the message
+ * Returns reactions, which can be added to a message. The list can change after updateActiveEmojiReactions, updateChatAvailableReactions for the chat, or updateMessageInteractionInfo for the message.
  */
 class GetMessageAvailableReactions extends AvailableReactions implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetMessageAvailableReactions extends AvailableReactions implements \JsonSe
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class GetMessageAvailableReactions extends AvailableReactions implements \JsonSe
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class GetMessageAvailableReactions extends AvailableReactions implements \JsonSe
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class GetMessageAvailableReactions extends AvailableReactions implements \JsonSe
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class GetMessageAvailableReactions extends AvailableReactions implements \JsonSe
     }
 
     /**
-     * Get Number of reaction per row, 5-25
+     * Get Number of reaction per row, 5-25.
      */
     public function getRowSize(): int
     {
@@ -69,7 +69,7 @@ class GetMessageAvailableReactions extends AvailableReactions implements \JsonSe
     }
 
     /**
-     * Set Number of reaction per row, 5-25
+     * Set Number of reaction per row, 5-25.
      */
     public function setRowSize(int $rowSize): self
     {

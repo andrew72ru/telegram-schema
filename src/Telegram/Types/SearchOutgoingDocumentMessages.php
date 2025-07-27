@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for outgoing messages with content of the type messageDocument in all chats except secret chats. Returns the results in reverse chronological order
+ * Searches for outgoing messages with content of the type messageDocument in all chats except secret chats. Returns the results in reverse chronological order.
  */
 class SearchOutgoingDocumentMessages extends FoundMessages implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SearchOutgoingDocumentMessages extends FoundMessages implements \JsonSeria
     }
 
     /**
-     * Get Query to search for in document file name and message caption
+     * Get Query to search for in document file name and message caption.
      */
     public function getQuery(): string
     {
@@ -30,7 +30,7 @@ class SearchOutgoingDocumentMessages extends FoundMessages implements \JsonSeria
     }
 
     /**
-     * Set Query to search for in document file name and message caption
+     * Set Query to search for in document file name and message caption.
      */
     public function setQuery(string $query): self
     {
@@ -40,7 +40,7 @@ class SearchOutgoingDocumentMessages extends FoundMessages implements \JsonSeria
     }
 
     /**
-     * Get The maximum number of messages to be returned; up to 100
+     * Get The maximum number of messages to be returned; up to 100.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class SearchOutgoingDocumentMessages extends FoundMessages implements \JsonSeria
     }
 
     /**
-     * Set The maximum number of messages to be returned; up to 100
+     * Set The maximum number of messages to be returned; up to 100.
      */
     public function setLimit(int $limit): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns stickers from the installed sticker sets that correspond to any of the given emoji or can be found by sticker-specific keywords. If the query is non-empty, then favorite, recently used or trending stickers may also be returned
+ * Returns stickers from the installed sticker sets that correspond to any of the given emoji or can be found by sticker-specific keywords. If the query is non-empty, then favorite, recently used or trending stickers may also be returned.
  */
 class GetStickers extends Stickers implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Type of the stickers to return
+     * Get Type of the stickers to return.
      */
     public function getStickerType(): StickerType|null
     {
@@ -36,7 +36,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Type of the stickers to return
+     * Set Type of the stickers to return.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -46,7 +46,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Search query; a space-separated list of emojis or a keyword prefix. If empty, returns all known installed stickers
+     * Get Search query; a space-separated list of emojis or a keyword prefix. If empty, returns all known installed stickers.
      */
     public function getQuery(): string
     {
@@ -54,7 +54,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Search query; a space-separated list of emojis or a keyword prefix. If empty, returns all known installed stickers
+     * Set Search query; a space-separated list of emojis or a keyword prefix. If empty, returns all known installed stickers.
      */
     public function setQuery(string $query): self
     {
@@ -64,7 +64,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of stickers to be returned
+     * Get The maximum number of stickers to be returned.
      */
     public function getLimit(): int
     {
@@ -72,7 +72,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of stickers to be returned
+     * Set The maximum number of stickers to be returned.
      */
     public function setLimit(int $limit): self
     {
@@ -82,7 +82,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier for which to return stickers. Available custom emoji stickers may be different for different chats
+     * Get Chat identifier for which to return stickers. Available custom emoji stickers may be different for different chats.
      */
     public function getChatId(): int
     {
@@ -90,7 +90,7 @@ class GetStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier for which to return stickers. Available custom emoji stickers may be different for different chats
+     * Set Chat identifier for which to return stickers. Available custom emoji stickers may be different for different chats.
      */
     public function setChatId(int $chatId): self
     {

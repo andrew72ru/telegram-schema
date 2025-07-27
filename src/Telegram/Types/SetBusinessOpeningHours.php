@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the business opening hours of the current user. Requires Telegram Business subscription
+ * Changes the business opening hours of the current user. Requires Telegram Business subscription.
  */
 class SetBusinessOpeningHours extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class SetBusinessOpeningHours extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new opening hours of the business; pass null to remove the opening hours; up to 28 time intervals can be specified
+     * Get The new opening hours of the business; pass null to remove the opening hours; up to 28 time intervals can be specified.
      */
     public function getOpeningHours(): BusinessOpeningHours|null
     {
@@ -27,7 +27,7 @@ class SetBusinessOpeningHours extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new opening hours of the business; pass null to remove the opening hours; up to 28 time intervals can be specified
+     * Set The new opening hours of the business; pass null to remove the opening hours; up to 28 time intervals can be specified.
      */
     public function setOpeningHours(BusinessOpeningHours|null $openingHours): self
     {

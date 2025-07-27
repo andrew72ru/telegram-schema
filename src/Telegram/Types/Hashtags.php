@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of hashtags @hashtags A list of hashtags
+ * Contains a list of hashtags @hashtags A list of hashtags.
  */
 class Hashtags implements \JsonSerializable
 {

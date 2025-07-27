@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes parameters used to join a group call
+ * Describes parameters used to join a group call.
  */
 class GroupCallJoinParameters implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Get Audio channel synchronization source identifier; received from tgcalls
+     * Get Audio channel synchronization source identifier; received from tgcalls.
      */
     public function getAudioSourceId(): int
     {
@@ -36,7 +36,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Set Audio channel synchronization source identifier; received from tgcalls
+     * Set Audio channel synchronization source identifier; received from tgcalls.
      */
     public function setAudioSourceId(int $audioSourceId): self
     {
@@ -46,7 +46,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Get Group call join payload; received from tgcalls
+     * Get Group call join payload; received from tgcalls.
      */
     public function getPayload(): string
     {
@@ -54,7 +54,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Set Group call join payload; received from tgcalls
+     * Set Group call join payload; received from tgcalls.
      */
     public function setPayload(string $payload): self
     {
@@ -64,7 +64,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to join the call with muted microphone
+     * Get Pass true to join the call with muted microphone.
      */
     public function getIsMuted(): bool
     {
@@ -72,7 +72,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to join the call with muted microphone
+     * Set Pass true to join the call with muted microphone.
      */
     public function setIsMuted(bool $isMuted): self
     {
@@ -82,7 +82,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the user's video is enabled
+     * Get Pass true if the user's video is enabled.
      */
     public function getIsMyVideoEnabled(): bool
     {
@@ -90,7 +90,7 @@ class GroupCallJoinParameters implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the user's video is enabled
+     * Set Pass true if the user's video is enabled.
      */
     public function setIsMyVideoEnabled(bool $isMyVideoEnabled): self
     {

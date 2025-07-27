@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an available stream in a video chat
+ * Describes an available stream in a video chat.
  */
 class VideoChatStream implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class VideoChatStream implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of an audio/video channel
+     * Get Identifier of an audio/video channel.
      */
     public function getChannelId(): int
     {
@@ -33,7 +33,7 @@ class VideoChatStream implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of an audio/video channel
+     * Set Identifier of an audio/video channel.
      */
     public function setChannelId(int $channelId): self
     {
@@ -43,7 +43,7 @@ class VideoChatStream implements \JsonSerializable
     }
 
     /**
-     * Get Scale of segment durations in the stream. The duration is 1000/(2**scale) milliseconds
+     * Get Scale of segment durations in the stream. The duration is 1000/(2**scale) milliseconds.
      */
     public function getScale(): int
     {
@@ -51,7 +51,7 @@ class VideoChatStream implements \JsonSerializable
     }
 
     /**
-     * Set Scale of segment durations in the stream. The duration is 1000/(2**scale) milliseconds
+     * Set Scale of segment durations in the stream. The duration is 1000/(2**scale) milliseconds.
      */
     public function setScale(int $scale): self
     {
@@ -61,7 +61,7 @@ class VideoChatStream implements \JsonSerializable
     }
 
     /**
-     * Get Point in time when the stream currently ends; Unix timestamp in milliseconds
+     * Get Point in time when the stream currently ends; Unix timestamp in milliseconds.
      */
     public function getTimeOffset(): int
     {
@@ -69,7 +69,7 @@ class VideoChatStream implements \JsonSerializable
     }
 
     /**
-     * Set Point in time when the stream currently ends; Unix timestamp in milliseconds
+     * Set Point in time when the stream currently ends; Unix timestamp in milliseconds.
      */
     public function setTimeOffset(int $timeOffset): self
     {

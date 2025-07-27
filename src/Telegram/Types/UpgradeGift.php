@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Upgrades a regular gift
+ * Upgrades a regular gift.
  */
 class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Get Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function getBusinessConnectionId(): string
     {
@@ -36,7 +36,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Set Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -46,7 +46,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift
+     * Get Identifier of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -54,7 +54,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift
+     * Set Identifier of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -64,7 +64,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to keep the original gift text, sender and receiver in the upgraded gift
+     * Get Pass true to keep the original gift text, sender and receiver in the upgraded gift.
      */
     public function getKeepOriginalDetails(): bool
     {
@@ -72,7 +72,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to keep the original gift text, sender and receiver in the upgraded gift
+     * Set Pass true to keep the original gift text, sender and receiver in the upgraded gift.
      */
     public function setKeepOriginalDetails(bool $keepOriginalDetails): self
     {
@@ -82,7 +82,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars required to pay for the upgrade. It the gift has prepaid_upgrade_star_count > 0, then pass 0, otherwise, pass gift.upgrade_star_count
+     * Get The amount of Telegram Stars required to pay for the upgrade. It the gift has prepaid_upgrade_star_count > 0, then pass 0, otherwise, pass gift.upgrade_star_count.
      */
     public function getStarCount(): int
     {
@@ -90,7 +90,7 @@ class UpgradeGift extends UpgradeGiftResult implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars required to pay for the upgrade. It the gift has prepaid_upgrade_star_count > 0, then pass 0, otherwise, pass gift.upgrade_star_count
+     * Set The amount of Telegram Stars required to pay for the upgrade. It the gift has prepaid_upgrade_star_count > 0, then pass 0, otherwise, pass gift.upgrade_star_count.
      */
     public function setStarCount(int $starCount): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a user that added paid reactions
+ * Contains information about a user that added paid reactions.
  */
 class PaidReactor implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or chat that added the reactions; may be null for anonymous reactors that aren't the current user
+     * Get Identifier of the user or chat that added the reactions; may be null for anonymous reactors that aren't the current user.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -39,7 +39,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or chat that added the reactions; may be null for anonymous reactors that aren't the current user
+     * Set Identifier of the user or chat that added the reactions; may be null for anonymous reactors that aren't the current user.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -49,7 +49,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars added
+     * Get Number of Telegram Stars added.
      */
     public function getStarCount(): int
     {
@@ -57,7 +57,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars added
+     * Set Number of Telegram Stars added.
      */
     public function setStarCount(int $starCount): self
     {
@@ -67,7 +67,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reactor is one of the most active reactors; may be false if the reactor is the current user
+     * Get True, if the reactor is one of the most active reactors; may be false if the reactor is the current user.
      */
     public function getIsTop(): bool
     {
@@ -75,7 +75,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reactor is one of the most active reactors; may be false if the reactor is the current user
+     * Set True, if the reactor is one of the most active reactors; may be false if the reactor is the current user.
      */
     public function setIsTop(bool $isTop): self
     {
@@ -85,7 +85,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Get True, if the paid reaction was added by the current user
+     * Get True, if the paid reaction was added by the current user.
      */
     public function getIsMe(): bool
     {
@@ -93,7 +93,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Set True, if the paid reaction was added by the current user
+     * Set True, if the paid reaction was added by the current user.
      */
     public function setIsMe(bool $isMe): self
     {
@@ -103,7 +103,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reactor is anonymous
+     * Get True, if the reactor is anonymous.
      */
     public function getIsAnonymous(): bool
     {
@@ -111,7 +111,7 @@ class PaidReactor implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reactor is anonymous
+     * Set True, if the reactor is anonymous.
      */
     public function setIsAnonymous(bool $isAnonymous): self
     {

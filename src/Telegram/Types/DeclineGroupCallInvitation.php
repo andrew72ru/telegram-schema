@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Declines an invitation to an active group call via messageGroupCall. Can be called both by the sender and the receiver of the invitation
+ * Declines an invitation to an active group call via messageGroupCall. Can be called both by the sender and the receiver of the invitation.
  */
 class DeclineGroupCallInvitation extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeclineGroupCallInvitation extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class DeclineGroupCallInvitation extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class DeclineGroupCallInvitation extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message of the type messageGroupCall
+     * Get Identifier of the message of the type messageGroupCall.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class DeclineGroupCallInvitation extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message of the type messageGroupCall
+     * Set Identifier of the message of the type messageGroupCall.
      */
     public function setMessageId(int $messageId): self
     {

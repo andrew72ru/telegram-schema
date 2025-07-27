@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * File with the date it was uploaded @file The file @date Point in time (Unix timestamp) when the file was uploaded
+ * File with the date it was uploaded @file The file @date Point in time (Unix timestamp) when the file was uploaded.
  */
 class DatedFile implements \JsonSerializable
 {

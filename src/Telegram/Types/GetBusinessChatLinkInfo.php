@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a business chat link @link_name Name of the link
+ * Returns information about a business chat link @see_name Name of the link.
  */
 class GetBusinessChatLinkInfo extends BusinessChatLinkInfo implements \JsonSerializable
 {

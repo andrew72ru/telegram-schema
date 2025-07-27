@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A repost of the story as a story @story The reposted story
+ * A repost of the story as a story @story The reposted story.
  */
 class StoryInteractionTypeRepost extends StoryInteractionType implements \JsonSerializable
 {

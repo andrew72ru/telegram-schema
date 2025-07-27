@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat accent color or background custom emoji were changed
+ * The chat accent color or background custom emoji were changed.
  */
 class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Get Previous identifier of chat accent color
+     * Get Previous identifier of chat accent color.
      */
     public function getOldAccentColorId(): int
     {
@@ -36,7 +36,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Set Previous identifier of chat accent color
+     * Set Previous identifier of chat accent color.
      */
     public function setOldAccentColorId(int $oldAccentColorId): self
     {
@@ -46,7 +46,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Get Previous identifier of the custom emoji; 0 if none
+     * Get Previous identifier of the custom emoji; 0 if none.
      */
     public function getOldBackgroundCustomEmojiId(): int
     {
@@ -54,7 +54,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Set Previous identifier of the custom emoji; 0 if none
+     * Set Previous identifier of the custom emoji; 0 if none.
      */
     public function setOldBackgroundCustomEmojiId(int $oldBackgroundCustomEmojiId): self
     {
@@ -64,7 +64,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Get New identifier of chat accent color
+     * Get New identifier of chat accent color.
      */
     public function getNewAccentColorId(): int
     {
@@ -72,7 +72,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Set New identifier of chat accent color
+     * Set New identifier of chat accent color.
      */
     public function setNewAccentColorId(int $newAccentColorId): self
     {
@@ -82,7 +82,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Get New identifier of the custom emoji; 0 if none
+     * Get New identifier of the custom emoji; 0 if none.
      */
     public function getNewBackgroundCustomEmojiId(): int
     {
@@ -90,7 +90,7 @@ class ChatEventAccentColorChanged extends ChatEventAction implements \JsonSerial
     }
 
     /**
-     * Set New identifier of the custom emoji; 0 if none
+     * Set New identifier of the custom emoji; 0 if none.
      */
     public function setNewBackgroundCustomEmojiId(int $newBackgroundCustomEmojiId): self
     {

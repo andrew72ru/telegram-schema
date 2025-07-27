@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Device verification must be performed with the classic Play Integrity verification (https://developer.android.com/google/play/integrity/classic)
+ * Device verification must be performed with the classic Play Integrity verification (https://developer.android.com/google/play/integrity/classic).
  */
 class FirebaseDeviceVerificationParametersPlayIntegrity extends FirebaseDeviceVerificationParameters implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class FirebaseDeviceVerificationParametersPlayIntegrity extends FirebaseDeviceVe
     }
 
     /**
-     * Get Base64url-encoded nonce to pass to the Play Integrity API
+     * Get Base64url-encoded nonce to pass to the Play Integrity API.
      */
     public function getNonce(): string
     {
@@ -30,7 +30,7 @@ class FirebaseDeviceVerificationParametersPlayIntegrity extends FirebaseDeviceVe
     }
 
     /**
-     * Set Base64url-encoded nonce to pass to the Play Integrity API
+     * Set Base64url-encoded nonce to pass to the Play Integrity API.
      */
     public function setNonce(string $nonce): self
     {
@@ -40,7 +40,7 @@ class FirebaseDeviceVerificationParametersPlayIntegrity extends FirebaseDeviceVe
     }
 
     /**
-     * Get Cloud project number to pass to the Play Integrity API
+     * Get Cloud project number to pass to the Play Integrity API.
      */
     public function getCloudProjectNumber(): int
     {
@@ -48,7 +48,7 @@ class FirebaseDeviceVerificationParametersPlayIntegrity extends FirebaseDeviceVe
     }
 
     /**
-     * Set Cloud project number to pass to the Play Integrity API
+     * Set Cloud project number to pass to the Play Integrity API.
      */
     public function setCloudProjectNumber(int $cloudProjectNumber): self
     {

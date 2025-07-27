@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A photo story @photo The photo
+ * A photo story @photo The photo.
  */
 class StoryContentPhoto extends StoryContent implements \JsonSerializable
 {

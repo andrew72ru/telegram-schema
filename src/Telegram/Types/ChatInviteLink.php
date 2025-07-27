@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a chat invite link
+ * Contains a chat invite link.
  */
 class ChatInviteLink implements \JsonSerializable
 {
@@ -58,7 +58,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Chat invite link
+     * Get Chat invite link.
      */
     public function getInviteLink(): string
     {
@@ -66,7 +66,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Chat invite link
+     * Set Chat invite link.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -76,7 +76,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Name of the link
+     * Get Name of the link.
      */
     public function getName(): string
     {
@@ -84,7 +84,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Name of the link
+     * Set Name of the link.
      */
     public function setName(string $name): self
     {
@@ -94,7 +94,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of an administrator created the link
+     * Get User identifier of an administrator created the link.
      */
     public function getCreatorUserId(): int
     {
@@ -102,7 +102,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of an administrator created the link
+     * Set User identifier of an administrator created the link.
      */
     public function setCreatorUserId(int $creatorUserId): self
     {
@@ -112,7 +112,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the link was created
+     * Get Point in time (Unix timestamp) when the link was created.
      */
     public function getDate(): int
     {
@@ -120,7 +120,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the link was created
+     * Set Point in time (Unix timestamp) when the link was created.
      */
     public function setDate(int $date): self
     {
@@ -130,7 +130,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the link was last edited; 0 if never or unknown
+     * Get Point in time (Unix timestamp) when the link was last edited; 0 if never or unknown.
      */
     public function getEditDate(): int
     {
@@ -138,7 +138,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the link was last edited; 0 if never or unknown
+     * Set Point in time (Unix timestamp) when the link was last edited; 0 if never or unknown.
      */
     public function setEditDate(int $editDate): self
     {
@@ -148,7 +148,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the link will expire; 0 if never
+     * Get Point in time (Unix timestamp) when the link will expire; 0 if never.
      */
     public function getExpirationDate(): int
     {
@@ -156,7 +156,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the link will expire; 0 if never
+     * Set Point in time (Unix timestamp) when the link will expire; 0 if never.
      */
     public function setExpirationDate(int $expirationDate): self
     {
@@ -166,7 +166,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Information about subscription plan that is applied to the users joining the chat by the link; may be null if the link doesn't require subscription
+     * Get Information about subscription plan that is applied to the users joining the chat by the link; may be null if the link doesn't require subscription.
      */
     public function getSubscriptionPricing(): StarSubscriptionPricing|null
     {
@@ -174,7 +174,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Information about subscription plan that is applied to the users joining the chat by the link; may be null if the link doesn't require subscription
+     * Set Information about subscription plan that is applied to the users joining the chat by the link; may be null if the link doesn't require subscription.
      */
     public function setSubscriptionPricing(StarSubscriptionPricing|null $subscriptionPricing): self
     {
@@ -184,7 +184,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of members, which can join the chat using the link simultaneously; 0 if not limited. Always 0 if the link requires approval
+     * Get The maximum number of members, which can join the chat using the link simultaneously; 0 if not limited. Always 0 if the link requires approval.
      */
     public function getMemberLimit(): int
     {
@@ -192,7 +192,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of members, which can join the chat using the link simultaneously; 0 if not limited. Always 0 if the link requires approval
+     * Set The maximum number of members, which can join the chat using the link simultaneously; 0 if not limited. Always 0 if the link requires approval.
      */
     public function setMemberLimit(int $memberLimit): self
     {
@@ -202,7 +202,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Number of chat members, which joined the chat using the link
+     * Get Number of chat members, which joined the chat using the link.
      */
     public function getMemberCount(): int
     {
@@ -210,7 +210,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Number of chat members, which joined the chat using the link
+     * Set Number of chat members, which joined the chat using the link.
      */
     public function setMemberCount(int $memberCount): self
     {
@@ -220,7 +220,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Number of chat members, which joined the chat using the link, but have already left because of expired subscription; for subscription links only
+     * Get Number of chat members, which joined the chat using the link, but have already left because of expired subscription; for subscription links only.
      */
     public function getExpiredMemberCount(): int
     {
@@ -228,7 +228,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Number of chat members, which joined the chat using the link, but have already left because of expired subscription; for subscription links only
+     * Set Number of chat members, which joined the chat using the link, but have already left because of expired subscription; for subscription links only.
      */
     public function setExpiredMemberCount(int $expiredMemberCount): self
     {
@@ -238,7 +238,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get Number of pending join requests created using this link
+     * Get Number of pending join requests created using this link.
      */
     public function getPendingJoinRequestCount(): int
     {
@@ -246,7 +246,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set Number of pending join requests created using this link
+     * Set Number of pending join requests created using this link.
      */
     public function setPendingJoinRequestCount(int $pendingJoinRequestCount): self
     {
@@ -256,7 +256,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link only creates join request. If true, total number of joining members will be unlimited
+     * Get True, if the link only creates join request. If true, total number of joining members will be unlimited.
      */
     public function getCreatesJoinRequest(): bool
     {
@@ -264,7 +264,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link only creates join request. If true, total number of joining members will be unlimited
+     * Set True, if the link only creates join request. If true, total number of joining members will be unlimited.
      */
     public function setCreatesJoinRequest(bool $createsJoinRequest): self
     {
@@ -274,7 +274,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link is primary. Primary invite link can't have name, expiration date, or usage limit. There is exactly one primary invite link for each administrator with can_invite_users right at a given time
+     * Get True, if the link is primary. Primary invite link can't have name, expiration date, or usage limit. There is exactly one primary invite link for each administrator with can_invite_users right at a given time.
      */
     public function getIsPrimary(): bool
     {
@@ -282,7 +282,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link is primary. Primary invite link can't have name, expiration date, or usage limit. There is exactly one primary invite link for each administrator with can_invite_users right at a given time
+     * Set True, if the link is primary. Primary invite link can't have name, expiration date, or usage limit. There is exactly one primary invite link for each administrator with can_invite_users right at a given time.
      */
     public function setIsPrimary(bool $isPrimary): self
     {
@@ -292,7 +292,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link was revoked
+     * Get True, if the link was revoked.
      */
     public function getIsRevoked(): bool
     {
@@ -300,7 +300,7 @@ class ChatInviteLink implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link was revoked
+     * Set True, if the link was revoked.
      */
     public function setIsRevoked(bool $isRevoked): self
     {

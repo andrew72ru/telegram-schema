@@ -28,7 +28,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifiers of the messages being viewed
+     * Get The identifiers of the messages being viewed.
      */
     public function getMessageIds(): array|null
     {
@@ -54,7 +54,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifiers of the messages being viewed
+     * Set The identifiers of the messages being viewed.
      */
     public function setMessageIds(array|null $messageIds): self
     {
@@ -64,7 +64,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Source of the message view; pass null to guess the source based on chat open state
+     * Get Source of the message view; pass null to guess the source based on chat open state.
      */
     public function getSource(): MessageSource|null
     {
@@ -72,7 +72,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Source of the message view; pass null to guess the source based on chat open state
+     * Set Source of the message view; pass null to guess the source based on chat open state.
      */
     public function setSource(MessageSource|null $source): self
     {
@@ -82,7 +82,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to mark as read the specified messages even if the chat is closed
+     * Get Pass true to mark as read the specified messages even if the chat is closed.
      */
     public function getForceRead(): bool
     {
@@ -90,7 +90,7 @@ class ViewMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to mark as read the specified messages even if the chat is closed
+     * Set Pass true to mark as read the specified messages even if the chat is closed.
      */
     public function setForceRead(bool $forceRead): self
     {

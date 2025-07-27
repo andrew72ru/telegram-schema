@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns pending join requests in a chat
+ * Returns pending join requests in a chat.
  */
 class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Get Invite link for which to return join requests. If empty, all join requests will be returned. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
+     * Get Invite link for which to return join requests. If empty, all join requests will be returned. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links.
      */
     public function getInviteLink(): string
     {
@@ -57,7 +57,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Set Invite link for which to return join requests. If empty, all join requests will be returned. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
+     * Set Invite link for which to return join requests. If empty, all join requests will be returned. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -67,7 +67,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Get A query to search for in the first names, last names and usernames of the users to return
+     * Get A query to search for in the first names, last names and usernames of the users to return.
      */
     public function getQuery(): string
     {
@@ -75,7 +75,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Set A query to search for in the first names, last names and usernames of the users to return
+     * Set A query to search for in the first names, last names and usernames of the users to return.
      */
     public function setQuery(string $query): self
     {
@@ -85,7 +85,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Get A chat join request from which to return next requests; pass null to get results from the beginning
+     * Get A chat join request from which to return next requests; pass null to get results from the beginning.
      */
     public function getOffsetRequest(): ChatJoinRequest|null
     {
@@ -93,7 +93,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Set A chat join request from which to return next requests; pass null to get results from the beginning
+     * Set A chat join request from which to return next requests; pass null to get results from the beginning.
      */
     public function setOffsetRequest(ChatJoinRequest|null $offsetRequest): self
     {
@@ -103,7 +103,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of requests to join the chat to return
+     * Get The maximum number of requests to join the chat to return.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class GetChatJoinRequests extends ChatJoinRequests implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of requests to join the chat to return
+     * Set The maximum number of requests to join the chat to return.
      */
     public function setLimit(int $limit): self
     {

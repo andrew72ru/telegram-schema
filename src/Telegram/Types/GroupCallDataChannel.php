@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for GroupCallDataChannel types
+ * Abstract base class for GroupCallDataChannel types.
  */
 abstract class GroupCallDataChannel implements \JsonSerializable
 {

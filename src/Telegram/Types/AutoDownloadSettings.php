@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains auto-download settings
+ * Contains auto-download settings.
  */
 class AutoDownloadSettings implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if the auto-download is enabled
+     * Get True, if the auto-download is enabled.
      */
     public function getIsAutoDownloadEnabled(): bool
     {
@@ -51,7 +51,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if the auto-download is enabled
+     * Set True, if the auto-download is enabled.
      */
     public function setIsAutoDownloadEnabled(bool $isAutoDownloadEnabled): self
     {
@@ -61,7 +61,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get The maximum size of a photo file to be auto-downloaded, in bytes
+     * Get The maximum size of a photo file to be auto-downloaded, in bytes.
      */
     public function getMaxPhotoFileSize(): int
     {
@@ -69,7 +69,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set The maximum size of a photo file to be auto-downloaded, in bytes
+     * Set The maximum size of a photo file to be auto-downloaded, in bytes.
      */
     public function setMaxPhotoFileSize(int $maxPhotoFileSize): self
     {
@@ -79,7 +79,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get The maximum size of a video file to be auto-downloaded, in bytes
+     * Get The maximum size of a video file to be auto-downloaded, in bytes.
      */
     public function getMaxVideoFileSize(): int
     {
@@ -87,7 +87,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set The maximum size of a video file to be auto-downloaded, in bytes
+     * Set The maximum size of a video file to be auto-downloaded, in bytes.
      */
     public function setMaxVideoFileSize(int $maxVideoFileSize): self
     {
@@ -97,7 +97,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get The maximum size of other file types to be auto-downloaded, in bytes
+     * Get The maximum size of other file types to be auto-downloaded, in bytes.
      */
     public function getMaxOtherFileSize(): int
     {
@@ -105,7 +105,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set The maximum size of other file types to be auto-downloaded, in bytes
+     * Set The maximum size of other file types to be auto-downloaded, in bytes.
      */
     public function setMaxOtherFileSize(int $maxOtherFileSize): self
     {
@@ -115,7 +115,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get The maximum suggested bitrate for uploaded videos, in kbit/s
+     * Get The maximum suggested bitrate for uploaded videos, in kbit/s.
      */
     public function getVideoUploadBitrate(): int
     {
@@ -123,7 +123,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set The maximum suggested bitrate for uploaded videos, in kbit/s
+     * Set The maximum suggested bitrate for uploaded videos, in kbit/s.
      */
     public function setVideoUploadBitrate(int $videoUploadBitrate): self
     {
@@ -133,7 +133,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if the beginning of video files needs to be preloaded for instant playback
+     * Get True, if the beginning of video files needs to be preloaded for instant playback.
      */
     public function getPreloadLargeVideos(): bool
     {
@@ -141,7 +141,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if the beginning of video files needs to be preloaded for instant playback
+     * Set True, if the beginning of video files needs to be preloaded for instant playback.
      */
     public function setPreloadLargeVideos(bool $preloadLargeVideos): self
     {
@@ -151,7 +151,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if the next audio track needs to be preloaded while the user is listening to an audio file
+     * Get True, if the next audio track needs to be preloaded while the user is listening to an audio file.
      */
     public function getPreloadNextAudio(): bool
     {
@@ -159,7 +159,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if the next audio track needs to be preloaded while the user is listening to an audio file
+     * Set True, if the next audio track needs to be preloaded while the user is listening to an audio file.
      */
     public function setPreloadNextAudio(bool $preloadNextAudio): self
     {
@@ -169,7 +169,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if stories needs to be preloaded
+     * Get True, if stories needs to be preloaded.
      */
     public function getPreloadStories(): bool
     {
@@ -177,7 +177,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if stories needs to be preloaded
+     * Set True, if stories needs to be preloaded.
      */
     public function setPreloadStories(bool $preloadStories): self
     {
@@ -187,7 +187,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if "use less data for calls" option needs to be enabled
+     * Get True, if "use less data for calls" option needs to be enabled.
      */
     public function getUseLessDataForCalls(): bool
     {
@@ -195,7 +195,7 @@ class AutoDownloadSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if "use less data for calls" option needs to be enabled
+     * Set True, if "use less data for calls" option needs to be enabled.
      */
     public function setUseLessDataForCalls(bool $useLessDataForCalls): self
     {

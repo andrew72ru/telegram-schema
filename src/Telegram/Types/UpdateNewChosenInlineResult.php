@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user has chosen a result of an inline query; for bots only
+ * The user has chosen a result of an inline query; for bots only.
  */
 class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -39,7 +39,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -49,7 +49,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Get User location; may be null
+     * Get User location; may be null.
      */
     public function getUserLocation(): Location|null
     {
@@ -57,7 +57,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Set User location; may be null
+     * Set User location; may be null.
      */
     public function setUserLocation(Location|null $userLocation): self
     {
@@ -67,7 +67,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Text of the query
+     * Get Text of the query.
      */
     public function getQuery(): string
     {
@@ -75,7 +75,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Text of the query
+     * Set Text of the query.
      */
     public function setQuery(string $query): self
     {
@@ -85,7 +85,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chosen result
+     * Get Identifier of the chosen result.
      */
     public function getResultId(): string
     {
@@ -93,7 +93,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chosen result
+     * Set Identifier of the chosen result.
      */
     public function setResultId(string $resultId): self
     {
@@ -103,7 +103,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sent inline message, if known
+     * Get Identifier of the sent inline message, if known.
      */
     public function getInlineMessageId(): string
     {
@@ -111,7 +111,7 @@ class UpdateNewChosenInlineResult extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sent inline message, if known
+     * Set Identifier of the sent inline message, if known.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {

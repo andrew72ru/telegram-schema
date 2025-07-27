@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains basic information about a chat folder
+ * Contains basic information about a chat folder.
  */
 class ChatFolderInfo implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Get Unique chat folder identifier
+     * Get Unique chat folder identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Set Unique chat folder identifier
+     * Set Unique chat folder identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Get The name of the folder
+     * Get The name of the folder.
      */
     public function getName(): ChatFolderName|null
     {
@@ -60,7 +60,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Set The name of the folder
+     * Set The name of the folder.
      */
     public function setName(ChatFolderName|null $name): self
     {
@@ -70,7 +70,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Get The chosen or default icon for the chat folder
+     * Get The chosen or default icon for the chat folder.
      */
     public function getIcon(): ChatFolderIcon|null
     {
@@ -78,7 +78,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Set The chosen or default icon for the chat folder
+     * Set The chosen or default icon for the chat folder.
      */
     public function setIcon(ChatFolderIcon|null $icon): self
     {
@@ -88,7 +88,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled
+     * Get The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled.
      */
     public function getColorId(): int
     {
@@ -96,7 +96,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled
+     * Set The identifier of the chosen color for the chat folder icon; from -1 to 6. If -1, then color is disabled.
      */
     public function setColorId(int $colorId): self
     {
@@ -106,7 +106,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if at least one link has been created for the folder
+     * Get True, if at least one link has been created for the folder.
      */
     public function getIsShareable(): bool
     {
@@ -114,7 +114,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if at least one link has been created for the folder
+     * Set True, if at least one link has been created for the folder.
      */
     public function setIsShareable(bool $isShareable): self
     {
@@ -124,7 +124,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat folder has invite links created by the current user
+     * Get True, if the chat folder has invite links created by the current user.
      */
     public function getHasMyInviteLinks(): bool
     {
@@ -132,7 +132,7 @@ class ChatFolderInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat folder has invite links created by the current user
+     * Set True, if the chat folder has invite links created by the current user.
      */
     public function setHasMyInviteLinks(bool $hasMyInviteLinks): self
     {

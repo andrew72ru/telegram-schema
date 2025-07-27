@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a document of any type
+ * Describes a document of any type.
  */
 class Document implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Get Original name of the file; as defined by the sender
+     * Get Original name of the file; as defined by the sender.
      */
     public function getFileName(): string
     {
@@ -39,7 +39,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Set Original name of the file; as defined by the sender
+     * Set Original name of the file; as defined by the sender.
      */
     public function setFileName(string $fileName): self
     {
@@ -49,7 +49,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Get MIME type of the file; as defined by the sender
+     * Get MIME type of the file; as defined by the sender.
      */
     public function getMimeType(): string
     {
@@ -57,7 +57,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Set MIME type of the file; as defined by the sender
+     * Set MIME type of the file; as defined by the sender.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -67,7 +67,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Get Document minithumbnail; may be null
+     * Get Document minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -75,7 +75,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Set Document minithumbnail; may be null
+     * Set Document minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -85,7 +85,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Get Document thumbnail in JPEG or PNG format (PNG will be used only for background patterns); as defined by the sender; may be null
+     * Get Document thumbnail in JPEG or PNG format (PNG will be used only for background patterns); as defined by the sender; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -93,7 +93,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Set Document thumbnail in JPEG or PNG format (PNG will be used only for background patterns); as defined by the sender; may be null
+     * Set Document thumbnail in JPEG or PNG format (PNG will be used only for background patterns); as defined by the sender; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -103,7 +103,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Get File containing the document
+     * Get File containing the document.
      */
     public function getDocument(): File|null
     {
@@ -111,7 +111,7 @@ class Document implements \JsonSerializable
     }
 
     /**
-     * Set File containing the document
+     * Set File containing the document.
      */
     public function setDocument(File|null $document): self
     {

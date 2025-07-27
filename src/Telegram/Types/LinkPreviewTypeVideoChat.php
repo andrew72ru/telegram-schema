@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a video chat
+ * The link is a link to a video chat.
  */
 class LinkPreviewTypeVideoChat extends LinkPreviewType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class LinkPreviewTypeVideoChat extends LinkPreviewType implements \JsonSerializa
     }
 
     /**
-     * Get Photo of the chat with the video chat; may be null if none
+     * Get Photo of the chat with the video chat; may be null if none.
      */
     public function getPhoto(): ChatPhoto|null
     {
@@ -30,7 +30,7 @@ class LinkPreviewTypeVideoChat extends LinkPreviewType implements \JsonSerializa
     }
 
     /**
-     * Set Photo of the chat with the video chat; may be null if none
+     * Set Photo of the chat with the video chat; may be null if none.
      */
     public function setPhoto(ChatPhoto|null $photo): self
     {
@@ -40,7 +40,7 @@ class LinkPreviewTypeVideoChat extends LinkPreviewType implements \JsonSerializa
     }
 
     /**
-     * Get True, if the video chat is expected to be a live stream in a channel or a broadcast group
+     * Get True, if the video chat is expected to be a live stream in a channel or a broadcast group.
      */
     public function getIsLiveStream(): bool
     {
@@ -48,7 +48,7 @@ class LinkPreviewTypeVideoChat extends LinkPreviewType implements \JsonSerializa
     }
 
     /**
-     * Set True, if the video chat is expected to be a live stream in a channel or a broadcast group
+     * Set True, if the video chat is expected to be a live stream in a channel or a broadcast group.
      */
     public function setIsLiveStream(bool $isLiveStream): self
     {

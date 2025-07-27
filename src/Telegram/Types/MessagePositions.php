@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of message positions @total_count Total number of messages found @positions List of message positions
+ * Contains a list of message positions @total_count Total number of messages found @positions List of message positions.
  */
 class MessagePositions implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The maximum number of suggested reaction areas on a story
+ * The maximum number of suggested reaction areas on a story.
  */
 class PremiumLimitTypeStorySuggestedReactionAreaCount extends PremiumLimitType implements \JsonSerializable
 {

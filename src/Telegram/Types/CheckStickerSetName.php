@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks whether a name can be used for a new sticker set @name Name to be checked
+ * Checks whether a name can be used for a new sticker set @name Name to be checked.
  */
 class CheckStickerSetName extends CheckStickerSetNameResult implements \JsonSerializable
 {

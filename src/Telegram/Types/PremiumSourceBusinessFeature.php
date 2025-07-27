@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user tried to use a Business feature @feature The used feature; pass null if none specific feature was used
+ * A user tried to use a Business feature @feature The used feature; pass null if none specific feature was used.
  */
 class PremiumSourceBusinessFeature extends PremiumSource implements \JsonSerializable
 {

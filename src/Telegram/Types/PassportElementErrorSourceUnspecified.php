@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The element contains an error in an unspecified place. The error will be considered resolved when new data is added
+ * The element contains an error in an unspecified place. The error will be considered resolved when new data is added.
  */
 class PassportElementErrorSourceUnspecified extends PassportElementErrorSource implements \JsonSerializable
 {

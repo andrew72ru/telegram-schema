@@ -25,7 +25,7 @@ class PreliminaryUploadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get File to upload
+     * Get File to upload.
      */
     public function getFile(): InputFile|null
     {
@@ -33,7 +33,7 @@ class PreliminaryUploadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set File to upload
+     * Set File to upload.
      */
     public function setFile(InputFile|null $file): self
     {
@@ -43,7 +43,7 @@ class PreliminaryUploadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get File type; pass null if unknown
+     * Get File type; pass null if unknown.
      */
     public function getFileType(): FileType|null
     {
@@ -51,7 +51,7 @@ class PreliminaryUploadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set File type; pass null if unknown
+     * Set File type; pass null if unknown.
      */
     public function setFileType(FileType|null $fileType): self
     {
@@ -61,7 +61,7 @@ class PreliminaryUploadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which preliminaryUploadFile was called will be uploaded first
+     * Get Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which preliminaryUploadFile was called will be uploaded first.
      */
     public function getPriority(): int
     {
@@ -69,7 +69,7 @@ class PreliminaryUploadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which preliminaryUploadFile was called will be uploaded first
+     * Set Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which preliminaryUploadFile was called will be uploaded first.
      */
     public function setPriority(int $priority): self
     {

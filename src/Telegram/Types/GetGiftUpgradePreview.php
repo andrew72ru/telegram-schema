@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns examples of possible upgraded gifts for a regular gift @gift_id Identifier of the gift
+ * Returns examples of possible upgraded gifts for a regular gift @gift_id Identifier of the gift.
  */
 class GetGiftUpgradePreview extends GiftUpgradePreview implements \JsonSerializable
 {

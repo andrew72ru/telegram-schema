@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the content of a live location in a message sent on behalf of a business account; for bots only
+ * Edits the content of a live location in a message sent on behalf of a business account; for bots only.
  */
 class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -48,7 +48,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -58,7 +58,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -66,7 +66,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -76,7 +76,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -84,7 +84,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -94,7 +94,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -102,7 +102,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -112,7 +112,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get New location content of the message; pass null to stop sharing the live location
+     * Get New location content of the message; pass null to stop sharing the live location.
      */
     public function getLocation(): Location|null
     {
@@ -120,7 +120,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set New location content of the message; pass null to stop sharing the live location
+     * Set New location content of the message; pass null to stop sharing the live location.
      */
     public function setLocation(Location|null $location): self
     {
@@ -130,7 +130,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get New time relative to the message send date, for which the location can be updated, in seconds. If 0x7FFFFFFF specified, then the location can be updated forever.
+     * Get New time relative to the message send date, for which the location can be updated, in seconds. If 0x7FFFFFFF specified, then the location can be updated forever..
      */
     public function getLivePeriod(): int
     {
@@ -138,7 +138,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set New time relative to the message send date, for which the location can be updated, in seconds. If 0x7FFFFFFF specified, then the location can be updated forever.
+     * Set New time relative to the message send date, for which the location can be updated, in seconds. If 0x7FFFFFFF specified, then the location can be updated forever..
      */
     public function setLivePeriod(int $livePeriod): self
     {
@@ -148,7 +148,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
+     * Get The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown.
      */
     public function getHeading(): int
     {
@@ -156,7 +156,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
+     * Set The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown.
      */
     public function setHeading(int $heading): self
     {
@@ -166,7 +166,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Get The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
+     * Get The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled.
      */
     public function getProximityAlertRadius(): int
     {
@@ -174,7 +174,7 @@ class EditBusinessMessageLiveLocation extends BusinessMessage implements \JsonSe
     }
 
     /**
-     * Set The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
+     * Set The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled.
      */
     public function setProximityAlertRadius(int $proximityAlertRadius): self
     {

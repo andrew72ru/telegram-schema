@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the custom emoji sticker set of a supergroup; requires can_change_info administrator right. The chat must have at least chatBoostFeatures.min_custom_emoji_sticker_set_boost_level boost level to pass the corresponding color
+ * Changes the custom emoji sticker set of a supergroup; requires can_change_info administrator right. The chat must have at least chatBoostFeatures.min_custom_emoji_sticker_set_boost_level boost level to pass the corresponding color.
  */
 class SetSupergroupCustomEmojiStickerSet extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetSupergroupCustomEmojiStickerSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup
+     * Get Identifier of the supergroup.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class SetSupergroupCustomEmojiStickerSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup
+     * Set Identifier of the supergroup.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class SetSupergroupCustomEmojiStickerSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of the custom emoji sticker set identifier for the supergroup. Use 0 to remove the custom emoji sticker set in the supergroup
+     * Get New value of the custom emoji sticker set identifier for the supergroup. Use 0 to remove the custom emoji sticker set in the supergroup.
      */
     public function getCustomEmojiStickerSetId(): int
     {
@@ -48,7 +48,7 @@ class SetSupergroupCustomEmojiStickerSet extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of the custom emoji sticker set identifier for the supergroup. Use 0 to remove the custom emoji sticker set in the supergroup
+     * Set New value of the custom emoji sticker set identifier for the supergroup. Use 0 to remove the custom emoji sticker set in the supergroup.
      */
     public function setCustomEmojiStickerSetId(int $customEmojiStickerSetId): self
     {

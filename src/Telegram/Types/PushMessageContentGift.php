@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a gift @star_count Number of Telegram Stars that sender paid for the gift
+ * A message with a gift @star_count Number of Telegram Stars that sender paid for the gift.
  */
 class PushMessageContentGift extends PushMessageContent implements \JsonSerializable
 {

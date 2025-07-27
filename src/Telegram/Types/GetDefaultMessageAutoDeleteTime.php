@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns default message auto-delete time setting for new chats
+ * Returns default message auto-delete time setting for new chats.
  */
 class GetDefaultMessageAutoDeleteTime extends MessageAutoDeleteTime implements \JsonSerializable
 {

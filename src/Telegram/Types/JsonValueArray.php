@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a JSON array @values The list of array elements
+ * Represents a JSON array @values The list of array elements.
  */
 class JsonValueArray extends JsonValue implements \JsonSerializable
 {

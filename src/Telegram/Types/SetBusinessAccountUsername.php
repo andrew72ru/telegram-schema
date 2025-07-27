@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the editable username of a business account; for bots only
+ * Changes the editable username of a business account; for bots only.
  */
 class SetBusinessAccountUsername extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetBusinessAccountUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class SetBusinessAccountUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class SetBusinessAccountUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new value of the username
+     * Get The new value of the username.
      */
     public function getUsername(): string
     {
@@ -48,7 +48,7 @@ class SetBusinessAccountUsername extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new value of the username
+     * Set The new value of the username.
      */
     public function setUsername(string $username): self
     {

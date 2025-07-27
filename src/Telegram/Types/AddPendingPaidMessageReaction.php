@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds the paid message reaction to a message. Use getMessageAvailableReactions to check whether the reaction is available for the message
+ * Adds the paid message reaction to a message. Use getMessageAvailableReactions to check whether the reaction is available for the message.
  */
 class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars to be used for the reaction. The total number of pending paid reactions must not exceed getOption("paid_reaction_star_count_max")
+     * Get Number of Telegram Stars to be used for the reaction. The total number of pending paid reactions must not exceed getOption("paid_reaction_star_count_max").
      */
     public function getStarCount(): int
     {
@@ -72,7 +72,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars to be used for the reaction. The total number of pending paid reactions must not exceed getOption("paid_reaction_star_count_max")
+     * Set Number of Telegram Stars to be used for the reaction. The total number of pending paid reactions must not exceed getOption("paid_reaction_star_count_max").
      */
     public function setStarCount(int $starCount): self
     {
@@ -82,7 +82,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Type of the paid reaction; pass null if the user didn't choose reaction type explicitly, for example, the reaction is set from the message bubble
+     * Get Type of the paid reaction; pass null if the user didn't choose reaction type explicitly, for example, the reaction is set from the message bubble.
      */
     public function getType(): PaidReactionType|null
     {
@@ -90,7 +90,7 @@ class AddPendingPaidMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Type of the paid reaction; pass null if the user didn't choose reaction type explicitly, for example, the reaction is set from the message bubble
+     * Set Type of the paid reaction; pass null if the user didn't choose reaction type explicitly, for example, the reaction is set from the message bubble.
      */
     public function setType(PaidReactionType|null $type): self
     {

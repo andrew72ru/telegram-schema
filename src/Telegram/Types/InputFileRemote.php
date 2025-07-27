@@ -19,7 +19,7 @@ class InputFileRemote extends InputFile implements \JsonSerializable
     }
 
     /**
-     * Get Remote file identifier
+     * Get Remote file identifier.
      */
     public function getId(): string
     {
@@ -27,7 +27,7 @@ class InputFileRemote extends InputFile implements \JsonSerializable
     }
 
     /**
-     * Set Remote file identifier
+     * Set Remote file identifier.
      */
     public function setId(string $id): self
     {

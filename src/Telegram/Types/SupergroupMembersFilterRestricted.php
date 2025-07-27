@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns restricted supergroup members; can be used only by administrators @query Query to search for
+ * Returns restricted supergroup members; can be used only by administrators @query Query to search for.
  */
 class SupergroupMembersFilterRestricted extends SupergroupMembersFilter implements \JsonSerializable
 {

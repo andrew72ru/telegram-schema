@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of public forwards and reposts as a story of a message or a story
+ * Represents a list of public forwards and reposts as a story of a message or a story.
  */
 class PublicForwards implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of messages and stories found
+     * Get Approximate total number of messages and stories found.
      */
     public function getTotalCount(): int
     {
@@ -33,7 +33,7 @@ class PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of messages and stories found
+     * Set Approximate total number of messages and stories found.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -43,7 +43,7 @@ class PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get List of found public forwards and reposts
+     * Get List of found public forwards and reposts.
      */
     public function getForwards(): array|null
     {
@@ -51,7 +51,7 @@ class PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set List of found public forwards and reposts
+     * Set List of found public forwards and reposts.
      */
     public function setForwards(array|null $forwards): self
     {
@@ -61,7 +61,7 @@ class PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -69,7 +69,7 @@ class PublicForwards implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

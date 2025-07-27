@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of Telegram Star transactions for the specified owner
+ * Returns the list of Telegram Star transactions for the specified owner.
  */
 class GetStarTransactions extends StarTransactions implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the owner of the Telegram Stars; can be the identifier of the current user, identifier of an owned bot,
+     * Get Identifier of the owner of the Telegram Stars; can be the identifier of the current user, identifier of an owned bot,.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -39,7 +39,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the owner of the Telegram Stars; can be the identifier of the current user, identifier of an owned bot,
+     * Set Identifier of the owner of the Telegram Stars; can be the identifier of the current user, identifier of an owned bot,.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -49,7 +49,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, only transactions related to the Star Subscription will be returned
+     * Get If non-empty, only transactions related to the Star Subscription will be returned.
      */
     public function getSubscriptionId(): string
     {
@@ -57,7 +57,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, only transactions related to the Star Subscription will be returned
+     * Set If non-empty, only transactions related to the Star Subscription will be returned.
      */
     public function setSubscriptionId(string $subscriptionId): self
     {
@@ -67,7 +67,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get Direction of the transactions to receive; pass null to get all transactions
+     * Get Direction of the transactions to receive; pass null to get all transactions.
      */
     public function getDirection(): StarTransactionDirection|null
     {
@@ -75,7 +75,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set Direction of the transactions to receive; pass null to get all transactions
+     * Set Direction of the transactions to receive; pass null to get all transactions.
      */
     public function setDirection(StarTransactionDirection|null $direction): self
     {
@@ -85,7 +85,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first transaction to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first transaction to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -93,7 +93,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first transaction to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first transaction to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -103,7 +103,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of transactions to return
+     * Get The maximum number of transactions to return.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class GetStarTransactions extends StarTransactions implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of transactions to return
+     * Set The maximum number of transactions to return.
      */
     public function setLimit(int $limit): self
     {

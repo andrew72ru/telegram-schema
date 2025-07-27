@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the draft message in the topic in a channel direct messages chat administered by the current user
+ * Changes the draft message in the topic in a channel direct messages chat administered by the current user.
  */
 class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get Topic identifier
+     * Get Topic identifier.
      */
     public function getTopicId(): int
     {
@@ -51,7 +51,7 @@ class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set Topic identifier
+     * Set Topic identifier.
      */
     public function setTopicId(int $topicId): self
     {
@@ -61,7 +61,7 @@ class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializ
     }
 
     /**
-     * Get New draft message; pass null to remove the draft. All files in draft message content must be of the type inputFileLocal. Media thumbnails and captions are ignored
+     * Get New draft message; pass null to remove the draft. All files in draft message content must be of the type inputFileLocal. Media thumbnails and captions are ignored.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -69,7 +69,7 @@ class SetDirectMessagesChatTopicDraftMessage extends Ok implements \JsonSerializ
     }
 
     /**
-     * Set New draft message; pass null to remove the draft. All files in draft message content must be of the type inputFileLocal. Media thumbnails and captions are ignored
+     * Set New draft message; pass null to remove the draft. All files in draft message content must be of the type inputFileLocal. Media thumbnails and captions are ignored.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {

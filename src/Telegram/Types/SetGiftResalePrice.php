@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes resale price of a unique gift owned by the current user
+ * Changes resale price of a unique gift owned by the current user.
  */
 class SetGiftResalePrice extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetGiftResalePrice extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the unique gift
+     * Get Identifier of the unique gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -30,7 +30,7 @@ class SetGiftResalePrice extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the unique gift
+     * Set Identifier of the unique gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -40,7 +40,7 @@ class SetGiftResalePrice extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new price for the unique gift; 0 or getOption("gift_resale_star_count_min")-getOption("gift_resale_star_count_max"). Pass 0 to disallow gift resale.
+     * Get The new price for the unique gift; 0 or getOption("gift_resale_star_count_min")-getOption("gift_resale_star_count_max"). Pass 0 to disallow gift resale..
      */
     public function getResaleStarCount(): int
     {
@@ -48,7 +48,7 @@ class SetGiftResalePrice extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new price for the unique gift; 0 or getOption("gift_resale_star_count_min")-getOption("gift_resale_star_count_max"). Pass 0 to disallow gift resale.
+     * Set The new price for the unique gift; 0 or getOption("gift_resale_star_count_min")-getOption("gift_resale_star_count_max"). Pass 0 to disallow gift resale..
      */
     public function setResaleStarCount(int $resaleStarCount): self
     {

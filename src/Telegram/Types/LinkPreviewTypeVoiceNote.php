@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a voice note message @voice_note The voice note
+ * The link is a link to a voice note message @voice_note The voice note.
  */
 class LinkPreviewTypeVoiceNote extends LinkPreviewType implements \JsonSerializable
 {

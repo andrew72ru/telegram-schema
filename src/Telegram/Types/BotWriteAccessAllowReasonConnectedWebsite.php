@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user connected a website by logging in using Telegram Login Widget on it @domain_name Domain name of the connected website
+ * The user connected a website by logging in using Telegram Login Widget on it @domain_name Domain name of the connected website.
  */
 class BotWriteAccessAllowReasonConnectedWebsite extends BotWriteAccessAllowReason implements \JsonSerializable
 {

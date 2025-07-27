@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A topic in Saved Messages chat @saved_messages_topic_id Unique identifier of the Saved Messages topic
+ * A topic in Saved Messages chat @saved_messages_topic_id Unique identifier of the Saved Messages topic.
  */
 class MessageTopicSavedMessages extends MessageTopic implements \JsonSerializable
 {

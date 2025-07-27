@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a task in a checklist
+ * Describes a task in a checklist.
  */
 class ChecklistTask implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the task
+     * Get Unique identifier of the task.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the task
+     * Set Unique identifier of the task.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Get Text of the task; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, Url, EmailAddress, Mention, Hashtag, Cashtag and PhoneNumber entities
+     * Get Text of the task; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, Url, EmailAddress, Mention, Hashtag, Cashtag and PhoneNumber entities.
      */
     public function getText(): FormattedText|null
     {
@@ -54,7 +54,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Set Text of the task; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, Url, EmailAddress, Mention, Hashtag, Cashtag and PhoneNumber entities
+     * Set Text of the task; may contain only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, Url, EmailAddress, Mention, Hashtag, Cashtag and PhoneNumber entities.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -64,7 +64,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user that completed the task; 0 if the task isn't completed
+     * Get Identifier of the user that completed the task; 0 if the task isn't completed.
      */
     public function getCompletedByUserId(): int
     {
@@ -72,7 +72,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user that completed the task; 0 if the task isn't completed
+     * Set Identifier of the user that completed the task; 0 if the task isn't completed.
      */
     public function setCompletedByUserId(int $completedByUserId): self
     {
@@ -82,7 +82,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the task was completed; 0 if the task isn't completed
+     * Get Point in time (Unix timestamp) when the task was completed; 0 if the task isn't completed.
      */
     public function getCompletionDate(): int
     {
@@ -90,7 +90,7 @@ class ChecklistTask implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the task was completed; 0 if the task isn't completed
+     * Set Point in time (Unix timestamp) when the task was completed; 0 if the task isn't completed.
      */
     public function setCompletionDate(int $completionDate): self
     {

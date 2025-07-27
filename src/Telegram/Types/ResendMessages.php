@@ -28,7 +28,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to send messages
+     * Get Identifier of the chat to send messages.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to send messages
+     * Set Identifier of the chat to send messages.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order
+     * Get Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order.
      */
     public function getMessageIds(): array|null
     {
@@ -54,7 +54,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order
+     * Set Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order.
      */
     public function setMessageIds(array|null $messageIds): self
     {
@@ -64,7 +64,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get New manually chosen quote from the message to be replied; pass null if none. Ignored if more than one message is re-sent, or if messageSendingStateFailed.need_another_reply_quote == false
+     * Get New manually chosen quote from the message to be replied; pass null if none. Ignored if more than one message is re-sent, or if messageSendingStateFailed.need_another_reply_quote == false.
      */
     public function getQuote(): InputTextQuote|null
     {
@@ -72,7 +72,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set New manually chosen quote from the message to be replied; pass null if none. Ignored if more than one message is re-sent, or if messageSendingStateFailed.need_another_reply_quote == false
+     * Set New manually chosen quote from the message to be replied; pass null if none. Ignored if more than one message is re-sent, or if messageSendingStateFailed.need_another_reply_quote == false.
      */
     public function setQuote(InputTextQuote|null $quote): self
     {
@@ -82,7 +82,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars the user agreed to pay to send the messages. Ignored if messageSendingStateFailed.required_paid_message_star_count == 0
+     * Get The number of Telegram Stars the user agreed to pay to send the messages. Ignored if messageSendingStateFailed.required_paid_message_star_count == 0.
      */
     public function getPaidMessageStarCount(): int
     {
@@ -90,7 +90,7 @@ class ResendMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars the user agreed to pay to send the messages. Ignored if messageSendingStateFailed.required_paid_message_star_count == 0
+     * Set The number of Telegram Stars the user agreed to pay to send the messages. Ignored if messageSendingStateFailed.required_paid_message_star_count == 0.
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {

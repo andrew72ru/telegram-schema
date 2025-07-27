@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether the supergroup is a forum; requires owner privileges in the supergroup. Discussion supergroups can't be converted to forums
+ * Toggles whether the supergroup is a forum; requires owner privileges in the supergroup. Discussion supergroups can't be converted to forums.
  */
 class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup
+     * Get Identifier of the supergroup.
      */
     public function getSupergroupId(): int
     {
@@ -33,7 +33,7 @@ class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup
+     * Set Identifier of the supergroup.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -43,7 +43,7 @@ class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of is_forum
+     * Get New value of is_forum.
      */
     public function getIsForum(): bool
     {
@@ -51,7 +51,7 @@ class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of is_forum
+     * Set New value of is_forum.
      */
     public function setIsForum(bool $isForum): self
     {
@@ -61,7 +61,7 @@ class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of has_forum_tabs; ignored if is_forum is false
+     * Get New value of has_forum_tabs; ignored if is_forum is false.
      */
     public function getHasForumTabs(): bool
     {
@@ -69,7 +69,7 @@ class ToggleSupergroupIsForum extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of has_forum_tabs; ignored if is_forum is false
+     * Set New value of has_forum_tabs; ignored if is_forum is false.
      */
     public function setHasForumTabs(bool $hasForumTabs): self
     {

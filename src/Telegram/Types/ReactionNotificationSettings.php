@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about notification settings for reactions
+ * Contains information about notification settings for reactions.
  */
 class ReactionNotificationSettings implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Source of message reactions for which notifications are shown
+     * Get Source of message reactions for which notifications are shown.
      */
     public function getMessageReactionSource(): ReactionNotificationSource|null
     {
@@ -36,7 +36,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Source of message reactions for which notifications are shown
+     * Set Source of message reactions for which notifications are shown.
      */
     public function setMessageReactionSource(ReactionNotificationSource|null $messageReactionSource): self
     {
@@ -46,7 +46,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Source of story reactions for which notifications are shown
+     * Get Source of story reactions for which notifications are shown.
      */
     public function getStoryReactionSource(): ReactionNotificationSource|null
     {
@@ -54,7 +54,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Source of story reactions for which notifications are shown
+     * Set Source of story reactions for which notifications are shown.
      */
     public function setStoryReactionSource(ReactionNotificationSource|null $storyReactionSource): self
     {
@@ -64,7 +64,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the notification sound to be played; 0 if sound is disabled
+     * Get Identifier of the notification sound to be played; 0 if sound is disabled.
      */
     public function getSoundId(): int
     {
@@ -72,7 +72,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the notification sound to be played; 0 if sound is disabled
+     * Set Identifier of the notification sound to be played; 0 if sound is disabled.
      */
     public function setSoundId(int $soundId): self
     {
@@ -82,7 +82,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if reaction sender and emoji must be displayed in notifications
+     * Get True, if reaction sender and emoji must be displayed in notifications.
      */
     public function getShowPreview(): bool
     {
@@ -90,7 +90,7 @@ class ReactionNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if reaction sender and emoji must be displayed in notifications
+     * Set True, if reaction sender and emoji must be displayed in notifications.
      */
     public function setShowPreview(bool $showPreview): self
     {

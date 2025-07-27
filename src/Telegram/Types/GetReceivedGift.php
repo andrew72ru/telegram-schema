@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a received gift @received_gift_id Identifier of the gift
+ * Returns information about a received gift @received_gift_id Identifier of the gift.
  */
 class GetReceivedGift extends ReceivedGift implements \JsonSerializable
 {

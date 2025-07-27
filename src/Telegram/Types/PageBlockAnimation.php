@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An animation
+ * An animation.
  */
 class PageBlockAnimation extends PageBlock implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PageBlockAnimation extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Animation file; may be null
+     * Get Animation file; may be null.
      */
     public function getAnimation(): Animation|null
     {
@@ -33,7 +33,7 @@ class PageBlockAnimation extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Animation file; may be null
+     * Set Animation file; may be null.
      */
     public function setAnimation(Animation|null $animation): self
     {
@@ -43,7 +43,7 @@ class PageBlockAnimation extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Animation caption
+     * Get Animation caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -51,7 +51,7 @@ class PageBlockAnimation extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Animation caption
+     * Set Animation caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {
@@ -61,7 +61,7 @@ class PageBlockAnimation extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the animation must be played automatically
+     * Get True, if the animation must be played automatically.
      */
     public function getNeedAutoplay(): bool
     {
@@ -69,7 +69,7 @@ class PageBlockAnimation extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the animation must be played automatically
+     * Set True, if the animation must be played automatically.
      */
     public function setNeedAutoplay(bool $needAutoplay): self
     {

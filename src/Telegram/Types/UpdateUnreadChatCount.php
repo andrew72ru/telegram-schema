@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Number of unread chats, i.e. with unread messages or marked as unread, has changed. This update is sent only if the message database is used
+ * Number of unread chats, i.e. with unread messages or marked as unread, has changed. This update is sent only if the message database is used.
  */
 class UpdateUnreadChatCount extends Update implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The chat list with changed number of unread messages
+     * Get The chat list with changed number of unread messages.
      */
     public function getChatList(): ChatList|null
     {
@@ -42,7 +42,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The chat list with changed number of unread messages
+     * Set The chat list with changed number of unread messages.
      */
     public function setChatList(ChatList|null $chatList): self
     {
@@ -52,7 +52,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of chats in the chat list
+     * Get Approximate total number of chats in the chat list.
      */
     public function getTotalCount(): int
     {
@@ -60,7 +60,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of chats in the chat list
+     * Set Approximate total number of chats in the chat list.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -70,7 +70,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of unread chats
+     * Get Total number of unread chats.
      */
     public function getUnreadCount(): int
     {
@@ -78,7 +78,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of unread chats
+     * Set Total number of unread chats.
      */
     public function setUnreadCount(int $unreadCount): self
     {
@@ -88,7 +88,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of unread unmuted chats
+     * Get Total number of unread unmuted chats.
      */
     public function getUnreadUnmutedCount(): int
     {
@@ -96,7 +96,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of unread unmuted chats
+     * Set Total number of unread unmuted chats.
      */
     public function setUnreadUnmutedCount(int $unreadUnmutedCount): self
     {
@@ -106,7 +106,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of chats marked as unread
+     * Get Total number of chats marked as unread.
      */
     public function getMarkedAsUnreadCount(): int
     {
@@ -114,7 +114,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of chats marked as unread
+     * Set Total number of chats marked as unread.
      */
     public function setMarkedAsUnreadCount(int $markedAsUnreadCount): self
     {
@@ -124,7 +124,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total number of unmuted chats marked as unread
+     * Get Total number of unmuted chats marked as unread.
      */
     public function getMarkedAsUnreadUnmutedCount(): int
     {
@@ -132,7 +132,7 @@ class UpdateUnreadChatCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total number of unmuted chats marked as unread
+     * Set Total number of unmuted chats marked as unread.
      */
     public function setMarkedAsUnreadUnmutedCount(int $markedAsUnreadUnmutedCount): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a forwarded story
+ * A message with a forwarded story.
  */
 class MessageStory extends MessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class MessageStory extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -33,7 +33,7 @@ class MessageStory extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -43,7 +43,7 @@ class MessageStory extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Story identifier
+     * Get Story identifier.
      */
     public function getStoryId(): int
     {
@@ -51,7 +51,7 @@ class MessageStory extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Story identifier
+     * Set Story identifier.
      */
     public function setStoryId(int $storyId): self
     {
@@ -61,7 +61,7 @@ class MessageStory extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story was automatically forwarded because of a mention of the user
+     * Get True, if the story was automatically forwarded because of a mention of the user.
      */
     public function getViaMention(): bool
     {
@@ -69,7 +69,7 @@ class MessageStory extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story was automatically forwarded because of a mention of the user
+     * Set True, if the story was automatically forwarded because of a mention of the user.
      */
     public function setViaMention(bool $viaMention): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about notification settings for a chat or a forum topic
+ * Contains information about notification settings for a chat or a forum topic.
  */
 class ChatNotificationSettings implements \JsonSerializable
 {
@@ -64,7 +64,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat or the forum chat is used instead of mute_for
+     * Get If true, the value for the relevant type of chat or the forum chat is used instead of mute_for.
      */
     public function getUseDefaultMuteFor(): bool
     {
@@ -72,7 +72,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat or the forum chat is used instead of mute_for
+     * Set If true, the value for the relevant type of chat or the forum chat is used instead of mute_for.
      */
     public function setUseDefaultMuteFor(bool $useDefaultMuteFor): self
     {
@@ -82,7 +82,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Time left before notifications will be unmuted, in seconds
+     * Get Time left before notifications will be unmuted, in seconds.
      */
     public function getMuteFor(): int
     {
@@ -90,7 +90,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Time left before notifications will be unmuted, in seconds
+     * Set Time left before notifications will be unmuted, in seconds.
      */
     public function setMuteFor(int $muteFor): self
     {
@@ -100,7 +100,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat or the forum chat is used instead of sound_id
+     * Get If true, the value for the relevant type of chat or the forum chat is used instead of sound_id.
      */
     public function getUseDefaultSound(): bool
     {
@@ -108,7 +108,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat or the forum chat is used instead of sound_id
+     * Set If true, the value for the relevant type of chat or the forum chat is used instead of sound_id.
      */
     public function setUseDefaultSound(bool $useDefaultSound): self
     {
@@ -118,7 +118,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the notification sound to be played for messages; 0 if sound is disabled
+     * Get Identifier of the notification sound to be played for messages; 0 if sound is disabled.
      */
     public function getSoundId(): int
     {
@@ -126,7 +126,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the notification sound to be played for messages; 0 if sound is disabled
+     * Set Identifier of the notification sound to be played for messages; 0 if sound is disabled.
      */
     public function setSoundId(int $soundId): self
     {
@@ -136,7 +136,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat or the forum chat is used instead of show_preview
+     * Get If true, the value for the relevant type of chat or the forum chat is used instead of show_preview.
      */
     public function getUseDefaultShowPreview(): bool
     {
@@ -144,7 +144,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat or the forum chat is used instead of show_preview
+     * Set If true, the value for the relevant type of chat or the forum chat is used instead of show_preview.
      */
     public function setUseDefaultShowPreview(bool $useDefaultShowPreview): self
     {
@@ -154,7 +154,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if message content must be displayed in notifications
+     * Get True, if message content must be displayed in notifications.
      */
     public function getShowPreview(): bool
     {
@@ -162,7 +162,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if message content must be displayed in notifications
+     * Set True, if message content must be displayed in notifications.
      */
     public function setShowPreview(bool $showPreview): self
     {
@@ -172,7 +172,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat is used instead of mute_stories
+     * Get If true, the value for the relevant type of chat is used instead of mute_stories.
      */
     public function getUseDefaultMuteStories(): bool
     {
@@ -180,7 +180,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat is used instead of mute_stories
+     * Set If true, the value for the relevant type of chat is used instead of mute_stories.
      */
     public function setUseDefaultMuteStories(bool $useDefaultMuteStories): self
     {
@@ -190,7 +190,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if story notifications are disabled for the chat
+     * Get True, if story notifications are disabled for the chat.
      */
     public function getMuteStories(): bool
     {
@@ -198,7 +198,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if story notifications are disabled for the chat
+     * Set True, if story notifications are disabled for the chat.
      */
     public function setMuteStories(bool $muteStories): self
     {
@@ -208,7 +208,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat is used instead of story_sound_id
+     * Get If true, the value for the relevant type of chat is used instead of story_sound_id.
      */
     public function getUseDefaultStorySound(): bool
     {
@@ -216,7 +216,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat is used instead of story_sound_id
+     * Set If true, the value for the relevant type of chat is used instead of story_sound_id.
      */
     public function setUseDefaultStorySound(bool $useDefaultStorySound): self
     {
@@ -226,7 +226,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the notification sound to be played for stories; 0 if sound is disabled
+     * Get Identifier of the notification sound to be played for stories; 0 if sound is disabled.
      */
     public function getStorySoundId(): int
     {
@@ -234,7 +234,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the notification sound to be played for stories; 0 if sound is disabled
+     * Set Identifier of the notification sound to be played for stories; 0 if sound is disabled.
      */
     public function setStorySoundId(int $storySoundId): self
     {
@@ -244,7 +244,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat is used instead of show_story_poster
+     * Get If true, the value for the relevant type of chat is used instead of show_story_poster.
      */
     public function getUseDefaultShowStoryPoster(): bool
     {
@@ -252,7 +252,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat is used instead of show_story_poster
+     * Set If true, the value for the relevant type of chat is used instead of show_story_poster.
      */
     public function setUseDefaultShowStoryPoster(bool $useDefaultShowStoryPoster): self
     {
@@ -262,7 +262,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat that posted a story must be displayed in notifications
+     * Get True, if the chat that posted a story must be displayed in notifications.
      */
     public function getShowStoryPoster(): bool
     {
@@ -270,7 +270,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat that posted a story must be displayed in notifications
+     * Set True, if the chat that posted a story must be displayed in notifications.
      */
     public function setShowStoryPoster(bool $showStoryPoster): self
     {
@@ -280,7 +280,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat or the forum chat is used instead of disable_pinned_message_notifications
+     * Get If true, the value for the relevant type of chat or the forum chat is used instead of disable_pinned_message_notifications.
      */
     public function getUseDefaultDisablePinnedMessageNotifications(): bool
     {
@@ -288,7 +288,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat or the forum chat is used instead of disable_pinned_message_notifications
+     * Set If true, the value for the relevant type of chat or the forum chat is used instead of disable_pinned_message_notifications.
      */
     public function setUseDefaultDisablePinnedMessageNotifications(
         bool $useDefaultDisablePinnedMessageNotifications,
@@ -299,7 +299,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, notifications for incoming pinned messages will be created as for an ordinary unread message
+     * Get If true, notifications for incoming pinned messages will be created as for an ordinary unread message.
      */
     public function getDisablePinnedMessageNotifications(): bool
     {
@@ -307,7 +307,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, notifications for incoming pinned messages will be created as for an ordinary unread message
+     * Set If true, notifications for incoming pinned messages will be created as for an ordinary unread message.
      */
     public function setDisablePinnedMessageNotifications(bool $disablePinnedMessageNotifications): self
     {
@@ -317,7 +317,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, the value for the relevant type of chat or the forum chat is used instead of disable_mention_notifications
+     * Get If true, the value for the relevant type of chat or the forum chat is used instead of disable_mention_notifications.
      */
     public function getUseDefaultDisableMentionNotifications(): bool
     {
@@ -325,7 +325,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, the value for the relevant type of chat or the forum chat is used instead of disable_mention_notifications
+     * Set If true, the value for the relevant type of chat or the forum chat is used instead of disable_mention_notifications.
      */
     public function setUseDefaultDisableMentionNotifications(bool $useDefaultDisableMentionNotifications): self
     {
@@ -335,7 +335,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Get If true, notifications for messages with mentions will be created as for an ordinary unread message
+     * Get If true, notifications for messages with mentions will be created as for an ordinary unread message.
      */
     public function getDisableMentionNotifications(): bool
     {
@@ -343,7 +343,7 @@ class ChatNotificationSettings implements \JsonSerializable
     }
 
     /**
-     * Set If true, notifications for messages with mentions will be created as for an ordinary unread message
+     * Set If true, notifications for messages with mentions will be created as for an ordinary unread message.
      */
     public function setDisableMentionNotifications(bool $disableMentionNotifications): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A file defined by a local path @path Local path to the file
+ * A file defined by a local path @path Local path to the file.
  */
 class InputFileLocal extends InputFile implements \JsonSerializable
 {

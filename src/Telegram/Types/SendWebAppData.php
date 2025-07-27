@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends data received from a keyboardButtonTypeWebApp Web App to a bot
+ * Sends data received from a keyboardButtonTypeWebApp Web App to a bot.
  */
 class SendWebAppData extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SendWebAppData extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the target bot
+     * Get Identifier of the target bot.
      */
     public function getBotUserId(): int
     {
@@ -33,7 +33,7 @@ class SendWebAppData extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the target bot
+     * Set Identifier of the target bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -43,7 +43,7 @@ class SendWebAppData extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Text of the keyboardButtonTypeWebApp button, which opened the Web App
+     * Get Text of the keyboardButtonTypeWebApp button, which opened the Web App.
      */
     public function getButtonText(): string
     {
@@ -51,7 +51,7 @@ class SendWebAppData extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Text of the keyboardButtonTypeWebApp button, which opened the Web App
+     * Set Text of the keyboardButtonTypeWebApp button, which opened the Web App.
      */
     public function setButtonText(string $buttonText): self
     {
@@ -61,7 +61,7 @@ class SendWebAppData extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The data
+     * Get The data.
      */
     public function getData(): string
     {
@@ -69,7 +69,7 @@ class SendWebAppData extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The data
+     * Set The data.
      */
     public function setData(string $data): self
     {

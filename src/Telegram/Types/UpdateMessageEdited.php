@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message was edited. Changes in the message content will come in a separate updateMessageContent
+ * A message was edited. Changes in the message content will come in a separate updateMessageContent.
  */
 class UpdateMessageEdited extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message was edited
+     * Get Point in time (Unix timestamp) when the message was edited.
      */
     public function getEditDate(): int
     {
@@ -72,7 +72,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message was edited
+     * Set Point in time (Unix timestamp) when the message was edited.
      */
     public function setEditDate(int $editDate): self
     {
@@ -82,7 +82,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New message reply markup; may be null
+     * Get New message reply markup; may be null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -90,7 +90,7 @@ class UpdateMessageEdited extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New message reply markup; may be null
+     * Set New message reply markup; may be null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

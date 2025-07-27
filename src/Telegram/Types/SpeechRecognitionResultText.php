@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The speech recognition successfully finished @text Recognized text
+ * The speech recognition successfully finished @text Recognized text.
  */
 class SpeechRecognitionResultText extends SpeechRecognitionResult implements \JsonSerializable
 {

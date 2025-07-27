@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a purchase of a subscription to a channel chat by the current user; for regular users only
+ * The transaction is a purchase of a subscription to a channel chat by the current user; for regular users only.
  */
 class StarTransactionTypeChannelSubscriptionPurchase extends StarTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarTransactionTypeChannelSubscriptionPurchase extends StarTransactionType
     }
 
     /**
-     * Get Identifier of the channel chat that created the subscription
+     * Get Identifier of the channel chat that created the subscription.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class StarTransactionTypeChannelSubscriptionPurchase extends StarTransactionType
     }
 
     /**
-     * Set Identifier of the channel chat that created the subscription
+     * Set Identifier of the channel chat that created the subscription.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class StarTransactionTypeChannelSubscriptionPurchase extends StarTransactionType
     }
 
     /**
-     * Get The number of seconds between consecutive Telegram Star debitings
+     * Get The number of seconds between consecutive Telegram Star debitings.
      */
     public function getSubscriptionPeriod(): int
     {
@@ -48,7 +48,7 @@ class StarTransactionTypeChannelSubscriptionPurchase extends StarTransactionType
     }
 
     /**
-     * Set The number of seconds between consecutive Telegram Star debitings
+     * Set The number of seconds between consecutive Telegram Star debitings.
      */
     public function setSubscriptionPeriod(int $subscriptionPeriod): self
     {

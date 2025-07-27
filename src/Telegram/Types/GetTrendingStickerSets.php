@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of trending sticker sets. For optimal performance, the number of returned sticker sets is chosen by TDLib
+ * Returns a list of trending sticker sets. For optimal performance, the number of returned sticker sets is chosen by TDLib.
  */
 class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSeriali
     }
 
     /**
-     * Get Type of the sticker sets to return
+     * Get Type of the sticker sets to return.
      */
     public function getStickerType(): StickerType|null
     {
@@ -33,7 +33,7 @@ class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSeriali
     }
 
     /**
-     * Set Type of the sticker sets to return
+     * Set Type of the sticker sets to return.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -43,7 +43,7 @@ class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSeriali
     }
 
     /**
-     * Get The offset from which to return the sticker sets; must be non-negative
+     * Get The offset from which to return the sticker sets; must be non-negative.
      */
     public function getOffset(): int
     {
@@ -51,7 +51,7 @@ class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSeriali
     }
 
     /**
-     * Set The offset from which to return the sticker sets; must be non-negative
+     * Set The offset from which to return the sticker sets; must be non-negative.
      */
     public function setOffset(int $offset): self
     {
@@ -61,7 +61,7 @@ class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSeriali
     }
 
     /**
-     * Get The maximum number of sticker sets to be returned; up to 100. For optimal performance, the number of returned sticker sets is chosen by TDLib and can be smaller than the specified limit, even if the end of the list has not been reached
+     * Get The maximum number of sticker sets to be returned; up to 100. For optimal performance, the number of returned sticker sets is chosen by TDLib and can be smaller than the specified limit, even if the end of the list has not been reached.
      */
     public function getLimit(): int
     {
@@ -69,7 +69,7 @@ class GetTrendingStickerSets extends TrendingStickerSets implements \JsonSeriali
     }
 
     /**
-     * Set The maximum number of sticker sets to be returned; up to 100. For optimal performance, the number of returned sticker sets is chosen by TDLib and can be smaller than the specified limit, even if the end of the list has not been reached
+     * Set The maximum number of sticker sets to be returned; up to 100. For optimal performance, the number of returned sticker sets is chosen by TDLib and can be smaller than the specified limit, even if the end of the list has not been reached.
      */
     public function setLimit(int $limit): self
     {

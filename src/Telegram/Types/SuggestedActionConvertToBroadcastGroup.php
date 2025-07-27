@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Suggests the user to convert specified supergroup to a broadcast group @supergroup_id Supergroup identifier
+ * Suggests the user to convert specified supergroup to a broadcast group @supergroup_id Supergroup identifier.
  */
 class SuggestedActionConvertToBroadcastGroup extends SuggestedAction implements \JsonSerializable
 {

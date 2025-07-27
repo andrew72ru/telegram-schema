@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes subscription plan paid in Telegram Stars
+ * Describes subscription plan paid in Telegram Stars.
  */
 class StarSubscriptionPricing implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class StarSubscriptionPricing implements \JsonSerializable
     }
 
     /**
-     * Get The number of seconds between consecutive Telegram Star debiting
+     * Get The number of seconds between consecutive Telegram Star debiting.
      */
     public function getPeriod(): int
     {
@@ -30,7 +30,7 @@ class StarSubscriptionPricing implements \JsonSerializable
     }
 
     /**
-     * Set The number of seconds between consecutive Telegram Star debiting
+     * Set The number of seconds between consecutive Telegram Star debiting.
      */
     public function setPeriod(int $period): self
     {
@@ -40,7 +40,7 @@ class StarSubscriptionPricing implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars that must be paid for each period
+     * Get The amount of Telegram Stars that must be paid for each period.
      */
     public function getStarCount(): int
     {
@@ -48,7 +48,7 @@ class StarSubscriptionPricing implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars that must be paid for each period
+     * Set The amount of Telegram Stars that must be paid for each period.
      */
     public function setStarCount(int $starCount): self
     {

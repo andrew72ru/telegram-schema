@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a location of a business @location The location; may be null if not specified @address Location address; 1-96 characters
+ * Represents a location of a business @location The location; may be null if not specified @address Location address; 1-96 characters.
  */
 class BusinessLocation implements \JsonSerializable
 {

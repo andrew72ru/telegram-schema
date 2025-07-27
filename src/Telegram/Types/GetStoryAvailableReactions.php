@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns reactions, which can be chosen for a story @row_size Number of reaction per row, 5-25
+ * Returns reactions, which can be chosen for a story @row_size Number of reaction per row, 5-25.
  */
 class GetStoryAvailableReactions extends AvailableReactions implements \JsonSerializable
 {

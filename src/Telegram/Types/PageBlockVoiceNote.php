@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A voice note
+ * A voice note.
  */
 class PageBlockVoiceNote extends PageBlock implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PageBlockVoiceNote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Voice note; may be null
+     * Get Voice note; may be null.
      */
     public function getVoiceNote(): VoiceNote|null
     {
@@ -30,7 +30,7 @@ class PageBlockVoiceNote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Voice note; may be null
+     * Set Voice note; may be null.
      */
     public function setVoiceNote(VoiceNote|null $voiceNote): self
     {
@@ -40,7 +40,7 @@ class PageBlockVoiceNote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Voice note caption
+     * Get Voice note caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -48,7 +48,7 @@ class PageBlockVoiceNote extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Voice note caption
+     * Set Voice note caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {

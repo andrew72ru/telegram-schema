@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A paid reaction on behalf of an owned chat @chat_id Identifier of the chat
+ * A paid reaction on behalf of an owned chat @chat_id Identifier of the chat.
  */
 class PaidReactionTypeChat extends PaidReactionType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the result of a custom request @result A JSON-serialized result
+ * Contains the result of a custom request @result A JSON-serialized result.
  */
 class CustomRequestResult implements \JsonSerializable
 {

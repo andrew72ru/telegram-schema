@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether sender signature or link to the account is added to sent messages in a channel; requires can_change_info member right
+ * Toggles whether sender signature or link to the account is added to sent messages in a channel; requires can_change_info member right.
  */
 class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the channel
+     * Get Identifier of the channel.
      */
     public function getSupergroupId(): int
     {
@@ -33,7 +33,7 @@ class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the channel
+     * Set Identifier of the channel.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -43,7 +43,7 @@ class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of sign_messages
+     * Get New value of sign_messages.
      */
     public function getSignMessages(): bool
     {
@@ -51,7 +51,7 @@ class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of sign_messages
+     * Set New value of sign_messages.
      */
     public function setSignMessages(bool $signMessages): self
     {
@@ -61,7 +61,7 @@ class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of show_message_sender
+     * Get New value of show_message_sender.
      */
     public function getShowMessageSender(): bool
     {
@@ -69,7 +69,7 @@ class ToggleSupergroupSignMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of show_message_sender
+     * Set New value of show_message_sender.
      */
     public function setShowMessageSender(bool $showMessageSender): self
     {

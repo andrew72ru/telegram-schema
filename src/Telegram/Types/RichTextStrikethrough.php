@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A strikethrough rich text @text Text
+ * A strikethrough rich text @text Text.
  */
 class RichTextStrikethrough extends RichText implements \JsonSerializable
 {

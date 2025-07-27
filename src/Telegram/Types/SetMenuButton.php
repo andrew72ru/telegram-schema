@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets menu button for the given user or for all users; for bots only
+ * Sets menu button for the given user or for all users; for bots only.
  */
 class SetMenuButton extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetMenuButton extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or 0 to set menu button for all users
+     * Get Identifier of the user or 0 to set menu button for all users.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class SetMenuButton extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or 0 to set menu button for all users
+     * Set Identifier of the user or 0 to set menu button for all users.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class SetMenuButton extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New menu button
+     * Get New menu button.
      */
     public function getMenuButton(): BotMenuButton|null
     {
@@ -48,7 +48,7 @@ class SetMenuButton extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New menu button
+     * Set New menu button.
      */
     public function setMenuButton(BotMenuButton|null $menuButton): self
     {

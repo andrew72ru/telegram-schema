@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a point on the map
+ * Represents a point on the map.
  */
 class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -36,7 +36,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -46,7 +46,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Location result
+     * Get Location result.
      */
     public function getLocation(): Location|null
     {
@@ -54,7 +54,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Location result
+     * Set Location result.
      */
     public function setLocation(Location|null $location): self
     {
@@ -64,7 +64,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Title of the result
+     * Get Title of the result.
      */
     public function getTitle(): string
     {
@@ -72,7 +72,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Title of the result
+     * Set Title of the result.
      */
     public function setTitle(string $title): self
     {
@@ -82,7 +82,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Get Result thumbnail in JPEG format; may be null
+     * Get Result thumbnail in JPEG format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -90,7 +90,7 @@ class InlineQueryResultLocation extends InlineQueryResult implements \JsonSerial
     }
 
     /**
-     * Set Result thumbnail in JPEG format; may be null
+     * Set Result thumbnail in JPEG format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {

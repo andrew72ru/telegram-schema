@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of custom emoji identifiers for emoji statuses @custom_emoji_ids The list of custom emoji identifiers
+ * Contains a list of custom emoji identifiers for emoji statuses @custom_emoji_ids The list of custom emoji identifiers.
  */
 class EmojiStatusCustomEmojis implements \JsonSerializable
 {

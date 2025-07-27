@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A button that sends a callback query to a bot @data Data to be sent to the bot via a callback query
+ * A button that sends a callback query to a bot @data Data to be sent to the bot via a callback query.
  */
 class InlineKeyboardButtonTypeCallback extends InlineKeyboardButtonType implements \JsonSerializable
 {

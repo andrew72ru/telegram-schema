@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the discussion group of a channel chat; requires can_change_info administrator right in the channel if it is specified
+ * Changes the discussion group of a channel chat; requires can_change_info administrator right in the channel if it is specified.
  */
 class SetChatDiscussionGroup extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatDiscussionGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the channel chat. Pass 0 to remove a link from the supergroup passed in the second argument to a linked channel chat (requires can_pin_messages member right in the supergroup)
+     * Get Identifier of the channel chat. Pass 0 to remove a link from the supergroup passed in the second argument to a linked channel chat (requires can_pin_messages member right in the supergroup).
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatDiscussionGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the channel chat. Pass 0 to remove a link from the supergroup passed in the second argument to a linked channel chat (requires can_pin_messages member right in the supergroup)
+     * Set Identifier of the channel chat. Pass 0 to remove a link from the supergroup passed in the second argument to a linked channel chat (requires can_pin_messages member right in the supergroup).
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatDiscussionGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a new channel's discussion group. Use 0 to remove the discussion group. Use the method getSuitableDiscussionChats to find all suitable groups.
+     * Get Identifier of a new channel's discussion group. Use 0 to remove the discussion group. Use the method getSuitableDiscussionChats to find all suitable groups..
      */
     public function getDiscussionChatId(): int
     {
@@ -48,7 +48,7 @@ class SetChatDiscussionGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a new channel's discussion group. Use 0 to remove the discussion group. Use the method getSuitableDiscussionChats to find all suitable groups.
+     * Set Identifier of a new channel's discussion group. Use 0 to remove the discussion group. Use the method getSuitableDiscussionChats to find all suitable groups..
      */
     public function setDiscussionChatId(int $discussionChatId): self
     {

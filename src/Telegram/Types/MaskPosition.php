@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Position on a photo where a mask is placed
+ * Position on a photo where a mask is placed.
  */
 class MaskPosition implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Get Part of the face, relative to which the mask is placed
+     * Get Part of the face, relative to which the mask is placed.
      */
     public function getPoint(): MaskPoint|null
     {
@@ -36,7 +36,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Set Part of the face, relative to which the mask is placed
+     * Set Part of the face, relative to which the mask is placed.
      */
     public function setPoint(MaskPoint|null $point): self
     {
@@ -46,7 +46,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Get Shift by X-axis measured in widths of the mask scaled to the face size, from left to right. (For example, -1.0 will place the mask just to the left of the default mask position)
+     * Get Shift by X-axis measured in widths of the mask scaled to the face size, from left to right. (For example, -1.0 will place the mask just to the left of the default mask position).
      */
     public function getXShift(): float
     {
@@ -54,7 +54,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Set Shift by X-axis measured in widths of the mask scaled to the face size, from left to right. (For example, -1.0 will place the mask just to the left of the default mask position)
+     * Set Shift by X-axis measured in widths of the mask scaled to the face size, from left to right. (For example, -1.0 will place the mask just to the left of the default mask position).
      */
     public function setXShift(float $xShift): self
     {
@@ -64,7 +64,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Get Shift by Y-axis measured in heights of the mask scaled to the face size, from top to bottom. (For example, 1.0 will place the mask just below the default mask position)
+     * Get Shift by Y-axis measured in heights of the mask scaled to the face size, from top to bottom. (For example, 1.0 will place the mask just below the default mask position).
      */
     public function getYShift(): float
     {
@@ -72,7 +72,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Set Shift by Y-axis measured in heights of the mask scaled to the face size, from top to bottom. (For example, 1.0 will place the mask just below the default mask position)
+     * Set Shift by Y-axis measured in heights of the mask scaled to the face size, from top to bottom. (For example, 1.0 will place the mask just below the default mask position).
      */
     public function setYShift(float $yShift): self
     {
@@ -82,7 +82,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Get Mask scaling coefficient. (For example, 2.0 means a doubled size)
+     * Get Mask scaling coefficient. (For example, 2.0 means a doubled size).
      */
     public function getScale(): float
     {
@@ -90,7 +90,7 @@ class MaskPosition implements \JsonSerializable
     }
 
     /**
-     * Set Mask scaling coefficient. (For example, 2.0 means a doubled size)
+     * Set Mask scaling coefficient. (For example, 2.0 means a doubled size).
      */
     public function setScale(float $scale): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an effect added to a message
+ * Contains information about an effect added to a message.
  */
 class MessageEffect implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the effect
+     * Get Unique identifier of the effect.
      */
     public function getId(): int
     {
@@ -39,7 +39,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the effect
+     * Set Unique identifier of the effect.
      */
     public function setId(int $id): self
     {
@@ -49,7 +49,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Get Static icon for the effect in WEBP format; may be null if none
+     * Get Static icon for the effect in WEBP format; may be null if none.
      */
     public function getStaticIcon(): Sticker|null
     {
@@ -57,7 +57,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Set Static icon for the effect in WEBP format; may be null if none
+     * Set Static icon for the effect in WEBP format; may be null if none.
      */
     public function setStaticIcon(Sticker|null $staticIcon): self
     {
@@ -67,7 +67,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Get Emoji corresponding to the effect that can be used if static icon isn't available
+     * Get Emoji corresponding to the effect that can be used if static icon isn't available.
      */
     public function getEmoji(): string
     {
@@ -75,7 +75,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Set Emoji corresponding to the effect that can be used if static icon isn't available
+     * Set Emoji corresponding to the effect that can be used if static icon isn't available.
      */
     public function setEmoji(string $emoji): self
     {
@@ -85,7 +85,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Get True, if Telegram Premium subscription is required to use the effect
+     * Get True, if Telegram Premium subscription is required to use the effect.
      */
     public function getIsPremium(): bool
     {
@@ -93,7 +93,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Set True, if Telegram Premium subscription is required to use the effect
+     * Set True, if Telegram Premium subscription is required to use the effect.
      */
     public function setIsPremium(bool $isPremium): self
     {
@@ -103,7 +103,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Get Type of the effect
+     * Get Type of the effect.
      */
     public function getType(): MessageEffectType|null
     {
@@ -111,7 +111,7 @@ class MessageEffect implements \JsonSerializable
     }
 
     /**
-     * Set Type of the effect
+     * Set Type of the effect.
      */
     public function setType(MessageEffectType|null $type): self
     {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The maximum number of active stories
+ * The maximum number of active stories.
  */
 class PremiumLimitTypeActiveStoryCount extends PremiumLimitType implements \JsonSerializable
 {

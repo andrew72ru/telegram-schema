@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a proxy. Call addProxy with the given parameters to process the link and add the proxy
+ * The link is a link to a proxy. Call addProxy with the given parameters to process the link and add the proxy.
  */
 class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Get Proxy server domain or IP address
+     * Get Proxy server domain or IP address.
      */
     public function getServer(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Set Proxy server domain or IP address
+     * Set Proxy server domain or IP address.
      */
     public function setServer(string $server): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Get Proxy server port
+     * Get Proxy server port.
      */
     public function getPort(): int
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Set Proxy server port
+     * Set Proxy server port.
      */
     public function setPort(int $port): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Get Type of the proxy
+     * Get Type of the proxy.
      */
     public function getType(): ProxyType|null
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeProxy extends InternalLinkType implements \JsonSerializabl
     }
 
     /**
-     * Set Type of the proxy
+     * Set Type of the proxy.
      */
     public function setType(ProxyType|null $type): self
     {

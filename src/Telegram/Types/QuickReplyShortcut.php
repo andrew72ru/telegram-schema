@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a shortcut that can be used for a quick reply
+ * Describes a shortcut that can be used for a quick reply.
  */
 class QuickReplyShortcut implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Get Unique shortcut identifier
+     * Get Unique shortcut identifier.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Set Unique shortcut identifier
+     * Set Unique shortcut identifier.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Get The name of the shortcut that can be used to use the shortcut
+     * Get The name of the shortcut that can be used to use the shortcut.
      */
     public function getName(): string
     {
@@ -54,7 +54,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Set The name of the shortcut that can be used to use the shortcut
+     * Set The name of the shortcut that can be used to use the shortcut.
      */
     public function setName(string $name): self
     {
@@ -64,7 +64,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Get The first shortcut message
+     * Get The first shortcut message.
      */
     public function getFirstMessage(): QuickReplyMessage|null
     {
@@ -72,7 +72,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Set The first shortcut message
+     * Set The first shortcut message.
      */
     public function setFirstMessage(QuickReplyMessage|null $firstMessage): self
     {
@@ -82,7 +82,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Get The total number of messages in the shortcut
+     * Get The total number of messages in the shortcut.
      */
     public function getMessageCount(): int
     {
@@ -90,7 +90,7 @@ class QuickReplyShortcut implements \JsonSerializable
     }
 
     /**
-     * Set The total number of messages in the shortcut
+     * Set The total number of messages in the shortcut.
      */
     public function setMessageCount(int $messageCount): self
     {

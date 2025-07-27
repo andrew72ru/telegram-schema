@@ -19,7 +19,7 @@ class AddSavedAnimation extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The animation file to be added. Only animations known to the server (i.e., successfully sent via a message) can be added to the list
+     * Get The animation file to be added. Only animations known to the server (i.e., successfully sent via a message) can be added to the list.
      */
     public function getAnimation(): InputFile|null
     {
@@ -27,7 +27,7 @@ class AddSavedAnimation extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The animation file to be added. Only animations known to the server (i.e., successfully sent via a message) can be added to the list
+     * Set The animation file to be added. Only animations known to the server (i.e., successfully sent via a message) can be added to the list.
      */
     public function setAnimation(InputFile|null $animation): self
     {

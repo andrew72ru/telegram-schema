@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Transfer Telegram Stars from the business account to the business bot; for bots only
+ * Transfer Telegram Stars from the business account to the business bot; for bots only.
  */
 class TransferBusinessAccountStars extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class TransferBusinessAccountStars extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class TransferBusinessAccountStars extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class TransferBusinessAccountStars extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars to transfer
+     * Get Number of Telegram Stars to transfer.
      */
     public function getStarCount(): int
     {
@@ -48,7 +48,7 @@ class TransferBusinessAccountStars extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars to transfer
+     * Set Number of Telegram Stars to transfer.
      */
     public function setStarCount(int $starCount): self
     {

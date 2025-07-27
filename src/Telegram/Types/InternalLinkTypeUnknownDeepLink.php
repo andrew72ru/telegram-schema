@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is an unknown tg: link. Call getDeepLinkInfo to process the link @link Link to be passed to getDeepLinkInfo
+ * The link is an unknown tg: link. Call getDeepLinkInfo to process the link @see Link to be passed to getDeepLinkInfo.
  */
 class InternalLinkTypeUnknownDeepLink extends InternalLinkType implements \JsonSerializable
 {

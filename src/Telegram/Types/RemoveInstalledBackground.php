@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes background from the list of installed backgrounds @background_id The background identifier
+ * Removes background from the list of installed backgrounds @background_id The background identifier.
  */
 class RemoveInstalledBackground extends Ok implements \JsonSerializable
 {

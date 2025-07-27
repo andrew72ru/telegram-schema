@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Number of Saved Messages topics has changed @topic_count Approximate total number of Saved Messages topics
+ * Number of Saved Messages topics has changed @topic_count Approximate total number of Saved Messages topics.
  */
 class UpdateSavedMessagesTopicCount extends Update implements \JsonSerializable
 {

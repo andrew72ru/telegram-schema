@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user sent a join request to a chat; for bots only
+ * A user sent a join request to a chat; for bots only.
  */
 class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Join request
+     * Get Join request.
      */
     public function getRequest(): ChatJoinRequest|null
     {
@@ -54,7 +54,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Join request
+     * Set Join request.
      */
     public function setRequest(ChatJoinRequest|null $request): self
     {
@@ -64,7 +64,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the private chat with the user
+     * Get Chat identifier of the private chat with the user.
      */
     public function getUserChatId(): int
     {
@@ -72,7 +72,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the private chat with the user
+     * Set Chat identifier of the private chat with the user.
      */
     public function setUserChatId(int $userChatId): self
     {
@@ -82,7 +82,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The invite link, which was used to send join request; may be null
+     * Get The invite link, which was used to send join request; may be null.
      */
     public function getInviteLink(): ChatInviteLink|null
     {
@@ -90,7 +90,7 @@ class UpdateNewChatJoinRequest extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The invite link, which was used to send join request; may be null
+     * Set The invite link, which was used to send join request; may be null.
      */
     public function setInviteLink(ChatInviteLink|null $inviteLink): self
     {

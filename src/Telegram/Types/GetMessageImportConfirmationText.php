@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a confirmation text to be shown to the user before starting message import
+ * Returns a confirmation text to be shown to the user before starting message import.
  */
 class GetMessageImportConfirmationText extends Text implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GetMessageImportConfirmationText extends Text implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right
+     * Get Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right.
      */
     public function getChatId(): int
     {
@@ -27,7 +27,7 @@ class GetMessageImportConfirmationText extends Text implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right
+     * Set Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info member right.
      */
     public function setChatId(int $chatId): self
     {

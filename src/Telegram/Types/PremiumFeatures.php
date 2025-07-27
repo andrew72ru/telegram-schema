@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about features, available to Premium users
+ * Contains information about features, available to Premium users.
  */
 class PremiumFeatures implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PremiumFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The list of available features
+     * Get The list of available features.
      */
     public function getFeatures(): array|null
     {
@@ -33,7 +33,7 @@ class PremiumFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The list of available features
+     * Set The list of available features.
      */
     public function setFeatures(array|null $features): self
     {
@@ -43,7 +43,7 @@ class PremiumFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The list of limits, increased for Premium users
+     * Get The list of limits, increased for Premium users.
      */
     public function getLimits(): array|null
     {
@@ -51,7 +51,7 @@ class PremiumFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The list of limits, increased for Premium users
+     * Set The list of limits, increased for Premium users.
      */
     public function setLimits(array|null $limits): self
     {
@@ -61,7 +61,7 @@ class PremiumFeatures implements \JsonSerializable
     }
 
     /**
-     * Get An internal link to be opened to pay for Telegram Premium if store payment isn't possible; may be null if direct payment isn't available
+     * Get An internal link to be opened to pay for Telegram Premium if store payment isn't possible; may be null if direct payment isn't available.
      */
     public function getPaymentLink(): InternalLinkType|null
     {
@@ -69,7 +69,7 @@ class PremiumFeatures implements \JsonSerializable
     }
 
     /**
-     * Set An internal link to be opened to pay for Telegram Premium if store payment isn't possible; may be null if direct payment isn't available
+     * Set An internal link to be opened to pay for Telegram Premium if store payment isn't possible; may be null if direct payment isn't available.
      */
     public function setPaymentLink(InternalLinkType|null $paymentLink): self
     {

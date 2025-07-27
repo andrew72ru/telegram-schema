@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes all pinned messages from the topic in a channel direct messages chat administered by the current user
+ * Removes all pinned messages from the topic in a channel direct messages chat administered by the current user.
  */
 class UnpinAllDirectMessagesChatTopicMessages extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UnpinAllDirectMessagesChatTopicMessages extends Ok implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UnpinAllDirectMessagesChatTopicMessages extends Ok implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UnpinAllDirectMessagesChatTopicMessages extends Ok implements \JsonSeriali
     }
 
     /**
-     * Get Topic identifier
+     * Get Topic identifier.
      */
     public function getTopicId(): int
     {
@@ -48,7 +48,7 @@ class UnpinAllDirectMessagesChatTopicMessages extends Ok implements \JsonSeriali
     }
 
     /**
-     * Set Topic identifier
+     * Set Topic identifier.
      */
     public function setTopicId(int $topicId): self
     {

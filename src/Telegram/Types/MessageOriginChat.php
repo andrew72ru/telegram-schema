@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message was originally sent on behalf of a chat
+ * The message was originally sent on behalf of a chat.
  */
 class MessageOriginChat extends MessageOrigin implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class MessageOriginChat extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that originally sent the message
+     * Get Identifier of the chat that originally sent the message.
      */
     public function getSenderChatId(): int
     {
@@ -30,7 +30,7 @@ class MessageOriginChat extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that originally sent the message
+     * Set Identifier of the chat that originally sent the message.
      */
     public function setSenderChatId(int $senderChatId): self
     {
@@ -40,7 +40,7 @@ class MessageOriginChat extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Get For messages originally sent by an anonymous chat administrator, original message author signature
+     * Get For messages originally sent by an anonymous chat administrator, original message author signature.
      */
     public function getAuthorSignature(): string
     {
@@ -48,7 +48,7 @@ class MessageOriginChat extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Set For messages originally sent by an anonymous chat administrator, original message author signature
+     * Set For messages originally sent by an anonymous chat administrator, original message author signature.
      */
     public function setAuthorSignature(string $authorSignature): self
     {

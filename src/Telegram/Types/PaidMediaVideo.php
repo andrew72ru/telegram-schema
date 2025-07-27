@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The media is a video
+ * The media is a video.
  */
 class PaidMediaVideo extends PaidMedia implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PaidMediaVideo extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get The video
+     * Get The video.
      */
     public function getVideo(): Video|null
     {
@@ -33,7 +33,7 @@ class PaidMediaVideo extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set The video
+     * Set The video.
      */
     public function setVideo(Video|null $video): self
     {
@@ -43,7 +43,7 @@ class PaidMediaVideo extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Cover of the video; may be null if none
+     * Get Cover of the video; may be null if none.
      */
     public function getCover(): Photo|null
     {
@@ -51,7 +51,7 @@ class PaidMediaVideo extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Cover of the video; may be null if none
+     * Set Cover of the video; may be null if none.
      */
     public function setCover(Photo|null $cover): self
     {
@@ -61,7 +61,7 @@ class PaidMediaVideo extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp from which the video playing must start, in seconds
+     * Get Timestamp from which the video playing must start, in seconds.
      */
     public function getStartTimestamp(): int
     {
@@ -69,7 +69,7 @@ class PaidMediaVideo extends PaidMedia implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp from which the video playing must start, in seconds
+     * Set Timestamp from which the video playing must start, in seconds.
      */
     public function setStartTimestamp(int $startTimestamp): self
     {

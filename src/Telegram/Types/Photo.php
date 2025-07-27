@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a photo
+ * Describes a photo.
  */
 class Photo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class Photo implements \JsonSerializable
     }
 
     /**
-     * Get True, if stickers were added to the photo. The list of corresponding sticker sets can be received using getAttachedStickerSets
+     * Get True, if stickers were added to the photo. The list of corresponding sticker sets can be received using getAttachedStickerSets.
      */
     public function getHasStickers(): bool
     {
@@ -33,7 +33,7 @@ class Photo implements \JsonSerializable
     }
 
     /**
-     * Set True, if stickers were added to the photo. The list of corresponding sticker sets can be received using getAttachedStickerSets
+     * Set True, if stickers were added to the photo. The list of corresponding sticker sets can be received using getAttachedStickerSets.
      */
     public function setHasStickers(bool $hasStickers): self
     {
@@ -43,7 +43,7 @@ class Photo implements \JsonSerializable
     }
 
     /**
-     * Get Photo minithumbnail; may be null
+     * Get Photo minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -51,7 +51,7 @@ class Photo implements \JsonSerializable
     }
 
     /**
-     * Set Photo minithumbnail; may be null
+     * Set Photo minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -61,7 +61,7 @@ class Photo implements \JsonSerializable
     }
 
     /**
-     * Get Available variants of the photo, in different sizes
+     * Get Available variants of the photo, in different sizes.
      */
     public function getSizes(): array|null
     {
@@ -69,7 +69,7 @@ class Photo implements \JsonSerializable
     }
 
     /**
-     * Set Available variants of the photo, in different sizes
+     * Set Available variants of the photo, in different sizes.
      */
     public function setSizes(array|null $sizes): self
     {

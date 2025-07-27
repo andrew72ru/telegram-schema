@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the pinned state of a chat. There can be up to getOption("pinned_chat_count_max")/getOption("pinned_archived_chat_count_max") pinned non-secret chats and the same number of secret chats in the main/archive chat list. The limit can be increased with Telegram Premium
+ * Changes the pinned state of a chat. There can be up to getOption("pinned_chat_count_max")/getOption("pinned_archived_chat_count_max") pinned non-secret chats and the same number of secret chats in the main/archive chat list. The limit can be increased with Telegram Premium.
  */
 class ToggleChatIsPinned extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleChatIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat list in which to change the pinned state of the chat
+     * Get Chat list in which to change the pinned state of the chat.
      */
     public function getChatList(): ChatList|null
     {
@@ -33,7 +33,7 @@ class ToggleChatIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat list in which to change the pinned state of the chat
+     * Set Chat list in which to change the pinned state of the chat.
      */
     public function setChatList(ChatList|null $chatList): self
     {
@@ -43,7 +43,7 @@ class ToggleChatIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -51,7 +51,7 @@ class ToggleChatIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -61,7 +61,7 @@ class ToggleChatIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to pin the chat; pass false to unpin it
+     * Get Pass true to pin the chat; pass false to unpin it.
      */
     public function getIsPinned(): bool
     {
@@ -69,7 +69,7 @@ class ToggleChatIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to pin the chat; pass false to unpin it
+     * Set Pass true to pin the chat; pass false to unpin it.
      */
     public function setIsPinned(bool $isPinned): self
     {

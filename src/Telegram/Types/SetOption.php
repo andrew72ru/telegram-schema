@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the value of an option. (Check the list of available options on https://core.telegram.org/tdlib/options.) Only writable options can be set. Can be called before authorization
+ * Sets the value of an option. (Check the list of available options on https://core.telegram.org/tdlib/options.) Only writable options can be set. Can be called before authorization.
  */
 class SetOption extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetOption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The name of the option
+     * Get The name of the option.
      */
     public function getName(): string
     {
@@ -30,7 +30,7 @@ class SetOption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The name of the option
+     * Set The name of the option.
      */
     public function setName(string $name): self
     {
@@ -40,7 +40,7 @@ class SetOption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new value of the option; pass null to reset option value to a default value
+     * Get The new value of the option; pass null to reset option value to a default value.
      */
     public function getValue(): OptionValue|null
     {
@@ -48,7 +48,7 @@ class SetOption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new value of the option; pass null to reset option value to a default value
+     * Set The new value of the option; pass null to reset option value to a default value.
      */
     public function setValue(OptionValue|null $value): self
     {

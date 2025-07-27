@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an inline message that can be sent via the bot
+ * Represents an inline message that can be sent via the bot.
  */
 class PreparedInlineMessageId implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PreparedInlineMessageId implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier for the message
+     * Get Unique identifier for the message.
      */
     public function getId(): string
     {
@@ -30,7 +30,7 @@ class PreparedInlineMessageId implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier for the message
+     * Set Unique identifier for the message.
      */
     public function setId(string $id): self
     {
@@ -40,7 +40,7 @@ class PreparedInlineMessageId implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message can't be used anymore
+     * Get Point in time (Unix timestamp) when the message can't be used anymore.
      */
     public function getExpirationDate(): int
     {
@@ -48,7 +48,7 @@ class PreparedInlineMessageId implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message can't be used anymore
+     * Set Point in time (Unix timestamp) when the message can't be used anymore.
      */
     public function setExpirationDate(int $expirationDate): self
     {

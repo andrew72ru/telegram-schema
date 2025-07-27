@@ -25,7 +25,7 @@ class InternalLinkTypeMainWebApp extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get Username of the bot
+     * Get Username of the bot.
      */
     public function getBotUsername(): string
     {
@@ -33,7 +33,7 @@ class InternalLinkTypeMainWebApp extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set Username of the bot
+     * Set Username of the bot.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -43,7 +43,7 @@ class InternalLinkTypeMainWebApp extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get Start parameter to be passed to getMainWebApp
+     * Get Start parameter to be passed to getMainWebApp.
      */
     public function getStartParameter(): string
     {
@@ -51,7 +51,7 @@ class InternalLinkTypeMainWebApp extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set Start parameter to be passed to getMainWebApp
+     * Set Start parameter to be passed to getMainWebApp.
      */
     public function setStartParameter(string $startParameter): self
     {
@@ -61,7 +61,7 @@ class InternalLinkTypeMainWebApp extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Get The mode to be passed to getMainWebApp
+     * Get The mode to be passed to getMainWebApp.
      */
     public function getMode(): WebAppOpenMode|null
     {
@@ -69,7 +69,7 @@ class InternalLinkTypeMainWebApp extends InternalLinkType implements \JsonSerial
     }
 
     /**
-     * Set The mode to be passed to getMainWebApp
+     * Set The mode to be passed to getMainWebApp.
      */
     public function setMode(WebAppOpenMode|null $mode): self
     {

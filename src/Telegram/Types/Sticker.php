@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a sticker
+ * Describes a sticker.
  */
 class Sticker implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Unique sticker identifier within the set; 0 if none
+     * Get Unique sticker identifier within the set; 0 if none.
      */
     public function getId(): int
     {
@@ -51,7 +51,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Unique sticker identifier within the set; 0 if none
+     * Set Unique sticker identifier within the set; 0 if none.
      */
     public function setId(int $id): self
     {
@@ -61,7 +61,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sticker set to which the sticker belongs; 0 if none
+     * Get Identifier of the sticker set to which the sticker belongs; 0 if none.
      */
     public function getSetId(): int
     {
@@ -69,7 +69,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sticker set to which the sticker belongs; 0 if none
+     * Set Identifier of the sticker set to which the sticker belongs; 0 if none.
      */
     public function setSetId(int $setId): self
     {
@@ -79,7 +79,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Sticker width; as defined by the sender
+     * Get Sticker width; as defined by the sender.
      */
     public function getWidth(): int
     {
@@ -87,7 +87,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Sticker width; as defined by the sender
+     * Set Sticker width; as defined by the sender.
      */
     public function setWidth(int $width): self
     {
@@ -97,7 +97,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Sticker height; as defined by the sender
+     * Get Sticker height; as defined by the sender.
      */
     public function getHeight(): int
     {
@@ -105,7 +105,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Sticker height; as defined by the sender
+     * Set Sticker height; as defined by the sender.
      */
     public function setHeight(int $height): self
     {
@@ -115,7 +115,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Emoji corresponding to the sticker
+     * Get Emoji corresponding to the sticker.
      */
     public function getEmoji(): string
     {
@@ -123,7 +123,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Emoji corresponding to the sticker
+     * Set Emoji corresponding to the sticker.
      */
     public function setEmoji(string $emoji): self
     {
@@ -133,7 +133,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Sticker format
+     * Get Sticker format.
      */
     public function getFormat(): StickerFormat|null
     {
@@ -141,7 +141,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Sticker format
+     * Set Sticker format.
      */
     public function setFormat(StickerFormat|null $format): self
     {
@@ -151,7 +151,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Sticker's full type
+     * Get Sticker's full type.
      */
     public function getFullType(): StickerFullType|null
     {
@@ -159,7 +159,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Sticker's full type
+     * Set Sticker's full type.
      */
     public function setFullType(StickerFullType|null $fullType): self
     {
@@ -169,7 +169,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get Sticker thumbnail in WEBP or JPEG format; may be null
+     * Get Sticker thumbnail in WEBP or JPEG format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -177,7 +177,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set Sticker thumbnail in WEBP or JPEG format; may be null
+     * Set Sticker thumbnail in WEBP or JPEG format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -187,7 +187,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Get File containing the sticker
+     * Get File containing the sticker.
      */
     public function getSticker(): File|null
     {
@@ -195,7 +195,7 @@ class Sticker implements \JsonSerializable
     }
 
     /**
-     * Set File containing the sticker
+     * Set File containing the sticker.
      */
     public function setSticker(File|null $sticker): self
     {

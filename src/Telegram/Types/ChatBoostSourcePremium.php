@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A user with Telegram Premium subscription or gifted Telegram Premium boosted the chat
+ * A user with Telegram Premium subscription or gifted Telegram Premium boosted the chat.
  */
 class ChatBoostSourcePremium extends ChatBoostSource implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ChatBoostSourcePremium extends ChatBoostSource implements \JsonSerializabl
     }
 
     /**
-     * Get Identifier of the user
+     * Get Identifier of the user.
      */
     public function getUserId(): int
     {
@@ -27,7 +27,7 @@ class ChatBoostSourcePremium extends ChatBoostSource implements \JsonSerializabl
     }
 
     /**
-     * Set Identifier of the user
+     * Set Identifier of the user.
      */
     public function setUserId(int $userId): self
     {

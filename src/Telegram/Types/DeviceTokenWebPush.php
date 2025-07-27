@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A token for web Push API
+ * A token for web Push API.
  */
 class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
     }
 
     /**
-     * Get Absolute URL exposed by the push service where the application server can send push messages; may be empty to deregister a device
+     * Get Absolute URL exposed by the push service where the application server can send push messages; may be empty to deregister a device.
      */
     public function getEndpoint(): string
     {
@@ -33,7 +33,7 @@ class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
     }
 
     /**
-     * Set Absolute URL exposed by the push service where the application server can send push messages; may be empty to deregister a device
+     * Set Absolute URL exposed by the push service where the application server can send push messages; may be empty to deregister a device.
      */
     public function setEndpoint(string $endpoint): self
     {
@@ -43,7 +43,7 @@ class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
     }
 
     /**
-     * Get Base64url-encoded P-256 elliptic curve Diffie-Hellman public key
+     * Get Base64url-encoded P-256 elliptic curve Diffie-Hellman public key.
      */
     public function getP256dhBase64url(): string
     {
@@ -51,7 +51,7 @@ class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
     }
 
     /**
-     * Set Base64url-encoded P-256 elliptic curve Diffie-Hellman public key
+     * Set Base64url-encoded P-256 elliptic curve Diffie-Hellman public key.
      */
     public function setP256dhBase64url(string $p256dhBase64url): self
     {
@@ -61,7 +61,7 @@ class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
     }
 
     /**
-     * Get Base64url-encoded authentication secret
+     * Get Base64url-encoded authentication secret.
      */
     public function getAuthBase64url(): string
     {
@@ -69,7 +69,7 @@ class DeviceTokenWebPush extends DeviceToken implements \JsonSerializable
     }
 
     /**
-     * Set Base64url-encoded authentication secret
+     * Set Base64url-encoded authentication secret.
      */
     public function setAuthBase64url(string $authBase64url): self
     {

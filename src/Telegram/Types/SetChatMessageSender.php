@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Selects a message sender to send messages in a chat @chat_id Chat identifier @message_sender_id New message sender for the chat
+ * Selects a message sender to send messages in a chat @chat_id Chat identifier @message_sender_id New message sender for the chat.
  */
 class SetChatMessageSender extends Ok implements \JsonSerializable
 {

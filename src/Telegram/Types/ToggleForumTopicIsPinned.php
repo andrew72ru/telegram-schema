@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the pinned state of a forum topic; requires can_manage_topics right in the supergroup. There can be up to getOption("pinned_forum_topic_count_max") pinned forum topics
+ * Changes the pinned state of a forum topic; requires can_manage_topics right in the supergroup. There can be up to getOption("pinned_forum_topic_count_max") pinned forum topics.
  */
 class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier of the forum topic
+     * Get Message thread identifier of the forum topic.
      */
     public function getMessageThreadId(): int
     {
@@ -51,7 +51,7 @@ class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier of the forum topic
+     * Set Message thread identifier of the forum topic.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -61,7 +61,7 @@ class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to pin the topic; pass false to unpin it
+     * Get Pass true to pin the topic; pass false to unpin it.
      */
     public function getIsPinned(): bool
     {
@@ -69,7 +69,7 @@ class ToggleForumTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to pin the topic; pass false to unpin it
+     * Set Pass true to pin the topic; pass false to unpin it.
      */
     public function setIsPinned(bool $isPinned): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat default appearance has changed @chat_id Chat identifier @view_as_topics New value of view_as_topics
+ * A chat default appearance has changed @chat_id Chat identifier @view_as_topics New value of view_as_topics.
  */
 class UpdateChatViewAsTopics extends Update implements \JsonSerializable
 {

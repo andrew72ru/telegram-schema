@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Basic information about a quick reply shortcut has changed. This update is guaranteed to come before the quick shortcut name is returned to the application
+ * Basic information about a quick reply shortcut has changed. This update is guaranteed to come before the quick shortcut name is returned to the application.
  */
 class UpdateQuickReplyShortcut extends Update implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class UpdateQuickReplyShortcut extends Update implements \JsonSerializable
     }
 
     /**
-     * Get New data about the shortcut
+     * Get New data about the shortcut.
      */
     public function getShortcut(): QuickReplyShortcut|null
     {
@@ -27,7 +27,7 @@ class UpdateQuickReplyShortcut extends Update implements \JsonSerializable
     }
 
     /**
-     * Set New data about the shortcut
+     * Set New data about the shortcut.
      */
     public function setShortcut(QuickReplyShortcut|null $shortcut): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a URL for a Telegram Ad platform account that can be used to set up advertisements for the chat paid in the owned Telegram Stars
+ * Returns a URL for a Telegram Ad platform account that can be used to set up advertisements for the chat paid in the owned Telegram Stars.
  */
 class GetStarAdAccountUrl extends HttpUrl implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GetStarAdAccountUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the owner of the Telegram Stars; can be identifier of an owned bot, or identifier of an owned channel chat
+     * Get Identifier of the owner of the Telegram Stars; can be identifier of an owned bot, or identifier of an owned channel chat.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -27,7 +27,7 @@ class GetStarAdAccountUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the owner of the Telegram Stars; can be identifier of an owned bot, or identifier of an owned channel chat
+     * Set Identifier of the owner of the Telegram Stars; can be identifier of an owned bot, or identifier of an owned channel chat.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {

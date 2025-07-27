@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes private chats chosen for automatic interaction with a business
+ * Describes private chats chosen for automatic interaction with a business.
  */
 class BusinessRecipients implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of selected private chats
+     * Get Identifiers of selected private chats.
      */
     public function getChatIds(): array|null
     {
@@ -45,7 +45,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of selected private chats
+     * Set Identifiers of selected private chats.
      */
     public function setChatIds(array|null $chatIds): self
     {
@@ -55,7 +55,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of private chats that are always excluded; for businessConnectedBot only
+     * Get Identifiers of private chats that are always excluded; for businessConnectedBot only.
      */
     public function getExcludedChatIds(): array|null
     {
@@ -63,7 +63,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of private chats that are always excluded; for businessConnectedBot only
+     * Set Identifiers of private chats that are always excluded; for businessConnectedBot only.
      */
     public function setExcludedChatIds(array|null $excludedChatIds): self
     {
@@ -73,7 +73,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get True, if all existing private chats are selected
+     * Get True, if all existing private chats are selected.
      */
     public function getSelectExistingChats(): bool
     {
@@ -81,7 +81,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set True, if all existing private chats are selected
+     * Set True, if all existing private chats are selected.
      */
     public function setSelectExistingChats(bool $selectExistingChats): self
     {
@@ -91,7 +91,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get True, if all new private chats are selected
+     * Get True, if all new private chats are selected.
      */
     public function getSelectNewChats(): bool
     {
@@ -99,7 +99,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set True, if all new private chats are selected
+     * Set True, if all new private chats are selected.
      */
     public function setSelectNewChats(bool $selectNewChats): self
     {
@@ -109,7 +109,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get True, if all private chats with contacts are selected
+     * Get True, if all private chats with contacts are selected.
      */
     public function getSelectContacts(): bool
     {
@@ -117,7 +117,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set True, if all private chats with contacts are selected
+     * Set True, if all private chats with contacts are selected.
      */
     public function setSelectContacts(bool $selectContacts): self
     {
@@ -127,7 +127,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get True, if all private chats with non-contacts are selected
+     * Get True, if all private chats with non-contacts are selected.
      */
     public function getSelectNonContacts(): bool
     {
@@ -135,7 +135,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set True, if all private chats with non-contacts are selected
+     * Set True, if all private chats with non-contacts are selected.
      */
     public function setSelectNonContacts(bool $selectNonContacts): self
     {
@@ -145,7 +145,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Get If true, then all private chats except the selected are chosen. Otherwise, only the selected chats are chosen
+     * Get If true, then all private chats except the selected are chosen. Otherwise, only the selected chats are chosen.
      */
     public function getExcludeSelected(): bool
     {
@@ -153,7 +153,7 @@ class BusinessRecipients implements \JsonSerializable
     }
 
     /**
-     * Set If true, then all private chats except the selected are chosen. Otherwise, only the selected chats are chosen
+     * Set If true, then all private chats except the selected are chosen. Otherwise, only the selected chats are chosen.
      */
     public function setExcludeSelected(bool $excludeSelected): self
     {

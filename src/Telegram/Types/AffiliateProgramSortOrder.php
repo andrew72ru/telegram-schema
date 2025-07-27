@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for AffiliateProgramSortOrder types
+ * Abstract base class for AffiliateProgramSortOrder types.
  */
 abstract class AffiliateProgramSortOrder implements \JsonSerializable
 {

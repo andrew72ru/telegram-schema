@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes actions that a user is allowed to take in a chat
+ * Describes actions that a user is allowed to take in a chat.
  */
 class ChatPermissions implements \JsonSerializable
 {
@@ -58,7 +58,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send text messages, contacts, giveaways, giveaway winners, invoices, locations, and venues
+     * Get True, if the user can send text messages, contacts, giveaways, giveaway winners, invoices, locations, and venues.
      */
     public function getCanSendBasicMessages(): bool
     {
@@ -66,7 +66,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send text messages, contacts, giveaways, giveaway winners, invoices, locations, and venues
+     * Set True, if the user can send text messages, contacts, giveaways, giveaway winners, invoices, locations, and venues.
      */
     public function setCanSendBasicMessages(bool $canSendBasicMessages): self
     {
@@ -76,7 +76,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send music files
+     * Get True, if the user can send music files.
      */
     public function getCanSendAudios(): bool
     {
@@ -84,7 +84,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send music files
+     * Set True, if the user can send music files.
      */
     public function setCanSendAudios(bool $canSendAudios): self
     {
@@ -94,7 +94,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send documents
+     * Get True, if the user can send documents.
      */
     public function getCanSendDocuments(): bool
     {
@@ -102,7 +102,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send documents
+     * Set True, if the user can send documents.
      */
     public function setCanSendDocuments(bool $canSendDocuments): self
     {
@@ -112,7 +112,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send photos
+     * Get True, if the user can send photos.
      */
     public function getCanSendPhotos(): bool
     {
@@ -120,7 +120,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send photos
+     * Set True, if the user can send photos.
      */
     public function setCanSendPhotos(bool $canSendPhotos): self
     {
@@ -130,7 +130,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send videos
+     * Get True, if the user can send videos.
      */
     public function getCanSendVideos(): bool
     {
@@ -138,7 +138,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send videos
+     * Set True, if the user can send videos.
      */
     public function setCanSendVideos(bool $canSendVideos): self
     {
@@ -148,7 +148,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send video notes
+     * Get True, if the user can send video notes.
      */
     public function getCanSendVideoNotes(): bool
     {
@@ -156,7 +156,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send video notes
+     * Set True, if the user can send video notes.
      */
     public function setCanSendVideoNotes(bool $canSendVideoNotes): self
     {
@@ -166,7 +166,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send voice notes
+     * Get True, if the user can send voice notes.
      */
     public function getCanSendVoiceNotes(): bool
     {
@@ -174,7 +174,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send voice notes
+     * Set True, if the user can send voice notes.
      */
     public function setCanSendVoiceNotes(bool $canSendVoiceNotes): self
     {
@@ -184,7 +184,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send polls and checklists
+     * Get True, if the user can send polls and checklists.
      */
     public function getCanSendPolls(): bool
     {
@@ -192,7 +192,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send polls and checklists
+     * Set True, if the user can send polls and checklists.
      */
     public function setCanSendPolls(bool $canSendPolls): self
     {
@@ -202,7 +202,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can send animations, games, stickers, and dice and use inline bots
+     * Get True, if the user can send animations, games, stickers, and dice and use inline bots.
      */
     public function getCanSendOtherMessages(): bool
     {
@@ -210,7 +210,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can send animations, games, stickers, and dice and use inline bots
+     * Set True, if the user can send animations, games, stickers, and dice and use inline bots.
      */
     public function setCanSendOtherMessages(bool $canSendOtherMessages): self
     {
@@ -220,7 +220,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user may add a link preview to their messages
+     * Get True, if the user may add a link preview to their messages.
      */
     public function getCanAddLinkPreviews(): bool
     {
@@ -228,7 +228,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user may add a link preview to their messages
+     * Set True, if the user may add a link preview to their messages.
      */
     public function setCanAddLinkPreviews(bool $canAddLinkPreviews): self
     {
@@ -238,7 +238,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can change the chat title, photo, and other settings
+     * Get True, if the user can change the chat title, photo, and other settings.
      */
     public function getCanChangeInfo(): bool
     {
@@ -246,7 +246,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can change the chat title, photo, and other settings
+     * Set True, if the user can change the chat title, photo, and other settings.
      */
     public function setCanChangeInfo(bool $canChangeInfo): self
     {
@@ -256,7 +256,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can invite new users to the chat
+     * Get True, if the user can invite new users to the chat.
      */
     public function getCanInviteUsers(): bool
     {
@@ -264,7 +264,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can invite new users to the chat
+     * Set True, if the user can invite new users to the chat.
      */
     public function setCanInviteUsers(bool $canInviteUsers): self
     {
@@ -274,7 +274,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can pin messages
+     * Get True, if the user can pin messages.
      */
     public function getCanPinMessages(): bool
     {
@@ -282,7 +282,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can pin messages
+     * Set True, if the user can pin messages.
      */
     public function setCanPinMessages(bool $canPinMessages): self
     {
@@ -292,7 +292,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Get True, if the user can create topics
+     * Get True, if the user can create topics.
      */
     public function getCanCreateTopics(): bool
     {
@@ -300,7 +300,7 @@ class ChatPermissions implements \JsonSerializable
     }
 
     /**
-     * Set True, if the user can create topics
+     * Set True, if the user can create topics.
      */
     public function setCanCreateTopics(bool $canCreateTopics): self
     {

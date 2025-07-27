@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The payment form is for a payment in Telegram Stars for subscription @pricing Information about subscription plan
+ * The payment form is for a payment in Telegram Stars for subscription @pricing Information about subscription plan.
  */
 class PaymentFormTypeStarSubscription extends PaymentFormType implements \JsonSerializable
 {

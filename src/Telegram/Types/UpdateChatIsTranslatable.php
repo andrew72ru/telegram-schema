@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Translation of chat messages was enabled or disabled @chat_id Chat identifier @is_translatable New value of is_translatable
+ * Translation of chat messages was enabled or disabled @chat_id Chat identifier @is_translatable New value of is_translatable.
  */
 class UpdateChatIsTranslatable extends Update implements \JsonSerializable
 {

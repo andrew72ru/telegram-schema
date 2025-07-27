@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A rich text URL link @text Text @url URL @is_cached True, if the URL has cached instant view server-side
+ * A rich text URL link @text Text @url URL @is_cached True, if the URL has cached instant view server-side.
  */
 class RichTextUrl extends RichText implements \JsonSerializable
 {

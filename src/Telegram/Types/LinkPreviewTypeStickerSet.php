@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a sticker set @stickers Up to 4 stickers from the sticker set
+ * The link is a link to a sticker set @stickers Up to 4 stickers from the sticker set.
  */
 class LinkPreviewTypeStickerSet extends LinkPreviewType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a checklist @list The checklist description
+ * A message with a checklist @list The checklist description.
  */
 class MessageChecklist extends MessageContent implements \JsonSerializable
 {

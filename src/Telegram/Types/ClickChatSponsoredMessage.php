@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that the user opened the sponsored chat via the button, the name, the chat photo, a mention in the sponsored message text, or the media in the sponsored message
+ * Informs TDLib that the user opened the sponsored chat via the button, the name, the chat photo, a mention in the sponsored message text, or the media in the sponsored message.
  */
 class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the sponsored message
+     * Get Chat identifier of the sponsored message.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the sponsored message
+     * Set Chat identifier of the sponsored message.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sponsored message
+     * Get Identifier of the sponsored message.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sponsored message
+     * Set Identifier of the sponsored message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the media was clicked in the sponsored message
+     * Get Pass true if the media was clicked in the sponsored message.
      */
     public function getIsMediaClick(): bool
     {
@@ -72,7 +72,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the media was clicked in the sponsored message
+     * Set Pass true if the media was clicked in the sponsored message.
      */
     public function setIsMediaClick(bool $isMediaClick): self
     {
@@ -82,7 +82,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the user expanded the video from the sponsored message fullscreen before the click
+     * Get Pass true if the user expanded the video from the sponsored message fullscreen before the click.
      */
     public function getFromFullscreen(): bool
     {
@@ -90,7 +90,7 @@ class ClickChatSponsoredMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the user expanded the video from the sponsored message fullscreen before the click
+     * Set Pass true if the user expanded the video from the sponsored message fullscreen before the click.
      */
     public function setFromFullscreen(bool $fromFullscreen): self
     {

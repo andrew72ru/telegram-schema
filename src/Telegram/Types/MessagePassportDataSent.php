@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Telegram Passport data has been sent to a bot @types List of Telegram Passport element types sent
+ * Telegram Passport data has been sent to a bot @vars List of Telegram Passport element types sent.
  */
 class MessagePassportDataSent extends MessageContent implements \JsonSerializable
 {

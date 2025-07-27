@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a promotion animation for a Business feature @feature Business feature @animation Promotion animation for the feature
+ * Describes a promotion animation for a Business feature @feature Business feature @animation Promotion animation for the feature.
  */
 class BusinessFeaturePromotionAnimation implements \JsonSerializable
 {

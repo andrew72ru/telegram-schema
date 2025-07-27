@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of supported accent colors has changed
+ * The list of supported accent colors has changed.
  */
 class UpdateAccentColors extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Information about supported colors; colors with identifiers 0 (red), 1 (orange), 2 (purple/violet), 3 (green), 4 (cyan), 5 (blue), 6 (pink) must always be supported
+     * Get Information about supported colors; colors with identifiers 0 (red), 1 (orange), 2 (purple/violet), 3 (green), 4 (cyan), 5 (blue), 6 (pink) must always be supported.
      */
     public function getColors(): array|null
     {
@@ -30,7 +30,7 @@ class UpdateAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Information about supported colors; colors with identifiers 0 (red), 1 (orange), 2 (purple/violet), 3 (green), 4 (cyan), 5 (blue), 6 (pink) must always be supported
+     * Set Information about supported colors; colors with identifiers 0 (red), 1 (orange), 2 (purple/violet), 3 (green), 4 (cyan), 5 (blue), 6 (pink) must always be supported.
      */
     public function setColors(array|null $colors): self
     {
@@ -40,7 +40,7 @@ class UpdateAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specified order
+     * Get The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specified order.
      */
     public function getAvailableAccentColorIds(): array|null
     {
@@ -48,7 +48,7 @@ class UpdateAccentColors extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specified order
+     * Set The list of accent color identifiers, which can be set through setAccentColor and setChatAccentColor. The colors must be shown in the specified order.
      */
     public function setAvailableAccentColorIds(array|null $availableAccentColorIds): self
     {

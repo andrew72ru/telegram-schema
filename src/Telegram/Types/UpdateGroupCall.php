@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about a group call was updated @group_call New data about the group call
+ * Information about a group call was updated @group_call New data about the group call.
  */
 class UpdateGroupCall extends Update implements \JsonSerializable
 {

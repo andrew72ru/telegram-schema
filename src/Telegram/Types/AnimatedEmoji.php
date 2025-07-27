@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an animated or custom representation of an emoji
+ * Describes an animated or custom representation of an emoji.
  */
 class AnimatedEmoji implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Get Sticker for the emoji; may be null if yet unknown for a custom emoji. If the sticker is a custom emoji, then it can have arbitrary format
+     * Get Sticker for the emoji; may be null if yet unknown for a custom emoji. If the sticker is a custom emoji, then it can have arbitrary format.
      */
     public function getSticker(): Sticker|null
     {
@@ -39,7 +39,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Set Sticker for the emoji; may be null if yet unknown for a custom emoji. If the sticker is a custom emoji, then it can have arbitrary format
+     * Set Sticker for the emoji; may be null if yet unknown for a custom emoji. If the sticker is a custom emoji, then it can have arbitrary format.
      */
     public function setSticker(Sticker|null $sticker): self
     {
@@ -49,7 +49,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Get Expected width of the sticker, which can be used if the sticker is null
+     * Get Expected width of the sticker, which can be used if the sticker is null.
      */
     public function getStickerWidth(): int
     {
@@ -57,7 +57,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Set Expected width of the sticker, which can be used if the sticker is null
+     * Set Expected width of the sticker, which can be used if the sticker is null.
      */
     public function setStickerWidth(int $stickerWidth): self
     {
@@ -67,7 +67,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Get Expected height of the sticker, which can be used if the sticker is null
+     * Get Expected height of the sticker, which can be used if the sticker is null.
      */
     public function getStickerHeight(): int
     {
@@ -75,7 +75,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Set Expected height of the sticker, which can be used if the sticker is null
+     * Set Expected height of the sticker, which can be used if the sticker is null.
      */
     public function setStickerHeight(int $stickerHeight): self
     {
@@ -85,7 +85,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Get Emoji modifier fitzpatrick type; 0-6; 0 if none
+     * Get Emoji modifier fitzpatrick type; 0-6; 0 if none.
      */
     public function getFitzpatrickType(): int
     {
@@ -93,7 +93,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Set Emoji modifier fitzpatrick type; 0-6; 0 if none
+     * Set Emoji modifier fitzpatrick type; 0-6; 0 if none.
      */
     public function setFitzpatrickType(int $fitzpatrickType): self
     {
@@ -103,7 +103,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Get File containing the sound to be played when the sticker is clicked; may be null. The sound is encoded with the Opus codec, and stored inside an OGG container
+     * Get File containing the sound to be played when the sticker is clicked; may be null. The sound is encoded with the Opus codec, and stored inside an OGG container.
      */
     public function getSound(): File|null
     {
@@ -111,7 +111,7 @@ class AnimatedEmoji implements \JsonSerializable
     }
 
     /**
-     * Set File containing the sound to be played when the sticker is clicked; may be null. The sound is encoded with the Opus codec, and stored inside an OGG container
+     * Set File containing the sound to be played when the sticker is clicked; may be null. The sound is encoded with the Opus codec, and stored inside an OGG container.
      */
     public function setSound(File|null $sound): self
     {

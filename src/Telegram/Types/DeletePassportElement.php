@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a Telegram Passport element @type Element type
+ * Deletes a Telegram Passport element @var Element type.
  */
 class DeletePassportElement extends Ok implements \JsonSerializable
 {

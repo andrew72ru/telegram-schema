@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits a subscription invite link for a channel chat. Requires can_invite_users right in the chat for own links and owner privileges for other links
+ * Edits a subscription invite link for a channel chat. Requires can_invite_users right in the chat for own links and owner privileges for other links.
  */
 class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSeri
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSeri
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSeri
     }
 
     /**
-     * Get Invite link to be edited
+     * Get Invite link to be edited.
      */
     public function getInviteLink(): string
     {
@@ -51,7 +51,7 @@ class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSeri
     }
 
     /**
-     * Set Invite link to be edited
+     * Set Invite link to be edited.
      */
     public function setInviteLink(string $inviteLink): self
     {
@@ -61,7 +61,7 @@ class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSeri
     }
 
     /**
-     * Get Invite link name; 0-32 characters
+     * Get Invite link name; 0-32 characters.
      */
     public function getName(): string
     {
@@ -69,7 +69,7 @@ class EditChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSeri
     }
 
     /**
-     * Set Invite link name; 0-32 characters
+     * Set Invite link name; 0-32 characters.
      */
     public function setName(string $name): self
     {

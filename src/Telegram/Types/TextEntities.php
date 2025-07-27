@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of text entities @entities List of text entities
+ * Contains a list of text entities @entities List of text entities.
  */
 class TextEntities implements \JsonSerializable
 {

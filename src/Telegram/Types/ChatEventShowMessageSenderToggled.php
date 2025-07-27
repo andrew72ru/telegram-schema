@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The show_message_sender setting of a channel was toggled @show_message_sender New value of show_message_sender
+ * The show_message_sender setting of a channel was toggled @show_message_sender New value of show_message_sender.
  */
 class ChatEventShowMessageSenderToggled extends ChatEventAction implements \JsonSerializable
 {

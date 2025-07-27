@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the pinned state of a Saved Messages topic. There can be up to getOption("pinned_saved_messages_topic_count_max") pinned topics. The limit can be increased with Telegram Premium
+ * Changes the pinned state of a Saved Messages topic. There can be up to getOption("pinned_saved_messages_topic_count_max") pinned topics. The limit can be increased with Telegram Premium.
  */
 class ToggleSavedMessagesTopicIsPinned extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleSavedMessagesTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of Saved Messages topic to pin or unpin
+     * Get Identifier of Saved Messages topic to pin or unpin.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -30,7 +30,7 @@ class ToggleSavedMessagesTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of Saved Messages topic to pin or unpin
+     * Set Identifier of Saved Messages topic to pin or unpin.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {
@@ -40,7 +40,7 @@ class ToggleSavedMessagesTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to pin the topic; pass false to unpin it
+     * Get Pass true to pin the topic; pass false to unpin it.
      */
     public function getIsPinned(): bool
     {
@@ -48,7 +48,7 @@ class ToggleSavedMessagesTopicIsPinned extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to pin the topic; pass false to unpin it
+     * Set Pass true to pin the topic; pass false to unpin it.
      */
     public function setIsPinned(bool $isPinned): self
     {

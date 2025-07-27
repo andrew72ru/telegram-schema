@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a chat theme
+ * Describes a chat theme.
  */
 class ChatTheme implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatTheme implements \JsonSerializable
     }
 
     /**
-     * Get Theme name
+     * Get Theme name.
      */
     public function getName(): string
     {
@@ -33,7 +33,7 @@ class ChatTheme implements \JsonSerializable
     }
 
     /**
-     * Set Theme name
+     * Set Theme name.
      */
     public function setName(string $name): self
     {
@@ -43,7 +43,7 @@ class ChatTheme implements \JsonSerializable
     }
 
     /**
-     * Get Theme settings for a light chat theme
+     * Get Theme settings for a light chat theme.
      */
     public function getLightSettings(): ThemeSettings|null
     {
@@ -51,7 +51,7 @@ class ChatTheme implements \JsonSerializable
     }
 
     /**
-     * Set Theme settings for a light chat theme
+     * Set Theme settings for a light chat theme.
      */
     public function setLightSettings(ThemeSettings|null $lightSettings): self
     {
@@ -61,7 +61,7 @@ class ChatTheme implements \JsonSerializable
     }
 
     /**
-     * Get Theme settings for a dark chat theme
+     * Get Theme settings for a dark chat theme.
      */
     public function getDarkSettings(): ThemeSettings|null
     {
@@ -69,7 +69,7 @@ class ChatTheme implements \JsonSerializable
     }
 
     /**
-     * Set Theme settings for a dark chat theme
+     * Set Theme settings for a dark chat theme.
      */
     public function setDarkSettings(ThemeSettings|null $darkSettings): self
     {

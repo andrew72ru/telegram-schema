@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * One of the data fields contains an error. The error will be considered resolved when the value of the field changes @field_name Field name
+ * One of the data fields contains an error. The error will be considered resolved when the value of the field changes @field_name Field name.
  */
 class PassportElementErrorSourceDataField extends PassportElementErrorSource implements \JsonSerializable
 {

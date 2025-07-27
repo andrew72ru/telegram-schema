@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes active state for a username of the current user. The editable username can't be disabled. May return an error with a message "USERNAMES_ACTIVE_TOO_MUCH" if the maximum number of active usernames has been reached
+ * Changes active state for a username of the current user. The editable username can't be disabled. May return an error with a message "USERNAMES_ACTIVE_TOO_MUCH" if the maximum number of active usernames has been reached.
  */
 class ToggleUsernameIsActive extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The username to change
+     * Get The username to change.
      */
     public function getUsername(): string
     {
@@ -30,7 +30,7 @@ class ToggleUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The username to change
+     * Set The username to change.
      */
     public function setUsername(string $username): self
     {
@@ -40,7 +40,7 @@ class ToggleUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to activate the username; pass false to disable it
+     * Get Pass true to activate the username; pass false to disable it.
      */
     public function getIsActive(): bool
     {
@@ -48,7 +48,7 @@ class ToggleUsernameIsActive extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to activate the username; pass false to disable it
+     * Set Pass true to activate the username; pass false to disable it.
      */
     public function setIsActive(bool $isActive): self
     {

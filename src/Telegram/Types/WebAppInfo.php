@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a Web App @launch_id Unique identifier for the Web App launch @url A Web App URL to open in a web view
+ * Contains information about a Web App @launch_id Unique identifier for the Web App launch @url A Web App URL to open in a web view.
  */
 class WebAppInfo implements \JsonSerializable
 {

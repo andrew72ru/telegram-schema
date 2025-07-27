@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Bans users from a group call not bound to a chat; requires groupCall.is_owned. Only the owner of the group call can invite the banned users back
+ * Bans users from a group call not bound to a chat; requires groupCall.is_owned. Only the owner of the group call can invite the banned users back.
  */
 class BanGroupCallParticipants extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BanGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -30,7 +30,7 @@ class BanGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -40,7 +40,7 @@ class BanGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of group call participants to ban; identifiers of unknown users from the update updateGroupCallParticipants can be also passed to the method
+     * Get Identifiers of group call participants to ban; identifiers of unknown users from the update updateGroupCallParticipants can be also passed to the method.
      */
     public function getUserIds(): array|null
     {
@@ -48,7 +48,7 @@ class BanGroupCallParticipants extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of group call participants to ban; identifiers of unknown users from the update updateGroupCallParticipants can be also passed to the method
+     * Set Identifiers of group call participants to ban; identifiers of unknown users from the update updateGroupCallParticipants can be also passed to the method.
      */
     public function setUserIds(array|null $userIds): self
     {

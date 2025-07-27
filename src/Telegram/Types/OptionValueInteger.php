@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents an integer option @value The value of the option
+ * Represents an integer option @value The value of the option.
  */
 class OptionValueInteger extends OptionValue implements \JsonSerializable
 {

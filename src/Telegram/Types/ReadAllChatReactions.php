@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Marks all reactions in a chat or a forum topic as read @chat_id Chat identifier
+ * Marks all reactions in a chat or a forum topic as read @chat_id Chat identifier.
  */
 class ReadAllChatReactions extends Ok implements \JsonSerializable
 {

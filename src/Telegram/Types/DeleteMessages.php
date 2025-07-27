@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes messages
+ * Deletes messages.
  */
 class DeleteMessages extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class DeleteMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class DeleteMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class DeleteMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the messages to be deleted. Use messageProperties.can_be_deleted_only_for_self and messageProperties.can_be_deleted_for_all_users to get suitable messages
+     * Get Identifiers of the messages to be deleted. Use messageProperties.can_be_deleted_only_for_self and messageProperties.can_be_deleted_for_all_users to get suitable messages.
      */
     public function getMessageIds(): array|null
     {
@@ -51,7 +51,7 @@ class DeleteMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the messages to be deleted. Use messageProperties.can_be_deleted_only_for_self and messageProperties.can_be_deleted_for_all_users to get suitable messages
+     * Set Identifiers of the messages to be deleted. Use messageProperties.can_be_deleted_only_for_self and messageProperties.can_be_deleted_for_all_users to get suitable messages.
      */
     public function setMessageIds(array|null $messageIds): self
     {
@@ -61,7 +61,7 @@ class DeleteMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats
+     * Get Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats.
      */
     public function getRevoke(): bool
     {
@@ -69,7 +69,7 @@ class DeleteMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats
+     * Set Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats.
      */
     public function setRevoke(bool $revoke): self
     {

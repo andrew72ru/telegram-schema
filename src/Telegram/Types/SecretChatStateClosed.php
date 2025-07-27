@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The secret chat is closed
+ * The secret chat is closed.
  */
 class SecretChatStateClosed extends SecretChatState implements \JsonSerializable
 {

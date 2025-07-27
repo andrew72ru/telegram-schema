@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a message to be replied in the same chat and forum topic
+ * Describes a message to be replied in the same chat and forum topic.
  */
 class InputMessageReplyToMessage extends InputMessageReplyTo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputMessageReplyToMessage extends InputMessageReplyTo implements \JsonSer
     }
 
     /**
-     * Get The identifier of the message to be replied in the same chat and forum topic. A message can be replied in the same chat and forum topic only if messageProperties.can_be_replied
+     * Get The identifier of the message to be replied in the same chat and forum topic. A message can be replied in the same chat and forum topic only if messageProperties.can_be_replied.
      */
     public function getMessageId(): int
     {
@@ -30,7 +30,7 @@ class InputMessageReplyToMessage extends InputMessageReplyTo implements \JsonSer
     }
 
     /**
-     * Set The identifier of the message to be replied in the same chat and forum topic. A message can be replied in the same chat and forum topic only if messageProperties.can_be_replied
+     * Set The identifier of the message to be replied in the same chat and forum topic. A message can be replied in the same chat and forum topic only if messageProperties.can_be_replied.
      */
     public function setMessageId(int $messageId): self
     {
@@ -40,7 +40,7 @@ class InputMessageReplyToMessage extends InputMessageReplyTo implements \JsonSer
     }
 
     /**
-     * Get Quote from the message to be replied; pass null if none. Must always be null for replies in secret chats
+     * Get Quote from the message to be replied; pass null if none. Must always be null for replies in secret chats.
      */
     public function getQuote(): InputTextQuote|null
     {
@@ -48,7 +48,7 @@ class InputMessageReplyToMessage extends InputMessageReplyTo implements \JsonSer
     }
 
     /**
-     * Set Quote from the message to be replied; pass null if none. Must always be null for replies in secret chats
+     * Set Quote from the message to be replied; pass null if none. Must always be null for replies in secret chats.
      */
     public function setQuote(InputTextQuote|null $quote): self
     {

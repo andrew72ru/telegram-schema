@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The messages were exported from a private chat @name Name of the other party; may be empty if unrecognized
+ * The messages were exported from a private chat @name Name of the other party; may be empty if unrecognized.
  */
 class MessageFileTypePrivate extends MessageFileType implements \JsonSerializable
 {

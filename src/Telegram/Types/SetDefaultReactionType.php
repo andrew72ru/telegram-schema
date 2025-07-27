@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes type of default reaction for the current user @reaction_type New type of the default reaction. The paid reaction can't be set as default
+ * Changes type of default reaction for the current user @reaction_type New type of the default reaction. The paid reaction can't be set as default.
  */
 class SetDefaultReactionType extends Ok implements \JsonSerializable
 {

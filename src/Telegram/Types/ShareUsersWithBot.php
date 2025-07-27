@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Shares users after pressing a keyboardButtonTypeRequestUsers button with the bot
+ * Shares users after pressing a keyboardButtonTypeRequestUsers button with the bot.
  */
 class ShareUsersWithBot extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the bot
+     * Get Identifier of the chat with the bot.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the bot
+     * Set Identifier of the chat with the bot.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message with the button
+     * Get Identifier of the message with the button.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message with the button
+     * Set Identifier of the message with the button.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the button
+     * Get Identifier of the button.
      */
     public function getButtonId(): int
     {
@@ -75,7 +75,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the button
+     * Set Identifier of the button.
      */
     public function setButtonId(int $buttonId): self
     {
@@ -85,7 +85,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the shared users
+     * Get Identifiers of the shared users.
      */
     public function getSharedUserIds(): array|null
     {
@@ -93,7 +93,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the shared users
+     * Set Identifiers of the shared users.
      */
     public function setSharedUserIds(array|null $sharedUserIds): self
     {
@@ -103,7 +103,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to check that the users can be shared by the button instead of actually sharing them
+     * Get Pass true to check that the users can be shared by the button instead of actually sharing them.
      */
     public function getOnlyCheck(): bool
     {
@@ -111,7 +111,7 @@ class ShareUsersWithBot extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to check that the users can be shared by the button instead of actually sharing them
+     * Set Pass true to check that the users can be shared by the button instead of actually sharing them.
      */
     public function setOnlyCheck(bool $onlyCheck): self
     {

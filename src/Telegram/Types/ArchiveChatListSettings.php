@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains settings for automatic moving of chats to and from the Archive chat lists
+ * Contains settings for automatic moving of chats to and from the Archive chat lists.
  */
 class ArchiveChatListSettings implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ArchiveChatListSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if new chats from non-contacts will be automatically archived and muted. Can be set to true only if the option "can_archive_and_mute_new_chats_from_unknown_users" is true
+     * Get True, if new chats from non-contacts will be automatically archived and muted. Can be set to true only if the option "can_archive_and_mute_new_chats_from_unknown_users" is true.
      */
     public function getArchiveAndMuteNewChatsFromUnknownUsers(): bool
     {
@@ -33,7 +33,7 @@ class ArchiveChatListSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if new chats from non-contacts will be automatically archived and muted. Can be set to true only if the option "can_archive_and_mute_new_chats_from_unknown_users" is true
+     * Set True, if new chats from non-contacts will be automatically archived and muted. Can be set to true only if the option "can_archive_and_mute_new_chats_from_unknown_users" is true.
      */
     public function setArchiveAndMuteNewChatsFromUnknownUsers(bool $archiveAndMuteNewChatsFromUnknownUsers): self
     {
@@ -43,7 +43,7 @@ class ArchiveChatListSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if unmuted chats will be kept in the Archive chat list when they get a new message
+     * Get True, if unmuted chats will be kept in the Archive chat list when they get a new message.
      */
     public function getKeepUnmutedChatsArchived(): bool
     {
@@ -51,7 +51,7 @@ class ArchiveChatListSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if unmuted chats will be kept in the Archive chat list when they get a new message
+     * Set True, if unmuted chats will be kept in the Archive chat list when they get a new message.
      */
     public function setKeepUnmutedChatsArchived(bool $keepUnmutedChatsArchived): self
     {
@@ -61,7 +61,7 @@ class ArchiveChatListSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if unmuted chats, that are always included or pinned in a folder, will be kept in the Archive chat list when they get a new message. Ignored if keep_unmuted_chats_archived == true
+     * Get True, if unmuted chats, that are always included or pinned in a folder, will be kept in the Archive chat list when they get a new message. Ignored if keep_unmuted_chats_archived == true.
      */
     public function getKeepChatsFromFoldersArchived(): bool
     {
@@ -69,7 +69,7 @@ class ArchiveChatListSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if unmuted chats, that are always included or pinned in a folder, will be kept in the Archive chat list when they get a new message. Ignored if keep_unmuted_chats_archived == true
+     * Set True, if unmuted chats, that are always included or pinned in a folder, will be kept in the Archive chat list when they get a new message. Ignored if keep_unmuted_chats_archived == true.
      */
     public function setKeepChatsFromFoldersArchived(bool $keepChatsFromFoldersArchived): self
     {

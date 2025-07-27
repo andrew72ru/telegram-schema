@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area with an upgraded gift
+ * An area with an upgraded gift.
  */
 class StoryAreaTypeUpgradedGift extends StoryAreaType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class StoryAreaTypeUpgradedGift extends StoryAreaType implements \JsonSerializab
     }
 
     /**
-     * Get Unique name of the upgraded gift
+     * Get Unique name of the upgraded gift.
      */
     public function getGiftName(): string
     {
@@ -27,7 +27,7 @@ class StoryAreaTypeUpgradedGift extends StoryAreaType implements \JsonSerializab
     }
 
     /**
-     * Set Unique name of the upgraded gift
+     * Set Unique name of the upgraded gift.
      */
     public function setGiftName(string $giftName): self
     {

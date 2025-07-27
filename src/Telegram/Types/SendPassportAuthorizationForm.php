@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a Telegram Passport authorization form, effectively sharing data with the service. This method must be called after getPassportAuthorizationFormAvailableElements if some previously available elements are going to be reused
+ * Sends a Telegram Passport authorization form, effectively sharing data with the service. This method must be called after getPassportAuthorizationFormAvailableElements if some previously available elements are going to be reused.
  */
 class SendPassportAuthorizationForm extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SendPassportAuthorizationForm extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Authorization form identifier
+     * Get Authorization form identifier.
      */
     public function getAuthorizationFormId(): int
     {
@@ -30,7 +30,7 @@ class SendPassportAuthorizationForm extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Authorization form identifier
+     * Set Authorization form identifier.
      */
     public function setAuthorizationFormId(int $authorizationFormId): self
     {
@@ -40,7 +40,7 @@ class SendPassportAuthorizationForm extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Types of Telegram Passport elements chosen by user to complete the authorization form
+     * Get Types of Telegram Passport elements chosen by user to complete the authorization form.
      */
     public function getTypes(): array|null
     {
@@ -48,7 +48,7 @@ class SendPassportAuthorizationForm extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Types of Telegram Passport elements chosen by user to complete the authorization form
+     * Set Types of Telegram Passport elements chosen by user to complete the authorization form.
      */
     public function setTypes(array|null $types): self
     {

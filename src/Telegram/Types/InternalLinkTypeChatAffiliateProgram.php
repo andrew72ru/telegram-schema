@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is an affiliate program link. Call searchChatAffiliateProgram with the given username and referrer to process the link
+ * The link is an affiliate program link. Call searchChatAffiliateProgram with the given username and referrer to process the link.
  */
 class InternalLinkTypeChatAffiliateProgram extends InternalLinkType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InternalLinkTypeChatAffiliateProgram extends InternalLinkType implements \
     }
 
     /**
-     * Get Username to be passed to searchChatAffiliateProgram
+     * Get Username to be passed to searchChatAffiliateProgram.
      */
     public function getUsername(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeChatAffiliateProgram extends InternalLinkType implements \
     }
 
     /**
-     * Set Username to be passed to searchChatAffiliateProgram
+     * Set Username to be passed to searchChatAffiliateProgram.
      */
     public function setUsername(string $username): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeChatAffiliateProgram extends InternalLinkType implements \
     }
 
     /**
-     * Get Referrer to be passed to searchChatAffiliateProgram
+     * Get Referrer to be passed to searchChatAffiliateProgram.
      */
     public function getReferrer(): string
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeChatAffiliateProgram extends InternalLinkType implements \
     }
 
     /**
-     * Set Referrer to be passed to searchChatAffiliateProgram
+     * Set Referrer to be passed to searchChatAffiliateProgram.
      */
     public function setReferrer(string $referrer): self
     {

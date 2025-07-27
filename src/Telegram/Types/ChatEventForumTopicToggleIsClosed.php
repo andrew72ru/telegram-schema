@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forum topic was closed or reopened @topic_info New information about the topic
+ * A forum topic was closed or reopened @topic_info New information about the topic.
  */
 class ChatEventForumTopicToggleIsClosed extends ChatEventAction implements \JsonSerializable
 {

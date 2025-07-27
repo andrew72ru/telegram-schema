@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Accepts Telegram terms of services @terms_of_service_id Terms of service identifier
+ * Accepts Telegram terms of services @terms_of_service_id Terms of service identifier.
  */
 class AcceptTermsOfService extends Ok implements \JsonSerializable
 {

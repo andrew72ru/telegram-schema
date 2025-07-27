@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes reactions, available in a chat. Available for basic groups, supergroups, and channels. Requires can_change_info member right
+ * Changes reactions, available in a chat. Available for basic groups, supergroups, and channels. Requires can_change_info member right.
  */
 class SetChatAvailableReactions extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatAvailableReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatAvailableReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatAvailableReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Reactions available in the chat. All explicitly specified emoji reactions must be active. In channel chats up to the chat's boost level custom emoji reactions can be explicitly specified
+     * Get Reactions available in the chat. All explicitly specified emoji reactions must be active. In channel chats up to the chat's boost level custom emoji reactions can be explicitly specified.
      */
     public function getAvailableReactions(): ChatAvailableReactions|null
     {
@@ -48,7 +48,7 @@ class SetChatAvailableReactions extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Reactions available in the chat. All explicitly specified emoji reactions must be active. In channel chats up to the chat's boost level custom emoji reactions can be explicitly specified
+     * Set Reactions available in the chat. All explicitly specified emoji reactions must be active. In channel chats up to the chat's boost level custom emoji reactions can be explicitly specified.
      */
     public function setAvailableReactions(ChatAvailableReactions|null $availableReactions): self
     {

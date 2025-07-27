@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the notification settings of a chat. Notification settings of a chat with the current user (Saved Messages) can't be changed
+ * Changes the notification settings of a chat. Notification settings of a chat with the current user (Saved Messages) can't be changed.
  */
 class SetChatNotificationSettings extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New notification settings for the chat. If the chat is muted for more than 366 days, it is considered to be muted forever
+     * Get New notification settings for the chat. If the chat is muted for more than 366 days, it is considered to be muted forever.
      */
     public function getNotificationSettings(): ChatNotificationSettings|null
     {
@@ -48,7 +48,7 @@ class SetChatNotificationSettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New notification settings for the chat. If the chat is muted for more than 366 days, it is considered to be muted forever
+     * Set New notification settings for the chat. If the chat is muted for more than 366 days, it is considered to be muted forever.
      */
     public function setNotificationSettings(ChatNotificationSettings|null $notificationSettings): self
     {

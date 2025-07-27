@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user buying Telegram Stars
+ * The user buying Telegram Stars.
  */
 class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSeria
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -33,7 +33,7 @@ class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSeria
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -43,7 +43,7 @@ class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSeria
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -51,7 +51,7 @@ class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSeria
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -61,7 +61,7 @@ class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSeria
     }
 
     /**
-     * Get Number of bought Telegram Stars
+     * Get Number of bought Telegram Stars.
      */
     public function getStarCount(): int
     {
@@ -69,7 +69,7 @@ class StorePaymentPurposeStars extends StorePaymentPurpose implements \JsonSeria
     }
 
     /**
-     * Set Number of bought Telegram Stars
+     * Set Number of bought Telegram Stars.
      */
     public function setStarCount(int $starCount): self
     {

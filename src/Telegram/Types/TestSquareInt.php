@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the squared received number; for testing only. This is an offline method. Can be called before authorization @x Number to square
+ * Returns the squared received number; for testing only. This is an offline method. Can be called before authorization @x Number to square.
  */
 class TestSquareInt extends TestInt implements \JsonSerializable
 {

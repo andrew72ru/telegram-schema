@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the user answer to a poll. A poll in quiz mode can be answered only once
+ * Changes the user answer to a poll. A poll in quiz mode can be answered only once.
  */
 class SetPollAnswer extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetPollAnswer extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the poll belongs
+     * Get Identifier of the chat to which the poll belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetPollAnswer extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the poll belongs
+     * Set Identifier of the chat to which the poll belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetPollAnswer extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message containing the poll
+     * Get Identifier of the message containing the poll.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class SetPollAnswer extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message containing the poll
+     * Set Identifier of the message containing the poll.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class SetPollAnswer extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers
+     * Get 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers.
      */
     public function getOptionIds(): array|null
     {
@@ -69,7 +69,7 @@ class SetPollAnswer extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers
+     * Set 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers.
      */
     public function setOptionIds(array|null $optionIds): self
     {

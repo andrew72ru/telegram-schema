@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether notifications for new gifts received by a channel chat are sent to the current user; requires can_post_messages administrator right in the chat
+ * Toggles whether notifications for new gifts received by a channel chat are sent to the current user; requires can_post_messages administrator right in the chat.
  */
 class ToggleChatGiftNotifications extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleChatGiftNotifications extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the channel chat
+     * Get Identifier of the channel chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class ToggleChatGiftNotifications extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the channel chat
+     * Set Identifier of the channel chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class ToggleChatGiftNotifications extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to enable notifications about new gifts owned by the channel chat; pass false to disable the notifications
+     * Get Pass true to enable notifications about new gifts owned by the channel chat; pass false to disable the notifications.
      */
     public function getAreEnabled(): bool
     {
@@ -48,7 +48,7 @@ class ToggleChatGiftNotifications extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to enable notifications about new gifts owned by the channel chat; pass false to disable the notifications
+     * Set Pass true to enable notifications about new gifts owned by the channel chat; pass false to disable the notifications.
      */
     public function setAreEnabled(bool $areEnabled): self
     {

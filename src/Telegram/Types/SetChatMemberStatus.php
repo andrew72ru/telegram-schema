@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the status of a chat member; requires can_invite_users member right to add a chat member, can_promote_members administrator right to change administrator rights of the member,
+ * Changes the status of a chat member; requires can_invite_users member right to add a chat member, can_promote_members administrator right to change administrator rights of the member,.
  */
 class SetChatMemberStatus extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetChatMemberStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetChatMemberStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetChatMemberStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Member identifier. Chats can be only banned and unbanned in supergroups and channels
+     * Get Member identifier. Chats can be only banned and unbanned in supergroups and channels.
      */
     public function getMemberId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class SetChatMemberStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Member identifier. Chats can be only banned and unbanned in supergroups and channels
+     * Set Member identifier. Chats can be only banned and unbanned in supergroups and channels.
      */
     public function setMemberId(MessageSender|null $memberId): self
     {
@@ -61,7 +61,7 @@ class SetChatMemberStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new status of the member in the chat
+     * Get The new status of the member in the chat.
      */
     public function getStatus(): ChatMemberStatus|null
     {
@@ -69,7 +69,7 @@ class SetChatMemberStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new status of the member in the chat
+     * Set The new status of the member in the chat.
      */
     public function setStatus(ChatMemberStatus|null $status): self
     {

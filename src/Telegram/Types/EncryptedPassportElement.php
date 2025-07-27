@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an encrypted Telegram Passport element; for bots only
+ * Contains information about an encrypted Telegram Passport element; for bots only.
  */
 class EncryptedPassportElement implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get Type of Telegram Passport element
+     * Get Type of Telegram Passport element.
      */
     public function getType(): PassportElementType|null
     {
@@ -51,7 +51,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set Type of Telegram Passport element
+     * Set Type of Telegram Passport element.
      */
     public function setType(PassportElementType|null $type): self
     {
@@ -61,7 +61,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get Encrypted JSON-encoded data about the user
+     * Get Encrypted JSON-encoded data about the user.
      */
     public function getData(): string
     {
@@ -69,7 +69,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set Encrypted JSON-encoded data about the user
+     * Set Encrypted JSON-encoded data about the user.
      */
     public function setData(string $data): self
     {
@@ -79,7 +79,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get The front side of an identity document
+     * Get The front side of an identity document.
      */
     public function getFrontSide(): DatedFile|null
     {
@@ -87,7 +87,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set The front side of an identity document
+     * Set The front side of an identity document.
      */
     public function setFrontSide(DatedFile|null $frontSide): self
     {
@@ -97,7 +97,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get The reverse side of an identity document; may be null
+     * Get The reverse side of an identity document; may be null.
      */
     public function getReverseSide(): DatedFile|null
     {
@@ -105,7 +105,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set The reverse side of an identity document; may be null
+     * Set The reverse side of an identity document; may be null.
      */
     public function setReverseSide(DatedFile|null $reverseSide): self
     {
@@ -115,7 +115,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get Selfie with the document; may be null
+     * Get Selfie with the document; may be null.
      */
     public function getSelfie(): DatedFile|null
     {
@@ -123,7 +123,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set Selfie with the document; may be null
+     * Set Selfie with the document; may be null.
      */
     public function setSelfie(DatedFile|null $selfie): self
     {
@@ -133,7 +133,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get List of files containing a certified English translation of the document
+     * Get List of files containing a certified English translation of the document.
      */
     public function getTranslation(): array|null
     {
@@ -141,7 +141,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set List of files containing a certified English translation of the document
+     * Set List of files containing a certified English translation of the document.
      */
     public function setTranslation(array|null $translation): self
     {
@@ -151,7 +151,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get List of attached files
+     * Get List of attached files.
      */
     public function getFiles(): array|null
     {
@@ -159,7 +159,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set List of attached files
+     * Set List of attached files.
      */
     public function setFiles(array|null $files): self
     {
@@ -169,7 +169,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get Unencrypted data, phone number or email address
+     * Get Unencrypted data, phone number or email address.
      */
     public function getValue(): string
     {
@@ -177,7 +177,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set Unencrypted data, phone number or email address
+     * Set Unencrypted data, phone number or email address.
      */
     public function setValue(string $value): self
     {
@@ -187,7 +187,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Get Hash of the entire element
+     * Get Hash of the entire element.
      */
     public function getHash(): string
     {
@@ -195,7 +195,7 @@ class EncryptedPassportElement implements \JsonSerializable
     }
 
     /**
-     * Set Hash of the entire element
+     * Set Hash of the entire element.
      */
     public function setHash(string $hash): self
     {

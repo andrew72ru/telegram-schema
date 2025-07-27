@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a cloud theme. TDLib has no theme support yet @theme_name Name of the theme
+ * The link is a link to a cloud theme. TDLib has no theme support yet @theme_name Name of the theme.
  */
 class InternalLinkTypeTheme extends InternalLinkType implements \JsonSerializable
 {

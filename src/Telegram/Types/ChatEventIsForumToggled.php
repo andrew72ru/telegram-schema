@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The is_forum setting of a channel was toggled @is_forum New value of is_forum
+ * The is_forum setting of a channel was toggled @is_forum New value of is_forum.
  */
 class ChatEventIsForumToggled extends ChatEventAction implements \JsonSerializable
 {

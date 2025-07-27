@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for gifting Telegram Premium to a user. Use telegramPaymentPurposePremiumGift for out-of-store payments or payments in Telegram Stars
+ * Describes an option for gifting Telegram Premium to a user. Use telegramPaymentPurposePremiumGift for out-of-store payments or payments in Telegram Stars.
  */
 class PremiumGiftPaymentOption implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code for the payment
+     * Get ISO 4217 currency code for the payment.
      */
     public function getCurrency(): string
     {
@@ -45,7 +45,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code for the payment
+     * Set ISO 4217 currency code for the payment.
      */
     public function setCurrency(string $currency): self
     {
@@ -55,7 +55,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The amount to pay, in the smallest units of the currency
+     * Get The amount to pay, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -63,7 +63,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The amount to pay, in the smallest units of the currency
+     * Set The amount to pay, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -73,7 +73,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The alternative amount of Telegram Stars to pay; 0 if payment in Telegram Stars is not possible
+     * Get The alternative amount of Telegram Stars to pay; 0 if payment in Telegram Stars is not possible.
      */
     public function getStarCount(): int
     {
@@ -81,7 +81,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The alternative amount of Telegram Stars to pay; 0 if payment in Telegram Stars is not possible
+     * Set The alternative amount of Telegram Stars to pay; 0 if payment in Telegram Stars is not possible.
      */
     public function setStarCount(int $starCount): self
     {
@@ -91,7 +91,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The discount associated with this option, as a percentage
+     * Get The discount associated with this option, as a percentage.
      */
     public function getDiscountPercentage(): int
     {
@@ -99,7 +99,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The discount associated with this option, as a percentage
+     * Set The discount associated with this option, as a percentage.
      */
     public function setDiscountPercentage(int $discountPercentage): self
     {
@@ -109,7 +109,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active
+     * Get Number of months the Telegram Premium subscription will be active.
      */
     public function getMonthCount(): int
     {
@@ -117,7 +117,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active
+     * Set Number of months the Telegram Premium subscription will be active.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -127,7 +127,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the store product associated with the option
+     * Get Identifier of the store product associated with the option.
      */
     public function getStoreProductId(): string
     {
@@ -135,7 +135,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the store product associated with the option
+     * Set Identifier of the store product associated with the option.
      */
     public function setStoreProductId(string $storeProductId): self
     {
@@ -145,7 +145,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get A sticker to be shown along with the option; may be null if unknown
+     * Get A sticker to be shown along with the option; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -153,7 +153,7 @@ class PremiumGiftPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set A sticker to be shown along with the option; may be null if unknown
+     * Set A sticker to be shown along with the option; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {

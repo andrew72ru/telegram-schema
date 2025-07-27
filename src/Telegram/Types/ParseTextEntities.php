@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Parses Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, BlockQuote, ExpandableBlockQuote, Code, Pre, PreCode, TextUrl
+ * Parses Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, BlockQuote, ExpandableBlockQuote, Code, Pre, PreCode, TextUrl.
  */
 class ParseTextEntities extends FormattedText implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ParseTextEntities extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get The text to parse
+     * Get The text to parse.
      */
     public function getText(): string
     {
@@ -30,7 +30,7 @@ class ParseTextEntities extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set The text to parse
+     * Set The text to parse.
      */
     public function setText(string $text): self
     {
@@ -40,7 +40,7 @@ class ParseTextEntities extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get Text parse mode
+     * Get Text parse mode.
      */
     public function getParseMode(): TextParseMode|null
     {
@@ -48,7 +48,7 @@ class ParseTextEntities extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set Text parse mode
+     * Set Text parse mode.
      */
     public function setParseMode(TextParseMode|null $parseMode): self
     {

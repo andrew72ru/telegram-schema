@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming inline query; for bots only
+ * A new incoming inline query; for bots only.
  */
 class UpdateNewInlineQuery extends Update implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique query identifier
+     * Get Unique query identifier.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique query identifier
+     * Set Unique query identifier.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -60,7 +60,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -70,7 +70,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get User location; may be null
+     * Get User location; may be null.
      */
     public function getUserLocation(): Location|null
     {
@@ -78,7 +78,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set User location; may be null
+     * Set User location; may be null.
      */
     public function setUserLocation(Location|null $userLocation): self
     {
@@ -88,7 +88,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The type of the chat from which the query originated; may be null if unknown
+     * Get The type of the chat from which the query originated; may be null if unknown.
      */
     public function getChatType(): ChatType|null
     {
@@ -96,7 +96,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The type of the chat from which the query originated; may be null if unknown
+     * Set The type of the chat from which the query originated; may be null if unknown.
      */
     public function setChatType(ChatType|null $chatType): self
     {
@@ -106,7 +106,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Text of the query
+     * Get Text of the query.
      */
     public function getQuery(): string
     {
@@ -114,7 +114,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Text of the query
+     * Set Text of the query.
      */
     public function setQuery(string $query): self
     {
@@ -124,7 +124,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return
+     * Get Offset of the first entry to return.
      */
     public function getOffset(): string
     {
@@ -132,7 +132,7 @@ class UpdateNewInlineQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return
+     * Set Offset of the first entry to return.
      */
     public function setOffset(string $offset): self
     {

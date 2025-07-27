@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of game high scores @scores A list of game high scores
+ * Contains a list of game high scores @scores A list of game high scores.
  */
 class GameHighScores implements \JsonSerializable
 {

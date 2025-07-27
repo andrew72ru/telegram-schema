@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a reaction or a tag to a message. Use getMessageAvailableReactions to receive the list of available reactions for the message
+ * Adds a reaction or a tag to a message. Use getMessageAvailableReactions to receive the list of available reactions for the message.
  */
 class AddMessageReaction extends Ok implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Type of the reaction to add. Use addPendingPaidMessageReaction instead to add the paid reaction
+     * Get Type of the reaction to add. Use addPendingPaidMessageReaction instead to add the paid reaction.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -75,7 +75,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Type of the reaction to add. Use addPendingPaidMessageReaction instead to add the paid reaction
+     * Set Type of the reaction to add. Use addPendingPaidMessageReaction instead to add the paid reaction.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {
@@ -85,7 +85,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the reaction is added with a big animation
+     * Get Pass true if the reaction is added with a big animation.
      */
     public function getIsBig(): bool
     {
@@ -93,7 +93,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the reaction is added with a big animation
+     * Set Pass true if the reaction is added with a big animation.
      */
     public function setIsBig(bool $isBig): self
     {
@@ -103,7 +103,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the reaction needs to be added to recent reactions; tags are never added to the list of recent reactions
+     * Get Pass true if the reaction needs to be added to recent reactions; tags are never added to the list of recent reactions.
      */
     public function getUpdateRecentReactions(): bool
     {
@@ -111,7 +111,7 @@ class AddMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the reaction needs to be added to recent reactions; tags are never added to the list of recent reactions
+     * Set Pass true if the reaction needs to be added to recent reactions; tags are never added to the list of recent reactions.
      */
     public function setUpdateRecentReactions(bool $updateRecentReactions): self
     {

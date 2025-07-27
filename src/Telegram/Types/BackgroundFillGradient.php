@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a gradient fill of a background
+ * Describes a gradient fill of a background.
  */
 class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
     }
 
     /**
-     * Get A top color of the background in the RGB format
+     * Get A top color of the background in the RGB format.
      */
     public function getTopColor(): int
     {
@@ -33,7 +33,7 @@ class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
     }
 
     /**
-     * Set A top color of the background in the RGB format
+     * Set A top color of the background in the RGB format.
      */
     public function setTopColor(int $topColor): self
     {
@@ -43,7 +43,7 @@ class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
     }
 
     /**
-     * Get A bottom color of the background in the RGB format
+     * Get A bottom color of the background in the RGB format.
      */
     public function getBottomColor(): int
     {
@@ -51,7 +51,7 @@ class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
     }
 
     /**
-     * Set A bottom color of the background in the RGB format
+     * Set A bottom color of the background in the RGB format.
      */
     public function setBottomColor(int $bottomColor): self
     {
@@ -61,7 +61,7 @@ class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
     }
 
     /**
-     * Get Clockwise rotation angle of the gradient, in degrees; 0-359. Must always be divisible by 45
+     * Get Clockwise rotation angle of the gradient, in degrees; 0-359. Must always be divisible by 45.
      */
     public function getRotationAngle(): int
     {
@@ -69,7 +69,7 @@ class BackgroundFillGradient extends BackgroundFill implements \JsonSerializable
     }
 
     /**
-     * Set Clockwise rotation angle of the gradient, in degrees; 0-359. Must always be divisible by 45
+     * Set Clockwise rotation angle of the gradient, in degrees; 0-359. Must always be divisible by 45.
      */
     public function setRotationAngle(int $rotationAngle): self
     {

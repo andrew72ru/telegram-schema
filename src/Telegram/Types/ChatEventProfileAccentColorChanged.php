@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat's profile accent color or profile background custom emoji were changed
+ * The chat's profile accent color or profile background custom emoji were changed.
  */
 class ChatEventProfileAccentColorChanged extends ChatEventAction implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Get Previous identifier of chat's profile accent color; -1 if none
+     * Get Previous identifier of chat's profile accent color; -1 if none.
      */
     public function getOldProfileAccentColorId(): int
     {
@@ -36,7 +36,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Set Previous identifier of chat's profile accent color; -1 if none
+     * Set Previous identifier of chat's profile accent color; -1 if none.
      */
     public function setOldProfileAccentColorId(int $oldProfileAccentColorId): self
     {
@@ -46,7 +46,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Get Previous identifier of the custom emoji; 0 if none
+     * Get Previous identifier of the custom emoji; 0 if none.
      */
     public function getOldProfileBackgroundCustomEmojiId(): int
     {
@@ -54,7 +54,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Set Previous identifier of the custom emoji; 0 if none
+     * Set Previous identifier of the custom emoji; 0 if none.
      */
     public function setOldProfileBackgroundCustomEmojiId(int $oldProfileBackgroundCustomEmojiId): self
     {
@@ -64,7 +64,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Get New identifier of chat's profile accent color; -1 if none
+     * Get New identifier of chat's profile accent color; -1 if none.
      */
     public function getNewProfileAccentColorId(): int
     {
@@ -72,7 +72,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Set New identifier of chat's profile accent color; -1 if none
+     * Set New identifier of chat's profile accent color; -1 if none.
      */
     public function setNewProfileAccentColorId(int $newProfileAccentColorId): self
     {
@@ -82,7 +82,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Get New identifier of the custom emoji; 0 if none
+     * Get New identifier of the custom emoji; 0 if none.
      */
     public function getNewProfileBackgroundCustomEmojiId(): int
     {
@@ -90,7 +90,7 @@ class ChatEventProfileAccentColorChanged extends ChatEventAction implements \Jso
     }
 
     /**
-     * Set New identifier of the custom emoji; 0 if none
+     * Set New identifier of the custom emoji; 0 if none.
      */
     public function setNewProfileBackgroundCustomEmojiId(int $newProfileBackgroundCustomEmojiId): self
     {

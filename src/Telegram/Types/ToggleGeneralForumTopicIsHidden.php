@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether a General topic is hidden in a forum supergroup chat; requires can_manage_topics right in the supergroup
+ * Toggles whether a General topic is hidden in a forum supergroup chat; requires can_manage_topics right in the supergroup.
  */
 class ToggleGeneralForumTopicIsHidden extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleGeneralForumTopicIsHidden extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class ToggleGeneralForumTopicIsHidden extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class ToggleGeneralForumTopicIsHidden extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to hide and close the General topic; pass false to unhide it
+     * Get Pass true to hide and close the General topic; pass false to unhide it.
      */
     public function getIsHidden(): bool
     {
@@ -48,7 +48,7 @@ class ToggleGeneralForumTopicIsHidden extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to hide and close the General topic; pass false to unhide it
+     * Set Pass true to hide and close the General topic; pass false to unhide it.
      */
     public function setIsHidden(bool $isHidden): self
     {

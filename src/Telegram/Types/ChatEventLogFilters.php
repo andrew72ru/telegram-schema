@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a set of filters used to obtain a chat event log
+ * Represents a set of filters used to obtain a chat event log.
  */
 class ChatEventLogFilters implements \JsonSerializable
 {
@@ -58,7 +58,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if message edits need to be returned
+     * Get True, if message edits need to be returned.
      */
     public function getMessageEdits(): bool
     {
@@ -66,7 +66,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if message edits need to be returned
+     * Set True, if message edits need to be returned.
      */
     public function setMessageEdits(bool $messageEdits): self
     {
@@ -76,7 +76,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if message deletions need to be returned
+     * Get True, if message deletions need to be returned.
      */
     public function getMessageDeletions(): bool
     {
@@ -84,7 +84,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if message deletions need to be returned
+     * Set True, if message deletions need to be returned.
      */
     public function setMessageDeletions(bool $messageDeletions): self
     {
@@ -94,7 +94,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if pin/unpin events need to be returned
+     * Get True, if pin/unpin events need to be returned.
      */
     public function getMessagePins(): bool
     {
@@ -102,7 +102,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if pin/unpin events need to be returned
+     * Set True, if pin/unpin events need to be returned.
      */
     public function setMessagePins(bool $messagePins): self
     {
@@ -112,7 +112,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if members joining events need to be returned
+     * Get True, if members joining events need to be returned.
      */
     public function getMemberJoins(): bool
     {
@@ -120,7 +120,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if members joining events need to be returned
+     * Set True, if members joining events need to be returned.
      */
     public function setMemberJoins(bool $memberJoins): self
     {
@@ -130,7 +130,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if members leaving events need to be returned
+     * Get True, if members leaving events need to be returned.
      */
     public function getMemberLeaves(): bool
     {
@@ -138,7 +138,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if members leaving events need to be returned
+     * Set True, if members leaving events need to be returned.
      */
     public function setMemberLeaves(bool $memberLeaves): self
     {
@@ -148,7 +148,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if invited member events need to be returned
+     * Get True, if invited member events need to be returned.
      */
     public function getMemberInvites(): bool
     {
@@ -156,7 +156,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if invited member events need to be returned
+     * Set True, if invited member events need to be returned.
      */
     public function setMemberInvites(bool $memberInvites): self
     {
@@ -166,7 +166,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if member promotion/demotion events need to be returned
+     * Get True, if member promotion/demotion events need to be returned.
      */
     public function getMemberPromotions(): bool
     {
@@ -174,7 +174,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if member promotion/demotion events need to be returned
+     * Set True, if member promotion/demotion events need to be returned.
      */
     public function setMemberPromotions(bool $memberPromotions): self
     {
@@ -184,7 +184,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if member restricted/unrestricted/banned/unbanned events need to be returned
+     * Get True, if member restricted/unrestricted/banned/unbanned events need to be returned.
      */
     public function getMemberRestrictions(): bool
     {
@@ -192,7 +192,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if member restricted/unrestricted/banned/unbanned events need to be returned
+     * Set True, if member restricted/unrestricted/banned/unbanned events need to be returned.
      */
     public function setMemberRestrictions(bool $memberRestrictions): self
     {
@@ -202,7 +202,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if changes in chat information need to be returned
+     * Get True, if changes in chat information need to be returned.
      */
     public function getInfoChanges(): bool
     {
@@ -210,7 +210,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if changes in chat information need to be returned
+     * Set True, if changes in chat information need to be returned.
      */
     public function setInfoChanges(bool $infoChanges): self
     {
@@ -220,7 +220,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if changes in chat settings need to be returned
+     * Get True, if changes in chat settings need to be returned.
      */
     public function getSettingChanges(): bool
     {
@@ -228,7 +228,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if changes in chat settings need to be returned
+     * Set True, if changes in chat settings need to be returned.
      */
     public function setSettingChanges(bool $settingChanges): self
     {
@@ -238,7 +238,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if changes to invite links need to be returned
+     * Get True, if changes to invite links need to be returned.
      */
     public function getInviteLinkChanges(): bool
     {
@@ -246,7 +246,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if changes to invite links need to be returned
+     * Set True, if changes to invite links need to be returned.
      */
     public function setInviteLinkChanges(bool $inviteLinkChanges): self
     {
@@ -256,7 +256,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if video chat actions need to be returned
+     * Get True, if video chat actions need to be returned.
      */
     public function getVideoChatChanges(): bool
     {
@@ -264,7 +264,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if video chat actions need to be returned
+     * Set True, if video chat actions need to be returned.
      */
     public function setVideoChatChanges(bool $videoChatChanges): self
     {
@@ -274,7 +274,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if forum-related actions need to be returned
+     * Get True, if forum-related actions need to be returned.
      */
     public function getForumChanges(): bool
     {
@@ -282,7 +282,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if forum-related actions need to be returned
+     * Set True, if forum-related actions need to be returned.
      */
     public function setForumChanges(bool $forumChanges): self
     {
@@ -292,7 +292,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Get True, if subscription extensions need to be returned
+     * Get True, if subscription extensions need to be returned.
      */
     public function getSubscriptionExtensions(): bool
     {
@@ -300,7 +300,7 @@ class ChatEventLogFilters implements \JsonSerializable
     }
 
     /**
-     * Set True, if subscription extensions need to be returned
+     * Set True, if subscription extensions need to be returned.
      */
     public function setSubscriptionExtensions(bool $subscriptionExtensions): self
     {

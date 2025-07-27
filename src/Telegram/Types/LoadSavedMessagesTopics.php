@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Loads more Saved Messages topics. The loaded topics will be sent through updateSavedMessagesTopic. Topics are sorted by their topic.order in descending order. Returns a 404 error if all topics have been loaded
+ * Loads more Saved Messages topics. The loaded topics will be sent through updateSavedMessagesTopic. Topics are sorted by their topic.order in descending order. Returns a 404 error if all topics have been loaded.
  */
 class LoadSavedMessagesTopics extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class LoadSavedMessagesTopics extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
+     * Get The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached.
      */
     public function getLimit(): int
     {
@@ -27,7 +27,7 @@ class LoadSavedMessagesTopics extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
+     * Set The maximum number of topics to be loaded. For optimal performance, the number of loaded topics is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached.
      */
     public function setLimit(int $limit): self
     {

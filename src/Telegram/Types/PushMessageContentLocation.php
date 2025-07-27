@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a location @is_live True, if the location is live @is_pinned True, if the message is a pinned message with the specified content
+ * A message with a location @is_live True, if the location is live @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentLocation extends PushMessageContent implements \JsonSerializable
 {

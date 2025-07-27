@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A document message (general file)
+ * A document message (general file).
  */
 class InputMessageDocument extends InputMessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Document to be sent
+     * Get Document to be sent.
      */
     public function getDocument(): InputFile|null
     {
@@ -36,7 +36,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Document to be sent
+     * Set Document to be sent.
      */
     public function setDocument(InputFile|null $document): self
     {
@@ -46,7 +46,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Document thumbnail; pass null to skip thumbnail uploading
+     * Get Document thumbnail; pass null to skip thumbnail uploading.
      */
     public function getThumbnail(): InputThumbnail|null
     {
@@ -54,7 +54,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Document thumbnail; pass null to skip thumbnail uploading
+     * Set Document thumbnail; pass null to skip thumbnail uploading.
      */
     public function setThumbnail(InputThumbnail|null $thumbnail): self
     {
@@ -64,7 +64,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Pass true to disable automatic file type detection and send the document as a file. Always true for files sent to secret chats
+     * Get Pass true to disable automatic file type detection and send the document as a file. Always true for files sent to secret chats.
      */
     public function getDisableContentTypeDetection(): bool
     {
@@ -72,7 +72,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Pass true to disable automatic file type detection and send the document as a file. Always true for files sent to secret chats
+     * Set Pass true to disable automatic file type detection and send the document as a file. Always true for files sent to secret chats.
      */
     public function setDisableContentTypeDetection(bool $disableContentTypeDetection): self
     {
@@ -82,7 +82,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Get Document caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Document caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -90,7 +90,7 @@ class InputMessageDocument extends InputMessageContent implements \JsonSerializa
     }
 
     /**
-     * Set Document caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Document caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of available TDLib internal log tags @tags List of log tags
+ * Contains a list of available TDLib internal log tags @tags List of log tags.
  */
 class LogTags implements \JsonSerializable
 {

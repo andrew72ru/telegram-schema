@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for buying Telegram Stars. Use telegramPaymentPurposeStars for out-of-store payments
+ * Describes an option for buying Telegram Stars. Use telegramPaymentPurposeStars for out-of-store payments.
  */
 class StarPaymentOption implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code for the payment
+     * Get ISO 4217 currency code for the payment.
      */
     public function getCurrency(): string
     {
@@ -39,7 +39,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code for the payment
+     * Set ISO 4217 currency code for the payment.
      */
     public function setCurrency(string $currency): self
     {
@@ -49,7 +49,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The amount to pay, in the smallest units of the currency
+     * Get The amount to pay, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -57,7 +57,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The amount to pay, in the smallest units of the currency
+     * Set The amount to pay, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -67,7 +67,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that will be purchased
+     * Get Number of Telegram Stars that will be purchased.
      */
     public function getStarCount(): int
     {
@@ -75,7 +75,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that will be purchased
+     * Set Number of Telegram Stars that will be purchased.
      */
     public function setStarCount(int $starCount): self
     {
@@ -85,7 +85,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the store product associated with the option; may be empty if none
+     * Get Identifier of the store product associated with the option; may be empty if none.
      */
     public function getStoreProductId(): string
     {
@@ -93,7 +93,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the store product associated with the option; may be empty if none
+     * Set Identifier of the store product associated with the option; may be empty if none.
      */
     public function setStoreProductId(string $storeProductId): self
     {
@@ -103,7 +103,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the option must be shown only in the full list of payment options
+     * Get True, if the option must be shown only in the full list of payment options.
      */
     public function getIsAdditional(): bool
     {
@@ -111,7 +111,7 @@ class StarPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the option must be shown only in the full list of payment options
+     * Set True, if the option must be shown only in the full list of payment options.
      */
     public function setIsAdditional(bool $isAdditional): self
     {

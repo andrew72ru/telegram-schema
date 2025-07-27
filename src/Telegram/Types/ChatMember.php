@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a user or a chat as a member of another chat
+ * Describes a user or a chat as a member of another chat.
  */
 class ChatMember implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat member. Currently, other chats can be only Left or Banned. Only supergroups and channels can have other chats as Left or Banned members and these chats must be supergroups or channels
+     * Get Identifier of the chat member. Currently, other chats can be only Left or Banned. Only supergroups and channels can have other chats as Left or Banned members and these chats must be supergroups or channels.
      */
     public function getMemberId(): MessageSender|null
     {
@@ -36,7 +36,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat member. Currently, other chats can be only Left or Banned. Only supergroups and channels can have other chats as Left or Banned members and these chats must be supergroups or channels
+     * Set Identifier of the chat member. Currently, other chats can be only Left or Banned. Only supergroups and channels can have other chats as Left or Banned members and these chats must be supergroups or channels.
      */
     public function setMemberId(MessageSender|null $memberId): self
     {
@@ -46,7 +46,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a user that invited/promoted/banned this member in the chat; 0 if unknown
+     * Get Identifier of a user that invited/promoted/banned this member in the chat; 0 if unknown.
      */
     public function getInviterUserId(): int
     {
@@ -54,7 +54,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a user that invited/promoted/banned this member in the chat; 0 if unknown
+     * Set Identifier of a user that invited/promoted/banned this member in the chat; 0 if unknown.
      */
     public function setInviterUserId(int $inviterUserId): self
     {
@@ -64,7 +64,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the user joined/was promoted/was banned in the chat
+     * Get Point in time (Unix timestamp) when the user joined/was promoted/was banned in the chat.
      */
     public function getJoinedChatDate(): int
     {
@@ -72,7 +72,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the user joined/was promoted/was banned in the chat
+     * Set Point in time (Unix timestamp) when the user joined/was promoted/was banned in the chat.
      */
     public function setJoinedChatDate(int $joinedChatDate): self
     {
@@ -82,7 +82,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Get Status of the member in the chat
+     * Get Status of the member in the chat.
      */
     public function getStatus(): ChatMemberStatus|null
     {
@@ -90,7 +90,7 @@ class ChatMember implements \JsonSerializable
     }
 
     /**
-     * Set Status of the member in the chat
+     * Set Status of the member in the chat.
      */
     public function setStatus(ChatMemberStatus|null $status): self
     {

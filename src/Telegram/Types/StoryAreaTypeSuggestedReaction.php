@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a suggested reaction. App needs to show a clickable reaction on the area and call setStoryReaction when the are is clicked
+ * An area pointing to a suggested reaction. App needs to show a clickable reaction on the area and call setStoryReaction when the are is clicked.
  */
 class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get Type of the reaction
+     * Get Type of the reaction.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -36,7 +36,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set Type of the reaction
+     * Set Type of the reaction.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {
@@ -46,7 +46,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get Number of times the reaction was added
+     * Get Number of times the reaction was added.
      */
     public function getTotalCount(): int
     {
@@ -54,7 +54,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set Number of times the reaction was added
+     * Set Number of times the reaction was added.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -64,7 +64,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get True, if reaction has a dark background
+     * Get True, if reaction has a dark background.
      */
     public function getIsDark(): bool
     {
@@ -72,7 +72,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set True, if reaction has a dark background
+     * Set True, if reaction has a dark background.
      */
     public function setIsDark(bool $isDark): self
     {
@@ -82,7 +82,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Get True, if reaction corner is flipped
+     * Get True, if reaction corner is flipped.
      */
     public function getIsFlipped(): bool
     {
@@ -90,7 +90,7 @@ class StoryAreaTypeSuggestedReaction extends StoryAreaType implements \JsonSeria
     }
 
     /**
-     * Set True, if reaction corner is flipped
+     * Set True, if reaction corner is flipped.
      */
     public function setIsFlipped(bool $isFlipped): self
     {

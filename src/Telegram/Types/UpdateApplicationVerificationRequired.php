@@ -25,7 +25,7 @@ class UpdateApplicationVerificationRequired extends Update implements \JsonSeria
     }
 
     /**
-     * Get Unique identifier for the verification process
+     * Get Unique identifier for the verification process.
      */
     public function getVerificationId(): int
     {
@@ -33,7 +33,7 @@ class UpdateApplicationVerificationRequired extends Update implements \JsonSeria
     }
 
     /**
-     * Set Unique identifier for the verification process
+     * Set Unique identifier for the verification process.
      */
     public function setVerificationId(int $verificationId): self
     {
@@ -43,7 +43,7 @@ class UpdateApplicationVerificationRequired extends Update implements \JsonSeria
     }
 
     /**
-     * Get Unique base64url-encoded nonce for the classic Play Integrity verification (https://developer.android.com/google/play/integrity/classic) for Android,
+     * Get Unique base64url-encoded nonce for the classic Play Integrity verification (https://developer.android.com/google/play/integrity/classic) for Android,.
      */
     public function getNonce(): string
     {
@@ -51,7 +51,7 @@ class UpdateApplicationVerificationRequired extends Update implements \JsonSeria
     }
 
     /**
-     * Set Unique base64url-encoded nonce for the classic Play Integrity verification (https://developer.android.com/google/play/integrity/classic) for Android,
+     * Set Unique base64url-encoded nonce for the classic Play Integrity verification (https://developer.android.com/google/play/integrity/classic) for Android,.
      */
     public function setNonce(string $nonce): self
     {
@@ -61,7 +61,7 @@ class UpdateApplicationVerificationRequired extends Update implements \JsonSeria
     }
 
     /**
-     * Get Cloud project number to pass to the Play Integrity API on Android
+     * Get Cloud project number to pass to the Play Integrity API on Android.
      */
     public function getCloudProjectNumber(): int
     {
@@ -69,7 +69,7 @@ class UpdateApplicationVerificationRequired extends Update implements \JsonSeria
     }
 
     /**
-     * Set Cloud project number to pass to the Play Integrity API on Android
+     * Set Cloud project number to pass to the Play Integrity API on Android.
      */
     public function setCloudProjectNumber(int $cloudProjectNumber): self
     {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The text uses HTML-style formatting. The same as Telegram Bot API "HTML" parse mode
+ * The text uses HTML-style formatting. The same as Telegram Bot API "HTML" parse mode.
  */
 class TextParseModeHTML extends TextParseMode implements \JsonSerializable
 {

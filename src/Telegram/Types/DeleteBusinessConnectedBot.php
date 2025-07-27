@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes the business bot that is connected to the current user account @bot_user_id Unique user identifier for the bot
+ * Deletes the business bot that is connected to the current user account @bot_user_id Unique user identifier for the bot.
  */
 class DeleteBusinessConnectedBot extends Ok implements \JsonSerializable
 {

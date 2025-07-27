@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a chat event
+ * Represents a chat event.
  */
 class ChatEvent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Get Chat event identifier
+     * Get Chat event identifier.
      */
     public function getId(): int
     {
@@ -36,7 +36,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Set Chat event identifier
+     * Set Chat event identifier.
      */
     public function setId(int $id): self
     {
@@ -46,7 +46,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the event happened
+     * Get Point in time (Unix timestamp) when the event happened.
      */
     public function getDate(): int
     {
@@ -54,7 +54,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the event happened
+     * Set Point in time (Unix timestamp) when the event happened.
      */
     public function setDate(int $date): self
     {
@@ -64,7 +64,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or chat who performed the action
+     * Get Identifier of the user or chat who performed the action.
      */
     public function getMemberId(): MessageSender|null
     {
@@ -72,7 +72,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or chat who performed the action
+     * Set Identifier of the user or chat who performed the action.
      */
     public function setMemberId(MessageSender|null $memberId): self
     {
@@ -82,7 +82,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Get The action
+     * Get The action.
      */
     public function getAction(): ChatEventAction|null
     {
@@ -90,7 +90,7 @@ class ChatEvent implements \JsonSerializable
     }
 
     /**
-     * Set The action
+     * Set The action.
      */
     public function setAction(ChatEventAction|null $action): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a topic in a channel direct messages chat administered by the current user
+ * Contains information about a topic in a channel direct messages chat administered by the current user.
  */
 class DirectMessagesChatTopic implements \JsonSerializable
 {
@@ -52,7 +52,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the topic belongs
+     * Get Identifier of the chat to which the topic belongs.
      */
     public function getChatId(): int
     {
@@ -60,7 +60,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the topic belongs
+     * Set Identifier of the chat to which the topic belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -70,7 +70,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Unique topic identifier
+     * Get Unique topic identifier.
      */
     public function getId(): int
     {
@@ -78,7 +78,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Unique topic identifier
+     * Set Unique topic identifier.
      */
     public function setId(int $id): self
     {
@@ -88,7 +88,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or chat that sends the messages to the topic
+     * Get Identifier of the user or chat that sends the messages to the topic.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -96,7 +96,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or chat that sends the messages to the topic
+     * Set Identifier of the user or chat that sends the messages to the topic.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -106,7 +106,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order
+     * Get A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order.
      */
     public function getOrder(): int
     {
@@ -114,7 +114,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order
+     * Set A parameter used to determine order of the topic in the topic list. Topics must be sorted by the order in descending order.
      */
     public function setOrder(int $order): self
     {
@@ -124,7 +124,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get True, if the other party can send unpaid messages even if the chat has paid messages enabled
+     * Get True, if the other party can send unpaid messages even if the chat has paid messages enabled.
      */
     public function getCanSendUnpaidMessages(): bool
     {
@@ -132,7 +132,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set True, if the other party can send unpaid messages even if the chat has paid messages enabled
+     * Set True, if the other party can send unpaid messages even if the chat has paid messages enabled.
      */
     public function setCanSendUnpaidMessages(bool $canSendUnpaidMessages): self
     {
@@ -142,7 +142,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get True, if the forum topic is marked as unread
+     * Get True, if the forum topic is marked as unread.
      */
     public function getIsMarkedAsUnread(): bool
     {
@@ -150,7 +150,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set True, if the forum topic is marked as unread
+     * Set True, if the forum topic is marked as unread.
      */
     public function setIsMarkedAsUnread(bool $isMarkedAsUnread): self
     {
@@ -160,7 +160,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Number of unread messages in the chat
+     * Get Number of unread messages in the chat.
      */
     public function getUnreadCount(): int
     {
@@ -168,7 +168,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Number of unread messages in the chat
+     * Set Number of unread messages in the chat.
      */
     public function setUnreadCount(int $unreadCount): self
     {
@@ -178,7 +178,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read incoming message
+     * Get Identifier of the last read incoming message.
      */
     public function getLastReadInboxMessageId(): int
     {
@@ -186,7 +186,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read incoming message
+     * Set Identifier of the last read incoming message.
      */
     public function setLastReadInboxMessageId(int $lastReadInboxMessageId): self
     {
@@ -196,7 +196,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read outgoing message
+     * Get Identifier of the last read outgoing message.
      */
     public function getLastReadOutboxMessageId(): int
     {
@@ -204,7 +204,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read outgoing message
+     * Set Identifier of the last read outgoing message.
      */
     public function setLastReadOutboxMessageId(int $lastReadOutboxMessageId): self
     {
@@ -214,7 +214,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Number of messages with unread reactions in the chat
+     * Get Number of messages with unread reactions in the chat.
      */
     public function getUnreadReactionCount(): int
     {
@@ -222,7 +222,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Number of messages with unread reactions in the chat
+     * Set Number of messages with unread reactions in the chat.
      */
     public function setUnreadReactionCount(int $unreadReactionCount): self
     {
@@ -232,7 +232,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get Last message in the topic; may be null if none or unknown
+     * Get Last message in the topic; may be null if none or unknown.
      */
     public function getLastMessage(): Message|null
     {
@@ -240,7 +240,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set Last message in the topic; may be null if none or unknown
+     * Set Last message in the topic; may be null if none or unknown.
      */
     public function setLastMessage(Message|null $lastMessage): self
     {
@@ -250,7 +250,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Get A draft of a message in the topic; may be null if none
+     * Get A draft of a message in the topic; may be null if none.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -258,7 +258,7 @@ class DirectMessagesChatTopic implements \JsonSerializable
     }
 
     /**
-     * Set A draft of a message in the topic; may be null if none
+     * Set A draft of a message in the topic; may be null if none.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {

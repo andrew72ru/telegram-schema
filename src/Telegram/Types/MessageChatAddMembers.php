@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * New chat members were added @member_user_ids User identifiers of the new members
+ * New chat members were added @member_user_ids User identifiers of the new members.
  */
 class MessageChatAddMembers extends MessageContent implements \JsonSerializable
 {

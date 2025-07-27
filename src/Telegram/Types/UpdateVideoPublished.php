@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An automatically scheduled message with video has been successfully sent after conversion
+ * An automatically scheduled message with video has been successfully sent after conversion.
  */
 class UpdateVideoPublished extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateVideoPublished extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class UpdateVideoPublished extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class UpdateVideoPublished extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sent message
+     * Get Identifier of the sent message.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class UpdateVideoPublished extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sent message
+     * Set Identifier of the sent message.
      */
     public function setMessageId(int $messageId): self
     {

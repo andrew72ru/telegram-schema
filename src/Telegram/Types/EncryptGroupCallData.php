@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Encrypts group call data before sending them over network using tgcalls
+ * Encrypts group call data before sending them over network using tgcalls.
  */
 class EncryptGroupCallData extends Data implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier. The call must not be a video chat
+     * Get Group call identifier. The call must not be a video chat.
      */
     public function getGroupCallId(): int
     {
@@ -36,7 +36,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier. The call must not be a video chat
+     * Set Group call identifier. The call must not be a video chat.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -46,7 +46,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Data channel for which data is encrypted
+     * Get Data channel for which data is encrypted.
      */
     public function getDataChannel(): GroupCallDataChannel|null
     {
@@ -54,7 +54,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Data channel for which data is encrypted
+     * Set Data channel for which data is encrypted.
      */
     public function setDataChannel(GroupCallDataChannel|null $dataChannel): self
     {
@@ -64,7 +64,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Data to encrypt
+     * Get Data to encrypt.
      */
     public function getData(): string
     {
@@ -72,7 +72,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Data to encrypt
+     * Set Data to encrypt.
      */
     public function setData(string $data): self
     {
@@ -82,7 +82,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Size of data prefix that must be kept unencrypted
+     * Get Size of data prefix that must be kept unencrypted.
      */
     public function getUnencryptedPrefixSize(): int
     {
@@ -90,7 +90,7 @@ class EncryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Size of data prefix that must be kept unencrypted
+     * Set Size of data prefix that must be kept unencrypted.
      */
     public function setUnencryptedPrefixSize(int $unencryptedPrefixSize): self
     {

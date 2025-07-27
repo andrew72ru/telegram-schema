@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a successful payment
+ * Contains information about a successful payment.
  */
 class PaymentReceipt implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Get Information about the product
+     * Get Information about the product.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -36,7 +36,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Set Information about the product
+     * Set Information about the product.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {
@@ -46,7 +46,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the payment was made
+     * Get Point in time (Unix timestamp) when the payment was made.
      */
     public function getDate(): int
     {
@@ -54,7 +54,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the payment was made
+     * Set Point in time (Unix timestamp) when the payment was made.
      */
     public function setDate(int $date): self
     {
@@ -64,7 +64,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the seller bot
+     * Get User identifier of the seller bot.
      */
     public function getSellerBotUserId(): int
     {
@@ -72,7 +72,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the seller bot
+     * Set User identifier of the seller bot.
      */
     public function setSellerBotUserId(int $sellerBotUserId): self
     {
@@ -82,7 +82,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Get Type of the payment receipt
+     * Get Type of the payment receipt.
      */
     public function getType(): PaymentReceiptType|null
     {
@@ -90,7 +90,7 @@ class PaymentReceipt implements \JsonSerializable
     }
 
     /**
-     * Set Type of the payment receipt
+     * Set Type of the payment receipt.
      */
     public function setType(PaymentReceiptType|null $type): self
     {

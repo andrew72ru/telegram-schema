@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The password reset request was declined @retry_date Point in time (Unix timestamp) when the password reset can be retried
+ * The password reset request was declined @retry_date Point in time (Unix timestamp) when the password reset can be retried.
  */
 class ResetPasswordResultDeclined extends ResetPasswordResult implements \JsonSerializable
 {

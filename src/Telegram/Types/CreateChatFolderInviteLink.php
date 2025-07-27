@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new invite link for a chat folder. A link can be created for a chat folder if it has only pinned and included chats
+ * Creates a new invite link for a chat folder. A link can be created for a chat folder if it has only pinned and included chats.
  */
 class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSe
     }
 
     /**
-     * Get Chat folder identifier
+     * Get Chat folder identifier.
      */
     public function getChatFolderId(): int
     {
@@ -33,7 +33,7 @@ class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSe
     }
 
     /**
-     * Set Chat folder identifier
+     * Set Chat folder identifier.
      */
     public function setChatFolderId(int $chatFolderId): self
     {
@@ -43,7 +43,7 @@ class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSe
     }
 
     /**
-     * Get Name of the link; 0-32 characters
+     * Get Name of the link; 0-32 characters.
      */
     public function getName(): string
     {
@@ -51,7 +51,7 @@ class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSe
     }
 
     /**
-     * Set Name of the link; 0-32 characters
+     * Set Name of the link; 0-32 characters.
      */
     public function setName(string $name): self
     {
@@ -61,7 +61,7 @@ class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSe
     }
 
     /**
-     * Get Identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link creation
+     * Get Identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link creation.
      */
     public function getChatIds(): array|null
     {
@@ -69,7 +69,7 @@ class CreateChatFolderInviteLink extends ChatFolderInviteLink implements \JsonSe
     }
 
     /**
-     * Set Identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link creation
+     * Set Identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link creation.
      */
     public function setChatIds(array|null $chatIds): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A poll was updated; for bots only @poll New data about the poll
+ * A poll was updated; for bots only @poll New data about the poll.
  */
 class UpdatePoll extends Update implements \JsonSerializable
 {

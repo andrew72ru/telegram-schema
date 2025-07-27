@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * A privacy setting for managing whether the user can receive voice and video messages in private chats; for Telegram Premium users only
+ * A privacy setting for managing whether the user can receive voice and video messages in private chats; for Telegram Premium users only.
  */
 class UserPrivacySettingAllowPrivateVoiceAndVideoNoteMessages extends UserPrivacySetting implements \JsonSerializable
 {

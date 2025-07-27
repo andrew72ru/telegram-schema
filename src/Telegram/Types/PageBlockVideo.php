@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video
+ * A video.
  */
 class PageBlockVideo extends PageBlock implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Video file; may be null
+     * Get Video file; may be null.
      */
     public function getVideo(): Video|null
     {
@@ -36,7 +36,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Video file; may be null
+     * Set Video file; may be null.
      */
     public function setVideo(Video|null $video): self
     {
@@ -46,7 +46,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Video caption
+     * Get Video caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -54,7 +54,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Video caption
+     * Set Video caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {
@@ -64,7 +64,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video must be played automatically
+     * Get True, if the video must be played automatically.
      */
     public function getNeedAutoplay(): bool
     {
@@ -72,7 +72,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video must be played automatically
+     * Set True, if the video must be played automatically.
      */
     public function setNeedAutoplay(bool $needAutoplay): self
     {
@@ -82,7 +82,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video must be looped
+     * Get True, if the video must be looped.
      */
     public function getIsLooped(): bool
     {
@@ -90,7 +90,7 @@ class PageBlockVideo extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video must be looped
+     * Set True, if the video must be looped.
      */
     public function setIsLooped(bool $isLooped): self
     {

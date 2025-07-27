@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An authentication code is delivered by an immediately canceled call to the specified phone number. The phone number that calls is the code that must be entered automatically
+ * An authentication code is delivered by an immediately canceled call to the specified phone number. The phone number that calls is the code that must be entered automatically.
  */
 class AuthenticationCodeTypeFlashCall extends AuthenticationCodeType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class AuthenticationCodeTypeFlashCall extends AuthenticationCodeType implements 
     }
 
     /**
-     * Get Pattern of the phone number from which the call will be made
+     * Get Pattern of the phone number from which the call will be made.
      */
     public function getPattern(): string
     {
@@ -27,7 +27,7 @@ class AuthenticationCodeTypeFlashCall extends AuthenticationCodeType implements 
     }
 
     /**
-     * Set Pattern of the phone number from which the call will be made
+     * Set Pattern of the phone number from which the call will be made.
      */
     public function setPattern(string $pattern): self
     {

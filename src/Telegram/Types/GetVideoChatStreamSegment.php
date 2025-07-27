@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a file with a segment of a video chat stream in a modified OGG format for audio or MPEG-4 format for video
+ * Returns a file with a segment of a video chat stream in a modified OGG format for audio or MPEG-4 format for video.
  */
 class GetVideoChatStreamSegment extends Data implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -39,7 +39,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -49,7 +49,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Point in time when the stream segment begins; Unix timestamp in milliseconds
+     * Get Point in time when the stream segment begins; Unix timestamp in milliseconds.
      */
     public function getTimeOffset(): int
     {
@@ -57,7 +57,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Point in time when the stream segment begins; Unix timestamp in milliseconds
+     * Set Point in time when the stream segment begins; Unix timestamp in milliseconds.
      */
     public function setTimeOffset(int $timeOffset): self
     {
@@ -67,7 +67,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Segment duration scale; 0-1. Segment's duration is 1000/(2**scale) milliseconds
+     * Get Segment duration scale; 0-1. Segment's duration is 1000/(2**scale) milliseconds.
      */
     public function getScale(): int
     {
@@ -75,7 +75,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Segment duration scale; 0-1. Segment's duration is 1000/(2**scale) milliseconds
+     * Set Segment duration scale; 0-1. Segment's duration is 1000/(2**scale) milliseconds.
      */
     public function setScale(int $scale): self
     {
@@ -85,7 +85,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of an audio/video channel to get as received from tgcalls
+     * Get Identifier of an audio/video channel to get as received from tgcalls.
      */
     public function getChannelId(): int
     {
@@ -93,7 +93,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of an audio/video channel to get as received from tgcalls
+     * Set Identifier of an audio/video channel to get as received from tgcalls.
      */
     public function setChannelId(int $channelId): self
     {
@@ -103,7 +103,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Video quality as received from tgcalls; pass null to get the worst available quality
+     * Get Video quality as received from tgcalls; pass null to get the worst available quality.
      */
     public function getVideoQuality(): GroupCallVideoQuality|null
     {
@@ -111,7 +111,7 @@ class GetVideoChatStreamSegment extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Video quality as received from tgcalls; pass null to get the worst available quality
+     * Set Video quality as received from tgcalls; pass null to get the worst available quality.
      */
     public function setVideoQuality(GroupCallVideoQuality|null $videoQuality): self
     {

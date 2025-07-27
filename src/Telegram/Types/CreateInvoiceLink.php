@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a link for the given invoice; for bots only
+ * Creates a link for the given invoice; for bots only.
  */
 class CreateInvoiceLink extends HttpUrl implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class CreateInvoiceLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request
+     * Get Unique identifier of business connection on behalf of which to send the request.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class CreateInvoiceLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request
+     * Set Unique identifier of business connection on behalf of which to send the request.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class CreateInvoiceLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Information about the invoice of the type inputMessageInvoice
+     * Get Information about the invoice of the type inputMessageInvoice.
      */
     public function getInvoice(): InputMessageContent|null
     {
@@ -48,7 +48,7 @@ class CreateInvoiceLink extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Information about the invoice of the type inputMessageInvoice
+     * Set Information about the invoice of the type inputMessageInvoice.
      */
     public function setInvoice(InputMessageContent|null $invoice): self
     {

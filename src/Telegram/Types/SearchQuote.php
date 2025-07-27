@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for a given quote in a text. Returns found quote start position in UTF-16 code units. Returns a 404 error if the quote is not found. Can be called synchronously
+ * Searches for a given quote in a text. Returns found quote start position in UTF-16 code units. Returns a 404 error if the quote is not found. Can be called synchronously.
  */
 class SearchQuote extends FoundPosition implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SearchQuote extends FoundPosition implements \JsonSerializable
     }
 
     /**
-     * Get Text in which to search for the quote
+     * Get Text in which to search for the quote.
      */
     public function getText(): FormattedText|null
     {
@@ -33,7 +33,7 @@ class SearchQuote extends FoundPosition implements \JsonSerializable
     }
 
     /**
-     * Set Text in which to search for the quote
+     * Set Text in which to search for the quote.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -43,7 +43,7 @@ class SearchQuote extends FoundPosition implements \JsonSerializable
     }
 
     /**
-     * Get Quote to search for
+     * Get Quote to search for.
      */
     public function getQuote(): FormattedText|null
     {
@@ -51,7 +51,7 @@ class SearchQuote extends FoundPosition implements \JsonSerializable
     }
 
     /**
-     * Set Quote to search for
+     * Set Quote to search for.
      */
     public function setQuote(FormattedText|null $quote): self
     {
@@ -61,7 +61,7 @@ class SearchQuote extends FoundPosition implements \JsonSerializable
     }
 
     /**
-     * Get Approximate quote position in UTF-16 code units
+     * Get Approximate quote position in UTF-16 code units.
      */
     public function getQuotePosition(): int
     {
@@ -69,7 +69,7 @@ class SearchQuote extends FoundPosition implements \JsonSerializable
     }
 
     /**
-     * Set Approximate quote position in UTF-16 code units
+     * Set Approximate quote position in UTF-16 code units.
      */
     public function setQuotePosition(int $quotePosition): self
     {

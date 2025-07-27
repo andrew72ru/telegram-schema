@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a purchase of paid media from a channel by the current user; for regular users only
+ * The transaction is a purchase of paid media from a channel by the current user; for regular users only.
  */
 class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType im
     }
 
     /**
-     * Get Identifier of the channel chat that sent the paid media
+     * Get Identifier of the channel chat that sent the paid media.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType im
     }
 
     /**
-     * Set Identifier of the channel chat that sent the paid media
+     * Set Identifier of the channel chat that sent the paid media.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType im
     }
 
     /**
-     * Get Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message
+     * Get Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType im
     }
 
     /**
-     * Set Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message
+     * Set Identifier of the corresponding message with paid media; can be 0 or an identifier of a deleted message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType im
     }
 
     /**
-     * Get The bought media if the transaction wasn't refunded
+     * Get The bought media if the transaction wasn't refunded.
      */
     public function getMedia(): array|null
     {
@@ -69,7 +69,7 @@ class StarTransactionTypeChannelPaidMediaPurchase extends StarTransactionType im
     }
 
     /**
-     * Set The bought media if the transaction wasn't refunded
+     * Set The bought media if the transaction wasn't refunded.
      */
     public function setMedia(array|null $media): self
     {

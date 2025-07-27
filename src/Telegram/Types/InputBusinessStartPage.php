@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes settings for a business account start page to set
+ * Describes settings for a business account start page to set.
  */
 class InputBusinessStartPage implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputBusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Get Title text of the start page; 0-getOption("business_start_page_title_length_max") characters
+     * Get Title text of the start page; 0-getOption("business_start_page_title_length_max") characters.
      */
     public function getTitle(): string
     {
@@ -33,7 +33,7 @@ class InputBusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Set Title text of the start page; 0-getOption("business_start_page_title_length_max") characters
+     * Set Title text of the start page; 0-getOption("business_start_page_title_length_max") characters.
      */
     public function setTitle(string $title): self
     {
@@ -43,7 +43,7 @@ class InputBusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Get Message text of the start page; 0-getOption("business_start_page_message_length_max") characters
+     * Get Message text of the start page; 0-getOption("business_start_page_message_length_max") characters.
      */
     public function getMessage(): string
     {
@@ -51,7 +51,7 @@ class InputBusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Set Message text of the start page; 0-getOption("business_start_page_message_length_max") characters
+     * Set Message text of the start page; 0-getOption("business_start_page_message_length_max") characters.
      */
     public function setMessage(string $message): self
     {
@@ -61,7 +61,7 @@ class InputBusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Get Greeting sticker of the start page; pass null if none. The sticker must belong to a sticker set and must not be a custom emoji
+     * Get Greeting sticker of the start page; pass null if none. The sticker must belong to a sticker set and must not be a custom emoji.
      */
     public function getSticker(): InputFile|null
     {
@@ -69,7 +69,7 @@ class InputBusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Set Greeting sticker of the start page; pass null if none. The sticker must belong to a sticker set and must not be a custom emoji
+     * Set Greeting sticker of the start page; pass null if none. The sticker must belong to a sticker set and must not be a custom emoji.
      */
     public function setSticker(InputFile|null $sticker): self
     {

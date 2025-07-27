@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reads a part of a file from the TDLib file cache and returns read bytes. This method is intended to be used only if the application has no direct access to TDLib's file system, because it is usually slower than a direct read from the file
+ * Reads a part of a file from the TDLib file cache and returns read bytes. This method is intended to be used only if the application has no direct access to TDLib's file system, because it is usually slower than a direct read from the file.
  */
 class ReadFilePart extends Data implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ReadFilePart extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the file. The file must be located in the TDLib file cache
+     * Get Identifier of the file. The file must be located in the TDLib file cache.
      */
     public function getFileId(): int
     {
@@ -33,7 +33,7 @@ class ReadFilePart extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the file. The file must be located in the TDLib file cache
+     * Set Identifier of the file. The file must be located in the TDLib file cache.
      */
     public function setFileId(int $fileId): self
     {
@@ -43,7 +43,7 @@ class ReadFilePart extends Data implements \JsonSerializable
     }
 
     /**
-     * Get The offset from which to read the file
+     * Get The offset from which to read the file.
      */
     public function getOffset(): int
     {
@@ -51,7 +51,7 @@ class ReadFilePart extends Data implements \JsonSerializable
     }
 
     /**
-     * Set The offset from which to read the file
+     * Set The offset from which to read the file.
      */
     public function setOffset(int $offset): self
     {
@@ -61,7 +61,7 @@ class ReadFilePart extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position
+     * Get Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position.
      */
     public function getCount(): int
     {
@@ -69,7 +69,7 @@ class ReadFilePart extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position
+     * Set Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position.
      */
     public function setCount(int $count): self
     {

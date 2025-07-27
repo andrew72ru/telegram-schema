@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends an upgraded gift to another user or a channel chat
+ * Sends an upgraded gift to another user or a channel chat.
  */
 class TransferGift extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Get Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function getBusinessConnectionId(): string
     {
@@ -36,7 +36,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Set Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -46,7 +46,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift
+     * Get Identifier of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -54,7 +54,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift
+     * Set Identifier of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -64,7 +64,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the channel chat that will receive the gift
+     * Get Identifier of the user or the channel chat that will receive the gift.
      */
     public function getNewOwnerId(): MessageSender|null
     {
@@ -72,7 +72,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the channel chat that will receive the gift
+     * Set Identifier of the user or the channel chat that will receive the gift.
      */
     public function setNewOwnerId(MessageSender|null $newOwnerId): self
     {
@@ -82,7 +82,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars required to pay for the transfer
+     * Get The amount of Telegram Stars required to pay for the transfer.
      */
     public function getStarCount(): int
     {
@@ -90,7 +90,7 @@ class TransferGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars required to pay for the transfer
+     * Set The amount of Telegram Stars required to pay for the transfer.
      */
     public function setStarCount(int $starCount): self
     {

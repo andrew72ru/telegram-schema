@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Forwards previously sent messages. Returns the forwarded messages in the same order as the message identifiers passed in message_ids. If a message can't be forwarded, null will be returned instead of the message
+ * Forwards previously sent messages. Returns the forwarded messages in the same order as the message identifiers passed in message_ids. If a message can't be forwarded, null will be returned instead of the message.
  */
 class ForwardMessages extends Messages implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which to forward messages
+     * Get Identifier of the chat to which to forward messages.
      */
     public function getChatId(): int
     {
@@ -45,7 +45,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which to forward messages
+     * Set Identifier of the chat to which to forward messages.
      */
     public function setChatId(int $chatId): self
     {
@@ -55,7 +55,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier in which the message will be sent; for forum threads only
+     * Get If not 0, the message thread identifier in which the message will be sent; for forum threads only.
      */
     public function getMessageThreadId(): int
     {
@@ -63,7 +63,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier in which the message will be sent; for forum threads only
+     * Set If not 0, the message thread identifier in which the message will be sent; for forum threads only.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -73,7 +73,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat from which to forward messages
+     * Get Identifier of the chat from which to forward messages.
      */
     public function getFromChatId(): int
     {
@@ -81,7 +81,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat from which to forward messages
+     * Set Identifier of the chat from which to forward messages.
      */
     public function setFromChatId(int $fromChatId): self
     {
@@ -91,7 +91,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the messages to forward. Message identifiers must be in a strictly increasing order. At most 100 messages can be forwarded simultaneously. A message can be forwarded only if messageProperties.can_be_forwarded
+     * Get Identifiers of the messages to forward. Message identifiers must be in a strictly increasing order. At most 100 messages can be forwarded simultaneously. A message can be forwarded only if messageProperties.can_be_forwarded.
      */
     public function getMessageIds(): array|null
     {
@@ -99,7 +99,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the messages to forward. Message identifiers must be in a strictly increasing order. At most 100 messages can be forwarded simultaneously. A message can be forwarded only if messageProperties.can_be_forwarded
+     * Set Identifiers of the messages to forward. Message identifiers must be in a strictly increasing order. At most 100 messages can be forwarded simultaneously. A message can be forwarded only if messageProperties.can_be_forwarded.
      */
     public function setMessageIds(array|null $messageIds): self
     {
@@ -109,7 +109,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Options to be used to send the messages; pass null to use default options
+     * Get Options to be used to send the messages; pass null to use default options.
      */
     public function getOptions(): MessageSendOptions|null
     {
@@ -117,7 +117,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Options to be used to send the messages; pass null to use default options
+     * Set Options to be used to send the messages; pass null to use default options.
      */
     public function setOptions(MessageSendOptions|null $options): self
     {
@@ -127,7 +127,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to copy content of the messages without reference to the original sender. Always true if the messages are forwarded to a secret chat or are local.
+     * Get Pass true to copy content of the messages without reference to the original sender. Always true if the messages are forwarded to a secret chat or are local..
      */
     public function getSendCopy(): bool
     {
@@ -135,7 +135,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to copy content of the messages without reference to the original sender. Always true if the messages are forwarded to a secret chat or are local.
+     * Set Pass true to copy content of the messages without reference to the original sender. Always true if the messages are forwarded to a secret chat or are local..
      */
     public function setSendCopy(bool $sendCopy): self
     {
@@ -145,7 +145,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to remove media captions of message copies. Ignored if send_copy is false
+     * Get Pass true to remove media captions of message copies. Ignored if send_copy is false.
      */
     public function getRemoveCaption(): bool
     {
@@ -153,7 +153,7 @@ class ForwardMessages extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to remove media captions of message copies. Ignored if send_copy is false
+     * Set Pass true to remove media captions of message copies. Ignored if send_copy is false.
      */
     public function setRemoveCaption(bool $removeCaption): self
     {

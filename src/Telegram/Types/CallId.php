@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the call identifier @id Call identifier
+ * Contains the call identifier @id Call identifier.
  */
 class CallId implements \JsonSerializable
 {

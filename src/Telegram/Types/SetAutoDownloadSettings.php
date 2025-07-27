@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets auto-download settings @settings New user auto-download settings @type Type of the network for which the new settings are relevant
+ * Sets auto-download settings @settings New user auto-download settings @var Type of the network for which the new settings are relevant.
  */
 class SetAutoDownloadSettings extends Ok implements \JsonSerializable
 {

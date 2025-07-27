@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Checks whether the current session can be used to transfer a chat ownership to another user
+ * Checks whether the current session can be used to transfer a chat ownership to another user.
  */
 class CanTransferOwnership extends CanTransferOwnershipResult implements \JsonSerializable
 {

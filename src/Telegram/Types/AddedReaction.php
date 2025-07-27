@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a reaction applied to a message
+ * Represents a reaction applied to a message.
  */
 class AddedReaction implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Get Type of the reaction
+     * Get Type of the reaction.
      */
     public function getType(): ReactionType|null
     {
@@ -36,7 +36,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Set Type of the reaction
+     * Set Type of the reaction.
      */
     public function setType(ReactionType|null $type): self
     {
@@ -46,7 +46,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat member, applied the reaction
+     * Get Identifier of the chat member, applied the reaction.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -54,7 +54,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat member, applied the reaction
+     * Set Identifier of the chat member, applied the reaction.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -64,7 +64,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Get True, if the reaction was added by the current user
+     * Get True, if the reaction was added by the current user.
      */
     public function getIsOutgoing(): bool
     {
@@ -72,7 +72,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Set True, if the reaction was added by the current user
+     * Set True, if the reaction was added by the current user.
      */
     public function setIsOutgoing(bool $isOutgoing): self
     {
@@ -82,7 +82,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the reaction was added
+     * Get Point in time (Unix timestamp) when the reaction was added.
      */
     public function getDate(): int
     {
@@ -90,7 +90,7 @@ class AddedReaction implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the reaction was added
+     * Set Point in time (Unix timestamp) when the reaction was added.
      */
     public function setDate(int $date): self
     {

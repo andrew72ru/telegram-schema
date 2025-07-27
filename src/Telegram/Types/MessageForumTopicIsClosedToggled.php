@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forum topic has been closed or opened @is_closed True, if the topic was closed; otherwise, the topic was reopened
+ * A forum topic has been closed or opened @is_closed True, if the topic was closed; otherwise, the topic was reopened.
  */
 class MessageForumTopicIsClosedToggled extends MessageContent implements \JsonSerializable
 {

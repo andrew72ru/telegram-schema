@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a suggested name for a new sticker set with a given title @title Sticker set title; 1-64 characters
+ * Returns a suggested name for a new sticker set with a given title @title Sticker set title; 1-64 characters.
  */
 class GetSuggestedStickerSetName extends Text implements \JsonSerializable
 {

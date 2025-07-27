@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches affiliate programs that can be connected to the given affiliate
+ * Searches affiliate programs that can be connected to the given affiliate.
  */
 class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Get The affiliate for which affiliate programs are searched for
+     * Get The affiliate for which affiliate programs are searched for.
      */
     public function getAffiliate(): AffiliateType|null
     {
@@ -36,7 +36,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Set The affiliate for which affiliate programs are searched for
+     * Set The affiliate for which affiliate programs are searched for.
      */
     public function setAffiliate(AffiliateType|null $affiliate): self
     {
@@ -46,7 +46,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Get Sort order for the results
+     * Get Sort order for the results.
      */
     public function getSortOrder(): AffiliateProgramSortOrder|null
     {
@@ -54,7 +54,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Set Sort order for the results
+     * Set Sort order for the results.
      */
     public function setSortOrder(AffiliateProgramSortOrder|null $sortOrder): self
     {
@@ -64,7 +64,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Get Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -72,7 +72,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Set Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first affiliate program to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -82,7 +82,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Get The maximum number of affiliate programs to return
+     * Get The maximum number of affiliate programs to return.
      */
     public function getLimit(): int
     {
@@ -90,7 +90,7 @@ class SearchAffiliatePrograms extends FoundAffiliatePrograms implements \JsonSer
     }
 
     /**
-     * Set The maximum number of affiliate programs to return
+     * Set The maximum number of affiliate programs to return.
      */
     public function setLimit(int $limit): self
     {

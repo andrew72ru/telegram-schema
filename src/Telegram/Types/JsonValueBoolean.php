@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a boolean JSON value @value The value
+ * Represents a boolean JSON value @value The value.
  */
 class JsonValueBoolean extends JsonValue implements \JsonSerializable
 {

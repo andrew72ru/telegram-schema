@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a country
+ * Contains information about a country.
  */
 class CountryInfo implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 3166-1 alpha-2 country code
+     * Get A two-letter ISO 3166-1 alpha-2 country code.
      */
     public function getCountryCode(): string
     {
@@ -39,7 +39,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 3166-1 alpha-2 country code
+     * Set A two-letter ISO 3166-1 alpha-2 country code.
      */
     public function setCountryCode(string $countryCode): self
     {
@@ -49,7 +49,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Get Native name of the country
+     * Get Native name of the country.
      */
     public function getName(): string
     {
@@ -57,7 +57,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Set Native name of the country
+     * Set Native name of the country.
      */
     public function setName(string $name): self
     {
@@ -67,7 +67,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Get English name of the country
+     * Get English name of the country.
      */
     public function getEnglishName(): string
     {
@@ -75,7 +75,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Set English name of the country
+     * Set English name of the country.
      */
     public function setEnglishName(string $englishName): self
     {
@@ -85,7 +85,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the country must be hidden from the list of all countries
+     * Get True, if the country must be hidden from the list of all countries.
      */
     public function getIsHidden(): bool
     {
@@ -93,7 +93,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the country must be hidden from the list of all countries
+     * Set True, if the country must be hidden from the list of all countries.
      */
     public function setIsHidden(bool $isHidden): self
     {
@@ -103,7 +103,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Get List of country calling codes
+     * Get List of country calling codes.
      */
     public function getCallingCodes(): array|null
     {
@@ -111,7 +111,7 @@ class CountryInfo implements \JsonSerializable
     }
 
     /**
-     * Set List of country calling codes
+     * Set List of country calling codes.
      */
     public function setCallingCodes(array|null $callingCodes): self
     {

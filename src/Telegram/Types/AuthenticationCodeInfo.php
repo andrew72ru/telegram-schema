@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about the authentication code that was sent
+ * Information about the authentication code that was sent.
  */
 class AuthenticationCodeInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get A phone number that is being authenticated
+     * Get A phone number that is being authenticated.
      */
     public function getPhoneNumber(): string
     {
@@ -36,7 +36,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set A phone number that is being authenticated
+     * Set A phone number that is being authenticated.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -46,7 +46,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get The way the code was sent to the user
+     * Get The way the code was sent to the user.
      */
     public function getType(): AuthenticationCodeType|null
     {
@@ -54,7 +54,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set The way the code was sent to the user
+     * Set The way the code was sent to the user.
      */
     public function setType(AuthenticationCodeType|null $type): self
     {
@@ -64,7 +64,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get The way the next code will be sent to the user; may be null
+     * Get The way the next code will be sent to the user; may be null.
      */
     public function getNextType(): AuthenticationCodeType|null
     {
@@ -72,7 +72,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set The way the next code will be sent to the user; may be null
+     * Set The way the next code will be sent to the user; may be null.
      */
     public function setNextType(AuthenticationCodeType|null $nextType): self
     {
@@ -82,7 +82,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Timeout before the code can be re-sent, in seconds
+     * Get Timeout before the code can be re-sent, in seconds.
      */
     public function getTimeout(): int
     {
@@ -90,7 +90,7 @@ class AuthenticationCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Timeout before the code can be re-sent, in seconds
+     * Set Timeout before the code can be re-sent, in seconds.
      */
     public function setTimeout(int $timeout): self
     {

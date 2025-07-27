@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Paid media were purchased by a user; for bots only
+ * Paid media were purchased by a user; for bots only.
  */
 class UpdatePaidMediaPurchased extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdatePaidMediaPurchased extends Update implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -30,7 +30,7 @@ class UpdatePaidMediaPurchased extends Update implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -40,7 +40,7 @@ class UpdatePaidMediaPurchased extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Bot-specified payload for the paid media
+     * Get Bot-specified payload for the paid media.
      */
     public function getPayload(): string
     {
@@ -48,7 +48,7 @@ class UpdatePaidMediaPurchased extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Bot-specified payload for the paid media
+     * Set Bot-specified payload for the paid media.
      */
     public function setPayload(string $payload): self
     {

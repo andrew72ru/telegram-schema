@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the period of inactivity after which the account of the current user will automatically be deleted @ttl New account TTL
+ * Changes the period of inactivity after which the account of the current user will automatically be deleted @ttl New account TTL.
  */
 class SetAccountTtl extends Ok implements \JsonSerializable
 {

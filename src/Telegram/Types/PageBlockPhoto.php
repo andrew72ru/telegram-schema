@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A photo
+ * A photo.
  */
 class PageBlockPhoto extends PageBlock implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PageBlockPhoto extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Photo file; may be null
+     * Get Photo file; may be null.
      */
     public function getPhoto(): Photo|null
     {
@@ -33,7 +33,7 @@ class PageBlockPhoto extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Photo file; may be null
+     * Set Photo file; may be null.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -43,7 +43,7 @@ class PageBlockPhoto extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Photo caption
+     * Get Photo caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -51,7 +51,7 @@ class PageBlockPhoto extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Photo caption
+     * Set Photo caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {
@@ -61,7 +61,7 @@ class PageBlockPhoto extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get URL that needs to be opened when the photo is clicked
+     * Get URL that needs to be opened when the photo is clicked.
      */
     public function getUrl(): string
     {
@@ -69,7 +69,7 @@ class PageBlockPhoto extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set URL that needs to be opened when the photo is clicked
+     * Set URL that needs to be opened when the photo is clicked.
      */
     public function setUrl(string $url): self
     {

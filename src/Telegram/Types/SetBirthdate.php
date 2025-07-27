@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the birthdate of the current user @birthdate The new value of the current user's birthdate; pass null to remove the birthdate
+ * Changes the birthdate of the current user @birthdate The new value of the current user's birthdate; pass null to remove the birthdate.
  */
 class SetBirthdate extends Ok implements \JsonSerializable
 {

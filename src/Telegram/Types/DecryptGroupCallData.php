@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Decrypts group call data received by tgcalls
+ * Decrypts group call data received by tgcalls.
  */
 class DecryptGroupCallData extends Data implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier. The call must not be a video chat
+     * Get Group call identifier. The call must not be a video chat.
      */
     public function getGroupCallId(): int
     {
@@ -36,7 +36,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier. The call must not be a video chat
+     * Set Group call identifier. The call must not be a video chat.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -46,7 +46,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the group call participant, which sent the data
+     * Get Identifier of the group call participant, which sent the data.
      */
     public function getParticipantId(): MessageSender|null
     {
@@ -54,7 +54,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the group call participant, which sent the data
+     * Set Identifier of the group call participant, which sent the data.
      */
     public function setParticipantId(MessageSender|null $participantId): self
     {
@@ -64,7 +64,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Data channel for which data was encrypted; pass null if unknown
+     * Get Data channel for which data was encrypted; pass null if unknown.
      */
     public function getDataChannel(): GroupCallDataChannel|null
     {
@@ -72,7 +72,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Data channel for which data was encrypted; pass null if unknown
+     * Set Data channel for which data was encrypted; pass null if unknown.
      */
     public function setDataChannel(GroupCallDataChannel|null $dataChannel): self
     {
@@ -82,7 +82,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Get Data to decrypt
+     * Get Data to decrypt.
      */
     public function getData(): string
     {
@@ -90,7 +90,7 @@ class DecryptGroupCallData extends Data implements \JsonSerializable
     }
 
     /**
-     * Set Data to decrypt
+     * Set Data to decrypt.
      */
     public function setData(string $data): self
     {

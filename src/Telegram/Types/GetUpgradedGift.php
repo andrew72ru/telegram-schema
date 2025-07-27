@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about an upgraded gift by its name @name Unique name of the upgraded gift
+ * Returns information about an upgraded gift by its name @name Unique name of the upgraded gift.
  */
 class GetUpgradedGift extends UpgradedGift implements \JsonSerializable
 {

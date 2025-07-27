@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for files in the file download list or recently downloaded files from the list
+ * Searches for files in the file download list or recently downloaded files from the list.
  */
 class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Get Query to search for; may be empty to return all downloaded files
+     * Get Query to search for; may be empty to return all downloaded files.
      */
     public function getQuery(): string
     {
@@ -39,7 +39,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Set Query to search for; may be empty to return all downloaded files
+     * Set Query to search for; may be empty to return all downloaded files.
      */
     public function setQuery(string $query): self
     {
@@ -49,7 +49,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Get Pass true to search only for active downloads, including paused
+     * Get Pass true to search only for active downloads, including paused.
      */
     public function getOnlyActive(): bool
     {
@@ -57,7 +57,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Set Pass true to search only for active downloads, including paused
+     * Set Pass true to search only for active downloads, including paused.
      */
     public function setOnlyActive(bool $onlyActive): self
     {
@@ -67,7 +67,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Get Pass true to search only for completed downloads
+     * Get Pass true to search only for completed downloads.
      */
     public function getOnlyCompleted(): bool
     {
@@ -75,7 +75,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Set Pass true to search only for completed downloads
+     * Set Pass true to search only for completed downloads.
      */
     public function setOnlyCompleted(bool $onlyCompleted): self
     {
@@ -85,7 +85,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -93,7 +93,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -103,7 +103,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Get The maximum number of files to be returned
+     * Get The maximum number of files to be returned.
      */
     public function getLimit(): int
     {
@@ -111,7 +111,7 @@ class SearchFileDownloads extends FoundFileDownloads implements \JsonSerializabl
     }
 
     /**
-     * Set The maximum number of files to be returned
+     * Set The maximum number of files to be returned.
      */
     public function setLimit(int $limit): self
     {

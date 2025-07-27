@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A text message
+ * A text message.
  */
 class InputMessageText extends InputMessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputMessageText extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Formatted text to be sent; 0-getOption("message_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, BlockQuote, ExpandableBlockQuote,
+     * Get Formatted text to be sent; 0-getOption("message_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, BlockQuote, ExpandableBlockQuote,.
      */
     public function getText(): FormattedText|null
     {
@@ -33,7 +33,7 @@ class InputMessageText extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Formatted text to be sent; 0-getOption("message_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, BlockQuote, ExpandableBlockQuote,
+     * Set Formatted text to be sent; 0-getOption("message_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, BlockQuote, ExpandableBlockQuote,.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -43,7 +43,7 @@ class InputMessageText extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Options to be used for generation of a link preview; may be null if none; pass null to use default link preview options
+     * Get Options to be used for generation of a link preview; may be null if none; pass null to use default link preview options.
      */
     public function getLinkPreviewOptions(): LinkPreviewOptions|null
     {
@@ -51,7 +51,7 @@ class InputMessageText extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Options to be used for generation of a link preview; may be null if none; pass null to use default link preview options
+     * Set Options to be used for generation of a link preview; may be null if none; pass null to use default link preview options.
      */
     public function setLinkPreviewOptions(LinkPreviewOptions|null $linkPreviewOptions): self
     {
@@ -61,7 +61,7 @@ class InputMessageText extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if a chat message draft must be deleted
+     * Get True, if a chat message draft must be deleted.
      */
     public function getClearDraft(): bool
     {
@@ -69,7 +69,7 @@ class InputMessageText extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if a chat message draft must be deleted
+     * Set True, if a chat message draft must be deleted.
      */
     public function setClearDraft(bool $clearDraft): self
     {

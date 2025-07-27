@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns state of Telegram Premium subscription and promotion videos for Premium features
+ * Returns state of Telegram Premium subscription and promotion videos for Premium features.
  */
 class GetPremiumState extends PremiumState implements \JsonSerializable
 {

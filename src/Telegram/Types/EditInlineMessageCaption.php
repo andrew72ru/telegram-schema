@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the caption of an inline message sent via a bot; for bots only
+ * Edits the caption of an inline message sent via a bot; for bots only.
  */
 class EditInlineMessageCaption extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Inline message identifier
+     * Get Inline message identifier.
      */
     public function getInlineMessageId(): string
     {
@@ -36,7 +36,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Inline message identifier
+     * Set Inline message identifier.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {
@@ -46,7 +46,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -54,7 +54,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -64,7 +64,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters
+     * Get New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters
+     * Set New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -82,7 +82,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages
+     * Get Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -90,7 +90,7 @@ class EditInlineMessageCaption extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages
+     * Set Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {

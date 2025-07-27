@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Options to be used when a Web App is opened
+ * Options to be used when a Web App is opened.
  */
 class WebAppOpenParameters implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class WebAppOpenParameters implements \JsonSerializable
     }
 
     /**
-     * Get Preferred Web App theme; pass null to use the default theme
+     * Get Preferred Web App theme; pass null to use the default theme.
      */
     public function getTheme(): ThemeParameters|null
     {
@@ -33,7 +33,7 @@ class WebAppOpenParameters implements \JsonSerializable
     }
 
     /**
-     * Set Preferred Web App theme; pass null to use the default theme
+     * Set Preferred Web App theme; pass null to use the default theme.
      */
     public function setTheme(ThemeParameters|null $theme): self
     {
@@ -43,7 +43,7 @@ class WebAppOpenParameters implements \JsonSerializable
     }
 
     /**
-     * Get Short name of the current application; 0-64 English letters, digits, and underscores
+     * Get Short name of the current application; 0-64 English letters, digits, and underscores.
      */
     public function getApplicationName(): string
     {
@@ -51,7 +51,7 @@ class WebAppOpenParameters implements \JsonSerializable
     }
 
     /**
-     * Set Short name of the current application; 0-64 English letters, digits, and underscores
+     * Set Short name of the current application; 0-64 English letters, digits, and underscores.
      */
     public function setApplicationName(string $applicationName): self
     {
@@ -61,7 +61,7 @@ class WebAppOpenParameters implements \JsonSerializable
     }
 
     /**
-     * Get The mode in which the Web App is opened; pass null to open in webAppOpenModeFullSize
+     * Get The mode in which the Web App is opened; pass null to open in webAppOpenModeFullSize.
      */
     public function getMode(): WebAppOpenMode|null
     {
@@ -69,7 +69,7 @@ class WebAppOpenParameters implements \JsonSerializable
     }
 
     /**
-     * Set The mode in which the Web App is opened; pass null to open in webAppOpenModeFullSize
+     * Set The mode in which the Web App is opened; pass null to open in webAppOpenModeFullSize.
      */
     public function setMode(WebAppOpenMode|null $mode): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends the result of an inline query as a message. Returns the sent message. Always clears a chat draft message
+ * Sends the result of an inline query as a message. Returns the sent message. Always clears a chat draft message.
  */
 class SendInlineQueryResultMessage extends Message implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Target chat
+     * Get Target chat.
      */
     public function getChatId(): int
     {
@@ -45,7 +45,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Target chat
+     * Set Target chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -55,7 +55,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier in which the message will be sent
+     * Get If not 0, the message thread identifier in which the message will be sent.
      */
     public function getMessageThreadId(): int
     {
@@ -63,7 +63,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier in which the message will be sent
+     * Set If not 0, the message thread identifier in which the message will be sent.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -73,7 +73,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message or story to be replied; pass null if none
+     * Get Information about the message or story to be replied; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -81,7 +81,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message or story to be replied; pass null if none
+     * Set Information about the message or story to be replied; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -91,7 +91,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Options to be used to send the message; pass null to use default options
+     * Get Options to be used to send the message; pass null to use default options.
      */
     public function getOptions(): MessageSendOptions|null
     {
@@ -99,7 +99,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Options to be used to send the message; pass null to use default options
+     * Set Options to be used to send the message; pass null to use default options.
      */
     public function setOptions(MessageSendOptions|null $options): self
     {
@@ -109,7 +109,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the inline query
+     * Get Identifier of the inline query.
      */
     public function getQueryId(): int
     {
@@ -117,7 +117,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the inline query
+     * Set Identifier of the inline query.
      */
     public function setQueryId(int $queryId): self
     {
@@ -127,7 +127,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the inline query result
+     * Get Identifier of the inline query result.
      */
     public function getResultId(): string
     {
@@ -135,7 +135,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the inline query result
+     * Set Identifier of the inline query result.
      */
     public function setResultId(string $resultId): self
     {
@@ -145,7 +145,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username")
+     * Get Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username").
      */
     public function getHideViaBot(): bool
     {
@@ -153,7 +153,7 @@ class SendInlineQueryResultMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username")
+     * Set Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username").
      */
     public function setHideViaBot(bool $hideViaBot): self
     {

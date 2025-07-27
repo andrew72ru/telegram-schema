@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains the exact storage usage statistics split by chats and file type
+ * Contains the exact storage usage statistics split by chats and file type.
  */
 class StorageStatistics implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Total size of files, in bytes
+     * Get Total size of files, in bytes.
      */
     public function getSize(): int
     {
@@ -33,7 +33,7 @@ class StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Total size of files, in bytes
+     * Set Total size of files, in bytes.
      */
     public function setSize(int $size): self
     {
@@ -43,7 +43,7 @@ class StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Total number of files
+     * Get Total number of files.
      */
     public function getCount(): int
     {
@@ -51,7 +51,7 @@ class StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Total number of files
+     * Set Total number of files.
      */
     public function setCount(int $count): self
     {
@@ -61,7 +61,7 @@ class StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Statistics split by chats
+     * Get Statistics split by chats.
      */
     public function getByChat(): array|null
     {
@@ -69,7 +69,7 @@ class StorageStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Statistics split by chats
+     * Set Statistics split by chats.
      */
     public function setByChat(array|null $byChat): self
     {

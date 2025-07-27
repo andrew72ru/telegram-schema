@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains some binary data @data Data
+ * Contains some binary data @data Data.
  */
 class Data implements \JsonSerializable
 {

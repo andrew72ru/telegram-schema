@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of chat folder invite links @invite_links List of the invite links
+ * Represents a list of chat folder invite links @invite_links List of the invite links.
  */
 class ChatFolderInviteLinks implements \JsonSerializable
 {

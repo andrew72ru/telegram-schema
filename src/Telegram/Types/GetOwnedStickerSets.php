@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns sticker sets owned by the current user
+ * Returns sticker sets owned by the current user.
  */
 class GetOwnedStickerSets extends StickerSets implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetOwnedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sticker set from which to return owned sticker sets; use 0 to get results from the beginning
+     * Get Identifier of the sticker set from which to return owned sticker sets; use 0 to get results from the beginning.
      */
     public function getOffsetStickerSetId(): int
     {
@@ -30,7 +30,7 @@ class GetOwnedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sticker set from which to return owned sticker sets; use 0 to get results from the beginning
+     * Set Identifier of the sticker set from which to return owned sticker sets; use 0 to get results from the beginning.
      */
     public function setOffsetStickerSetId(int $offsetStickerSetId): self
     {
@@ -40,7 +40,7 @@ class GetOwnedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of sticker sets to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of sticker sets to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class GetOwnedStickerSets extends StickerSets implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of sticker sets to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of sticker sets to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a thumbnail
+ * Represents a thumbnail.
  */
 class Thumbnail implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail format
+     * Get Thumbnail format.
      */
     public function getFormat(): ThumbnailFormat|null
     {
@@ -36,7 +36,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail format
+     * Set Thumbnail format.
      */
     public function setFormat(ThumbnailFormat|null $format): self
     {
@@ -46,7 +46,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail width
+     * Get Thumbnail width.
      */
     public function getWidth(): int
     {
@@ -54,7 +54,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail width
+     * Set Thumbnail width.
      */
     public function setWidth(int $width): self
     {
@@ -64,7 +64,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Get Thumbnail height
+     * Get Thumbnail height.
      */
     public function getHeight(): int
     {
@@ -72,7 +72,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Set Thumbnail height
+     * Set Thumbnail height.
      */
     public function setHeight(int $height): self
     {
@@ -82,7 +82,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Get The thumbnail
+     * Get The thumbnail.
      */
     public function getFile(): File|null
     {
@@ -90,7 +90,7 @@ class Thumbnail implements \JsonSerializable
     }
 
     /**
-     * Set The thumbnail
+     * Set The thumbnail.
      */
     public function setFile(File|null $file): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The call has ended successfully
+ * The call has ended successfully.
  */
 class CallStateDiscarded extends CallState implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get The reason why the call has ended
+     * Get The reason why the call has ended.
      */
     public function getReason(): CallDiscardReason|null
     {
@@ -36,7 +36,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set The reason why the call has ended
+     * Set The reason why the call has ended.
      */
     public function setReason(CallDiscardReason|null $reason): self
     {
@@ -46,7 +46,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call rating must be sent to the server
+     * Get True, if the call rating must be sent to the server.
      */
     public function getNeedRating(): bool
     {
@@ -54,7 +54,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call rating must be sent to the server
+     * Set True, if the call rating must be sent to the server.
      */
     public function setNeedRating(bool $needRating): self
     {
@@ -64,7 +64,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call debug information must be sent to the server
+     * Get True, if the call debug information must be sent to the server.
      */
     public function getNeedDebugInformation(): bool
     {
@@ -72,7 +72,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call debug information must be sent to the server
+     * Set True, if the call debug information must be sent to the server.
      */
     public function setNeedDebugInformation(bool $needDebugInformation): self
     {
@@ -82,7 +82,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Get True, if the call log must be sent to the server
+     * Get True, if the call log must be sent to the server.
      */
     public function getNeedLog(): bool
     {
@@ -90,7 +90,7 @@ class CallStateDiscarded extends CallState implements \JsonSerializable
     }
 
     /**
-     * Set True, if the call log must be sent to the server
+     * Set True, if the call log must be sent to the server.
      */
     public function setNeedLog(bool $needLog): self
     {

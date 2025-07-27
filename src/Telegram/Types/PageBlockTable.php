@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A table
+ * A table.
  */
 class PageBlockTable extends PageBlock implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Table caption
+     * Get Table caption.
      */
     public function getCaption(): RichText|null
     {
@@ -36,7 +36,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Table caption
+     * Set Table caption.
      */
     public function setCaption(RichText|null $caption): self
     {
@@ -46,7 +46,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Table cells
+     * Get Table cells.
      */
     public function getCells(): array|null
     {
@@ -54,7 +54,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Table cells
+     * Set Table cells.
      */
     public function setCells(array|null $cells): self
     {
@@ -64,7 +64,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the table is bordered
+     * Get True, if the table is bordered.
      */
     public function getIsBordered(): bool
     {
@@ -72,7 +72,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the table is bordered
+     * Set True, if the table is bordered.
      */
     public function setIsBordered(bool $isBordered): self
     {
@@ -82,7 +82,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the table is striped
+     * Get True, if the table is striped.
      */
     public function getIsStriped(): bool
     {
@@ -90,7 +90,7 @@ class PageBlockTable extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the table is striped
+     * Set True, if the table is striped.
      */
     public function setIsStriped(bool $isStriped): self
     {

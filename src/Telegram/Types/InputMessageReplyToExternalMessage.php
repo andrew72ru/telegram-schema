@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a message to be replied that is from a different chat or a forum topic; not supported in secret chats
+ * Describes a message to be replied that is from a different chat or a forum topic; not supported in secret chats.
  */
 class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements 
     }
 
     /**
-     * Get The identifier of the chat to which the message to be replied belongs
+     * Get The identifier of the chat to which the message to be replied belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements 
     }
 
     /**
-     * Set The identifier of the chat to which the message to be replied belongs
+     * Set The identifier of the chat to which the message to be replied belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements 
     }
 
     /**
-     * Get The identifier of the message to be replied in the specified chat. A message can be replied in another chat or forum topic only if messageProperties.can_be_replied_in_another_chat
+     * Get The identifier of the message to be replied in the specified chat. A message can be replied in another chat or forum topic only if messageProperties.can_be_replied_in_another_chat.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements 
     }
 
     /**
-     * Set The identifier of the message to be replied in the specified chat. A message can be replied in another chat or forum topic only if messageProperties.can_be_replied_in_another_chat
+     * Set The identifier of the message to be replied in the specified chat. A message can be replied in another chat or forum topic only if messageProperties.can_be_replied_in_another_chat.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements 
     }
 
     /**
-     * Get Quote from the message to be replied; pass null if none
+     * Get Quote from the message to be replied; pass null if none.
      */
     public function getQuote(): InputTextQuote|null
     {
@@ -69,7 +69,7 @@ class InputMessageReplyToExternalMessage extends InputMessageReplyTo implements 
     }
 
     /**
-     * Set Quote from the message to be replied; pass null if none
+     * Set Quote from the message to be replied; pass null if none.
      */
     public function setQuote(InputTextQuote|null $quote): self
     {

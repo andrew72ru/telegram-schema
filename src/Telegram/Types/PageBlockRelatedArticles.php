@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Related articles
+ * Related articles.
  */
 class PageBlockRelatedArticles extends PageBlock implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PageBlockRelatedArticles extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block header
+     * Get Block header.
      */
     public function getHeader(): RichText|null
     {
@@ -30,7 +30,7 @@ class PageBlockRelatedArticles extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block header
+     * Set Block header.
      */
     public function setHeader(RichText|null $header): self
     {
@@ -40,7 +40,7 @@ class PageBlockRelatedArticles extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get List of related articles
+     * Get List of related articles.
      */
     public function getArticles(): array|null
     {
@@ -48,7 +48,7 @@ class PageBlockRelatedArticles extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set List of related articles
+     * Set List of related articles.
      */
     public function setArticles(array|null $articles): self
     {

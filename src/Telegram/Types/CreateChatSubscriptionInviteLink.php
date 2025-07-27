@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new subscription invite link for a channel chat. Requires can_invite_users right in the chat
+ * Creates a new subscription invite link for a channel chat. Requires can_invite_users right in the chat.
  */
 class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSe
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSe
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSe
     }
 
     /**
-     * Get Invite link name; 0-32 characters
+     * Get Invite link name; 0-32 characters.
      */
     public function getName(): string
     {
@@ -51,7 +51,7 @@ class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSe
     }
 
     /**
-     * Set Invite link name; 0-32 characters
+     * Set Invite link name; 0-32 characters.
      */
     public function setName(string $name): self
     {
@@ -61,7 +61,7 @@ class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSe
     }
 
     /**
-     * Get Information about subscription plan that will be applied to the users joining the chat via the link.
+     * Get Information about subscription plan that will be applied to the users joining the chat via the link..
      */
     public function getSubscriptionPricing(): StarSubscriptionPricing|null
     {
@@ -69,7 +69,7 @@ class CreateChatSubscriptionInviteLink extends ChatInviteLink implements \JsonSe
     }
 
     /**
-     * Set Information about subscription plan that will be applied to the users joining the chat via the link.
+     * Set Information about subscription plan that will be applied to the users joining the chat via the link..
      */
     public function setSubscriptionPricing(StarSubscriptionPricing|null $subscriptionPricing): self
     {

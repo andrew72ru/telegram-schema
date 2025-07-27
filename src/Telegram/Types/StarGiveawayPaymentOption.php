@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for creating of Telegram Star giveaway. Use telegramPaymentPurposeStarGiveaway for out-of-store payments
+ * Describes an option for creating of Telegram Star giveaway. Use telegramPaymentPurposeStarGiveaway for out-of-store payments.
  */
 class StarGiveawayPaymentOption implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code for the payment
+     * Get ISO 4217 currency code for the payment.
      */
     public function getCurrency(): string
     {
@@ -48,7 +48,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code for the payment
+     * Set ISO 4217 currency code for the payment.
      */
     public function setCurrency(string $currency): self
     {
@@ -58,7 +58,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The amount to pay, in the smallest units of the currency
+     * Get The amount to pay, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -66,7 +66,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The amount to pay, in the smallest units of the currency
+     * Set The amount to pay, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -76,7 +76,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that will be distributed among winners
+     * Get Number of Telegram Stars that will be distributed among winners.
      */
     public function getStarCount(): int
     {
@@ -84,7 +84,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that will be distributed among winners
+     * Set Number of Telegram Stars that will be distributed among winners.
      */
     public function setStarCount(int $starCount): self
     {
@@ -94,7 +94,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the store product associated with the option; may be empty if none
+     * Get Identifier of the store product associated with the option; may be empty if none.
      */
     public function getStoreProductId(): string
     {
@@ -102,7 +102,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the store product associated with the option; may be empty if none
+     * Set Identifier of the store product associated with the option; may be empty if none.
      */
     public function setStoreProductId(string $storeProductId): self
     {
@@ -112,7 +112,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the chat will be boosted for one year if the option is chosen
+     * Get Number of times the chat will be boosted for one year if the option is chosen.
      */
     public function getYearlyBoostCount(): int
     {
@@ -120,7 +120,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the chat will be boosted for one year if the option is chosen
+     * Set Number of times the chat will be boosted for one year if the option is chosen.
      */
     public function setYearlyBoostCount(int $yearlyBoostCount): self
     {
@@ -130,7 +130,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Allowed options for the number of giveaway winners
+     * Get Allowed options for the number of giveaway winners.
      */
     public function getWinnerOptions(): array|null
     {
@@ -138,7 +138,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Allowed options for the number of giveaway winners
+     * Set Allowed options for the number of giveaway winners.
      */
     public function setWinnerOptions(array|null $winnerOptions): self
     {
@@ -148,7 +148,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the option must be chosen by default
+     * Get True, if the option must be chosen by default.
      */
     public function getIsDefault(): bool
     {
@@ -156,7 +156,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the option must be chosen by default
+     * Set True, if the option must be chosen by default.
      */
     public function setIsDefault(bool $isDefault): self
     {
@@ -166,7 +166,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get True, if the option must be shown only in the full list of payment options
+     * Get True, if the option must be shown only in the full list of payment options.
      */
     public function getIsAdditional(): bool
     {
@@ -174,7 +174,7 @@ class StarGiveawayPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set True, if the option must be shown only in the full list of payment options
+     * Set True, if the option must be shown only in the full list of payment options.
      */
     public function setIsAdditional(bool $isAdditional): self
     {

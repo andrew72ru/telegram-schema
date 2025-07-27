@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the list of commands supported by the bot for the given user scope and language; for bots only
+ * Sets the list of commands supported by the bot for the given user scope and language; for bots only.
  */
 class SetCommands extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetCommands extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The scope to which the commands are relevant; pass null to change commands in the default bot command scope
+     * Get The scope to which the commands are relevant; pass null to change commands in the default bot command scope.
      */
     public function getScope(): BotCommandScope|null
     {
@@ -33,7 +33,7 @@ class SetCommands extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The scope to which the commands are relevant; pass null to change commands in the default bot command scope
+     * Set The scope to which the commands are relevant; pass null to change commands in the default bot command scope.
      */
     public function setScope(BotCommandScope|null $scope): self
     {
@@ -43,7 +43,7 @@ class SetCommands extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands
+     * Get A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands.
      */
     public function getLanguageCode(): string
     {
@@ -51,7 +51,7 @@ class SetCommands extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands
+     * Set A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands.
      */
     public function setLanguageCode(string $languageCode): self
     {
@@ -61,7 +61,7 @@ class SetCommands extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get List of the bot's commands
+     * Get List of the bot's commands.
      */
     public function getCommands(): array|null
     {
@@ -69,7 +69,7 @@ class SetCommands extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set List of the bot's commands
+     * Set List of the bot's commands.
      */
     public function setCommands(array|null $commands): self
     {

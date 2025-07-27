@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes privacy settings of a story. The method can be called only for stories posted on behalf of the current user and if story.can_be_edited == true
+ * Changes privacy settings of a story. The method can be called only for stories posted on behalf of the current user and if story.can_be_edited == true.
  */
 class SetStoryPrivacySettings extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetStoryPrivacySettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the story
+     * Get Identifier of the story.
      */
     public function getStoryId(): int
     {
@@ -30,7 +30,7 @@ class SetStoryPrivacySettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the story
+     * Set Identifier of the story.
      */
     public function setStoryId(int $storyId): self
     {
@@ -40,7 +40,7 @@ class SetStoryPrivacySettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new privacy settings for the story
+     * Get The new privacy settings for the story.
      */
     public function getPrivacySettings(): StoryPrivacySettings|null
     {
@@ -48,7 +48,7 @@ class SetStoryPrivacySettings extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new privacy settings for the story
+     * Set The new privacy settings for the story.
      */
     public function setPrivacySettings(StoryPrivacySettings|null $privacySettings): self
     {

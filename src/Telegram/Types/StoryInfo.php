@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains basic information about a story
+ * Contains basic information about a story.
  */
 class StoryInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StoryInfo implements \JsonSerializable
     }
 
     /**
-     * Get Unique story identifier among stories of the chat
+     * Get Unique story identifier among stories of the chat.
      */
     public function getStoryId(): int
     {
@@ -33,7 +33,7 @@ class StoryInfo implements \JsonSerializable
     }
 
     /**
-     * Set Unique story identifier among stories of the chat
+     * Set Unique story identifier among stories of the chat.
      */
     public function setStoryId(int $storyId): self
     {
@@ -43,7 +43,7 @@ class StoryInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the story was published
+     * Get Point in time (Unix timestamp) when the story was published.
      */
     public function getDate(): int
     {
@@ -51,7 +51,7 @@ class StoryInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the story was published
+     * Set Point in time (Unix timestamp) when the story was published.
      */
     public function setDate(int $date): self
     {
@@ -61,7 +61,7 @@ class StoryInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the story is available only to close friends
+     * Get True, if the story is available only to close friends.
      */
     public function getIsForCloseFriends(): bool
     {
@@ -69,7 +69,7 @@ class StoryInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the story is available only to close friends
+     * Set True, if the story is available only to close friends.
      */
     public function setIsForCloseFriends(bool $isForCloseFriends): self
     {

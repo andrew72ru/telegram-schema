@@ -22,7 +22,7 @@ class OpenMessageContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier of the message
+     * Get Chat identifier of the message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class OpenMessageContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier of the message
+     * Set Chat identifier of the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class OpenMessageContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message with the opened content
+     * Get Identifier of the message with the opened content.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class OpenMessageContent extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message with the opened content
+     * Set Identifier of the message with the opened content.
      */
     public function setMessageId(int $messageId): self
     {

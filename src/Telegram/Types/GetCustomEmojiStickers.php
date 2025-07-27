@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of custom emoji stickers by their identifiers. Stickers are returned in arbitrary order. Only found stickers are returned
+ * Returns the list of custom emoji stickers by their identifiers. Stickers are returned in arbitrary order. Only found stickers are returned.
  */
 class GetCustomEmojiStickers extends Stickers implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class GetCustomEmojiStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of custom emoji stickers. At most 200 custom emoji stickers can be received simultaneously
+     * Get Identifiers of custom emoji stickers. At most 200 custom emoji stickers can be received simultaneously.
      */
     public function getCustomEmojiIds(): array|null
     {
@@ -27,7 +27,7 @@ class GetCustomEmojiStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of custom emoji stickers. At most 200 custom emoji stickers can be received simultaneously
+     * Set Identifiers of custom emoji stickers. At most 200 custom emoji stickers can be received simultaneously.
      */
     public function setCustomEmojiIds(array|null $customEmojiIds): self
     {

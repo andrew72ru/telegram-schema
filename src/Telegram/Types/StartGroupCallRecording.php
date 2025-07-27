@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Starts recording of an active group call; for video chats only. Requires groupCall.can_be_managed right
+ * Starts recording of an active group call; for video chats only. Requires groupCall.can_be_managed right.
  */
 class StartGroupCallRecording extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call identifier
+     * Get Group call identifier.
      */
     public function getGroupCallId(): int
     {
@@ -36,7 +36,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call identifier
+     * Set Group call identifier.
      */
     public function setGroupCallId(int $groupCallId): self
     {
@@ -46,7 +46,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Group call recording title; 0-64 characters
+     * Get Group call recording title; 0-64 characters.
      */
     public function getTitle(): string
     {
@@ -54,7 +54,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Group call recording title; 0-64 characters
+     * Set Group call recording title; 0-64 characters.
      */
     public function setTitle(string $title): self
     {
@@ -64,7 +64,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to record a video file instead of an audio file
+     * Get Pass true to record a video file instead of an audio file.
      */
     public function getRecordVideo(): bool
     {
@@ -72,7 +72,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to record a video file instead of an audio file
+     * Set Pass true to record a video file instead of an audio file.
      */
     public function setRecordVideo(bool $recordVideo): self
     {
@@ -82,7 +82,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to use portrait orientation for video instead of landscape one
+     * Get Pass true to use portrait orientation for video instead of landscape one.
      */
     public function getUsePortraitOrientation(): bool
     {
@@ -90,7 +90,7 @@ class StartGroupCallRecording extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to use portrait orientation for video instead of landscape one
+     * Set Pass true to use portrait orientation for video instead of landscape one.
      */
     public function setUsePortraitOrientation(bool $usePortraitOrientation): self
     {

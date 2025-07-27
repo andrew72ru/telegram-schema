@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes opening hours of a business @time_zone_id Unique time zone identifier @opening_hours Intervals of the time when the business is open
+ * Describes opening hours of a business @time_zone_id Unique time zone identifier @opening_hours Intervals of the time when the business is open.
  */
 class BusinessOpeningHours implements \JsonSerializable
 {

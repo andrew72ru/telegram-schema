@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns backgrounds installed by the user @for_dark_theme Pass true to order returned backgrounds for a dark theme
+ * Returns backgrounds installed by the user @for_dark_theme Pass true to order returned backgrounds for a dark theme.
  */
 class GetInstalledBackgrounds extends Backgrounds implements \JsonSerializable
 {

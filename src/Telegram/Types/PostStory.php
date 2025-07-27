@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Posts a new story on behalf of a chat; requires can_post_stories right for supergroup and channel chats. Returns a temporary story
+ * Posts a new story on behalf of a chat; requires can_post_stories right for supergroup and channel chats. Returns a temporary story.
  */
 class PostStory extends Story implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that will post the story. Pass Saved Messages chat identifier when posting a story on behalf of the current user
+     * Get Identifier of the chat that will post the story. Pass Saved Messages chat identifier when posting a story on behalf of the current user.
      */
     public function getChatId(): int
     {
@@ -51,7 +51,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that will post the story. Pass Saved Messages chat identifier when posting a story on behalf of the current user
+     * Set Identifier of the chat that will post the story. Pass Saved Messages chat identifier when posting a story on behalf of the current user.
      */
     public function setChatId(int $chatId): self
     {
@@ -61,7 +61,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Content of the story
+     * Get Content of the story.
      */
     public function getContent(): InputStoryContent|null
     {
@@ -69,7 +69,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Content of the story
+     * Set Content of the story.
      */
     public function setContent(InputStoryContent|null $content): self
     {
@@ -79,7 +79,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Clickable rectangle areas to be shown on the story media; pass null if none
+     * Get Clickable rectangle areas to be shown on the story media; pass null if none.
      */
     public function getAreas(): InputStoryAreas|null
     {
@@ -87,7 +87,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Clickable rectangle areas to be shown on the story media; pass null if none
+     * Set Clickable rectangle areas to be shown on the story media; pass null if none.
      */
     public function setAreas(InputStoryAreas|null $areas): self
     {
@@ -97,7 +97,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Story caption; pass null to use an empty caption; 0-getOption("story_caption_length_max") characters; can have entities only if getOption("can_use_text_entities_in_story_caption")
+     * Get Story caption; pass null to use an empty caption; 0-getOption("story_caption_length_max") characters; can have entities only if getOption("can_use_text_entities_in_story_caption").
      */
     public function getCaption(): FormattedText|null
     {
@@ -105,7 +105,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Story caption; pass null to use an empty caption; 0-getOption("story_caption_length_max") characters; can have entities only if getOption("can_use_text_entities_in_story_caption")
+     * Set Story caption; pass null to use an empty caption; 0-getOption("story_caption_length_max") characters; can have entities only if getOption("can_use_text_entities_in_story_caption").
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -115,7 +115,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get The privacy settings for the story; ignored for stories posted on behalf of supergroup and channel chats
+     * Get The privacy settings for the story; ignored for stories posted on behalf of supergroup and channel chats.
      */
     public function getPrivacySettings(): StoryPrivacySettings|null
     {
@@ -123,7 +123,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set The privacy settings for the story; ignored for stories posted on behalf of supergroup and channel chats
+     * Set The privacy settings for the story; ignored for stories posted on behalf of supergroup and channel chats.
      */
     public function setPrivacySettings(StoryPrivacySettings|null $privacySettings): self
     {
@@ -133,7 +133,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Period after which the story is moved to archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise
+     * Get Period after which the story is moved to archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise.
      */
     public function getActivePeriod(): int
     {
@@ -141,7 +141,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Period after which the story is moved to archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise
+     * Set Period after which the story is moved to archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise.
      */
     public function setActivePeriod(int $activePeriod): self
     {
@@ -151,7 +151,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Full identifier of the original story, which content was used to create the story; pass null if the story isn't repost of another story
+     * Get Full identifier of the original story, which content was used to create the story; pass null if the story isn't repost of another story.
      */
     public function getFromStoryFullId(): StoryFullId|null
     {
@@ -159,7 +159,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Full identifier of the original story, which content was used to create the story; pass null if the story isn't repost of another story
+     * Set Full identifier of the original story, which content was used to create the story; pass null if the story isn't repost of another story.
      */
     public function setFromStoryFullId(StoryFullId|null $fromStoryFullId): self
     {
@@ -169,7 +169,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to keep the story accessible after expiration
+     * Get Pass true to keep the story accessible after expiration.
      */
     public function getIsPostedToChatPage(): bool
     {
@@ -177,7 +177,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to keep the story accessible after expiration
+     * Set Pass true to keep the story accessible after expiration.
      */
     public function setIsPostedToChatPage(bool $isPostedToChatPage): self
     {
@@ -187,7 +187,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the content of the story must be protected from forwarding and screenshotting
+     * Get Pass true if the content of the story must be protected from forwarding and screenshotting.
      */
     public function getProtectContent(): bool
     {
@@ -195,7 +195,7 @@ class PostStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the content of the story must be protected from forwarding and screenshotting
+     * Set Pass true if the content of the story must be protected from forwarding and screenshotting.
      */
     public function setProtectContent(bool $protectContent): self
     {

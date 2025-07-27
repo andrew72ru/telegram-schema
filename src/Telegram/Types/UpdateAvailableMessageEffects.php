@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of available message effects has changed
+ * The list of available message effects has changed.
  */
 class UpdateAvailableMessageEffects extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateAvailableMessageEffects extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new list of available message effects from emoji reactions
+     * Get The new list of available message effects from emoji reactions.
      */
     public function getReactionEffectIds(): array|null
     {
@@ -30,7 +30,7 @@ class UpdateAvailableMessageEffects extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new list of available message effects from emoji reactions
+     * Set The new list of available message effects from emoji reactions.
      */
     public function setReactionEffectIds(array|null $reactionEffectIds): self
     {
@@ -40,7 +40,7 @@ class UpdateAvailableMessageEffects extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new list of available message effects from Premium stickers
+     * Get The new list of available message effects from Premium stickers.
      */
     public function getStickerEffectIds(): array|null
     {
@@ -48,7 +48,7 @@ class UpdateAvailableMessageEffects extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new list of available message effects from Premium stickers
+     * Set The new list of available message effects from Premium stickers.
      */
     public function setStickerEffectIds(array|null $stickerEffectIds): self
     {

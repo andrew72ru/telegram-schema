@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The chat needs to be chosen by the user among chats of the specified types @types Allowed types for the chat
+ * The chat needs to be chosen by the user among chats of the specified types @vars Allowed types for the chat.
  */
 class TargetChatChosen extends TargetChat implements \JsonSerializable
 {

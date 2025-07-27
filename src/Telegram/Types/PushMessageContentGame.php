@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a game @title Game title, empty for pinned game message @is_pinned True, if the message is a pinned message with the specified content
+ * A message with a game @title Game title, empty for pinned game message @is_pinned True, if the message is a pinned message with the specified content.
  */
 class PushMessageContentGame extends PushMessageContent implements \JsonSerializable
 {

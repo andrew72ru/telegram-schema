@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The has_protected_content setting of a channel was toggled @has_protected_content New value of has_protected_content
+ * The has_protected_content setting of a channel was toggled @has_protected_content New value of has_protected_content.
  */
 class ChatEventHasProtectedContentToggled extends ChatEventAction implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message is being sent now, but has not yet been delivered to the server @sending_id Non-persistent message sending identifier, specified by the application
+ * The message is being sent now, but has not yet been delivered to the server @sending_id Non-persistent message sending identifier, specified by the application.
  */
 class MessageSendingStatePending extends MessageSendingState implements \JsonSerializable
 {

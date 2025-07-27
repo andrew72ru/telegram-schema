@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Some tasks from a checklist were marked as done or not done @task_count Number of changed tasks
+ * Some tasks from a checklist were marked as done or not done @task_count Number of changed tasks.
  */
 class PushMessageContentChecklistTasksDone extends PushMessageContent implements \JsonSerializable
 {

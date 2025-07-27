@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the parameters for TDLib initialization. Works only when the current authorization state is authorizationStateWaitTdlibParameters
+ * Sets the parameters for TDLib initialization. Works only when the current authorization state is authorizationStateWaitTdlibParameters.
  */
 class SetTdlibParameters extends Ok implements \JsonSerializable
 {
@@ -58,7 +58,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to use Telegram test environment instead of the production environment
+     * Get Pass true to use Telegram test environment instead of the production environment.
      */
     public function getUseTestDc(): bool
     {
@@ -66,7 +66,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to use Telegram test environment instead of the production environment
+     * Set Pass true to use Telegram test environment instead of the production environment.
      */
     public function setUseTestDc(bool $useTestDc): self
     {
@@ -76,7 +76,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The path to the directory for the persistent database; if empty, the current working directory will be used
+     * Get The path to the directory for the persistent database; if empty, the current working directory will be used.
      */
     public function getDatabaseDirectory(): string
     {
@@ -84,7 +84,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The path to the directory for the persistent database; if empty, the current working directory will be used
+     * Set The path to the directory for the persistent database; if empty, the current working directory will be used.
      */
     public function setDatabaseDirectory(string $databaseDirectory): self
     {
@@ -94,7 +94,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The path to the directory for storing files; if empty, database_directory will be used
+     * Get The path to the directory for storing files; if empty, database_directory will be used.
      */
     public function getFilesDirectory(): string
     {
@@ -102,7 +102,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The path to the directory for storing files; if empty, database_directory will be used
+     * Set The path to the directory for storing files; if empty, database_directory will be used.
      */
     public function setFilesDirectory(string $filesDirectory): self
     {
@@ -112,7 +112,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Encryption key for the database. If the encryption key is invalid, then an error with code 401 will be returned
+     * Get Encryption key for the database. If the encryption key is invalid, then an error with code 401 will be returned.
      */
     public function getDatabaseEncryptionKey(): string
     {
@@ -120,7 +120,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Encryption key for the database. If the encryption key is invalid, then an error with code 401 will be returned
+     * Set Encryption key for the database. If the encryption key is invalid, then an error with code 401 will be returned.
      */
     public function setDatabaseEncryptionKey(string $databaseEncryptionKey): self
     {
@@ -130,7 +130,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to keep information about downloaded and uploaded files between application restarts
+     * Get Pass true to keep information about downloaded and uploaded files between application restarts.
      */
     public function getUseFileDatabase(): bool
     {
@@ -138,7 +138,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to keep information about downloaded and uploaded files between application restarts
+     * Set Pass true to keep information about downloaded and uploaded files between application restarts.
      */
     public function setUseFileDatabase(bool $useFileDatabase): self
     {
@@ -148,7 +148,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to keep cache of users, basic groups, supergroups, channels and secret chats between restarts. Implies use_file_database
+     * Get Pass true to keep cache of users, basic groups, supergroups, channels and secret chats between restarts. Implies use_file_database.
      */
     public function getUseChatInfoDatabase(): bool
     {
@@ -156,7 +156,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to keep cache of users, basic groups, supergroups, channels and secret chats between restarts. Implies use_file_database
+     * Set Pass true to keep cache of users, basic groups, supergroups, channels and secret chats between restarts. Implies use_file_database.
      */
     public function setUseChatInfoDatabase(bool $useChatInfoDatabase): self
     {
@@ -166,7 +166,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to keep cache of chats and messages between restarts. Implies use_chat_info_database
+     * Get Pass true to keep cache of chats and messages between restarts. Implies use_chat_info_database.
      */
     public function getUseMessageDatabase(): bool
     {
@@ -174,7 +174,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to keep cache of chats and messages between restarts. Implies use_chat_info_database
+     * Set Pass true to keep cache of chats and messages between restarts. Implies use_chat_info_database.
      */
     public function setUseMessageDatabase(bool $useMessageDatabase): self
     {
@@ -184,7 +184,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to enable support for secret chats
+     * Get Pass true to enable support for secret chats.
      */
     public function getUseSecretChats(): bool
     {
@@ -192,7 +192,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to enable support for secret chats
+     * Set Pass true to enable support for secret chats.
      */
     public function setUseSecretChats(bool $useSecretChats): self
     {
@@ -202,7 +202,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Application identifier for Telegram API access, which can be obtained at https://my.telegram.org
+     * Get Application identifier for Telegram API access, which can be obtained at https://my.telegram.org.
      */
     public function getApiId(): int
     {
@@ -210,7 +210,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Application identifier for Telegram API access, which can be obtained at https://my.telegram.org
+     * Set Application identifier for Telegram API access, which can be obtained at https://my.telegram.org.
      */
     public function setApiId(int $apiId): self
     {
@@ -220,7 +220,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Application identifier hash for Telegram API access, which can be obtained at https://my.telegram.org
+     * Get Application identifier hash for Telegram API access, which can be obtained at https://my.telegram.org.
      */
     public function getApiHash(): string
     {
@@ -228,7 +228,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Application identifier hash for Telegram API access, which can be obtained at https://my.telegram.org
+     * Set Application identifier hash for Telegram API access, which can be obtained at https://my.telegram.org.
      */
     public function setApiHash(string $apiHash): self
     {
@@ -238,7 +238,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get IETF language tag of the user's operating system language; must be non-empty
+     * Get IETF language tag of the user's operating system language; must be non-empty.
      */
     public function getSystemLanguageCode(): string
     {
@@ -246,7 +246,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set IETF language tag of the user's operating system language; must be non-empty
+     * Set IETF language tag of the user's operating system language; must be non-empty.
      */
     public function setSystemLanguageCode(string $systemLanguageCode): self
     {
@@ -256,7 +256,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Model of the device the application is being run on; must be non-empty
+     * Get Model of the device the application is being run on; must be non-empty.
      */
     public function getDeviceModel(): string
     {
@@ -264,7 +264,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Model of the device the application is being run on; must be non-empty
+     * Set Model of the device the application is being run on; must be non-empty.
      */
     public function setDeviceModel(string $deviceModel): self
     {
@@ -274,7 +274,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Version of the operating system the application is being run on. If empty, the version is automatically detected by TDLib
+     * Get Version of the operating system the application is being run on. If empty, the version is automatically detected by TDLib.
      */
     public function getSystemVersion(): string
     {
@@ -282,7 +282,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Version of the operating system the application is being run on. If empty, the version is automatically detected by TDLib
+     * Set Version of the operating system the application is being run on. If empty, the version is automatically detected by TDLib.
      */
     public function setSystemVersion(string $systemVersion): self
     {
@@ -292,7 +292,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Application version; must be non-empty
+     * Get Application version; must be non-empty.
      */
     public function getApplicationVersion(): string
     {
@@ -300,7 +300,7 @@ class SetTdlibParameters extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Application version; must be non-empty
+     * Set Application version; must be non-empty.
      */
     public function setApplicationVersion(string $applicationVersion): self
     {

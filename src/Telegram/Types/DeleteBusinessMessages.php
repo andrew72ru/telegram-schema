@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes messages on behalf of a business account; for bots only
+ * Deletes messages on behalf of a business account; for bots only.
  */
 class DeleteBusinessMessages extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class DeleteBusinessMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection through which the messages were received
+     * Get Unique identifier of business connection through which the messages were received.
      */
     public function getBusinessConnectionId(): string
     {
@@ -30,7 +30,7 @@ class DeleteBusinessMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection through which the messages were received
+     * Set Unique identifier of business connection through which the messages were received.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -40,7 +40,7 @@ class DeleteBusinessMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the messages
+     * Get Identifier of the messages.
      */
     public function getMessageIds(): array|null
     {
@@ -48,7 +48,7 @@ class DeleteBusinessMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the messages
+     * Set Identifier of the messages.
      */
     public function setMessageIds(array|null $messageIds): self
     {

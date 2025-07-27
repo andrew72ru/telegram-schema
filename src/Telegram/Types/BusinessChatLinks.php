@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of business chat links created by the user @links List of links
+ * Contains a list of business chat links created by the user @sees List of links.
  */
 class BusinessChatLinks implements \JsonSerializable
 {

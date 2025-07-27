@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns already available Telegram Passport elements suitable for completing a Telegram Passport authorization form. Result can be received only once for each authorization form
+ * Returns already available Telegram Passport elements suitable for completing a Telegram Passport authorization form. Result can be received only once for each authorization form.
  */
 class GetPassportAuthorizationFormAvailableElements extends PassportElementsWithErrors implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetPassportAuthorizationFormAvailableElements extends PassportElementsWith
     }
 
     /**
-     * Get Authorization form identifier
+     * Get Authorization form identifier.
      */
     public function getAuthorizationFormId(): int
     {
@@ -30,7 +30,7 @@ class GetPassportAuthorizationFormAvailableElements extends PassportElementsWith
     }
 
     /**
-     * Set Authorization form identifier
+     * Set Authorization form identifier.
      */
     public function setAuthorizationFormId(int $authorizationFormId): self
     {
@@ -40,7 +40,7 @@ class GetPassportAuthorizationFormAvailableElements extends PassportElementsWith
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -48,7 +48,7 @@ class GetPassportAuthorizationFormAvailableElements extends PassportElementsWith
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {

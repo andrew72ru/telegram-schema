@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns t.me URLs recently visited by a newly registered user @referrer Google Play referrer to identify the user
+ * Returns t.me URLs recently visited by a newly registered user @referrer Google Play referrer to identify the user.
  */
 class GetRecentlyVisitedTMeUrls extends TMeUrls implements \JsonSerializable
 {

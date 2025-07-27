@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a message created with importMessages
+ * Contains information about a message created with importMessages.
  */
 class MessageImportInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class MessageImportInfo implements \JsonSerializable
     }
 
     /**
-     * Get Name of the original sender
+     * Get Name of the original sender.
      */
     public function getSenderName(): string
     {
@@ -30,7 +30,7 @@ class MessageImportInfo implements \JsonSerializable
     }
 
     /**
-     * Set Name of the original sender
+     * Set Name of the original sender.
      */
     public function setSenderName(string $senderName): self
     {
@@ -40,7 +40,7 @@ class MessageImportInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message was originally sent
+     * Get Point in time (Unix timestamp) when the message was originally sent.
      */
     public function getDate(): int
     {
@@ -48,7 +48,7 @@ class MessageImportInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message was originally sent
+     * Set Point in time (Unix timestamp) when the message was originally sent.
      */
     public function setDate(int $date): self
     {

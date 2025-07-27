@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a refund for failed withdrawal of earnings
+ * Describes a refund for failed withdrawal of earnings.
  */
 class ChatRevenueTransactionTypeRefund extends ChatRevenueTransactionType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatRevenueTransactionTypeRefund extends ChatRevenueTransactionType implem
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the transaction was refunded
+     * Get Point in time (Unix timestamp) when the transaction was refunded.
      */
     public function getRefundDate(): int
     {
@@ -30,7 +30,7 @@ class ChatRevenueTransactionTypeRefund extends ChatRevenueTransactionType implem
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the transaction was refunded
+     * Set Point in time (Unix timestamp) when the transaction was refunded.
      */
     public function setRefundDate(int $refundDate): self
     {
@@ -40,7 +40,7 @@ class ChatRevenueTransactionTypeRefund extends ChatRevenueTransactionType implem
     }
 
     /**
-     * Get Name of the payment provider
+     * Get Name of the payment provider.
      */
     public function getProvider(): string
     {
@@ -48,7 +48,7 @@ class ChatRevenueTransactionTypeRefund extends ChatRevenueTransactionType implem
     }
 
     /**
-     * Set Name of the payment provider
+     * Set Name of the payment provider.
      */
     public function setProvider(string $provider): self
     {

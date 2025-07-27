@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a list of service actions taken by chat members and administrators in the last 48 hours. Available only for supergroups and channels. Requires administrator rights. Returns results in reverse chronological order (i.e., in order of decreasing event_id)
+ * Returns a list of service actions taken by chat members and administrators in the last 48 hours. Available only for supergroups and channels. Requires administrator rights. Returns results in reverse chronological order (i.e., in order of decreasing event_id).
  */
 class GetChatEventLog extends ChatEvents implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Get Search query by which to filter events
+     * Get Search query by which to filter events.
      */
     public function getQuery(): string
     {
@@ -60,7 +60,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Set Search query by which to filter events
+     * Set Search query by which to filter events.
      */
     public function setQuery(string $query): self
     {
@@ -70,7 +70,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of an event from which to return results. Use 0 to get results from the latest events
+     * Get Identifier of an event from which to return results. Use 0 to get results from the latest events.
      */
     public function getFromEventId(): int
     {
@@ -78,7 +78,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of an event from which to return results. Use 0 to get results from the latest events
+     * Set Identifier of an event from which to return results. Use 0 to get results from the latest events.
      */
     public function setFromEventId(int $fromEventId): self
     {
@@ -88,7 +88,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of events to return; up to 100
+     * Get The maximum number of events to return; up to 100.
      */
     public function getLimit(): int
     {
@@ -96,7 +96,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of events to return; up to 100
+     * Set The maximum number of events to return; up to 100.
      */
     public function setLimit(int $limit): self
     {
@@ -106,7 +106,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Get The types of events to return; pass null to get chat events of all types
+     * Get The types of events to return; pass null to get chat events of all types.
      */
     public function getFilters(): ChatEventLogFilters|null
     {
@@ -114,7 +114,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Set The types of events to return; pass null to get chat events of all types
+     * Set The types of events to return; pass null to get chat events of all types.
      */
     public function setFilters(ChatEventLogFilters|null $filters): self
     {
@@ -124,7 +124,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Get User identifiers by which to filter events. By default, events relating to all users will be returned
+     * Get User identifiers by which to filter events. By default, events relating to all users will be returned.
      */
     public function getUserIds(): array|null
     {
@@ -132,7 +132,7 @@ class GetChatEventLog extends ChatEvents implements \JsonSerializable
     }
 
     /**
-     * Set User identifiers by which to filter events. By default, events relating to all users will be returned
+     * Set User identifiers by which to filter events. By default, events relating to all users will be returned.
      */
     public function setUserIds(array|null $userIds): self
     {

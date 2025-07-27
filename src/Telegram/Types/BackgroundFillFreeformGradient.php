@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a freeform gradient fill of a background @colors A list of 3 or 4 colors of the freeform gradient in the RGB format
+ * Describes a freeform gradient fill of a background @colors A list of 3 or 4 colors of the freeform gradient in the RGB format.
  */
 class BackgroundFillFreeformGradient extends BackgroundFill implements \JsonSerializable
 {

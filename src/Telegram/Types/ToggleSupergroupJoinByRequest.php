@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Toggles whether all users directly joining the supergroup need to be approved by supergroup administrators; requires can_restrict_members administrator right
+ * Toggles whether all users directly joining the supergroup need to be approved by supergroup administrators; requires can_restrict_members administrator right.
  */
 class ToggleSupergroupJoinByRequest extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ToggleSupergroupJoinByRequest extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the supergroup that isn't a broadcast group
+     * Get Identifier of the supergroup that isn't a broadcast group.
      */
     public function getSupergroupId(): int
     {
@@ -30,7 +30,7 @@ class ToggleSupergroupJoinByRequest extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the supergroup that isn't a broadcast group
+     * Set Identifier of the supergroup that isn't a broadcast group.
      */
     public function setSupergroupId(int $supergroupId): self
     {
@@ -40,7 +40,7 @@ class ToggleSupergroupJoinByRequest extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of join_by_request
+     * Get New value of join_by_request.
      */
     public function getJoinByRequest(): bool
     {
@@ -48,7 +48,7 @@ class ToggleSupergroupJoinByRequest extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of join_by_request
+     * Set New value of join_by_request.
      */
     public function setJoinByRequest(bool $joinByRequest): self
     {

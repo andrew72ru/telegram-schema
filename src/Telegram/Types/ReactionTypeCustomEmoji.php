@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A reaction with a custom emoji @custom_emoji_id Unique identifier of the custom emoji
+ * A reaction with a custom emoji @custom_emoji_id Unique identifier of the custom emoji.
  */
 class ReactionTypeCustomEmoji extends ReactionType implements \JsonSerializable
 {

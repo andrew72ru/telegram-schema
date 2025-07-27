@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a code to the specified phone number. Aborts previous phone number verification if there was one. On success, returns information about the sent code
+ * Sends a code to the specified phone number. Aborts previous phone number verification if there was one. On success, returns information about the sent code.
  */
 class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSeriali
     }
 
     /**
-     * Get The phone number, in international format
+     * Get The phone number, in international format.
      */
     public function getPhoneNumber(): string
     {
@@ -33,7 +33,7 @@ class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSeriali
     }
 
     /**
-     * Set The phone number, in international format
+     * Set The phone number, in international format.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -43,7 +43,7 @@ class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSeriali
     }
 
     /**
-     * Get Settings for the authentication of the user's phone number; pass null to use default settings
+     * Get Settings for the authentication of the user's phone number; pass null to use default settings.
      */
     public function getSettings(): PhoneNumberAuthenticationSettings|null
     {
@@ -51,7 +51,7 @@ class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSeriali
     }
 
     /**
-     * Set Settings for the authentication of the user's phone number; pass null to use default settings
+     * Set Settings for the authentication of the user's phone number; pass null to use default settings.
      */
     public function setSettings(PhoneNumberAuthenticationSettings|null $settings): self
     {
@@ -61,7 +61,7 @@ class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSeriali
     }
 
     /**
-     * Get Type of the request for which the code is sent
+     * Get Type of the request for which the code is sent.
      */
     public function getType(): PhoneNumberCodeType|null
     {
@@ -69,7 +69,7 @@ class SendPhoneNumberCode extends AuthenticationCodeInfo implements \JsonSeriali
     }
 
     /**
-     * Set Type of the request for which the code is sent
+     * Set Type of the request for which the code is sent.
      */
     public function setType(PhoneNumberCodeType|null $type): self
     {

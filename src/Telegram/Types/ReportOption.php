@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option to report an entity to Telegram @id Unique identifier of the option @text Text of the option
+ * Describes an option to report an entity to Telegram @id Unique identifier of the option @text Text of the option.
  */
 class ReportOption implements \JsonSerializable
 {

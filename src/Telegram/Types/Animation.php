@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an animation file. The animation must be encoded in GIF or MPEG4 format
+ * Describes an animation file. The animation must be encoded in GIF or MPEG4 format.
  */
 class Animation implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get Duration of the animation, in seconds; as defined by the sender
+     * Get Duration of the animation, in seconds; as defined by the sender.
      */
     public function getDuration(): int
     {
@@ -51,7 +51,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set Duration of the animation, in seconds; as defined by the sender
+     * Set Duration of the animation, in seconds; as defined by the sender.
      */
     public function setDuration(int $duration): self
     {
@@ -61,7 +61,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get Width of the animation
+     * Get Width of the animation.
      */
     public function getWidth(): int
     {
@@ -69,7 +69,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set Width of the animation
+     * Set Width of the animation.
      */
     public function setWidth(int $width): self
     {
@@ -79,7 +79,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get Height of the animation
+     * Get Height of the animation.
      */
     public function getHeight(): int
     {
@@ -87,7 +87,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set Height of the animation
+     * Set Height of the animation.
      */
     public function setHeight(int $height): self
     {
@@ -97,7 +97,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get Original name of the file; as defined by the sender
+     * Get Original name of the file; as defined by the sender.
      */
     public function getFileName(): string
     {
@@ -105,7 +105,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set Original name of the file; as defined by the sender
+     * Set Original name of the file; as defined by the sender.
      */
     public function setFileName(string $fileName): self
     {
@@ -115,7 +115,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get MIME type of the file, usually "image/gif" or "video/mp4"
+     * Get MIME type of the file, usually "image/gif" or "video/mp4".
      */
     public function getMimeType(): string
     {
@@ -123,7 +123,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set MIME type of the file, usually "image/gif" or "video/mp4"
+     * Set MIME type of the file, usually "image/gif" or "video/mp4".
      */
     public function setMimeType(string $mimeType): self
     {
@@ -133,7 +133,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get True, if stickers were added to the animation. The list of corresponding sticker set can be received using getAttachedStickerSets
+     * Get True, if stickers were added to the animation. The list of corresponding sticker set can be received using getAttachedStickerSets.
      */
     public function getHasStickers(): bool
     {
@@ -141,7 +141,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set True, if stickers were added to the animation. The list of corresponding sticker set can be received using getAttachedStickerSets
+     * Set True, if stickers were added to the animation. The list of corresponding sticker set can be received using getAttachedStickerSets.
      */
     public function setHasStickers(bool $hasStickers): self
     {
@@ -151,7 +151,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get Animation minithumbnail; may be null
+     * Get Animation minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -159,7 +159,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set Animation minithumbnail; may be null
+     * Set Animation minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -169,7 +169,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get Animation thumbnail in JPEG or MPEG4 format; may be null
+     * Get Animation thumbnail in JPEG or MPEG4 format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -177,7 +177,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set Animation thumbnail in JPEG or MPEG4 format; may be null
+     * Set Animation thumbnail in JPEG or MPEG4 format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {
@@ -187,7 +187,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Get File containing the animation
+     * Get File containing the animation.
      */
     public function getAnimation(): File|null
     {
@@ -195,7 +195,7 @@ class Animation implements \JsonSerializable
     }
 
     /**
-     * Set File containing the animation
+     * Set File containing the animation.
      */
     public function setAnimation(File|null $animation): self
     {

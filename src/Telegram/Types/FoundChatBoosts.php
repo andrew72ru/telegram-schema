@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of boosts applied to a chat
+ * Contains a list of boosts applied to a chat.
  */
 class FoundChatBoosts implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get Total number of boosts applied to the chat
+     * Get Total number of boosts applied to the chat.
      */
     public function getTotalCount(): int
     {
@@ -33,7 +33,7 @@ class FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set Total number of boosts applied to the chat
+     * Set Total number of boosts applied to the chat.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -43,7 +43,7 @@ class FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get List of boosts
+     * Get List of boosts.
      */
     public function getBoosts(): array|null
     {
@@ -51,7 +51,7 @@ class FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set List of boosts
+     * Set List of boosts.
      */
     public function setBoosts(array|null $boosts): self
     {
@@ -61,7 +61,7 @@ class FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -69,7 +69,7 @@ class FoundChatBoosts implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

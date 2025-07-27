@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a public repost to a story @story Information about the story
+ * Contains a public repost to a story @story Information about the story.
  */
 class PublicForwardStory extends PublicForward implements \JsonSerializable
 {

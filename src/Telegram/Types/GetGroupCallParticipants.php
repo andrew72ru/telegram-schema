@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about participants of a non-joined group call that is not bound to a chat
+ * Returns information about participants of a non-joined group call that is not bound to a chat.
  */
 class GetGroupCallParticipants extends GroupCallParticipants implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetGroupCallParticipants extends GroupCallParticipants implements \JsonSer
     }
 
     /**
-     * Get The group call which participants will be returned
+     * Get The group call which participants will be returned.
      */
     public function getInputGroupCall(): InputGroupCall|null
     {
@@ -30,7 +30,7 @@ class GetGroupCallParticipants extends GroupCallParticipants implements \JsonSer
     }
 
     /**
-     * Set The group call which participants will be returned
+     * Set The group call which participants will be returned.
      */
     public function setInputGroupCall(InputGroupCall|null $inputGroupCall): self
     {
@@ -40,7 +40,7 @@ class GetGroupCallParticipants extends GroupCallParticipants implements \JsonSer
     }
 
     /**
-     * Get The maximum number of participants to return; must be positive
+     * Get The maximum number of participants to return; must be positive.
      */
     public function getLimit(): int
     {
@@ -48,7 +48,7 @@ class GetGroupCallParticipants extends GroupCallParticipants implements \JsonSer
     }
 
     /**
-     * Set The maximum number of participants to return; must be positive
+     * Set The maximum number of participants to return; must be positive.
      */
     public function setLimit(int $limit): self
     {

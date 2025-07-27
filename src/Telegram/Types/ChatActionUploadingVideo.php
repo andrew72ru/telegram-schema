@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user is uploading a video @progress Upload progress, as a percentage
+ * The user is uploading a video @progress Upload progress, as a percentage.
  */
 class ChatActionUploadingVideo extends ChatAction implements \JsonSerializable
 {

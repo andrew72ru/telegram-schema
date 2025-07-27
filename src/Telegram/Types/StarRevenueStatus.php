@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about Telegram Stars earned by a bot or a chat
+ * Contains information about Telegram Stars earned by a bot or a chat.
  */
 class StarRevenueStatus implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Get Total amount of Telegram Stars earned
+     * Get Total amount of Telegram Stars earned.
      */
     public function getTotalAmount(): StarAmount|null
     {
@@ -39,7 +39,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Set Total amount of Telegram Stars earned
+     * Set Total amount of Telegram Stars earned.
      */
     public function setTotalAmount(StarAmount|null $totalAmount): self
     {
@@ -49,7 +49,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars that aren't withdrawn yet
+     * Get The amount of Telegram Stars that aren't withdrawn yet.
      */
     public function getCurrentAmount(): StarAmount|null
     {
@@ -57,7 +57,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars that aren't withdrawn yet
+     * Set The amount of Telegram Stars that aren't withdrawn yet.
      */
     public function setCurrentAmount(StarAmount|null $currentAmount): self
     {
@@ -67,7 +67,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars that are available for withdrawal
+     * Get The amount of Telegram Stars that are available for withdrawal.
      */
     public function getAvailableAmount(): StarAmount|null
     {
@@ -75,7 +75,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars that are available for withdrawal
+     * Set The amount of Telegram Stars that are available for withdrawal.
      */
     public function setAvailableAmount(StarAmount|null $availableAmount): self
     {
@@ -85,7 +85,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Get True, if Telegram Stars can be withdrawn now or later
+     * Get True, if Telegram Stars can be withdrawn now or later.
      */
     public function getWithdrawalEnabled(): bool
     {
@@ -93,7 +93,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Set True, if Telegram Stars can be withdrawn now or later
+     * Set True, if Telegram Stars can be withdrawn now or later.
      */
     public function setWithdrawalEnabled(bool $withdrawalEnabled): self
     {
@@ -103,7 +103,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Get Time left before the next withdrawal can be started, in seconds; 0 if withdrawal can be started now
+     * Get Time left before the next withdrawal can be started, in seconds; 0 if withdrawal can be started now.
      */
     public function getNextWithdrawalIn(): int
     {
@@ -111,7 +111,7 @@ class StarRevenueStatus implements \JsonSerializable
     }
 
     /**
-     * Set Time left before the next withdrawal can be started, in seconds; 0 if withdrawal can be started now
+     * Set Time left before the next withdrawal can be started, in seconds; 0 if withdrawal can be started now.
      */
     public function setNextWithdrawalIn(int $nextWithdrawalIn): self
     {

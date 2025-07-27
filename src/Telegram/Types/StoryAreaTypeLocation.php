@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a location @location The location @address Address of the location; may be null if unknown
+ * An area pointing to a location @location The location @address Address of the location; may be null if unknown.
  */
 class StoryAreaTypeLocation extends StoryAreaType implements \JsonSerializable
 {

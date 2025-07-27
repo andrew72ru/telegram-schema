@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a list of interactions with a story
+ * Represents a list of interactions with a story.
  */
 class StoryInteractions implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of interactions found
+     * Get Approximate total number of interactions found.
      */
     public function getTotalCount(): int
     {
@@ -39,7 +39,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of interactions found
+     * Set Approximate total number of interactions found.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -49,7 +49,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of found forwards and reposts; always 0 for chat stories
+     * Get Approximate total number of found forwards and reposts; always 0 for chat stories.
      */
     public function getTotalForwardCount(): int
     {
@@ -57,7 +57,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of found forwards and reposts; always 0 for chat stories
+     * Set Approximate total number of found forwards and reposts; always 0 for chat stories.
      */
     public function setTotalForwardCount(int $totalForwardCount): self
     {
@@ -67,7 +67,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Get Approximate total number of found reactions; always 0 for chat stories
+     * Get Approximate total number of found reactions; always 0 for chat stories.
      */
     public function getTotalReactionCount(): int
     {
@@ -75,7 +75,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Set Approximate total number of found reactions; always 0 for chat stories
+     * Set Approximate total number of found reactions; always 0 for chat stories.
      */
     public function setTotalReactionCount(int $totalReactionCount): self
     {
@@ -85,7 +85,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Get List of story interactions
+     * Get List of story interactions.
      */
     public function getInteractions(): array|null
     {
@@ -93,7 +93,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Set List of story interactions
+     * Set List of story interactions.
      */
     public function setInteractions(array|null $interactions): self
     {
@@ -103,7 +103,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Get The offset for the next request. If empty, then there are no more results
+     * Get The offset for the next request. If empty, then there are no more results.
      */
     public function getNextOffset(): string
     {
@@ -111,7 +111,7 @@ class StoryInteractions implements \JsonSerializable
     }
 
     /**
-     * Set The offset for the next request. If empty, then there are no more results
+     * Set The offset for the next request. If empty, then there are no more results.
      */
     public function setNextOffset(string $nextOffset): self
     {

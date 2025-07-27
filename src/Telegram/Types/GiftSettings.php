@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains settings for gift receiving for a user
+ * Contains settings for gift receiving for a user.
  */
 class GiftSettings implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GiftSettings implements \JsonSerializable
     }
 
     /**
-     * Get True, if a button for sending a gift to the user or by the user must always be shown in the input field
+     * Get True, if a button for sending a gift to the user or by the user must always be shown in the input field.
      */
     public function getShowGiftButton(): bool
     {
@@ -30,7 +30,7 @@ class GiftSettings implements \JsonSerializable
     }
 
     /**
-     * Set True, if a button for sending a gift to the user or by the user must always be shown in the input field
+     * Set True, if a button for sending a gift to the user or by the user must always be shown in the input field.
      */
     public function setShowGiftButton(bool $showGiftButton): self
     {
@@ -40,7 +40,7 @@ class GiftSettings implements \JsonSerializable
     }
 
     /**
-     * Get Types of gifts accepted by the user; for Telegram Premium users only
+     * Get Types of gifts accepted by the user; for Telegram Premium users only.
      */
     public function getAcceptedGiftTypes(): AcceptedGiftTypes|null
     {
@@ -48,7 +48,7 @@ class GiftSettings implements \JsonSerializable
     }
 
     /**
-     * Set Types of gifts accepted by the user; for Telegram Premium users only
+     * Set Types of gifts accepted by the user; for Telegram Premium users only.
      */
     public function setAcceptedGiftTypes(AcceptedGiftTypes|null $acceptedGiftTypes): self
     {

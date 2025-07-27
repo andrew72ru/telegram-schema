@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The media is a video
+ * The media is a video.
  */
 class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Get Cover of the video; pass null to skip cover uploading
+     * Get Cover of the video; pass null to skip cover uploading.
      */
     public function getCover(): InputFile|null
     {
@@ -36,7 +36,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Set Cover of the video; pass null to skip cover uploading
+     * Set Cover of the video; pass null to skip cover uploading.
      */
     public function setCover(InputFile|null $cover): self
     {
@@ -46,7 +46,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Get Timestamp from which the video playing must start, in seconds
+     * Get Timestamp from which the video playing must start, in seconds.
      */
     public function getStartTimestamp(): int
     {
@@ -54,7 +54,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Set Timestamp from which the video playing must start, in seconds
+     * Set Timestamp from which the video playing must start, in seconds.
      */
     public function setStartTimestamp(int $startTimestamp): self
     {
@@ -64,7 +64,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Get Duration of the video, in seconds
+     * Get Duration of the video, in seconds.
      */
     public function getDuration(): int
     {
@@ -72,7 +72,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Set Duration of the video, in seconds
+     * Set Duration of the video, in seconds.
      */
     public function setDuration(int $duration): self
     {
@@ -82,7 +82,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Get True, if the video is expected to be streamed
+     * Get True, if the video is expected to be streamed.
      */
     public function getSupportsStreaming(): bool
     {
@@ -90,7 +90,7 @@ class InputPaidMediaTypeVideo extends InputPaidMediaType implements \JsonSeriali
     }
 
     /**
-     * Set True, if the video is expected to be streamed
+     * Set True, if the video is expected to be streamed.
      */
     public function setSupportsStreaming(bool $supportsStreaming): self
     {

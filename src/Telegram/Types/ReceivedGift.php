@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a gift received by a user or a chat
+ * Represents a gift received by a user or a chat.
  */
 class ReceivedGift implements \JsonSerializable
 {
@@ -67,7 +67,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the received gift for the current user; only for the receiver of the gift
+     * Get Unique identifier of the received gift for the current user; only for the receiver of the gift.
      */
     public function getReceivedGiftId(): string
     {
@@ -75,7 +75,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the received gift for the current user; only for the receiver of the gift
+     * Set Unique identifier of the received gift for the current user; only for the receiver of the gift.
      */
     public function setReceivedGiftId(string $receivedGiftId): self
     {
@@ -85,7 +85,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a user or a chat that sent the gift; may be null if unknown
+     * Get Identifier of a user or a chat that sent the gift; may be null if unknown.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -93,7 +93,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a user or a chat that sent the gift; may be null if unknown
+     * Set Identifier of a user or a chat that sent the gift; may be null if unknown.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -103,7 +103,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Message added to the gift
+     * Get Message added to the gift.
      */
     public function getText(): FormattedText|null
     {
@@ -111,7 +111,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Message added to the gift
+     * Set Message added to the gift.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -121,7 +121,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them
+     * Get True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.
      */
     public function getIsPrivate(): bool
     {
@@ -129,7 +129,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them
+     * Set True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.
      */
     public function setIsPrivate(bool $isPrivate): self
     {
@@ -139,7 +139,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift is displayed on the chat's profile page; only for the receiver of the gift
+     * Get True, if the gift is displayed on the chat's profile page; only for the receiver of the gift.
      */
     public function getIsSaved(): bool
     {
@@ -147,7 +147,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift is displayed on the chat's profile page; only for the receiver of the gift
+     * Set True, if the gift is displayed on the chat's profile page; only for the receiver of the gift.
      */
     public function setIsSaved(bool $isSaved): self
     {
@@ -157,7 +157,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift is pinned to the top of the chat's profile page
+     * Get True, if the gift is pinned to the top of the chat's profile page.
      */
     public function getIsPinned(): bool
     {
@@ -165,7 +165,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift is pinned to the top of the chat's profile page
+     * Set True, if the gift is pinned to the top of the chat's profile page.
      */
     public function setIsPinned(bool $isPinned): self
     {
@@ -175,7 +175,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift is a regular gift that can be upgraded to a unique gift; only for the receiver of the gift
+     * Get True, if the gift is a regular gift that can be upgraded to a unique gift; only for the receiver of the gift.
      */
     public function getCanBeUpgraded(): bool
     {
@@ -183,7 +183,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift is a regular gift that can be upgraded to a unique gift; only for the receiver of the gift
+     * Set True, if the gift is a regular gift that can be upgraded to a unique gift; only for the receiver of the gift.
      */
     public function setCanBeUpgraded(bool $canBeUpgraded): self
     {
@@ -193,7 +193,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift is an upgraded gift that can be transferred to another owner; only for the receiver of the gift
+     * Get True, if the gift is an upgraded gift that can be transferred to another owner; only for the receiver of the gift.
      */
     public function getCanBeTransferred(): bool
     {
@@ -201,7 +201,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift is an upgraded gift that can be transferred to another owner; only for the receiver of the gift
+     * Set True, if the gift is an upgraded gift that can be transferred to another owner; only for the receiver of the gift.
      */
     public function setCanBeTransferred(bool $canBeTransferred): self
     {
@@ -211,7 +211,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift was refunded and isn't available anymore
+     * Get True, if the gift was refunded and isn't available anymore.
      */
     public function getWasRefunded(): bool
     {
@@ -219,7 +219,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift was refunded and isn't available anymore
+     * Set True, if the gift was refunded and isn't available anymore.
      */
     public function setWasRefunded(bool $wasRefunded): self
     {
@@ -229,7 +229,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the gift was sent
+     * Get Point in time (Unix timestamp) when the gift was sent.
      */
     public function getDate(): int
     {
@@ -237,7 +237,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the gift was sent
+     * Set Point in time (Unix timestamp) when the gift was sent.
      */
     public function setDate(int $date): self
     {
@@ -247,7 +247,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get The gift
+     * Get The gift.
      */
     public function getGift(): SentGift|null
     {
@@ -255,7 +255,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set The gift
+     * Set The gift.
      */
     public function setGift(SentGift|null $gift): self
     {
@@ -265,7 +265,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the current user
+     * Get Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the current user.
      */
     public function getSellStarCount(): int
     {
@@ -273,7 +273,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the current user
+     * Set Number of Telegram Stars that can be claimed by the receiver instead of the regular gift; 0 if the gift can't be sold by the current user.
      */
     public function setSellStarCount(int $sellStarCount): self
     {
@@ -283,7 +283,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift
+     * Get Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
      */
     public function getPrepaidUpgradeStarCount(): int
     {
@@ -291,7 +291,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift
+     * Set Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.
      */
     public function setPrepaidUpgradeStarCount(int $prepaidUpgradeStarCount): self
     {
@@ -301,7 +301,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift
+     * Get Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift.
      */
     public function getTransferStarCount(): int
     {
@@ -309,7 +309,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift
+     * Set Number of Telegram Stars that must be paid to transfer the upgraded gift; only for the receiver of the gift.
      */
     public function setTransferStarCount(int $transferStarCount): self
     {
@@ -319,7 +319,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the gift can be transferred to another owner; 0 if the gift can be transferred immediately or transfer isn't possible; only for the receiver of the gift
+     * Get Point in time (Unix timestamp) when the gift can be transferred to another owner; 0 if the gift can be transferred immediately or transfer isn't possible; only for the receiver of the gift.
      */
     public function getNextTransferDate(): int
     {
@@ -327,7 +327,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the gift can be transferred to another owner; 0 if the gift can be transferred immediately or transfer isn't possible; only for the receiver of the gift
+     * Set Point in time (Unix timestamp) when the gift can be transferred to another owner; 0 if the gift can be transferred immediately or transfer isn't possible; only for the receiver of the gift.
      */
     public function setNextTransferDate(int $nextTransferDate): self
     {
@@ -337,7 +337,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the gift can be resold to another user; 0 if the gift can't be resold; only for the receiver of the gift
+     * Get Point in time (Unix timestamp) when the gift can be resold to another user; 0 if the gift can't be resold; only for the receiver of the gift.
      */
     public function getNextResaleDate(): int
     {
@@ -345,7 +345,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the gift can be resold to another user; 0 if the gift can't be resold; only for the receiver of the gift
+     * Set Point in time (Unix timestamp) when the gift can be resold to another user; 0 if the gift can't be resold; only for the receiver of the gift.
      */
     public function setNextResaleDate(int $nextResaleDate): self
     {
@@ -355,7 +355,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the upgraded gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift
+     * Get Point in time (Unix timestamp) when the upgraded gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift.
      */
     public function getExportDate(): int
     {
@@ -363,7 +363,7 @@ class ReceivedGift implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the upgraded gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift
+     * Set Point in time (Unix timestamp) when the upgraded gift can be transferred to the TON blockchain as an NFT; 0 if NFT export isn't possible; only for the receiver of the gift.
      */
     public function setExportDate(int $exportDate): self
     {

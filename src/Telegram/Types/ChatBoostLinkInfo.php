@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a link to boost a chat
+ * Contains information about a link to boost a chat.
  */
 class ChatBoostLinkInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatBoostLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link will work for non-members of the chat
+     * Get True, if the link will work for non-members of the chat.
      */
     public function getIsPublic(): bool
     {
@@ -30,7 +30,7 @@ class ChatBoostLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link will work for non-members of the chat
+     * Set True, if the link will work for non-members of the chat.
      */
     public function setIsPublic(bool $isPublic): self
     {
@@ -40,7 +40,7 @@ class ChatBoostLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the link points; 0 if the chat isn't found
+     * Get Identifier of the chat to which the link points; 0 if the chat isn't found.
      */
     public function getChatId(): int
     {
@@ -48,7 +48,7 @@ class ChatBoostLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the link points; 0 if the chat isn't found
+     * Set Identifier of the chat to which the link points; 0 if the chat isn't found.
      */
     public function setChatId(int $chatId): self
     {

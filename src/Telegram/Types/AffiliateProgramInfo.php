@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an active affiliate program
+ * Contains information about an active affiliate program.
  */
 class AffiliateProgramInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AffiliateProgramInfo implements \JsonSerializable
     }
 
     /**
-     * Get Parameters of the affiliate program
+     * Get Parameters of the affiliate program.
      */
     public function getParameters(): AffiliateProgramParameters|null
     {
@@ -33,7 +33,7 @@ class AffiliateProgramInfo implements \JsonSerializable
     }
 
     /**
-     * Set Parameters of the affiliate program
+     * Set Parameters of the affiliate program.
      */
     public function setParameters(AffiliateProgramParameters|null $parameters): self
     {
@@ -43,7 +43,7 @@ class AffiliateProgramInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the affiliate program will be closed; 0 if the affiliate program isn't scheduled to be closed.
+     * Get Point in time (Unix timestamp) when the affiliate program will be closed; 0 if the affiliate program isn't scheduled to be closed..
      */
     public function getEndDate(): int
     {
@@ -51,7 +51,7 @@ class AffiliateProgramInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the affiliate program will be closed; 0 if the affiliate program isn't scheduled to be closed.
+     * Set Point in time (Unix timestamp) when the affiliate program will be closed; 0 if the affiliate program isn't scheduled to be closed..
      */
     public function setEndDate(int $endDate): self
     {
@@ -61,7 +61,7 @@ class AffiliateProgramInfo implements \JsonSerializable
     }
 
     /**
-     * Get The amount of daily revenue per user in Telegram Stars of the bot that created the affiliate program
+     * Get The amount of daily revenue per user in Telegram Stars of the bot that created the affiliate program.
      */
     public function getDailyRevenuePerUserAmount(): StarAmount|null
     {
@@ -69,7 +69,7 @@ class AffiliateProgramInfo implements \JsonSerializable
     }
 
     /**
-     * Set The amount of daily revenue per user in Telegram Stars of the bot that created the affiliate program
+     * Set The amount of daily revenue per user in Telegram Stars of the bot that created the affiliate program.
      */
     public function setDailyRevenuePerUserAmount(StarAmount|null $dailyRevenuePerUserAmount): self
     {

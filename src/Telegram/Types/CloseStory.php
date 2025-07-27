@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Informs TDLib that a story is closed by the user
+ * Informs TDLib that a story is closed by the user.
  */
 class CloseStory extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class CloseStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the poster of the story to close
+     * Get The identifier of the poster of the story to close.
      */
     public function getStoryPosterChatId(): int
     {
@@ -30,7 +30,7 @@ class CloseStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the poster of the story to close
+     * Set The identifier of the poster of the story to close.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -40,7 +40,7 @@ class CloseStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the story
+     * Get The identifier of the story.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class CloseStory extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the story
+     * Set The identifier of the story.
      */
     public function setStoryId(int $storyId): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An effect from a premium sticker @sticker The premium sticker. The effect can be found at sticker.full_type.premium_animation
+ * An effect from a premium sticker @sticker The premium sticker. The effect can be found at sticker.full_type.premium_animation.
  */
 class MessageEffectTypePremiumSticker extends MessageEffectType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to an animation @animation The animation
+ * The link is a link to an animation @animation The animation.
  */
 class LinkPreviewTypeAnimation extends LinkPreviewType implements \JsonSerializable
 {

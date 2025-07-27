@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to an animated GIF or an animated (i.e., without sound) H.264/MPEG-4 AVC video
+ * Represents a link to an animated GIF or an animated (i.e., without sound) H.264/MPEG-4 AVC video.
  */
 class InputInlineQueryResultAnimation extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -57,7 +57,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -67,7 +67,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Title of the query result
+     * Get Title of the query result.
      */
     public function getTitle(): string
     {
@@ -75,7 +75,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Title of the query result
+     * Set Title of the query result.
      */
     public function setTitle(string $title): self
     {
@@ -85,7 +85,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists
+     * Get URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -93,7 +93,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists
+     * Set URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -103,7 +103,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get MIME type of the video thumbnail. If non-empty, must be one of "image/jpeg", "image/gif" and "video/mp4"
+     * Get MIME type of the video thumbnail. If non-empty, must be one of "image/jpeg", "image/gif" and "video/mp4".
      */
     public function getThumbnailMimeType(): string
     {
@@ -111,7 +111,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set MIME type of the video thumbnail. If non-empty, must be one of "image/jpeg", "image/gif" and "video/mp4"
+     * Set MIME type of the video thumbnail. If non-empty, must be one of "image/jpeg", "image/gif" and "video/mp4".
      */
     public function setThumbnailMimeType(string $thumbnailMimeType): self
     {
@@ -121,7 +121,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get The URL of the video file (file size must not exceed 1MB)
+     * Get The URL of the video file (file size must not exceed 1MB).
      */
     public function getVideoUrl(): string
     {
@@ -129,7 +129,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set The URL of the video file (file size must not exceed 1MB)
+     * Set The URL of the video file (file size must not exceed 1MB).
      */
     public function setVideoUrl(string $videoUrl): self
     {
@@ -139,7 +139,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get MIME type of the video file. Must be one of "image/gif" and "video/mp4"
+     * Get MIME type of the video file. Must be one of "image/gif" and "video/mp4".
      */
     public function getVideoMimeType(): string
     {
@@ -147,7 +147,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set MIME type of the video file. Must be one of "image/gif" and "video/mp4"
+     * Set MIME type of the video file. Must be one of "image/gif" and "video/mp4".
      */
     public function setVideoMimeType(string $videoMimeType): self
     {
@@ -157,7 +157,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Duration of the video, in seconds
+     * Get Duration of the video, in seconds.
      */
     public function getVideoDuration(): int
     {
@@ -165,7 +165,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Duration of the video, in seconds
+     * Set Duration of the video, in seconds.
      */
     public function setVideoDuration(int $videoDuration): self
     {
@@ -175,7 +175,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Width of the video
+     * Get Width of the video.
      */
     public function getVideoWidth(): int
     {
@@ -183,7 +183,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Width of the video
+     * Set Width of the video.
      */
     public function setVideoWidth(int $videoWidth): self
     {
@@ -193,7 +193,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get Height of the video
+     * Get Height of the video.
      */
     public function getVideoHeight(): int
     {
@@ -201,7 +201,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set Height of the video
+     * Set Height of the video.
      */
     public function setVideoHeight(int $videoHeight): self
     {
@@ -211,7 +211,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -219,7 +219,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -229,7 +229,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAnimation, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAnimation, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -237,7 +237,7 @@ class InputInlineQueryResultAnimation extends InputInlineQueryResult implements 
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAnimation, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAnimation, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

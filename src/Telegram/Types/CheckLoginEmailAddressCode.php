@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Checks the login email address authentication @code Email address authentication to check
+ * Checks the login email address authentication @code Email address authentication to check.
  */
 class CheckLoginEmailAddressCode extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of bots added to attachment or side menu has changed @bots The new list of bots. The bots must not be shown on scheduled messages screen
+ * The list of bots added to attachment or side menu has changed @bots The new list of bots. The bots must not be shown on scheduled messages screen.
  */
 class UpdateAttachmentMenuBots extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a topic in a forum supergroup chat; requires can_manage_topics administrator or can_create_topics member right in the supergroup
+ * Creates a topic in a forum supergroup chat; requires can_manage_topics administrator or can_create_topics member right in the supergroup.
  */
 class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Name of the topic; 1-128 characters
+     * Get Name of the topic; 1-128 characters.
      */
     public function getName(): string
     {
@@ -51,7 +51,7 @@ class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Name of the topic; 1-128 characters
+     * Set Name of the topic; 1-128 characters.
      */
     public function setName(string $name): self
     {
@@ -61,7 +61,7 @@ class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Get Icon of the topic. Icon color must be one of 0x6FB9F0, 0xFFD67E, 0xCB86DB, 0x8EEE98, 0xFF93B2, or 0xFB6F5F. Telegram Premium users can use any custom emoji as topic icon, other users can use only a custom emoji returned by getForumTopicDefaultIcons
+     * Get Icon of the topic. Icon color must be one of 0x6FB9F0, 0xFFD67E, 0xCB86DB, 0x8EEE98, 0xFF93B2, or 0xFB6F5F. Telegram Premium users can use any custom emoji as topic icon, other users can use only a custom emoji returned by getForumTopicDefaultIcons.
      */
     public function getIcon(): ForumTopicIcon|null
     {
@@ -69,7 +69,7 @@ class CreateForumTopic extends ForumTopicInfo implements \JsonSerializable
     }
 
     /**
-     * Set Icon of the topic. Icon color must be one of 0x6FB9F0, 0xFFD67E, 0xCB86DB, 0x8EEE98, 0xFF93B2, or 0xFB6F5F. Telegram Premium users can use any custom emoji as topic icon, other users can use only a custom emoji returned by getForumTopicDefaultIcons
+     * Set Icon of the topic. Icon color must be one of 0x6FB9F0, 0xFFD67E, 0xCB86DB, 0x8EEE98, 0xFF93B2, or 0xFB6F5F. Telegram Premium users can use any custom emoji as topic icon, other users can use only a custom emoji returned by getForumTopicDefaultIcons.
      */
     public function setIcon(ForumTopicIcon|null $icon): self
     {

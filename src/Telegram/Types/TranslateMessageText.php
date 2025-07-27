@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Extracts text or caption of the given message and translates it to the given language. If the current user is a Telegram Premium user, then text formatting is preserved
+ * Extracts text or caption of the given message and translates it to the given language. If the current user is a Telegram Premium user, then text formatting is preserved.
  */
 class TranslateMessageText extends FormattedText implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class TranslateMessageText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class TranslateMessageText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class TranslateMessageText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class TranslateMessageText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class TranslateMessageText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get Language code of the language to which the message is translated. Must be one of
+     * Get Language code of the language to which the message is translated. Must be one of.
      */
     public function getToLanguageCode(): string
     {
@@ -69,7 +69,7 @@ class TranslateMessageText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set Language code of the language to which the message is translated. Must be one of
+     * Set Language code of the language to which the message is translated. Must be one of.
      */
     public function setToLanguageCode(string $toLanguageCode): self
     {

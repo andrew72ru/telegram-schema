@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the reply markup of a message sent on behalf of a business account; for bots only
+ * Edits the reply markup of a message sent on behalf of a business account; for bots only.
  */
 class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -36,7 +36,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -46,7 +46,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -54,7 +54,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -64,7 +64,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -72,7 +72,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -82,7 +82,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -90,7 +90,7 @@ class EditBusinessMessageReplyMarkup extends BusinessMessage implements \JsonSer
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

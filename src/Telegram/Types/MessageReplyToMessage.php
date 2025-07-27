@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a message replied by a given message
+ * Describes a message replied by a given message.
  */
 class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the chat to which the message belongs; may be 0 if the replied message is in unknown chat
+     * Get The identifier of the chat to which the message belongs; may be 0 if the replied message is in unknown chat.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the chat to which the message belongs; may be 0 if the replied message is in unknown chat
+     * Set The identifier of the chat to which the message belongs; may be 0 if the replied message is in unknown chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the message; may be 0 if the replied message is in unknown chat
+     * Get The identifier of the message; may be 0 if the replied message is in unknown chat.
      */
     public function getMessageId(): int
     {
@@ -60,7 +60,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the message; may be 0 if the replied message is in unknown chat
+     * Set The identifier of the message; may be 0 if the replied message is in unknown chat.
      */
     public function setMessageId(int $messageId): self
     {
@@ -70,7 +70,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Get Chosen quote from the replied message; may be null if none
+     * Get Chosen quote from the replied message; may be null if none.
      */
     public function getQuote(): TextQuote|null
     {
@@ -78,7 +78,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Set Chosen quote from the replied message; may be null if none
+     * Set Chosen quote from the replied message; may be null if none.
      */
     public function setQuote(TextQuote|null $quote): self
     {
@@ -88,7 +88,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Get Information about origin of the message if the message was from another chat or topic; may be null for messages from the same chat
+     * Get Information about origin of the message if the message was from another chat or topic; may be null for messages from the same chat.
      */
     public function getOrigin(): MessageOrigin|null
     {
@@ -96,7 +96,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Set Information about origin of the message if the message was from another chat or topic; may be null for messages from the same chat
+     * Set Information about origin of the message if the message was from another chat or topic; may be null for messages from the same chat.
      */
     public function setOrigin(MessageOrigin|null $origin): self
     {
@@ -106,7 +106,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the message was sent if the message was from another chat or topic; 0 for messages from the same chat
+     * Get Point in time (Unix timestamp) when the message was sent if the message was from another chat or topic; 0 for messages from the same chat.
      */
     public function getOriginSendDate(): int
     {
@@ -114,7 +114,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the message was sent if the message was from another chat or topic; 0 for messages from the same chat
+     * Set Point in time (Unix timestamp) when the message was sent if the message was from another chat or topic; 0 for messages from the same chat.
      */
     public function setOriginSendDate(int $originSendDate): self
     {
@@ -124,7 +124,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Get Media content of the message if the message was from another chat or topic; may be null for messages from the same chat and messages without media.
+     * Get Media content of the message if the message was from another chat or topic; may be null for messages from the same chat and messages without media..
      */
     public function getContent(): MessageContent|null
     {
@@ -132,7 +132,7 @@ class MessageReplyToMessage extends MessageReplyTo implements \JsonSerializable
     }
 
     /**
-     * Set Media content of the message if the message was from another chat or topic; may be null for messages from the same chat and messages without media.
+     * Set Media content of the message if the message was from another chat or topic; may be null for messages from the same chat and messages without media..
      */
     public function setContent(MessageContent|null $content): self
     {

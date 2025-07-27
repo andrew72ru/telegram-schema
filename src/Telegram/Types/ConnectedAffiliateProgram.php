@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an affiliate program that was connected to an affiliate
+ * Describes an affiliate program that was connected to an affiliate.
  */
 class ConnectedAffiliateProgram implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get The link that can be used to refer users if the program is still active
+     * Get The link that can be used to refer users if the program is still active.
      */
     public function getUrl(): string
     {
@@ -45,7 +45,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set The link that can be used to refer users if the program is still active
+     * Set The link that can be used to refer users if the program is still active.
      */
     public function setUrl(string $url): self
     {
@@ -55,7 +55,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the bot created the program
+     * Get User identifier of the bot created the program.
      */
     public function getBotUserId(): int
     {
@@ -63,7 +63,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the bot created the program
+     * Set User identifier of the bot created the program.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -73,7 +73,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get The parameters of the affiliate program
+     * Get The parameters of the affiliate program.
      */
     public function getParameters(): AffiliateProgramParameters|null
     {
@@ -81,7 +81,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set The parameters of the affiliate program
+     * Set The parameters of the affiliate program.
      */
     public function setParameters(AffiliateProgramParameters|null $parameters): self
     {
@@ -91,7 +91,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the affiliate program was connected
+     * Get Point in time (Unix timestamp) when the affiliate program was connected.
      */
     public function getConnectionDate(): int
     {
@@ -99,7 +99,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the affiliate program was connected
+     * Set Point in time (Unix timestamp) when the affiliate program was connected.
      */
     public function setConnectionDate(int $connectionDate): self
     {
@@ -109,7 +109,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get True, if the program was canceled by the bot, or disconnected by the chat owner and isn't available anymore
+     * Get True, if the program was canceled by the bot, or disconnected by the chat owner and isn't available anymore.
      */
     public function getIsDisconnected(): bool
     {
@@ -117,7 +117,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set True, if the program was canceled by the bot, or disconnected by the chat owner and isn't available anymore
+     * Set True, if the program was canceled by the bot, or disconnected by the chat owner and isn't available anymore.
      */
     public function setIsDisconnected(bool $isDisconnected): self
     {
@@ -127,7 +127,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get The number of users that used the affiliate program
+     * Get The number of users that used the affiliate program.
      */
     public function getUserCount(): int
     {
@@ -135,7 +135,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set The number of users that used the affiliate program
+     * Set The number of users that used the affiliate program.
      */
     public function setUserCount(int $userCount): self
     {
@@ -145,7 +145,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Get The number of Telegram Stars that were earned by the affiliate program
+     * Get The number of Telegram Stars that were earned by the affiliate program.
      */
     public function getRevenueStarCount(): int
     {
@@ -153,7 +153,7 @@ class ConnectedAffiliateProgram implements \JsonSerializable
     }
 
     /**
-     * Set The number of Telegram Stars that were earned by the affiliate program
+     * Set The number of Telegram Stars that were earned by the affiliate program.
      */
     public function setRevenueStarCount(int $revenueStarCount): self
     {

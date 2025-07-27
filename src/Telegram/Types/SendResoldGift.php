@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends an upgraded gift that is available for resale to another user or channel chat; gifts already owned by the current user
+ * Sends an upgraded gift that is available for resale to another user or channel chat; gifts already owned by the current user.
  */
 class SendResoldGift extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SendResoldGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Name of the upgraded gift to send
+     * Get Name of the upgraded gift to send.
      */
     public function getGiftName(): string
     {
@@ -33,7 +33,7 @@ class SendResoldGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Name of the upgraded gift to send
+     * Set Name of the upgraded gift to send.
      */
     public function setGiftName(string $giftName): self
     {
@@ -43,7 +43,7 @@ class SendResoldGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the channel chat that will receive the gift
+     * Get Identifier of the user or the channel chat that will receive the gift.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -51,7 +51,7 @@ class SendResoldGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the channel chat that will receive the gift
+     * Set Identifier of the user or the channel chat that will receive the gift.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -61,7 +61,7 @@ class SendResoldGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The amount of Telegram Stars required to pay for the gift
+     * Get The amount of Telegram Stars required to pay for the gift.
      */
     public function getStarCount(): int
     {
@@ -69,7 +69,7 @@ class SendResoldGift extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The amount of Telegram Stars required to pay for the gift
+     * Set The amount of Telegram Stars required to pay for the gift.
      */
     public function setStarCount(int $starCount): self
     {

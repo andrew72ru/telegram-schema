@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A limit was exceeded @limit_type Type of the exceeded limit
+ * A limit was exceeded @limit_type Type of the exceeded limit.
  */
 class PremiumSourceLimitExceeded extends PremiumSource implements \JsonSerializable
 {

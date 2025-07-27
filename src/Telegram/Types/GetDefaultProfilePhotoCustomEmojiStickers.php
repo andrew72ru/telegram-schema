@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns default list of custom emoji stickers for placing on a profile photo
+ * Returns default list of custom emoji stickers for placing on a profile photo.
  */
 class GetDefaultProfilePhotoCustomEmojiStickers extends Stickers implements \JsonSerializable
 {

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns only messages containing URLs
+ * Returns only messages containing URLs.
  */
 class SearchMessagesFilterUrl extends SearchMessagesFilter implements \JsonSerializable
 {

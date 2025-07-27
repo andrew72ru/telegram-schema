@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes accent color and background custom emoji of a channel chat. Requires can_change_info administrator right
+ * Changes accent color and background custom emoji of a channel chat. Requires can_change_info administrator right.
  */
 class SetChatAccentColor extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetChatAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetChatAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetChatAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color to use. The chat must have at least accentColor.min_channel_chat_boost_level boost level to pass the corresponding color
+     * Get Identifier of the accent color to use. The chat must have at least accentColor.min_channel_chat_boost_level boost level to pass the corresponding color.
      */
     public function getAccentColorId(): int
     {
@@ -51,7 +51,7 @@ class SetChatAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color to use. The chat must have at least accentColor.min_channel_chat_boost_level boost level to pass the corresponding color
+     * Set Identifier of the accent color to use. The chat must have at least accentColor.min_channel_chat_boost_level boost level to pass the corresponding color.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -61,7 +61,7 @@ class SetChatAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none. Use chatBoostLevelFeatures.can_set_background_custom_emoji to check whether a custom emoji can be set
+     * Get Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none. Use chatBoostLevelFeatures.can_set_background_custom_emoji to check whether a custom emoji can be set.
      */
     public function getBackgroundCustomEmojiId(): int
     {
@@ -69,7 +69,7 @@ class SetChatAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none. Use chatBoostLevelFeatures.can_set_background_custom_emoji to check whether a custom emoji can be set
+     * Set Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none. Use chatBoostLevelFeatures.can_set_background_custom_emoji to check whether a custom emoji can be set.
      */
     public function setBackgroundCustomEmojiId(int $backgroundCustomEmojiId): self
     {

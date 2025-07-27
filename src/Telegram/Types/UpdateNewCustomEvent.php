@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming event; for bots only @event A JSON-serialized event
+ * A new incoming event; for bots only @event A JSON-serialized event.
  */
 class UpdateNewCustomEvent extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat content was allowed or restricted for saving @chat_id Chat identifier @has_protected_content New value of has_protected_content
+ * A chat content was allowed or restricted for saving @chat_id Chat identifier @has_protected_content New value of has_protected_content.
  */
 class UpdateChatHasProtectedContent extends Update implements \JsonSerializable
 {

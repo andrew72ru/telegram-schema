@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the reply markup of an inline message sent via a bot; for bots only
+ * Edits the reply markup of an inline message sent via a bot; for bots only.
  */
 class EditInlineMessageReplyMarkup extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class EditInlineMessageReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Inline message identifier
+     * Get Inline message identifier.
      */
     public function getInlineMessageId(): string
     {
@@ -30,7 +30,7 @@ class EditInlineMessageReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Inline message identifier
+     * Set Inline message identifier.
      */
     public function setInlineMessageId(string $inlineMessageId): self
     {
@@ -40,7 +40,7 @@ class EditInlineMessageReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -48,7 +48,7 @@ class EditInlineMessageReplyMarkup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

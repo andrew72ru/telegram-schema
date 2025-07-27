@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with a poll. Polls can't be sent to secret chats and channel direct messages chats. Polls can be sent to a private chat only if the chat is a chat with a bot or the Saved Messages chat
+ * A message with a poll. Polls can't be sent to secret chats and channel direct messages chats. Polls can be sent to a private chat only if the chat is a chat with a bot or the Saved Messages chat.
  */
 class InputMessagePoll extends InputMessageContent implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Poll question; 1-255 characters (up to 300 characters for bots). Only custom emoji entities are allowed to be added and only by Premium users
+     * Get Poll question; 1-255 characters (up to 300 characters for bots). Only custom emoji entities are allowed to be added and only by Premium users.
      */
     public function getQuestion(): FormattedText|null
     {
@@ -45,7 +45,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Poll question; 1-255 characters (up to 300 characters for bots). Only custom emoji entities are allowed to be added and only by Premium users
+     * Set Poll question; 1-255 characters (up to 300 characters for bots). Only custom emoji entities are allowed to be added and only by Premium users.
      */
     public function setQuestion(FormattedText|null $question): self
     {
@@ -55,7 +55,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get List of poll answer options, 2-getOption("poll_answer_count_max") strings 1-100 characters each. Only custom emoji entities are allowed to be added and only by Premium users
+     * Get List of poll answer options, 2-getOption("poll_answer_count_max") strings 1-100 characters each. Only custom emoji entities are allowed to be added and only by Premium users.
      */
     public function getOptions(): array|null
     {
@@ -63,7 +63,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set List of poll answer options, 2-getOption("poll_answer_count_max") strings 1-100 characters each. Only custom emoji entities are allowed to be added and only by Premium users
+     * Set List of poll answer options, 2-getOption("poll_answer_count_max") strings 1-100 characters each. Only custom emoji entities are allowed to be added and only by Premium users.
      */
     public function setOptions(array|null $options): self
     {
@@ -73,7 +73,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the poll voters are anonymous. Non-anonymous polls can't be sent or forwarded to channels
+     * Get True, if the poll voters are anonymous. Non-anonymous polls can't be sent or forwarded to channels.
      */
     public function getIsAnonymous(): bool
     {
@@ -81,7 +81,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the poll voters are anonymous. Non-anonymous polls can't be sent or forwarded to channels
+     * Set True, if the poll voters are anonymous. Non-anonymous polls can't be sent or forwarded to channels.
      */
     public function setIsAnonymous(bool $isAnonymous): self
     {
@@ -91,7 +91,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Type of the poll
+     * Get Type of the poll.
      */
     public function getType(): PollType|null
     {
@@ -99,7 +99,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Type of the poll
+     * Set Type of the poll.
      */
     public function setType(PollType|null $type): self
     {
@@ -109,7 +109,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Amount of time the poll will be active after creation, in seconds; for bots only
+     * Get Amount of time the poll will be active after creation, in seconds; for bots only.
      */
     public function getOpenPeriod(): int
     {
@@ -117,7 +117,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Amount of time the poll will be active after creation, in seconds; for bots only
+     * Set Amount of time the poll will be active after creation, in seconds; for bots only.
      */
     public function setOpenPeriod(int $openPeriod): self
     {
@@ -127,7 +127,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the poll will automatically be closed; for bots only
+     * Get Point in time (Unix timestamp) when the poll will automatically be closed; for bots only.
      */
     public function getCloseDate(): int
     {
@@ -135,7 +135,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the poll will automatically be closed; for bots only
+     * Set Point in time (Unix timestamp) when the poll will automatically be closed; for bots only.
      */
     public function setCloseDate(int $closeDate): self
     {
@@ -145,7 +145,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the poll needs to be sent already closed; for bots only
+     * Get True, if the poll needs to be sent already closed; for bots only.
      */
     public function getIsClosed(): bool
     {
@@ -153,7 +153,7 @@ class InputMessagePoll extends InputMessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the poll needs to be sent already closed; for bots only
+     * Set True, if the poll needs to be sent already closed; for bots only.
      */
     public function setIsClosed(bool $isClosed): self
     {

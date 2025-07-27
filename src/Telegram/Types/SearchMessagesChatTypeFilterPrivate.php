@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * Returns only messages in private chats
+ * Returns only messages in private chats.
  */
 class SearchMessagesChatTypeFilterPrivate extends SearchMessagesChatTypeFilter implements \JsonSerializable
 {

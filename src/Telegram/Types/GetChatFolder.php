@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a chat folder by its identifier @chat_folder_id Chat folder identifier
+ * Returns information about a chat folder by its identifier @chat_folder_id Chat folder identifier.
  */
 class GetChatFolder extends ChatFolder implements \JsonSerializable
 {

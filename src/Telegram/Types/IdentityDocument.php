@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An identity document
+ * An identity document.
  */
 class IdentityDocument implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Get Document number; 1-24 characters
+     * Get Document number; 1-24 characters.
      */
     public function getNumber(): string
     {
@@ -42,7 +42,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Set Document number; 1-24 characters
+     * Set Document number; 1-24 characters.
      */
     public function setNumber(string $number): self
     {
@@ -52,7 +52,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Get Document expiration date; may be null if not applicable
+     * Get Document expiration date; may be null if not applicable.
      */
     public function getExpirationDate(): Date|null
     {
@@ -60,7 +60,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Set Document expiration date; may be null if not applicable
+     * Set Document expiration date; may be null if not applicable.
      */
     public function setExpirationDate(Date|null $expirationDate): self
     {
@@ -70,7 +70,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Get Front side of the document
+     * Get Front side of the document.
      */
     public function getFrontSide(): DatedFile|null
     {
@@ -78,7 +78,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Set Front side of the document
+     * Set Front side of the document.
      */
     public function setFrontSide(DatedFile|null $frontSide): self
     {
@@ -88,7 +88,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Get Reverse side of the document; only for driver license and identity card; may be null
+     * Get Reverse side of the document; only for driver license and identity card; may be null.
      */
     public function getReverseSide(): DatedFile|null
     {
@@ -96,7 +96,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Set Reverse side of the document; only for driver license and identity card; may be null
+     * Set Reverse side of the document; only for driver license and identity card; may be null.
      */
     public function setReverseSide(DatedFile|null $reverseSide): self
     {
@@ -106,7 +106,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Get Selfie with the document; may be null
+     * Get Selfie with the document; may be null.
      */
     public function getSelfie(): DatedFile|null
     {
@@ -114,7 +114,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Set Selfie with the document; may be null
+     * Set Selfie with the document; may be null.
      */
     public function setSelfie(DatedFile|null $selfie): self
     {
@@ -124,7 +124,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Get List of files containing a certified English translation of the document
+     * Get List of files containing a certified English translation of the document.
      */
     public function getTranslation(): array|null
     {
@@ -132,7 +132,7 @@ class IdentityDocument implements \JsonSerializable
     }
 
     /**
-     * Set List of files containing a certified English translation of the document
+     * Set List of files containing a certified English translation of the document.
      */
     public function setTranslation(array|null $translation): self
     {

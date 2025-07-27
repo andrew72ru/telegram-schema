@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the last message sent in a Saved Messages topic no later than the specified date
+ * Returns the last message sent in a Saved Messages topic no later than the specified date.
  */
 class GetSavedMessagesTopicMessageByDate extends Message implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetSavedMessagesTopicMessageByDate extends Message implements \JsonSeriali
     }
 
     /**
-     * Get Identifier of Saved Messages topic which message will be returned
+     * Get Identifier of Saved Messages topic which message will be returned.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -30,7 +30,7 @@ class GetSavedMessagesTopicMessageByDate extends Message implements \JsonSeriali
     }
 
     /**
-     * Set Identifier of Saved Messages topic which message will be returned
+     * Set Identifier of Saved Messages topic which message will be returned.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {
@@ -40,7 +40,7 @@ class GetSavedMessagesTopicMessageByDate extends Message implements \JsonSeriali
     }
 
     /**
-     * Get Point in time (Unix timestamp) relative to which to search for messages
+     * Get Point in time (Unix timestamp) relative to which to search for messages.
      */
     public function getDate(): int
     {
@@ -48,7 +48,7 @@ class GetSavedMessagesTopicMessageByDate extends Message implements \JsonSeriali
     }
 
     /**
-     * Set Point in time (Unix timestamp) relative to which to search for messages
+     * Set Point in time (Unix timestamp) relative to which to search for messages.
      */
     public function setDate(int $date): self
     {

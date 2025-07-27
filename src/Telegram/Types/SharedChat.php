@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a chat shared with a bot
+ * Contains information about a chat shared with a bot.
  */
 class SharedChat implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Get Title of the chat; for bots only
+     * Get Title of the chat; for bots only.
      */
     public function getTitle(): string
     {
@@ -54,7 +54,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Set Title of the chat; for bots only
+     * Set Title of the chat; for bots only.
      */
     public function setTitle(string $title): self
     {
@@ -64,7 +64,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Get Username of the chat; for bots only
+     * Get Username of the chat; for bots only.
      */
     public function getUsername(): string
     {
@@ -72,7 +72,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Set Username of the chat; for bots only
+     * Set Username of the chat; for bots only.
      */
     public function setUsername(string $username): self
     {
@@ -82,7 +82,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Get Photo of the chat; for bots only; may be null
+     * Get Photo of the chat; for bots only; may be null.
      */
     public function getPhoto(): Photo|null
     {
@@ -90,7 +90,7 @@ class SharedChat implements \JsonSerializable
     }
 
     /**
-     * Set Photo of the chat; for bots only; may be null
+     * Set Photo of the chat; for bots only; may be null.
      */
     public function setPhoto(Photo|null $photo): self
     {

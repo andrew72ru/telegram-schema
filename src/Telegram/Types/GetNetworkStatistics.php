@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns network data usage statistics. Can be called before authorization @only_current Pass true to get statistics only for the current library launch
+ * Returns network data usage statistics. Can be called before authorization @only_current Pass true to get statistics only for the current library launch.
  */
 class GetNetworkStatistics extends NetworkStatistics implements \JsonSerializable
 {

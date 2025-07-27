@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for MessageReadDate types
+ * Abstract base class for MessageReadDate types.
  */
 abstract class MessageReadDate implements \JsonSerializable
 {

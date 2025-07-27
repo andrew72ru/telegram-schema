@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The call was ended before the conversation started. It was declined by the other party
+ * The call was ended before the conversation started. It was declined by the other party.
  */
 class CallDiscardReasonDeclined extends CallDiscardReason implements \JsonSerializable
 {

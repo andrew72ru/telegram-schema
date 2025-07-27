@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat invite link was edited @old_invite_link Previous information about the invite link @new_invite_link New information about the invite link
+ * A chat invite link was edited @old_invite_link Previous information about the invite link @new_invite_link New information about the invite link.
  */
 class ChatEventInviteLinkEdited extends ChatEventAction implements \JsonSerializable
 {

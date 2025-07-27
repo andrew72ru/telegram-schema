@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes direct messages group settings for a channel chat; requires owner privileges in the chat
+ * Changes direct messages group settings for a channel chat; requires owner privileges in the chat.
  */
 class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the channel chat
+     * Get Identifier of the channel chat.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the channel chat
+     * Set Identifier of the channel chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the direct messages group is enabled for the channel chat; pass false otherwise
+     * Get Pass true if the direct messages group is enabled for the channel chat; pass false otherwise.
      */
     public function getIsEnabled(): bool
     {
@@ -51,7 +51,7 @@ class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the direct messages group is enabled for the channel chat; pass false otherwise
+     * Set Pass true if the direct messages group is enabled for the channel chat; pass false otherwise.
      */
     public function setIsEnabled(bool $isEnabled): self
     {
@@ -61,7 +61,7 @@ class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new number of Telegram Stars that must be paid for each message that is sent to the direct messages chat unless the sender is an administrator of the channel chat; 0-getOption("paid_message_star_count_max").
+     * Get The new number of Telegram Stars that must be paid for each message that is sent to the direct messages chat unless the sender is an administrator of the channel chat; 0-getOption("paid_message_star_count_max")..
      */
     public function getPaidMessageStarCount(): int
     {
@@ -69,7 +69,7 @@ class SetChatDirectMessagesGroup extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new number of Telegram Stars that must be paid for each message that is sent to the direct messages chat unless the sender is an administrator of the channel chat; 0-getOption("paid_message_star_count_max").
+     * Set The new number of Telegram Stars that must be paid for each message that is sent to the direct messages chat unless the sender is an administrator of the channel chat; 0-getOption("paid_message_star_count_max")..
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {

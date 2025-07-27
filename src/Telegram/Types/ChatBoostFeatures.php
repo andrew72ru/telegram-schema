@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of features available on the first chat boost levels
+ * Contains a list of features available on the first chat boost levels.
  */
 class ChatBoostFeatures implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The list of features
+     * Get The list of features.
      */
     public function getFeatures(): array|null
     {
@@ -54,7 +54,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The list of features
+     * Set The list of features.
      */
     public function setFeatures(array|null $features): self
     {
@@ -64,7 +64,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level required to set custom emoji for profile background
+     * Get The minimum boost level required to set custom emoji for profile background.
      */
     public function getMinProfileBackgroundCustomEmojiBoostLevel(): int
     {
@@ -72,7 +72,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level required to set custom emoji for profile background
+     * Set The minimum boost level required to set custom emoji for profile background.
      */
     public function setMinProfileBackgroundCustomEmojiBoostLevel(int $minProfileBackgroundCustomEmojiBoostLevel): self
     {
@@ -82,7 +82,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level required to set custom emoji for reply header and link preview background; for channel chats only
+     * Get The minimum boost level required to set custom emoji for reply header and link preview background; for channel chats only.
      */
     public function getMinBackgroundCustomEmojiBoostLevel(): int
     {
@@ -90,7 +90,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level required to set custom emoji for reply header and link preview background; for channel chats only
+     * Set The minimum boost level required to set custom emoji for reply header and link preview background; for channel chats only.
      */
     public function setMinBackgroundCustomEmojiBoostLevel(int $minBackgroundCustomEmojiBoostLevel): self
     {
@@ -100,7 +100,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level required to set emoji status
+     * Get The minimum boost level required to set emoji status.
      */
     public function getMinEmojiStatusBoostLevel(): int
     {
@@ -108,7 +108,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level required to set emoji status
+     * Set The minimum boost level required to set emoji status.
      */
     public function setMinEmojiStatusBoostLevel(int $minEmojiStatusBoostLevel): self
     {
@@ -118,7 +118,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level required to set a chat theme background as chat background
+     * Get The minimum boost level required to set a chat theme background as chat background.
      */
     public function getMinChatThemeBackgroundBoostLevel(): int
     {
@@ -126,7 +126,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level required to set a chat theme background as chat background
+     * Set The minimum boost level required to set a chat theme background as chat background.
      */
     public function setMinChatThemeBackgroundBoostLevel(int $minChatThemeBackgroundBoostLevel): self
     {
@@ -136,7 +136,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level required to set custom chat background
+     * Get The minimum boost level required to set custom chat background.
      */
     public function getMinCustomBackgroundBoostLevel(): int
     {
@@ -144,7 +144,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level required to set custom chat background
+     * Set The minimum boost level required to set custom chat background.
      */
     public function setMinCustomBackgroundBoostLevel(int $minCustomBackgroundBoostLevel): self
     {
@@ -154,7 +154,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level required to set custom emoji sticker set for the chat; for supergroup chats only
+     * Get The minimum boost level required to set custom emoji sticker set for the chat; for supergroup chats only.
      */
     public function getMinCustomEmojiStickerSetBoostLevel(): int
     {
@@ -162,7 +162,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level required to set custom emoji sticker set for the chat; for supergroup chats only
+     * Set The minimum boost level required to set custom emoji sticker set for the chat; for supergroup chats only.
      */
     public function setMinCustomEmojiStickerSetBoostLevel(int $minCustomEmojiStickerSetBoostLevel): self
     {
@@ -172,7 +172,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level allowing to enable automatic translation of messages for non-Premium users; for channel chats only
+     * Get The minimum boost level allowing to enable automatic translation of messages for non-Premium users; for channel chats only.
      */
     public function getMinAutomaticTranslationBoostLevel(): int
     {
@@ -180,7 +180,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level allowing to enable automatic translation of messages for non-Premium users; for channel chats only
+     * Set The minimum boost level allowing to enable automatic translation of messages for non-Premium users; for channel chats only.
      */
     public function setMinAutomaticTranslationBoostLevel(int $minAutomaticTranslationBoostLevel): self
     {
@@ -190,7 +190,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level allowing to recognize speech in video note and voice note messages for non-Premium users; for supergroup chats only
+     * Get The minimum boost level allowing to recognize speech in video note and voice note messages for non-Premium users; for supergroup chats only.
      */
     public function getMinSpeechRecognitionBoostLevel(): int
     {
@@ -198,7 +198,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level allowing to recognize speech in video note and voice note messages for non-Premium users; for supergroup chats only
+     * Set The minimum boost level allowing to recognize speech in video note and voice note messages for non-Premium users; for supergroup chats only.
      */
     public function setMinSpeechRecognitionBoostLevel(int $minSpeechRecognitionBoostLevel): self
     {
@@ -208,7 +208,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Get The minimum boost level allowing to disable sponsored messages in the chat; for channel chats only
+     * Get The minimum boost level allowing to disable sponsored messages in the chat; for channel chats only.
      */
     public function getMinSponsoredMessageDisableBoostLevel(): int
     {
@@ -216,7 +216,7 @@ class ChatBoostFeatures implements \JsonSerializable
     }
 
     /**
-     * Set The minimum boost level allowing to disable sponsored messages in the chat; for channel chats only
+     * Set The minimum boost level allowing to disable sponsored messages in the chat; for channel chats only.
      */
     public function setMinSponsoredMessageDisableBoostLevel(int $minSponsoredMessageDisableBoostLevel): self
     {

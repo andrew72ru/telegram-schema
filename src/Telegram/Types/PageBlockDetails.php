@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A collapsible block
+ * A collapsible block.
  */
 class PageBlockDetails extends PageBlock implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PageBlockDetails extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Always visible heading for the block
+     * Get Always visible heading for the block.
      */
     public function getHeader(): RichText|null
     {
@@ -33,7 +33,7 @@ class PageBlockDetails extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Always visible heading for the block
+     * Set Always visible heading for the block.
      */
     public function setHeader(RichText|null $header): self
     {
@@ -43,7 +43,7 @@ class PageBlockDetails extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block contents
+     * Get Block contents.
      */
     public function getPageBlocks(): array|null
     {
@@ -51,7 +51,7 @@ class PageBlockDetails extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block contents
+     * Set Block contents.
      */
     public function setPageBlocks(array|null $pageBlocks): self
     {
@@ -61,7 +61,7 @@ class PageBlockDetails extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get True, if the block is open by default
+     * Get True, if the block is open by default.
      */
     public function getIsOpen(): bool
     {
@@ -69,7 +69,7 @@ class PageBlockDetails extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set True, if the block is open by default
+     * Set True, if the block is open by default.
      */
     public function setIsOpen(bool $isOpen): self
     {

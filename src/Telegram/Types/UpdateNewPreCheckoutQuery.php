@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new incoming pre-checkout query; for bots only. Contains full information about a checkout
+ * A new incoming pre-checkout query; for bots only. Contains full information about a checkout.
  */
 class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique query identifier
+     * Get Unique query identifier.
      */
     public function getId(): int
     {
@@ -45,7 +45,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique query identifier
+     * Set Unique query identifier.
      */
     public function setId(int $id): self
     {
@@ -55,7 +55,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user who sent the query
+     * Get Identifier of the user who sent the query.
      */
     public function getSenderUserId(): int
     {
@@ -63,7 +63,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user who sent the query
+     * Set Identifier of the user who sent the query.
      */
     public function setSenderUserId(int $senderUserId): self
     {
@@ -73,7 +73,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Currency for the product price
+     * Get Currency for the product price.
      */
     public function getCurrency(): string
     {
@@ -81,7 +81,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Currency for the product price
+     * Set Currency for the product price.
      */
     public function setCurrency(string $currency): self
     {
@@ -91,7 +91,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Total price for the product, in the smallest units of the currency
+     * Get Total price for the product, in the smallest units of the currency.
      */
     public function getTotalAmount(): int
     {
@@ -99,7 +99,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Total price for the product, in the smallest units of the currency
+     * Set Total price for the product, in the smallest units of the currency.
      */
     public function setTotalAmount(int $totalAmount): self
     {
@@ -109,7 +109,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Invoice payload
+     * Get Invoice payload.
      */
     public function getInvoicePayload(): string
     {
@@ -117,7 +117,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Invoice payload
+     * Set Invoice payload.
      */
     public function setInvoicePayload(string $invoicePayload): self
     {
@@ -127,7 +127,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a shipping option chosen by the user; may be empty if not applicable
+     * Get Identifier of a shipping option chosen by the user; may be empty if not applicable.
      */
     public function getShippingOptionId(): string
     {
@@ -135,7 +135,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a shipping option chosen by the user; may be empty if not applicable
+     * Set Identifier of a shipping option chosen by the user; may be empty if not applicable.
      */
     public function setShippingOptionId(string $shippingOptionId): self
     {
@@ -145,7 +145,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Information about the order; may be null
+     * Get Information about the order; may be null.
      */
     public function getOrderInfo(): OrderInfo|null
     {
@@ -153,7 +153,7 @@ class UpdateNewPreCheckoutQuery extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Information about the order; may be null
+     * Set Information about the order; may be null.
      */
     public function setOrderInfo(OrderInfo|null $orderInfo): self
     {

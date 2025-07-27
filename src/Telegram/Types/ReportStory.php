@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Reports a story to the Telegram moderators
+ * Reports a story to the Telegram moderators.
  */
 class ReportStory extends ReportStoryResult implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the poster of the story to report
+     * Get The identifier of the poster of the story to report.
      */
     public function getStoryPosterChatId(): int
     {
@@ -36,7 +36,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the poster of the story to report
+     * Set The identifier of the poster of the story to report.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -46,7 +46,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the story to report
+     * Get The identifier of the story to report.
      */
     public function getStoryId(): int
     {
@@ -54,7 +54,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the story to report
+     * Set The identifier of the story to report.
      */
     public function setStoryId(int $storyId): self
     {
@@ -64,7 +64,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Get Option identifier chosen by the user; leave empty for the initial request
+     * Get Option identifier chosen by the user; leave empty for the initial request.
      */
     public function getOptionId(): string
     {
@@ -72,7 +72,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Set Option identifier chosen by the user; leave empty for the initial request
+     * Set Option identifier chosen by the user; leave empty for the initial request.
      */
     public function setOptionId(string $optionId): self
     {
@@ -82,7 +82,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Get Additional report details; 0-1024 characters; leave empty for the initial request
+     * Get Additional report details; 0-1024 characters; leave empty for the initial request.
      */
     public function getText(): string
     {
@@ -90,7 +90,7 @@ class ReportStory extends ReportStoryResult implements \JsonSerializable
     }
 
     /**
-     * Set Additional report details; 0-1024 characters; leave empty for the initial request
+     * Set Additional report details; 0-1024 characters; leave empty for the initial request.
      */
     public function setText(string $text): self
     {

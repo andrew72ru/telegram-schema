@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a product that can be paid with invoice
+ * Contains information about a product that can be paid with invoice.
  */
 class ProductInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ProductInfo implements \JsonSerializable
     }
 
     /**
-     * Get Product title
+     * Get Product title.
      */
     public function getTitle(): string
     {
@@ -33,7 +33,7 @@ class ProductInfo implements \JsonSerializable
     }
 
     /**
-     * Set Product title
+     * Set Product title.
      */
     public function setTitle(string $title): self
     {
@@ -43,7 +43,7 @@ class ProductInfo implements \JsonSerializable
     }
 
     /**
-     * Get Contains information about a product that can be paid with invoice
+     * Get Contains information about a product that can be paid with invoice.
      */
     public function getDescription(): FormattedText|null
     {
@@ -51,7 +51,7 @@ class ProductInfo implements \JsonSerializable
     }
 
     /**
-     * Set Contains information about a product that can be paid with invoice
+     * Set Contains information about a product that can be paid with invoice.
      */
     public function setDescription(FormattedText|null $description): self
     {
@@ -61,7 +61,7 @@ class ProductInfo implements \JsonSerializable
     }
 
     /**
-     * Get Product photo; may be null
+     * Get Product photo; may be null.
      */
     public function getPhoto(): Photo|null
     {
@@ -69,7 +69,7 @@ class ProductInfo implements \JsonSerializable
     }
 
     /**
-     * Set Product photo; may be null
+     * Set Product photo; may be null.
      */
     public function setPhoto(Photo|null $photo): self
     {

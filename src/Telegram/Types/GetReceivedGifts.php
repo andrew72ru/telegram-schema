@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns gifts received by the given user or chat
+ * Returns gifts received by the given user or chat.
  */
 class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Get Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function getBusinessConnectionId(): string
     {
@@ -54,7 +54,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request; for bots only
+     * Set Unique identifier of business connection on behalf of which to send the request; for bots only.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -64,7 +64,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the gift receiver
+     * Get Identifier of the gift receiver.
      */
     public function getOwnerId(): MessageSender|null
     {
@@ -72,7 +72,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the gift receiver
+     * Set Identifier of the gift receiver.
      */
     public function setOwnerId(MessageSender|null $ownerId): self
     {
@@ -82,7 +82,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to exclude gifts that aren't saved to the chat's profile page. Always true for gifts received by other users and channel chats without can_post_messages administrator right
+     * Get Pass true to exclude gifts that aren't saved to the chat's profile page. Always true for gifts received by other users and channel chats without can_post_messages administrator right.
      */
     public function getExcludeUnsaved(): bool
     {
@@ -90,7 +90,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to exclude gifts that aren't saved to the chat's profile page. Always true for gifts received by other users and channel chats without can_post_messages administrator right
+     * Set Pass true to exclude gifts that aren't saved to the chat's profile page. Always true for gifts received by other users and channel chats without can_post_messages administrator right.
      */
     public function setExcludeUnsaved(bool $excludeUnsaved): self
     {
@@ -100,7 +100,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to exclude gifts that are saved to the chat's profile page. Always false for gifts received by other users and channel chats without can_post_messages administrator right
+     * Get Pass true to exclude gifts that are saved to the chat's profile page. Always false for gifts received by other users and channel chats without can_post_messages administrator right.
      */
     public function getExcludeSaved(): bool
     {
@@ -108,7 +108,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to exclude gifts that are saved to the chat's profile page. Always false for gifts received by other users and channel chats without can_post_messages administrator right
+     * Set Pass true to exclude gifts that are saved to the chat's profile page. Always false for gifts received by other users and channel chats without can_post_messages administrator right.
      */
     public function setExcludeSaved(bool $excludeSaved): self
     {
@@ -118,7 +118,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to exclude gifts that can be purchased unlimited number of times
+     * Get Pass true to exclude gifts that can be purchased unlimited number of times.
      */
     public function getExcludeUnlimited(): bool
     {
@@ -126,7 +126,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to exclude gifts that can be purchased unlimited number of times
+     * Set Pass true to exclude gifts that can be purchased unlimited number of times.
      */
     public function setExcludeUnlimited(bool $excludeUnlimited): self
     {
@@ -136,7 +136,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to exclude gifts that can be purchased limited number of times
+     * Get Pass true to exclude gifts that can be purchased limited number of times.
      */
     public function getExcludeLimited(): bool
     {
@@ -144,7 +144,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to exclude gifts that can be purchased limited number of times
+     * Set Pass true to exclude gifts that can be purchased limited number of times.
      */
     public function setExcludeLimited(bool $excludeLimited): self
     {
@@ -154,7 +154,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to exclude upgraded gifts
+     * Get Pass true to exclude upgraded gifts.
      */
     public function getExcludeUpgraded(): bool
     {
@@ -162,7 +162,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to exclude upgraded gifts
+     * Set Pass true to exclude upgraded gifts.
      */
     public function setExcludeUpgraded(bool $excludeUpgraded): self
     {
@@ -172,7 +172,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to sort results by gift price instead of send date
+     * Get Pass true to sort results by gift price instead of send date.
      */
     public function getSortByPrice(): bool
     {
@@ -180,7 +180,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to sort results by gift price instead of send date
+     * Set Pass true to sort results by gift price instead of send date.
      */
     public function setSortByPrice(bool $sortByPrice): self
     {
@@ -190,7 +190,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -198,7 +198,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -208,7 +208,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -216,7 +216,7 @@ class GetReceivedGifts extends ReceivedGifts implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of gifts to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned objects is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The footer of a page @footer Footer
+ * The footer of a page @footer Footer.
  */
 class PageBlockFooter extends PageBlock implements \JsonSerializable
 {

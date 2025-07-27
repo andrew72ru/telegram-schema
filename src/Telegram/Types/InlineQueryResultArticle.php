@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to an article or web page
+ * Represents a link to an article or web page.
  */
 class InlineQueryResultArticle extends InlineQueryResult implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -39,7 +39,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -49,7 +49,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get URL of the result, if it exists
+     * Get URL of the result, if it exists.
      */
     public function getUrl(): string
     {
@@ -57,7 +57,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set URL of the result, if it exists
+     * Set URL of the result, if it exists.
      */
     public function setUrl(string $url): self
     {
@@ -67,7 +67,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Title of the result
+     * Get Title of the result.
      */
     public function getTitle(): string
     {
@@ -75,7 +75,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Title of the result
+     * Set Title of the result.
      */
     public function setTitle(string $title): self
     {
@@ -85,7 +85,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Represents a link to an article or web page
+     * Get Represents a link to an article or web page.
      */
     public function getDescription(): string
     {
@@ -93,7 +93,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Represents a link to an article or web page
+     * Set Represents a link to an article or web page.
      */
     public function setDescription(string $description): self
     {
@@ -103,7 +103,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Get Result thumbnail in JPEG format; may be null
+     * Get Result thumbnail in JPEG format; may be null.
      */
     public function getThumbnail(): Thumbnail|null
     {
@@ -111,7 +111,7 @@ class InlineQueryResultArticle extends InlineQueryResult implements \JsonSeriali
     }
 
     /**
-     * Set Result thumbnail in JPEG format; may be null
+     * Set Result thumbnail in JPEG format; may be null.
      */
     public function setThumbnail(Thumbnail|null $thumbnail): self
     {

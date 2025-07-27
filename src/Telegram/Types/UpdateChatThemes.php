@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of available chat themes has changed @chat_themes The new list of chat themes
+ * The list of available chat themes has changed @chat_themes The new list of chat themes.
  */
 class UpdateChatThemes extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a gift that can be sent to another user or channel chat
+ * Describes a gift that can be sent to another user or channel chat.
  */
 class Gift implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the gift
+     * Get Unique identifier of the gift.
      */
     public function getId(): int
     {
@@ -54,7 +54,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the gift
+     * Set Unique identifier of the gift.
      */
     public function setId(int $id): self
     {
@@ -64,7 +64,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get The sticker representing the gift
+     * Get The sticker representing the gift.
      */
     public function getSticker(): Sticker|null
     {
@@ -72,7 +72,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set The sticker representing the gift
+     * Set The sticker representing the gift.
      */
     public function setSticker(Sticker|null $sticker): self
     {
@@ -82,7 +82,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid for the gift
+     * Get Number of Telegram Stars that must be paid for the gift.
      */
     public function getStarCount(): int
     {
@@ -90,7 +90,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid for the gift
+     * Set Number of Telegram Stars that must be paid for the gift.
      */
     public function setStarCount(int $starCount): self
     {
@@ -100,7 +100,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed
+     * Get Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed.
      */
     public function getDefaultSellStarCount(): int
     {
@@ -108,7 +108,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed
+     * Set Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default. If the gift was paid with just bought Telegram Stars, then full value can be claimed.
      */
     public function setDefaultSellStarCount(int $defaultSellStarCount): self
     {
@@ -118,7 +118,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Number of Telegram Stars that must be paid to upgrade the gift; 0 if upgrade isn't possible
+     * Get Number of Telegram Stars that must be paid to upgrade the gift; 0 if upgrade isn't possible.
      */
     public function getUpgradeStarCount(): int
     {
@@ -126,7 +126,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Number of Telegram Stars that must be paid to upgrade the gift; 0 if upgrade isn't possible
+     * Set Number of Telegram Stars that must be paid to upgrade the gift; 0 if upgrade isn't possible.
      */
     public function setUpgradeStarCount(int $upgradeStarCount): self
     {
@@ -136,7 +136,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift is a birthday gift
+     * Get True, if the gift is a birthday gift.
      */
     public function getIsForBirthday(): bool
     {
@@ -144,7 +144,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift is a birthday gift
+     * Set True, if the gift is a birthday gift.
      */
     public function setIsForBirthday(bool $isForBirthday): self
     {
@@ -154,7 +154,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Number of remaining times the gift can be purchased; 0 if not limited or the gift was sold out
+     * Get Number of remaining times the gift can be purchased; 0 if not limited or the gift was sold out.
      */
     public function getRemainingCount(): int
     {
@@ -162,7 +162,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Number of remaining times the gift can be purchased; 0 if not limited or the gift was sold out
+     * Set Number of remaining times the gift can be purchased; 0 if not limited or the gift was sold out.
      */
     public function setRemainingCount(int $remainingCount): self
     {
@@ -172,7 +172,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Number of total times the gift can be purchased; 0 if not limited
+     * Get Number of total times the gift can be purchased; 0 if not limited.
      */
     public function getTotalCount(): int
     {
@@ -180,7 +180,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Number of total times the gift can be purchased; 0 if not limited
+     * Set Number of total times the gift can be purchased; 0 if not limited.
      */
     public function setTotalCount(int $totalCount): self
     {
@@ -190,7 +190,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the gift was send for the first time; for sold out gifts only
+     * Get Point in time (Unix timestamp) when the gift was send for the first time; for sold out gifts only.
      */
     public function getFirstSendDate(): int
     {
@@ -198,7 +198,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the gift was send for the first time; for sold out gifts only
+     * Set Point in time (Unix timestamp) when the gift was send for the first time; for sold out gifts only.
      */
     public function setFirstSendDate(int $firstSendDate): self
     {
@@ -208,7 +208,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the gift was send for the last time; for sold out gifts only
+     * Get Point in time (Unix timestamp) when the gift was send for the last time; for sold out gifts only.
      */
     public function getLastSendDate(): int
     {
@@ -216,7 +216,7 @@ class Gift implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the gift was send for the last time; for sold out gifts only
+     * Set Point in time (Unix timestamp) when the gift was send for the last time; for sold out gifts only.
      */
     public function setLastSendDate(int $lastSendDate): self
     {

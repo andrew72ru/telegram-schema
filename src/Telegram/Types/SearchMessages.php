@@ -40,7 +40,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported
+     * Get Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported.
      */
     public function getChatList(): ChatList|null
     {
@@ -48,7 +48,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported
+     * Set Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported.
      */
     public function setChatList(ChatList|null $chatList): self
     {
@@ -58,7 +58,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for
+     * Get Query to search for.
      */
     public function getQuery(): string
     {
@@ -66,7 +66,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for
+     * Set Query to search for.
      */
     public function setQuery(string $query): self
     {
@@ -76,7 +76,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -84,7 +84,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -94,7 +94,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -102,7 +102,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {
@@ -112,7 +112,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function
+     * Get Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -120,7 +120,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function
+     * Set Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {
@@ -130,7 +130,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Additional filter for type of the chat of the searched messages; pass null to search for messages in all chats
+     * Get Additional filter for type of the chat of the searched messages; pass null to search for messages in all chats.
      */
     public function getChatTypeFilter(): SearchMessagesChatTypeFilter|null
     {
@@ -138,7 +138,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Additional filter for type of the chat of the searched messages; pass null to search for messages in all chats
+     * Set Additional filter for type of the chat of the searched messages; pass null to search for messages in all chats.
      */
     public function setChatTypeFilter(SearchMessagesChatTypeFilter|null $chatTypeFilter): self
     {
@@ -148,7 +148,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the minimum date of the messages to return
+     * Get If not 0, the minimum date of the messages to return.
      */
     public function getMinDate(): int
     {
@@ -156,7 +156,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the minimum date of the messages to return
+     * Set If not 0, the minimum date of the messages to return.
      */
     public function setMinDate(int $minDate): self
     {
@@ -166,7 +166,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the maximum date of the messages to return
+     * Get If not 0, the maximum date of the messages to return.
      */
     public function getMaxDate(): int
     {
@@ -174,7 +174,7 @@ class SearchMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the maximum date of the messages to return
+     * Set If not 0, the maximum date of the messages to return.
      */
     public function setMaxDate(int $maxDate): self
     {

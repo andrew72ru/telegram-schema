@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An ordinary chat with a user @user_id User identifier
+ * An ordinary chat with a user @user_id User identifier.
  */
 class ChatTypePrivate extends ChatType implements \JsonSerializable
 {

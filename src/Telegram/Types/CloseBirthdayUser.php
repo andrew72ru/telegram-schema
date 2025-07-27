@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a user that had or will have a birthday soon @user_id User identifier @birthdate Birthdate of the user
+ * Describes a user that had or will have a birthday soon @user_id User identifier @birthdate Birthdate of the user.
  */
 class CloseBirthdayUser implements \JsonSerializable
 {

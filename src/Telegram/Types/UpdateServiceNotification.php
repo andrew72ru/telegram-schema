@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A service notification from the server was received. Upon receiving this the application must show a popup with the content of the notification
+ * A service notification from the server was received. Upon receiving this the application must show a popup with the content of the notification.
  */
 class UpdateServiceNotification extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateServiceNotification extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Notification type. If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" must be shown under notification; if user presses the second, all local data must be destroyed using Destroy method
+     * Get Notification type. If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" must be shown under notification; if user presses the second, all local data must be destroyed using Destroy method.
      */
     public function getType(): string
     {
@@ -30,7 +30,7 @@ class UpdateServiceNotification extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Notification type. If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" must be shown under notification; if user presses the second, all local data must be destroyed using Destroy method
+     * Set Notification type. If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" must be shown under notification; if user presses the second, all local data must be destroyed using Destroy method.
      */
     public function setType(string $type): self
     {
@@ -40,7 +40,7 @@ class UpdateServiceNotification extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Notification content
+     * Get Notification content.
      */
     public function getContent(): MessageContent|null
     {
@@ -48,7 +48,7 @@ class UpdateServiceNotification extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Notification content
+     * Set Notification content.
      */
     public function setContent(MessageContent|null $content): self
     {

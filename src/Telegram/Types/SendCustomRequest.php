@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a custom request; for bots only @method The method name @parameters JSON-serialized method parameters
+ * Sends a custom request; for bots only @method The method name @parameters JSON-serialized method parameters.
  */
 class SendCustomRequest extends CustomRequestResult implements \JsonSerializable
 {

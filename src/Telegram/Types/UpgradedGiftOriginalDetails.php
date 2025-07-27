@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes the original details about the gift
+ * Describes the original details about the gift.
  */
 class UpgradedGiftOriginalDetails implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the chat that sent the gift; may be null if the gift was private
+     * Get Identifier of the user or the chat that sent the gift; may be null if the gift was private.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -36,7 +36,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the chat that sent the gift; may be null if the gift was private
+     * Set Identifier of the user or the chat that sent the gift; may be null if the gift was private.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -46,7 +46,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user or the chat that received the gift
+     * Get Identifier of the user or the chat that received the gift.
      */
     public function getReceiverId(): MessageSender|null
     {
@@ -54,7 +54,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user or the chat that received the gift
+     * Set Identifier of the user or the chat that received the gift.
      */
     public function setReceiverId(MessageSender|null $receiverId): self
     {
@@ -64,7 +64,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Message added to the gift
+     * Get Message added to the gift.
      */
     public function getText(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Message added to the gift
+     * Set Message added to the gift.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -82,7 +82,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the gift was sent
+     * Get Point in time (Unix timestamp) when the gift was sent.
      */
     public function getDate(): int
     {
@@ -90,7 +90,7 @@ class UpgradedGiftOriginalDetails implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the gift was sent
+     * Set Point in time (Unix timestamp) when the gift was sent.
      */
     public function setDate(int $date): self
     {

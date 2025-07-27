@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Loads quick reply messages that can be sent by a given quick reply shortcut. The loaded messages will be sent through updateQuickReplyShortcutMessages
+ * Loads quick reply messages that can be sent by a given quick reply shortcut. The loaded messages will be sent through updateQuickReplyShortcutMessages.
  */
 class LoadQuickReplyShortcutMessages extends Ok implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class LoadQuickReplyShortcutMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the quick reply shortcut
+     * Get Unique identifier of the quick reply shortcut.
      */
     public function getShortcutId(): int
     {
@@ -27,7 +27,7 @@ class LoadQuickReplyShortcutMessages extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the quick reply shortcut
+     * Set Unique identifier of the quick reply shortcut.
      */
     public function setShortcutId(int $shortcutId): self
     {

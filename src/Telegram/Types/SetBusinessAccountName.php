@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the first and last name of a business account; for bots only
+ * Changes the first and last name of a business account; for bots only.
  */
 class SetBusinessAccountName extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SetBusinessAccountName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection
+     * Get Unique identifier of business connection.
      */
     public function getBusinessConnectionId(): string
     {
@@ -33,7 +33,7 @@ class SetBusinessAccountName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection
+     * Set Unique identifier of business connection.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -43,7 +43,7 @@ class SetBusinessAccountName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new value of the first name for the business account; 1-64 characters
+     * Get The new value of the first name for the business account; 1-64 characters.
      */
     public function getFirstName(): string
     {
@@ -51,7 +51,7 @@ class SetBusinessAccountName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new value of the first name for the business account; 1-64 characters
+     * Set The new value of the first name for the business account; 1-64 characters.
      */
     public function setFirstName(string $firstName): self
     {
@@ -61,7 +61,7 @@ class SetBusinessAccountName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new value of the optional last name for the business account; 0-64 characters
+     * Get The new value of the optional last name for the business account; 0-64 characters.
      */
     public function getLastName(): string
     {
@@ -69,7 +69,7 @@ class SetBusinessAccountName extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new value of the optional last name for the business account; 0-64 characters
+     * Set The new value of the optional last name for the business account; 0-64 characters.
      */
     public function setLastName(string $lastName): self
     {

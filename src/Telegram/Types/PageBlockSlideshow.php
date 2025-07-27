@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A slideshow
+ * A slideshow.
  */
 class PageBlockSlideshow extends PageBlock implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PageBlockSlideshow extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Slideshow item contents
+     * Get Slideshow item contents.
      */
     public function getPageBlocks(): array|null
     {
@@ -30,7 +30,7 @@ class PageBlockSlideshow extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Slideshow item contents
+     * Set Slideshow item contents.
      */
     public function setPageBlocks(array|null $pageBlocks): self
     {
@@ -40,7 +40,7 @@ class PageBlockSlideshow extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Block caption
+     * Get Block caption.
      */
     public function getCaption(): PageBlockCaption|null
     {
@@ -48,7 +48,7 @@ class PageBlockSlideshow extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Block caption
+     * Set Block caption.
      */
     public function setCaption(PageBlockCaption|null $caption): self
     {

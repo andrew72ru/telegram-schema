@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of active stories posted by a specific chat has changed
+ * The list of active stories posted by a specific chat has changed.
  */
 class UpdateChatActiveStories extends Update implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class UpdateChatActiveStories extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new list of active stories
+     * Get The new list of active stories.
      */
     public function getActiveStories(): ChatActiveStories|null
     {
@@ -27,7 +27,7 @@ class UpdateChatActiveStories extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new list of active stories
+     * Set The new list of active stories.
      */
     public function setActiveStories(ChatActiveStories|null $activeStories): self
     {

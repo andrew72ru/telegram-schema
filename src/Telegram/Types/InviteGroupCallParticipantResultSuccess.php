@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user was invited and a service message of the type messageGroupCall was sent which can be used in declineGroupCallInvitation to cancel the invitation
+ * The user was invited and a service message of the type messageGroupCall was sent which can be used in declineGroupCallInvitation to cancel the invitation.
  */
 class InviteGroupCallParticipantResultSuccess extends InviteGroupCallParticipantResult implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InviteGroupCallParticipantResultSuccess extends InviteGroupCallParticipant
     }
 
     /**
-     * Get Identifier of the chat with the invitation message
+     * Get Identifier of the chat with the invitation message.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class InviteGroupCallParticipantResultSuccess extends InviteGroupCallParticipant
     }
 
     /**
-     * Set Identifier of the chat with the invitation message
+     * Set Identifier of the chat with the invitation message.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class InviteGroupCallParticipantResultSuccess extends InviteGroupCallParticipant
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -48,7 +48,7 @@ class InviteGroupCallParticipantResultSuccess extends InviteGroupCallParticipant
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {

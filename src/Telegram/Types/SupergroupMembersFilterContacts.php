@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns contacts of the user, which are members of the supergroup or channel @query Query to search for
+ * Returns contacts of the user, which are members of the supergroup or channel @query Query to search for.
  */
 class SupergroupMembersFilterContacts extends SupergroupMembersFilter implements \JsonSerializable
 {

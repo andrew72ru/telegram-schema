@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Writes a part of a generated file. This method is intended to be used only if the application has no direct access to TDLib's file system, because it is usually slower than a direct write to the destination file
+ * Writes a part of a generated file. This method is intended to be used only if the application has no direct access to TDLib's file system, because it is usually slower than a direct write to the destination file.
  */
 class WriteGeneratedFilePart extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class WriteGeneratedFilePart extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the generation process
+     * Get The identifier of the generation process.
      */
     public function getGenerationId(): int
     {
@@ -33,7 +33,7 @@ class WriteGeneratedFilePart extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the generation process
+     * Set The identifier of the generation process.
      */
     public function setGenerationId(int $generationId): self
     {
@@ -43,7 +43,7 @@ class WriteGeneratedFilePart extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The offset from which to write the data to the file
+     * Get The offset from which to write the data to the file.
      */
     public function getOffset(): int
     {
@@ -51,7 +51,7 @@ class WriteGeneratedFilePart extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The offset from which to write the data to the file
+     * Set The offset from which to write the data to the file.
      */
     public function setOffset(int $offset): self
     {
@@ -61,7 +61,7 @@ class WriteGeneratedFilePart extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The data to write
+     * Get The data to write.
      */
     public function getData(): string
     {
@@ -69,7 +69,7 @@ class WriteGeneratedFilePart extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The data to write
+     * Set The data to write.
      */
     public function setData(string $data): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A previously used profile photo of the current user @chat_photo_id Identifier of the current user's profile photo to reuse
+ * A previously used profile photo of the current user @chat_photo_id Identifier of the current user's profile photo to reuse.
  */
 class InputChatPhotoPrevious extends InputChatPhoto implements \JsonSerializable
 {

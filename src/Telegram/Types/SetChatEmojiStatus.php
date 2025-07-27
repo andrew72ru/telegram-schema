@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the emoji status of a chat. Use chatBoostLevelFeatures.can_set_emoji_status to check whether an emoji status can be set. Requires can_change_info administrator right
+ * Changes the emoji status of a chat. Use chatBoostLevelFeatures.can_set_emoji_status to check whether an emoji status can be set. Requires can_change_info administrator right.
  */
 class SetChatEmojiStatus extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetChatEmojiStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class SetChatEmojiStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class SetChatEmojiStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New emoji status; pass null to remove emoji status
+     * Get New emoji status; pass null to remove emoji status.
      */
     public function getEmojiStatus(): EmojiStatus|null
     {
@@ -48,7 +48,7 @@ class SetChatEmojiStatus extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New emoji status; pass null to remove emoji status
+     * Set New emoji status; pass null to remove emoji status.
      */
     public function setEmojiStatus(EmojiStatus|null $emojiStatus): self
     {

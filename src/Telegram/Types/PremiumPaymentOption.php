@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an option for buying Telegram Premium to a user
+ * Describes an option for buying Telegram Premium to a user.
  */
 class PremiumPaymentOption implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get ISO 4217 currency code for Telegram Premium subscription payment
+     * Get ISO 4217 currency code for Telegram Premium subscription payment.
      */
     public function getCurrency(): string
     {
@@ -42,7 +42,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set ISO 4217 currency code for Telegram Premium subscription payment
+     * Set ISO 4217 currency code for Telegram Premium subscription payment.
      */
     public function setCurrency(string $currency): self
     {
@@ -52,7 +52,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The amount to pay, in the smallest units of the currency
+     * Get The amount to pay, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -60,7 +60,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The amount to pay, in the smallest units of the currency
+     * Set The amount to pay, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -70,7 +70,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get The discount associated with this option, as a percentage
+     * Get The discount associated with this option, as a percentage.
      */
     public function getDiscountPercentage(): int
     {
@@ -78,7 +78,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set The discount associated with this option, as a percentage
+     * Set The discount associated with this option, as a percentage.
      */
     public function setDiscountPercentage(int $discountPercentage): self
     {
@@ -88,7 +88,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active. Use getPremiumInfoSticker to get the sticker to be used as representation of the Telegram Premium subscription
+     * Get Number of months the Telegram Premium subscription will be active. Use getPremiumInfoSticker to get the sticker to be used as representation of the Telegram Premium subscription.
      */
     public function getMonthCount(): int
     {
@@ -96,7 +96,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active. Use getPremiumInfoSticker to get the sticker to be used as representation of the Telegram Premium subscription
+     * Set Number of months the Telegram Premium subscription will be active. Use getPremiumInfoSticker to get the sticker to be used as representation of the Telegram Premium subscription.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -106,7 +106,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the store product associated with the option
+     * Get Identifier of the store product associated with the option.
      */
     public function getStoreProductId(): string
     {
@@ -114,7 +114,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the store product associated with the option
+     * Set Identifier of the store product associated with the option.
      */
     public function setStoreProductId(string $storeProductId): self
     {
@@ -124,7 +124,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Get An internal link to be opened for buying Telegram Premium to the user if store payment isn't possible; may be null if direct payment isn't available
+     * Get An internal link to be opened for buying Telegram Premium to the user if store payment isn't possible; may be null if direct payment isn't available.
      */
     public function getPaymentLink(): InternalLinkType|null
     {
@@ -132,7 +132,7 @@ class PremiumPaymentOption implements \JsonSerializable
     }
 
     /**
-     * Set An internal link to be opened for buying Telegram Premium to the user if store payment isn't possible; may be null if direct payment isn't available
+     * Set An internal link to be opened for buying Telegram Premium to the user if store payment isn't possible; may be null if direct payment isn't available.
      */
     public function setPaymentLink(InternalLinkType|null $paymentLink): self
     {

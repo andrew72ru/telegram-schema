@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat. (Can be a private chat, basic group, supergroup, or secret chat)
+ * A chat. (Can be a private chat, basic group, supergroup, or secret chat).
  */
 class Chat implements \JsonSerializable
 {
@@ -139,7 +139,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Chat unique identifier
+     * Get Chat unique identifier.
      */
     public function getId(): int
     {
@@ -147,7 +147,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Chat unique identifier
+     * Set Chat unique identifier.
      */
     public function setId(int $id): self
     {
@@ -157,7 +157,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Type of the chat
+     * Get Type of the chat.
      */
     public function getType(): ChatType|null
     {
@@ -165,7 +165,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Type of the chat
+     * Set Type of the chat.
      */
     public function setType(ChatType|null $type): self
     {
@@ -175,7 +175,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Chat title
+     * Get Chat title.
      */
     public function getTitle(): string
     {
@@ -183,7 +183,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Chat title
+     * Set Chat title.
      */
     public function setTitle(string $title): self
     {
@@ -193,7 +193,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Chat photo; may be null
+     * Get Chat photo; may be null.
      */
     public function getPhoto(): ChatPhotoInfo|null
     {
@@ -201,7 +201,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Chat photo; may be null
+     * Set Chat photo; may be null.
      */
     public function setPhoto(ChatPhotoInfo|null $photo): self
     {
@@ -211,7 +211,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color for message sender name, and backgrounds of chat photo, reply header, and link preview
+     * Get Identifier of the accent color for message sender name, and backgrounds of chat photo, reply header, and link preview.
      */
     public function getAccentColorId(): int
     {
@@ -219,7 +219,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color for message sender name, and backgrounds of chat photo, reply header, and link preview
+     * Set Identifier of the accent color for message sender name, and backgrounds of chat photo, reply header, and link preview.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -229,7 +229,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the reply header and link preview background for messages sent by the chat; 0 if none
+     * Get Identifier of a custom emoji to be shown on the reply header and link preview background for messages sent by the chat; 0 if none.
      */
     public function getBackgroundCustomEmojiId(): int
     {
@@ -237,7 +237,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the reply header and link preview background for messages sent by the chat; 0 if none
+     * Set Identifier of a custom emoji to be shown on the reply header and link preview background for messages sent by the chat; 0 if none.
      */
     public function setBackgroundCustomEmojiId(int $backgroundCustomEmojiId): self
     {
@@ -247,7 +247,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the profile accent color for the chat's profile; -1 if none
+     * Get Identifier of the profile accent color for the chat's profile; -1 if none.
      */
     public function getProfileAccentColorId(): int
     {
@@ -255,7 +255,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the profile accent color for the chat's profile; -1 if none
+     * Set Identifier of the profile accent color for the chat's profile; -1 if none.
      */
     public function setProfileAccentColorId(int $profileAccentColorId): self
     {
@@ -265,7 +265,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the background of the chat's profile; 0 if none
+     * Get Identifier of a custom emoji to be shown on the background of the chat's profile; 0 if none.
      */
     public function getProfileBackgroundCustomEmojiId(): int
     {
@@ -273,7 +273,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the background of the chat's profile; 0 if none
+     * Set Identifier of a custom emoji to be shown on the background of the chat's profile; 0 if none.
      */
     public function setProfileBackgroundCustomEmojiId(int $profileBackgroundCustomEmojiId): self
     {
@@ -283,7 +283,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Actions that non-administrator chat members are allowed to take in the chat
+     * Get Actions that non-administrator chat members are allowed to take in the chat.
      */
     public function getPermissions(): ChatPermissions|null
     {
@@ -291,7 +291,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Actions that non-administrator chat members are allowed to take in the chat
+     * Set Actions that non-administrator chat members are allowed to take in the chat.
      */
     public function setPermissions(ChatPermissions|null $permissions): self
     {
@@ -301,7 +301,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Last message in the chat; may be null if none or unknown
+     * Get Last message in the chat; may be null if none or unknown.
      */
     public function getLastMessage(): Message|null
     {
@@ -309,7 +309,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Last message in the chat; may be null if none or unknown
+     * Set Last message in the chat; may be null if none or unknown.
      */
     public function setLastMessage(Message|null $lastMessage): self
     {
@@ -319,7 +319,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Positions of the chat in chat lists
+     * Get Positions of the chat in chat lists.
      */
     public function getPositions(): array|null
     {
@@ -327,7 +327,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Positions of the chat in chat lists
+     * Set Positions of the chat in chat lists.
      */
     public function setPositions(array|null $positions): self
     {
@@ -337,7 +337,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Chat lists to which the chat belongs. A chat can have a non-zero position in a chat list even if it doesn't belong to the chat list and have no position in a chat list even if it belongs to the chat list
+     * Get Chat lists to which the chat belongs. A chat can have a non-zero position in a chat list even if it doesn't belong to the chat list and have no position in a chat list even if it belongs to the chat list.
      */
     public function getChatLists(): array|null
     {
@@ -345,7 +345,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Chat lists to which the chat belongs. A chat can have a non-zero position in a chat list even if it doesn't belong to the chat list and have no position in a chat list even if it belongs to the chat list
+     * Set Chat lists to which the chat belongs. A chat can have a non-zero position in a chat list even if it doesn't belong to the chat list and have no position in a chat list even if it belongs to the chat list.
      */
     public function setChatLists(array|null $chatLists): self
     {
@@ -355,7 +355,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a user or chat that is selected to send messages in the chat; may be null if the user can't change message sender
+     * Get Identifier of a user or chat that is selected to send messages in the chat; may be null if the user can't change message sender.
      */
     public function getMessageSenderId(): MessageSender|null
     {
@@ -363,7 +363,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a user or chat that is selected to send messages in the chat; may be null if the user can't change message sender
+     * Set Identifier of a user or chat that is selected to send messages in the chat; may be null if the user can't change message sender.
      */
     public function setMessageSenderId(MessageSender|null $messageSenderId): self
     {
@@ -373,7 +373,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Block list to which the chat is added; may be null if none
+     * Get Block list to which the chat is added; may be null if none.
      */
     public function getBlockList(): BlockList|null
     {
@@ -381,7 +381,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Block list to which the chat is added; may be null if none
+     * Set Block list to which the chat is added; may be null if none.
      */
     public function setBlockList(BlockList|null $blockList): self
     {
@@ -391,7 +391,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if chat content can't be saved locally, forwarded, or copied
+     * Get True, if chat content can't be saved locally, forwarded, or copied.
      */
     public function getHasProtectedContent(): bool
     {
@@ -399,7 +399,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if chat content can't be saved locally, forwarded, or copied
+     * Set True, if chat content can't be saved locally, forwarded, or copied.
      */
     public function setHasProtectedContent(bool $hasProtectedContent): self
     {
@@ -409,7 +409,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if translation of all messages in the chat must be suggested to the user
+     * Get True, if translation of all messages in the chat must be suggested to the user.
      */
     public function getIsTranslatable(): bool
     {
@@ -417,7 +417,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if translation of all messages in the chat must be suggested to the user
+     * Set True, if translation of all messages in the chat must be suggested to the user.
      */
     public function setIsTranslatable(bool $isTranslatable): self
     {
@@ -427,7 +427,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat is marked as unread
+     * Get True, if the chat is marked as unread.
      */
     public function getIsMarkedAsUnread(): bool
     {
@@ -435,7 +435,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat is marked as unread
+     * Set True, if the chat is marked as unread.
      */
     public function setIsMarkedAsUnread(bool $isMarkedAsUnread): self
     {
@@ -445,7 +445,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat is a forum supergroup that must be shown in the "View as topics" mode, or Saved Messages chat that must be shown in the "View as chats"
+     * Get True, if the chat is a forum supergroup that must be shown in the "View as topics" mode, or Saved Messages chat that must be shown in the "View as chats".
      */
     public function getViewAsTopics(): bool
     {
@@ -453,7 +453,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat is a forum supergroup that must be shown in the "View as topics" mode, or Saved Messages chat that must be shown in the "View as chats"
+     * Set True, if the chat is a forum supergroup that must be shown in the "View as topics" mode, or Saved Messages chat that must be shown in the "View as chats".
      */
     public function setViewAsTopics(bool $viewAsTopics): self
     {
@@ -463,7 +463,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat has scheduled messages
+     * Get True, if the chat has scheduled messages.
      */
     public function getHasScheduledMessages(): bool
     {
@@ -471,7 +471,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat has scheduled messages
+     * Set True, if the chat has scheduled messages.
      */
     public function setHasScheduledMessages(bool $hasScheduledMessages): self
     {
@@ -481,7 +481,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat messages can be deleted only for the current user while other users will continue to see the messages
+     * Get True, if the chat messages can be deleted only for the current user while other users will continue to see the messages.
      */
     public function getCanBeDeletedOnlyForSelf(): bool
     {
@@ -489,7 +489,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat messages can be deleted only for the current user while other users will continue to see the messages
+     * Set True, if the chat messages can be deleted only for the current user while other users will continue to see the messages.
      */
     public function setCanBeDeletedOnlyForSelf(bool $canBeDeletedOnlyForSelf): self
     {
@@ -499,7 +499,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat messages can be deleted for all users
+     * Get True, if the chat messages can be deleted for all users.
      */
     public function getCanBeDeletedForAllUsers(): bool
     {
@@ -507,7 +507,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat messages can be deleted for all users
+     * Set True, if the chat messages can be deleted for all users.
      */
     public function setCanBeDeletedForAllUsers(bool $canBeDeletedForAllUsers): self
     {
@@ -517,7 +517,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat can be reported to Telegram moderators through reportChat or reportChatPhoto
+     * Get True, if the chat can be reported to Telegram moderators through reportChat or reportChatPhoto.
      */
     public function getCanBeReported(): bool
     {
@@ -525,7 +525,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat can be reported to Telegram moderators through reportChat or reportChatPhoto
+     * Set True, if the chat can be reported to Telegram moderators through reportChat or reportChatPhoto.
      */
     public function setCanBeReported(bool $canBeReported): self
     {
@@ -535,7 +535,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Default value of the disable_notification parameter, used when a message is sent to the chat
+     * Get Default value of the disable_notification parameter, used when a message is sent to the chat.
      */
     public function getDefaultDisableNotification(): bool
     {
@@ -543,7 +543,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Default value of the disable_notification parameter, used when a message is sent to the chat
+     * Set Default value of the disable_notification parameter, used when a message is sent to the chat.
      */
     public function setDefaultDisableNotification(bool $defaultDisableNotification): self
     {
@@ -553,7 +553,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Number of unread messages in the chat
+     * Get Number of unread messages in the chat.
      */
     public function getUnreadCount(): int
     {
@@ -561,7 +561,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Number of unread messages in the chat
+     * Set Number of unread messages in the chat.
      */
     public function setUnreadCount(int $unreadCount): self
     {
@@ -571,7 +571,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read incoming message
+     * Get Identifier of the last read incoming message.
      */
     public function getLastReadInboxMessageId(): int
     {
@@ -579,7 +579,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read incoming message
+     * Set Identifier of the last read incoming message.
      */
     public function setLastReadInboxMessageId(int $lastReadInboxMessageId): self
     {
@@ -589,7 +589,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the last read outgoing message
+     * Get Identifier of the last read outgoing message.
      */
     public function getLastReadOutboxMessageId(): int
     {
@@ -597,7 +597,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the last read outgoing message
+     * Set Identifier of the last read outgoing message.
      */
     public function setLastReadOutboxMessageId(int $lastReadOutboxMessageId): self
     {
@@ -607,7 +607,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Number of unread messages with a mention/reply in the chat
+     * Get Number of unread messages with a mention/reply in the chat.
      */
     public function getUnreadMentionCount(): int
     {
@@ -615,7 +615,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Number of unread messages with a mention/reply in the chat
+     * Set Number of unread messages with a mention/reply in the chat.
      */
     public function setUnreadMentionCount(int $unreadMentionCount): self
     {
@@ -625,7 +625,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Number of messages with unread reactions in the chat
+     * Get Number of messages with unread reactions in the chat.
      */
     public function getUnreadReactionCount(): int
     {
@@ -633,7 +633,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Number of messages with unread reactions in the chat
+     * Set Number of messages with unread reactions in the chat.
      */
     public function setUnreadReactionCount(int $unreadReactionCount): self
     {
@@ -643,7 +643,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Notification settings for the chat
+     * Get Notification settings for the chat.
      */
     public function getNotificationSettings(): ChatNotificationSettings|null
     {
@@ -651,7 +651,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Notification settings for the chat
+     * Set Notification settings for the chat.
      */
     public function setNotificationSettings(ChatNotificationSettings|null $notificationSettings): self
     {
@@ -661,7 +661,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Types of reaction, available in the chat
+     * Get Types of reaction, available in the chat.
      */
     public function getAvailableReactions(): ChatAvailableReactions|null
     {
@@ -669,7 +669,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Types of reaction, available in the chat
+     * Set Types of reaction, available in the chat.
      */
     public function setAvailableReactions(ChatAvailableReactions|null $availableReactions): self
     {
@@ -679,7 +679,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled. Self-destruct timer in secret chats starts after the message or its content is viewed. Auto-delete timer in other chats starts from the send date
+     * Get Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled. Self-destruct timer in secret chats starts after the message or its content is viewed. Auto-delete timer in other chats starts from the send date.
      */
     public function getMessageAutoDeleteTime(): int
     {
@@ -687,7 +687,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled. Self-destruct timer in secret chats starts after the message or its content is viewed. Auto-delete timer in other chats starts from the send date
+     * Set Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled. Self-destruct timer in secret chats starts after the message or its content is viewed. Auto-delete timer in other chats starts from the send date.
      */
     public function setMessageAutoDeleteTime(int $messageAutoDeleteTime): self
     {
@@ -697,7 +697,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Emoji status to be shown along with chat title; may be null
+     * Get Emoji status to be shown along with chat title; may be null.
      */
     public function getEmojiStatus(): EmojiStatus|null
     {
@@ -705,7 +705,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Emoji status to be shown along with chat title; may be null
+     * Set Emoji status to be shown along with chat title; may be null.
      */
     public function setEmojiStatus(EmojiStatus|null $emojiStatus): self
     {
@@ -715,7 +715,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Background set for the chat; may be null if none
+     * Get Background set for the chat; may be null if none.
      */
     public function getBackground(): ChatBackground|null
     {
@@ -723,7 +723,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Background set for the chat; may be null if none
+     * Set Background set for the chat; may be null if none.
      */
     public function setBackground(ChatBackground|null $background): self
     {
@@ -733,7 +733,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get If non-empty, name of a theme, set for the chat
+     * Get If non-empty, name of a theme, set for the chat.
      */
     public function getThemeName(): string
     {
@@ -741,7 +741,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set If non-empty, name of a theme, set for the chat
+     * Set If non-empty, name of a theme, set for the chat.
      */
     public function setThemeName(string $themeName): self
     {
@@ -751,7 +751,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Information about actions which must be possible to do through the chat action bar; may be null if none
+     * Get Information about actions which must be possible to do through the chat action bar; may be null if none.
      */
     public function getActionBar(): ChatActionBar|null
     {
@@ -759,7 +759,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Information about actions which must be possible to do through the chat action bar; may be null if none
+     * Set Information about actions which must be possible to do through the chat action bar; may be null if none.
      */
     public function setActionBar(ChatActionBar|null $actionBar): self
     {
@@ -769,7 +769,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Information about bar for managing a business bot in the chat; may be null if none
+     * Get Information about bar for managing a business bot in the chat; may be null if none.
      */
     public function getBusinessBotManageBar(): BusinessBotManageBar|null
     {
@@ -777,7 +777,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Information about bar for managing a business bot in the chat; may be null if none
+     * Set Information about bar for managing a business bot in the chat; may be null if none.
      */
     public function setBusinessBotManageBar(BusinessBotManageBar|null $businessBotManageBar): self
     {
@@ -787,7 +787,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Information about video chat of the chat
+     * Get Information about video chat of the chat.
      */
     public function getVideoChat(): VideoChat|null
     {
@@ -795,7 +795,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Information about video chat of the chat
+     * Set Information about video chat of the chat.
      */
     public function setVideoChat(VideoChat|null $videoChat): self
     {
@@ -805,7 +805,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Information about pending join requests; may be null if none
+     * Get Information about pending join requests; may be null if none.
      */
     public function getPendingJoinRequests(): ChatJoinRequestsInfo|null
     {
@@ -813,7 +813,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Information about pending join requests; may be null if none
+     * Set Information about pending join requests; may be null if none.
      */
     public function setPendingJoinRequests(ChatJoinRequestsInfo|null $pendingJoinRequests): self
     {
@@ -823,7 +823,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message from which reply markup needs to be used; 0 if there is no default custom reply markup in the chat
+     * Get Identifier of the message from which reply markup needs to be used; 0 if there is no default custom reply markup in the chat.
      */
     public function getReplyMarkupMessageId(): int
     {
@@ -831,7 +831,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message from which reply markup needs to be used; 0 if there is no default custom reply markup in the chat
+     * Set Identifier of the message from which reply markup needs to be used; 0 if there is no default custom reply markup in the chat.
      */
     public function setReplyMarkupMessageId(int $replyMarkupMessageId): self
     {
@@ -841,7 +841,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get A draft of a message in the chat; may be null if none
+     * Get A draft of a message in the chat; may be null if none.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -849,7 +849,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set A draft of a message in the chat; may be null if none
+     * Set A draft of a message in the chat; may be null if none.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {
@@ -859,7 +859,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Get Application-specific data associated with the chat. (For example, the chat scroll position or local chat notification settings can be stored here.) Persistent if the message database is used
+     * Get Application-specific data associated with the chat. (For example, the chat scroll position or local chat notification settings can be stored here.) Persistent if the message database is used.
      */
     public function getClientData(): string
     {
@@ -867,7 +867,7 @@ class Chat implements \JsonSerializable
     }
 
     /**
-     * Set Application-specific data associated with the chat. (For example, the chat scroll position or local chat notification settings can be stored here.) Persistent if the message database is used
+     * Set Application-specific data associated with the chat. (For example, the chat scroll position or local chat notification settings can be stored here.) Persistent if the message database is used.
      */
     public function setClientData(string $clientData): self
     {

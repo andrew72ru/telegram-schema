@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a link to a WEBP, TGS, or WEBM sticker
+ * Represents a link to a WEBP, TGS, or WEBM sticker.
  */
 class InputInlineQueryResultSticker extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -45,7 +45,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -55,7 +55,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get URL of the sticker thumbnail, if it exists
+     * Get URL of the sticker thumbnail, if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -63,7 +63,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set URL of the sticker thumbnail, if it exists
+     * Set URL of the sticker thumbnail, if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -73,7 +73,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get The URL of the WEBP, TGS, or WEBM sticker (sticker file size must not exceed 5MB)
+     * Get The URL of the WEBP, TGS, or WEBM sticker (sticker file size must not exceed 5MB).
      */
     public function getStickerUrl(): string
     {
@@ -81,7 +81,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set The URL of the WEBP, TGS, or WEBM sticker (sticker file size must not exceed 5MB)
+     * Set The URL of the WEBP, TGS, or WEBM sticker (sticker file size must not exceed 5MB).
      */
     public function setStickerUrl(string $stickerUrl): self
     {
@@ -91,7 +91,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get Width of the sticker
+     * Get Width of the sticker.
      */
     public function getStickerWidth(): int
     {
@@ -99,7 +99,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set Width of the sticker
+     * Set Width of the sticker.
      */
     public function setStickerWidth(int $stickerWidth): self
     {
@@ -109,7 +109,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get Height of the sticker
+     * Get Height of the sticker.
      */
     public function getStickerHeight(): int
     {
@@ -117,7 +117,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set Height of the sticker
+     * Set Height of the sticker.
      */
     public function setStickerHeight(int $stickerHeight): self
     {
@@ -127,7 +127,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -135,7 +135,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -145,7 +145,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageSticker, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageSticker, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -153,7 +153,7 @@ class InputInlineQueryResultSticker extends InputInlineQueryResult implements \J
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageSticker, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageSticker, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

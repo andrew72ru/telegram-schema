@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a message that can be used for quick reply
+ * Describes a message that can be used for quick reply.
  */
 class QuickReplyMessage implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get Unique message identifier among all quick replies
+     * Get Unique message identifier among all quick replies.
      */
     public function getId(): int
     {
@@ -48,7 +48,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set Unique message identifier among all quick replies
+     * Set Unique message identifier among all quick replies.
      */
     public function setId(int $id): self
     {
@@ -58,7 +58,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent
+     * Get The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent.
      */
     public function getSendingState(): MessageSendingState|null
     {
@@ -66,7 +66,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent
+     * Set The sending state of the message; may be null if the message isn't being sent and didn't fail to be sent.
      */
     public function setSendingState(MessageSendingState|null $sendingState): self
     {
@@ -76,7 +76,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get True, if the message can be edited
+     * Get True, if the message can be edited.
      */
     public function getCanBeEdited(): bool
     {
@@ -84,7 +84,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set True, if the message can be edited
+     * Set True, if the message can be edited.
      */
     public function setCanBeEdited(bool $canBeEdited): self
     {
@@ -94,7 +94,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get The identifier of the quick reply message to which the message replies; 0 if none
+     * Get The identifier of the quick reply message to which the message replies; 0 if none.
      */
     public function getReplyToMessageId(): int
     {
@@ -102,7 +102,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set The identifier of the quick reply message to which the message replies; 0 if none
+     * Set The identifier of the quick reply message to which the message replies; 0 if none.
      */
     public function setReplyToMessageId(int $replyToMessageId): self
     {
@@ -112,7 +112,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get If non-zero, the user identifier of the bot through which this message was sent
+     * Get If non-zero, the user identifier of the bot through which this message was sent.
      */
     public function getViaBotUserId(): int
     {
@@ -120,7 +120,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set If non-zero, the user identifier of the bot through which this message was sent
+     * Set If non-zero, the user identifier of the bot through which this message was sent.
      */
     public function setViaBotUserId(int $viaBotUserId): self
     {
@@ -130,7 +130,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums
+     * Get Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums.
      */
     public function getMediaAlbumId(): int
     {
@@ -138,7 +138,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums
+     * Set Unique identifier of an album this message belongs to; 0 if none. Only audios, documents, photos and videos can be grouped together in albums.
      */
     public function setMediaAlbumId(int $mediaAlbumId): self
     {
@@ -148,7 +148,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get Content of the message
+     * Get Content of the message.
      */
     public function getContent(): MessageContent|null
     {
@@ -156,7 +156,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set Content of the message
+     * Set Content of the message.
      */
     public function setContent(MessageContent|null $content): self
     {
@@ -166,7 +166,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Get Inline keyboard reply markup for the message; may be null if none
+     * Get Inline keyboard reply markup for the message; may be null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -174,7 +174,7 @@ class QuickReplyMessage implements \JsonSerializable
     }
 
     /**
-     * Set Inline keyboard reply markup for the message; may be null if none
+     * Set Inline keyboard reply markup for the message; may be null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

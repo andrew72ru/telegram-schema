@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user joins a chat and subscribes to regular payments in Telegram Stars @invite_link Invite link to use
+ * The user joins a chat and subscribes to regular payments in Telegram Stars @invite_link Invite link to use.
  */
 class TelegramPaymentPurposeJoinChat extends TelegramPaymentPurpose implements \JsonSerializable
 {

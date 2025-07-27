@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Cancels or re-enables Telegram Star subscription
+ * Cancels or re-enables Telegram Star subscription.
  */
 class EditStarSubscription extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class EditStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the subscription to change
+     * Get Identifier of the subscription to change.
      */
     public function getSubscriptionId(): string
     {
@@ -30,7 +30,7 @@ class EditStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the subscription to change
+     * Set Identifier of the subscription to change.
      */
     public function setSubscriptionId(string $subscriptionId): self
     {
@@ -40,7 +40,7 @@ class EditStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New value of is_canceled
+     * Get New value of is_canceled.
      */
     public function getIsCanceled(): bool
     {
@@ -48,7 +48,7 @@ class EditStarSubscription extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New value of is_canceled
+     * Set New value of is_canceled.
      */
     public function setIsCanceled(bool $isCanceled): self
     {

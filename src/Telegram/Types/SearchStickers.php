@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for stickers from public sticker sets that correspond to any of the given emoji
+ * Searches for stickers from public sticker sets that correspond to any of the given emoji.
  */
 class SearchStickers extends Stickers implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Type of the stickers to return
+     * Get Type of the stickers to return.
      */
     public function getStickerType(): StickerType|null
     {
@@ -42,7 +42,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Type of the stickers to return
+     * Set Type of the stickers to return.
      */
     public function setStickerType(StickerType|null $stickerType): self
     {
@@ -52,7 +52,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Space-separated list of emojis to search for
+     * Get Space-separated list of emojis to search for.
      */
     public function getEmojis(): string
     {
@@ -60,7 +60,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Space-separated list of emojis to search for
+     * Set Space-separated list of emojis to search for.
      */
     public function setEmojis(string $emojis): self
     {
@@ -70,7 +70,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for; may be empty to search for emoji only
+     * Get Query to search for; may be empty to search for emoji only.
      */
     public function getQuery(): string
     {
@@ -78,7 +78,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for; may be empty to search for emoji only
+     * Set Query to search for; may be empty to search for emoji only.
      */
     public function setQuery(string $query): self
     {
@@ -88,7 +88,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get List of possible IETF language tags of the user's input language; may be empty if unknown
+     * Get List of possible IETF language tags of the user's input language; may be empty if unknown.
      */
     public function getInputLanguageCodes(): array|null
     {
@@ -96,7 +96,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set List of possible IETF language tags of the user's input language; may be empty if unknown
+     * Set List of possible IETF language tags of the user's input language; may be empty if unknown.
      */
     public function setInputLanguageCodes(array|null $inputLanguageCodes): self
     {
@@ -106,7 +106,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get The offset from which to return the stickers; must be non-negative
+     * Get The offset from which to return the stickers; must be non-negative.
      */
     public function getOffset(): int
     {
@@ -114,7 +114,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set The offset from which to return the stickers; must be non-negative
+     * Set The offset from which to return the stickers; must be non-negative.
      */
     public function setOffset(int $offset): self
     {
@@ -124,7 +124,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of stickers to be returned; 0-100
+     * Get The maximum number of stickers to be returned; 0-100.
      */
     public function getLimit(): int
     {
@@ -132,7 +132,7 @@ class SearchStickers extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of stickers to be returned; 0-100
+     * Set The maximum number of stickers to be returned; 0-100.
      */
     public function setLimit(int $limit): self
     {

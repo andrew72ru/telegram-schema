@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a chat to a chat list. A chat can't be simultaneously in Main and Archive chat lists, so it is automatically removed from another one if needed
+ * Adds a chat to a chat list. A chat can't be simultaneously in Main and Archive chat lists, so it is automatically removed from another one if needed.
  */
 class AddChatToList extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AddChatToList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class AddChatToList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class AddChatToList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The chat list. Use getChatListsToAddChat to get suitable chat lists
+     * Get The chat list. Use getChatListsToAddChat to get suitable chat lists.
      */
     public function getChatList(): ChatList|null
     {
@@ -48,7 +48,7 @@ class AddChatToList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The chat list. Use getChatListsToAddChat to get suitable chat lists
+     * Set The chat list. Use getChatListsToAddChat to get suitable chat lists.
      */
     public function setChatList(ChatList|null $chatList): self
     {

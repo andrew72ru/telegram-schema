@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An area pointing to a HTTP or tg:// link
+ * An area pointing to a HTTP or tg:// link.
  */
 class InputStoryAreaTypeLink extends InputStoryAreaType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class InputStoryAreaTypeLink extends InputStoryAreaType implements \JsonSerializ
     }
 
     /**
-     * Get HTTP or tg:// URL to be opened when the area is clicked
+     * Get HTTP or tg:// URL to be opened when the area is clicked.
      */
     public function getUrl(): string
     {
@@ -27,7 +27,7 @@ class InputStoryAreaTypeLink extends InputStoryAreaType implements \JsonSerializ
     }
 
     /**
-     * Set HTTP or tg:// URL to be opened when the area is clicked
+     * Set HTTP or tg:// URL to be opened when the area is clicked.
      */
     public function setUrl(string $url): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forward of the story as a message @message The message with story forward
+ * A forward of the story as a message @message The message with story forward.
  */
 class StoryInteractionTypeForward extends StoryInteractionType implements \JsonSerializable
 {

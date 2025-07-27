@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a user profile photo
+ * Describes a user profile photo.
  */
 class ProfilePhoto implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Get Photo identifier; 0 for an empty photo. Can be used to find a photo in a list of user profile photos
+     * Get Photo identifier; 0 for an empty photo. Can be used to find a photo in a list of user profile photos.
      */
     public function getId(): int
     {
@@ -42,7 +42,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Set Photo identifier; 0 for an empty photo. Can be used to find a photo in a list of user profile photos
+     * Set Photo identifier; 0 for an empty photo. Can be used to find a photo in a list of user profile photos.
      */
     public function setId(int $id): self
     {
@@ -52,7 +52,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Get A small (160x160) user profile photo. The file can be downloaded only before the photo is changed
+     * Get A small (160x160) user profile photo. The file can be downloaded only before the photo is changed.
      */
     public function getSmall(): File|null
     {
@@ -60,7 +60,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Set A small (160x160) user profile photo. The file can be downloaded only before the photo is changed
+     * Set A small (160x160) user profile photo. The file can be downloaded only before the photo is changed.
      */
     public function setSmall(File|null $small): self
     {
@@ -70,7 +70,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Get A big (640x640) user profile photo. The file can be downloaded only before the photo is changed
+     * Get A big (640x640) user profile photo. The file can be downloaded only before the photo is changed.
      */
     public function getBig(): File|null
     {
@@ -78,7 +78,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Set A big (640x640) user profile photo. The file can be downloaded only before the photo is changed
+     * Set A big (640x640) user profile photo. The file can be downloaded only before the photo is changed.
      */
     public function setBig(File|null $big): self
     {
@@ -88,7 +88,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Get User profile photo minithumbnail; may be null
+     * Get User profile photo minithumbnail; may be null.
      */
     public function getMinithumbnail(): Minithumbnail|null
     {
@@ -96,7 +96,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Set User profile photo minithumbnail; may be null
+     * Set User profile photo minithumbnail; may be null.
      */
     public function setMinithumbnail(Minithumbnail|null $minithumbnail): self
     {
@@ -106,7 +106,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo has animated variant
+     * Get True, if the photo has animated variant.
      */
     public function getHasAnimation(): bool
     {
@@ -114,7 +114,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo has animated variant
+     * Set True, if the photo has animated variant.
      */
     public function setHasAnimation(bool $hasAnimation): self
     {
@@ -124,7 +124,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Get True, if the photo is visible only for the current user
+     * Get True, if the photo is visible only for the current user.
      */
     public function getIsPersonal(): bool
     {
@@ -132,7 +132,7 @@ class ProfilePhoto implements \JsonSerializable
     }
 
     /**
-     * Set True, if the photo is visible only for the current user
+     * Set True, if the photo is visible only for the current user.
      */
     public function setIsPersonal(bool $isPersonal): self
     {

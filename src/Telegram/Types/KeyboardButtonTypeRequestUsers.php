@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A button that requests users to be shared by the current user; available only in private chats. Use the method shareUsersWithBot to complete the request
+ * A button that requests users to be shared by the current user; available only in private chats. Use the method shareUsersWithBot to complete the request.
  */
 class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get Unique button identifier
+     * Get Unique button identifier.
      */
     public function getId(): int
     {
@@ -51,7 +51,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set Unique button identifier
+     * Set Unique button identifier.
      */
     public function setId(int $id): self
     {
@@ -61,7 +61,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get True, if the shared users must or must not be bots
+     * Get True, if the shared users must or must not be bots.
      */
     public function getRestrictUserIsBot(): bool
     {
@@ -69,7 +69,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set True, if the shared users must or must not be bots
+     * Set True, if the shared users must or must not be bots.
      */
     public function setRestrictUserIsBot(bool $restrictUserIsBot): self
     {
@@ -79,7 +79,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get True, if the shared users must be bots; otherwise, the shared users must not be bots. Ignored if restrict_user_is_bot is false
+     * Get True, if the shared users must be bots; otherwise, the shared users must not be bots. Ignored if restrict_user_is_bot is false.
      */
     public function getUserIsBot(): bool
     {
@@ -87,7 +87,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set True, if the shared users must be bots; otherwise, the shared users must not be bots. Ignored if restrict_user_is_bot is false
+     * Set True, if the shared users must be bots; otherwise, the shared users must not be bots. Ignored if restrict_user_is_bot is false.
      */
     public function setUserIsBot(bool $userIsBot): self
     {
@@ -97,7 +97,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get True, if the shared users must or must not be Telegram Premium users
+     * Get True, if the shared users must or must not be Telegram Premium users.
      */
     public function getRestrictUserIsPremium(): bool
     {
@@ -105,7 +105,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set True, if the shared users must or must not be Telegram Premium users
+     * Set True, if the shared users must or must not be Telegram Premium users.
      */
     public function setRestrictUserIsPremium(bool $restrictUserIsPremium): self
     {
@@ -115,7 +115,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get True, if the shared users must be Telegram Premium users; otherwise, the shared users must not be Telegram Premium users. Ignored if restrict_user_is_premium is false
+     * Get True, if the shared users must be Telegram Premium users; otherwise, the shared users must not be Telegram Premium users. Ignored if restrict_user_is_premium is false.
      */
     public function getUserIsPremium(): bool
     {
@@ -123,7 +123,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set True, if the shared users must be Telegram Premium users; otherwise, the shared users must not be Telegram Premium users. Ignored if restrict_user_is_premium is false
+     * Set True, if the shared users must be Telegram Premium users; otherwise, the shared users must not be Telegram Premium users. Ignored if restrict_user_is_premium is false.
      */
     public function setUserIsPremium(bool $userIsPremium): self
     {
@@ -133,7 +133,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get The maximum number of users to share
+     * Get The maximum number of users to share.
      */
     public function getMaxQuantity(): int
     {
@@ -141,7 +141,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set The maximum number of users to share
+     * Set The maximum number of users to share.
      */
     public function setMaxQuantity(int $maxQuantity): self
     {
@@ -151,7 +151,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get Pass true to request name of the users; bots only
+     * Get Pass true to request name of the users; bots only.
      */
     public function getRequestName(): bool
     {
@@ -159,7 +159,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set Pass true to request name of the users; bots only
+     * Set Pass true to request name of the users; bots only.
      */
     public function setRequestName(bool $requestName): self
     {
@@ -169,7 +169,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get Pass true to request username of the users; bots only
+     * Get Pass true to request username of the users; bots only.
      */
     public function getRequestUsername(): bool
     {
@@ -177,7 +177,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set Pass true to request username of the users; bots only
+     * Set Pass true to request username of the users; bots only.
      */
     public function setRequestUsername(bool $requestUsername): self
     {
@@ -187,7 +187,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Get Pass true to request photo of the users; bots only
+     * Get Pass true to request photo of the users; bots only.
      */
     public function getRequestPhoto(): bool
     {
@@ -195,7 +195,7 @@ class KeyboardButtonTypeRequestUsers extends KeyboardButtonType implements \Json
     }
 
     /**
-     * Set Pass true to request photo of the users; bots only
+     * Set Pass true to request photo of the users; bots only.
      */
     public function setRequestPhoto(bool $requestPhoto): self
     {

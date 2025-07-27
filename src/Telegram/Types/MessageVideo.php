@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video message
+ * A video message.
  */
 class MessageVideo extends MessageContent implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The video description
+     * Get The video description.
      */
     public function getVideo(): Video|null
     {
@@ -51,7 +51,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The video description
+     * Set The video description.
      */
     public function setVideo(Video|null $video): self
     {
@@ -61,7 +61,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Alternative qualities of the video
+     * Get Alternative qualities of the video.
      */
     public function getAlternativeVideos(): array|null
     {
@@ -69,7 +69,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Alternative qualities of the video
+     * Set Alternative qualities of the video.
      */
     public function setAlternativeVideos(array|null $alternativeVideos): self
     {
@@ -79,7 +79,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Available storyboards for the video
+     * Get Available storyboards for the video.
      */
     public function getStoryboards(): array|null
     {
@@ -87,7 +87,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Available storyboards for the video
+     * Set Available storyboards for the video.
      */
     public function setStoryboards(array|null $storyboards): self
     {
@@ -97,7 +97,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Cover of the video; may be null if none
+     * Get Cover of the video; may be null if none.
      */
     public function getCover(): Photo|null
     {
@@ -105,7 +105,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Cover of the video; may be null if none
+     * Set Cover of the video; may be null if none.
      */
     public function setCover(Photo|null $cover): self
     {
@@ -115,7 +115,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp from which the video playing must start, in seconds
+     * Get Timestamp from which the video playing must start, in seconds.
      */
     public function getStartTimestamp(): int
     {
@@ -123,7 +123,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp from which the video playing must start, in seconds
+     * Set Timestamp from which the video playing must start, in seconds.
      */
     public function setStartTimestamp(int $startTimestamp): self
     {
@@ -133,7 +133,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Video caption
+     * Get Video caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -141,7 +141,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Video caption
+     * Set Video caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -151,7 +151,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the caption must be shown above the video; otherwise, the caption must be shown below the video
+     * Get True, if the caption must be shown above the video; otherwise, the caption must be shown below the video.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -159,7 +159,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the caption must be shown above the video; otherwise, the caption must be shown below the video
+     * Set True, if the caption must be shown above the video; otherwise, the caption must be shown below the video.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -169,7 +169,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video preview must be covered by a spoiler animation
+     * Get True, if the video preview must be covered by a spoiler animation.
      */
     public function getHasSpoiler(): bool
     {
@@ -177,7 +177,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video preview must be covered by a spoiler animation
+     * Set True, if the video preview must be covered by a spoiler animation.
      */
     public function setHasSpoiler(bool $hasSpoiler): self
     {
@@ -187,7 +187,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the video thumbnail must be blurred and the video must be shown only while tapped
+     * Get True, if the video thumbnail must be blurred and the video must be shown only while tapped.
      */
     public function getIsSecret(): bool
     {
@@ -195,7 +195,7 @@ class MessageVideo extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the video thumbnail must be blurred and the video must be shown only while tapped
+     * Set True, if the video thumbnail must be blurred and the video must be shown only while tapped.
      */
     public function setIsSecret(bool $isSecret): self
     {

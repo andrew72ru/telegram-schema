@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for InternalLinkType types
+ * Abstract base class for InternalLinkType types.
  */
 abstract class InternalLinkType implements \JsonSerializable
 {

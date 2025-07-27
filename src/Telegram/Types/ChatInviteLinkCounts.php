@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of chat invite link counts @invite_link_counts List of invite link counts
+ * Contains a list of chat invite link counts @invite_link_counts List of invite link counts.
  */
 class ChatInviteLinkCounts implements \JsonSerializable
 {

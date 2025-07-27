@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Tags used in Saved Messages or a Saved Messages topic have changed
+ * Tags used in Saved Messages or a Saved Messages topic have changed.
  */
 class UpdateSavedMessagesTags extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateSavedMessagesTags extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of Saved Messages topic which tags were changed; 0 if tags for the whole chat has changed
+     * Get Identifier of Saved Messages topic which tags were changed; 0 if tags for the whole chat has changed.
      */
     public function getSavedMessagesTopicId(): int
     {
@@ -30,7 +30,7 @@ class UpdateSavedMessagesTags extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of Saved Messages topic which tags were changed; 0 if tags for the whole chat has changed
+     * Set Identifier of Saved Messages topic which tags were changed; 0 if tags for the whole chat has changed.
      */
     public function setSavedMessagesTopicId(int $savedMessagesTopicId): self
     {
@@ -40,7 +40,7 @@ class UpdateSavedMessagesTags extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new tags
+     * Get The new tags.
      */
     public function getTags(): SavedMessagesTags|null
     {
@@ -48,7 +48,7 @@ class UpdateSavedMessagesTags extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new tags
+     * Set The new tags.
      */
     public function setTags(SavedMessagesTags|null $tags): self
     {

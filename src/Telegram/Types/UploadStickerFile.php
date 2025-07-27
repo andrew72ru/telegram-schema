@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Uploads a file with a sticker; returns the uploaded file
+ * Uploads a file with a sticker; returns the uploaded file.
  */
 class UploadStickerFile extends File implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UploadStickerFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Sticker file owner; ignored for regular users
+     * Get Sticker file owner; ignored for regular users.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class UploadStickerFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Sticker file owner; ignored for regular users
+     * Set Sticker file owner; ignored for regular users.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class UploadStickerFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Sticker format
+     * Get Sticker format.
      */
     public function getStickerFormat(): StickerFormat|null
     {
@@ -51,7 +51,7 @@ class UploadStickerFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Sticker format
+     * Set Sticker format.
      */
     public function setStickerFormat(StickerFormat|null $stickerFormat): self
     {
@@ -61,7 +61,7 @@ class UploadStickerFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get File file to upload; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side.
+     * Get File file to upload; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side..
      */
     public function getSticker(): InputFile|null
     {
@@ -69,7 +69,7 @@ class UploadStickerFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set File file to upload; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side.
+     * Set File file to upload; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side..
      */
     public function setSticker(InputFile|null $sticker): self
     {

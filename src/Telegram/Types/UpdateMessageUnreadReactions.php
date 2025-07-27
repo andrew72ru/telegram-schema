@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of unread reactions added to a message was changed
+ * The list of unread reactions added to a message was changed.
  */
 class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier
+     * Get Message identifier.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier
+     * Set Message identifier.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new list of unread reactions
+     * Get The new list of unread reactions.
      */
     public function getUnreadReactions(): array|null
     {
@@ -72,7 +72,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new list of unread reactions
+     * Set The new list of unread reactions.
      */
     public function setUnreadReactions(array|null $unreadReactions): self
     {
@@ -82,7 +82,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Get The new number of messages with unread reactions left in the chat
+     * Get The new number of messages with unread reactions left in the chat.
      */
     public function getUnreadReactionCount(): int
     {
@@ -90,7 +90,7 @@ class UpdateMessageUnreadReactions extends Update implements \JsonSerializable
     }
 
     /**
-     * Set The new number of messages with unread reactions left in the chat
+     * Set The new number of messages with unread reactions left in the chat.
      */
     public function setUnreadReactionCount(int $unreadReactionCount): self
     {

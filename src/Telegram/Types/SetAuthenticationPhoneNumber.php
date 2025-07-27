@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sets the phone number of the user and sends an authentication code to the user. Works only when the current authorization state is authorizationStateWaitPhoneNumber,
+ * Sets the phone number of the user and sends an authentication code to the user. Works only when the current authorization state is authorizationStateWaitPhoneNumber,.
  */
 class SetAuthenticationPhoneNumber extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetAuthenticationPhoneNumber extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The phone number of the user, in international format
+     * Get The phone number of the user, in international format.
      */
     public function getPhoneNumber(): string
     {
@@ -30,7 +30,7 @@ class SetAuthenticationPhoneNumber extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The phone number of the user, in international format
+     * Set The phone number of the user, in international format.
      */
     public function setPhoneNumber(string $phoneNumber): self
     {
@@ -40,7 +40,7 @@ class SetAuthenticationPhoneNumber extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Settings for the authentication of the user's phone number; pass null to use default settings
+     * Get Settings for the authentication of the user's phone number; pass null to use default settings.
      */
     public function getSettings(): PhoneNumberAuthenticationSettings|null
     {
@@ -48,7 +48,7 @@ class SetAuthenticationPhoneNumber extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Settings for the authentication of the user's phone number; pass null to use default settings
+     * Set Settings for the authentication of the user's phone number; pass null to use default settings.
      */
     public function setSettings(PhoneNumberAuthenticationSettings|null $settings): self
     {

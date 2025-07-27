@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a video file
+ * The link is a link to a video file.
  */
 class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get URL of the video file
+     * Get URL of the video file.
      */
     public function getUrl(): string
     {
@@ -39,7 +39,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set URL of the video file
+     * Set URL of the video file.
      */
     public function setUrl(string $url): self
     {
@@ -49,7 +49,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get MIME type of the video file
+     * Get MIME type of the video file.
      */
     public function getMimeType(): string
     {
@@ -57,7 +57,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set MIME type of the video file
+     * Set MIME type of the video file.
      */
     public function setMimeType(string $mimeType): self
     {
@@ -67,7 +67,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get Expected width of the video preview; 0 if unknown
+     * Get Expected width of the video preview; 0 if unknown.
      */
     public function getWidth(): int
     {
@@ -75,7 +75,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set Expected width of the video preview; 0 if unknown
+     * Set Expected width of the video preview; 0 if unknown.
      */
     public function setWidth(int $width): self
     {
@@ -85,7 +85,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get Expected height of the video preview; 0 if unknown
+     * Get Expected height of the video preview; 0 if unknown.
      */
     public function getHeight(): int
     {
@@ -93,7 +93,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set Expected height of the video preview; 0 if unknown
+     * Set Expected height of the video preview; 0 if unknown.
      */
     public function setHeight(int $height): self
     {
@@ -103,7 +103,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Get Duration of the video, in seconds; 0 if unknown
+     * Get Duration of the video, in seconds; 0 if unknown.
      */
     public function getDuration(): int
     {
@@ -111,7 +111,7 @@ class LinkPreviewTypeExternalVideo extends LinkPreviewType implements \JsonSeria
     }
 
     /**
-     * Set Duration of the video, in seconds; 0 if unknown
+     * Set Duration of the video, in seconds; 0 if unknown.
      */
     public function setDuration(int $duration): self
     {

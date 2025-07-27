@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The message was originally a post in a channel
+ * The message was originally a post in a channel.
  */
 class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the channel chat to which the message was originally sent
+     * Get Identifier of the channel chat to which the message was originally sent.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the channel chat to which the message was originally sent
+     * Set Identifier of the channel chat to which the message was originally sent.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Get Message identifier of the original message
+     * Get Message identifier of the original message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Set Message identifier of the original message
+     * Set Message identifier of the original message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Get Original post author signature
+     * Get Original post author signature.
      */
     public function getAuthorSignature(): string
     {
@@ -69,7 +69,7 @@ class MessageOriginChannel extends MessageOrigin implements \JsonSerializable
     }
 
     /**
-     * Set Original post author signature
+     * Set Original post author signature.
      */
     public function setAuthorSignature(string $authorSignature): self
     {

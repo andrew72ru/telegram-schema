@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a message thread
+ * Contains information about a message thread.
  */
 class MessageThreadInfo implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message thread belongs
+     * Get Identifier of the chat to which the message thread belongs.
      */
     public function getChatId(): int
     {
@@ -42,7 +42,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message thread belongs
+     * Set Identifier of the chat to which the message thread belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -52,7 +52,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Get Message thread identifier, unique within the chat
+     * Get Message thread identifier, unique within the chat.
      */
     public function getMessageThreadId(): int
     {
@@ -60,7 +60,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Set Message thread identifier, unique within the chat
+     * Set Message thread identifier, unique within the chat.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -70,7 +70,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message thread; may be null for forum topic threads
+     * Get Information about the message thread; may be null for forum topic threads.
      */
     public function getReplyInfo(): MessageReplyInfo|null
     {
@@ -78,7 +78,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message thread; may be null for forum topic threads
+     * Set Information about the message thread; may be null for forum topic threads.
      */
     public function setReplyInfo(MessageReplyInfo|null $replyInfo): self
     {
@@ -88,7 +88,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Get Approximate number of unread messages in the message thread
+     * Get Approximate number of unread messages in the message thread.
      */
     public function getUnreadMessageCount(): int
     {
@@ -96,7 +96,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Set Approximate number of unread messages in the message thread
+     * Set Approximate number of unread messages in the message thread.
      */
     public function setUnreadMessageCount(int $unreadMessageCount): self
     {
@@ -106,7 +106,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Get The messages from which the thread starts. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id)
+     * Get The messages from which the thread starts. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id).
      */
     public function getMessages(): array|null
     {
@@ -114,7 +114,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Set The messages from which the thread starts. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id)
+     * Set The messages from which the thread starts. The messages are returned in reverse chronological order (i.e., in order of decreasing message_id).
      */
     public function setMessages(array|null $messages): self
     {
@@ -124,7 +124,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Get A draft of a message in the message thread; may be null if none
+     * Get A draft of a message in the message thread; may be null if none.
      */
     public function getDraftMessage(): DraftMessage|null
     {
@@ -132,7 +132,7 @@ class MessageThreadInfo implements \JsonSerializable
     }
 
     /**
-     * Set A draft of a message in the message thread; may be null if none
+     * Set A draft of a message in the message thread; may be null if none.
      */
     public function setDraftMessage(DraftMessage|null $draftMessage): self
     {

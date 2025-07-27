@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An audio message @audio The audio description @caption Audio caption
+ * An audio message @audio The audio description @caption Audio caption.
  */
 class MessageAudio extends MessageContent implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a chat administrator with a number of active and revoked chat invite links
+ * Describes a chat administrator with a number of active and revoked chat invite links.
  */
 class ChatInviteLinkCount implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatInviteLinkCount implements \JsonSerializable
     }
 
     /**
-     * Get Administrator's user identifier
+     * Get Administrator's user identifier.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class ChatInviteLinkCount implements \JsonSerializable
     }
 
     /**
-     * Set Administrator's user identifier
+     * Set Administrator's user identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class ChatInviteLinkCount implements \JsonSerializable
     }
 
     /**
-     * Get Number of active invite links
+     * Get Number of active invite links.
      */
     public function getInviteLinkCount(): int
     {
@@ -51,7 +51,7 @@ class ChatInviteLinkCount implements \JsonSerializable
     }
 
     /**
-     * Set Number of active invite links
+     * Set Number of active invite links.
      */
     public function setInviteLinkCount(int $inviteLinkCount): self
     {
@@ -61,7 +61,7 @@ class ChatInviteLinkCount implements \JsonSerializable
     }
 
     /**
-     * Get Number of revoked invite links
+     * Get Number of revoked invite links.
      */
     public function getRevokedInviteLinkCount(): int
     {
@@ -69,7 +69,7 @@ class ChatInviteLinkCount implements \JsonSerializable
     }
 
     /**
-     * Set Number of revoked invite links
+     * Set Number of revoked invite links.
      */
     public function setRevokedInviteLinkCount(int $revokedInviteLinkCount): self
     {

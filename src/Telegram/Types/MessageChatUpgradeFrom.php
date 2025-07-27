@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A supergroup has been created from a basic group @title Title of the newly created supergroup @basic_group_id The identifier of the original basic group
+ * A supergroup has been created from a basic group @title Title of the newly created supergroup @basic_group_id The identifier of the original basic group.
  */
 class MessageChatUpgradeFrom extends MessageContent implements \JsonSerializable
 {

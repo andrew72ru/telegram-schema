@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the message content caption. Returns the edited message after the edit is completed on the server side
+ * Edits the message content caption. Returns the edited message after the edit is completed on the server side.
  */
 class EditMessageCaption extends Message implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited
+     * Get Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited.
      */
     public function getMessageId(): int
     {
@@ -57,7 +57,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited
+     * Set Identifier of the message. Use messageProperties.can_be_edited to check whether the message can be edited.
      */
     public function setMessageId(int $messageId): self
     {
@@ -67,7 +67,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none; for bots only
+     * Get The new message reply markup; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -75,7 +75,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none; for bots only
+     * Set The new message reply markup; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -85,7 +85,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Get New message content caption; 0-getOption("message_caption_length_max") characters; pass null to remove caption
+     * Get New message content caption; 0-getOption("message_caption_length_max") characters; pass null to remove caption.
      */
     public function getCaption(): FormattedText|null
     {
@@ -93,7 +93,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Set New message content caption; 0-getOption("message_caption_length_max") characters; pass null to remove caption
+     * Set New message content caption; 0-getOption("message_caption_length_max") characters; pass null to remove caption.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -103,7 +103,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages
+     * Get Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -111,7 +111,7 @@ class EditMessageCaption extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages
+     * Set Pass true to show the caption above the media; otherwise, the caption will be shown below the media. May be true only for animation, photo, and video messages.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {

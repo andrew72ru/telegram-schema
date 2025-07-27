@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Telegram\Types;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-
 /**
- * The Web App is opened in the full-screen mode
+ * The Web App is opened in the full-screen mode.
  */
 class WebAppOpenModeFullScreen extends WebAppOpenMode implements \JsonSerializable
 {

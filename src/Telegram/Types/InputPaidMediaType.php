@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Telegram\Types;
 
 /**
- * Abstract base class for InputPaidMediaType types
+ * Abstract base class for InputPaidMediaType types.
  */
 abstract class InputPaidMediaType implements \JsonSerializable
 {

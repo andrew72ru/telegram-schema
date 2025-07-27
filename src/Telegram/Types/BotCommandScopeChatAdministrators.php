@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A scope covering all administrators of a chat @chat_id Chat identifier
+ * A scope covering all administrators of a chat @chat_id Chat identifier.
  */
 class BotCommandScopeChatAdministrators extends BotCommandScope implements \JsonSerializable
 {

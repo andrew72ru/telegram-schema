@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a story
+ * Returns a story.
  */
 class GetStory extends Story implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GetStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat that posted the story
+     * Get Identifier of the chat that posted the story.
      */
     public function getStoryPosterChatId(): int
     {
@@ -33,7 +33,7 @@ class GetStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat that posted the story
+     * Set Identifier of the chat that posted the story.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -43,7 +43,7 @@ class GetStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Story identifier
+     * Get Story identifier.
      */
     public function getStoryId(): int
     {
@@ -51,7 +51,7 @@ class GetStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Story identifier
+     * Set Story identifier.
      */
     public function setStoryId(int $storyId): self
     {
@@ -61,7 +61,7 @@ class GetStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to get only locally available information without sending network requests
+     * Get Pass true to get only locally available information without sending network requests.
      */
     public function getOnlyLocal(): bool
     {
@@ -69,7 +69,7 @@ class GetStory extends Story implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to get only locally available information without sending network requests
+     * Set Pass true to get only locally available information without sending network requests.
      */
     public function setOnlyLocal(bool $onlyLocal): self
     {

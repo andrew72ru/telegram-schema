@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes rights of a business bot
+ * Describes rights of a business bot.
  */
 class BusinessBotRights implements \JsonSerializable
 {
@@ -58,7 +58,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can send and edit messages in the private chats that had incoming messages in the last 24 hours
+     * Get True, if the bot can send and edit messages in the private chats that had incoming messages in the last 24 hours.
      */
     public function getCanReply(): bool
     {
@@ -66,7 +66,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can send and edit messages in the private chats that had incoming messages in the last 24 hours
+     * Set True, if the bot can send and edit messages in the private chats that had incoming messages in the last 24 hours.
      */
     public function setCanReply(bool $canReply): self
     {
@@ -76,7 +76,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can mark incoming private messages as read
+     * Get True, if the bot can mark incoming private messages as read.
      */
     public function getCanReadMessages(): bool
     {
@@ -84,7 +84,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can mark incoming private messages as read
+     * Set True, if the bot can mark incoming private messages as read.
      */
     public function setCanReadMessages(bool $canReadMessages): self
     {
@@ -94,7 +94,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can delete sent messages
+     * Get True, if the bot can delete sent messages.
      */
     public function getCanDeleteSentMessages(): bool
     {
@@ -102,7 +102,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can delete sent messages
+     * Set True, if the bot can delete sent messages.
      */
     public function setCanDeleteSentMessages(bool $canDeleteSentMessages): self
     {
@@ -112,7 +112,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can delete any message
+     * Get True, if the bot can delete any message.
      */
     public function getCanDeleteAllMessages(): bool
     {
@@ -120,7 +120,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can delete any message
+     * Set True, if the bot can delete any message.
      */
     public function setCanDeleteAllMessages(bool $canDeleteAllMessages): self
     {
@@ -130,7 +130,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can edit name of the business account
+     * Get True, if the bot can edit name of the business account.
      */
     public function getCanEditName(): bool
     {
@@ -138,7 +138,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can edit name of the business account
+     * Set True, if the bot can edit name of the business account.
      */
     public function setCanEditName(bool $canEditName): self
     {
@@ -148,7 +148,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can edit bio of the business account
+     * Get True, if the bot can edit bio of the business account.
      */
     public function getCanEditBio(): bool
     {
@@ -156,7 +156,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can edit bio of the business account
+     * Set True, if the bot can edit bio of the business account.
      */
     public function setCanEditBio(bool $canEditBio): self
     {
@@ -166,7 +166,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can edit profile photo of the business account
+     * Get True, if the bot can edit profile photo of the business account.
      */
     public function getCanEditProfilePhoto(): bool
     {
@@ -174,7 +174,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can edit profile photo of the business account
+     * Set True, if the bot can edit profile photo of the business account.
      */
     public function setCanEditProfilePhoto(bool $canEditProfilePhoto): self
     {
@@ -184,7 +184,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can edit username of the business account
+     * Get True, if the bot can edit username of the business account.
      */
     public function getCanEditUsername(): bool
     {
@@ -192,7 +192,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can edit username of the business account
+     * Set True, if the bot can edit username of the business account.
      */
     public function setCanEditUsername(bool $canEditUsername): self
     {
@@ -202,7 +202,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can view gifts and amount of Telegram Stars owned by the business account
+     * Get True, if the bot can view gifts and amount of Telegram Stars owned by the business account.
      */
     public function getCanViewGiftsAndStars(): bool
     {
@@ -210,7 +210,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can view gifts and amount of Telegram Stars owned by the business account
+     * Set True, if the bot can view gifts and amount of Telegram Stars owned by the business account.
      */
     public function setCanViewGiftsAndStars(bool $canViewGiftsAndStars): self
     {
@@ -220,7 +220,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can sell regular gifts received by the business account
+     * Get True, if the bot can sell regular gifts received by the business account.
      */
     public function getCanSellGifts(): bool
     {
@@ -228,7 +228,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can sell regular gifts received by the business account
+     * Set True, if the bot can sell regular gifts received by the business account.
      */
     public function setCanSellGifts(bool $canSellGifts): self
     {
@@ -238,7 +238,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can change gift receiving settings of the business account
+     * Get True, if the bot can change gift receiving settings of the business account.
      */
     public function getCanChangeGiftSettings(): bool
     {
@@ -246,7 +246,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can change gift receiving settings of the business account
+     * Set True, if the bot can change gift receiving settings of the business account.
      */
     public function setCanChangeGiftSettings(bool $canChangeGiftSettings): self
     {
@@ -256,7 +256,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can transfer and upgrade gifts received by the business account
+     * Get True, if the bot can transfer and upgrade gifts received by the business account.
      */
     public function getCanTransferAndUpgradeGifts(): bool
     {
@@ -264,7 +264,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can transfer and upgrade gifts received by the business account
+     * Set True, if the bot can transfer and upgrade gifts received by the business account.
      */
     public function setCanTransferAndUpgradeGifts(bool $canTransferAndUpgradeGifts): self
     {
@@ -274,7 +274,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can transfer Telegram Stars received by the business account to account of the bot, or use them to upgrade and transfer gifts
+     * Get True, if the bot can transfer Telegram Stars received by the business account to account of the bot, or use them to upgrade and transfer gifts.
      */
     public function getCanTransferStars(): bool
     {
@@ -282,7 +282,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can transfer Telegram Stars received by the business account to account of the bot, or use them to upgrade and transfer gifts
+     * Set True, if the bot can transfer Telegram Stars received by the business account to account of the bot, or use them to upgrade and transfer gifts.
      */
     public function setCanTransferStars(bool $canTransferStars): self
     {
@@ -292,7 +292,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can post, edit and delete stories
+     * Get True, if the bot can post, edit and delete stories.
      */
     public function getCanManageStories(): bool
     {
@@ -300,7 +300,7 @@ class BusinessBotRights implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can post, edit and delete stories
+     * Set True, if the bot can post, edit and delete stories.
      */
     public function setCanManageStories(bool $canManageStories): self
     {

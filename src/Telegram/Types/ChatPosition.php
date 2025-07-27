@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a position of a chat in a chat list
+ * Describes a position of a chat in a chat list.
  */
 class ChatPosition implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Get The chat list
+     * Get The chat list.
      */
     public function getList(): ChatList|null
     {
@@ -36,7 +36,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Set The chat list
+     * Set The chat list.
      */
     public function setList(ChatList|null $list): self
     {
@@ -46,7 +46,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Get A parameter used to determine order of the chat in the chat list. Chats must be sorted by the pair (order, chat.id) in descending order
+     * Get A parameter used to determine order of the chat in the chat list. Chats must be sorted by the pair (order, chat.id) in descending order.
      */
     public function getOrder(): int
     {
@@ -54,7 +54,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Set A parameter used to determine order of the chat in the chat list. Chats must be sorted by the pair (order, chat.id) in descending order
+     * Set A parameter used to determine order of the chat in the chat list. Chats must be sorted by the pair (order, chat.id) in descending order.
      */
     public function setOrder(int $order): self
     {
@@ -64,7 +64,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Get True, if the chat is pinned in the chat list
+     * Get True, if the chat is pinned in the chat list.
      */
     public function getIsPinned(): bool
     {
@@ -72,7 +72,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Set True, if the chat is pinned in the chat list
+     * Set True, if the chat is pinned in the chat list.
      */
     public function setIsPinned(bool $isPinned): self
     {
@@ -82,7 +82,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Get Source of the chat in the chat list; may be null
+     * Get Source of the chat in the chat list; may be null.
      */
     public function getSource(): ChatSource|null
     {
@@ -90,7 +90,7 @@ class ChatPosition implements \JsonSerializable
     }
 
     /**
-     * Set Source of the chat in the chat list; may be null
+     * Set Source of the chat in the chat list; may be null.
      */
     public function setSource(ChatSource|null $source): self
     {

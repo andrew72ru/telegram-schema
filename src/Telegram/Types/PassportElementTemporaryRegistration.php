@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Passport element containing the user's temporary registration @temporary_registration Temporary registration
+ * A Telegram Passport element containing the user's temporary registration @temporary_registration Temporary registration.
  */
 class PassportElementTemporaryRegistration extends PassportElement implements \JsonSerializable
 {

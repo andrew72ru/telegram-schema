@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user buying Telegram Stars for other users
+ * The user buying Telegram Stars for other users.
  */
 class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get Identifier of the user to which Telegram Stars are gifted
+     * Get Identifier of the user to which Telegram Stars are gifted.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set Identifier of the user to which Telegram Stars are gifted
+     * Set Identifier of the user to which Telegram Stars are gifted.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get ISO 4217 currency code of the payment currency
+     * Get ISO 4217 currency code of the payment currency.
      */
     public function getCurrency(): string
     {
@@ -54,7 +54,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set ISO 4217 currency code of the payment currency
+     * Set ISO 4217 currency code of the payment currency.
      */
     public function setCurrency(string $currency): self
     {
@@ -64,7 +64,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get Paid amount, in the smallest units of the currency
+     * Get Paid amount, in the smallest units of the currency.
      */
     public function getAmount(): int
     {
@@ -72,7 +72,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set Paid amount, in the smallest units of the currency
+     * Set Paid amount, in the smallest units of the currency.
      */
     public function setAmount(int $amount): self
     {
@@ -82,7 +82,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Get Number of bought Telegram Stars
+     * Get Number of bought Telegram Stars.
      */
     public function getStarCount(): int
     {
@@ -90,7 +90,7 @@ class StorePaymentPurposeGiftedStars extends StorePaymentPurpose implements \Jso
     }
 
     /**
-     * Set Number of bought Telegram Stars
+     * Set Number of bought Telegram Stars.
      */
     public function setStarCount(int $starCount): self
     {

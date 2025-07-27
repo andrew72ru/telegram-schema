@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user allowed the bot to send messages @reason The reason why the bot was allowed to write messages
+ * The user allowed the bot to send messages @reason The reason why the bot was allowed to write messages.
  */
 class MessageBotWriteAccessAllowed extends MessageContent implements \JsonSerializable
 {

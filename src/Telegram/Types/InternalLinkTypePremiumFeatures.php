@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to the Premium features screen of the application from which the user can subscribe to Telegram Premium. Call getPremiumFeatures with the given referrer to process the link
+ * The link is a link to the Premium features screen of the application from which the user can subscribe to Telegram Premium. Call getPremiumFeatures with the given referrer to process the link.
  */
 class InternalLinkTypePremiumFeatures extends InternalLinkType implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class InternalLinkTypePremiumFeatures extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Referrer specified in the link
+     * Get Referrer specified in the link.
      */
     public function getReferrer(): string
     {
@@ -27,7 +27,7 @@ class InternalLinkTypePremiumFeatures extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Referrer specified in the link
+     * Set Referrer specified in the link.
      */
     public function setReferrer(string $referrer): self
     {

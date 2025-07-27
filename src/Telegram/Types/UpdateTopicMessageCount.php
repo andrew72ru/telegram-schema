@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Number of messages in a topic has changed; for Saved Messages and channel direct messages chat topics only
+ * Number of messages in a topic has changed; for Saved Messages and channel direct messages chat topics only.
  */
 class UpdateTopicMessageCount extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateTopicMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in topic of which the number of messages has changed
+     * Get Identifier of the chat in topic of which the number of messages has changed.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class UpdateTopicMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in topic of which the number of messages has changed
+     * Set Identifier of the chat in topic of which the number of messages has changed.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class UpdateTopicMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the topic
+     * Get Identifier of the topic.
      */
     public function getTopicId(): MessageTopic|null
     {
@@ -51,7 +51,7 @@ class UpdateTopicMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the topic
+     * Set Identifier of the topic.
      */
     public function setTopicId(MessageTopic|null $topicId): self
     {
@@ -61,7 +61,7 @@ class UpdateTopicMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Approximate number of messages in the topics
+     * Get Approximate number of messages in the topics.
      */
     public function getMessageCount(): int
     {
@@ -69,7 +69,7 @@ class UpdateTopicMessageCount extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Approximate number of messages in the topics
+     * Set Approximate number of messages in the topics.
      */
     public function setMessageCount(int $messageCount): self
     {

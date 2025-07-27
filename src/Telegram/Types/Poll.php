@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a poll
+ * Describes a poll.
  */
 class Poll implements \JsonSerializable
 {
@@ -46,7 +46,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Unique poll identifier
+     * Get Unique poll identifier.
      */
     public function getId(): int
     {
@@ -54,7 +54,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Unique poll identifier
+     * Set Unique poll identifier.
      */
     public function setId(int $id): self
     {
@@ -64,7 +64,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Poll question; 1-300 characters. Only custom emoji entities are allowed
+     * Get Poll question; 1-300 characters. Only custom emoji entities are allowed.
      */
     public function getQuestion(): FormattedText|null
     {
@@ -72,7 +72,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Poll question; 1-300 characters. Only custom emoji entities are allowed
+     * Set Poll question; 1-300 characters. Only custom emoji entities are allowed.
      */
     public function setQuestion(FormattedText|null $question): self
     {
@@ -82,7 +82,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get List of poll answer options
+     * Get List of poll answer options.
      */
     public function getOptions(): array|null
     {
@@ -90,7 +90,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set List of poll answer options
+     * Set List of poll answer options.
      */
     public function setOptions(array|null $options): self
     {
@@ -100,7 +100,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Total number of voters, participating in the poll
+     * Get Total number of voters, participating in the poll.
      */
     public function getTotalVoterCount(): int
     {
@@ -108,7 +108,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Total number of voters, participating in the poll
+     * Set Total number of voters, participating in the poll.
      */
     public function setTotalVoterCount(int $totalVoterCount): self
     {
@@ -118,7 +118,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of recent voters, if the poll is non-anonymous
+     * Get Identifiers of recent voters, if the poll is non-anonymous.
      */
     public function getRecentVoterIds(): array|null
     {
@@ -126,7 +126,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of recent voters, if the poll is non-anonymous
+     * Set Identifiers of recent voters, if the poll is non-anonymous.
      */
     public function setRecentVoterIds(array|null $recentVoterIds): self
     {
@@ -136,7 +136,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get True, if the poll is anonymous
+     * Get True, if the poll is anonymous.
      */
     public function getIsAnonymous(): bool
     {
@@ -144,7 +144,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set True, if the poll is anonymous
+     * Set True, if the poll is anonymous.
      */
     public function setIsAnonymous(bool $isAnonymous): self
     {
@@ -154,7 +154,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Type of the poll
+     * Get Type of the poll.
      */
     public function getType(): PollType|null
     {
@@ -162,7 +162,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Type of the poll
+     * Set Type of the poll.
      */
     public function setType(PollType|null $type): self
     {
@@ -172,7 +172,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Amount of time the poll will be active after creation, in seconds
+     * Get Amount of time the poll will be active after creation, in seconds.
      */
     public function getOpenPeriod(): int
     {
@@ -180,7 +180,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Amount of time the poll will be active after creation, in seconds
+     * Set Amount of time the poll will be active after creation, in seconds.
      */
     public function setOpenPeriod(int $openPeriod): self
     {
@@ -190,7 +190,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the poll will automatically be closed
+     * Get Point in time (Unix timestamp) when the poll will automatically be closed.
      */
     public function getCloseDate(): int
     {
@@ -198,7 +198,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the poll will automatically be closed
+     * Set Point in time (Unix timestamp) when the poll will automatically be closed.
      */
     public function setCloseDate(int $closeDate): self
     {
@@ -208,7 +208,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Get True, if the poll is closed
+     * Get True, if the poll is closed.
      */
     public function getIsClosed(): bool
     {
@@ -216,7 +216,7 @@ class Poll implements \JsonSerializable
     }
 
     /**
-     * Set True, if the poll is closed
+     * Set True, if the poll is closed.
      */
     public function setIsClosed(bool $isClosed): self
     {

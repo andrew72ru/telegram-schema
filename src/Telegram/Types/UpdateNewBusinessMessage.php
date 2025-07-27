@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A new message was added to a business account; for bots only @connection_id Unique identifier of the business connection @message The new message
+ * A new message was added to a business account; for bots only @connection_id Unique identifier of the business connection @message The new message.
  */
 class UpdateNewBusinessMessage extends Update implements \JsonSerializable
 {

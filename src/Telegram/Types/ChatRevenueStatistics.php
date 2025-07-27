@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A detailed statistics about revenue earned from sponsored messages in a chat
+ * A detailed statistics about revenue earned from sponsored messages in a chat.
  */
 class ChatRevenueStatistics implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing amount of revenue in a given hour
+     * Get A graph containing amount of revenue in a given hour.
      */
     public function getRevenueByHourGraph(): StatisticalGraph|null
     {
@@ -36,7 +36,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing amount of revenue in a given hour
+     * Set A graph containing amount of revenue in a given hour.
      */
     public function setRevenueByHourGraph(StatisticalGraph|null $revenueByHourGraph): self
     {
@@ -46,7 +46,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get A graph containing amount of revenue
+     * Get A graph containing amount of revenue.
      */
     public function getRevenueGraph(): StatisticalGraph|null
     {
@@ -54,7 +54,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set A graph containing amount of revenue
+     * Set A graph containing amount of revenue.
      */
     public function setRevenueGraph(StatisticalGraph|null $revenueGraph): self
     {
@@ -64,7 +64,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Amount of earned revenue
+     * Get Amount of earned revenue.
      */
     public function getRevenueAmount(): ChatRevenueAmount|null
     {
@@ -72,7 +72,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Amount of earned revenue
+     * Set Amount of earned revenue.
      */
     public function setRevenueAmount(ChatRevenueAmount|null $revenueAmount): self
     {
@@ -82,7 +82,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Get Current conversion rate of the cryptocurrency in which revenue is calculated to USD
+     * Get Current conversion rate of the cryptocurrency in which revenue is calculated to USD.
      */
     public function getUsdRate(): float
     {
@@ -90,7 +90,7 @@ class ChatRevenueStatistics implements \JsonSerializable
     }
 
     /**
-     * Set Current conversion rate of the cryptocurrency in which revenue is calculated to USD
+     * Set Current conversion rate of the cryptocurrency in which revenue is calculated to USD.
      */
     public function setUsdRate(float $usdRate): self
     {

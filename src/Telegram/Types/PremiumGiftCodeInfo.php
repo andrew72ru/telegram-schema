@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a Telegram Premium gift code
+ * Contains information about a Telegram Premium gift code.
  */
 class PremiumGiftCodeInfo implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat or a user that created the gift code; may be null if unknown. If null and the code is from messagePremiumGiftCode message, then creator_id from the message can be used
+     * Get Identifier of a chat or a user that created the gift code; may be null if unknown. If null and the code is from messagePremiumGiftCode message, then creator_id from the message can be used.
      */
     public function getCreatorId(): MessageSender|null
     {
@@ -45,7 +45,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat or a user that created the gift code; may be null if unknown. If null and the code is from messagePremiumGiftCode message, then creator_id from the message can be used
+     * Set Identifier of a chat or a user that created the gift code; may be null if unknown. If null and the code is from messagePremiumGiftCode message, then creator_id from the message can be used.
      */
     public function setCreatorId(MessageSender|null $creatorId): self
     {
@@ -55,7 +55,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the code was created
+     * Get Point in time (Unix timestamp) when the code was created.
      */
     public function getCreationDate(): int
     {
@@ -63,7 +63,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the code was created
+     * Set Point in time (Unix timestamp) when the code was created.
      */
     public function setCreationDate(int $creationDate): self
     {
@@ -73,7 +73,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift code was created for a giveaway
+     * Get True, if the gift code was created for a giveaway.
      */
     public function getIsFromGiveaway(): bool
     {
@@ -81,7 +81,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift code was created for a giveaway
+     * Set True, if the gift code was created for a giveaway.
      */
     public function setIsFromGiveaway(bool $isFromGiveaway): self
     {
@@ -91,7 +91,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the corresponding giveaway message in the creator_id chat; can be 0 or an identifier of a deleted message
+     * Get Identifier of the corresponding giveaway message in the creator_id chat; can be 0 or an identifier of a deleted message.
      */
     public function getGiveawayMessageId(): int
     {
@@ -99,7 +99,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the corresponding giveaway message in the creator_id chat; can be 0 or an identifier of a deleted message
+     * Set Identifier of the corresponding giveaway message in the creator_id chat; can be 0 or an identifier of a deleted message.
      */
     public function setGiveawayMessageId(int $giveawayMessageId): self
     {
@@ -109,7 +109,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active after code activation
+     * Get Number of months the Telegram Premium subscription will be active after code activation.
      */
     public function getMonthCount(): int
     {
@@ -117,7 +117,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active after code activation
+     * Set Number of months the Telegram Premium subscription will be active after code activation.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -127,7 +127,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a user for which the code was created; 0 if none
+     * Get Identifier of a user for which the code was created; 0 if none.
      */
     public function getUserId(): int
     {
@@ -135,7 +135,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a user for which the code was created; 0 if none
+     * Set Identifier of a user for which the code was created; 0 if none.
      */
     public function setUserId(int $userId): self
     {
@@ -145,7 +145,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the code was activated; 0 if none
+     * Get Point in time (Unix timestamp) when the code was activated; 0 if none.
      */
     public function getUseDate(): int
     {
@@ -153,7 +153,7 @@ class PremiumGiftCodeInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the code was activated; 0 if none
+     * Set Point in time (Unix timestamp) when the code was activated; 0 if none.
      */
     public function setUseDate(int $useDate): self
     {

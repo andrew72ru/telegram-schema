@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The user must choose an option to report the chat and repeat request with the chosen option @title Title for the option choice @options List of available options
+ * The user must choose an option to report the chat and repeat request with the chosen option @title Title for the option choice @options List of available options.
  */
 class ReportChatResultOptionRequired extends ReportChatResult implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a business chat link
+ * Contains information about a business chat link.
  */
 class BusinessChatLinkInfo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BusinessChatLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the private chat that created the link
+     * Get Identifier of the private chat that created the link.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class BusinessChatLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the private chat that created the link
+     * Set Identifier of the private chat that created the link.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class BusinessChatLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Message draft text that must be added to the input field
+     * Get Message draft text that must be added to the input field.
      */
     public function getText(): FormattedText|null
     {
@@ -48,7 +48,7 @@ class BusinessChatLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Message draft text that must be added to the input field
+     * Set Message draft text that must be added to the input field.
      */
     public function setText(FormattedText|null $text): self
     {

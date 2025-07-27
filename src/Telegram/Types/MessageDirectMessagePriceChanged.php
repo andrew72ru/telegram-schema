@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A price for direct messages was changed in the channel chat
+ * A price for direct messages was changed in the channel chat.
  */
 class MessageDirectMessagePriceChanged extends MessageContent implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class MessageDirectMessagePriceChanged extends MessageContent implements \JsonSe
     }
 
     /**
-     * Get True, if direct messages group was enabled for the channel; false otherwise
+     * Get True, if direct messages group was enabled for the channel; false otherwise.
      */
     public function getIsEnabled(): bool
     {
@@ -30,7 +30,7 @@ class MessageDirectMessagePriceChanged extends MessageContent implements \JsonSe
     }
 
     /**
-     * Set True, if direct messages group was enabled for the channel; false otherwise
+     * Set True, if direct messages group was enabled for the channel; false otherwise.
      */
     public function setIsEnabled(bool $isEnabled): self
     {
@@ -40,7 +40,7 @@ class MessageDirectMessagePriceChanged extends MessageContent implements \JsonSe
     }
 
     /**
-     * Get The new number of Telegram Stars that must be paid by non-administrator users of the channel chat for each message sent to the direct messages group;
+     * Get The new number of Telegram Stars that must be paid by non-administrator users of the channel chat for each message sent to the direct messages group;.
      */
     public function getPaidMessageStarCount(): int
     {
@@ -48,7 +48,7 @@ class MessageDirectMessagePriceChanged extends MessageContent implements \JsonSe
     }
 
     /**
-     * Set The new number of Telegram Stars that must be paid by non-administrator users of the channel chat for each message sent to the direct messages group;
+     * Set The new number of Telegram Stars that must be paid by non-administrator users of the channel chat for each message sent to the direct messages group;.
      */
     public function setPaidMessageStarCount(int $paidMessageStarCount): self
     {

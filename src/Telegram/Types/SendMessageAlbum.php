@@ -31,7 +31,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Target chat
+     * Get Target chat.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Target chat
+     * Set Target chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get If not 0, the message thread identifier in which the messages will be sent
+     * Get If not 0, the message thread identifier in which the messages will be sent.
      */
     public function getMessageThreadId(): int
     {
@@ -57,7 +57,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set If not 0, the message thread identifier in which the messages will be sent
+     * Set If not 0, the message thread identifier in which the messages will be sent.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -67,7 +67,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message or story to be replied; pass null if none
+     * Get Information about the message or story to be replied; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -75,7 +75,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message or story to be replied; pass null if none
+     * Set Information about the message or story to be replied; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -85,7 +85,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Options to be used to send the messages; pass null to use default options
+     * Get Options to be used to send the messages; pass null to use default options.
      */
     public function getOptions(): MessageSendOptions|null
     {
@@ -93,7 +93,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Options to be used to send the messages; pass null to use default options
+     * Set Options to be used to send the messages; pass null to use default options.
      */
     public function setOptions(MessageSendOptions|null $options): self
     {
@@ -103,7 +103,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Get Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media
+     * Get Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media.
      */
     public function getInputMessageContents(): array|null
     {
@@ -111,7 +111,7 @@ class SendMessageAlbum extends Messages implements \JsonSerializable
     }
 
     /**
-     * Set Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media
+     * Set Contents of messages to be sent. At most 10 messages can be added to an album. All messages must have the same value of show_caption_above_media.
      */
     public function setInputMessageContents(array|null $inputMessageContents): self
     {

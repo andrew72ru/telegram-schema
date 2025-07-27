@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Translates a text to the given language. If the current user is a Telegram Premium user, then text formatting is preserved
+ * Translates a text to the given language. If the current user is a Telegram Premium user, then text formatting is preserved.
  */
 class TranslateText extends FormattedText implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class TranslateText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get Text to translate
+     * Get Text to translate.
      */
     public function getText(): FormattedText|null
     {
@@ -30,7 +30,7 @@ class TranslateText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set Text to translate
+     * Set Text to translate.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -40,7 +40,7 @@ class TranslateText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get Language code of the language to which the message is translated. Must be one of
+     * Get Language code of the language to which the message is translated. Must be one of.
      */
     public function getToLanguageCode(): string
     {
@@ -48,7 +48,7 @@ class TranslateText extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set Language code of the language to which the message is translated. Must be one of
+     * Set Language code of the language to which the message is translated. Must be one of.
      */
     public function setToLanguageCode(string $toLanguageCode): self
     {

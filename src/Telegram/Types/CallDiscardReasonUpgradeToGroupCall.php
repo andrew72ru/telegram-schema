@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The call was ended because it has been upgraded to a group call @invite_link Invite link for the group call
+ * The call was ended because it has been upgraded to a group call @invite_link Invite link for the group call.
  */
 class CallDiscardReasonUpgradeToGroupCall extends CallDiscardReason implements \JsonSerializable
 {

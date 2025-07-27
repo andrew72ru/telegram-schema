@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for call and group call messages. Returns the results in reverse chronological order (i.e., in order of decreasing message_id). For optimal performance, the number of returned messages is chosen by TDLib
+ * Searches for call and group call messages. Returns the results in reverse chronological order (i.e., in order of decreasing message_id). For optimal performance, the number of returned messages is chosen by TDLib.
  */
 class SearchCallMessages extends FoundMessages implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class SearchCallMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -33,7 +33,7 @@ class SearchCallMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -43,7 +43,7 @@ class SearchCallMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -51,7 +51,7 @@ class SearchCallMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {
@@ -61,7 +61,7 @@ class SearchCallMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to search only for messages with missed/declined calls
+     * Get Pass true to search only for messages with missed/declined calls.
      */
     public function getOnlyMissed(): bool
     {
@@ -69,7 +69,7 @@ class SearchCallMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to search only for messages with missed/declined calls
+     * Set Pass true to search only for messages with missed/declined calls.
      */
     public function setOnlyMissed(bool $onlyMissed): self
     {

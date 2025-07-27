@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * TDLib needs the user's email address to authorize. Call setAuthenticationEmailAddress to provide the email address, or directly call checkAuthenticationEmailCode with Apple ID/Google ID token if allowed
+ * TDLib needs the user's email address to authorize. Call setAuthenticationEmailAddress to provide the email address, or directly call checkAuthenticationEmailCode with Apple ID/Google ID token if allowed.
  */
 class AuthorizationStateWaitEmailAddress extends AuthorizationState implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class AuthorizationStateWaitEmailAddress extends AuthorizationState implements \
     }
 
     /**
-     * Get True, if authorization through Apple ID is allowed
+     * Get True, if authorization through Apple ID is allowed.
      */
     public function getAllowAppleId(): bool
     {
@@ -30,7 +30,7 @@ class AuthorizationStateWaitEmailAddress extends AuthorizationState implements \
     }
 
     /**
-     * Set True, if authorization through Apple ID is allowed
+     * Set True, if authorization through Apple ID is allowed.
      */
     public function setAllowAppleId(bool $allowAppleId): self
     {
@@ -40,7 +40,7 @@ class AuthorizationStateWaitEmailAddress extends AuthorizationState implements \
     }
 
     /**
-     * Get True, if authorization through Google ID is allowed
+     * Get True, if authorization through Google ID is allowed.
      */
     public function getAllowGoogleId(): bool
     {
@@ -48,7 +48,7 @@ class AuthorizationStateWaitEmailAddress extends AuthorizationState implements \
     }
 
     /**
-     * Set True, if authorization through Google ID is allowed
+     * Set True, if authorization through Google ID is allowed.
      */
     public function setAllowGoogleId(bool $allowGoogleId): self
     {

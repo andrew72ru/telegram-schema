@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes settings for a business account start page
+ * Describes settings for a business account start page.
  */
 class BusinessStartPage implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class BusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Get Title text of the start page
+     * Get Title text of the start page.
      */
     public function getTitle(): string
     {
@@ -33,7 +33,7 @@ class BusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Set Title text of the start page
+     * Set Title text of the start page.
      */
     public function setTitle(string $title): self
     {
@@ -43,7 +43,7 @@ class BusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Get Message text of the start page
+     * Get Message text of the start page.
      */
     public function getMessage(): string
     {
@@ -51,7 +51,7 @@ class BusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Set Message text of the start page
+     * Set Message text of the start page.
      */
     public function setMessage(string $message): self
     {
@@ -61,7 +61,7 @@ class BusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Get Greeting sticker of the start page; may be null if none
+     * Get Greeting sticker of the start page; may be null if none.
      */
     public function getSticker(): Sticker|null
     {
@@ -69,7 +69,7 @@ class BusinessStartPage implements \JsonSerializable
     }
 
     /**
-     * Set Greeting sticker of the start page; may be null if none
+     * Set Greeting sticker of the start page; may be null if none.
      */
     public function setSticker(Sticker|null $sticker): self
     {

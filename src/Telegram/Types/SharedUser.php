@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a user shared with a bot
+ * Contains information about a user shared with a bot.
  */
 class SharedUser implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Get User identifier
+     * Get User identifier.
      */
     public function getUserId(): int
     {
@@ -39,7 +39,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Set User identifier
+     * Set User identifier.
      */
     public function setUserId(int $userId): self
     {
@@ -49,7 +49,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Get First name of the user; for bots only
+     * Get First name of the user; for bots only.
      */
     public function getFirstName(): string
     {
@@ -57,7 +57,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Set First name of the user; for bots only
+     * Set First name of the user; for bots only.
      */
     public function setFirstName(string $firstName): self
     {
@@ -67,7 +67,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Get Last name of the user; for bots only
+     * Get Last name of the user; for bots only.
      */
     public function getLastName(): string
     {
@@ -75,7 +75,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Set Last name of the user; for bots only
+     * Set Last name of the user; for bots only.
      */
     public function setLastName(string $lastName): self
     {
@@ -85,7 +85,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Get Username of the user; for bots only
+     * Get Username of the user; for bots only.
      */
     public function getUsername(): string
     {
@@ -93,7 +93,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Set Username of the user; for bots only
+     * Set Username of the user; for bots only.
      */
     public function setUsername(string $username): self
     {
@@ -103,7 +103,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Get Profile photo of the user; for bots only; may be null
+     * Get Profile photo of the user; for bots only; may be null.
      */
     public function getPhoto(): Photo|null
     {
@@ -111,7 +111,7 @@ class SharedUser implements \JsonSerializable
     }
 
     /**
-     * Set Profile photo of the user; for bots only; may be null
+     * Set Profile photo of the user; for bots only; may be null.
      */
     public function setPhoto(Photo|null $photo): self
     {

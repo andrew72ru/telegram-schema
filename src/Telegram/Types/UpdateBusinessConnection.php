@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A business connection has changed; for bots only @connection New data about the connection
+ * A business connection has changed; for bots only @connection New data about the connection.
  */
 class UpdateBusinessConnection extends Update implements \JsonSerializable
 {

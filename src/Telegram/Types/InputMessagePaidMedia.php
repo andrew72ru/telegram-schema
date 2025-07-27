@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message with paid media; can be used only in channel chats with supergroupFullInfo.has_paid_media_allowed
+ * A message with paid media; can be used only in channel chats with supergroupFullInfo.has_paid_media_allowed.
  */
 class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get The number of Telegram Stars that must be paid to see the media; 1-getOption("paid_media_message_star_count_max")
+     * Get The number of Telegram Stars that must be paid to see the media; 1-getOption("paid_media_message_star_count_max").
      */
     public function getStarCount(): int
     {
@@ -39,7 +39,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set The number of Telegram Stars that must be paid to see the media; 1-getOption("paid_media_message_star_count_max")
+     * Set The number of Telegram Stars that must be paid to see the media; 1-getOption("paid_media_message_star_count_max").
      */
     public function setStarCount(int $starCount): self
     {
@@ -49,7 +49,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get The content of the paid media
+     * Get The content of the paid media.
      */
     public function getPaidMedia(): array|null
     {
@@ -57,7 +57,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set The content of the paid media
+     * Set The content of the paid media.
      */
     public function setPaidMedia(array|null $paidMedia): self
     {
@@ -67,7 +67,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Message caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Get Message caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function getCaption(): FormattedText|null
     {
@@ -75,7 +75,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Message caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
+     * Set Message caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters.
      */
     public function setCaption(FormattedText|null $caption): self
     {
@@ -85,7 +85,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get True, if the caption must be shown above the media; otherwise, the caption must be shown below the media; not supported in secret chats
+     * Get True, if the caption must be shown above the media; otherwise, the caption must be shown below the media; not supported in secret chats.
      */
     public function getShowCaptionAboveMedia(): bool
     {
@@ -93,7 +93,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set True, if the caption must be shown above the media; otherwise, the caption must be shown below the media; not supported in secret chats
+     * Set True, if the caption must be shown above the media; otherwise, the caption must be shown below the media; not supported in secret chats.
      */
     public function setShowCaptionAboveMedia(bool $showCaptionAboveMedia): self
     {
@@ -103,7 +103,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Bot-provided data for the paid media; bots only
+     * Get Bot-provided data for the paid media; bots only.
      */
     public function getPayload(): string
     {
@@ -111,7 +111,7 @@ class InputMessagePaidMedia extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Bot-provided data for the paid media; bots only
+     * Set Bot-provided data for the paid media; bots only.
      */
     public function setPayload(string $payload): self
     {

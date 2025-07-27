@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A message was pinned @message Pinned message
+ * A message was pinned @message Pinned message.
  */
 class ChatEventMessagePinned extends ChatEventAction implements \JsonSerializable
 {

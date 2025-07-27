@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes all messages between the specified dates in the topic in a channel direct messages chat administered by the current user. Messages sent in the last 30 seconds will not be deleted
+ * Deletes all messages between the specified dates in the topic in a channel direct messages chat administered by the current user. Messages sent in the last 30 seconds will not be deleted.
  */
 class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Get Chat identifier of the channel direct messages chat
+     * Get Chat identifier of the channel direct messages chat.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Set Chat identifier of the channel direct messages chat
+     * Set Chat identifier of the channel direct messages chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Get Identifier of the topic which messages will be deleted
+     * Get Identifier of the topic which messages will be deleted.
      */
     public function getTopicId(): int
     {
@@ -54,7 +54,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Set Identifier of the topic which messages will be deleted
+     * Set Identifier of the topic which messages will be deleted.
      */
     public function setTopicId(int $topicId): self
     {
@@ -64,7 +64,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Get The minimum date of the messages to delete
+     * Get The minimum date of the messages to delete.
      */
     public function getMinDate(): int
     {
@@ -72,7 +72,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Set The minimum date of the messages to delete
+     * Set The minimum date of the messages to delete.
      */
     public function setMinDate(int $minDate): self
     {
@@ -82,7 +82,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Get The maximum date of the messages to delete
+     * Get The maximum date of the messages to delete.
      */
     public function getMaxDate(): int
     {
@@ -90,7 +90,7 @@ class DeleteDirectMessagesChatTopicMessagesByDate extends Ok implements \JsonSer
     }
 
     /**
-     * Set The maximum date of the messages to delete
+     * Set The maximum date of the messages to delete.
      */
     public function setMaxDate(int $maxDate): self
     {

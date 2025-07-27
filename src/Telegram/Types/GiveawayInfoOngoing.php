@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an ongoing giveaway
+ * Describes an ongoing giveaway.
  */
 class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when the giveaway was created
+     * Get Point in time (Unix timestamp) when the giveaway was created.
      */
     public function getCreationDate(): int
     {
@@ -33,7 +33,7 @@ class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when the giveaway was created
+     * Set Point in time (Unix timestamp) when the giveaway was created.
      */
     public function setCreationDate(int $creationDate): self
     {
@@ -43,7 +43,7 @@ class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get Status of the current user in the giveaway
+     * Get Status of the current user in the giveaway.
      */
     public function getStatus(): GiveawayParticipantStatus|null
     {
@@ -51,7 +51,7 @@ class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set Status of the current user in the giveaway
+     * Set Status of the current user in the giveaway.
      */
     public function setStatus(GiveawayParticipantStatus|null $status): self
     {
@@ -61,7 +61,7 @@ class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the giveaway has ended and results are being prepared
+     * Get True, if the giveaway has ended and results are being prepared.
      */
     public function getIsEnded(): bool
     {
@@ -69,7 +69,7 @@ class GiveawayInfoOngoing extends GiveawayInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the giveaway has ended and results are being prepared
+     * Set True, if the giveaway has ended and results are being prepared.
      */
     public function setIsEnded(bool $isEnded): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a counter @count Count
+ * Contains a counter @count Count.
  */
 class Count implements \JsonSerializable
 {

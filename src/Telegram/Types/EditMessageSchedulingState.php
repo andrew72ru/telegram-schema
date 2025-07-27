@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the time when a scheduled message will be sent. Scheduling state of all messages in the same album or forwarded together with the message will be also changed
+ * Edits the time when a scheduled message will be sent. Scheduling state of all messages in the same album or forwarded together with the message will be also changed.
  */
 class EditMessageSchedulingState extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class EditMessageSchedulingState extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class EditMessageSchedulingState extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class EditMessageSchedulingState extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message. Use messageProperties.can_edit_scheduling_state to check whether the message is suitable
+     * Get Identifier of the message. Use messageProperties.can_edit_scheduling_state to check whether the message is suitable.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class EditMessageSchedulingState extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message. Use messageProperties.can_edit_scheduling_state to check whether the message is suitable
+     * Set Identifier of the message. Use messageProperties.can_edit_scheduling_state to check whether the message is suitable.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class EditMessageSchedulingState extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new message scheduling state; pass null to send the message immediately. Must be null for messages in the state messageSchedulingStateSendWhenVideoProcessed
+     * Get The new message scheduling state; pass null to send the message immediately. Must be null for messages in the state messageSchedulingStateSendWhenVideoProcessed.
      */
     public function getSchedulingState(): MessageSchedulingState|null
     {
@@ -69,7 +69,7 @@ class EditMessageSchedulingState extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new message scheduling state; pass null to send the message immediately. Must be null for messages in the state messageSchedulingStateSendWhenVideoProcessed
+     * Set The new message scheduling state; pass null to send the message immediately. Must be null for messages in the state messageSchedulingStateSendWhenVideoProcessed.
      */
     public function setSchedulingState(MessageSchedulingState|null $schedulingState): self
     {

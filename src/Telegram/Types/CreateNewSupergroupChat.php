@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Creates a new supergroup or channel and sends a corresponding messageSupergroupChatCreate. Returns the newly created chat
+ * Creates a new supergroup or channel and sends a corresponding messageSupergroupChatCreate. Returns the newly created chat.
  */
 class CreateNewSupergroupChat extends Chat implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Title of the new chat; 1-128 characters
+     * Get Title of the new chat; 1-128 characters.
      */
     public function getTitle(): string
     {
@@ -45,7 +45,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Title of the new chat; 1-128 characters
+     * Set Title of the new chat; 1-128 characters.
      */
     public function setTitle(string $title): self
     {
@@ -55,7 +55,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create a forum supergroup chat
+     * Get Pass true to create a forum supergroup chat.
      */
     public function getIsForum(): bool
     {
@@ -63,7 +63,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create a forum supergroup chat
+     * Set Pass true to create a forum supergroup chat.
      */
     public function setIsForum(bool $isForum): self
     {
@@ -73,7 +73,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create a channel chat; ignored if a forum is created
+     * Get Pass true to create a channel chat; ignored if a forum is created.
      */
     public function getIsChannel(): bool
     {
@@ -81,7 +81,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create a channel chat; ignored if a forum is created
+     * Set Pass true to create a channel chat; ignored if a forum is created.
      */
     public function setIsChannel(bool $isChannel): self
     {
@@ -91,7 +91,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Creates a new supergroup or channel and sends a corresponding messageSupergroupChatCreate. Returns the newly created chat
+     * Get Creates a new supergroup or channel and sends a corresponding messageSupergroupChatCreate. Returns the newly created chat.
      */
     public function getDescription(): string
     {
@@ -99,7 +99,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Creates a new supergroup or channel and sends a corresponding messageSupergroupChatCreate. Returns the newly created chat
+     * Set Creates a new supergroup or channel and sends a corresponding messageSupergroupChatCreate. Returns the newly created chat.
      */
     public function setDescription(string $description): self
     {
@@ -109,7 +109,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Chat location if a location-based supergroup is being created; pass null to create an ordinary supergroup chat
+     * Get Chat location if a location-based supergroup is being created; pass null to create an ordinary supergroup chat.
      */
     public function getLocation(): ChatLocation|null
     {
@@ -117,7 +117,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Chat location if a location-based supergroup is being created; pass null to create an ordinary supergroup chat
+     * Set Chat location if a location-based supergroup is being created; pass null to create an ordinary supergroup chat.
      */
     public function setLocation(ChatLocation|null $location): self
     {
@@ -127,7 +127,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
+     * Get Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically.
      */
     public function getMessageAutoDeleteTime(): int
     {
@@ -135,7 +135,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
+     * Set Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically.
      */
     public function setMessageAutoDeleteTime(int $messageAutoDeleteTime): self
     {
@@ -145,7 +145,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to create a supergroup for importing messages using importMessages
+     * Get Pass true to create a supergroup for importing messages using importMessages.
      */
     public function getForImport(): bool
     {
@@ -153,7 +153,7 @@ class CreateNewSupergroupChat extends Chat implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to create a supergroup for importing messages using importMessages
+     * Set Pass true to create a supergroup for importing messages using importMessages.
      */
     public function setForImport(bool $forImport): self
     {

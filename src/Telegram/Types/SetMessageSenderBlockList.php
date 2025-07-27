@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the block list of a message sender. Currently, only users and supergroup chats can be blocked
+ * Changes the block list of a message sender. Currently, only users and supergroup chats can be blocked.
  */
 class SetMessageSenderBlockList extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetMessageSenderBlockList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a message sender to block/unblock
+     * Get Identifier of a message sender to block/unblock.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -30,7 +30,7 @@ class SetMessageSenderBlockList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a message sender to block/unblock
+     * Set Identifier of a message sender to block/unblock.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -40,7 +40,7 @@ class SetMessageSenderBlockList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get New block list for the message sender; pass null to unblock the message sender
+     * Get New block list for the message sender; pass null to unblock the message sender.
      */
     public function getBlockList(): BlockList|null
     {
@@ -48,7 +48,7 @@ class SetMessageSenderBlockList extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set New block list for the message sender; pass null to unblock the message sender
+     * Set New block list for the message sender; pass null to unblock the message sender.
      */
     public function setBlockList(BlockList|null $blockList): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes order of active usernames of the current user @usernames The new order of active usernames. All currently active usernames must be specified
+ * Changes order of active usernames of the current user @usernames The new order of active usernames. All currently active usernames must be specified.
  */
 class ReorderActiveUsernames extends Ok implements \JsonSerializable
 {

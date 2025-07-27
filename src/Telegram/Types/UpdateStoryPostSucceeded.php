@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A story has been successfully posted @story The posted story @old_story_id The previous temporary story identifier
+ * A story has been successfully posted @story The posted story @old_story_id The previous temporary story identifier.
  */
 class UpdateStoryPostSucceeded extends Update implements \JsonSerializable
 {

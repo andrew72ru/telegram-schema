@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns users which can be mentioned in the chat @message_thread_id If non-zero, the identifier of the current message thread
+ * Returns users which can be mentioned in the chat @message_thread_id If non-zero, the identifier of the current message thread.
  */
 class ChatMembersFilterMention extends ChatMembersFilter implements \JsonSerializable
 {

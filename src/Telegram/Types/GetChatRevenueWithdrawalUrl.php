@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns a URL for chat revenue withdrawal; requires owner privileges in the channel chat or the bot. Currently, this method can be used only
+ * Returns a URL for chat revenue withdrawal; requires owner privileges in the channel chat or the bot. Currently, this method can be used only.
  */
 class GetChatRevenueWithdrawalUrl extends HttpUrl implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class GetChatRevenueWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -30,7 +30,7 @@ class GetChatRevenueWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -40,7 +40,7 @@ class GetChatRevenueWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -48,7 +48,7 @@ class GetChatRevenueWithdrawalUrl extends HttpUrl implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {

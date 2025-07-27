@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds tasks to a checklist in a message
+ * Adds tasks to a checklist in a message.
  */
 class AddChecklistTasks extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class AddChecklistTasks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat with the message
+     * Get Identifier of the chat with the message.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class AddChecklistTasks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat with the message
+     * Set Identifier of the chat with the message.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class AddChecklistTasks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message containing the checklist. Use messageProperties.can_add_tasks to check whether the tasks can be added
+     * Get Identifier of the message containing the checklist. Use messageProperties.can_add_tasks to check whether the tasks can be added.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class AddChecklistTasks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message containing the checklist. Use messageProperties.can_add_tasks to check whether the tasks can be added
+     * Set Identifier of the message containing the checklist. Use messageProperties.can_add_tasks to check whether the tasks can be added.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class AddChecklistTasks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get List of added tasks
+     * Get List of added tasks.
      */
     public function getTasks(): array|null
     {
@@ -69,7 +69,7 @@ class AddChecklistTasks extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set List of added tasks
+     * Set List of added tasks.
      */
     public function setTasks(array|null $tasks): self
     {

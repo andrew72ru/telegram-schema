@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a game. Use getInternalLink with internalLinkTypeGame to share the game
+ * Describes a game. Use getInternalLink with internalLinkTypeGame to share the game.
  */
 class Game implements \JsonSerializable
 {
@@ -37,7 +37,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Unique game identifier
+     * Get Unique game identifier.
      */
     public function getId(): int
     {
@@ -45,7 +45,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Unique game identifier
+     * Set Unique game identifier.
      */
     public function setId(int $id): self
     {
@@ -55,7 +55,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Game short name
+     * Get Game short name.
      */
     public function getShortName(): string
     {
@@ -63,7 +63,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Game short name
+     * Set Game short name.
      */
     public function setShortName(string $shortName): self
     {
@@ -73,7 +73,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Game title
+     * Get Game title.
      */
     public function getTitle(): string
     {
@@ -81,7 +81,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Game title
+     * Set Game title.
      */
     public function setTitle(string $title): self
     {
@@ -91,7 +91,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Game text, usually containing scoreboards for a game
+     * Get Game text, usually containing scoreboards for a game.
      */
     public function getText(): FormattedText|null
     {
@@ -99,7 +99,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Game text, usually containing scoreboards for a game
+     * Set Game text, usually containing scoreboards for a game.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -109,7 +109,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Describes a game. Use getInternalLink with internalLinkTypeGame to share the game
+     * Get Describes a game. Use getInternalLink with internalLinkTypeGame to share the game.
      */
     public function getDescription(): string
     {
@@ -117,7 +117,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Describes a game. Use getInternalLink with internalLinkTypeGame to share the game
+     * Set Describes a game. Use getInternalLink with internalLinkTypeGame to share the game.
      */
     public function setDescription(string $description): self
     {
@@ -127,7 +127,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Game photo
+     * Get Game photo.
      */
     public function getPhoto(): Photo|null
     {
@@ -135,7 +135,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Game photo
+     * Set Game photo.
      */
     public function setPhoto(Photo|null $photo): self
     {
@@ -145,7 +145,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Get Game animation; may be null
+     * Get Game animation; may be null.
      */
     public function getAnimation(): Animation|null
     {
@@ -153,7 +153,7 @@ class Game implements \JsonSerializable
     }
 
     /**
-     * Set Game animation; may be null
+     * Set Game animation; may be null.
      */
     public function setAnimation(Animation|null $animation): self
     {

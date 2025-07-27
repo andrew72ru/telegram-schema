@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a business bot that manages the chat
+ * Contains information about a business bot that manages the chat.
  */
 class BusinessBotManageBar implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Get User identifier of the bot
+     * Get User identifier of the bot.
      */
     public function getBotUserId(): int
     {
@@ -36,7 +36,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Set User identifier of the bot
+     * Set User identifier of the bot.
      */
     public function setBotUserId(int $botUserId): self
     {
@@ -46,7 +46,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Get URL to be opened to manage the bot
+     * Get URL to be opened to manage the bot.
      */
     public function getManageUrl(): string
     {
@@ -54,7 +54,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Set URL to be opened to manage the bot
+     * Set URL to be opened to manage the bot.
      */
     public function setManageUrl(string $manageUrl): self
     {
@@ -64,7 +64,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot is paused. Use toggleBusinessConnectedBotChatIsPaused to change the value of the field
+     * Get True, if the bot is paused. Use toggleBusinessConnectedBotChatIsPaused to change the value of the field.
      */
     public function getIsBotPaused(): bool
     {
@@ -72,7 +72,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot is paused. Use toggleBusinessConnectedBotChatIsPaused to change the value of the field
+     * Set True, if the bot is paused. Use toggleBusinessConnectedBotChatIsPaused to change the value of the field.
      */
     public function setIsBotPaused(bool $isBotPaused): self
     {
@@ -82,7 +82,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Get True, if the bot can reply
+     * Get True, if the bot can reply.
      */
     public function getCanBotReply(): bool
     {
@@ -90,7 +90,7 @@ class BusinessBotManageBar implements \JsonSerializable
     }
 
     /**
-     * Set True, if the bot can reply
+     * Set True, if the bot can reply.
      */
     public function setCanBotReply(bool $canBotReply): self
     {

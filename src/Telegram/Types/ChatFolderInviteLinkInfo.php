@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about an invite link to a chat folder
+ * Contains information about an invite link to a chat folder.
  */
 class ChatFolderInviteLinkInfo implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class ChatFolderInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Basic information about the chat folder; chat folder identifier will be 0 if the user didn't have the chat folder yet
+     * Get Basic information about the chat folder; chat folder identifier will be 0 if the user didn't have the chat folder yet.
      */
     public function getChatFolderInfo(): ChatFolderInfo|null
     {
@@ -33,7 +33,7 @@ class ChatFolderInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Basic information about the chat folder; chat folder identifier will be 0 if the user didn't have the chat folder yet
+     * Set Basic information about the chat folder; chat folder identifier will be 0 if the user didn't have the chat folder yet.
      */
     public function setChatFolderInfo(ChatFolderInfo|null $chatFolderInfo): self
     {
@@ -43,7 +43,7 @@ class ChatFolderInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the chats from the link, which aren't added to the folder yet
+     * Get Identifiers of the chats from the link, which aren't added to the folder yet.
      */
     public function getMissingChatIds(): array|null
     {
@@ -51,7 +51,7 @@ class ChatFolderInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the chats from the link, which aren't added to the folder yet
+     * Set Identifiers of the chats from the link, which aren't added to the folder yet.
      */
     public function setMissingChatIds(array|null $missingChatIds): self
     {
@@ -61,7 +61,7 @@ class ChatFolderInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Identifiers of the chats from the link, which are added to the folder already
+     * Get Identifiers of the chats from the link, which are added to the folder already.
      */
     public function getAddedChatIds(): array|null
     {
@@ -69,7 +69,7 @@ class ChatFolderInviteLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Identifiers of the chats from the link, which are added to the folder already
+     * Set Identifiers of the chats from the link, which are added to the folder already.
      */
     public function setAddedChatIds(array|null $addedChatIds): self
     {

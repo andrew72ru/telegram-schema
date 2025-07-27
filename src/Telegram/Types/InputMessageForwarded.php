@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A forwarded message
+ * A forwarded message.
  */
 class InputMessageForwarded extends InputMessageContent implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Identifier for the chat this forwarded message came from
+     * Get Identifier for the chat this forwarded message came from.
      */
     public function getFromChatId(): int
     {
@@ -42,7 +42,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Identifier for the chat this forwarded message came from
+     * Set Identifier for the chat this forwarded message came from.
      */
     public function setFromChatId(int $fromChatId): self
     {
@@ -52,7 +52,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Identifier of the message to forward. A message can be forwarded only if messageProperties.can_be_forwarded
+     * Get Identifier of the message to forward. A message can be forwarded only if messageProperties.can_be_forwarded.
      */
     public function getMessageId(): int
     {
@@ -60,7 +60,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Identifier of the message to forward. A message can be forwarded only if messageProperties.can_be_forwarded
+     * Set Identifier of the message to forward. A message can be forwarded only if messageProperties.can_be_forwarded.
      */
     public function setMessageId(int $messageId): self
     {
@@ -70,7 +70,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Pass true if a game message is being shared from a launched game; applies only to game messages
+     * Get Pass true if a game message is being shared from a launched game; applies only to game messages.
      */
     public function getInGameShare(): bool
     {
@@ -78,7 +78,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Pass true if a game message is being shared from a launched game; applies only to game messages
+     * Set Pass true if a game message is being shared from a launched game; applies only to game messages.
      */
     public function setInGameShare(bool $inGameShare): self
     {
@@ -88,7 +88,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Pass true to replace video start timestamp in the forwarded message
+     * Get Pass true to replace video start timestamp in the forwarded message.
      */
     public function getReplaceVideoStartTimestamp(): bool
     {
@@ -96,7 +96,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Pass true to replace video start timestamp in the forwarded message
+     * Set Pass true to replace video start timestamp in the forwarded message.
      */
     public function setReplaceVideoStartTimestamp(bool $replaceVideoStartTimestamp): self
     {
@@ -106,7 +106,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get The new video start timestamp; ignored if replace_video_start_timestamp == false
+     * Get The new video start timestamp; ignored if replace_video_start_timestamp == false.
      */
     public function getNewVideoStartTimestamp(): int
     {
@@ -114,7 +114,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set The new video start timestamp; ignored if replace_video_start_timestamp == false
+     * Set The new video start timestamp; ignored if replace_video_start_timestamp == false.
      */
     public function setNewVideoStartTimestamp(int $newVideoStartTimestamp): self
     {
@@ -124,7 +124,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Get Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual
+     * Get Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual.
      */
     public function getCopyOptions(): MessageCopyOptions|null
     {
@@ -132,7 +132,7 @@ class InputMessageForwarded extends InputMessageContent implements \JsonSerializ
     }
 
     /**
-     * Set Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual
+     * Set Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual.
      */
     public function setCopyOptions(MessageCopyOptions|null $copyOptions): self
     {

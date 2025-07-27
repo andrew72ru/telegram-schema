@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds an element to the user's Telegram Passport. May return an error with a message "PHONE_VERIFICATION_NEEDED" or "EMAIL_VERIFICATION_NEEDED" if the chosen phone number or the chosen email address must be verified first
+ * Adds an element to the user's Telegram Passport. May return an error with a message "PHONE_VERIFICATION_NEEDED" or "EMAIL_VERIFICATION_NEEDED" if the chosen phone number or the chosen email address must be verified first.
  */
 class SetPassportElement extends PassportElement implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetPassportElement extends PassportElement implements \JsonSerializable
     }
 
     /**
-     * Get Input Telegram Passport element
+     * Get Input Telegram Passport element.
      */
     public function getElement(): InputPassportElement|null
     {
@@ -30,7 +30,7 @@ class SetPassportElement extends PassportElement implements \JsonSerializable
     }
 
     /**
-     * Set Input Telegram Passport element
+     * Set Input Telegram Passport element.
      */
     public function setElement(InputPassportElement|null $element): self
     {
@@ -40,7 +40,7 @@ class SetPassportElement extends PassportElement implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -48,7 +48,7 @@ class SetPassportElement extends PassportElement implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {

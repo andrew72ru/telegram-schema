@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Edits the text of a text or game message sent on behalf of a business account; for bots only
+ * Edits the text of a text or game message sent on behalf of a business account; for bots only.
  */
 class EditBusinessMessageText extends BusinessMessage implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which the message was sent
+     * Get Unique identifier of business connection on behalf of which the message was sent.
      */
     public function getBusinessConnectionId(): string
     {
@@ -39,7 +39,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which the message was sent
+     * Set Unique identifier of business connection on behalf of which the message was sent.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -49,7 +49,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Get The chat the message belongs to
+     * Get The chat the message belongs to.
      */
     public function getChatId(): int
     {
@@ -57,7 +57,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Set The chat the message belongs to
+     * Set The chat the message belongs to.
      */
     public function setChatId(int $chatId): self
     {
@@ -67,7 +67,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -75,7 +75,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -85,7 +85,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Get The new message reply markup; pass null if none
+     * Get The new message reply markup; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -93,7 +93,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Set The new message reply markup; pass null if none
+     * Set The new message reply markup; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -103,7 +103,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Get New text content of the message. Must be of type inputMessageText
+     * Get New text content of the message. Must be of type inputMessageText.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -111,7 +111,7 @@ class EditBusinessMessageText extends BusinessMessage implements \JsonSerializab
     }
 
     /**
-     * Set New text content of the message. Must be of type inputMessageText
+     * Set New text content of the message. Must be of type inputMessageText.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

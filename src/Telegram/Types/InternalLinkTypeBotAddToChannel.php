@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a Telegram bot, which is expected to be added to a channel chat as an administrator. Call searchPublicChat with the given bot username and check that the user is a bot,
+ * The link is a link to a Telegram bot, which is expected to be added to a channel chat as an administrator. Call searchPublicChat with the given bot username and check that the user is a bot,.
  */
 class InternalLinkTypeBotAddToChannel extends InternalLinkType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InternalLinkTypeBotAddToChannel extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Username of the bot
+     * Get Username of the bot.
      */
     public function getBotUsername(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeBotAddToChannel extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Username of the bot
+     * Set Username of the bot.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeBotAddToChannel extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Get Expected administrator rights for the bot
+     * Get Expected administrator rights for the bot.
      */
     public function getAdministratorRights(): ChatAdministratorRights|null
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeBotAddToChannel extends InternalLinkType implements \JsonS
     }
 
     /**
-     * Set Expected administrator rights for the bot
+     * Set Expected administrator rights for the bot.
      */
     public function setAdministratorRights(ChatAdministratorRights|null $administratorRights): self
     {

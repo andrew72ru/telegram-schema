@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes a story to be replied
+ * Describes a story to be replied.
  */
 class InputMessageReplyToStory extends InputMessageReplyTo implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InputMessageReplyToStory extends InputMessageReplyTo implements \JsonSeria
     }
 
     /**
-     * Get The identifier of the poster of the story. Currently, stories can be replied only in the chat that posted the story; channel stories can't be replied
+     * Get The identifier of the poster of the story. Currently, stories can be replied only in the chat that posted the story; channel stories can't be replied.
      */
     public function getStoryPosterChatId(): int
     {
@@ -30,7 +30,7 @@ class InputMessageReplyToStory extends InputMessageReplyTo implements \JsonSeria
     }
 
     /**
-     * Set The identifier of the poster of the story. Currently, stories can be replied only in the chat that posted the story; channel stories can't be replied
+     * Set The identifier of the poster of the story. Currently, stories can be replied only in the chat that posted the story; channel stories can't be replied.
      */
     public function setStoryPosterChatId(int $storyPosterChatId): self
     {
@@ -40,7 +40,7 @@ class InputMessageReplyToStory extends InputMessageReplyTo implements \JsonSeria
     }
 
     /**
-     * Get The identifier of the story
+     * Get The identifier of the story.
      */
     public function getStoryId(): int
     {
@@ -48,7 +48,7 @@ class InputMessageReplyToStory extends InputMessageReplyTo implements \JsonSeria
     }
 
     /**
-     * Set The identifier of the story
+     * Set The identifier of the story.
      */
     public function setStoryId(int $storyId): self
     {

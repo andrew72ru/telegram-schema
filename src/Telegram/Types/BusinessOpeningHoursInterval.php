@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Describes an interval of time when the business is open
+ * Describes an interval of time when the business is open.
  */
 class BusinessOpeningHoursInterval implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class BusinessOpeningHoursInterval implements \JsonSerializable
     }
 
     /**
-     * Get The minute's sequence number in a week, starting on Monday, marking the start of the time interval during which the business is open; 0-7*24*60
+     * Get The minute's sequence number in a week, starting on Monday, marking the start of the time interval during which the business is open; 0-7*24*60.
      */
     public function getStartMinute(): int
     {
@@ -30,7 +30,7 @@ class BusinessOpeningHoursInterval implements \JsonSerializable
     }
 
     /**
-     * Set The minute's sequence number in a week, starting on Monday, marking the start of the time interval during which the business is open; 0-7*24*60
+     * Set The minute's sequence number in a week, starting on Monday, marking the start of the time interval during which the business is open; 0-7*24*60.
      */
     public function setStartMinute(int $startMinute): self
     {
@@ -40,7 +40,7 @@ class BusinessOpeningHoursInterval implements \JsonSerializable
     }
 
     /**
-     * Get The minute's sequence number in a week, starting on Monday, marking the end of the time interval during which the business is open; 1-8*24*60
+     * Get The minute's sequence number in a week, starting on Monday, marking the end of the time interval during which the business is open; 1-8*24*60.
      */
     public function getEndMinute(): int
     {
@@ -48,7 +48,7 @@ class BusinessOpeningHoursInterval implements \JsonSerializable
     }
 
     /**
-     * Set The minute's sequence number in a week, starting on Monday, marking the end of the time interval during which the business is open; 1-8*24*60
+     * Set The minute's sequence number in a week, starting on Monday, marking the end of the time interval during which the business is open; 1-8*24*60.
      */
     public function setEndMinute(int $endMinute): self
     {

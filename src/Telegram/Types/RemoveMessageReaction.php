@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a reaction from a message. A chosen reaction can always be removed
+ * Removes a reaction from a message. A chosen reaction can always be removed.
  */
 class RemoveMessageReaction extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class RemoveMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the message belongs
+     * Get Identifier of the chat to which the message belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class RemoveMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the message belongs
+     * Set Identifier of the chat to which the message belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class RemoveMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message
+     * Get Identifier of the message.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class RemoveMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message
+     * Set Identifier of the message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class RemoveMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Type of the reaction to remove. The paid reaction can't be removed
+     * Get Type of the reaction to remove. The paid reaction can't be removed.
      */
     public function getReactionType(): ReactionType|null
     {
@@ -69,7 +69,7 @@ class RemoveMessageReaction extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Type of the reaction to remove. The paid reaction can't be removed
+     * Set Type of the reaction to remove. The paid reaction can't be removed.
      */
     public function setReactionType(ReactionType|null $reactionType): self
     {

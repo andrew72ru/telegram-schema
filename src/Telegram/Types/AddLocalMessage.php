@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Adds a local message to a chat. The message is persistent across application restarts only if the message database is used. Returns the added message
+ * Adds a local message to a chat. The message is persistent across application restarts only if the message database is used. Returns the added message.
  */
 class AddLocalMessage extends Message implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Target chat; channel direct messages chats aren't supported
+     * Get Target chat; channel direct messages chats aren't supported.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Target chat; channel direct messages chats aren't supported
+     * Set Target chat; channel direct messages chats aren't supported.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the sender of the message
+     * Get Identifier of the sender of the message.
      */
     public function getSenderId(): MessageSender|null
     {
@@ -57,7 +57,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the sender of the message
+     * Set Identifier of the sender of the message.
      */
     public function setSenderId(MessageSender|null $senderId): self
     {
@@ -67,7 +67,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message or story to be replied; pass null if none
+     * Get Information about the message or story to be replied; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -75,7 +75,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message or story to be replied; pass null if none
+     * Set Information about the message or story to be replied; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -85,7 +85,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to disable notification for the message
+     * Get Pass true to disable notification for the message.
      */
     public function getDisableNotification(): bool
     {
@@ -93,7 +93,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to disable notification for the message
+     * Set Pass true to disable notification for the message.
      */
     public function setDisableNotification(bool $disableNotification): self
     {
@@ -103,7 +103,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Get The content of the message to be added
+     * Get The content of the message to be added.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -111,7 +111,7 @@ class AddLocalMessage extends Message implements \JsonSerializable
     }
 
     /**
-     * Set The content of the message to be added
+     * Set The content of the message to be added.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

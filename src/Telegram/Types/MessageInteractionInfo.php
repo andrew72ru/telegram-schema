@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about interactions with a message
+ * Contains information about interactions with a message.
  */
 class MessageInteractionInfo implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the message was viewed
+     * Get Number of times the message was viewed.
      */
     public function getViewCount(): int
     {
@@ -36,7 +36,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the message was viewed
+     * Set Number of times the message was viewed.
      */
     public function setViewCount(int $viewCount): self
     {
@@ -46,7 +46,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Number of times the message was forwarded
+     * Get Number of times the message was forwarded.
      */
     public function getForwardCount(): int
     {
@@ -54,7 +54,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Number of times the message was forwarded
+     * Set Number of times the message was forwarded.
      */
     public function setForwardCount(int $forwardCount): self
     {
@@ -64,7 +64,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get Information about direct or indirect replies to the message; may be null. Currently, available only in channels with a discussion supergroup and discussion supergroups for messages, which are not replies itself
+     * Get Information about direct or indirect replies to the message; may be null. Currently, available only in channels with a discussion supergroup and discussion supergroups for messages, which are not replies itself.
      */
     public function getReplyInfo(): MessageReplyInfo|null
     {
@@ -72,7 +72,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set Information about direct or indirect replies to the message; may be null. Currently, available only in channels with a discussion supergroup and discussion supergroups for messages, which are not replies itself
+     * Set Information about direct or indirect replies to the message; may be null. Currently, available only in channels with a discussion supergroup and discussion supergroups for messages, which are not replies itself.
      */
     public function setReplyInfo(MessageReplyInfo|null $replyInfo): self
     {
@@ -82,7 +82,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Get The list of reactions or tags added to the message; may be null
+     * Get The list of reactions or tags added to the message; may be null.
      */
     public function getReactions(): MessageReactions|null
     {
@@ -90,7 +90,7 @@ class MessageInteractionInfo implements \JsonSerializable
     }
 
     /**
-     * Set The list of reactions or tags added to the message; may be null
+     * Set The list of reactions or tags added to the message; may be null.
      */
     public function setReactions(MessageReactions|null $reactions): self
     {

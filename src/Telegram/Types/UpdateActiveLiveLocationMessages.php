@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The list of messages with active live location that need to be updated by the application has changed. The list is persistent across application restarts only if the message database is used
+ * The list of messages with active live location that need to be updated by the application has changed. The list is persistent across application restarts only if the message database is used.
  */
 class UpdateActiveLiveLocationMessages extends Update implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class UpdateActiveLiveLocationMessages extends Update implements \JsonSerializab
     }
 
     /**
-     * Get The list of messages with active live locations
+     * Get The list of messages with active live locations.
      */
     public function getMessages(): array|null
     {
@@ -27,7 +27,7 @@ class UpdateActiveLiveLocationMessages extends Update implements \JsonSerializab
     }
 
     /**
-     * Set The list of messages with active live locations
+     * Set The list of messages with active live locations.
      */
     public function setMessages(array|null $messages): self
     {

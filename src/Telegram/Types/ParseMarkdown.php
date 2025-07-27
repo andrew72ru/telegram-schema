@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Parses Markdown entities in a human-friendly format, ignoring markup errors. Can be called synchronously
+ * Parses Markdown entities in a human-friendly format, ignoring markup errors. Can be called synchronously.
  */
 class ParseMarkdown extends FormattedText implements \JsonSerializable
 {
@@ -19,7 +19,7 @@ class ParseMarkdown extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Get The text to parse. For example, "__italic__ ~~strikethrough~~ ||spoiler|| **bold** `code` ```pre``` __[italic__ text_url](telegram.org) __italic**bold italic__bold**"
+     * Get The text to parse. For example, "__italic__ ~~strikethrough~~ ||spoiler|| **bold** `code` ```pre``` __[italic__ text_url](telegram.org) __italic**bold italic__bold**".
      */
     public function getText(): FormattedText|null
     {
@@ -27,7 +27,7 @@ class ParseMarkdown extends FormattedText implements \JsonSerializable
     }
 
     /**
-     * Set The text to parse. For example, "__italic__ ~~strikethrough~~ ||spoiler|| **bold** `code` ```pre``` __[italic__ text_url](telegram.org) __italic**bold italic__bold**"
+     * Set The text to parse. For example, "__italic__ ~~strikethrough~~ ||spoiler|| **bold** `code` ```pre``` __[italic__ text_url](telegram.org) __italic**bold italic__bold**".
      */
     public function setText(FormattedText|null $text): self
     {

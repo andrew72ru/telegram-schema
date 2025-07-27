@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat member was deleted
+ * A chat member was deleted.
  */
 class PushMessageContentChatDeleteMember extends PushMessageContent implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class PushMessageContentChatDeleteMember extends PushMessageContent implements \
     }
 
     /**
-     * Get Name of the deleted member
+     * Get Name of the deleted member.
      */
     public function getMemberName(): string
     {
@@ -33,7 +33,7 @@ class PushMessageContentChatDeleteMember extends PushMessageContent implements \
     }
 
     /**
-     * Set Name of the deleted member
+     * Set Name of the deleted member.
      */
     public function setMemberName(string $memberName): self
     {
@@ -43,7 +43,7 @@ class PushMessageContentChatDeleteMember extends PushMessageContent implements \
     }
 
     /**
-     * Get True, if the current user was deleted from the group
+     * Get True, if the current user was deleted from the group.
      */
     public function getIsCurrentUser(): bool
     {
@@ -51,7 +51,7 @@ class PushMessageContentChatDeleteMember extends PushMessageContent implements \
     }
 
     /**
-     * Set True, if the current user was deleted from the group
+     * Set True, if the current user was deleted from the group.
      */
     public function setIsCurrentUser(bool $isCurrentUser): self
     {
@@ -61,7 +61,7 @@ class PushMessageContentChatDeleteMember extends PushMessageContent implements \
     }
 
     /**
-     * Get True, if the user has left the group themselves
+     * Get True, if the user has left the group themselves.
      */
     public function getIsLeft(): bool
     {
@@ -69,7 +69,7 @@ class PushMessageContentChatDeleteMember extends PushMessageContent implements \
     }
 
     /**
-     * Set True, if the user has left the group themselves
+     * Set True, if the user has left the group themselves.
      */
     public function setIsLeft(bool $isLeft): self
     {

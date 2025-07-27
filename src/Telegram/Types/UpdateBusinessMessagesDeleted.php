@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Messages in a business account were deleted; for bots only
+ * Messages in a business account were deleted; for bots only.
  */
 class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of the business connection
+     * Get Unique identifier of the business connection.
      */
     public function getConnectionId(): string
     {
@@ -33,7 +33,7 @@ class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of the business connection
+     * Set Unique identifier of the business connection.
      */
     public function setConnectionId(string $connectionId): self
     {
@@ -43,7 +43,7 @@ class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat in the business account in which messages were deleted
+     * Get Identifier of a chat in the business account in which messages were deleted.
      */
     public function getChatId(): int
     {
@@ -51,7 +51,7 @@ class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat in the business account in which messages were deleted
+     * Set Identifier of a chat in the business account in which messages were deleted.
      */
     public function setChatId(int $chatId): self
     {
@@ -61,7 +61,7 @@ class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Unique message identifiers of the deleted messages
+     * Get Unique message identifiers of the deleted messages.
      */
     public function getMessageIds(): array|null
     {
@@ -69,7 +69,7 @@ class UpdateBusinessMessagesDeleted extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Unique message identifiers of the deleted messages
+     * Set Unique message identifiers of the deleted messages.
      */
     public function setMessageIds(array|null $messageIds): self
     {

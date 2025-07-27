@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Pins a message in a chat. A message can be pinned only if messageProperties.can_be_pinned
+ * Pins a message in a chat. A message can be pinned only if messageProperties.can_be_pinned.
  */
 class PinChatMessage extends Ok implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat
+     * Get Identifier of the chat.
      */
     public function getChatId(): int
     {
@@ -36,7 +36,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat
+     * Set Identifier of the chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -46,7 +46,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the new pinned message
+     * Get Identifier of the new pinned message.
      */
     public function getMessageId(): int
     {
@@ -54,7 +54,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the new pinned message
+     * Set Identifier of the new pinned message.
      */
     public function setMessageId(int $messageId): self
     {
@@ -64,7 +64,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats
+     * Get Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats.
      */
     public function getDisableNotification(): bool
     {
@@ -72,7 +72,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats
+     * Set Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats.
      */
     public function setDisableNotification(bool $disableNotification): self
     {
@@ -82,7 +82,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to pin the message only for self; private chats only
+     * Get Pass true to pin the message only for self; private chats only.
      */
     public function getOnlyForSelf(): bool
     {
@@ -90,7 +90,7 @@ class PinChatMessage extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to pin the message only for self; private chats only
+     * Set Pass true to pin the message only for self; private chats only.
      */
     public function setOnlyForSelf(bool $onlyForSelf): self
     {

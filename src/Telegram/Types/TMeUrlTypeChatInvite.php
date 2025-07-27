@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A chat invite link @info Information about the chat invite link
+ * A chat invite link @info Information about the chat invite link.
  */
 class TMeUrlTypeChatInvite extends TMeUrlType implements \JsonSerializable
 {

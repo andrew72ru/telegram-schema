@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A poll in quiz mode, which has exactly one correct answer option and can be answered only once
+ * A poll in quiz mode, which has exactly one correct answer option and can be answered only once.
  */
 class PollTypeQuiz extends PollType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class PollTypeQuiz extends PollType implements \JsonSerializable
     }
 
     /**
-     * Get 0-based identifier of the correct answer option; -1 for a yet unanswered poll
+     * Get 0-based identifier of the correct answer option; -1 for a yet unanswered poll.
      */
     public function getCorrectOptionId(): int
     {
@@ -30,7 +30,7 @@ class PollTypeQuiz extends PollType implements \JsonSerializable
     }
 
     /**
-     * Set 0-based identifier of the correct answer option; -1 for a yet unanswered poll
+     * Set 0-based identifier of the correct answer option; -1 for a yet unanswered poll.
      */
     public function setCorrectOptionId(int $correctOptionId): self
     {
@@ -40,7 +40,7 @@ class PollTypeQuiz extends PollType implements \JsonSerializable
     }
 
     /**
-     * Get Text that is shown when the user chooses an incorrect answer or taps on the lamp icon; 0-200 characters with at most 2 line feeds; empty for a yet unanswered poll
+     * Get Text that is shown when the user chooses an incorrect answer or taps on the lamp icon; 0-200 characters with at most 2 line feeds; empty for a yet unanswered poll.
      */
     public function getExplanation(): FormattedText|null
     {
@@ -48,7 +48,7 @@ class PollTypeQuiz extends PollType implements \JsonSerializable
     }
 
     /**
-     * Set Text that is shown when the user chooses an incorrect answer or taps on the lamp icon; 0-200 characters with at most 2 line feeds; empty for a yet unanswered poll
+     * Set Text that is shown when the user chooses an incorrect answer or taps on the lamp icon; 0-200 characters with at most 2 line feeds; empty for a yet unanswered poll.
      */
     public function setExplanation(FormattedText|null $explanation): self
     {

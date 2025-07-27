@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Searches for messages in secret chats. Returns the results in reverse chronological order. For optimal performance, the number of returned messages is chosen by TDLib
+ * Searches for messages in secret chats. Returns the results in reverse chronological order. For optimal performance, the number of returned messages is chosen by TDLib.
  */
 class SearchSecretMessages extends FoundMessages implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat in which to search. Specify 0 to search in all secret chats
+     * Get Identifier of the chat in which to search. Specify 0 to search in all secret chats.
      */
     public function getChatId(): int
     {
@@ -39,7 +39,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat in which to search. Specify 0 to search in all secret chats
+     * Set Identifier of the chat in which to search. Specify 0 to search in all secret chats.
      */
     public function setChatId(int $chatId): self
     {
@@ -49,7 +49,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Query to search for. If empty, searchChatMessages must be used instead
+     * Get Query to search for. If empty, searchChatMessages must be used instead.
      */
     public function getQuery(): string
     {
@@ -57,7 +57,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Query to search for. If empty, searchChatMessages must be used instead
+     * Set Query to search for. If empty, searchChatMessages must be used instead.
      */
     public function setQuery(string $query): self
     {
@@ -67,7 +67,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Get Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function getOffset(): string
     {
@@ -75,7 +75,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+     * Set Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.
      */
     public function setOffset(string $offset): self
     {
@@ -85,7 +85,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Get The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function getLimit(): int
     {
@@ -93,7 +93,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+     * Set The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit.
      */
     public function setLimit(int $limit): self
     {
@@ -103,7 +103,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Get Additional filter for messages to search; pass null to search for all messages
+     * Get Additional filter for messages to search; pass null to search for all messages.
      */
     public function getFilter(): SearchMessagesFilter|null
     {
@@ -111,7 +111,7 @@ class SearchSecretMessages extends FoundMessages implements \JsonSerializable
     }
 
     /**
-     * Set Additional filter for messages to search; pass null to search for all messages
+     * Set Additional filter for messages to search; pass null to search for all messages.
      */
     public function setFilter(SearchMessagesFilter|null $filter): self
     {

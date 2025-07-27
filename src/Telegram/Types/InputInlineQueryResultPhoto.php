@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents link to a JPEG image
+ * Represents link to a JPEG image.
  */
 class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \JsonSerializable
 {
@@ -43,7 +43,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Unique identifier of the query result
+     * Get Unique identifier of the query result.
      */
     public function getId(): string
     {
@@ -51,7 +51,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Unique identifier of the query result
+     * Set Unique identifier of the query result.
      */
     public function setId(string $id): self
     {
@@ -61,7 +61,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Title of the result, if known
+     * Get Title of the result, if known.
      */
     public function getTitle(): string
     {
@@ -69,7 +69,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Title of the result, if known
+     * Set Title of the result, if known.
      */
     public function setTitle(string $title): self
     {
@@ -79,7 +79,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Represents link to a JPEG image
+     * Get Represents link to a JPEG image.
      */
     public function getDescription(): string
     {
@@ -87,7 +87,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Represents link to a JPEG image
+     * Set Represents link to a JPEG image.
      */
     public function setDescription(string $description): self
     {
@@ -97,7 +97,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get URL of the photo thumbnail, if it exists
+     * Get URL of the photo thumbnail, if it exists.
      */
     public function getThumbnailUrl(): string
     {
@@ -105,7 +105,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set URL of the photo thumbnail, if it exists
+     * Set URL of the photo thumbnail, if it exists.
      */
     public function setThumbnailUrl(string $thumbnailUrl): self
     {
@@ -115,7 +115,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The URL of the JPEG photo (photo size must not exceed 5MB)
+     * Get The URL of the JPEG photo (photo size must not exceed 5MB).
      */
     public function getPhotoUrl(): string
     {
@@ -123,7 +123,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The URL of the JPEG photo (photo size must not exceed 5MB)
+     * Set The URL of the JPEG photo (photo size must not exceed 5MB).
      */
     public function setPhotoUrl(string $photoUrl): self
     {
@@ -133,7 +133,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Width of the photo
+     * Get Width of the photo.
      */
     public function getPhotoWidth(): int
     {
@@ -141,7 +141,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Width of the photo
+     * Set Width of the photo.
      */
     public function setPhotoWidth(int $photoWidth): self
     {
@@ -151,7 +151,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get Height of the photo
+     * Get Height of the photo.
      */
     public function getPhotoHeight(): int
     {
@@ -159,7 +159,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set Height of the photo
+     * Set Height of the photo.
      */
     public function setPhotoHeight(int $photoHeight): self
     {
@@ -169,7 +169,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Get The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -177,7 +177,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
+     * Set The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -187,7 +187,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Get The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -195,7 +195,7 @@ class InputInlineQueryResultPhoto extends InputInlineQueryResult implements \Jso
     }
 
     /**
-     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
+     * Set The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

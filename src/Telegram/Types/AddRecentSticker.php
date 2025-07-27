@@ -22,7 +22,7 @@ class AddRecentSticker extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers
+     * Get Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers.
      */
     public function getIsAttached(): bool
     {
@@ -30,7 +30,7 @@ class AddRecentSticker extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers
+     * Set Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers.
      */
     public function setIsAttached(bool $isAttached): self
     {
@@ -40,7 +40,7 @@ class AddRecentSticker extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Get Sticker file to add
+     * Get Sticker file to add.
      */
     public function getSticker(): InputFile|null
     {
@@ -48,7 +48,7 @@ class AddRecentSticker extends Stickers implements \JsonSerializable
     }
 
     /**
-     * Set Sticker file to add
+     * Set Sticker file to add.
      */
     public function setSticker(InputFile|null $sticker): self
     {

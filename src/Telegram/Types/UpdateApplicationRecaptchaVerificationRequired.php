@@ -25,7 +25,7 @@ class UpdateApplicationRecaptchaVerificationRequired extends Update implements \
     }
 
     /**
-     * Get Unique identifier for the verification process
+     * Get Unique identifier for the verification process.
      */
     public function getVerificationId(): int
     {
@@ -33,7 +33,7 @@ class UpdateApplicationRecaptchaVerificationRequired extends Update implements \
     }
 
     /**
-     * Set Unique identifier for the verification process
+     * Set Unique identifier for the verification process.
      */
     public function setVerificationId(int $verificationId): self
     {
@@ -43,7 +43,7 @@ class UpdateApplicationRecaptchaVerificationRequired extends Update implements \
     }
 
     /**
-     * Get The action for the check
+     * Get The action for the check.
      */
     public function getAction(): string
     {
@@ -51,7 +51,7 @@ class UpdateApplicationRecaptchaVerificationRequired extends Update implements \
     }
 
     /**
-     * Set The action for the check
+     * Set The action for the check.
      */
     public function setAction(string $action): self
     {
@@ -61,7 +61,7 @@ class UpdateApplicationRecaptchaVerificationRequired extends Update implements \
     }
 
     /**
-     * Get Identifier of the reCAPTCHA key
+     * Get Identifier of the reCAPTCHA key.
      */
     public function getRecaptchaKeyId(): string
     {
@@ -69,7 +69,7 @@ class UpdateApplicationRecaptchaVerificationRequired extends Update implements \
     }
 
     /**
-     * Set Identifier of the reCAPTCHA key
+     * Set Identifier of the reCAPTCHA key.
      */
     public function setRecaptchaKeyId(string $recaptchaKeyId): self
     {

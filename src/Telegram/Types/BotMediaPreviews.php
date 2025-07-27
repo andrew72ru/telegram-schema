@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of media previews of a bot @previews List of media previews
+ * Contains a list of media previews of a bot @previews List of media previews.
  */
 class BotMediaPreviews implements \JsonSerializable
 {

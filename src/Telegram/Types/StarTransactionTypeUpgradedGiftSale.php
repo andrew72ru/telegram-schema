@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a sale of an upgraded gift; for regular users only
+ * The transaction is a sale of an upgraded gift; for regular users only.
  */
 class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements
     }
 
     /**
-     * Get Identifier of the user that bought the gift
+     * Get Identifier of the user that bought the gift.
      */
     public function getUserId(): int
     {
@@ -33,7 +33,7 @@ class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements
     }
 
     /**
-     * Set Identifier of the user that bought the gift
+     * Set Identifier of the user that bought the gift.
      */
     public function setUserId(int $userId): self
     {
@@ -43,7 +43,7 @@ class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements
     }
 
     /**
-     * Get The gift
+     * Get The gift.
      */
     public function getGift(): UpgradedGift|null
     {
@@ -51,7 +51,7 @@ class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements
     }
 
     /**
-     * Set The gift
+     * Set The gift.
      */
     public function setGift(UpgradedGift|null $gift): self
     {
@@ -61,7 +61,7 @@ class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements
     }
 
     /**
-     * Get Information about commission received by Telegram from the transaction
+     * Get Information about commission received by Telegram from the transaction.
      */
     public function getAffiliate(): AffiliateInfo|null
     {
@@ -69,7 +69,7 @@ class StarTransactionTypeUpgradedGiftSale extends StarTransactionType implements
     }
 
     /**
-     * Set Information about commission received by Telegram from the transaction
+     * Set Information about commission received by Telegram from the transaction.
      */
     public function setAffiliate(AffiliateInfo|null $affiliate): self
     {

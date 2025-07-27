@@ -25,7 +25,7 @@ class ChatMemberStatusAdministrator extends ChatMemberStatus implements \JsonSer
     }
 
     /**
-     * Get A custom title of the administrator; 0-16 characters without emoji; applicable to supergroups only
+     * Get A custom title of the administrator; 0-16 characters without emoji; applicable to supergroups only.
      */
     public function getCustomTitle(): string
     {
@@ -33,7 +33,7 @@ class ChatMemberStatusAdministrator extends ChatMemberStatus implements \JsonSer
     }
 
     /**
-     * Set A custom title of the administrator; 0-16 characters without emoji; applicable to supergroups only
+     * Set A custom title of the administrator; 0-16 characters without emoji; applicable to supergroups only.
      */
     public function setCustomTitle(string $customTitle): self
     {
@@ -43,7 +43,7 @@ class ChatMemberStatusAdministrator extends ChatMemberStatus implements \JsonSer
     }
 
     /**
-     * Get True, if the current user can edit the administrator privileges for the called user
+     * Get True, if the current user can edit the administrator privileges for the called user.
      */
     public function getCanBeEdited(): bool
     {
@@ -51,7 +51,7 @@ class ChatMemberStatusAdministrator extends ChatMemberStatus implements \JsonSer
     }
 
     /**
-     * Set True, if the current user can edit the administrator privileges for the called user
+     * Set True, if the current user can edit the administrator privileges for the called user.
      */
     public function setCanBeEdited(bool $canBeEdited): self
     {
@@ -61,7 +61,7 @@ class ChatMemberStatusAdministrator extends ChatMemberStatus implements \JsonSer
     }
 
     /**
-     * Get Rights of the administrator
+     * Get Rights of the administrator.
      */
     public function getRights(): ChatAdministratorRights|null
     {
@@ -69,7 +69,7 @@ class ChatMemberStatusAdministrator extends ChatMemberStatus implements \JsonSer
     }
 
     /**
-     * Set Rights of the administrator
+     * Set Rights of the administrator.
      */
     public function setRights(ChatAdministratorRights|null $rights): self
     {

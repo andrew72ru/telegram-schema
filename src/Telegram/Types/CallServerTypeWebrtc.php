@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A WebRTC server
+ * A WebRTC server.
  */
 class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Get Username to be used for authentication
+     * Get Username to be used for authentication.
      */
     public function getUsername(): string
     {
@@ -36,7 +36,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Set Username to be used for authentication
+     * Set Username to be used for authentication.
      */
     public function setUsername(string $username): self
     {
@@ -46,7 +46,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Get Authentication password
+     * Get Authentication password.
      */
     public function getPassword(): string
     {
@@ -54,7 +54,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Set Authentication password
+     * Set Authentication password.
      */
     public function setPassword(string $password): self
     {
@@ -64,7 +64,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the server supports TURN
+     * Get True, if the server supports TURN.
      */
     public function getSupportsTurn(): bool
     {
@@ -72,7 +72,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the server supports TURN
+     * Set True, if the server supports TURN.
      */
     public function setSupportsTurn(bool $supportsTurn): self
     {
@@ -82,7 +82,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Get True, if the server supports STUN
+     * Get True, if the server supports STUN.
      */
     public function getSupportsStun(): bool
     {
@@ -90,7 +90,7 @@ class CallServerTypeWebrtc extends CallServerType implements \JsonSerializable
     }
 
     /**
-     * Set True, if the server supports STUN
+     * Set True, if the server supports STUN.
      */
     public function setSupportsStun(bool $supportsStun): self
     {

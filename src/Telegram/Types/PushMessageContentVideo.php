@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A video message
+ * A video message.
  */
 class PushMessageContentVideo extends PushMessageContent implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Message content; may be null
+     * Get Message content; may be null.
      */
     public function getVideo(): Video|null
     {
@@ -36,7 +36,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Message content; may be null
+     * Set Message content; may be null.
      */
     public function setVideo(Video|null $video): self
     {
@@ -46,7 +46,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Get Video caption
+     * Get Video caption.
      */
     public function getCaption(): string
     {
@@ -54,7 +54,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Set Video caption
+     * Set Video caption.
      */
     public function setCaption(string $caption): self
     {
@@ -64,7 +64,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Get True, if the video is secret
+     * Get True, if the video is secret.
      */
     public function getIsSecret(): bool
     {
@@ -72,7 +72,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Set True, if the video is secret
+     * Set True, if the video is secret.
      */
     public function setIsSecret(bool $isSecret): self
     {
@@ -82,7 +82,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Get True, if the message is a pinned message with the specified content
+     * Get True, if the message is a pinned message with the specified content.
      */
     public function getIsPinned(): bool
     {
@@ -90,7 +90,7 @@ class PushMessageContentVideo extends PushMessageContent implements \JsonSeriali
     }
 
     /**
-     * Set True, if the message is a pinned message with the specified content
+     * Set True, if the message is a pinned message with the specified content.
      */
     public function setIsPinned(bool $isPinned): self
     {

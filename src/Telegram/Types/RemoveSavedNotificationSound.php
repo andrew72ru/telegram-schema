@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Removes a notification sound from the list of saved notification sounds @notification_sound_id Identifier of the notification sound
+ * Removes a notification sound from the list of saved notification sounds @notification_sound_id Identifier of the notification sound.
  */
 class RemoveSavedNotificationSound extends Ok implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents a location to which a chat is connected @location The location @address Location address; 1-64 characters, as defined by the chat owner
+ * Represents a location to which a chat is connected @location The location @address Location address; 1-64 characters, as defined by the chat owner.
  */
 class ChatLocation implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Finishes user registration. Works only when the current authorization state is authorizationStateWaitRegistration
+ * Finishes user registration. Works only when the current authorization state is authorizationStateWaitRegistration.
  */
 class RegisterUser extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class RegisterUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The first name of the user; 1-64 characters
+     * Get The first name of the user; 1-64 characters.
      */
     public function getFirstName(): string
     {
@@ -33,7 +33,7 @@ class RegisterUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The first name of the user; 1-64 characters
+     * Set The first name of the user; 1-64 characters.
      */
     public function setFirstName(string $firstName): self
     {
@@ -43,7 +43,7 @@ class RegisterUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The last name of the user; 0-64 characters
+     * Get The last name of the user; 0-64 characters.
      */
     public function getLastName(): string
     {
@@ -51,7 +51,7 @@ class RegisterUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The last name of the user; 0-64 characters
+     * Set The last name of the user; 0-64 characters.
      */
     public function setLastName(string $lastName): self
     {
@@ -61,7 +61,7 @@ class RegisterUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to disable notification about the current user joining Telegram for other users that added them to contact list
+     * Get Pass true to disable notification about the current user joining Telegram for other users that added them to contact list.
      */
     public function getDisableNotification(): bool
     {
@@ -69,7 +69,7 @@ class RegisterUser extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to disable notification about the current user joining Telegram for other users that added them to contact list
+     * Set Pass true to disable notification about the current user joining Telegram for other users that added them to contact list.
      */
     public function setDisableNotification(bool $disableNotification): self
     {

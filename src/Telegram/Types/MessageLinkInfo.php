@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains information about a link to a message or a forum topic in a chat
+ * Contains information about a link to a message or a forum topic in a chat.
  */
 class MessageLinkInfo implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the link is a public link for a message or a forum topic in a chat
+     * Get True, if the link is a public link for a message or a forum topic in a chat.
      */
     public function getIsPublic(): bool
     {
@@ -42,7 +42,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the link is a public link for a message or a forum topic in a chat
+     * Set True, if the link is a public link for a message or a forum topic in a chat.
      */
     public function setIsPublic(bool $isPublic): self
     {
@@ -52,7 +52,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get If found, identifier of the chat to which the link points, 0 otherwise
+     * Get If found, identifier of the chat to which the link points, 0 otherwise.
      */
     public function getChatId(): int
     {
@@ -60,7 +60,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set If found, identifier of the chat to which the link points, 0 otherwise
+     * Set If found, identifier of the chat to which the link points, 0 otherwise.
      */
     public function setChatId(int $chatId): self
     {
@@ -70,7 +70,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get If found, identifier of the message thread in which to open the message, or a forum topic to open if the message is missing
+     * Get If found, identifier of the message thread in which to open the message, or a forum topic to open if the message is missing.
      */
     public function getMessageThreadId(): int
     {
@@ -78,7 +78,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set If found, identifier of the message thread in which to open the message, or a forum topic to open if the message is missing
+     * Set If found, identifier of the message thread in which to open the message, or a forum topic to open if the message is missing.
      */
     public function setMessageThreadId(int $messageThreadId): self
     {
@@ -88,7 +88,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get If found, the linked message; may be null
+     * Get If found, the linked message; may be null.
      */
     public function getMessage(): Message|null
     {
@@ -96,7 +96,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set If found, the linked message; may be null
+     * Set If found, the linked message; may be null.
      */
     public function setMessage(Message|null $message): self
     {
@@ -106,7 +106,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get Timestamp from which the video/audio/video note/voice note/story playing must start, in seconds; 0 if not specified. The media can be in the message content or in its link preview
+     * Get Timestamp from which the video/audio/video note/voice note/story playing must start, in seconds; 0 if not specified. The media can be in the message content or in its link preview.
      */
     public function getMediaTimestamp(): int
     {
@@ -114,7 +114,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set Timestamp from which the video/audio/video note/voice note/story playing must start, in seconds; 0 if not specified. The media can be in the message content or in its link preview
+     * Set Timestamp from which the video/audio/video note/voice note/story playing must start, in seconds; 0 if not specified. The media can be in the message content or in its link preview.
      */
     public function setMediaTimestamp(int $mediaTimestamp): self
     {
@@ -124,7 +124,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Get True, if the whole media album to which the message belongs is linked
+     * Get True, if the whole media album to which the message belongs is linked.
      */
     public function getForAlbum(): bool
     {
@@ -132,7 +132,7 @@ class MessageLinkInfo implements \JsonSerializable
     }
 
     /**
-     * Set True, if the whole media album to which the message belongs is linked
+     * Set True, if the whole media album to which the message belongs is linked.
      */
     public function setForAlbum(bool $forAlbum): self
     {

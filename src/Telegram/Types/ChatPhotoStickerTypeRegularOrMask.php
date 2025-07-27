@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Information about the sticker, which was used to create the chat photo
+ * Information about the sticker, which was used to create the chat photo.
  */
 class ChatPhotoStickerTypeRegularOrMask extends ChatPhotoStickerType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class ChatPhotoStickerTypeRegularOrMask extends ChatPhotoStickerType implements 
     }
 
     /**
-     * Get Sticker set identifier
+     * Get Sticker set identifier.
      */
     public function getStickerSetId(): int
     {
@@ -30,7 +30,7 @@ class ChatPhotoStickerTypeRegularOrMask extends ChatPhotoStickerType implements 
     }
 
     /**
-     * Set Sticker set identifier
+     * Set Sticker set identifier.
      */
     public function setStickerSetId(int $stickerSetId): self
     {
@@ -40,7 +40,7 @@ class ChatPhotoStickerTypeRegularOrMask extends ChatPhotoStickerType implements 
     }
 
     /**
-     * Get Identifier of the sticker in the set
+     * Get Identifier of the sticker in the set.
      */
     public function getStickerId(): int
     {
@@ -48,7 +48,7 @@ class ChatPhotoStickerTypeRegularOrMask extends ChatPhotoStickerType implements 
     }
 
     /**
-     * Set Identifier of the sticker in the set
+     * Set Identifier of the sticker in the set.
      */
     public function setStickerId(int $stickerId): self
     {

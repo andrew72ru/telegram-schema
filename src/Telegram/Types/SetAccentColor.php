@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes accent color and background custom emoji for the current user; for Telegram Premium users only
+ * Changes accent color and background custom emoji for the current user; for Telegram Premium users only.
  */
 class SetAccentColor extends Ok implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class SetAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color to use
+     * Get Identifier of the accent color to use.
      */
     public function getAccentColorId(): int
     {
@@ -30,7 +30,7 @@ class SetAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color to use
+     * Set Identifier of the accent color to use.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -40,7 +40,7 @@ class SetAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none
+     * Get Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
      */
     public function getBackgroundCustomEmojiId(): int
     {
@@ -48,7 +48,7 @@ class SetAccentColor extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none
+     * Set Identifier of a custom emoji to be shown on the reply header and link preview background; 0 if none.
      */
     public function setBackgroundCustomEmojiId(int $backgroundCustomEmojiId): self
     {

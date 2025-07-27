@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes settings for automatic moving of chats to and from the Archive chat lists @settings New settings
+ * Changes settings for automatic moving of chats to and from the Archive chat lists @settings New settings.
  */
 class SetArchiveChatListSettings extends Ok implements \JsonSerializable
 {

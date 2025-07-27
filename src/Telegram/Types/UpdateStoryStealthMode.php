@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Story stealth mode settings have changed
+ * Story stealth mode settings have changed.
  */
 class UpdateStoryStealthMode extends Update implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class UpdateStoryStealthMode extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) until stealth mode is active; 0 if it is disabled
+     * Get Point in time (Unix timestamp) until stealth mode is active; 0 if it is disabled.
      */
     public function getActiveUntilDate(): int
     {
@@ -30,7 +30,7 @@ class UpdateStoryStealthMode extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) until stealth mode is active; 0 if it is disabled
+     * Set Point in time (Unix timestamp) until stealth mode is active; 0 if it is disabled.
      */
     public function setActiveUntilDate(int $activeUntilDate): self
     {
@@ -40,7 +40,7 @@ class UpdateStoryStealthMode extends Update implements \JsonSerializable
     }
 
     /**
-     * Get Point in time (Unix timestamp) when stealth mode can be enabled again; 0 if there is no active cooldown
+     * Get Point in time (Unix timestamp) when stealth mode can be enabled again; 0 if there is no active cooldown.
      */
     public function getCooldownUntilDate(): int
     {
@@ -48,7 +48,7 @@ class UpdateStoryStealthMode extends Update implements \JsonSerializable
     }
 
     /**
-     * Set Point in time (Unix timestamp) when stealth mode can be enabled again; 0 if there is no active cooldown
+     * Set Point in time (Unix timestamp) when stealth mode can be enabled again; 0 if there is no active cooldown.
      */
     public function setCooldownUntilDate(int $cooldownUntilDate): self
     {

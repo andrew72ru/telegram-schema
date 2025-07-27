@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns one of the available Telegram Passport elements @type Telegram Passport element type @password The 2-step verification password of the current user
+ * Returns one of the available Telegram Passport elements @var Telegram Passport element type @password The 2-step verification password of the current user.
  */
 class GetPassportElement extends PassportElement implements \JsonSerializable
 {

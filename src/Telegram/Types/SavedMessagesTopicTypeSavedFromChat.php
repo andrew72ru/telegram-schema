@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Topic containing messages forwarded from a specific chat @chat_id Identifier of the chat
+ * Topic containing messages forwarded from a specific chat @chat_id Identifier of the chat.
  */
 class SavedMessagesTopicTypeSavedFromChat extends SavedMessagesTopicType implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A text description shown instead of a raw URL @url HTTP or tg:// URL to be opened when the link is clicked
+ * A text description shown instead of a raw URL @url HTTP or tg:// URL to be opened when the link is clicked.
  */
 class TextEntityTypeTextUrl extends TextEntityType implements \JsonSerializable
 {

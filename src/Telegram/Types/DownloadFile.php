@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Downloads a file from the cloud. Download progress and completion of the download will be notified through updateFile updates
+ * Downloads a file from the cloud. Download progress and completion of the download will be notified through updateFile updates.
  */
 class DownloadFile extends File implements \JsonSerializable
 {
@@ -31,7 +31,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the file to download
+     * Get Identifier of the file to download.
      */
     public function getFileId(): int
     {
@@ -39,7 +39,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the file to download
+     * Set Identifier of the file to download.
      */
     public function setFileId(int $fileId): self
     {
@@ -49,7 +49,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
+     * Get Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first.
      */
     public function getPriority(): int
     {
@@ -57,7 +57,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
+     * Set Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first.
      */
     public function setPriority(int $priority): self
     {
@@ -67,7 +67,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get The starting position from which the file needs to be downloaded
+     * Get The starting position from which the file needs to be downloaded.
      */
     public function getOffset(): int
     {
@@ -75,7 +75,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set The starting position from which the file needs to be downloaded
+     * Set The starting position from which the file needs to be downloaded.
      */
     public function setOffset(int $offset): self
     {
@@ -85,7 +85,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Number of bytes which need to be downloaded starting from the "offset" position before the download will automatically be canceled; use 0 to download without a limit
+     * Get Number of bytes which need to be downloaded starting from the "offset" position before the download will automatically be canceled; use 0 to download without a limit.
      */
     public function getLimit(): int
     {
@@ -93,7 +93,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Number of bytes which need to be downloaded starting from the "offset" position before the download will automatically be canceled; use 0 to download without a limit
+     * Set Number of bytes which need to be downloaded starting from the "offset" position before the download will automatically be canceled; use 0 to download without a limit.
      */
     public function setLimit(int $limit): self
     {
@@ -103,7 +103,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to return response only after the file download has succeeded, has failed, has been canceled, or a new downloadFile request with different offset/limit parameters was sent; pass false to return file state immediately, just after the download has been started
+     * Get Pass true to return response only after the file download has succeeded, has failed, has been canceled, or a new downloadFile request with different offset/limit parameters was sent; pass false to return file state immediately, just after the download has been started.
      */
     public function getSynchronous(): bool
     {
@@ -111,7 +111,7 @@ class DownloadFile extends File implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to return response only after the file download has succeeded, has failed, has been canceled, or a new downloadFile request with different offset/limit parameters was sent; pass false to return file state immediately, just after the download has been started
+     * Set Pass true to return response only after the file download has succeeded, has failed, has been canceled, or a new downloadFile request with different offset/limit parameters was sent; pass false to return file state immediately, just after the download has been started.
      */
     public function setSynchronous(bool $synchronous): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Changes the owner of a chat; requires owner privileges in the chat. Use the method canTransferOwnership to check whether the ownership can be transferred from the current session. Available only for supergroups and channel chats
+ * Changes the owner of a chat; requires owner privileges in the chat. Use the method canTransferOwnership to check whether the ownership can be transferred from the current session. Available only for supergroups and channel chats.
  */
 class TransferChatOwnership extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class TransferChatOwnership extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Chat identifier
+     * Get Chat identifier.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class TransferChatOwnership extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Chat identifier
+     * Set Chat identifier.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class TransferChatOwnership extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user
+     * Get Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user.
      */
     public function getUserId(): int
     {
@@ -51,7 +51,7 @@ class TransferChatOwnership extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user
+     * Set Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user.
      */
     public function setUserId(int $userId): self
     {
@@ -61,7 +61,7 @@ class TransferChatOwnership extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The 2-step verification password of the current user
+     * Get The 2-step verification password of the current user.
      */
     public function getPassword(): string
     {
@@ -69,7 +69,7 @@ class TransferChatOwnership extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The 2-step verification password of the current user
+     * Set The 2-step verification password of the current user.
      */
     public function setPassword(string $password): self
     {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns the list of message sender identifiers, which can be used to send messages in a chat @chat_id Chat identifier
+ * Returns the list of message sender identifiers, which can be used to send messages in a chat @chat_id Chat identifier.
  */
 class GetChatAvailableMessageSenders extends ChatMessageSenders implements \JsonSerializable
 {

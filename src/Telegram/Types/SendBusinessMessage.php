@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Sends a message on behalf of a business account; for bots only. Returns the message after it was sent
+ * Sends a message on behalf of a business account; for bots only. Returns the message after it was sent.
  */
 class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
 {
@@ -40,7 +40,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Unique identifier of business connection on behalf of which to send the request
+     * Get Unique identifier of business connection on behalf of which to send the request.
      */
     public function getBusinessConnectionId(): string
     {
@@ -48,7 +48,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Unique identifier of business connection on behalf of which to send the request
+     * Set Unique identifier of business connection on behalf of which to send the request.
      */
     public function setBusinessConnectionId(string $businessConnectionId): self
     {
@@ -58,7 +58,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Target chat
+     * Get Target chat.
      */
     public function getChatId(): int
     {
@@ -66,7 +66,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Target chat
+     * Set Target chat.
      */
     public function setChatId(int $chatId): self
     {
@@ -76,7 +76,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Information about the message to be replied; pass null if none
+     * Get Information about the message to be replied; pass null if none.
      */
     public function getReplyTo(): InputMessageReplyTo|null
     {
@@ -84,7 +84,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Information about the message to be replied; pass null if none
+     * Set Information about the message to be replied; pass null if none.
      */
     public function setReplyTo(InputMessageReplyTo|null $replyTo): self
     {
@@ -94,7 +94,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Pass true to disable notification for the message
+     * Get Pass true to disable notification for the message.
      */
     public function getDisableNotification(): bool
     {
@@ -102,7 +102,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Pass true to disable notification for the message
+     * Set Pass true to disable notification for the message.
      */
     public function setDisableNotification(bool $disableNotification): self
     {
@@ -112,7 +112,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Pass true if the content of the message must be protected from forwarding and saving
+     * Get Pass true if the content of the message must be protected from forwarding and saving.
      */
     public function getProtectContent(): bool
     {
@@ -120,7 +120,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Pass true if the content of the message must be protected from forwarding and saving
+     * Set Pass true if the content of the message must be protected from forwarding and saving.
      */
     public function setProtectContent(bool $protectContent): self
     {
@@ -130,7 +130,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the effect to apply to the message
+     * Get Identifier of the effect to apply to the message.
      */
     public function getEffectId(): int
     {
@@ -138,7 +138,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the effect to apply to the message
+     * Set Identifier of the effect to apply to the message.
      */
     public function setEffectId(int $effectId): self
     {
@@ -148,7 +148,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get Markup for replying to the message; pass null if none
+     * Get Markup for replying to the message; pass null if none.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -156,7 +156,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set Markup for replying to the message; pass null if none
+     * Set Markup for replying to the message; pass null if none.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {
@@ -166,7 +166,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Get The content of the message to be sent
+     * Get The content of the message to be sent.
      */
     public function getInputMessageContent(): InputMessageContent|null
     {
@@ -174,7 +174,7 @@ class SendBusinessMessage extends BusinessMessage implements \JsonSerializable
     }
 
     /**
-     * Set The content of the message to be sent
+     * Set The content of the message to be sent.
      */
     public function setInputMessageContent(InputMessageContent|null $inputMessageContent): self
     {

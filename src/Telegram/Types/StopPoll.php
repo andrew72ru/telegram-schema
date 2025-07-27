@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Stops a poll
+ * Stops a poll.
  */
 class StopPoll extends Ok implements \JsonSerializable
 {
@@ -25,7 +25,7 @@ class StopPoll extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the chat to which the poll belongs
+     * Get Identifier of the chat to which the poll belongs.
      */
     public function getChatId(): int
     {
@@ -33,7 +33,7 @@ class StopPoll extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the chat to which the poll belongs
+     * Set Identifier of the chat to which the poll belongs.
      */
     public function setChatId(int $chatId): self
     {
@@ -43,7 +43,7 @@ class StopPoll extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the message containing the poll. Use messageProperties.can_be_edited to check whether the poll can be stopped
+     * Get Identifier of the message containing the poll. Use messageProperties.can_be_edited to check whether the poll can be stopped.
      */
     public function getMessageId(): int
     {
@@ -51,7 +51,7 @@ class StopPoll extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the message containing the poll. Use messageProperties.can_be_edited to check whether the poll can be stopped
+     * Set Identifier of the message containing the poll. Use messageProperties.can_be_edited to check whether the poll can be stopped.
      */
     public function setMessageId(int $messageId): self
     {
@@ -61,7 +61,7 @@ class StopPoll extends Ok implements \JsonSerializable
     }
 
     /**
-     * Get The new message reply markup; pass null if none; for bots only
+     * Get The new message reply markup; pass null if none; for bots only.
      */
     public function getReplyMarkup(): ReplyMarkup|null
     {
@@ -69,7 +69,7 @@ class StopPoll extends Ok implements \JsonSerializable
     }
 
     /**
-     * Set The new message reply markup; pass null if none; for bots only
+     * Set The new message reply markup; pass null if none; for bots only.
      */
     public function setReplyMarkup(ReplyMarkup|null $replyMarkup): self
     {

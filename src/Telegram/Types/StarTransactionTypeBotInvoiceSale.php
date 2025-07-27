@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The transaction is a sale of a product by the bot; for bots only
+ * The transaction is a sale of a product by the bot; for bots only.
  */
 class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Get Identifier of the user that bought the product
+     * Get Identifier of the user that bought the product.
      */
     public function getUserId(): int
     {
@@ -36,7 +36,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Set Identifier of the user that bought the product
+     * Set Identifier of the user that bought the product.
      */
     public function setUserId(int $userId): self
     {
@@ -46,7 +46,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Get Information about the bought product
+     * Get Information about the bought product.
      */
     public function getProductInfo(): ProductInfo|null
     {
@@ -54,7 +54,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Set Information about the bought product
+     * Set Information about the bought product.
      */
     public function setProductInfo(ProductInfo|null $productInfo): self
     {
@@ -64,7 +64,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Get Invoice payload
+     * Get Invoice payload.
      */
     public function getInvoicePayload(): string
     {
@@ -72,7 +72,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Set Invoice payload
+     * Set Invoice payload.
      */
     public function setInvoicePayload(string $invoicePayload): self
     {
@@ -82,7 +82,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Get Information about the affiliate which received commission from the transaction; may be null if none
+     * Get Information about the affiliate which received commission from the transaction; may be null if none.
      */
     public function getAffiliate(): AffiliateInfo|null
     {
@@ -90,7 +90,7 @@ class StarTransactionTypeBotInvoiceSale extends StarTransactionType implements \
     }
 
     /**
-     * Set Information about the affiliate which received commission from the transaction; may be null if none
+     * Set Information about the affiliate which received commission from the transaction; may be null if none.
      */
     public function setAffiliate(AffiliateInfo|null $affiliate): self
     {

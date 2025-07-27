@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A link to a chat
+ * A link to a chat.
  */
 class PageBlockChatLink extends PageBlock implements \JsonSerializable
 {
@@ -28,7 +28,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Chat title
+     * Get Chat title.
      */
     public function getTitle(): string
     {
@@ -36,7 +36,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Chat title
+     * Set Chat title.
      */
     public function setTitle(string $title): self
     {
@@ -46,7 +46,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Chat photo; may be null
+     * Get Chat photo; may be null.
      */
     public function getPhoto(): ChatPhotoInfo|null
     {
@@ -54,7 +54,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Chat photo; may be null
+     * Set Chat photo; may be null.
      */
     public function setPhoto(ChatPhotoInfo|null $photo): self
     {
@@ -64,7 +64,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of the accent color for chat title and background of chat photo
+     * Get Identifier of the accent color for chat title and background of chat photo.
      */
     public function getAccentColorId(): int
     {
@@ -72,7 +72,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of the accent color for chat title and background of chat photo
+     * Set Identifier of the accent color for chat title and background of chat photo.
      */
     public function setAccentColorId(int $accentColorId): self
     {
@@ -82,7 +82,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Get Chat username by which all other information about the chat can be resolved
+     * Get Chat username by which all other information about the chat can be resolved.
      */
     public function getUsername(): string
     {
@@ -90,7 +90,7 @@ class PageBlockChatLink extends PageBlock implements \JsonSerializable
     }
 
     /**
-     * Set Chat username by which all other information about the chat can be resolved
+     * Set Chat username by which all other information about the chat can be resolved.
      */
     public function setUsername(string $username): self
     {

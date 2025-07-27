@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * A Telegram Premium gift code was created for the user
+ * A Telegram Premium gift code was created for the user.
  */
 class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
 {
@@ -49,7 +49,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Identifier of a chat or a user that created the gift code; may be null if unknown
+     * Get Identifier of a chat or a user that created the gift code; may be null if unknown.
      */
     public function getCreatorId(): MessageSender|null
     {
@@ -57,7 +57,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Identifier of a chat or a user that created the gift code; may be null if unknown
+     * Set Identifier of a chat or a user that created the gift code; may be null if unknown.
      */
     public function setCreatorId(MessageSender|null $creatorId): self
     {
@@ -67,7 +67,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Message added to the gift
+     * Get Message added to the gift.
      */
     public function getText(): FormattedText|null
     {
@@ -75,7 +75,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Message added to the gift
+     * Set Message added to the gift.
      */
     public function setText(FormattedText|null $text): self
     {
@@ -85,7 +85,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the gift code was created for a giveaway
+     * Get True, if the gift code was created for a giveaway.
      */
     public function getIsFromGiveaway(): bool
     {
@@ -93,7 +93,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the gift code was created for a giveaway
+     * Set True, if the gift code was created for a giveaway.
      */
     public function setIsFromGiveaway(bool $isFromGiveaway): self
     {
@@ -103,7 +103,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get True, if the winner for the corresponding Telegram Premium subscription wasn't chosen
+     * Get True, if the winner for the corresponding Telegram Premium subscription wasn't chosen.
      */
     public function getIsUnclaimed(): bool
     {
@@ -111,7 +111,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set True, if the winner for the corresponding Telegram Premium subscription wasn't chosen
+     * Set True, if the winner for the corresponding Telegram Premium subscription wasn't chosen.
      */
     public function setIsUnclaimed(bool $isUnclaimed): self
     {
@@ -121,7 +121,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Currency for the paid amount; empty if unknown
+     * Get Currency for the paid amount; empty if unknown.
      */
     public function getCurrency(): string
     {
@@ -129,7 +129,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Currency for the paid amount; empty if unknown
+     * Set Currency for the paid amount; empty if unknown.
      */
     public function setCurrency(string $currency): self
     {
@@ -139,7 +139,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The paid amount, in the smallest units of the currency; 0 if unknown
+     * Get The paid amount, in the smallest units of the currency; 0 if unknown.
      */
     public function getAmount(): int
     {
@@ -147,7 +147,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The paid amount, in the smallest units of the currency; 0 if unknown
+     * Set The paid amount, in the smallest units of the currency; 0 if unknown.
      */
     public function setAmount(int $amount): self
     {
@@ -157,7 +157,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Cryptocurrency used to pay for the gift; may be empty if none or unknown
+     * Get Cryptocurrency used to pay for the gift; may be empty if none or unknown.
      */
     public function getCryptocurrency(): string
     {
@@ -165,7 +165,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Cryptocurrency used to pay for the gift; may be empty if none or unknown
+     * Set Cryptocurrency used to pay for the gift; may be empty if none or unknown.
      */
     public function setCryptocurrency(string $cryptocurrency): self
     {
@@ -175,7 +175,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The paid amount, in the smallest units of the cryptocurrency; 0 if unknown
+     * Get The paid amount, in the smallest units of the cryptocurrency; 0 if unknown.
      */
     public function getCryptocurrencyAmount(): int
     {
@@ -183,7 +183,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The paid amount, in the smallest units of the cryptocurrency; 0 if unknown
+     * Set The paid amount, in the smallest units of the cryptocurrency; 0 if unknown.
      */
     public function setCryptocurrencyAmount(int $cryptocurrencyAmount): self
     {
@@ -193,7 +193,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get Number of months the Telegram Premium subscription will be active after code activation
+     * Get Number of months the Telegram Premium subscription will be active after code activation.
      */
     public function getMonthCount(): int
     {
@@ -201,7 +201,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set Number of months the Telegram Premium subscription will be active after code activation
+     * Set Number of months the Telegram Premium subscription will be active after code activation.
      */
     public function setMonthCount(int $monthCount): self
     {
@@ -211,7 +211,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get A sticker to be shown in the message; may be null if unknown
+     * Get A sticker to be shown in the message; may be null if unknown.
      */
     public function getSticker(): Sticker|null
     {
@@ -219,7 +219,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set A sticker to be shown in the message; may be null if unknown
+     * Set A sticker to be shown in the message; may be null if unknown.
      */
     public function setSticker(Sticker|null $sticker): self
     {
@@ -229,7 +229,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Get The gift code
+     * Get The gift code.
      */
     public function getCode(): string
     {
@@ -237,7 +237,7 @@ class MessagePremiumGiftCode extends MessageContent implements \JsonSerializable
     }
 
     /**
-     * Set The gift code
+     * Set The gift code.
      */
     public function setCode(string $code): self
     {

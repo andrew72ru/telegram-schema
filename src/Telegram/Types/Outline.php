@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Represents outline of an image @paths The list of closed vector paths
+ * Represents outline of an image @paths The list of closed vector paths.
  */
 class Outline implements \JsonSerializable
 {

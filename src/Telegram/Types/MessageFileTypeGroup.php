@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The messages were exported from a group chat @title Title of the group chat; may be empty if unrecognized
+ * The messages were exported from a group chat @title Title of the group chat; may be empty if unrecognized.
  */
 class MessageFileTypeGroup extends MessageFileType implements \JsonSerializable
 {

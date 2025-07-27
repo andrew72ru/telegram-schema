@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * New call was created or information about a call was updated @call New data about a call
+ * New call was created or information about a call was updated @call New data about a call.
  */
 class UpdateCall extends Update implements \JsonSerializable
 {

@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * The link is a link to a game. Call searchPublicChat with the given bot username, check that the user is a bot,
+ * The link is a link to a game. Call searchPublicChat with the given bot username, check that the user is a bot,.
  */
 class InternalLinkTypeGame extends InternalLinkType implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class InternalLinkTypeGame extends InternalLinkType implements \JsonSerializable
     }
 
     /**
-     * Get Username of the bot that owns the game
+     * Get Username of the bot that owns the game.
      */
     public function getBotUsername(): string
     {
@@ -30,7 +30,7 @@ class InternalLinkTypeGame extends InternalLinkType implements \JsonSerializable
     }
 
     /**
-     * Set Username of the bot that owns the game
+     * Set Username of the bot that owns the game.
      */
     public function setBotUsername(string $botUsername): self
     {
@@ -40,7 +40,7 @@ class InternalLinkTypeGame extends InternalLinkType implements \JsonSerializable
     }
 
     /**
-     * Get Short name of the game
+     * Get Short name of the game.
      */
     public function getGameShortName(): string
     {
@@ -48,7 +48,7 @@ class InternalLinkTypeGame extends InternalLinkType implements \JsonSerializable
     }
 
     /**
-     * Set Short name of the game
+     * Set Short name of the game.
      */
     public function setGameShortName(string $gameShortName): self
     {

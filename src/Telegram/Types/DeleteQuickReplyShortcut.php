@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Deletes a quick reply shortcut @shortcut_id Unique identifier of the quick reply shortcut
+ * Deletes a quick reply shortcut @shortcut_id Unique identifier of the quick reply shortcut.
  */
 class DeleteQuickReplyShortcut extends Ok implements \JsonSerializable
 {

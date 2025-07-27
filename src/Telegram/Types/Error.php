@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * An object of this type can be returned on every function call, in case of an error
+ * An object of this type can be returned on every function call, in case of an error.
  */
 class Error implements \JsonSerializable
 {
@@ -22,7 +22,7 @@ class Error implements \JsonSerializable
     }
 
     /**
-     * Get Error code; subject to future changes. If the error code is 406, the error message must not be processed in any way and must not be displayed to the user
+     * Get Error code; subject to future changes. If the error code is 406, the error message must not be processed in any way and must not be displayed to the user.
      */
     public function getCode(): int
     {
@@ -30,7 +30,7 @@ class Error implements \JsonSerializable
     }
 
     /**
-     * Set Error code; subject to future changes. If the error code is 406, the error message must not be processed in any way and must not be displayed to the user
+     * Set Error code; subject to future changes. If the error code is 406, the error message must not be processed in any way and must not be displayed to the user.
      */
     public function setCode(int $code): self
     {
@@ -40,7 +40,7 @@ class Error implements \JsonSerializable
     }
 
     /**
-     * Get Error message; subject to future changes
+     * Get Error message; subject to future changes.
      */
     public function getMessage(): string
     {
@@ -48,7 +48,7 @@ class Error implements \JsonSerializable
     }
 
     /**
-     * Set Error message; subject to future changes
+     * Set Error message; subject to future changes.
      */
     public function setMessage(string $message): self
     {

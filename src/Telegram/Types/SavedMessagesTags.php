@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Contains a list of tags used in Saved Messages @tags List of tags
+ * Contains a list of tags used in Saved Messages @tags List of tags.
  */
 class SavedMessagesTags implements \JsonSerializable
 {

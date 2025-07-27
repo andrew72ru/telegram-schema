@@ -7,7 +7,7 @@ namespace App\Telegram\Types;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
- * Returns information about a user by their identifier. This is an offline method if the current user is not a bot @user_id User identifier
+ * Returns information about a user by their identifier. This is an offline method if the current user is not a bot @user_id User identifier.
  */
 class GetUser extends User implements \JsonSerializable
 {
