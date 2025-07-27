@@ -2,7 +2,7 @@
 
 namespace App\Command;
 
-use Nette\PhpGenerator\{ClassType, Literal, PhpFile, PsrPrinter};
+use Nette\PhpGenerator\{ClassType, Literal, PhpFile, PhpNamespace, PsrPrinter};
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\{InputInterface, InputOption};
@@ -220,7 +220,7 @@ class GenerateTelegramClassesCommand extends Command
         $class->addImplement(\JsonSerializable::class);
 
         // Add a comment
-        $class->addComment("Abstract base class for {$this->formatClassName($baseType)} types");
+        $class->addComment("Abstract base class for {$this->formatClassName($baseType)} types.");
 
         // Add abstract jsonSerialize method
         $method = $class->addMethod('jsonSerialize');
@@ -281,7 +281,6 @@ class GenerateTelegramClassesCommand extends Command
         // Create a class
         $class = $ns->addClass($this->formatClassName($className));
         $class->addImplement(\JsonSerializable::class);
-        $ns->addUse(SerializedName::class);
 
         // Set a parent class if needed
         if ($baseType !== $className && $baseType !== 'Type') {
@@ -301,7 +300,7 @@ class GenerateTelegramClassesCommand extends Command
         }
 
         // Add constructor with property promotions
-        $this->addConstructor($class, $parts);
+        $this->addConstructor($class, $parts, $ns);
 
         // Add jsonSerialize method
         $this->addJsonSerializeMethod($class, $parts);
@@ -358,7 +357,7 @@ class GenerateTelegramClassesCommand extends Command
         return \trim($description);
     }
 
-    private function addConstructor(ClassType $class, array $parts): void
+    private function addConstructor(ClassType $class, array $parts, PhpNamespace $namespace): void
     {
         // Skip the class name
         \array_shift($parts);
@@ -368,6 +367,7 @@ class GenerateTelegramClassesCommand extends Command
             return;
         }
 
+        $namespace->addUse(SerializedName::class);
         $constructor = $class->addMethod('__construct');
         $constructor->setPublic();
 
